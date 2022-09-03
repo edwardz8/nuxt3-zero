@@ -1,6 +1,6 @@
 ---
-title: 'This is my third article!'
-description: 'You finally got the point about Nuxt content'
+title: 'Props for Week 2'
+description: 'You finally got the point'
 img: 'img/te_jump.JPG'
 tags: [NFL, Bet]
 ---
