@@ -6712,25 +6712,25 @@ _sfc_main$x.setup = (props, ctx) => {
 const _sfc_main$w = {};
 function _sfc_ssrRender$k(_ctx, _push, _parent, _attrs) {
   const _component_NuxtLink = __nuxt_component_0$4;
-  _push(`<header${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "site-header" }, _attrs))} data-v-af583a30><div class="wrapper" data-v-af583a30>`);
+  _push(`<header${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "site-header" }, _attrs))} data-v-81959436><div class="wrapper" data-v-81959436>`);
   _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, {
     to: "/",
     class: "no-underline"
   }, {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
-        _push2(`<figure class="site-logo" data-v-af583a30${_scopeId}><h1 data-v-af583a30${_scopeId}>Site</h1></figure>`);
+        _push2(`<figure class="site-logo" data-v-81959436${_scopeId}><h1 data-v-81959436${_scopeId}>rosterbox</h1></figure>`);
       } else {
         return [
           vue_cjs_prod.createVNode("figure", { class: "site-logo" }, [
-            vue_cjs_prod.createVNode("h1", null, "Site")
+            vue_cjs_prod.createVNode("h1", null, "rosterbox")
           ])
         ];
       }
     }),
     _: 1
   }, _parent));
-  _push(`<nav class="site-nav" data-v-af583a30><ul class="links" data-v-af583a30><li class="link" data-v-af583a30>`);
+  _push(`<nav class="site-nav" data-v-81959436><ul class="links" data-v-81959436><li class="link" data-v-81959436>`);
   _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, { to: "/blog" }, {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -6751,7 +6751,7 @@ _sfc_main$w.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/SiteHeader.vue");
   return _sfc_setup$w ? _sfc_setup$w(props, ctx) : void 0;
 };
-const __nuxt_component_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["ssrRender", _sfc_ssrRender$k], ["__scopeId", "data-v-af583a30"]]);
+const __nuxt_component_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["ssrRender", _sfc_ssrRender$k], ["__scopeId", "data-v-81959436"]]);
 const _sfc_main$v = /* @__PURE__ */ vue_cjs_prod.defineComponent({
   __name: "app",
   __ssrInlineRender: true,
