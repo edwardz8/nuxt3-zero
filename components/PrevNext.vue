@@ -1,8 +1,6 @@
-<!-- ./components/PrevNext.vue -->
-
 <script setup>
-// import icons
-import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/vue/outline/index.js";
+import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/vue/solid/index.js";
+
 // define prev and next props
 defineProps(["prev", "next"]);
 </script>

@@ -1,8 +1,7 @@
 import { v as vue_cjs_prod, s as serverRenderer, r as require$$0 } from '../renderer.mjs';
 import { hasProtocol, isEqual, withBase, withQuery, withLeadingSlash, joinURL, withoutTrailingSlash } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/ufo/dist/index.mjs';
-import { TagIcon, ExclamationIcon, BanIcon, InformationCircleIcon } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@heroicons/vue/solid/index.js';
+import { ArrowLeftIcon, ArrowRightIcon, TagIcon, ExclamationIcon, BanIcon, InformationCircleIcon } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@heroicons/vue/solid/index.js';
 import htmlTags from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/html-tags/index.js';
-import { ArrowLeftIcon, ArrowRightIcon } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@heroicons/vue/outline/index.js';
 import { u as useRuntimeConfig$1 } from '../nitro/nitro-prerenderer.mjs';
 import 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/h3/dist/index.mjs';
 import 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/unenv/runtime/mock/proxy.mjs';
@@ -5820,7 +5819,7 @@ const _sfc_main$D = {
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
       const _component_NuxtLink = __nuxt_component_0$4;
-      _push(`<ul${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "prev-next-cont" }, _attrs))} data-v-d48b1c42><li class="link-item prev" data-v-d48b1c42>`);
+      _push(`<ul${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "prev-next-cont" }, _attrs))} data-v-77945970><li class="link-item prev" data-v-77945970>`);
       if (__props.prev) {
         _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, {
           to: __props.prev._path
@@ -5828,7 +5827,7 @@ const _sfc_main$D = {
           default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
             if (_push2) {
               _push2(serverRenderer.exports.ssrRenderComponent(vue_cjs_prod.unref(ArrowLeftIcon), { class: "icon stroke" }, null, _parent2, _scopeId));
-              _push2(`<span data-v-d48b1c42${_scopeId}>${serverRenderer.exports.ssrInterpolate(__props.prev.title)}</span>`);
+              _push2(`<span data-v-77945970${_scopeId}>${serverRenderer.exports.ssrInterpolate(__props.prev.title)}</span>`);
             } else {
               return [
                 vue_cjs_prod.createVNode(vue_cjs_prod.unref(ArrowLeftIcon), { class: "icon stroke" }),
@@ -5841,14 +5840,14 @@ const _sfc_main$D = {
       } else {
         _push(`<!---->`);
       }
-      _push(`</li><li class="link-item next" data-v-d48b1c42>`);
+      _push(`</li><li class="link-item next" data-v-77945970>`);
       if (__props.next) {
         _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, {
           to: __props.next._path
         }, {
           default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
             if (_push2) {
-              _push2(`<span data-v-d48b1c42${_scopeId}>${serverRenderer.exports.ssrInterpolate(__props.next.title)}</span>`);
+              _push2(`<span data-v-77945970${_scopeId}>${serverRenderer.exports.ssrInterpolate(__props.next.title)}</span>`);
               _push2(serverRenderer.exports.ssrRenderComponent(vue_cjs_prod.unref(ArrowRightIcon), { class: "icon stroke" }, null, _parent2, _scopeId));
             } else {
               return [
@@ -5872,7 +5871,7 @@ _sfc_main$D.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/PrevNext.vue");
   return _sfc_setup$D ? _sfc_setup$D(props, ctx) : void 0;
 };
-const __nuxt_component_3 = /* @__PURE__ */ _export_sfc(_sfc_main$D, [["__scopeId", "data-v-d48b1c42"]]);
+const __nuxt_component_3 = /* @__PURE__ */ _export_sfc(_sfc_main$D, [["__scopeId", "data-v-77945970"]]);
 const ensureArray = (value) => Array.isArray(value) ? value : value ? [value] : [];
 const arrayParams = ["sort", "where", "only", "without"];
 const createQuery = (fetcher, intitialParams) => {
