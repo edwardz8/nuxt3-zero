@@ -2,7 +2,7 @@
 title: 'Props for Bills @ Rams 🏈 '
 description: 'Favorite Props for Bills @ Rams 🏈 '
 img: 'img/qb_8.JPG'
-tags: [Nuxt, Content, Learning, first]
+tags: [NFL, Props, Bet]
 ---
 
 

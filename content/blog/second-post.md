@@ -2,7 +2,7 @@
 title: 'Props for NFL Sunday Week 1'
 description: 'Favorite props for NFL Sunday Week 1'
 img: 'img/qb.JPG'
-tags: [Nuxt, Content, Learning, second]
+tags: [NHL, Futures, Bet]
 ---
 
 ## My second blog post

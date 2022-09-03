@@ -2,7 +2,7 @@
 title: 'This is my third article!'
 description: 'You finally got the point about Nuxt content'
 img: 'img/te_jump.JPG'
-tags: [Nuxt, Content, Learning]
+tags: [NFL, Bet]
 ---
 
 ## My third blog post
