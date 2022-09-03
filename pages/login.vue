@@ -1,4 +1,4 @@
-<!-- <script setup lang="ts">
+<script setup lang="ts">
 import { ref } from "@vue/reactivity";
 import { loginWithEmail } from "~/composables/useAuth";
 
@@ -29,12 +29,12 @@ const postLoginForm = async function () {
             <img
               class="mx-auto h-24 w-auto"
               src="/img/hockeyphone.png"
-              alt="full stack jack logo"
+              alt="roster.props logo"
             />
             <h1
               class="py-9 text-center text-5xl font-extrabold text-gray-900"
             >
-              Full Stack Jack
+              roster.props
             </h1>
           </div>
 
@@ -84,7 +84,7 @@ const postLoginForm = async function () {
                 type="email"
                 autocomplete="email"
                 required
-                class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-gray-500 focus:border-gray-500 focus:z-10 sm:text-sm"
                 placeholder="Email address"
               />
             </div>
@@ -98,7 +98,7 @@ const postLoginForm = async function () {
               type="password"
               autocomplete="current-password"
               required
-              class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+              class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-gray-500 focus:border-gray-500 focus:z-10 sm:text-sm"
               placeholder="Password"
             />
           </div>
@@ -109,7 +109,7 @@ const postLoginForm = async function () {
                 id="remember-me"
                 name="remember-me"
                 type="checkbox"
-                class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
+                class="h-4 w-4 text-gray-600 focus:ring-gray-500 border-gray-300 rounded"
               />
               <label
                 for="remember-me"
@@ -122,7 +122,7 @@ const postLoginForm = async function () {
             <div class="text-sm">
               <a
                 href="#"
-                class="font-medium text-indigo-600 hover:text-indigo-500"
+                class="font-medium text-gray-600 hover:text-gray-500"
               >
                 Forgot your password?
               </a>
@@ -132,11 +132,11 @@ const postLoginForm = async function () {
           <div>
             <button
               @click.prevent="postLoginForm"
-              class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
             >
               <span class="absolute left-0 inset-y-0 flex items-center pl-3">
                 <svg
-                  class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400"
+                  class="h-5 w-5 text-gray-500 group-hover:text-gray-400"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
@@ -156,4 +156,4 @@ const postLoginForm = async function () {
       </div>
     </div>
   </div>
-</template> -->
+</template>

@@ -22,5 +22,8 @@
     "bcrypt": "^5.0.1",
     "stripe": "^10.7.0",
     "uuid": "^8.3.2"
+  },
+  "prisma": {
+    "schema": "server/database/schema.prisma"
   }
 }

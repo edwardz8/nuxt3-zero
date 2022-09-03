@@ -1,4 +1,6 @@
 export type ISubscription = {
+    startDate: any
+    lastEventDate: number
     id?: number
     userId: number
     stripeId: string

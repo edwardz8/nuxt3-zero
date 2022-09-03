@@ -1,4 +1,4 @@
-<!-- <script setup lang="ts">
+<script setup lang="ts">
 import { ref } from "@vue/reactivity";
 import { registerWithEmail } from "~/composables/useAuth";
 
@@ -28,20 +28,14 @@ async function postRegisterForm() {
           <img
             class="mx-auto h-24 w-auto"
             src="/img/hockeyphone.png"
-            alt="full stack jack logo"
+            alt="roster.props logo"
           />
-          <h1
-            class="py-9 text-center text-5xl font-extrabold text-gray-900"
-          >
-            rosterbox
+          <h1 class="py-9 text-center text-5xl font-extrabold text-gray-900">
+            roster.props
           </h1>
         </div>
         <div>
-          <h2
-            class="text-center text-3xl font-extrabold mt-5 text-gray-900"
-          >
-            Sign Up
-          </h2>
+          <h2 class="text-center text-3xl font-extrabold mt-5 text-gray-900">Sign Up</h2>
         </div>
         <div
           v-if="response.hasErrors && errors"
@@ -151,4 +145,4 @@ async function postRegisterForm() {
       </div>
     </div>
   </div>
-</template> -->
+</template>
