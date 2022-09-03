@@ -5820,7 +5820,7 @@ const _sfc_main$D = {
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
       const _component_NuxtLink = __nuxt_component_0$4;
-      _push(`<ul${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "prev-next-cont" }, _attrs))} data-v-a2ea3416><li class="link-item prev" data-v-a2ea3416>`);
+      _push(`<ul${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "prev-next-cont" }, _attrs))} data-v-d48b1c42><li class="link-item prev" data-v-d48b1c42>`);
       if (__props.prev) {
         _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, {
           to: __props.prev._path
@@ -5828,7 +5828,7 @@ const _sfc_main$D = {
           default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
             if (_push2) {
               _push2(serverRenderer.exports.ssrRenderComponent(vue_cjs_prod.unref(ArrowLeftIcon), { class: "icon stroke" }, null, _parent2, _scopeId));
-              _push2(`<span data-v-a2ea3416${_scopeId}>${serverRenderer.exports.ssrInterpolate(__props.prev.title)}</span>`);
+              _push2(`<span data-v-d48b1c42${_scopeId}>${serverRenderer.exports.ssrInterpolate(__props.prev.title)}</span>`);
             } else {
               return [
                 vue_cjs_prod.createVNode(vue_cjs_prod.unref(ArrowLeftIcon), { class: "icon stroke" }),
@@ -5841,14 +5841,14 @@ const _sfc_main$D = {
       } else {
         _push(`<!---->`);
       }
-      _push(`</li><li class="link-item next" data-v-a2ea3416>`);
+      _push(`</li><li class="link-item next" data-v-d48b1c42>`);
       if (__props.next) {
         _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, {
           to: __props.next._path
         }, {
           default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
             if (_push2) {
-              _push2(`<span data-v-a2ea3416${_scopeId}>${serverRenderer.exports.ssrInterpolate(__props.next.title)}</span>`);
+              _push2(`<span data-v-d48b1c42${_scopeId}>${serverRenderer.exports.ssrInterpolate(__props.next.title)}</span>`);
               _push2(serverRenderer.exports.ssrRenderComponent(vue_cjs_prod.unref(ArrowRightIcon), { class: "icon stroke" }, null, _parent2, _scopeId));
             } else {
               return [
@@ -5872,7 +5872,7 @@ _sfc_main$D.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/PrevNext.vue");
   return _sfc_setup$D ? _sfc_setup$D(props, ctx) : void 0;
 };
-const __nuxt_component_3 = /* @__PURE__ */ _export_sfc(_sfc_main$D, [["__scopeId", "data-v-a2ea3416"]]);
+const __nuxt_component_3 = /* @__PURE__ */ _export_sfc(_sfc_main$D, [["__scopeId", "data-v-d48b1c42"]]);
 const ensureArray = (value) => Array.isArray(value) ? value : value ? [value] : [];
 const arrayParams = ["sort", "where", "only", "without"];
 const createQuery = (fetcher, intitialParams) => {
@@ -6047,11 +6047,11 @@ const _sfc_main$C = {
       const _component_NuxtLink = __nuxt_component_0$4;
       _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({
         class: ["tag-list", { active: expanded.value }]
-      }, _attrs))} data-v-47e99bc2><button class="cta w-icon" data-v-47e99bc2>`);
+      }, _attrs))} data-v-303e9351><button class="cta w-icon" data-v-303e9351>`);
       _push(serverRenderer.exports.ssrRenderComponent(vue_cjs_prod.unref(TagIcon), { class: "icon solid" }, null, _parent));
-      _push(`<span data-v-47e99bc2>Tags</span></button><ul class="${serverRenderer.exports.ssrRenderClass([{ expanded: expanded.value }, "article-tags"])}" data-v-47e99bc2><!--[-->`);
+      _push(`<span data-v-303e9351>Tags</span></button><ul class="${serverRenderer.exports.ssrRenderClass([{ expanded: expanded.value }, "article-tags"])}" data-v-303e9351><!--[-->`);
       serverRenderer.exports.ssrRenderList(articleTags, (tag, n) => {
-        _push(`<li class="tag" data-v-47e99bc2>`);
+        _push(`<li class="tag" data-v-303e9351>`);
         _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, {
           to: `/blog/tags/${tag}`,
           class: "font-semibold"
@@ -6079,7 +6079,7 @@ _sfc_main$C.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Tags.vue");
   return _sfc_setup$C ? _sfc_setup$C(props, ctx) : void 0;
 };
-const __nuxt_component_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$C, [["__scopeId", "data-v-47e99bc2"]]);
+const __nuxt_component_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$C, [["__scopeId", "data-v-303e9351"]]);
 const useAuthCookie = () => useCookie("auth_token");
 async function useUser() {
   const authCookie = useAuthCookie().value;
@@ -6870,7 +6870,7 @@ const _sfc_main$u = {
       const _component_Markdown = __nuxt_component_0;
       _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({
         class: ["info-box not-prose", [__props.type]]
-      }, _attrs))} data-v-9048ae04>`);
+      }, _attrs))} data-v-ad57dd5c>`);
       if (__props.type == "warning") {
         _push(serverRenderer.exports.ssrRenderComponent(vue_cjs_prod.unref(ExclamationIcon), { class: "icon solid" }, null, _parent));
       } else if (__props.type == "error") {
@@ -6878,9 +6878,9 @@ const _sfc_main$u = {
       } else {
         _push(serverRenderer.exports.ssrRenderComponent(vue_cjs_prod.unref(InformationCircleIcon), { class: "icon solid" }, null, _parent));
       }
-      _push(`<details data-v-9048ae04><summary data-v-9048ae04>`);
+      _push(`<details data-v-ad57dd5c><summary data-v-ad57dd5c>`);
       serverRenderer.exports.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
-      _push(`</summary><div class="details pt-2" data-v-9048ae04>`);
+      _push(`</summary><div class="details pt-2" data-v-ad57dd5c>`);
       _push(serverRenderer.exports.ssrRenderComponent(_component_Markdown, {
         use: _ctx.$slots.details,
         unwrap: "p"
@@ -6895,7 +6895,7 @@ _sfc_main$u.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/content/InfoBox.vue");
   return _sfc_setup$u ? _sfc_setup$u(props, ctx) : void 0;
 };
-const InfoBox = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["__scopeId", "data-v-9048ae04"]]);
+const InfoBox = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["__scopeId", "data-v-ad57dd5c"]]);
 const InfoBox$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": InfoBox

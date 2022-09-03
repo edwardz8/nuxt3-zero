@@ -1,6 +1,6 @@
 <script setup>
 // import icons from HeroIcons
-import { InformationCircleIcon, ExclamationIcon, BanIcon } from "@heroicons/vue/solid";
+import { InformationCircleIcon, ExclamationIcon, BanIcon } from "@heroicons/vue/solid/index.js";
 
 // define props in <script>
 const props = defineProps(["type"]);

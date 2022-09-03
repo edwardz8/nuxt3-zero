@@ -1,5 +1,5 @@
 <script setup>
-import { TagIcon } from "@heroicons/vue/solid";
+import { TagIcon } from "@heroicons/vue/solid/index.js";
 
 // tag list state
 const expanded = ref(false);
