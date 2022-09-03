@@ -6712,25 +6712,25 @@ _sfc_main$x.setup = (props, ctx) => {
 const _sfc_main$w = {};
 function _sfc_ssrRender$k(_ctx, _push, _parent, _attrs) {
   const _component_NuxtLink = __nuxt_component_0$4;
-  _push(`<header${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "site-header" }, _attrs))} data-v-81959436><div class="wrapper" data-v-81959436>`);
+  _push(`<header${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "site-header" }, _attrs))} data-v-78929a7c><div class="wrapper" data-v-78929a7c>`);
   _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, {
     to: "/",
     class: "no-underline"
   }, {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
-        _push2(`<figure class="site-logo" data-v-81959436${_scopeId}><h1 data-v-81959436${_scopeId}>rosterbox</h1></figure>`);
+        _push2(`<figure class="site-logo" data-v-78929a7c${_scopeId}><h1 data-v-78929a7c${_scopeId}>propz</h1></figure>`);
       } else {
         return [
           vue_cjs_prod.createVNode("figure", { class: "site-logo" }, [
-            vue_cjs_prod.createVNode("h1", null, "rosterbox")
+            vue_cjs_prod.createVNode("h1", null, "propz")
           ])
         ];
       }
     }),
     _: 1
   }, _parent));
-  _push(`<nav class="site-nav" data-v-81959436><ul class="links" data-v-81959436><li class="link" data-v-81959436>`);
+  _push(`<nav class="site-nav" data-v-78929a7c><ul class="links" data-v-78929a7c><li class="link" data-v-78929a7c>`);
   _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, { to: "/blog" }, {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -6751,7 +6751,7 @@ _sfc_main$w.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/SiteHeader.vue");
   return _sfc_setup$w ? _sfc_setup$w(props, ctx) : void 0;
 };
-const __nuxt_component_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["ssrRender", _sfc_ssrRender$k], ["__scopeId", "data-v-81959436"]]);
+const __nuxt_component_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["ssrRender", _sfc_ssrRender$k], ["__scopeId", "data-v-78929a7c"]]);
 const _sfc_main$v = /* @__PURE__ */ vue_cjs_prod.defineComponent({
   __name: "app",
   __ssrInlineRender: true,
@@ -7980,14 +7980,14 @@ const _slug_ = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
 const _sfc_main$2 = {};
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
   const _component_NuxtLink = __nuxt_component_0$4;
-  _push(`<main${serverRenderer.exports.ssrRenderAttrs(_attrs)} data-v-481d9e50><section class="hero-section" data-v-481d9e50><header data-v-481d9e50><h1 class="font-black text-6xl" data-v-481d9e50>Welcome to rosterbox</h1><span class="text-4xl" data-v-481d9e50>\u{1F3C8} \u{1F3D2} \u26BD</span><p data-v-481d9e50>browse the`);
+  _push(`<main${serverRenderer.exports.ssrRenderAttrs(_attrs)} data-v-1f13550c><section class="hero-section" data-v-1f13550c><header data-v-1f13550c><h1 class="font-black text-6xl" data-v-1f13550c>Welcome to rosterbox</h1><span class="text-4xl" data-v-1f13550c>\u{1F3C8} \u{1F3D2} \u26BD</span><p data-v-1f13550c>browse the`);
   _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, { to: "/blog" }, {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
-        _push2(` fantasy sports articles`);
+        _push2(` fantasy sports + betting articles`);
       } else {
         return [
-          vue_cjs_prod.createTextVNode(" fantasy sports articles")
+          vue_cjs_prod.createTextVNode(" fantasy sports + betting articles")
         ];
       }
     }),
@@ -8001,7 +8001,7 @@ _sfc_main$2.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/index.vue");
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
-const index = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-481d9e50"]]);
+const index = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-1f13550c"]]);
 const index$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": index

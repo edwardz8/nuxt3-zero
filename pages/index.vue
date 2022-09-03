@@ -5,7 +5,7 @@
       <header>
         <h1 class="font-black text-6xl">Welcome to rosterbox</h1>
         <span class="text-4xl">🏈 🏒 ⚽</span>
-        <p>browse the<NuxtLink to="/blog"> fantasy sports articles</NuxtLink></p>
+        <p>browse the<NuxtLink to="/blog"> fantasy sports + betting articles</NuxtLink></p>
       </header>
     </section>
   </main>

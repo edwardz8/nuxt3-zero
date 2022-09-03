@@ -5,7 +5,7 @@
     <div class="wrapper">
       <NuxtLink to="/" class="no-underline">
         <figure class="site-logo">
-          <h1>rosterbox</h1>
+          <h1>propz</h1>
         </figure>
       </NuxtLink>
 

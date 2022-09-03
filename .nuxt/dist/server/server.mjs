@@ -6271,7 +6271,7 @@ const meta$4 = {
   key: (route) => route.fullPath
 };
 const meta$3 = void 0;
-const index_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => "\n.hero-section[data-v-481d9e50] {\n    display: flex;\n    height: 100vh;\n    width: 100%;\n    align-items: center;\n    justify-content: center;\n    --tw-bg-opacity: 1;\n    background-color: rgb(248 250 252 / var(--tw-bg-opacity));\n    text-align: center;\n    --tw-text-opacity: 1;\n    color: rgb(51 65 85 / var(--tw-text-opacity))\n}\n")();
+const index_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => "\n.hero-section[data-v-1f13550c] {\n    display: flex;\n    height: 100vh;\n    width: 100%;\n    align-items: center;\n    justify-content: center;\n    --tw-bg-opacity: 1;\n    background-color: rgb(248 250 252 / var(--tw-bg-opacity));\n    text-align: center;\n    --tw-text-opacity: 1;\n    color: rgb(51 65 85 / var(--tw-text-opacity))\n}\n")();
 const meta$2 = void 0;
 const meta$1 = void 0;
 const meta = void 0;
@@ -6722,29 +6722,29 @@ _sfc_main$x.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/nuxt/dist/app/components/nuxt-root.vue");
   return _sfc_setup$x ? _sfc_setup$x(props, ctx) : void 0;
 };
-const SiteHeader_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => "\n.site-header[data-v-81959436] {\n\n    position: -webkit-sticky;\n\n    position: sticky;\n\n    top: 0px;\n\n    z-index: 20;\n\n    width: 100%;\n\n    border-bottom-width: 2px;\n\n    border-color: rgb(255 255 255 / var(--tw-border-opacity));\n\n    --tw-border-opacity: 0.3;\n\n    background-color: rgb(241 245 249 / var(--tw-bg-opacity));\n\n    --tw-bg-opacity: 0.4;\n\n    padding: 1rem;\n\n    --tw-backdrop-blur: blur(16px);\n\n    -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n\n            backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)\n}\n.site-header > .wrapper[data-v-81959436] {\n\n    margin: auto;\n\n    display: flex;\n\n    max-width: 72rem;\n\n    align-items: center;\n\n    justify-content: space-between\n}\n.site-logo[data-v-81959436] {\n\n    font-size: 1.125rem;\n\n    line-height: 1.75rem;\n\n    font-weight: 900\n}\n")();
+const SiteHeader_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => "\n.site-header[data-v-78929a7c] {\n\n    position: -webkit-sticky;\n\n    position: sticky;\n\n    top: 0px;\n\n    z-index: 20;\n\n    width: 100%;\n\n    border-bottom-width: 2px;\n\n    border-color: rgb(255 255 255 / var(--tw-border-opacity));\n\n    --tw-border-opacity: 0.3;\n\n    background-color: rgb(241 245 249 / var(--tw-bg-opacity));\n\n    --tw-bg-opacity: 0.4;\n\n    padding: 1rem;\n\n    --tw-backdrop-blur: blur(16px);\n\n    -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);\n\n            backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)\n}\n.site-header > .wrapper[data-v-78929a7c] {\n\n    margin: auto;\n\n    display: flex;\n\n    max-width: 72rem;\n\n    align-items: center;\n\n    justify-content: space-between\n}\n.site-logo[data-v-78929a7c] {\n\n    font-size: 1.125rem;\n\n    line-height: 1.75rem;\n\n    font-weight: 900\n}\n")();
 const _sfc_main$w = {};
 function _sfc_ssrRender$k(_ctx, _push, _parent, _attrs) {
   const _component_NuxtLink = __nuxt_component_0$4;
-  _push(`<header${ssrRenderAttrs(mergeProps({ class: "site-header" }, _attrs))} data-v-81959436><div class="wrapper" data-v-81959436>`);
+  _push(`<header${ssrRenderAttrs(mergeProps({ class: "site-header" }, _attrs))} data-v-78929a7c><div class="wrapper" data-v-78929a7c>`);
   _push(ssrRenderComponent(_component_NuxtLink, {
     to: "/",
     class: "no-underline"
   }, {
     default: withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
-        _push2(`<figure class="site-logo" data-v-81959436${_scopeId}><h1 data-v-81959436${_scopeId}>rosterbox</h1></figure>`);
+        _push2(`<figure class="site-logo" data-v-78929a7c${_scopeId}><h1 data-v-78929a7c${_scopeId}>propz</h1></figure>`);
       } else {
         return [
           createVNode("figure", { class: "site-logo" }, [
-            createVNode("h1", null, "rosterbox")
+            createVNode("h1", null, "propz")
           ])
         ];
       }
     }),
     _: 1
   }, _parent));
-  _push(`<nav class="site-nav" data-v-81959436><ul class="links" data-v-81959436><li class="link" data-v-81959436>`);
+  _push(`<nav class="site-nav" data-v-78929a7c><ul class="links" data-v-78929a7c><li class="link" data-v-78929a7c>`);
   _push(ssrRenderComponent(_component_NuxtLink, { to: "/blog" }, {
     default: withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -6765,7 +6765,7 @@ _sfc_main$w.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/SiteHeader.vue");
   return _sfc_setup$w ? _sfc_setup$w(props, ctx) : void 0;
 };
-const __nuxt_component_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["ssrRender", _sfc_ssrRender$k], ["__scopeId", "data-v-81959436"]]);
+const __nuxt_component_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["ssrRender", _sfc_ssrRender$k], ["__scopeId", "data-v-78929a7c"]]);
 const _sfc_main$v = /* @__PURE__ */ defineComponent({
   __name: "app",
   __ssrInlineRender: true,
@@ -7996,14 +7996,14 @@ const _slug_ = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
 const _sfc_main$2 = {};
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
   const _component_NuxtLink = __nuxt_component_0$4;
-  _push(`<main${ssrRenderAttrs(_attrs)} data-v-481d9e50><section class="hero-section" data-v-481d9e50><header data-v-481d9e50><h1 class="font-black text-6xl" data-v-481d9e50>Welcome to rosterbox</h1><span class="text-4xl" data-v-481d9e50>\u{1F3C8} \u{1F3D2} \u26BD</span><p data-v-481d9e50>browse the`);
+  _push(`<main${ssrRenderAttrs(_attrs)} data-v-1f13550c><section class="hero-section" data-v-1f13550c><header data-v-1f13550c><h1 class="font-black text-6xl" data-v-1f13550c>Welcome to rosterbox</h1><span class="text-4xl" data-v-1f13550c>\u{1F3C8} \u{1F3D2} \u26BD</span><p data-v-1f13550c>browse the`);
   _push(ssrRenderComponent(_component_NuxtLink, { to: "/blog" }, {
     default: withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
-        _push2(` fantasy sports articles`);
+        _push2(` fantasy sports + betting articles`);
       } else {
         return [
-          createTextVNode(" fantasy sports articles")
+          createTextVNode(" fantasy sports + betting articles")
         ];
       }
     }),
@@ -8017,7 +8017,7 @@ _sfc_main$2.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/index.vue");
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
-const index = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-481d9e50"]]);
+const index = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-1f13550c"]]);
 const index$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": index
