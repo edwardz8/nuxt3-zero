@@ -6047,11 +6047,11 @@ const _sfc_main$C = {
       const _component_NuxtLink = __nuxt_component_0$4;
       _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({
         class: ["tag-list", { active: expanded.value }]
-      }, _attrs))} data-v-ca42e06e><button class="cta w-icon" data-v-ca42e06e>`);
+      }, _attrs))} data-v-55a8f4e7><button class="cta w-icon" data-v-55a8f4e7>`);
       _push(serverRenderer.exports.ssrRenderComponent(vue_cjs_prod.unref(TagIcon), { class: "icon solid" }, null, _parent));
-      _push(`<span data-v-ca42e06e>Tags</span></button><ul class="${serverRenderer.exports.ssrRenderClass([{ expanded: expanded.value }, "article-tags"])}" data-v-ca42e06e><!--[-->`);
+      _push(`<span data-v-55a8f4e7>Tags</span></button><ul class="${serverRenderer.exports.ssrRenderClass([{ expanded: expanded.value }, "article-tags"])}" data-v-55a8f4e7><!--[-->`);
       serverRenderer.exports.ssrRenderList(articleTags, (tag, n) => {
-        _push(`<li class="tag" data-v-ca42e06e>`);
+        _push(`<li class="tag" data-v-55a8f4e7>`);
         _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, {
           to: `/blog/tags/${tag}`,
           class: "font-semibold"
@@ -6079,7 +6079,7 @@ _sfc_main$C.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Tags.vue");
   return _sfc_setup$C ? _sfc_setup$C(props, ctx) : void 0;
 };
-const __nuxt_component_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$C, [["__scopeId", "data-v-ca42e06e"]]);
+const __nuxt_component_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$C, [["__scopeId", "data-v-55a8f4e7"]]);
 const useAuthCookie = () => useCookie("auth_token");
 async function useUser() {
   const authCookie = useAuthCookie().value;
@@ -6870,7 +6870,7 @@ const _sfc_main$u = {
       const _component_Markdown = __nuxt_component_0;
       _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({
         class: ["info-box not-prose", [__props.type]]
-      }, _attrs))} data-v-4d07add6>`);
+      }, _attrs))} data-v-6963ff7a>`);
       if (__props.type == "warning") {
         _push(serverRenderer.exports.ssrRenderComponent(vue_cjs_prod.unref(ExclamationIcon), { class: "icon solid" }, null, _parent));
       } else if (__props.type == "error") {
@@ -6878,9 +6878,9 @@ const _sfc_main$u = {
       } else {
         _push(serverRenderer.exports.ssrRenderComponent(vue_cjs_prod.unref(InformationCircleIcon), { class: "icon solid" }, null, _parent));
       }
-      _push(`<details data-v-4d07add6><summary data-v-4d07add6>`);
+      _push(`<details data-v-6963ff7a><summary data-v-6963ff7a>`);
       serverRenderer.exports.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
-      _push(`</summary><div class="details pt-2" data-v-4d07add6>`);
+      _push(`</summary><div class="details pt-2" data-v-6963ff7a>`);
       _push(serverRenderer.exports.ssrRenderComponent(_component_Markdown, {
         use: _ctx.$slots.details,
         unwrap: "p"
@@ -6895,7 +6895,7 @@ _sfc_main$u.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/content/InfoBox.vue");
   return _sfc_setup$u ? _sfc_setup$u(props, ctx) : void 0;
 };
-const InfoBox = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["__scopeId", "data-v-4d07add6"]]);
+const InfoBox = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["__scopeId", "data-v-6963ff7a"]]);
 const InfoBox$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": InfoBox
