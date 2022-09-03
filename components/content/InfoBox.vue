@@ -1,5 +1,3 @@
-<!-- ./components/content/InfoBox.vue -->
-
 <script setup>
 // import icons from HeroIcons
 import { InformationCircleIcon, ExclamationIcon, BanIcon } from "@heroicons/vue/solid/index.js";

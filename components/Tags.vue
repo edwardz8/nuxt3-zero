@@ -1,7 +1,4 @@
-<!-- ./components/Tags.vue -->
-
 <script setup>
-// import icon
 import { TagIcon } from "@heroicons/vue/solid/index.js";
 
 // tag list state
