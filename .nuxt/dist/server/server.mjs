@@ -5772,7 +5772,7 @@ const ContentRenderer = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.def
   __proto__: null,
   "default": __nuxt_component_1$1
 }, Symbol.toStringTag, { value: "Module" }));
-const PrevNext_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => "\n.prev-next-cont[data-v-77945970] {\n\n    display: flex;\n\n    justify-content: space-between;\n\n    gap: 1rem;\n\n    border-radius: 0.5rem;\n\n    border-width: 1px;\n\n    --tw-border-opacity: 1;\n\n    border-color: rgb(226 232 240 / var(--tw-border-opacity));\n\n    padding: 1rem\n}\n.link-item a[data-v-77945970] {\n\n    display: flex;\n\n    gap: 0.5rem\n}\n")();
+const PrevNext_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => "\n.prev-next-cont[data-v-4d02dcb6] {\n\n    display: flex;\n\n    justify-content: space-between;\n\n    gap: 1rem;\n\n    border-radius: 0.5rem;\n\n    border-width: 1px;\n\n    --tw-border-opacity: 1;\n\n    border-color: rgb(226 232 240 / var(--tw-border-opacity));\n\n    padding: 1rem\n}\n.link-item a[data-v-4d02dcb6] {\n\n    display: flex;\n\n    gap: 0.5rem\n}\n")();
 const _sfc_main$D = {
   __name: "PrevNext",
   __ssrInlineRender: true,
@@ -5780,7 +5780,7 @@ const _sfc_main$D = {
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
       const _component_NuxtLink = __nuxt_component_0$4;
-      _push(`<ul${ssrRenderAttrs(mergeProps({ class: "prev-next-cont" }, _attrs))} data-v-77945970><li class="link-item prev" data-v-77945970>`);
+      _push(`<ul${ssrRenderAttrs(mergeProps({ class: "prev-next-cont" }, _attrs))} data-v-4d02dcb6><li class="link-item prev" data-v-4d02dcb6>`);
       if (__props.prev) {
         _push(ssrRenderComponent(_component_NuxtLink, {
           to: __props.prev._path
@@ -5788,7 +5788,7 @@ const _sfc_main$D = {
           default: withCtx((_, _push2, _parent2, _scopeId) => {
             if (_push2) {
               _push2(ssrRenderComponent(unref(ArrowLeftIcon), { class: "icon stroke" }, null, _parent2, _scopeId));
-              _push2(`<span data-v-77945970${_scopeId}>${ssrInterpolate(__props.prev.title)}</span>`);
+              _push2(`<span data-v-4d02dcb6${_scopeId}>${ssrInterpolate(__props.prev.title)}</span>`);
             } else {
               return [
                 createVNode(unref(ArrowLeftIcon), { class: "icon stroke" }),
@@ -5801,14 +5801,14 @@ const _sfc_main$D = {
       } else {
         _push(`<!---->`);
       }
-      _push(`</li><li class="link-item next" data-v-77945970>`);
+      _push(`</li><li class="link-item next" data-v-4d02dcb6>`);
       if (__props.next) {
         _push(ssrRenderComponent(_component_NuxtLink, {
           to: __props.next._path
         }, {
           default: withCtx((_, _push2, _parent2, _scopeId) => {
             if (_push2) {
-              _push2(`<span data-v-77945970${_scopeId}>${ssrInterpolate(__props.next.title)}</span>`);
+              _push2(`<span data-v-4d02dcb6${_scopeId}>${ssrInterpolate(__props.next.title)}</span>`);
               _push2(ssrRenderComponent(unref(ArrowRightIcon), { class: "icon stroke" }, null, _parent2, _scopeId));
             } else {
               return [
@@ -5832,7 +5832,7 @@ _sfc_main$D.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/PrevNext.vue");
   return _sfc_setup$D ? _sfc_setup$D(props, ctx) : void 0;
 };
-const __nuxt_component_3 = /* @__PURE__ */ _export_sfc(_sfc_main$D, [["__scopeId", "data-v-77945970"]]);
+const __nuxt_component_3 = /* @__PURE__ */ _export_sfc(_sfc_main$D, [["__scopeId", "data-v-4d02dcb6"]]);
 const ensureArray = (value) => Array.isArray(value) ? value : value ? [value] : [];
 const arrayParams = ["sort", "where", "only", "without"];
 const createQuery = (fetcher, intitialParams) => {
