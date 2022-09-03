@@ -9,14 +9,7 @@ tags: [NFL, Bet]
 
 Welcome to my third blog post using [content v2 module](https://content.nuxtjs.org/)
 
-> Hey there! 👋🏾  This is my third blog post learning nuxt content.
-
-I'm currently building it using the following:
-
-- Nuxt.js
-- Nuxt Content module
-- TailwindCSS
-  - TailwindCSS typography
+> Hey there! 👋🏾  This is my third blog post
 
 ## Nuxt.js
 
