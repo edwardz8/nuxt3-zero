@@ -7665,13 +7665,13 @@ const _sfc_main$4 = {
     const filter = vue_cjs_prod.ref(tags == null ? void 0 : tags.split(","));
     useHead({
       title: "All articles",
-      meta: [{ name: "description", content: "Here's a list of all my great articles" }]
+      meta: [{ name: "description", content: "All articles" }]
     });
     return (_ctx, _push, _parent, _attrs) => {
       const _component_Tags = __nuxt_component_0$2;
       const _component_ContentList = __nuxt_component_1;
       const _component_NuxtLink = __nuxt_component_0$4;
-      _push(`<main${serverRenderer.exports.ssrRenderAttrs(_attrs)}><header class="page-heading"><div class="wrapper"><h1 class="text-5xl font-extrabold">All articles</h1><p class="font-medium text-lg">Here&#39;s a list of all my great articles</p></div></header><section class="page-section">`);
+      _push(`<main${serverRenderer.exports.ssrRenderAttrs(_attrs)}><header class="page-heading"><div class="wrapper"><h1 class="text-5xl font-extrabold">All articles</h1><p class="font-medium text-lg">List of all articles</p></div></header><section class="page-section">`);
       _push(serverRenderer.exports.ssrRenderComponent(_component_Tags, null, null, _parent));
       _push(serverRenderer.exports.ssrRenderComponent(_component_ContentList, {
         path: "/blog",
@@ -7809,13 +7809,13 @@ const _sfc_main$3 = {
     console.log({ filter });
     useHead({
       title: `All articles with ${slug}`,
-      meta: [{ name: "description", content: "Here's a list of all my great articles" }]
+      meta: [{ name: "description", content: "Featured articles" }]
     });
     return (_ctx, _push, _parent, _attrs) => {
       const _component_Tags = __nuxt_component_0$2;
       const _component_ContentList = __nuxt_component_1;
       const _component_NuxtLink = __nuxt_component_0$4;
-      _push(`<main${serverRenderer.exports.ssrRenderAttrs(_attrs)}><header class="page-heading"><div class="wrapper"><h1 class="text-5xl font-extrabold">All articles with &quot;${serverRenderer.exports.ssrInterpolate(vue_cjs_prod.unref(slug))}&quot;</h1><p class="font-medium text-lg">Here&#39;s a list of all my great articles</p></div></header><section class="page-section">`);
+      _push(`<main${serverRenderer.exports.ssrRenderAttrs(_attrs)}><header class="page-heading"><div class="wrapper"><h1 class="text-5xl font-extrabold">All articles with &quot;${serverRenderer.exports.ssrInterpolate(vue_cjs_prod.unref(slug))}&quot;</h1><p class="font-medium text-lg">List of articles</p></div></header><section class="page-section">`);
       _push(serverRenderer.exports.ssrRenderComponent(_component_Tags, null, null, _parent));
       _push(serverRenderer.exports.ssrRenderComponent(_component_ContentList, {
         path: "/blog",
