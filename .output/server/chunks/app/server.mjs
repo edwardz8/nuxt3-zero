@@ -1,6 +1,6 @@
 import { v as vue_cjs_prod, s as serverRenderer, r as require$$0 } from '../handlers/renderer.mjs';
 import { hasProtocol, isEqual, withBase, withQuery, withLeadingSlash, joinURL, withoutTrailingSlash } from 'ufo';
-import { TagIcon, ExclamationIcon, BanIcon, InformationCircleIcon } from '@heroicons/vue/solid/index.js';
+import { TagIcon, ExclamationIcon, BanIcon, InformationCircleIcon } from '@heroicons/vue/solid';
 import htmlTags from 'html-tags';
 import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/vue/outline';
 import { u as useRuntimeConfig$1 } from '../nitro/node-server.mjs';
@@ -6052,11 +6052,11 @@ const _sfc_main$C = {
       const _component_NuxtLink = __nuxt_component_0$4;
       _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({
         class: ["tag-list", { active: expanded.value }]
-      }, _attrs))} data-v-303e9351><button class="cta w-icon" data-v-303e9351>`);
+      }, _attrs))} data-v-47e99bc2><button class="cta w-icon" data-v-47e99bc2>`);
       _push(serverRenderer.exports.ssrRenderComponent(vue_cjs_prod.unref(TagIcon), { class: "icon solid" }, null, _parent));
-      _push(`<span data-v-303e9351>Tags</span></button><ul class="${serverRenderer.exports.ssrRenderClass([{ expanded: expanded.value }, "article-tags"])}" data-v-303e9351><!--[-->`);
+      _push(`<span data-v-47e99bc2>Tags</span></button><ul class="${serverRenderer.exports.ssrRenderClass([{ expanded: expanded.value }, "article-tags"])}" data-v-47e99bc2><!--[-->`);
       serverRenderer.exports.ssrRenderList(articleTags, (tag, n) => {
-        _push(`<li class="tag" data-v-303e9351>`);
+        _push(`<li class="tag" data-v-47e99bc2>`);
         _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, {
           to: `/blog/tags/${tag}`,
           class: "font-semibold"
@@ -6084,7 +6084,7 @@ _sfc_main$C.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Tags.vue");
   return _sfc_setup$C ? _sfc_setup$C(props, ctx) : void 0;
 };
-const __nuxt_component_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$C, [["__scopeId", "data-v-303e9351"]]);
+const __nuxt_component_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$C, [["__scopeId", "data-v-47e99bc2"]]);
 const useAuthCookie = () => useCookie("auth_token");
 async function useUser() {
   const authCookie = useAuthCookie().value;
@@ -6875,7 +6875,7 @@ const _sfc_main$u = {
       const _component_Markdown = __nuxt_component_0;
       _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({
         class: ["info-box not-prose", [__props.type]]
-      }, _attrs))} data-v-ad57dd5c>`);
+      }, _attrs))} data-v-9048ae04>`);
       if (__props.type == "warning") {
         _push(serverRenderer.exports.ssrRenderComponent(vue_cjs_prod.unref(ExclamationIcon), { class: "icon solid" }, null, _parent));
       } else if (__props.type == "error") {
@@ -6883,9 +6883,9 @@ const _sfc_main$u = {
       } else {
         _push(serverRenderer.exports.ssrRenderComponent(vue_cjs_prod.unref(InformationCircleIcon), { class: "icon solid" }, null, _parent));
       }
-      _push(`<details data-v-ad57dd5c><summary data-v-ad57dd5c>`);
+      _push(`<details data-v-9048ae04><summary data-v-9048ae04>`);
       serverRenderer.exports.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
-      _push(`</summary><div class="details pt-2" data-v-ad57dd5c>`);
+      _push(`</summary><div class="details pt-2" data-v-9048ae04>`);
       _push(serverRenderer.exports.ssrRenderComponent(_component_Markdown, {
         use: _ctx.$slots.details,
         unwrap: "p"
@@ -6900,7 +6900,7 @@ _sfc_main$u.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/content/InfoBox.vue");
   return _sfc_setup$u ? _sfc_setup$u(props, ctx) : void 0;
 };
-const InfoBox = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["__scopeId", "data-v-ad57dd5c"]]);
+const InfoBox = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["__scopeId", "data-v-9048ae04"]]);
 const InfoBox$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": InfoBox
