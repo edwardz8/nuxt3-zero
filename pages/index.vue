@@ -1,5 +1,12 @@
 <template>
   <main>
+    <Head>
+      <Script
+        defer
+        data-domain="propz.vercel.app"
+        src="https://plausible.io/js/plausible.js"
+      />
+    </Head>
     <section class="hero-section">
       <header>
         <h1 class="font-black text-6xl">Welcome to roster.props</h1>

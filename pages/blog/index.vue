@@ -1,5 +1,3 @@
-<!-- ./pages/blog/index.vue -->
-
 <script setup>
 definePageMeta({
   key: (route) => route.fullPath,
@@ -18,8 +16,16 @@ useHead({
   meta: [{ name: "description", content: "All articles" }],
 });
 </script>
+
 <template>
   <main>
+    <Head>
+      <Script
+        defer
+        data-domain="propz.vercel.app"
+        src="https://plausible.io/js/plausible.js"
+      />
+    </Head>
     <header class="page-heading">
       <div class="wrapper">
         <h1 class="text-5xl font-extrabold">All articles</h1>
@@ -50,13 +56,19 @@ useHead({
               <NuxtLink :to="article._path">
                 <div class="wrapper">
                   <div class="img-cont w-32 shrink-0">
-                    <img :src="`/${article.img}`" :alt="article.title" class="rounded-lg max-h-[8rem]" />
+                    <img
+                      :src="`/${article.img}`"
+                      :alt="article.title"
+                      class="rounded-lg max-h-[8rem]"
+                    />
                   </div>
                   <header>
                     <h1 class="text-2xl font-semibold">{{ article.title }}</h1>
                     <p>{{ article.description }}</p>
                     <ul class="article-tags">
-                      <li class="tag !py-0.5" v-for="(tag, n) in article.tags" :key="n">{{ tag }}</li>
+                      <li class="tag !py-0.5" v-for="(tag, n) in article.tags" :key="n">
+                        {{ tag }}
+                      </li>
                     </ul>
                   </header>
                 </div>

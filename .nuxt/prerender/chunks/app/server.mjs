@@ -7728,10 +7728,33 @@ const _sfc_main$4 = {
       meta: [{ name: "description", content: "All articles" }]
     });
     return (_ctx, _push, _parent, _attrs) => {
+      const _component_Head = vue_cjs_prod.resolveComponent("Head");
+      const _component_Script = vue_cjs_prod.resolveComponent("Script");
       const _component_Tags = __nuxt_component_0$2;
       const _component_ContentList = __nuxt_component_1;
       const _component_NuxtLink = __nuxt_component_0$4;
-      _push(`<main${serverRenderer.exports.ssrRenderAttrs(_attrs)}><header class="page-heading"><div class="wrapper"><h1 class="text-5xl font-extrabold">All articles</h1><p class="font-medium text-lg">List of all articles</p></div></header><section class="page-section">`);
+      _push(`<main${serverRenderer.exports.ssrRenderAttrs(_attrs)}>`);
+      _push(serverRenderer.exports.ssrRenderComponent(_component_Head, null, {
+        default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
+          if (_push2) {
+            _push2(serverRenderer.exports.ssrRenderComponent(_component_Script, {
+              defer: "",
+              "data-domain": "propz.vercel.app",
+              src: "https://plausible.io/js/plausible.js"
+            }, null, _parent2, _scopeId));
+          } else {
+            return [
+              vue_cjs_prod.createVNode(_component_Script, {
+                defer: "",
+                "data-domain": "propz.vercel.app",
+                src: "https://plausible.io/js/plausible.js"
+              })
+            ];
+          }
+        }),
+        _: 1
+      }, _parent));
+      _push(`<header class="page-heading"><div class="wrapper"><h1 class="text-5xl font-extrabold">All articles</h1><p class="font-medium text-lg">List of all articles</p></div></header><section class="page-section">`);
       _push(serverRenderer.exports.ssrRenderComponent(_component_Tags, null, null, _parent));
       _push(serverRenderer.exports.ssrRenderComponent(_component_ContentList, {
         path: "/blog",
@@ -8040,8 +8063,31 @@ const _slug_ = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
 }, Symbol.toStringTag, { value: "Module" }));
 const _sfc_main$2 = {};
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  const _component_Head = vue_cjs_prod.resolveComponent("Head");
+  const _component_Script = vue_cjs_prod.resolveComponent("Script");
   const _component_NuxtLink = __nuxt_component_0$4;
-  _push(`<main${serverRenderer.exports.ssrRenderAttrs(_attrs)} data-v-49444460><section class="hero-section" data-v-49444460><header data-v-49444460><h1 class="font-black text-6xl" data-v-49444460>Welcome to roster.props</h1><span class="text-4xl" data-v-49444460>\u{1F3C8} \u{1F3D2} \u26BD</span><p data-v-49444460>browse the`);
+  _push(`<main${serverRenderer.exports.ssrRenderAttrs(_attrs)} data-v-3a9169ee>`);
+  _push(serverRenderer.exports.ssrRenderComponent(_component_Head, null, {
+    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(serverRenderer.exports.ssrRenderComponent(_component_Script, {
+          defer: "",
+          "data-domain": "propz.vercel.app",
+          src: "https://plausible.io/js/plausible.js"
+        }, null, _parent2, _scopeId));
+      } else {
+        return [
+          vue_cjs_prod.createVNode(_component_Script, {
+            defer: "",
+            "data-domain": "propz.vercel.app",
+            src: "https://plausible.io/js/plausible.js"
+          })
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(`<section class="hero-section" data-v-3a9169ee><header data-v-3a9169ee><h1 class="font-black text-6xl" data-v-3a9169ee>Welcome to roster.props</h1><span class="text-4xl" data-v-3a9169ee>\u{1F3C8} \u{1F3D2} \u26BD</span><p data-v-3a9169ee>browse the`);
   _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, { to: "/blog" }, {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -8062,7 +8108,7 @@ _sfc_main$2.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/index.vue");
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
-const index = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-49444460"]]);
+const index = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-3a9169ee"]]);
 const index$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": index
