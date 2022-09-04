@@ -7,7 +7,10 @@ const { data } = await useAsyncData(`content-${path}`, async () => {
   let article = queryContent().where({ _path: path }).findOne();
   // get the surround information,
   // which is an array of documeents that come before and after the current document
-  let surround = queryContent().only(["_path", "title", "description"]).sort({ date: 1 }).findSurround(path);
+  let surround = queryContent()
+    .only(["_path", "title", "description"])
+    .sort({ date: 1 })
+    .findSurround(path);
 
   return {
     article: await article,
@@ -34,9 +37,20 @@ useHead({
 </script>
 <template>
   <main id="main" class="article-main">
+    <Head>
+      <Script
+        defer
+        data-domain="propz.vercel.app"
+        src="https://plausible.io/js/plausible.js"
+      />
+    </Head>
     <header v-if="data.article" class="article-header">
       <div class="img-cont h-72 mb-12">
-        <img :src="`/${data.article.img}`" :alt="data.article.title" class=" rounded-2xl" />
+        <img
+          :src="`/${data.article.img}`"
+          :alt="data.article.title"
+          class="rounded-2xl"
+        />
       </div>
       <h1 class="heading">{{ data.article.title }}</h1>
       <p class="supporting">{{ data.article.description }}</p>
