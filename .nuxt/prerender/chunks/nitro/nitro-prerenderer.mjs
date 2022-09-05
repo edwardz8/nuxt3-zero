@@ -3742,6 +3742,7 @@ function mergeLines(line1, line2) {
   return mergedTokens;
 }
 
+const _lazy_410995 = () => import('../subscribe.mjs');
 const _lazy_423706 = () => import('../register.mjs');
 const _lazy_171314 = () => import('../logout.mjs');
 const _lazy_143138 = () => import('../login.mjs');
@@ -3749,6 +3750,7 @@ const _lazy_227471 = () => import('../getByAuthToken.mjs');
 const _lazy_184848 = () => import('../renderer.mjs').then(function (n) { return n.b; });
 
 const handlers = [
+  { route: '/api/subscribe', handler: _lazy_410995, lazy: true, middleware: false, method: undefined },
   { route: '/api/auth/register', handler: _lazy_423706, lazy: true, middleware: false, method: undefined },
   { route: '/api/auth/logout', handler: _lazy_171314, lazy: true, middleware: false, method: undefined },
   { route: '/api/auth/login', handler: _lazy_143138, lazy: true, middleware: false, method: undefined },

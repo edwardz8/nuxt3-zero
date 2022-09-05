@@ -4346,7 +4346,7 @@ const Components = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePr
   Html,
   Body
 }, Symbol.toStringTag, { value: "Module" }));
-const metaConfig = { "globalMeta": { "charset": "utf-8", "viewport": "width=device-width, initial-scale=1", "meta": [], "link": [], "style": [], "script": [] } };
+const metaConfig = { "globalMeta": { "charset": "utf-8", "viewport": "width=device-width, initial-scale=1", "meta": [], "link": [], "style": [], "script": [], "title": "rosterprops" } };
 const metaMixin = {
   created() {
     const instance = vue_cjs_prod.getCurrentInstance();
@@ -4436,7 +4436,7 @@ const _export_sfc = (sfc, props) => {
   }
   return target;
 };
-const _sfc_main$H = {
+const _sfc_main$I = {
   __name: "Toc",
   __ssrInlineRender: true,
   props: ["links"],
@@ -4462,13 +4462,13 @@ const _sfc_main$H = {
     };
   }
 };
-const _sfc_setup$H = _sfc_main$H.setup;
-_sfc_main$H.setup = (props, ctx) => {
+const _sfc_setup$I = _sfc_main$I.setup;
+_sfc_main$I.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Toc.vue");
-  return _sfc_setup$H ? _sfc_setup$H(props, ctx) : void 0;
+  return _sfc_setup$I ? _sfc_setup$I(props, ctx) : void 0;
 };
-const __nuxt_component_0$3 = /* @__PURE__ */ _export_sfc(_sfc_main$H, [["__scopeId", "data-v-6f21b509"]]);
+const __nuxt_component_0$3 = /* @__PURE__ */ _export_sfc(_sfc_main$I, [["__scopeId", "data-v-6f21b509"]]);
 function isUppercase(char = "") {
   return char.toUpperCase() === char;
 }
@@ -5817,6 +5817,24 @@ const ContentRenderer = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.def
   __proto__: null,
   "default": __nuxt_component_1$1
 }, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$H = {
+  __name: "Form",
+  __ssrInlineRender: true,
+  setup(__props) {
+    vue_cjs_prod.ref([]);
+    useRouter();
+    const userEmail = vue_cjs_prod.ref("");
+    return (_ctx, _push, _parent, _attrs) => {
+      _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-gray-100 mb-4 mt-4" }, _attrs))}><div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8"><h2 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl"><span class="block">Want exclusive content?</span><span class="block text-blue-600">Sign up for our free newsletter</span></h2><div class="mt-8 flex lg:mt-0 lg:flex-shrink-0"><form class="ml-2 inline-flex rounded-md shadow"><label for="email" class="hidden leading-7 text-sm text-gray-600">email</label><input type="email" id="email"${serverRenderer.exports.ssrRenderAttr("value", userEmail.value)} name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-gray-400 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"><button class="inline-flex ml-2 items-center justify-center rounded-md border border-transparent bg-gray-600 px-5 py-3 text-base font-medium text-white hover:bg-blue-900"> Subscribe </button></form></div></div></div>`);
+    };
+  }
+};
+const _sfc_setup$H = _sfc_main$H.setup;
+_sfc_main$H.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Form.vue");
+  return _sfc_setup$H ? _sfc_setup$H(props, ctx) : void 0;
+};
 const _sfc_main$G = {
   __name: "PrevNext",
   __ssrInlineRender: true,
@@ -5876,7 +5894,7 @@ _sfc_main$G.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/PrevNext.vue");
   return _sfc_setup$G ? _sfc_setup$G(props, ctx) : void 0;
 };
-const __nuxt_component_3 = /* @__PURE__ */ _export_sfc(_sfc_main$G, [["__scopeId", "data-v-4d02dcb6"]]);
+const __nuxt_component_4 = /* @__PURE__ */ _export_sfc(_sfc_main$G, [["__scopeId", "data-v-4d02dcb6"]]);
 const ensureArray = (value) => Array.isArray(value) ? value : value ? [value] : [];
 const arrayParams = ["sort", "where", "only", "without"];
 const createQuery = (fetcher, intitialParams) => {
@@ -7693,11 +7711,12 @@ const _sfc_main$5 = {
       const _component_Toc = __nuxt_component_0$3;
       const _component_ContentRenderer = __nuxt_component_1$1;
       const _component_MarkdownRenderer = __nuxt_component_2;
-      const _component_PrevNext = __nuxt_component_3;
+      const _component_Form = _sfc_main$H;
+      const _component_PrevNext = __nuxt_component_4;
       _push(`<main${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({
         id: "main",
         class: "article-main"
-      }, _attrs))} data-v-1fdfb340>`);
+      }, _attrs))} data-v-1978337d>`);
       _push(serverRenderer.exports.ssrRenderComponent(_component_Head, null, {
         default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
@@ -7719,25 +7738,25 @@ const _sfc_main$5 = {
         _: 1
       }, _parent));
       if (vue_cjs_prod.unref(data).article) {
-        _push(`<header class="article-header" data-v-1fdfb340><div class="img-cont h-72 mb-12" data-v-1fdfb340><img${serverRenderer.exports.ssrRenderAttr("src", `/${vue_cjs_prod.unref(data).article.img}`)}${serverRenderer.exports.ssrRenderAttr("alt", vue_cjs_prod.unref(data).article.title)} class="rounded-2xl" data-v-1fdfb340></div><h1 class="heading" data-v-1fdfb340>${serverRenderer.exports.ssrInterpolate(vue_cjs_prod.unref(data).article.title)}</h1><p class="supporting" data-v-1fdfb340>${serverRenderer.exports.ssrInterpolate(vue_cjs_prod.unref(data).article.description)}</p><ul class="article-tags" data-v-1fdfb340><!--[-->`);
+        _push(`<header class="article-header" data-v-1978337d><div class="img-cont h-72 mb-12" data-v-1978337d><img${serverRenderer.exports.ssrRenderAttr("src", `/${vue_cjs_prod.unref(data).article.img}`)}${serverRenderer.exports.ssrRenderAttr("alt", vue_cjs_prod.unref(data).article.title)} class="rounded-2xl" data-v-1978337d></div><h1 class="heading" data-v-1978337d>${serverRenderer.exports.ssrInterpolate(vue_cjs_prod.unref(data).article.title)}</h1><p class="supporting" data-v-1978337d>${serverRenderer.exports.ssrInterpolate(vue_cjs_prod.unref(data).article.description)}</p><ul class="article-tags" data-v-1978337d><!--[-->`);
         serverRenderer.exports.ssrRenderList(vue_cjs_prod.unref(data).article.tags, (tag, n) => {
-          _push(`<li class="tag" data-v-1fdfb340>${serverRenderer.exports.ssrInterpolate(tag)}</li>`);
+          _push(`<li class="tag" data-v-1978337d>${serverRenderer.exports.ssrInterpolate(tag)}</li>`);
         });
         _push(`<!--]--></ul></header>`);
       } else {
         _push(`<!---->`);
       }
-      _push(`<hr data-v-1fdfb340><section class="article-section" data-v-1fdfb340><aside class="aside" data-v-1fdfb340>`);
+      _push(`<hr data-v-1978337d><section class="article-section" data-v-1978337d><aside class="aside" data-v-1978337d>`);
       _push(serverRenderer.exports.ssrRenderComponent(_component_Toc, {
         links: vue_cjs_prod.unref(data).article.body.toc.links
       }, null, _parent));
-      _push(`</aside><article class="article" data-v-1fdfb340>`);
+      _push(`</aside><article class="article" data-v-1978337d>`);
       _push(serverRenderer.exports.ssrRenderComponent(_component_ContentRenderer, {
         value: vue_cjs_prod.unref(data).article
       }, {
         empty: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(`<p data-v-1fdfb340${_scopeId}>No content found.</p>`);
+            _push2(`<p data-v-1978337d${_scopeId}>No content found.</p>`);
           } else {
             return [
               vue_cjs_prod.createVNode("p", null, "No content found.")
@@ -7760,6 +7779,7 @@ const _sfc_main$5 = {
         _: 1
       }, _parent));
       _push(`</article></section>`);
+      _push(serverRenderer.exports.ssrRenderComponent(_component_Form, null, null, _parent));
       _push(serverRenderer.exports.ssrRenderComponent(_component_PrevNext, {
         prev: vue_cjs_prod.unref(prev),
         next: vue_cjs_prod.unref(next)
@@ -7774,7 +7794,7 @@ _sfc_main$5.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/blog/[...slug].vue");
   return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
 };
-const ____slug_ = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-1fdfb340"]]);
+const ____slug_ = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-1978337d"]]);
 const ____slug_$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": ____slug_

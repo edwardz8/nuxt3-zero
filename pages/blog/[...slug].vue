@@ -58,7 +58,9 @@ useHead({
         <li class="tag" v-for="(tag, n) in data.article.tags" :key="n">{{ tag }}</li>
       </ul>
     </header>
+
     <hr />
+
     <section class="article-section">
       <aside class="aside">
         <!-- Toc Component -->
@@ -77,6 +79,8 @@ useHead({
         </ContentRenderer>
       </article>
     </section>
+
+    <Form />
 
     <!-- PrevNext Component -->
     <PrevNext :prev="prev" :next="next" />

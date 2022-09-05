@@ -66,8 +66,8 @@ FanDuel has Kupp's receptions for Thursday night at 7.5 and his total receiving 
 i've been giving props.cash while looking ahead to the upcoming NFL season; it's easy to use and has convenient and easy-to-understand stats for both casual and more expert bettors. i've enjoyed it so far; i'm a sucker for beautiful vizualizations so that's a plus and there's both a free and paid version for those wanting to give the app a shot. i'm sticking with the free version for now as it includes a lot of useful data for player props [props.cash](https://props.cash/)
 
 
-::InfoBox{type="error"}
-Please bet responsibly! Good luck this season and thanks for reading.
+<!-- ::InfoBox{type="error"}
+Please bet responsibly! Good luck this season and thanks for reading. -->
 
 <!-- #details
 This will be rendered inside the `description` slot. _It's important_ to see how this **works**.
