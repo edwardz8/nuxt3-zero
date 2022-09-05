@@ -20,7 +20,6 @@ export default async (event: CompatibilityEvent) => {
         sendError(event, createError({ statusCode: 401, statusMessage: 'Unauthenticated' }))
     }
 
-
     await makeSession(user, event)
 
     return sanitizeUserForFrontend(user)

@@ -33,32 +33,29 @@ export async function registerWithEmail(
     password: string
 ): Promise<FormValidation> {
 
-    try {
-        const { data, error } = await useFetch<ISession>('/api/auth/register', {
-            method: 'POST',
-            body: { data: { username, name, email, password } }
-        })
+    const { data, error } = await useFetch<ISession>('/api/auth/register', {
+        method: 'POST',
+        body: { data: { username, name, email, password } }
+    })
 
-        if (error.value) {
-            type ErrorData = {
-                data: ErrorData
-            }
-
-            const errorData = error.value as unknown as ErrorData
-            const errors = errorData.data.data as unknown as string
-            const res = JSON.parse(errors)
-            const errorMap = new Map<string, { check: InputValidation }>(Object.entries(res))
-
-            return { hasErrors: true, errors: errorMap }
+    if (error.value) {
+        type ErrorData = {
+            data: ErrorData
         }
 
-        if (data) {
-            useState('user').value = data
-            await useRouter().push('/blog')
-        }
-    } catch (e) {
-        console.log('error: ' + e.toString())
+        const errorData = error.value as unknown as ErrorData
+        const errors = errorData.data.data as unknown as string
+        const res = JSON.parse(errors)
+        const errorMap = new Map<string, { check: InputValidation }>(Object.entries(res))
+
+        return { hasErrors: true, errors: errorMap }
     }
+
+    if (data) {
+        useState('user').value = data
+        await useRouter().push('/blog')
+    }
+
 }
 
 export async function loginWithEmail(email: string, password: string) {
