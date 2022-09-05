@@ -1,4 +1,9 @@
-<!-- ./components/SiteHeader.vue -->
+<script setup lang="ts">
+import BackButton from "~/components/elements/BackButton.vue";
+import { useState } from "#app";
+
+const user = useState("user");
+</script>
 
 <template>
   <header class="site-header">
@@ -9,11 +14,40 @@
         </figure>
       </NuxtLink>
 
+      <NuxtLink to="/blog" class="no-underline">
+        <figure class="link">
+          <p class="transition duration-500 hover:scale-110 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:bg-blue-900 bg-gray-600">Featured Articles</p>
+        </figure>
+      </NuxtLink>
+
+
       <nav class="site-nav">
         <ul class="links">
-          <li class="link">
-            <NuxtLink to="/blog">Articles</NuxtLink>
-          </li>
+
+          <div class="flex items-center justify-end md:flex-1 lg:w-0">
+            <User v-if="user" :user="user" />
+
+            <li class="link">
+              <nuxt-link
+                v-if="!user"
+                to="/register"
+                class="transition duration-500 hover:scale-110 mr-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gray-800 hover:bg-gray-600"
+              >
+                Sign up
+              </nuxt-link>
+            </li>
+
+            <li class="link">
+              <nuxt-link
+                v-if="!user"
+                to="/login"
+                class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
+              >
+                Sign in
+              </nuxt-link>
+            </li>
+          </div>
+          
         </ul>
       </nav>
     </div>

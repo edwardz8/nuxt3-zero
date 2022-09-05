@@ -6,6 +6,7 @@ declare module 'vue' {
     'SiteHeader': typeof import("../components/SiteHeader.vue")['default'],
     'Tags': typeof import("../components/Tags.vue")['default'],
     'Toc': typeof import("../components/Toc.vue")['default'],
+    'User': typeof import("../components/User.vue")['default'],
     'ContentDoc': typeof import("../node_modules/@nuxt/content/dist/runtime/components/ContentDoc.mjs")['default'],
     'ContentList': typeof import("../node_modules/@nuxt/content/dist/runtime/components/ContentList.mjs")['default'],
     'ContentNavigation': typeof import("../node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.mjs")['default'],
@@ -48,6 +49,7 @@ declare module 'vue' {
     'LazySiteHeader': typeof import("../components/SiteHeader.vue")['default'],
     'LazyTags': typeof import("../components/Tags.vue")['default'],
     'LazyToc': typeof import("../components/Toc.vue")['default'],
+    'LazyUser': typeof import("../components/User.vue")['default'],
     'LazyContentDoc': typeof import("../node_modules/@nuxt/content/dist/runtime/components/ContentDoc.mjs")['default'],
     'LazyContentList': typeof import("../node_modules/@nuxt/content/dist/runtime/components/ContentList.mjs")['default'],
     'LazyContentNavigation': typeof import("../node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.mjs")['default'],
@@ -92,6 +94,7 @@ export const PrevNext: typeof import("../components/PrevNext.vue")['default']
 export const SiteHeader: typeof import("../components/SiteHeader.vue")['default']
 export const Tags: typeof import("../components/Tags.vue")['default']
 export const Toc: typeof import("../components/Toc.vue")['default']
+export const User: typeof import("../components/User.vue")['default']
 export const ContentDoc: typeof import("../node_modules/@nuxt/content/dist/runtime/components/ContentDoc.mjs")['default']
 export const ContentList: typeof import("../node_modules/@nuxt/content/dist/runtime/components/ContentList.mjs")['default']
 export const ContentNavigation: typeof import("../node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.mjs")['default']
@@ -134,6 +137,7 @@ export const LazyPrevNext: typeof import("../components/PrevNext.vue")['default'
 export const LazySiteHeader: typeof import("../components/SiteHeader.vue")['default']
 export const LazyTags: typeof import("../components/Tags.vue")['default']
 export const LazyToc: typeof import("../components/Toc.vue")['default']
+export const LazyUser: typeof import("../components/User.vue")['default']
 export const LazyContentDoc: typeof import("../node_modules/@nuxt/content/dist/runtime/components/ContentDoc.mjs")['default']
 export const LazyContentList: typeof import("../node_modules/@nuxt/content/dist/runtime/components/ContentList.mjs")['default']
 export const LazyContentNavigation: typeof import("../node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.mjs")['default']

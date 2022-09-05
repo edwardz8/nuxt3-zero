@@ -14,7 +14,7 @@ export async function useUser(): Promise<IUser> {
             headers: useRequestHeaders(['cookie'])
         })
 
-        this.user.value = data.value
+        user.value = data.value
     }
 
     return user.value
@@ -54,7 +54,7 @@ export async function registerWithEmail(
 
         if (data) {
             useState('user').value = data
-            await useRouter().push('/dashboard')
+            await useRouter().push('/blog')
         }
     } catch (e) {
         console.log('error: ' + e.toString())
@@ -64,5 +64,5 @@ export async function registerWithEmail(
 export async function loginWithEmail(email: string, password: string) {
     const user = await $fetch<IUser>('/api/auth/login', { method: 'POST', body: { email: email, password: password } })
     useState('user').value = user
-    await useRouter().push('/dashboard')
+    await useRouter().push('/blog')
 }
