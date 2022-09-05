@@ -54,16 +54,16 @@ The Bills' primary back went crazy during the final 4 games of the regular seaso
 
 In Kupp's lone game facing the Bills, the stellar wideout tallied 107 receiving yards and a touchdown with 9 receptions on 10 targets.
 
-FanDuel has Kupp's receptions for Thursday night at 7.5 and his total receiving yards at 93.5. It's tough to bet against both of these considering Kupp's jaw-dropping 2021 season while amassing 1,947 yards, but until I see Stafford play, hitting the Alternate Receving Yards prop at 70 will be the only leg I have involving Kupp; a touchdown is of course possible for the 5th-year WR.
+FanDuel has Kupp's receptions for Thursday night at 7.5 and his total receiving yards at 93.5. It's tough to go against both of these considering Kupp's jaw-dropping 2021 season while amassing 1,947 yards, but until I see Stafford play, hitting the Alternate Receving Yards prop at 70 will be the only leg I have involving Kupp; a touchdown is of course possible for the 5th-year WR.
 
 ## Buffalo Bills
 
-- Spicy Bet = Buffalo Bills moneyline 💰 
+- Spicy Play = Buffalo Bills moneyline 💰 
 
-- Wimpy Bet = Buffalo Bills +7.5
+- Wimpy Play = Buffalo Bills +7.5
 
 
-i've been giving props.cash while looking ahead to the upcoming NFL season; it's easy to use and has convenient and easy-to-understand stats for both casual and more expert bettors. i've enjoyed it so far; i'm a sucker for beautiful vizualizations so that's a plus and there's both a free and paid version for those wanting to give the app a shot. i'm sticking with the free version for now as it includes a lot of useful data for player props [props.cash](https://props.cash/)
+i've been giving props.cash while looking ahead to the upcoming NFL season; it's easy to use and has convenient and easy-to-understand stats for both casual and expert players alike. i've enjoyed it so far; i'm a sucker for beautiful vizualizations so that's a plus and there's both a free and paid version for those wanting to give the app a shot. i'm sticking with the free version for now as it includes a lot of useful data for player props [props.cash](https://props.cash/)
 
 
 <!-- ::InfoBox{type="error"}
