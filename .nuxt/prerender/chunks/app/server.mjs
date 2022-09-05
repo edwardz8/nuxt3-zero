@@ -6784,7 +6784,7 @@ const _sfc_main$x = /* @__PURE__ */ vue_cjs_prod.defineComponent({
       _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({
         ref_key: "userActions",
         ref: userActions,
-        class: "hidden md:flex items-center dark:text-white justify-end md:flex-1 lg:w-0"
+        class: "flex items-center dark:text-white justify-end md:flex-1 lg:w-0"
       }, _attrs))}><span class="mr-2"> Welcome <strong>${serverRenderer.exports.ssrInterpolate(vue_cjs_prod.unref(user).username)}</strong></span><img${serverRenderer.exports.ssrRenderAttr("src", avatar(vue_cjs_prod.unref(user).avatarUrl))} class="rounded-full w-10 h-10 mr-2" alt="avatar"><ul class="${serverRenderer.exports.ssrRenderClass([[{ hidden: hideActions.value }], "dropdown-menu min-w-max absolute bottom bg-white text-base z-100 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 top- m-0 bg-clip-padding border-none"])}" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100" href="#">logout</a></li></ul></div>`);
     };
   }
@@ -6803,15 +6803,14 @@ const _sfc_main$w = /* @__PURE__ */ vue_cjs_prod.defineComponent({
     return (_ctx, _push, _parent, _attrs) => {
       const _component_NuxtLink = __nuxt_component_0$4;
       const _component_User = _sfc_main$x;
-      const _component_nuxt_link = __nuxt_component_0$4;
-      _push(`<header${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "site-header" }, _attrs))} data-v-8d88d82a><div class="wrapper" data-v-8d88d82a>`);
+      _push(`<header${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "site-header" }, _attrs))} data-v-04916b84><div class="wrapper" data-v-04916b84>`);
       _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, {
         to: "/",
         class: "no-underline"
       }, {
         default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(`<figure class="site-logo" data-v-8d88d82a${_scopeId}><h1 data-v-8d88d82a${_scopeId}>propz</h1></figure>`);
+            _push2(`<figure class="site-logo" data-v-04916b84${_scopeId}><h1 data-v-04916b84${_scopeId}>propz</h1></figure>`);
           } else {
             return [
               vue_cjs_prod.createVNode("figure", { class: "site-logo" }, [
@@ -6828,7 +6827,7 @@ const _sfc_main$w = /* @__PURE__ */ vue_cjs_prod.defineComponent({
       }, {
         default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(`<figure class="link" data-v-8d88d82a${_scopeId}><p class="transition duration-500 hover:scale-110 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:bg-blue-900 bg-gray-600" data-v-8d88d82a${_scopeId}>Featured Articles</p></figure>`);
+            _push2(`<figure class="link" data-v-04916b84${_scopeId}><p class="transition duration-500 hover:scale-110 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:bg-blue-900 bg-gray-600" data-v-04916b84${_scopeId}>Featured Articles</p></figure>`);
           } else {
             return [
               vue_cjs_prod.createVNode("figure", { class: "link" }, [
@@ -6839,53 +6838,13 @@ const _sfc_main$w = /* @__PURE__ */ vue_cjs_prod.defineComponent({
         }),
         _: 1
       }, _parent));
-      _push(`<nav class="site-nav" data-v-8d88d82a><ul class="links" data-v-8d88d82a><div class="flex items-center justify-end md:flex-1 lg:w-0" data-v-8d88d82a>`);
+      _push(`<nav class="site-nav" data-v-04916b84><ul class="links" data-v-04916b84><div class="flex items-center justify-end md:flex-1 lg:w-0" data-v-04916b84>`);
       if (vue_cjs_prod.unref(user)) {
         _push(serverRenderer.exports.ssrRenderComponent(_component_User, { user: vue_cjs_prod.unref(user) }, null, _parent));
       } else {
         _push(`<!---->`);
       }
-      _push(`<li class="link" data-v-8d88d82a>`);
-      if (!vue_cjs_prod.unref(user)) {
-        _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_link, {
-          to: "/register",
-          class: "transition duration-500 hover:scale-110 mr-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gray-800 hover:bg-gray-600"
-        }, {
-          default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
-            if (_push2) {
-              _push2(` Sign up `);
-            } else {
-              return [
-                vue_cjs_prod.createTextVNode(" Sign up ")
-              ];
-            }
-          }),
-          _: 1
-        }, _parent));
-      } else {
-        _push(`<!---->`);
-      }
-      _push(`</li><li class="link" data-v-8d88d82a>`);
-      if (!vue_cjs_prod.unref(user)) {
-        _push(serverRenderer.exports.ssrRenderComponent(_component_nuxt_link, {
-          to: "/login",
-          class: "whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
-        }, {
-          default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
-            if (_push2) {
-              _push2(` Sign in `);
-            } else {
-              return [
-                vue_cjs_prod.createTextVNode(" Sign in ")
-              ];
-            }
-          }),
-          _: 1
-        }, _parent));
-      } else {
-        _push(`<!---->`);
-      }
-      _push(`</li></div></ul></nav></div></header>`);
+      _push(`</div></ul></nav></div></header>`);
     };
   }
 });
@@ -6895,7 +6854,7 @@ _sfc_main$w.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/SiteHeader.vue");
   return _sfc_setup$w ? _sfc_setup$w(props, ctx) : void 0;
 };
-const __nuxt_component_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["__scopeId", "data-v-8d88d82a"]]);
+const __nuxt_component_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["__scopeId", "data-v-04916b84"]]);
 const _sfc_main$v = /* @__PURE__ */ vue_cjs_prod.defineComponent({
   __name: "app",
   __ssrInlineRender: true,
@@ -8171,7 +8130,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
   const _component_Head = vue_cjs_prod.resolveComponent("Head");
   const _component_Script = vue_cjs_prod.resolveComponent("Script");
   const _component_NuxtLink = __nuxt_component_0$4;
-  _push(`<main${serverRenderer.exports.ssrRenderAttrs(_attrs)} data-v-3a9169ee>`);
+  _push(`<main${serverRenderer.exports.ssrRenderAttrs(_attrs)} data-v-50bf53b5>`);
   _push(serverRenderer.exports.ssrRenderComponent(_component_Head, null, {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -8192,14 +8151,14 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
     }),
     _: 1
   }, _parent));
-  _push(`<section class="hero-section" data-v-3a9169ee><header data-v-3a9169ee><h1 class="font-black text-6xl" data-v-3a9169ee>Welcome to roster.props</h1><span class="text-4xl" data-v-3a9169ee>\u{1F3C8} \u{1F3D2} \u26BD</span><p data-v-3a9169ee>browse the`);
+  _push(`<section class="hero-section" data-v-50bf53b5><header data-v-50bf53b5><h1 class="font-black text-6xl" data-v-50bf53b5>Welcome to roster.props</h1><span class="text-4xl" data-v-50bf53b5>\u{1F3C8} \u{1F3D2} \u26BD</span><p data-v-50bf53b5>browse the`);
   _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, { to: "/blog" }, {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
-        _push2(` fantasy sports + betting content`);
+        _push2(` daily fantasy + props content`);
       } else {
         return [
-          vue_cjs_prod.createTextVNode(" fantasy sports + betting content")
+          vue_cjs_prod.createTextVNode(" daily fantasy + props content")
         ];
       }
     }),
@@ -8213,7 +8172,7 @@ _sfc_main$2.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/index.vue");
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
-const index = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-3a9169ee"]]);
+const index = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-50bf53b5"]]);
 const index$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": index

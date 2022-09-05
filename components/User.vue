@@ -20,7 +20,7 @@ onClickOutside(userActions, () => (hideActions.value = true));
 <template>
   <div
     ref="userActions"
-    class="hidden md:flex items-center dark:text-white justify-end md:flex-1 lg:w-0"
+    class="flex items-center dark:text-white justify-end md:flex-1 lg:w-0"
   >
     <span class="mr-2">
       Welcome <strong>{{ user.username }}</strong>
