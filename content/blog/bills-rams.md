@@ -2,7 +2,7 @@
 title: 'Props for Bills @ Rams 🏈 '
 description: 'Favorite Props for Bills @ Rams 🏈 '
 img: 'img/josh_allen.JPG'
-tags: [NFL, Props, Bet]
+tags: [NFL, Props, Football]
 ---
 
 
@@ -10,7 +10,7 @@ tags: [NFL, Props, Bet]
 
 > Hey there! Thanks for checking out the first player props article of the 2022 NFL season. The Bills vs Rams kick the year off and we couldn't be more excited to bring you our thoughts and statistically-informed take on player props. 🦵
 
-The books have released the majority of their props for the Bills vs Rams game this Thursday so we'll be laying out some of our favorite plays of the night. The first game can be tough to gauge but most of them are and we haven't ever let that stop us before, so let's dive right in. We will primarily reference FanDuel here.
+The majority of props for the Bills vs Rams game this Thursday have been released so we'll be laying out some of our favorite plays of the night. The first game can be tough to gauge but most of them are and we haven't ever let that stop us before, so let's dive right in. We will primarily reference FanDuel here.
 
 
 ## Passing Props

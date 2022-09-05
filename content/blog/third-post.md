@@ -2,7 +2,7 @@
 title: 'Anytime Touchdowns - Week 1'
 description: 'You will score big with this one'
 img: 'img/te_jump.JPG'
-tags: [NFL, Bet]
+tags: [NFL, Props]
 ---
 
 # Anytime Touchdowns - Week 1

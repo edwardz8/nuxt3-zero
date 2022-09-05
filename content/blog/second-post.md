@@ -2,7 +2,7 @@
 title: 'Props for NFL Sunday - Week 1'
 description: 'Favorite props for NFL Sunday Week 1'
 img: 'img/te.JPG'
-tags: [NFL, Props, Bet]
+tags: [NFL, Props]
 ---
 
 # Props for NFL Sunday Week 1
