@@ -1,62 +1,62 @@
-globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/node-fetch-native/dist/polyfill.mjs';
+globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/node-fetch-native/dist/polyfill.mjs';
 import { Server } from 'http';
 import { tmpdir } from 'os';
 import { join } from 'path';
 import { mkdirSync } from 'fs';
 import { parentPort, threadId } from 'worker_threads';
-import { provider, isWindows } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/std-env/dist/index.mjs';
-import { defineEventHandler, handleCacheHeaders, createEvent, useQuery, useCookie, createError, defineLazyEventHandler, useBody, createApp, createRouter, lazyEventHandler, setCookie, sendError, eventHandler } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/h3/dist/index.mjs';
-import { createFetch as createFetch$1, Headers } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/ohmyfetch/dist/node.mjs';
-import destr from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/destr/dist/index.mjs';
-import { createRouter as createRouter$1 } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/radix3/dist/index.mjs';
-import { createCall, createFetch } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/hookable/dist/index.mjs';
-import { hash } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/ohash/dist/index.mjs';
-import { parseURL, withQuery, withLeadingSlash, withoutTrailingSlash, withBase, joinURL } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/ufo/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/unstorage/dist/index.mjs';
-import _unstorage_drivers_fs from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/unstorage/dist/drivers/fs.mjs';
-import { extname } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/pathe/dist/index.mjs';
-import defu from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/defu/dist/defu.mjs';
-import remarkEmoji from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/remark-emoji/index.js';
-import rehypeSlug from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/rehype-slug/index.js';
-import remarkSqueezeParagraphs from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/remark-squeeze-paragraphs/index.js';
-import rehypeExternalLinks from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/rehype-external-links/index.js';
-import remarkGfm from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/remark-gfm/index.js';
-import rehypeSortAttributeValues from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/rehype-sort-attribute-values/index.js';
-import rehypeSortAttributes from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/rehype-sort-attributes/index.js';
-import rehypeRaw from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/rehype-raw/index.js';
-import yaml from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/js-yaml/dist/js-yaml.mjs';
-import flat from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/flat/index.js';
-import { unified } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/unified/index.js';
-import remarkParse from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/remark-parse/index.js';
-import remark2rehype from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/remark-rehype/index.js';
-import { snakeCase, kebabCase, pascalCase } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/scule/dist/index.mjs';
-import { visit } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/unist-util-visit/index.js';
-import { stringifyEntitiesLight } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/stringify-entities/index.js';
-import { parseEntities } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/parse-entities/index.js';
-import { markdownLineEnding, markdownSpace, asciiAlpha, markdownLineEndingOrSpace, asciiAlphanumeric } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/micromark-util-character/index.js';
-import { factorySpace } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/micromark-factory-space/index.js';
-import { factoryWhitespace } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/micromark-factory-whitespace/index.js';
-import { codeFenced } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/micromark-core-commonmark/index.js';
-import { all } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/mdast-util-to-hast/index.js';
-import { detab } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/detab/index.js';
-import { u } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/unist-builder/index.js';
-import { encode } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/mdurl/index.js';
-import { position } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/unist-util-position/index.js';
-import htmlTags from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/html-tags/index.js';
-import slugify from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/slugify/slugify.js';
-import { getHighlighter, BUNDLED_LANGUAGES, BUNDLED_THEMES } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/shiki-es/dist/shiki.node.mjs';
+import { provider, isWindows } from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/std-env/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, createEvent, useQuery, useCookie, createError, defineLazyEventHandler, useBody, createApp, createRouter, lazyEventHandler, setCookie, sendError, eventHandler } from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/h3/dist/index.mjs';
+import { createFetch as createFetch$1, Headers } from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/ohmyfetch/dist/node.mjs';
+import destr from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/destr/dist/index.mjs';
+import { createRouter as createRouter$1 } from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/radix3/dist/index.mjs';
+import { createCall, createFetch } from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/hookable/dist/index.mjs';
+import { hash } from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/ohash/dist/index.mjs';
+import { parseURL, withQuery, withLeadingSlash, withoutTrailingSlash, withBase, joinURL } from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/ufo/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/unstorage/dist/index.mjs';
+import _unstorage_drivers_fs from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/unstorage/dist/drivers/fs.mjs';
+import { extname } from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/pathe/dist/index.mjs';
+import defu from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/defu/dist/defu.mjs';
+import remarkEmoji from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/remark-emoji/index.js';
+import rehypeSlug from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/rehype-slug/index.js';
+import remarkSqueezeParagraphs from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/remark-squeeze-paragraphs/index.js';
+import rehypeExternalLinks from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/rehype-external-links/index.js';
+import remarkGfm from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/remark-gfm/index.js';
+import rehypeSortAttributeValues from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/rehype-sort-attribute-values/index.js';
+import rehypeSortAttributes from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/rehype-sort-attributes/index.js';
+import rehypeRaw from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/rehype-raw/index.js';
+import yaml from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/js-yaml/dist/js-yaml.mjs';
+import flat from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/flat/index.js';
+import { unified } from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/unified/index.js';
+import remarkParse from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/remark-parse/index.js';
+import remark2rehype from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/remark-rehype/index.js';
+import { snakeCase, kebabCase, pascalCase } from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/scule/dist/index.mjs';
+import { visit } from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/unist-util-visit/index.js';
+import { stringifyEntitiesLight } from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/stringify-entities/index.js';
+import { parseEntities } from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/parse-entities/index.js';
+import { markdownLineEnding, markdownSpace, asciiAlpha, markdownLineEndingOrSpace, asciiAlphanumeric } from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/micromark-util-character/index.js';
+import { factorySpace } from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/micromark-factory-space/index.js';
+import { factoryWhitespace } from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/micromark-factory-whitespace/index.js';
+import { codeFenced } from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/micromark-core-commonmark/index.js';
+import { all } from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/mdast-util-to-hast/index.js';
+import { detab } from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/detab/index.js';
+import { u } from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/unist-builder/index.js';
+import { encode } from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/mdurl/index.js';
+import { position } from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/unist-util-position/index.js';
+import htmlTags from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/html-tags/index.js';
+import slugify from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/slugify/slugify.js';
+import { getHighlighter, BUNDLED_LANGUAGES, BUNDLED_THEMES } from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/shiki-es/dist/shiki.node.mjs';
 import * as url from 'url';
-import { createClient } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@supabase/supabase-js/dist/main/index.js';
-import bcrypt from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/bcrypt/bcrypt.js';
-import pkg from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@prisma/client/index.js';
+import { createClient } from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/@supabase/supabase-js/dist/main/index.js';
+import bcrypt from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/bcrypt/bcrypt.js';
+import pkg from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/@prisma/client/index.js';
 import crypto from 'crypto';
-import { createRenderer } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/vue-bundle-renderer/dist/index.mjs';
-import devalue from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/devalue/dist/devalue.mjs';
-import { renderToString } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/vue/server-renderer/index.mjs';
-import htmlTemplate from '/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/views/document.template.mjs';
+import { createRenderer } from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/vue-bundle-renderer/dist/index.mjs';
+import devalue from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/devalue/dist/devalue.mjs';
+import { renderToString } from 'file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/vue/server-renderer/index.mjs';
+import htmlTemplate from '/home/afzaal/Fiverr/nuxt3-zero/.nuxt/views/document.template.mjs';
 
-const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routes":{},"envPrefix":"NUXT_"},"public":{"content":{"base":"_content","tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"highlight":{"theme":{"default":"material-palenight","dark":"github-dark"}},"wsUrl":"ws://localhost:4000/"}},"content":{"cacheVersion":2,"cacheIntegrity":"370594990","transformers":["/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/markdown.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/yaml.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/json.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/csv.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/path-meta.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/shiki.mjs"],"base":"_content","watch":{"ws":{"port":4000,"showURL":false}},"sources":["content"],"ignores":["\\.","-"],"locales":[],"highlight":{"theme":{"default":"material-palenight","dark":"github-dark"}},"markdown":{"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"toc":{"depth":5,"searchDepth":5},"remarkPlugins":{},"rehypePlugins":{}},"yaml":{},"csv":{},"navigation":{"fields":[]}}};
+const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routes":{},"envPrefix":"NUXT_"},"public":{"content":{"base":"_content","tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"highlight":{"theme":{"default":"material-palenight","dark":"github-dark"}},"wsUrl":"ws://localhost:4000/"}},"content":{"cacheVersion":2,"cacheIntegrity":"370594990","transformers":["/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/markdown.mjs","/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/yaml.mjs","/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/json.mjs","/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/csv.mjs","/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/path-meta.mjs","/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/shiki.mjs"],"base":"_content","watch":{"ws":{"port":4000,"showURL":false}},"sources":["content"],"ignores":["\\.","-"],"locales":[],"highlight":{"theme":{"default":"material-palenight","dark":"github-dark"}},"markdown":{"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"toc":{"depth":5,"searchDepth":5},"remarkPlugins":{},"rehypePlugins":{}},"yaml":{},"csv":{},"navigation":{"fields":[]}}};
 const ENV_PREFIX = "NITRO_";
 const ENV_PREFIX_ALT = _runtimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
 const getEnv = (key) => {
@@ -113,7 +113,7 @@ function timingMiddleware(_req, res, next) {
   next();
 }
 
-const serverAssets = [{"baseName":"server","dir":"/Users/edwardz_8/vue-projects/nuxt3-zero/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"/home/afzaal/Fiverr/nuxt3-zero/server/assets"}];
 
 const assets = createStorage();
 
@@ -127,11 +127,11 @@ const useStorage = () => storage;
 
 storage.mount('/assets', assets);
 
-storage.mount('content:source:content', _unstorage_drivers_fs({"name":"content","driver":"fs","prefix":"","base":"/Users/edwardz_8/vue-projects/nuxt3-zero/content","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('root', _unstorage_drivers_fs({"driver":"fs","base":"/Users/edwardz_8/vue-projects/nuxt3-zero","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', _unstorage_drivers_fs({"driver":"fs","base":"/Users/edwardz_8/vue-projects/nuxt3-zero/server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', _unstorage_drivers_fs({"driver":"fs","base":"/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', _unstorage_drivers_fs({"driver":"fs","base":"/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('content:source:content', _unstorage_drivers_fs({"name":"content","driver":"fs","prefix":"","base":"/home/afzaal/Fiverr/nuxt3-zero/content","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', _unstorage_drivers_fs({"driver":"fs","base":"/home/afzaal/Fiverr/nuxt3-zero","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', _unstorage_drivers_fs({"driver":"fs","base":"/home/afzaal/Fiverr/nuxt3-zero/server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', _unstorage_drivers_fs({"driver":"fs","base":"/home/afzaal/Fiverr/nuxt3-zero/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', _unstorage_drivers_fs({"driver":"fs","base":"/home/afzaal/Fiverr/nuxt3-zero/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
 
 const defaultCacheOptions = {
   name: "_",
@@ -2489,7 +2489,7 @@ function useExcerpt(content, delimiter = /<!--\s*?more\s*?-->/i) {
   return content;
 }
 
-const _47Users_47edwardz_8_47vue_45projects_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47markdown_46mjs = {
+const _47home_47afzaal_47Fiverr_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47markdown_46mjs = {
   name: "markdown",
   extensions: [".md"],
   parse: async (_id, content) => {
@@ -2520,7 +2520,7 @@ async function importPlugins(plugins = {}) {
   return resolvedPlugins;
 }
 
-const _47Users_47edwardz_8_47vue_45projects_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47yaml_46mjs = {
+const _47home_47afzaal_47Fiverr_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47yaml_46mjs = {
   name: "Yaml",
   extensions: [".yml", ".yaml"],
   parse: async (_id, content) => {
@@ -2540,14 +2540,14 @@ ${content}
   }
 };
 
-const _47Users_47edwardz_8_47vue_45projects_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47json_46mjs = {
+const _47home_47afzaal_47Fiverr_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47json_46mjs = {
   name: "Json",
   extensions: [".json", ".json5"],
   parse: async (_id, content) => {
     let parsed = content;
     if (typeof content === "string") {
       if (_id.endsWith("json5")) {
-        parsed = (await import('file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/json5/lib/index.js').then((m) => m.default || m)).parse(content);
+        parsed = (await import('file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/json5/lib/index.js').then((m) => m.default || m)).parse(content);
       } else if (_id.endsWith("json")) {
         parsed = destr(content);
       }
@@ -2566,12 +2566,12 @@ const _47Users_47edwardz_8_47vue_45projects_47nuxt3_45zero_47node_modules_47_64n
   }
 };
 
-const _47Users_47edwardz_8_47vue_45projects_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47csv_46mjs = {
+const _47home_47afzaal_47Fiverr_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47csv_46mjs = {
   name: "csv",
   extensions: [".csv"],
   parse: async (_id, content) => {
     const config = { ...useRuntimeConfig().content?.csv || {} };
-    const csvToJson = await import('file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/csvtojson/v2/index.js').then((m) => m.default || m);
+    const csvToJson = await import('file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/csvtojson/v2/index.js').then((m) => m.default || m);
     const parsed = await csvToJson({ output: "json", ...config }).fromString(content);
     return {
       _id,
@@ -2594,7 +2594,7 @@ const describeId = (_id) => {
     _file: _extension ? `${_path}.${_extension}` : _path
   };
 };
-const _47Users_47edwardz_8_47vue_45projects_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47path_45meta_46mjs = {
+const _47home_47afzaal_47Fiverr_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47path_45meta_46mjs = {
   name: "path-meta",
   extensions: [".*"],
   transform(content) {
@@ -2632,7 +2632,7 @@ const highlightConfig = useRuntimeConfig().content.highlight;
 const withContentBase = (url) => {
   return withBase(url, `/api/${useRuntimeConfig().public.content.base}`);
 };
-const _47Users_47edwardz_8_47vue_45projects_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47shiki_46mjs = {
+const _47home_47afzaal_47Fiverr_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47shiki_46mjs = {
   name: "markdown",
   extensions: [".md"],
   transform: async (content) => {
@@ -2727,7 +2727,7 @@ const _47Users_47edwardz_8_47vue_45projects_47nuxt3_45zero_47node_modules_47_64n
   }
 };
 
-const transformers = [_47Users_47edwardz_8_47vue_45projects_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47markdown_46mjs, _47Users_47edwardz_8_47vue_45projects_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47yaml_46mjs, _47Users_47edwardz_8_47vue_45projects_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47json_46mjs, _47Users_47edwardz_8_47vue_45projects_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47csv_46mjs, _47Users_47edwardz_8_47vue_45projects_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47path_45meta_46mjs, _47Users_47edwardz_8_47vue_45projects_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47shiki_46mjs];
+const transformers = [_47home_47afzaal_47Fiverr_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47markdown_46mjs, _47home_47afzaal_47Fiverr_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47yaml_46mjs, _47home_47afzaal_47Fiverr_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47json_46mjs, _47home_47afzaal_47Fiverr_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47csv_46mjs, _47home_47afzaal_47Fiverr_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47path_45meta_46mjs, _47home_47afzaal_47Fiverr_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47shiki_46mjs];
 const getParser = (ext) => transformers.find(p => ext.match(new RegExp(p.extensions.join("|"),  "i")) && p.parse);
 const getTransformers = (ext) => transformers.filter(p => ext.match(new RegExp(p.extensions.join("|"),  "i")) && p.transform);
 
@@ -2920,7 +2920,7 @@ const getContentQuery = (event) => {
   return query;
 };
 
-const _349193 = defineEventHandler(async (event) => {
+const _375747 = defineEventHandler(async (event) => {
   const query = getContentQuery(event);
   const contents = await serverQueryContent(event, query).find();
   if (query.first && Array.isArray(contents) && contents.length === 0) {
@@ -2936,7 +2936,7 @@ const _349193 = defineEventHandler(async (event) => {
   return contents;
 });
 
-const _108945 = defineEventHandler(async (event) => {
+const _934907 = defineEventHandler(async (event) => {
   const now = Date.now();
   await serverQueryContent(event).find();
   return {
@@ -3023,7 +3023,7 @@ function pick(keys) {
   };
 }
 
-const _600228 = defineEventHandler(async (event) => {
+const _176424 = defineEventHandler(async (event) => {
   const query = getContentQuery(event);
   const contents = await serverQueryContent(event, query).where({
     _partial: false,
@@ -3652,7 +3652,7 @@ const resolveBody = (body) => {
     theme: resolveTheme(body.theme)
   };
 };
-const _106146 = defineLazyEventHandler(async () => {
+const _249218 = defineLazyEventHandler(async () => {
   const { theme, preload } = useRuntimeConfig().content.highlight;
   const highlighter = await getHighlighter({
     theme: theme?.default || theme || "dark-plus",
@@ -3757,27 +3757,27 @@ function mergeLines(line1, line2) {
   return mergedTokens;
 }
 
-const _lazy_410995 = () => Promise.resolve().then(function () { return subscribe$1; });
-const _lazy_423706 = () => Promise.resolve().then(function () { return register$1; });
-const _lazy_171314 = () => Promise.resolve().then(function () { return logout$1; });
-const _lazy_143138 = () => Promise.resolve().then(function () { return login$1; });
-const _lazy_227471 = () => Promise.resolve().then(function () { return getByAuthToken$1; });
-const _lazy_184848 = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_142205 = () => Promise.resolve().then(function () { return subscribe$1; });
+const _lazy_322106 = () => Promise.resolve().then(function () { return register$1; });
+const _lazy_358576 = () => Promise.resolve().then(function () { return logout$1; });
+const _lazy_395591 = () => Promise.resolve().then(function () { return login$1; });
+const _lazy_262428 = () => Promise.resolve().then(function () { return getByAuthToken$1; });
+const _lazy_199709 = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/api/subscribe', handler: _lazy_410995, lazy: true, middleware: false, method: undefined },
-  { route: '/api/auth/register', handler: _lazy_423706, lazy: true, middleware: false, method: undefined },
-  { route: '/api/auth/logout', handler: _lazy_171314, lazy: true, middleware: false, method: undefined },
-  { route: '/api/auth/login', handler: _lazy_143138, lazy: true, middleware: false, method: undefined },
-  { route: '/api/auth/getByAuthToken', handler: _lazy_227471, lazy: true, middleware: false, method: undefined },
-  { route: '/__nuxt_error', handler: _lazy_184848, lazy: true, middleware: false, method: undefined },
-  { route: '/api/_content/query/:qid', handler: _349193, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/query', handler: _349193, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/cache', handler: _108945, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation/:qid', handler: _600228, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation', handler: _600228, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/highlight', handler: _106146, lazy: false, middleware: false, method: "post" },
-  { route: '/**', handler: _lazy_184848, lazy: true, middleware: false, method: undefined }
+  { route: '/api/subscribe', handler: _lazy_142205, lazy: true, middleware: false, method: undefined },
+  { route: '/api/auth/register', handler: _lazy_322106, lazy: true, middleware: false, method: undefined },
+  { route: '/api/auth/logout', handler: _lazy_358576, lazy: true, middleware: false, method: undefined },
+  { route: '/api/auth/login', handler: _lazy_395591, lazy: true, middleware: false, method: undefined },
+  { route: '/api/auth/getByAuthToken', handler: _lazy_262428, lazy: true, middleware: false, method: undefined },
+  { route: '/__nuxt_error', handler: _lazy_199709, lazy: true, middleware: false, method: undefined },
+  { route: '/api/_content/query/:qid', handler: _375747, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/query', handler: _375747, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/cache', handler: _934907, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation/:qid', handler: _176424, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation', handler: _176424, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/highlight', handler: _249218, lazy: false, middleware: false, method: "post" },
+  { route: '/**', handler: _lazy_199709, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -3893,6 +3893,18 @@ async function getUserByEmail(email) {
     select: {
       id: true,
       username: true
+    }
+  });
+}
+async function getUserByEmailWithPass(email) {
+  return await prisma$1.user.findUnique({
+    where: {
+      email
+    },
+    select: {
+      id: true,
+      username: true,
+      password: true
     }
   });
 }
@@ -4139,13 +4151,14 @@ const login = async (event) => {
   const body = await useBody(event);
   const email = body.email;
   const password = body.password;
-  const user = await getUserByEmail(email);
+  const user = await getUserByEmailWithPass(email);
   if (user === null) {
-    sendError(event, createError({ statusCode: 401, statusMessage: "Unauthenticated" }));
+    return sendError(event, createError({ statusCode: 423, statusMessage: "Wrong Email" }));
   }
-  const isPasswordCorrect = bcrypt.compare(password, user.password);
+  const isPasswordCorrect = await bcrypt.compare(password, user.password);
+  console.log(password, user, isPasswordCorrect);
   if (!isPasswordCorrect) {
-    sendError(event, createError({ statusCode: 401, statusMessage: "Unauthenticated" }));
+    return sendError(event, createError({ statusCode: 423, statusMessage: "Wrong password" }));
   }
   await makeSession(user, event);
   return sanitizeUserForFrontend(user);
@@ -4175,8 +4188,8 @@ function publicAssetsURL(...path) {
   return path.length ? joinURL(publicBase, ...path) : publicBase;
 }
 
-const getClientManifest = () => import('/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r);
-const getServerEntry = () => import('/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getClientManifest = () => import('/home/afzaal/Fiverr/nuxt3-zero/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r);
+const getServerEntry = () => import('/home/afzaal/Fiverr/nuxt3-zero/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
 const getSSRRenderer = lazyCachedFunction(async () => {
   const clientManifest = await getClientManifest();
   if (!clientManifest) {

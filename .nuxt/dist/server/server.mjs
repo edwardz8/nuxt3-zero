@@ -1,34 +1,34 @@
 
 // --------------------
-// Request: /Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/nuxt/dist/app/entry
+// Request: /home/afzaal/Fiverr/nuxt3-zero/node_modules/nuxt/dist/app/entry
 // Parents: 
 // - <entry> ($id_c757eb9e)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/ohmyfetch/dist/index.mjs ($id_780217c4)
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/paths.mjs ($id_18786cd8)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/paths.mjs ($id_5bfbc89b)
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/css.mjs ($id_96d15167)
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/plugins/server.mjs ($id_d89cfd50)
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/root-component.mjs ($id_ff981dfb)
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/app-component.mjs ($id_170882f6)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/css.mjs ($id_75c860a7)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/plugins/server.mjs ($id_74cd992c)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/root-component.mjs ($id_5112a83e)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/app-component.mjs ($id_99ca9dab)
 // --------------------
-const $id_74742b3b = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_e6d5348a = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/ohmyfetch/dist/index.mjs");
 
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/paths.mjs");
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/paths.mjs");
 
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
 
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/css.mjs");
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/css.mjs");
 
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/plugins/server.mjs");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/plugins/server.mjs");
 
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/root-component.mjs");
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/root-component.mjs");
 
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/app-component.mjs");
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/app-component.mjs");
 
 if (!globalThis.$fetch) {
   globalThis.$fetch = __vite_ssr_import_1__.$fetch.create({
@@ -93,7 +93,7 @@ __vite_ssr_exports__.default = (ctx) => entry(ctx);
 // --------------------
 // Request: /node_modules/vue/dist/vue.cjs.js
 // Parents: 
-// - /Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_74742b3b)
+// - /home/afzaal/Fiverr/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_e6d5348a)
 // - /node_modules/nuxt/dist/app/nuxt.mjs ($id_e069d411)
 // - /node_modules/nuxt/dist/app/composables/component.mjs ($id_53345950)
 // - /node_modules/nuxt/dist/app/composables/asyncData.mjs ($id_d5b6a221)
@@ -103,9 +103,9 @@ __vite_ssr_exports__.default = (ctx) => entry(ctx);
 // - /node_modules/nuxt/dist/app/composables/cookie.mjs ($id_511b441d)
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
 // - /node_modules/nuxt/dist/head/runtime/composables.mjs ($id_04ea9504)
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // - /node_modules/nuxt/dist/app/compat/capi.mjs ($id_0c5717a4)
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs ($id_18a37fa3)
 // - /components/content/InfoBox.vue ($id_e10e5808)
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentDoc.mjs ($id_12ce52f3)
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.mjs ($id_8f3d0953)
@@ -173,7 +173,7 @@ __vite_ssr_exports__.default = (ctx) => entry(ctx);
 
 // --------------------
 const $id_60f0615f = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/vue/dist/vue.cjs.js")
+import("file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/vue/dist/vue.cjs.js")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -182,19 +182,19 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/vue/dist/vu
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/vue/dist/vue.cjs.js\".")
+    throw new Error("[vite dev] Error loading external \"/home/afzaal/Fiverr/nuxt3-zero/node_modules/vue/dist/vue.cjs.js\".")
   })
 
 
 // --------------------
 // Request: /node_modules/ohmyfetch/dist/index.mjs
 // Parents: 
-// - /Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_74742b3b)
+// - /home/afzaal/Fiverr/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_e6d5348a)
 // Dependencies: 
 
 // --------------------
 const $id_780217c4 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/ohmyfetch/dist/index.mjs")
+import("file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/ohmyfetch/dist/index.mjs")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -203,18 +203,18 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/ohmyfetch/d
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/ohmyfetch/dist/index.mjs\".")
+    throw new Error("[vite dev] Error loading external \"/home/afzaal/Fiverr/nuxt3-zero/node_modules/ohmyfetch/dist/index.mjs\".")
   })
 
 
 // --------------------
-// Request: /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/paths.mjs
+// Request: /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/paths.mjs
 // Parents: 
-// - /Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_74742b3b)
+// - /home/afzaal/Fiverr/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_e6d5348a)
 // Dependencies: 
 // - /node_modules/ufo/dist/index.mjs ($id_614de060)
 // --------------------
-const $id_18786cd8 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_5bfbc89b = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/ufo/dist/index.mjs");
 
 const appConfig = {"baseURL":"/","buildAssetsDir":"/_nuxt/","assetsPath":{},"cdnURL":"","head":{"charset":"utf-8","viewport":"width=device-width, initial-scale=1","meta":[],"link":[],"style":[],"script":[],"title":"rosterprops"}}
@@ -235,7 +235,7 @@ Object.defineProperty(__vite_ssr_exports__, "publicAssetsURL", { enumerable: tru
 // --------------------
 // Request: /node_modules/ufo/dist/index.mjs
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/paths.mjs ($id_18786cd8)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/paths.mjs ($id_5bfbc89b)
 // - /node_modules/nuxt/dist/app/composables/router.mjs ($id_db4d90a8)
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
 // - /node_modules/@nuxt/content/dist/runtime/composables/query.mjs ($id_47535763)
@@ -245,7 +245,7 @@ Object.defineProperty(__vite_ssr_exports__, "publicAssetsURL", { enumerable: tru
 
 // --------------------
 const $id_614de060 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/ufo/dist/index.mjs")
+import("file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/ufo/dist/index.mjs")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -254,14 +254,14 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/ufo/dist/in
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/ufo/dist/index.mjs\".")
+    throw new Error("[vite dev] Error loading external \"/home/afzaal/Fiverr/nuxt3-zero/node_modules/ufo/dist/index.mjs\".")
   })
 
 
 // --------------------
 // Request: /node_modules/nuxt/dist/app/index.mjs
 // Parents: 
-// - /Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_74742b3b)
+// - /home/afzaal/Fiverr/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_e6d5348a)
 // - /node_modules/nuxt/dist/app/composables/asyncData.mjs ($id_d5b6a221)
 // - /node_modules/nuxt/dist/app/composables/hydrate.mjs ($id_0063df1b)
 // - /node_modules/nuxt/dist/app/composables/state.mjs ($id_7d872108)
@@ -272,7 +272,7 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/ufo/dist/in
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
 // - /node_modules/nuxt/dist/head/runtime/composables.mjs ($id_04ea9504)
 // - /node_modules/nuxt/dist/app/plugins/preload.server.mjs ($id_9871bba0)
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs ($id_18a37fa3)
 // - /composables/useAuth.ts ($id_ba05bb26)
 // - /node_modules/@nuxt/content/dist/runtime/composables/query.mjs ($id_47535763)
 // - /node_modules/@nuxt/content/dist/runtime/composables/utils.mjs ($id_3db3e041)
@@ -491,7 +491,7 @@ function defineGetter(obj, key, val) {
 
 // --------------------
 const $id_a2c811c4 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/hookable/dist/index.mjs")
+import("file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/hookable/dist/index.mjs")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -500,7 +500,7 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/hookable/di
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/hookable/dist/index.mjs\".")
+    throw new Error("[vite dev] Error loading external \"/home/afzaal/Fiverr/nuxt3-zero/node_modules/hookable/dist/index.mjs\".")
   })
 
 
@@ -514,7 +514,7 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/hookable/di
 
 // --------------------
 const $id_a569ca2d = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/unctx/dist/index.mjs")
+import("file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/unctx/dist/index.mjs")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -523,7 +523,7 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/unctx/dist/
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/unctx/dist/index.mjs\".")
+    throw new Error("[vite dev] Error loading external \"/home/afzaal/Fiverr/nuxt3-zero/node_modules/unctx/dist/index.mjs\".")
   })
 
 
@@ -655,7 +655,7 @@ Object.defineProperty(__vite_ssr_exports__, "legacyPlugin", { enumerable: true, 
 
 // --------------------
 const $id_39e12da7 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/unenv/runtime/mock/proxy.mjs")
+import("file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/unenv/runtime/mock/proxy.mjs")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -664,7 +664,7 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/unenv/runti
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/unenv/runtime/mock/proxy.mjs\".")
+    throw new Error("[vite dev] Error loading external \"/home/afzaal/Fiverr/nuxt3-zero/node_modules/unenv/runtime/mock/proxy.mjs\".")
   })
 
 
@@ -801,7 +801,7 @@ Object.defineProperty(__vite_ssr_exports__, "defineNuxtComponent", { enumerable:
 
 // --------------------
 const $id_f9a4a698 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/vue-router/dist/vue-router.cjs.js")
+import("file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/vue-router/dist/vue-router.cjs.js")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -810,7 +810,7 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/vue-router/
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/vue-router/dist/vue-router.cjs.js\".")
+    throw new Error("[vite dev] Error loading external \"/home/afzaal/Fiverr/nuxt3-zero/node_modules/vue-router/dist/vue-router.cjs.js\".")
   })
 
 
@@ -1136,7 +1136,7 @@ Object.defineProperty(__vite_ssr_exports__, "useLazyFetch", { enumerable: true, 
 
 // --------------------
 const $id_b1b82cf3 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/ohash/dist/index.mjs")
+import("file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/ohash/dist/index.mjs")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -1145,7 +1145,7 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/ohash/dist/
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/ohash/dist/index.mjs\".")
+    throw new Error("[vite dev] Error loading external \"/home/afzaal/Fiverr/nuxt3-zero/node_modules/ohash/dist/index.mjs\".")
   })
 
 
@@ -1238,7 +1238,7 @@ function writeServerCookie(event, name, value, opts = {}) {
 
 // --------------------
 const $id_f4975261 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/cookie-es/dist/index.mjs")
+import("file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/cookie-es/dist/index.mjs")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -1247,7 +1247,7 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/cookie-es/d
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/cookie-es/dist/index.mjs\".")
+    throw new Error("[vite dev] Error loading external \"/home/afzaal/Fiverr/nuxt3-zero/node_modules/cookie-es/dist/index.mjs\".")
   })
 
 
@@ -1261,7 +1261,7 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/cookie-es/d
 
 // --------------------
 const $id_57d7ded6 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/h3/dist/index.mjs")
+import("file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/h3/dist/index.mjs")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -1270,7 +1270,7 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/h3/dist/ind
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/h3/dist/index.mjs\".")
+    throw new Error("[vite dev] Error loading external \"/home/afzaal/Fiverr/nuxt3-zero/node_modules/h3/dist/index.mjs\".")
   })
 
 
@@ -1283,7 +1283,7 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/h3/dist/ind
 
 // --------------------
 const $id_03d15ecd = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/destr/dist/index.mjs")
+import("file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/destr/dist/index.mjs")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -1292,7 +1292,7 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/destr/dist/
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/destr/dist/index.mjs\".")
+    throw new Error("[vite dev] Error loading external \"/home/afzaal/Fiverr/nuxt3-zero/node_modules/destr/dist/index.mjs\".")
   })
 
 
@@ -1567,7 +1567,7 @@ __vite_ssr_exports__.default = defineNuxtLink({ componentName: "NuxtLink" });
 // Request: /node_modules/nuxt/dist/head/runtime/index.mjs
 // Parents: 
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs ($id_18a37fa3)
 // - /pages/blog/[...slug].vue?macro=true ($id_23ff3f9c)
 // - /pages/blog/index.vue?macro=true ($id_381d5fdd)
 // - /pages/blog/tags/[slug].vue?macro=true ($id_23cb5fd2)
@@ -1623,7 +1623,7 @@ Object.defineProperty(__vite_ssr_exports__, "useMeta", { enumerable: true, confi
 
 // --------------------
 const $id_852b06a2 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@vue/shared/dist/shared.cjs.js")
+import("file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/@vue/shared/dist/shared.cjs.js")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -1632,18 +1632,18 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@vue/shared
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@vue/shared/dist/shared.cjs.js\".")
+    throw new Error("[vite dev] Error loading external \"/home/afzaal/Fiverr/nuxt3-zero/node_modules/@vue/shared/dist/shared.cjs.js\".")
   })
 
 
 // --------------------
-// Request: /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/css.mjs
+// Request: /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/css.mjs
 // Parents: 
-// - /Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_74742b3b)
+// - /home/afzaal/Fiverr/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_e6d5348a)
 // Dependencies: 
 // - /assets/css/main.css ($id_f8b2993b)
 // --------------------
-const $id_96d15167 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_75c860a7 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/assets/css/main.css");
 ;
 }
@@ -1652,7 +1652,7 @@ const __vite_ssr_import_0__ = await __vite_ssr_import__("/assets/css/main.css");
 // --------------------
 // Request: /assets/css/main.css
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/css.mjs ($id_96d15167)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/css.mjs ($id_75c860a7)
 // Dependencies: 
 
 // --------------------
@@ -1662,21 +1662,21 @@ __vite_ssr_exports__.default = "@import url(\"https://api.fontshare.com/v2/css?f
 
 
 // --------------------
-// Request: /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/plugins/server.mjs
+// Request: /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/plugins/server.mjs
 // Parents: 
-// - /Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_74742b3b)
+// - /home/afzaal/Fiverr/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_e6d5348a)
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/plugins/preload.server.mjs ($id_9871bba0)
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // - /node_modules/nuxt/dist/head/runtime/lib/vueuse-head.plugin.mjs ($id_e6f12003)
 // - /node_modules/nuxt/dist/head/runtime/plugin.mjs ($id_a2650341)
 // - /node_modules/nuxt/dist/pages/runtime/router.mjs ($id_a090977b)
 // - /node_modules/@nuxt/content/dist/runtime/plugin.mjs ($id_a4132d07)
 // --------------------
-const $id_d89cfd50 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_74cd992c = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/plugins/preload.server.mjs");
 
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs");
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs");
 
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt/dist/head/runtime/lib/vueuse-head.plugin.mjs");
 
@@ -1700,7 +1700,7 @@ __vite_ssr_exports__.default = [
 // --------------------
 // Request: /node_modules/nuxt/dist/app/plugins/preload.server.mjs
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/plugins/server.mjs ($id_d89cfd50)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/plugins/server.mjs ($id_74cd992c)
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
 // --------------------
@@ -1721,9 +1721,9 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineNuxtPlugin((nuxtApp) 
 
 
 // --------------------
-// Request: /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs
+// Request: /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/plugins/server.mjs ($id_d89cfd50)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/plugins/server.mjs ($id_74cd992c)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /components/content/InfoBox.vue ($id_e10e5808)
@@ -1759,7 +1759,7 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineNuxtPlugin((nuxtApp) 
 // - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTr.vue ($id_16f58501)
 // - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseUl.vue ($id_7728c86d)
 // --------------------
-const $id_50656c08 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_f19fa824 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 
@@ -1811,7 +1811,7 @@ __vite_ssr_exports__.default = function (nuxtApp) {
 // --------------------
 // Request: /components/content/InfoBox.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
 // - /node_modules/@nuxt/content/dist/runtime/components/Markdown.mjs ($id_f4cbbc2c)
 // - /node_modules/@heroicons/vue/solid/index.js ($id_a0bb35af)
@@ -1886,7 +1886,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-399a029c"],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/components/content/InfoBox.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-399a029c"],['__file',"/home/afzaal/Fiverr/nuxt3-zero/components/content/InfoBox.vue"]]);
 }
 
 
@@ -1894,12 +1894,12 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_m
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Markdown.mjs
 // Parents: 
 // - /components/content/InfoBox.vue ($id_e10e5808)
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs ($id_18a37fa3)
 // --------------------
 const $id_f4cbbc2c = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs");
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs");
 
 __vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
   name: "Markdown",
@@ -1965,7 +1965,7 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
 
 
 // --------------------
-// Request: /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs
+// Request: /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs
 // Parents: 
 // - /node_modules/@nuxt/content/dist/runtime/components/Markdown.mjs ($id_f4cbbc2c)
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentQuery.mjs ($id_3f801a38)
@@ -1988,7 +1988,7 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
 // - /node_modules/@nuxt/content/dist/runtime/composables/navigation.mjs ($id_e209d000)
 // - /node_modules/nuxt/dist/pages/runtime/composables.mjs ($id_ff6ed455)
 // --------------------
-const $id_8e1dca9a = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_18a37fa3 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/head/runtime/index.mjs");
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/compat/vue-demi.mjs");
@@ -2126,7 +2126,7 @@ Object.defineProperty(__vite_ssr_exports__, "definePageMeta", { enumerable: true
 // --------------------
 // Request: /node_modules/nuxt/dist/app/compat/vue-demi.mjs
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs ($id_18a37fa3)
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/compat/capi.mjs ($id_0c5717a4)
 // --------------------
@@ -2181,7 +2181,7 @@ Object.defineProperty(__vite_ssr_exports__, "del", { enumerable: true, configura
 // --------------------
 // Request: /composables/useAuth.ts
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs ($id_18a37fa3)
 // - /pages/login.vue?macro=true ($id_213baa8a)
 // - /pages/register.vue?macro=true ($id_222c4ecc)
 // - /pages/login.vue ($id_b0922173)
@@ -2249,7 +2249,7 @@ Object.defineProperty(__vite_ssr_exports__, "loginWithEmail", { enumerable: true
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/composables/query.mjs
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs ($id_18a37fa3)
 // - /pages/blog/[...slug].vue?macro=true ($id_23ff3f9c)
 // - /components/Tags.vue ($id_3a31b237)
 // - /pages/blog/[...slug].vue ($id_b8f35669)
@@ -2491,7 +2491,7 @@ function regExpReviver(_key, value) {
 // Request: /node_modules/@nuxt/content/dist/runtime/composables/utils.mjs
 // Parents: 
 // - /node_modules/@nuxt/content/dist/runtime/composables/query.mjs ($id_47535763)
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs ($id_18a37fa3)
 // - /node_modules/@nuxt/content/dist/runtime/composables/navigation.mjs ($id_e209d000)
 // Dependencies: 
 // - /node_modules/ufo/dist/index.mjs ($id_614de060)
@@ -2599,7 +2599,7 @@ Object.defineProperty(__vite_ssr_exports__, "flatUnwrap", { enumerable: true, co
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/composables/navigation.mjs
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs ($id_18a37fa3)
 // Dependencies: 
 // - /node_modules/ohash/dist/index.mjs ($id_b1b82cf3)
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
@@ -2645,7 +2645,7 @@ Object.defineProperty(__vite_ssr_exports__, "fetchContentNavigation", { enumerab
 // --------------------
 // Request: /node_modules/nuxt/dist/pages/runtime/composables.mjs
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs ($id_18a37fa3)
 // - /pages/blog/index.vue?macro=true ($id_381d5fdd)
 // - /pages/login.vue?macro=true ($id_213baa8a)
 // - /pages/blog/index.vue ($id_83c2b1d1)
@@ -2675,7 +2675,7 @@ Object.defineProperty(__vite_ssr_exports__, "definePageMeta", { enumerable: true
 
 // --------------------
 const $id_a0bb35af = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@heroicons/vue/solid/index.js")
+import("file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/@heroicons/vue/solid/index.js")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -2684,7 +2684,7 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@heroicons/
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@heroicons/vue/solid/index.js\".")
+    throw new Error("[vite dev] Error loading external \"/home/afzaal/Fiverr/nuxt3-zero/node_modules/@heroicons/vue/solid/index.js\".")
   })
 
 
@@ -2744,7 +2744,7 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@heroicons/
 
 // --------------------
 const $id_b215fa1c = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/vue/server-renderer/index.js")
+import("file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/vue/server-renderer/index.js")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -2753,7 +2753,7 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/vue/server-
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/vue/server-renderer/index.js\".")
+    throw new Error("[vite dev] Error loading external \"/home/afzaal/Fiverr/nuxt3-zero/node_modules/vue/server-renderer/index.js\".")
   })
 
 
@@ -2840,12 +2840,12 @@ __vite_ssr_exports__.default = (sfc, props) => {
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/ContentDoc.mjs
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.mjs ($id_8f3d0953)
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentQuery.mjs ($id_3f801a38)
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs ($id_18a37fa3)
 // --------------------
 const $id_12ce52f3 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
@@ -2854,7 +2854,7 @@ const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/@nuxt/con
 
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.mjs");
 
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs");
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs");
 
 __vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
   props: {
@@ -2930,7 +2930,7 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
 // Request: /node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.mjs
 // Parents: 
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentDoc.mjs ($id_12ce52f3)
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // - /pages/blog/[...slug].vue?macro=true ($id_23ff3f9c)
 // - /pages/blog/[...slug].vue ($id_b8f35669)
 // Dependencies: 
@@ -2997,7 +2997,7 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
 // Request: /node_modules/@nuxt/content/dist/runtime/components/MarkdownRenderer.mjs
 // Parents: 
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.mjs ($id_8f3d0953)
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // - /pages/blog/[...slug].vue?macro=true ($id_23ff3f9c)
 // - /pages/blog/[...slug].vue ($id_b8f35669)
 // Dependencies: 
@@ -3217,7 +3217,7 @@ function isTemplate(node) {
 
 // --------------------
 const $id_ff332d11 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/scule/dist/index.mjs")
+import("file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/scule/dist/index.mjs")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -3226,7 +3226,7 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/scule/dist/
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/scule/dist/index.mjs\".")
+    throw new Error("[vite dev] Error loading external \"/home/afzaal/Fiverr/nuxt3-zero/node_modules/scule/dist/index.mjs\".")
   })
 
 
@@ -3238,7 +3238,7 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/scule/dist/
 
 // --------------------
 const $id_882dd793 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/property-information/index.js")
+import("file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/property-information/index.js")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -3247,7 +3247,7 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/property-in
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/property-information/index.js\".")
+    throw new Error("[vite dev] Error loading external \"/home/afzaal/Fiverr/nuxt3-zero/node_modules/property-information/index.js\".")
   })
 
 
@@ -3259,7 +3259,7 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/property-in
 
 // --------------------
 const $id_4503b399 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/html-tags/index.js")
+import("file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/html-tags/index.js")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -3268,7 +3268,7 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/html-tags/i
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/html-tags/index.js\".")
+    throw new Error("[vite dev] Error loading external \"/home/afzaal/Fiverr/nuxt3-zero/node_modules/html-tags/index.js\".")
   })
 
 
@@ -3277,18 +3277,18 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/html-tags/i
 // Parents: 
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentDoc.mjs ($id_12ce52f3)
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentList.mjs ($id_9fab5abb)
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
 // - /node_modules/ohash/dist/index.mjs ($id_b1b82cf3)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs ($id_18a37fa3)
 // --------------------
 const $id_3f801a38 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/ohash/dist/index.mjs");
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs");
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs");
 
 __vite_ssr_exports__.default = __vite_ssr_import_1__.defineComponent({
   props: {
@@ -3451,7 +3451,7 @@ __vite_ssr_exports__.default = __vite_ssr_import_1__.defineComponent({
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/ContentList.mjs
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // - /pages/blog/index.vue?macro=true ($id_381d5fdd)
 // - /pages/blog/tags/[slug].vue?macro=true ($id_23cb5fd2)
 // - /pages/blog/index.vue ($id_83c2b1d1)
@@ -3497,18 +3497,18 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.mjs
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/ohash/dist/index.mjs ($id_b1b82cf3)
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs ($id_18a37fa3)
 // --------------------
 const $id_d2da4ccd = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/ohash/dist/index.mjs");
 
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs");
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs");
 
 __vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
   props: {
@@ -3555,7 +3555,7 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseA.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -3615,7 +3615,7 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseA.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseA.vue"]]);
 ;
 }
 
@@ -3623,7 +3623,7 @@ __vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sf
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseBlockquote.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -3651,16 +3651,16 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseBlockquote.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseBlockquote.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs ($id_18a37fa3)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.vue?vue&type=style&index=0&lang.css ($id_d7e7fe44)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -3668,7 +3668,7 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_m
 // --------------------
 const $id_19429b58 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs");
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs");
 
 const _sfc_main = __vite_ssr_import_0__.defineComponent({
   props: {
@@ -3711,7 +3711,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.vue"]]);
 }
 
 
@@ -3730,7 +3730,7 @@ __vite_ssr_exports__.default = "pre code .line{display:block;min-height:1rem}";
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCodeInline.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -3758,14 +3758,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCodeInline.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCodeInline.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseEm.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -3793,14 +3793,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseEm.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseEm.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH1.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -3828,14 +3828,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH1.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH1.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH2.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -3892,7 +3892,7 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH2.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH2.vue"]]);
 ;
 }
 
@@ -3900,7 +3900,7 @@ __vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sf
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH3.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -3957,7 +3957,7 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH3.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH3.vue"]]);
 ;
 }
 
@@ -3965,7 +3965,7 @@ __vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sf
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH4.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4022,7 +4022,7 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH4.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH4.vue"]]);
 ;
 }
 
@@ -4030,7 +4030,7 @@ __vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sf
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH5.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4058,14 +4058,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH5.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH5.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH6.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4093,14 +4093,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH6.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH6.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseHr.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4126,14 +4126,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseHr.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseHr.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseImg.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
@@ -4191,7 +4191,7 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_4__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseImg.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_4__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseImg.vue"]]);
 ;
 }
 
@@ -4199,7 +4199,7 @@ __vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_4__.default(_sf
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseLi.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4227,14 +4227,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseLi.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseLi.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseOl.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4262,14 +4262,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseOl.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseOl.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseP.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4297,14 +4297,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseP.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseP.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseStrong.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4332,14 +4332,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseStrong.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseStrong.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTable.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4367,14 +4367,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTable.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTable.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTbody.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4402,14 +4402,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTbody.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTbody.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTd.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4437,14 +4437,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTd.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTd.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTh.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4472,14 +4472,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTh.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTh.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseThead.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4507,14 +4507,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseThead.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseThead.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTr.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4542,14 +4542,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTr.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTr.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseUl.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs ($id_f19fa824)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4577,14 +4577,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseUl.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseUl.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/nuxt/dist/head/runtime/lib/vueuse-head.plugin.mjs
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/plugins/server.mjs ($id_d89cfd50)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/plugins/server.mjs ($id_74cd992c)
 // Dependencies: 
 // - /node_modules/@vueuse/head/dist/index.mjs ($id_c032264e)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -5067,7 +5067,7 @@ Object.defineProperty(__vite_ssr_exports__, "useHead", { enumerable: true, confi
 
 // --------------------
 const $id_d7afab65 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/defu/dist/defu.mjs")
+import("file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/defu/dist/defu.mjs")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -5076,20 +5076,20 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/defu/dist/d
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/defu/dist/defu.mjs\".")
+    throw new Error("[vite dev] Error loading external \"/home/afzaal/Fiverr/nuxt3-zero/node_modules/defu/dist/defu.mjs\".")
   })
 
 
 // --------------------
 // Request: /node_modules/nuxt/dist/head/runtime/plugin.mjs
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/plugins/server.mjs ($id_d89cfd50)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/plugins/server.mjs ($id_74cd992c)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/nuxt/dist/head/runtime/components.mjs ($id_b2a29d6f)
 // - /node_modules/nuxt/dist/head/runtime/composables.mjs ($id_04ea9504)
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/meta.config.mjs ($id_228b9c10)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/meta.config.mjs ($id_fe90fb62)
 // --------------------
 const $id_a2650341 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
@@ -5100,7 +5100,7 @@ const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt/dist
 
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
 
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/meta.config.mjs");
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/meta.config.mjs");
 
 const metaMixin = {
   created() {
@@ -5348,13 +5348,13 @@ Object.defineProperty(__vite_ssr_exports__, "Body", { enumerable: true, configur
 
 
 // --------------------
-// Request: /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/meta.config.mjs
+// Request: /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/meta.config.mjs
 // Parents: 
 // - /node_modules/nuxt/dist/head/runtime/plugin.mjs ($id_a2650341)
 // Dependencies: 
 
 // --------------------
-const $id_228b9c10 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_fe90fb62 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 __vite_ssr_exports__.default = {"globalMeta":{"charset":"utf-8","viewport":"width=device-width, initial-scale=1","meta":[],"link":[],"style":[],"script":[],"title":"rosterprops"}};
 }
 
@@ -5362,7 +5362,7 @@ __vite_ssr_exports__.default = {"globalMeta":{"charset":"utf-8","viewport":"widt
 // --------------------
 // Request: /node_modules/nuxt/dist/pages/runtime/router.mjs
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/plugins/server.mjs ($id_d89cfd50)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/plugins/server.mjs ($id_74cd992c)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue-router/dist/vue-router.cjs.js ($id_f9a4a698)
@@ -5370,9 +5370,9 @@ __vite_ssr_exports__.default = {"globalMeta":{"charset":"utf-8","viewport":"widt
 // - /node_modules/ufo/dist/index.mjs ($id_614de060)
 // - /node_modules/nuxt/dist/pages/runtime/page.mjs ($id_5fc14cdc)
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/router.options.mjs ($id_1ce20c25)
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/middleware.mjs ($id_c4b3f06e)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/routes.mjs ($id_a651ca9d)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/router.options.mjs ($id_5649a526)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/middleware.mjs ($id_7513dc39)
 // --------------------
 const $id_a090977b = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
@@ -5387,11 +5387,11 @@ const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/nuxt/dist
 
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
 
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs");
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/routes.mjs");
 
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/router.options.mjs");
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/router.options.mjs");
 
-const __vite_ssr_import_8__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/middleware.mjs");
+const __vite_ssr_import_8__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/middleware.mjs");
 
 function createCurrentLocation(base, location) {
   const { pathname, search, hash } = location;
@@ -5643,7 +5643,7 @@ Object.defineProperty(__vite_ssr_exports__, "_wrapIf", { enumerable: true, confi
 
 
 // --------------------
-// Request: /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs
+// Request: /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/routes.mjs
 // Parents: 
 // - /node_modules/nuxt/dist/pages/runtime/router.mjs ($id_a090977b)
 // Dependencies: 
@@ -5660,7 +5660,7 @@ Object.defineProperty(__vite_ssr_exports__, "_wrapIf", { enumerable: true, confi
 // - /pages/login.vue ($id_b0922173)
 // - /pages/register.vue ($id_a0bf5dce)
 // --------------------
-const $id_8b52cc6c = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_a651ca9d = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/pages/blog/[...slug].vue?macro=true");
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/pages/blog/index.vue?macro=true");
@@ -5677,7 +5677,7 @@ __vite_ssr_exports__.default = [
   {
     name: "blog-slug",
     path: "/blog/:slug(.*)*",
-    file: "/Users/edwardz_8/vue-projects/nuxt3-zero/pages/blog/[...slug].vue",
+    file: "/home/afzaal/Fiverr/nuxt3-zero/pages/blog/[...slug].vue",
     children: [],
     meta: __vite_ssr_import_0__.meta,
     alias: __vite_ssr_import_0__.meta?.alias || [],
@@ -5686,7 +5686,7 @@ __vite_ssr_exports__.default = [
   {
     name: "blog",
     path: "/blog",
-    file: "/Users/edwardz_8/vue-projects/nuxt3-zero/pages/blog/index.vue",
+    file: "/home/afzaal/Fiverr/nuxt3-zero/pages/blog/index.vue",
     children: [],
     meta: __vite_ssr_import_1__.meta,
     alias: __vite_ssr_import_1__.meta?.alias || [],
@@ -5695,7 +5695,7 @@ __vite_ssr_exports__.default = [
   {
     name: "blog-tags-slug",
     path: "/blog/tags/:slug",
-    file: "/Users/edwardz_8/vue-projects/nuxt3-zero/pages/blog/tags/[slug].vue",
+    file: "/home/afzaal/Fiverr/nuxt3-zero/pages/blog/tags/[slug].vue",
     children: [],
     meta: __vite_ssr_import_2__.meta,
     alias: __vite_ssr_import_2__.meta?.alias || [],
@@ -5704,7 +5704,7 @@ __vite_ssr_exports__.default = [
   {
     name: "index",
     path: "/",
-    file: "/Users/edwardz_8/vue-projects/nuxt3-zero/pages/index.vue",
+    file: "/home/afzaal/Fiverr/nuxt3-zero/pages/index.vue",
     children: [],
     meta: __vite_ssr_import_3__.meta,
     alias: __vite_ssr_import_3__.meta?.alias || [],
@@ -5713,7 +5713,7 @@ __vite_ssr_exports__.default = [
   {
     name: "login",
     path: "/login",
-    file: "/Users/edwardz_8/vue-projects/nuxt3-zero/pages/login.vue",
+    file: "/home/afzaal/Fiverr/nuxt3-zero/pages/login.vue",
     children: [],
     meta: __vite_ssr_import_4__.meta,
     alias: __vite_ssr_import_4__.meta?.alias || [],
@@ -5722,7 +5722,7 @@ __vite_ssr_exports__.default = [
   {
     name: "register",
     path: "/register",
-    file: "/Users/edwardz_8/vue-projects/nuxt3-zero/pages/register.vue",
+    file: "/home/afzaal/Fiverr/nuxt3-zero/pages/register.vue",
     children: [],
     meta: __vite_ssr_import_5__.meta,
     alias: __vite_ssr_import_5__.meta?.alias || [],
@@ -5735,7 +5735,7 @@ __vite_ssr_exports__.default = [
 // --------------------
 // Request: /pages/blog/[...slug].vue?macro=true
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/routes.mjs ($id_a651ca9d)
 // Dependencies: 
 // - /components/Toc.vue ($id_5cbfb66a)
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.mjs ($id_8f3d0953)
@@ -5932,7 +5932,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_13__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_13__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-04f43c4b"],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/pages/blog/[...slug].vue"]])
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_13__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-04f43c4b"],['__file',"/home/afzaal/Fiverr/nuxt3-zero/pages/blog/[...slug].vue"]])
 const meta = undefined
 Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
 }
@@ -6015,7 +6015,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-7065a786"],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/components/Toc.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-7065a786"],['__file',"/home/afzaal/Fiverr/nuxt3-zero/components/Toc.vue"]]);
 }
 
 
@@ -6094,7 +6094,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/components/Form.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Fiverr/nuxt3-zero/components/Form.vue"]]);
 }
 
 
@@ -6207,7 +6207,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-66b24521"],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/components/PrevNext.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-66b24521"],['__file',"/home/afzaal/Fiverr/nuxt3-zero/components/PrevNext.vue"]]);
 }
 
 
@@ -6239,7 +6239,7 @@ __vite_ssr_exports__.default = ".article-main[data-v-04f43c4b]{margin:auto;max-w
 // --------------------
 // Request: /pages/blog/index.vue?macro=true
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/routes.mjs ($id_a651ca9d)
 // Dependencies: 
 // - /components/Tags.vue ($id_3a31b237)
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentList.mjs ($id_9fab5abb)
@@ -6481,7 +6481,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_10__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_10__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/pages/blog/index.vue"]])
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_10__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Fiverr/nuxt3-zero/pages/blog/index.vue"]])
 const meta = {
   key: (route) => route.fullPath,
 }
@@ -6623,7 +6623,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_10__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_10__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-57c02174"],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/components/Tags.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_10__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-57c02174"],['__file',"/home/afzaal/Fiverr/nuxt3-zero/components/Tags.vue"]]);
 }
 
 
@@ -6642,7 +6642,7 @@ __vite_ssr_exports__.default = ".tag-list[data-v-57c02174]{align-items:center;bo
 // --------------------
 // Request: /pages/blog/tags/[slug].vue?macro=true
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/routes.mjs ($id_a651ca9d)
 // Dependencies: 
 // - /components/Tags.vue ($id_3a31b237)
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentList.mjs ($id_9fab5abb)
@@ -6894,7 +6894,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_8__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_8__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/pages/blog/tags/[slug].vue"]])
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_8__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Fiverr/nuxt3-zero/pages/blog/tags/[slug].vue"]])
 const meta = undefined
 Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
 }
@@ -6903,7 +6903,7 @@ Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configur
 // --------------------
 // Request: /pages/index.vue?macro=true
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/routes.mjs ($id_a651ca9d)
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -6975,7 +6975,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-2a183b29"],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/pages/index.vue"]])
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-2a183b29"],['__file',"/home/afzaal/Fiverr/nuxt3-zero/pages/index.vue"]])
 const meta = undefined
 Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
 }
@@ -6997,7 +6997,7 @@ __vite_ssr_exports__.default = ".hero-section[data-v-2a183b29]{--tw-bg-opacity:1
 // --------------------
 // Request: /pages/login.vue?macro=true
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/routes.mjs ($id_a651ca9d)
 // Dependencies: 
 // - /node_modules/nuxt/dist/pages/runtime/composables.mjs ($id_ff6ed455)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -7062,7 +7062,7 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_7__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/pages/login.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_7__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/afzaal/Fiverr/nuxt3-zero/pages/login.vue"]]);
 
 const meta = {
       middleware: "guest"
@@ -7083,7 +7083,7 @@ Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configur
 
 // --------------------
 const $id_85c34493 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@vue/reactivity/dist/reactivity.cjs.js")
+import("file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/@vue/reactivity/dist/reactivity.cjs.js")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -7092,14 +7092,14 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@vue/reacti
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@vue/reactivity/dist/reactivity.cjs.js\".")
+    throw new Error("[vite dev] Error loading external \"/home/afzaal/Fiverr/nuxt3-zero/node_modules/@vue/reactivity/dist/reactivity.cjs.js\".")
   })
 
 
 // --------------------
 // Request: /pages/register.vue?macro=true
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/routes.mjs ($id_a651ca9d)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/@vue/reactivity/dist/reactivity.cjs.js ($id_85c34493)
@@ -7162,7 +7162,7 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_7__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/pages/register.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_7__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/afzaal/Fiverr/nuxt3-zero/pages/register.vue"]]);
 
 const meta = undefined
 Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
@@ -7172,7 +7172,7 @@ Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configur
 // --------------------
 // Request: /pages/blog/[...slug].vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/routes.mjs ($id_a651ca9d)
 // Dependencies: 
 // - /components/Toc.vue ($id_5cbfb66a)
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.mjs ($id_8f3d0953)
@@ -7369,14 +7369,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_13__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_13__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-04f43c4b"],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/pages/blog/[...slug].vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_13__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-04f43c4b"],['__file',"/home/afzaal/Fiverr/nuxt3-zero/pages/blog/[...slug].vue"]]);
 }
 
 
 // --------------------
 // Request: /pages/blog/index.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/routes.mjs ($id_a651ca9d)
 // Dependencies: 
 // - /components/Tags.vue ($id_3a31b237)
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentList.mjs ($id_9fab5abb)
@@ -7618,14 +7618,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_10__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_10__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/pages/blog/index.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_10__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Fiverr/nuxt3-zero/pages/blog/index.vue"]]);
 }
 
 
 // --------------------
 // Request: /pages/blog/tags/[slug].vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/routes.mjs ($id_a651ca9d)
 // Dependencies: 
 // - /components/Tags.vue ($id_3a31b237)
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentList.mjs ($id_9fab5abb)
@@ -7877,14 +7877,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_8__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_8__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/pages/blog/tags/[slug].vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_8__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Fiverr/nuxt3-zero/pages/blog/tags/[slug].vue"]]);
 }
 
 
 // --------------------
 // Request: /pages/index.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/routes.mjs ($id_a651ca9d)
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -7956,14 +7956,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-2a183b29"],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/pages/index.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-2a183b29"],['__file',"/home/afzaal/Fiverr/nuxt3-zero/pages/index.vue"]]);
 }
 
 
 // --------------------
 // Request: /pages/login.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/routes.mjs ($id_a651ca9d)
 // Dependencies: 
 // - /node_modules/nuxt/dist/pages/runtime/composables.mjs ($id_ff6ed455)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -8028,7 +8028,7 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_7__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/pages/login.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_7__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/afzaal/Fiverr/nuxt3-zero/pages/login.vue"]]);
 ;
 }
 
@@ -8036,7 +8036,7 @@ __vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_7__.default(_sf
 // --------------------
 // Request: /pages/register.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/routes.mjs ($id_a651ca9d)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/@vue/reactivity/dist/reactivity.cjs.js ($id_85c34493)
@@ -8099,19 +8099,19 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_7__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/pages/register.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_7__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/afzaal/Fiverr/nuxt3-zero/pages/register.vue"]]);
 ;
 }
 
 
 // --------------------
-// Request: /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/router.options.mjs
+// Request: /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/router.options.mjs
 // Parents: 
 // - /node_modules/nuxt/dist/pages/runtime/router.mjs ($id_a090977b)
 // Dependencies: 
 
 // --------------------
-const $id_1ce20c25 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_5649a526 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const configRouterOptions = {}
 __vite_ssr_exports__.default = {
 ...configRouterOptions,
@@ -8120,14 +8120,14 @@ __vite_ssr_exports__.default = {
 
 
 // --------------------
-// Request: /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/middleware.mjs
+// Request: /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/middleware.mjs
 // Parents: 
 // - /node_modules/nuxt/dist/pages/runtime/router.mjs ($id_a090977b)
 // Dependencies: 
 // - /middleware/auth.ts ($id_7b92aa86)
 // - /middleware/guest.ts ($id_c862a572)
 // --------------------
-const $id_c4b3f06e = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_7513dc39 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const globalMiddleware = []
 Object.defineProperty(__vite_ssr_exports__, "globalMiddleware", { enumerable: true, configurable: true, get(){ return globalMiddleware }});
 const namedMiddleware = {
@@ -8141,7 +8141,7 @@ Object.defineProperty(__vite_ssr_exports__, "namedMiddleware", { enumerable: tru
 // --------------------
 // Request: /middleware/auth.ts
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/middleware.mjs ($id_c4b3f06e)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/middleware.mjs ($id_7513dc39)
 // Dependencies: 
 // - /node_modules/unctx/dist/index.mjs ($id_a569ca2d)
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
@@ -8166,7 +8166,7 @@ __vite_ssr_exports__.default = __vite_ssr_import_1__.defineNuxtRouteMiddleware(a
 // --------------------
 // Request: /middleware/guest.ts
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/middleware.mjs ($id_c4b3f06e)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/middleware.mjs ($id_7513dc39)
 // Dependencies: 
 // - /node_modules/unctx/dist/index.mjs ($id_a569ca2d)
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
@@ -8191,13 +8191,13 @@ __vite_ssr_exports__.default = __vite_ssr_import_1__.defineNuxtRouteMiddleware(a
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/plugin.mjs
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/plugins/server.mjs ($id_d89cfd50)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/plugins/server.mjs ($id_74cd992c)
 // Dependencies: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs ($id_18a37fa3)
 // - /node_modules/@nuxt/content/dist/runtime/composables/web-socket.mjs ($id_575fe152)
 // --------------------
 const $id_a4132d07 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs");
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs");
 
 __vite_ssr_exports__.default = __vite_ssr_import_0__.defineNuxtPlugin(() => {
   const publicConfig = __vite_ssr_import_0__.useRuntimeConfig().public;
@@ -8215,12 +8215,12 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineNuxtPlugin(() => {
 // - /node_modules/@nuxt/content/dist/runtime/plugin.mjs ($id_a4132d07)
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs ($id_18a37fa3)
 // --------------------
 const $id_575fe152 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
 
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs");
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs");
 
 const logger = {
   log: (...args) => console.log("[Content]", ...args),
@@ -8292,13 +8292,13 @@ Object.defineProperty(__vite_ssr_exports__, "useContentWebSocket", { enumerable:
 
 
 // --------------------
-// Request: /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/root-component.mjs
+// Request: /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/root-component.mjs
 // Parents: 
-// - /Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_74742b3b)
+// - /home/afzaal/Fiverr/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_e6d5348a)
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/components/nuxt-root.vue ($id_e9bfada3)
 // --------------------
-const $id_ff981dfb = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_5112a83e = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/components/nuxt-root.vue");
 
 Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_0__.default }});;
@@ -8308,11 +8308,11 @@ Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, confi
 // --------------------
 // Request: /node_modules/nuxt/dist/app/components/nuxt-root.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/root-component.mjs ($id_ff981dfb)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/root-component.mjs ($id_5112a83e)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/error-component.mjs ($id_22d03b9f)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/error-component.mjs ($id_731525c5)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
@@ -8322,7 +8322,7 @@ const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
 
 // @ts-ignore
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/error-component.mjs");
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/error-component.mjs");
 
 
 
@@ -8386,18 +8386,18 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/nuxt/dist/app/components/nuxt-root.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Fiverr/nuxt3-zero/node_modules/nuxt/dist/app/components/nuxt-root.vue"]]);
 }
 
 
 // --------------------
-// Request: /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/error-component.mjs
+// Request: /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/error-component.mjs
 // Parents: 
 // - /node_modules/nuxt/dist/app/components/nuxt-root.vue ($id_e9bfada3)
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/components/nuxt-error-page.vue ($id_8cc6d73f)
 // --------------------
-const $id_22d03b9f = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_731525c5 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/components/nuxt-error-page.vue");
 
 Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_0__.default }});;
@@ -8407,7 +8407,7 @@ Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, confi
 // --------------------
 // Request: /node_modules/nuxt/dist/app/components/nuxt-error-page.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/error-component.mjs ($id_22d03b9f)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/error-component.mjs ($id_731525c5)
 // Dependencies: 
 // - /node_modules/@nuxt/ui-templates/dist/templates/error-404.vue ($id_b90d4d0f)
 // - /node_modules/@nuxt/ui-templates/dist/templates/error-500.vue ($id_14c8b574)
@@ -8492,7 +8492,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/nuxt/dist/app/components/nuxt-error-page.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Fiverr/nuxt3-zero/node_modules/nuxt/dist/app/components/nuxt-error-page.vue"]]);
 }
 
 
@@ -8502,7 +8502,7 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_m
 // - /node_modules/nuxt/dist/app/components/nuxt-error-page.vue ($id_8cc6d73f)
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs ($id_18a37fa3)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/@nuxt/ui-templates/dist/templates/error-404.vue?vue&type=style&index=0&scoped=true&lang.css ($id_e68b6b38)
@@ -8511,7 +8511,7 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_m
 const $id_b90d4d0f = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/components/nuxt-link.mjs");
 
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs");
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs");
 
 
 const _sfc_main = {
@@ -8610,7 +8610,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-573335c0"],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/ui-templates/dist/templates/error-404.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-573335c0"],['__file',"/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/ui-templates/dist/templates/error-404.vue"]]);
 }
 
 
@@ -8631,14 +8631,14 @@ __vite_ssr_exports__.default = ".bg-white[data-v-573335c0]{--tw-bg-opacity:1;bac
 // Parents: 
 // - /node_modules/nuxt/dist/app/components/nuxt-error-page.vue ($id_8cc6d73f)
 // Dependencies: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs ($id_18a37fa3)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/@nuxt/ui-templates/dist/templates/error-500.vue?vue&type=style&index=0&scoped=true&lang.css ($id_a2b3b709)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
 const $id_14c8b574 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs");
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs");
 
 
 const _sfc_main = {
@@ -8715,7 +8715,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-0914425d"],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-0914425d"],['__file',"/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"]]);
 }
 
 
@@ -8736,14 +8736,14 @@ __vite_ssr_exports__.default = ".bg-white[data-v-0914425d]{--tw-bg-opacity:1;bac
 // Parents: 
 // - /node_modules/nuxt/dist/app/components/nuxt-error-page.vue ($id_8cc6d73f)
 // Dependencies: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs ($id_18a37fa3)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/@nuxt/ui-templates/dist/templates/error-dev.vue?vue&type=style&index=0&scoped=true&lang.css ($id_2691164c)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
 const $id_bc2d74a1 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs");
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs");
 
 
 const _sfc_main = {
@@ -8826,7 +8826,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-1da4697d"],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/ui-templates/dist/templates/error-dev.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-1da4697d"],['__file',"/home/afzaal/Fiverr/nuxt3-zero/node_modules/@nuxt/ui-templates/dist/templates/error-dev.vue"]]);
 }
 
 
@@ -8843,13 +8843,13 @@ __vite_ssr_exports__.default = ".bg-white[data-v-1da4697d]{--tw-bg-opacity:1;bac
 
 
 // --------------------
-// Request: /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/app-component.mjs
+// Request: /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/app-component.mjs
 // Parents: 
-// - /Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_74742b3b)
+// - /home/afzaal/Fiverr/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_e6d5348a)
 // Dependencies: 
 // - /app.vue ($id_2b46e842)
 // --------------------
-const $id_170882f6 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_99ca9dab = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/app.vue");
 
 Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_0__.default }});;
@@ -8859,7 +8859,7 @@ Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, confi
 // --------------------
 // Request: /app.vue
 // Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/app-component.mjs ($id_170882f6)
+// - /@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/app-component.mjs ($id_99ca9dab)
 // Dependencies: 
 // - /components/SiteHeader.vue ($id_01340d67)
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
@@ -8914,7 +8914,7 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_7__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/app.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_7__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/afzaal/Fiverr/nuxt3-zero/app.vue"]]);
 ;
 }
 
@@ -9031,7 +9031,7 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_8__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_8__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-5697464f"], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/components/SiteHeader.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_8__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-5697464f"], ["__file", "/home/afzaal/Fiverr/nuxt3-zero/components/SiteHeader.vue"]]);
 ;
 }
 
@@ -9124,7 +9124,7 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_8__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_8__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/components/User.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_8__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/afzaal/Fiverr/nuxt3-zero/components/User.vue"]]);
 ;
 }
 
@@ -9137,7 +9137,7 @@ __vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_8__.default(_sf
 
 // --------------------
 const $id_e8934cdc = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@vueuse/core/index.mjs")
+import("file:///home/afzaal/Fiverr/nuxt3-zero/node_modules/@vueuse/core/index.mjs")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -9146,7 +9146,7 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@vueuse/cor
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@vueuse/core/index.mjs\".")
+    throw new Error("[vite dev] Error loading external \"/home/afzaal/Fiverr/nuxt3-zero/node_modules/@vueuse/core/index.mjs\".")
   })
 
 
@@ -9163,10 +9163,10 @@ __vite_ssr_exports__.default = ".site-header[data-v-5697464f]{--tw-border-opacit
 
 
 const __modules__ = {
-  "/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/nuxt/dist/app/entry": $id_74742b3b,
+  "/home/afzaal/Fiverr/nuxt3-zero/node_modules/nuxt/dist/app/entry": $id_e6d5348a,
   "/node_modules/vue/dist/vue.cjs.js": $id_60f0615f,
   "/node_modules/ohmyfetch/dist/index.mjs": $id_780217c4,
-  "/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/paths.mjs": $id_18786cd8,
+  "/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/paths.mjs": $id_5bfbc89b,
   "/node_modules/ufo/dist/index.mjs": $id_614de060,
   "/node_modules/nuxt/dist/app/index.mjs": $id_36927477,
   "/node_modules/nuxt/dist/app/nuxt.mjs": $id_e069d411,
@@ -9195,14 +9195,14 @@ const __modules__ = {
   "/node_modules/nuxt/dist/head/runtime/index.mjs": $id_b7351483,
   "/node_modules/nuxt/dist/head/runtime/composables.mjs": $id_04ea9504,
   "/node_modules/@vue/shared/dist/shared.cjs.js": $id_852b06a2,
-  "/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/css.mjs": $id_96d15167,
+  "/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/css.mjs": $id_75c860a7,
   "/assets/css/main.css": $id_f8b2993b,
-  "/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/plugins/server.mjs": $id_d89cfd50,
+  "/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/plugins/server.mjs": $id_74cd992c,
   "/node_modules/nuxt/dist/app/plugins/preload.server.mjs": $id_9871bba0,
-  "/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs": $id_50656c08,
+  "/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/components.plugin.mjs": $id_f19fa824,
   "/components/content/InfoBox.vue": $id_e10e5808,
   "/node_modules/@nuxt/content/dist/runtime/components/Markdown.mjs": $id_f4cbbc2c,
-  "/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs": $id_8e1dca9a,
+  "/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/imports.mjs": $id_18a37fa3,
   "/node_modules/nuxt/dist/app/compat/vue-demi.mjs": $id_a8110be7,
   "/node_modules/nuxt/dist/app/compat/capi.mjs": $id_0c5717a4,
   "/composables/useAuth.ts": $id_ba05bb26,
@@ -9257,12 +9257,12 @@ const __modules__ = {
   "/node_modules/defu/dist/defu.mjs": $id_d7afab65,
   "/node_modules/nuxt/dist/head/runtime/plugin.mjs": $id_a2650341,
   "/node_modules/nuxt/dist/head/runtime/components.mjs": $id_b2a29d6f,
-  "/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/meta.config.mjs": $id_228b9c10,
+  "/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/meta.config.mjs": $id_fe90fb62,
   "/node_modules/nuxt/dist/pages/runtime/router.mjs": $id_a090977b,
   "/node_modules/nuxt/dist/pages/runtime/page.mjs": $id_5fc14cdc,
   "/node_modules/nuxt/dist/pages/runtime/utils.mjs": $id_80f433aa,
   "/node_modules/nuxt/dist/app/components/utils.mjs": $id_69c52686,
-  "/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs": $id_8b52cc6c,
+  "/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/routes.mjs": $id_a651ca9d,
   "/pages/blog/[...slug].vue?macro=true": $id_23ff3f9c,
   "/components/Toc.vue": $id_5cbfb66a,
   "/components/Toc.vue?vue&type=style&index=0&scoped=true&lang.css": $id_c6ac83bd,
@@ -9285,15 +9285,15 @@ const __modules__ = {
   "/pages/index.vue": $id_cca58e97,
   "/pages/login.vue": $id_b0922173,
   "/pages/register.vue": $id_a0bf5dce,
-  "/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/router.options.mjs": $id_1ce20c25,
-  "/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/middleware.mjs": $id_c4b3f06e,
+  "/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/router.options.mjs": $id_5649a526,
+  "/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/middleware.mjs": $id_7513dc39,
   "/middleware/auth.ts": $id_7b92aa86,
   "/middleware/guest.ts": $id_c862a572,
   "/node_modules/@nuxt/content/dist/runtime/plugin.mjs": $id_a4132d07,
   "/node_modules/@nuxt/content/dist/runtime/composables/web-socket.mjs": $id_575fe152,
-  "/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/root-component.mjs": $id_ff981dfb,
+  "/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/root-component.mjs": $id_5112a83e,
   "/node_modules/nuxt/dist/app/components/nuxt-root.vue": $id_e9bfada3,
-  "/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/error-component.mjs": $id_22d03b9f,
+  "/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/error-component.mjs": $id_731525c5,
   "/node_modules/nuxt/dist/app/components/nuxt-error-page.vue": $id_8cc6d73f,
   "/node_modules/@nuxt/ui-templates/dist/templates/error-404.vue": $id_b90d4d0f,
   "/node_modules/@nuxt/ui-templates/dist/templates/error-404.vue?vue&type=style&index=0&scoped=true&lang.css": $id_e68b6b38,
@@ -9301,7 +9301,7 @@ const __modules__ = {
   "/node_modules/@nuxt/ui-templates/dist/templates/error-500.vue?vue&type=style&index=0&scoped=true&lang.css": $id_a2b3b709,
   "/node_modules/@nuxt/ui-templates/dist/templates/error-dev.vue": $id_bc2d74a1,
   "/node_modules/@nuxt/ui-templates/dist/templates/error-dev.vue?vue&type=style&index=0&scoped=true&lang.css": $id_2691164c,
-  "/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/app-component.mjs": $id_170882f6,
+  "/@id/virtual:nuxt:/home/afzaal/Fiverr/nuxt3-zero/.nuxt/app-component.mjs": $id_99ca9dab,
   "/app.vue": $id_2b46e842,
   "/components/SiteHeader.vue": $id_01340d67,
   "/components/User.vue": $id_ce2e00d8,
@@ -9394,4 +9394,4 @@ async function __instantiateModule__(url, urlStack) {
 }
 
 
-export default await __ssrLoadModule__("/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/nuxt/dist/app/entry")
+export default await __ssrLoadModule__("/home/afzaal/Fiverr/nuxt3-zero/node_modules/nuxt/dist/app/entry")

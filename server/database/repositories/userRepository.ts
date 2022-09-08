@@ -14,6 +14,19 @@ export async function getUserByEmail(email: string): Promise<IUser> {
   })
 }
 
+export async function getUserByEmailWithPass(email: string): Promise<IUser> {
+  return await prisma.user.findUnique({
+    where: {
+      email: email,
+    },
+    select: {
+      id: true,
+      username: true,
+      password: true,
+    },
+  })
+}
+
 export async function getUserByUserName(username: string): Promise<IUser> {
   return await prisma.user.findUnique({
     where: {
