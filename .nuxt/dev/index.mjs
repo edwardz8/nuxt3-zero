@@ -3896,6 +3896,18 @@ async function getUserByEmail(email) {
     }
   });
 }
+async function getUserByEmailWithPass(email) {
+  return await prisma$1.user.findUnique({
+    where: {
+      email
+    },
+    select: {
+      id: true,
+      username: true,
+      password: true
+    }
+  });
+}
 async function getUserByUserName(username) {
   return await prisma$1.user.findUnique({
     where: {
@@ -4139,13 +4151,14 @@ const login = async (event) => {
   const body = await useBody(event);
   const email = body.email;
   const password = body.password;
-  const user = await getUserByEmail(email);
+  const user = await getUserByEmailWithPass(email);
   if (user === null) {
-    sendError(event, createError({ statusCode: 401, statusMessage: "Unauthenticated" }));
+    return sendError(event, createError({ statusCode: 423, statusMessage: "Wrong Email" }));
   }
-  const isPasswordCorrect = bcrypt.compare(password, user.password);
+  const isPasswordCorrect = await bcrypt.compare(password, user.password);
+  console.log(password, user, isPasswordCorrect);
   if (!isPasswordCorrect) {
-    sendError(event, createError({ statusCode: 401, statusMessage: "Unauthenticated" }));
+    return sendError(event, createError({ statusCode: 423, statusMessage: "Wrong Password" }));
   }
   await makeSession(user, event);
   return sanitizeUserForFrontend(user);
