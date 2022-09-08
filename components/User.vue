@@ -20,10 +20,10 @@ onClickOutside(userActions, () => (hideActions.value = true));
 <template>
   <div
     ref="userActions"
-    class="flex items-center dark:text-white justify-end md:flex-1 lg:w-0"
+    class="flex items-center justify-end md:flex-1"
   >
     <span class="mr-2">
-      Welcome <strong>{{ user.username }}</strong>
+      <strong>{{ user.username }}</strong>
     </span>
     <img
       @click="hideActions = !hideActions"
@@ -39,7 +39,7 @@ onClickOutside(userActions, () => (hideActions.value = true));
     >
       <li @click="logout">
         <a
-          class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+          class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-800 hover:bg-gray-400"
           href="#"
           >logout</a
         >
