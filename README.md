@@ -10,6 +10,12 @@ $ npm i @prisma/client 
 $ npx prisma init 
 $ npx prisma db push 
 
+### Preline 
+
+https://preline.co/docs/frameworks-nuxtjs.html 
+
+
+
 ## Setup
 
 ```bash
