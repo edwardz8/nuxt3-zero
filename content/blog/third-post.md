@@ -1,10 +1,10 @@
 ---
-title: 'Anytime Touchdowns - Week 1'
-description: 'You will score big with this one'
-img: 'img/te_jump.JPG'
+title: 'Props for Monday Night Football'
+description: 'Mr. Unlimited faces former team. Coming Soon.'
+img: 'img/rosterbox.png'
 tags: [NFL, Props]
 ---
 
-# Anytime Touchdowns - Week 1
+# Props for Monday Night Football
 
-Props Content in progress. Please come back before Sunday of Week 1.
+Props Content in progress. Please come back Monday morning of Week 1.

@@ -1,6 +1,6 @@
 ---
 title: 'Props for Bills @ Rams 🏈 '
-description: 'Favorite Props for Bills @ Rams 🏈 '
+description: 'Favorite Props for Bills @ Rams'
 img: 'img/josh_allen.JPG'
 tags: [NFL, Props, Football]
 ---
@@ -24,7 +24,7 @@ Allen threw more touchdowns and completions, posted a better passer rating and p
 
 The Super Bowl winning quarterback is set to play in this heavyweight Week 1 matchup but his "dead arm" concerns me so I'm not banking on Stafford having a stellar performance.
 
-#### Stefon Digs 40+ yards
+#### Stefon Diggs 40+ yards
 
 Outside of the one game with the Vikings, Statmuse shows Diggs being held in check when facing the Rams secondary. I may include 1 unit that involves Diggs to score because it's Diggs and it's most definitely possible that Allen finds his top wideout for a touchdown, however, I'm not going to go a different route this week.
 
