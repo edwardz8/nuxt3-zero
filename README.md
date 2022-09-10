@@ -1,4 +1,4 @@
-# Content v2 Minimal Starter
+# Nuxt 3 and Content v2
 
 Look at the [Content documentation](https://content-v2.nuxtjs.org/) to learn more.
 
@@ -9,11 +9,6 @@ $ npx prisma 
 $ npm i @prisma/client 
 $ npx prisma init 
 $ npx prisma db push 
-
-### Preline 
-
-https://preline.co/docs/frameworks-nuxtjs.html 
-
 
 
 ## Setup

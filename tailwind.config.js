@@ -2,7 +2,9 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  content: [],
+  content: [
+    'node_modules/preline/dist/*.js'
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -13,6 +15,6 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
-    // ...
+    require('preline/plugin')
   ],
 }
