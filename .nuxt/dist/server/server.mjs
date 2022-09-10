@@ -221,7 +221,7 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/ohmyfetch/d
 const $id_18786cd8 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/ufo/dist/index.mjs");
 
-const appConfig = {"baseURL":"/","buildAssetsDir":"/_nuxt/","assetsPath":{},"cdnURL":"","head":{"charset":"utf-8","viewport":"width=device-width, initial-scale=1","meta":[],"link":[],"style":[],"script":[],"title":"rosterprops"}}
+const appConfig = {"head":{"charset":"utf-8","viewport":"width=device-width, initial-scale=1","meta":[],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico?v2"}],"style":[],"script":[],"title":"rosterprops"},"baseURL":"/","buildAssetsDir":"/_nuxt/","assetsPath":{},"cdnURL":""}
 const baseURL = () => appConfig.baseURL
 Object.defineProperty(__vite_ssr_exports__, "baseURL", { enumerable: true, configurable: true, get(){ return baseURL }});
 const buildAssetsDir = () => appConfig.buildAssetsDir
@@ -5367,7 +5367,7 @@ Object.defineProperty(__vite_ssr_exports__, "Body", { enumerable: true, configur
 
 // --------------------
 const $id_228b9c10 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = {"globalMeta":{"charset":"utf-8","viewport":"width=device-width, initial-scale=1","meta":[],"link":[],"style":[],"script":[],"title":"rosterprops"}};
+__vite_ssr_exports__.default = {"globalMeta":{"charset":"utf-8","viewport":"width=device-width, initial-scale=1","meta":[],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico?v2"}],"style":[],"script":[],"title":"rosterprops"}};
 }
 
 
