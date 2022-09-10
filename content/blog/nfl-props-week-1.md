@@ -15,7 +15,7 @@ tags: [NFL, Props]
 
 #### Jonathan Taylor
 
-The top RB in the league faces a bottom-feeding team. The Colts will make a statement this game in what will be the start of their conquest of dethroning the Tennessee Titans in the AFC South. In order to do that they are going to feed Taylor early and often to set the tone off right with a touchdown. This should cash easy.
+The top RB in the league faces a bottom-feeding team. The Colts will make a statement this game in what will be the start of their conquest of dethroning the Tennessee Titans in the AFC South. In order to do that they are going to feed Taylor early and often to set the tone off right with a touchdown. I also like the third-year RB to rush for at least 60+ yards (the books have him set at 99.5). Both should cash easy.
 
 #### Austin Ekeler
 
