@@ -58,6 +58,11 @@ Hill has faced the Patriots a total of 4 times in his career; in the first 2 -- 
 The Lions will be looking to bounce back from the embarrasing 44-6 loss they endured last October against the Eagles. Hockenson's statline was the only bright spot about that game for Detroit as he recorded 10 receptions for 89 yards. Again, this is a conservative line I'm taking on the 6'5", 244 lbs tight end at -470 odds but the 40+ Alt Receiving Yds at -168 is tempting as well and wouldn't blame you if you wanted to get a little frisky.
 
 
+## Passing Props
+
+#### Justin Herbert 225+ yards
+
+
 ## Moneylines and Spreads 💰
 
 I'm taking mostly favorites on the road this week. 
