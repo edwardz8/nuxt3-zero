@@ -30,7 +30,7 @@ async function postRegisterForm() {
             src="/img/hockeyphone.png"
             alt="roster.props logo"
           />
-          <h1 class="py-9 text-center text-5xl font-extrabold text-gray-900">
+          <h1 class="py-9 text-center text-3xl font-extrabold text-gray-900">
             roster.props
           </h1>
         </div>

@@ -32,7 +32,7 @@ const postLoginForm = async function () {
               alt="roster.props logo"
             />
             <h1
-              class="py-9 text-center text-5xl font-extrabold text-gray-900"
+              class="py-9 text-center text-3xl font-extrabold text-gray-900"
             >
               roster.props
             </h1>
