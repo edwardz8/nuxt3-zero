@@ -56,7 +56,7 @@ import devalue from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_module
 import { renderToString } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/vue/server-renderer/index.mjs';
 import htmlTemplate from '/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/views/document.template.mjs';
 
-const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routes":{},"envPrefix":"NUXT_"},"public":{"content":{"base":"_content","tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"highlight":{"theme":{"default":"material-palenight","dark":"github-dark"}},"wsUrl":"ws://localhost:4000/"}},"content":{"cacheVersion":2,"cacheIntegrity":"370594990","transformers":["/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/markdown.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/yaml.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/json.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/csv.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/path-meta.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/shiki.mjs"],"base":"_content","watch":{"ws":{"port":4000,"showURL":false}},"sources":["content"],"ignores":["\\.","-"],"locales":[],"highlight":{"theme":{"default":"material-palenight","dark":"github-dark"}},"markdown":{"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"toc":{"depth":5,"searchDepth":5},"remarkPlugins":{},"rehypePlugins":{}},"yaml":{},"csv":{},"navigation":{"fields":[]}}};
+const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routes":{},"envPrefix":"NUXT_"},"SEASON":"20212022","public":{"SEASON":"20212022","content":{"base":"_content","tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"highlight":{"theme":{"default":"material-palenight","dark":"github-dark"}},"wsUrl":"ws://localhost:4000/"}},"content":{"cacheVersion":2,"cacheIntegrity":"370594990","transformers":["/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/markdown.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/yaml.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/json.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/csv.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/path-meta.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/shiki.mjs"],"base":"_content","watch":{"ws":{"port":4000,"showURL":false}},"sources":["content"],"ignores":["\\.","-"],"locales":[],"highlight":{"theme":{"default":"material-palenight","dark":"github-dark"}},"markdown":{"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"toc":{"depth":5,"searchDepth":5},"remarkPlugins":{},"rehypePlugins":{}},"yaml":{},"csv":{},"navigation":{"fields":[]}}};
 const ENV_PREFIX = "NITRO_";
 const ENV_PREFIX_ALT = _runtimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
 const getEnv = (key) => {
@@ -3758,6 +3758,12 @@ function mergeLines(line1, line2) {
 }
 
 const _lazy_410995 = () => Promise.resolve().then(function () { return subscribe$1; });
+const _lazy_259112 = () => Promise.resolve().then(function () { return getLikes$1; });
+const _lazy_192242 = () => Promise.resolve().then(function () { return deleteLike$1; });
+const _lazy_206620 = () => Promise.resolve().then(function () { return addLike$1; });
+const _lazy_736812 = () => Promise.resolve().then(function () { return getComments$1; });
+const _lazy_104501 = () => Promise.resolve().then(function () { return deleteComment$1; });
+const _lazy_243281 = () => Promise.resolve().then(function () { return addComment$1; });
 const _lazy_423706 = () => Promise.resolve().then(function () { return register$1; });
 const _lazy_171314 = () => Promise.resolve().then(function () { return logout$1; });
 const _lazy_143138 = () => Promise.resolve().then(function () { return login$1; });
@@ -3766,6 +3772,12 @@ const _lazy_184848 = () => Promise.resolve().then(function () { return renderer$
 
 const handlers = [
   { route: '/api/subscribe', handler: _lazy_410995, lazy: true, middleware: false, method: undefined },
+  { route: '/api/like/getLikes', handler: _lazy_259112, lazy: true, middleware: false, method: undefined },
+  { route: '/api/like/deleteLike', handler: _lazy_192242, lazy: true, middleware: false, method: undefined },
+  { route: '/api/like/addLike', handler: _lazy_206620, lazy: true, middleware: false, method: undefined },
+  { route: '/api/comment/getComments', handler: _lazy_736812, lazy: true, middleware: false, method: undefined },
+  { route: '/api/comment/deleteComment', handler: _lazy_104501, lazy: true, middleware: false, method: undefined },
+  { route: '/api/comment/addComment', handler: _lazy_243281, lazy: true, middleware: false, method: undefined },
   { route: '/api/auth/register', handler: _lazy_423706, lazy: true, middleware: false, method: undefined },
   { route: '/api/auth/logout', handler: _lazy_171314, lazy: true, middleware: false, method: undefined },
   { route: '/api/auth/login', handler: _lazy_143138, lazy: true, middleware: false, method: undefined },
@@ -3884,6 +3896,160 @@ const subscribe$1 = /*#__PURE__*/Object.freeze({
 const { PrismaClient } = pkg;
 const prisma = new PrismaClient();
 const prisma$1 = prisma;
+
+async function getLikesByUser(playerId) {
+  return await prisma$1.like.findMany({
+    where: {
+      playerId: +playerId
+    },
+    select: {
+      id: true,
+      playerId: true,
+      userId: true
+    }
+  });
+}
+async function addLike$2(data) {
+  const like = await prisma$1.like.create({
+    data: {
+      userId: data.userId,
+      playerId: data.playerId
+    }
+  });
+  return like;
+}
+async function deleteLike$2(data) {
+  await prisma$1.like.delete({
+    where: {
+      id: +data.id
+    }
+  });
+  return "Unliked successfully!";
+}
+
+const getLikes = defineEventHandler(async (event) => {
+  const query = await useQuery(event);
+  const playerId = query.playerId;
+  const like = await getLikesByUser(playerId);
+  return like;
+});
+
+const getLikes$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  'default': getLikes
+});
+
+const deleteLike = defineEventHandler(async (event) => {
+  const query = await useQuery(event);
+  const likeId = query.likeId;
+  const res = await deleteLike$2({ id: likeId });
+  return res;
+});
+
+const deleteLike$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  'default': deleteLike
+});
+
+const addLike = async (event) => {
+  const body = await useBody(event);
+  console.log(body);
+  const likeData = {
+    userId: body.userId,
+    playerId: body.playerId
+  };
+  const like = await addLike$2(likeData);
+  return like;
+};
+
+const addLike$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  'default': addLike
+});
+
+async function getCommentsByPlayer(playerId) {
+  return await prisma$1.comment.findMany({
+    orderBy: [
+      {
+        createdAt: "desc"
+      }
+    ],
+    where: {
+      playerId: +playerId
+    },
+    select: {
+      id: true,
+      playerId: true,
+      user: {
+        select: {
+          name: true,
+          username: true
+        }
+      },
+      comment: true,
+      userId: true,
+      createdAt: true
+    }
+  });
+}
+async function addComment$2(data) {
+  const comment = await prisma$1.comment.create({
+    data: {
+      userId: data.userId,
+      playerId: data.playerId,
+      comment: data.comment
+    }
+  });
+  return comment;
+}
+async function deleteComment$2(data) {
+  await prisma$1.comment.delete({
+    where: {
+      id: +data.id
+    }
+  });
+  return "Comment Delete successfully!";
+}
+
+const getComments = defineEventHandler(async (event) => {
+  const query = await useQuery(event);
+  const playerId = query.playerId;
+  const comment = await getCommentsByPlayer(playerId);
+  return comment;
+});
+
+const getComments$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  'default': getComments
+});
+
+const deleteComment = defineEventHandler(async (event) => {
+  const query = await useQuery(event);
+  const commentId = query.commentId;
+  const res = await deleteComment$2({ id: commentId });
+  return res;
+});
+
+const deleteComment$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  'default': deleteComment
+});
+
+const addComment = async (event) => {
+  const body = await useBody(event);
+  const commentData = {
+    userId: body.userId,
+    playerId: body.playerId,
+    comment: body.comment
+  };
+  const comment = await addComment$2(commentData);
+  return comment;
+};
+
+const addComment$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  'default': addComment
+});
 
 async function getUserByEmail(email) {
   return await prisma$1.user.findUnique({
