@@ -7,6 +7,9 @@ export default defineNuxtConfig({
   meta: { title: 'rosterprops' },
   app: { head: { link: [ {rel: 'icon', type: "image/x-icon", href: '/favicon.ico?v2'} ] } },
   modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
+  publicRuntimeConfig: {
+    SEASON: process.env.SEASON
+  },
   content: {
     // https://content.nuxtjs.org/api/configuration
     highlight: {

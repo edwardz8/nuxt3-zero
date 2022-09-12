@@ -2,10 +2,13 @@
 declare module 'vue' {
   export interface GlobalComponents {
     'InfoBox': typeof import("../components/content/InfoBox.vue")['default'],
+    'Comments': typeof import("../components/Comments.vue")['default'],
     'Form': typeof import("../components/Form.vue")['default'],
+    'PlayerCard': typeof import("../components/PlayerCard.vue")['default'],
     'PrevNext': typeof import("../components/PrevNext.vue")['default'],
     'SiteHeader': typeof import("../components/SiteHeader.vue")['default'],
     'Tags': typeof import("../components/Tags.vue")['default'],
+    'TeamCard': typeof import("../components/TeamCard.vue")['default'],
     'Toc': typeof import("../components/Toc.vue")['default'],
     'User': typeof import("../components/User.vue")['default'],
     'ContentDoc': typeof import("../node_modules/@nuxt/content/dist/runtime/components/ContentDoc.mjs")['default'],
@@ -46,10 +49,13 @@ declare module 'vue' {
     'ServerPlaceholder': typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default'],
     'NuxtLink': typeof import("../node_modules/nuxt/dist/app/components/nuxt-link")['default']
     'LazyInfoBox': typeof import("../components/content/InfoBox.vue")['default'],
+    'LazyComments': typeof import("../components/Comments.vue")['default'],
     'LazyForm': typeof import("../components/Form.vue")['default'],
+    'LazyPlayerCard': typeof import("../components/PlayerCard.vue")['default'],
     'LazyPrevNext': typeof import("../components/PrevNext.vue")['default'],
     'LazySiteHeader': typeof import("../components/SiteHeader.vue")['default'],
     'LazyTags': typeof import("../components/Tags.vue")['default'],
+    'LazyTeamCard': typeof import("../components/TeamCard.vue")['default'],
     'LazyToc': typeof import("../components/Toc.vue")['default'],
     'LazyUser': typeof import("../components/User.vue")['default'],
     'LazyContentDoc': typeof import("../node_modules/@nuxt/content/dist/runtime/components/ContentDoc.mjs")['default'],
@@ -92,10 +98,13 @@ declare module 'vue' {
   }
 }
 export const InfoBox: typeof import("../components/content/InfoBox.vue")['default']
+export const Comments: typeof import("../components/Comments.vue")['default']
 export const Form: typeof import("../components/Form.vue")['default']
+export const PlayerCard: typeof import("../components/PlayerCard.vue")['default']
 export const PrevNext: typeof import("../components/PrevNext.vue")['default']
 export const SiteHeader: typeof import("../components/SiteHeader.vue")['default']
 export const Tags: typeof import("../components/Tags.vue")['default']
+export const TeamCard: typeof import("../components/TeamCard.vue")['default']
 export const Toc: typeof import("../components/Toc.vue")['default']
 export const User: typeof import("../components/User.vue")['default']
 export const ContentDoc: typeof import("../node_modules/@nuxt/content/dist/runtime/components/ContentDoc.mjs")['default']
@@ -136,10 +145,13 @@ export const ClientOnly: typeof import("../node_modules/nuxt/dist/app/components
 export const ServerPlaceholder: typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']
 export const NuxtLink: typeof import("../node_modules/nuxt/dist/app/components/nuxt-link")['default']
 export const LazyInfoBox: typeof import("../components/content/InfoBox.vue")['default']
+export const LazyComments: typeof import("../components/Comments.vue")['default']
 export const LazyForm: typeof import("../components/Form.vue")['default']
+export const LazyPlayerCard: typeof import("../components/PlayerCard.vue")['default']
 export const LazyPrevNext: typeof import("../components/PrevNext.vue")['default']
 export const LazySiteHeader: typeof import("../components/SiteHeader.vue")['default']
 export const LazyTags: typeof import("../components/Tags.vue")['default']
+export const LazyTeamCard: typeof import("../components/TeamCard.vue")['default']
 export const LazyToc: typeof import("../components/Toc.vue")['default']
 export const LazyUser: typeof import("../components/User.vue")['default']
 export const LazyContentDoc: typeof import("../node_modules/@nuxt/content/dist/runtime/components/ContentDoc.mjs")['default']
