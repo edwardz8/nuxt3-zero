@@ -2,13 +2,14 @@
 // import methods from "../methods.js";
 
 const props = defineProps(["player"]);
+
 </script>
 
 <template>
   <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]">
     <!-- <img
       class="w-full h-auto rounded-t-xl"
-      :src="matchPlayerImage(player.person.fullName)"
+      :src="methods.matchPlayerImage(player.person.fullName)"
       alt="Player Profile"
     /> -->
     <div class="p-4 md:p-5">

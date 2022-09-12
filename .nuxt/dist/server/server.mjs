@@ -282,8 +282,8 @@ import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/ufo/dist/in
 // - /node_modules/nuxt/dist/head/runtime/composables.mjs ($id_04ea9504)
 // - /node_modules/nuxt/dist/app/plugins/preload.server.mjs ($id_9871bba0)
 // - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
-// - /composables/useAuth.ts ($id_ba05bb26)
 // - /composables/useLike.ts ($id_6dd93210)
+// - /composables/useAuth.ts ($id_ba05bb26)
 // - /node_modules/@nuxt/content/dist/runtime/composables/query.mjs ($id_47535763)
 // - /node_modules/@nuxt/content/dist/runtime/composables/utils.mjs ($id_3db3e041)
 // - /node_modules/@nuxt/content/dist/runtime/composables/navigation.mjs ($id_e209d000)
@@ -2002,9 +2002,9 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
 // - /node_modules/nuxt/dist/app/compat/vue-demi.mjs ($id_a8110be7)
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /composables/useAuth.ts ($id_ba05bb26)
 // - /composables/useComment.ts ($id_662ffe6f)
 // - /composables/useLike.ts ($id_6dd93210)
+// - /composables/useAuth.ts ($id_ba05bb26)
 // - /node_modules/@nuxt/content/dist/runtime/composables/query.mjs ($id_47535763)
 // - /node_modules/@nuxt/content/dist/runtime/composables/utils.mjs ($id_3db3e041)
 // - /node_modules/@nuxt/content/dist/runtime/composables/navigation.mjs ($id_e209d000)
@@ -2019,11 +2019,11 @@ const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt/dist
 
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/composables/useAuth.ts");
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/composables/useComment.ts");
 
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/composables/useComment.ts");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/composables/useLike.ts");
 
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/composables/useLike.ts");
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/composables/useAuth.ts");
 
 const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/@nuxt/content/dist/runtime/composables/query.mjs");
 
@@ -2126,23 +2126,23 @@ Object.defineProperty(__vite_ssr_exports__, "useCssModule", { enumerable: true, 
 Object.defineProperty(__vite_ssr_exports__, "useCssVars", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_14__.useCssVars }});
 Object.defineProperty(__vite_ssr_exports__, "useSlots", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_14__.useSlots }});
 Object.defineProperty(__vite_ssr_exports__, "useTransitionState", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_14__.useTransitionState }});
-const __vite_ssr_import_15__ = await __vite_ssr_import__("/composables/useAuth.ts");
+const __vite_ssr_import_15__ = await __vite_ssr_import__("/composables/useComment.ts");
 
-Object.defineProperty(__vite_ssr_exports__, "useAuthCookie", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_15__.useAuthCookie }});
-Object.defineProperty(__vite_ssr_exports__, "useUser", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_15__.useUser }});
-Object.defineProperty(__vite_ssr_exports__, "userLogout", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_15__.userLogout }});
-Object.defineProperty(__vite_ssr_exports__, "registerWithEmail", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_15__.registerWithEmail }});
-Object.defineProperty(__vite_ssr_exports__, "loginWithEmail", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_15__.loginWithEmail }});
-const __vite_ssr_import_16__ = await __vite_ssr_import__("/composables/useComment.ts");
+Object.defineProperty(__vite_ssr_exports__, "getPlayerComments", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_15__.getPlayerComments }});
+Object.defineProperty(__vite_ssr_exports__, "addComment", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_15__.addComment }});
+Object.defineProperty(__vite_ssr_exports__, "deleteComment", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_15__.deleteComment }});
+const __vite_ssr_import_16__ = await __vite_ssr_import__("/composables/useLike.ts");
 
-Object.defineProperty(__vite_ssr_exports__, "getPlayerComments", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_16__.getPlayerComments }});
-Object.defineProperty(__vite_ssr_exports__, "addComment", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_16__.addComment }});
-Object.defineProperty(__vite_ssr_exports__, "deleteComment", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_16__.deleteComment }});
-const __vite_ssr_import_17__ = await __vite_ssr_import__("/composables/useLike.ts");
+Object.defineProperty(__vite_ssr_exports__, "getUserLikes", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_16__.getUserLikes }});
+Object.defineProperty(__vite_ssr_exports__, "addUserLike", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_16__.addUserLike }});
+Object.defineProperty(__vite_ssr_exports__, "removeUserLike", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_16__.removeUserLike }});
+const __vite_ssr_import_17__ = await __vite_ssr_import__("/composables/useAuth.ts");
 
-Object.defineProperty(__vite_ssr_exports__, "getUserLikes", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_17__.getUserLikes }});
-Object.defineProperty(__vite_ssr_exports__, "addUserLike", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_17__.addUserLike }});
-Object.defineProperty(__vite_ssr_exports__, "removeUserLike", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_17__.removeUserLike }});
+Object.defineProperty(__vite_ssr_exports__, "useAuthCookie", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_17__.useAuthCookie }});
+Object.defineProperty(__vite_ssr_exports__, "useUser", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_17__.useUser }});
+Object.defineProperty(__vite_ssr_exports__, "userLogout", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_17__.userLogout }});
+Object.defineProperty(__vite_ssr_exports__, "registerWithEmail", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_17__.registerWithEmail }});
+Object.defineProperty(__vite_ssr_exports__, "loginWithEmail", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_17__.loginWithEmail }});
 const __vite_ssr_import_18__ = await __vite_ssr_import__("/node_modules/@nuxt/content/dist/runtime/composables/query.mjs");
 
 Object.defineProperty(__vite_ssr_exports__, "queryContent", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_18__.queryContent }});
@@ -2215,6 +2215,73 @@ Object.defineProperty(__vite_ssr_exports__, "del", { enumerable: true, configura
 
 
 // --------------------
+// Request: /composables/useComment.ts
+// Parents: 
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
+// - /components/Comments.vue ($id_04072223)
+// Dependencies: 
+
+// --------------------
+const $id_662ffe6f = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+async function getPlayerComments(playerId) {
+  const comment = await $fetch("/api/comment/getComments?playerId=" + playerId, { method: "GET" });
+  return comment;
+}
+Object.defineProperty(__vite_ssr_exports__, "getPlayerComments", { enumerable: true, configurable: true, get(){ return getPlayerComments }});
+async function addComment(data) {
+  const comment = await $fetch("/api/comment/addComment", {
+    method: "POST",
+    body: {
+      userId: data.userId,
+      playerId: data.playerId,
+      comment: data.comment
+    }
+  });
+  return comment;
+}
+Object.defineProperty(__vite_ssr_exports__, "addComment", { enumerable: true, configurable: true, get(){ return addComment }});
+async function deleteComment(commentId) {
+  const res = await $fetch("/api/comment/deleteComment?commentId=" + commentId, { method: "GET" });
+  return res;
+}
+Object.defineProperty(__vite_ssr_exports__, "deleteComment", { enumerable: true, configurable: true, get(){ return deleteComment }});
+;
+}
+
+
+// --------------------
+// Request: /composables/useLike.ts
+// Parents: 
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
+// - /pages/teams/[id]/player/[player].vue?macro=true ($id_5609f4a1)
+// - /pages/teams/[id]/player/[player].vue ($id_b85564a3)
+// Dependencies: 
+// - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
+// --------------------
+const $id_6dd93210 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
+
+async function getUserLikes(playerId) {
+  const like = await $fetch("/api/like/getLikes?playerId=" + playerId, { method: "GET" });
+  return like;
+}
+Object.defineProperty(__vite_ssr_exports__, "getUserLikes", { enumerable: true, configurable: true, get(){ return getUserLikes }});
+async function addUserLike(playerId) {
+  const user = __vite_ssr_import_0__.useState("user");
+  const like = await $fetch("/api/like/addLike", { method: "POST", body: { userId: user.value.id, playerId } });
+  return like;
+}
+Object.defineProperty(__vite_ssr_exports__, "addUserLike", { enumerable: true, configurable: true, get(){ return addUserLike }});
+async function removeUserLike(likeId) {
+  const res = await $fetch("/api/like/deleteLike?likeId=" + likeId, { method: "GET" });
+  return res;
+}
+Object.defineProperty(__vite_ssr_exports__, "removeUserLike", { enumerable: true, configurable: true, get(){ return removeUserLike }});
+;
+}
+
+
+// --------------------
 // Request: /composables/useAuth.ts
 // Parents: 
 // - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
@@ -2278,73 +2345,6 @@ async function loginWithEmail(email, password) {
   await __vite_ssr_import_1__.useRouter().push("/blog");
 }
 Object.defineProperty(__vite_ssr_exports__, "loginWithEmail", { enumerable: true, configurable: true, get(){ return loginWithEmail }});
-;
-}
-
-
-// --------------------
-// Request: /composables/useComment.ts
-// Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
-// - /components/Comments.vue ($id_04072223)
-// Dependencies: 
-
-// --------------------
-const $id_662ffe6f = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-async function getPlayerComments(playerId) {
-  const comment = await $fetch("/api/comment/getComments?playerId=" + playerId, { method: "GET" });
-  return comment;
-}
-Object.defineProperty(__vite_ssr_exports__, "getPlayerComments", { enumerable: true, configurable: true, get(){ return getPlayerComments }});
-async function addComment(data) {
-  const comment = await $fetch("/api/comment/addComment", {
-    method: "POST",
-    body: {
-      userId: data.userId,
-      playerId: data.playerId,
-      comment: data.comment
-    }
-  });
-  return comment;
-}
-Object.defineProperty(__vite_ssr_exports__, "addComment", { enumerable: true, configurable: true, get(){ return addComment }});
-async function deleteComment(commentId) {
-  const res = await $fetch("/api/comment/deleteComment?commentId=" + commentId, { method: "GET" });
-  return res;
-}
-Object.defineProperty(__vite_ssr_exports__, "deleteComment", { enumerable: true, configurable: true, get(){ return deleteComment }});
-;
-}
-
-
-// --------------------
-// Request: /composables/useLike.ts
-// Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
-// - /pages/teams/[id]/player/[player].vue?macro=true ($id_5609f4a1)
-// - /pages/teams/[id]/player/[player].vue ($id_b85564a3)
-// Dependencies: 
-// - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
-// --------------------
-const $id_6dd93210 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
-
-async function getUserLikes(playerId) {
-  const like = await $fetch("/api/like/getLikes?playerId=" + playerId, { method: "GET" });
-  return like;
-}
-Object.defineProperty(__vite_ssr_exports__, "getUserLikes", { enumerable: true, configurable: true, get(){ return getUserLikes }});
-async function addUserLike(playerId) {
-  const user = __vite_ssr_import_0__.useState("user");
-  const like = await $fetch("/api/like/addLike", { method: "POST", body: { userId: user.value.id, playerId } });
-  return like;
-}
-Object.defineProperty(__vite_ssr_exports__, "addUserLike", { enumerable: true, configurable: true, get(){ return addUserLike }});
-async function removeUserLike(likeId) {
-  const res = await $fetch("/api/like/deleteLike?likeId=" + likeId, { method: "GET" });
-  return res;
-}
-Object.defineProperty(__vite_ssr_exports__, "removeUserLike", { enumerable: true, configurable: true, get(){ return removeUserLike }});
 ;
 }
 
@@ -7464,7 +7464,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
   const _component_NuxtLink = __vite_ssr_import_0__.default;
   _push(`<div${__vite_ssr_import_4__.ssrRenderAttrs(__vite_ssr_import_3__.mergeProps({ class: "flex flex-col bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]" }, _attrs))}><!-- <img
       class="w-full h-auto rounded-t-xl"
-      :src="matchPlayerImage(player.person.fullName)"
+      :src="methods.matchPlayerImage(player.person.fullName)"
       alt="Player Profile"
     /> --><div class="p-4 md:p-5"><h3 class="text-lg font-bold text-gray-800 dark:text-white">${__vite_ssr_import_4__.ssrInterpolate($props.player.person.fullName)}</h3><p class="mt-1 text-gray-800 dark:text-gray-400"> Jersey Number: ${__vite_ssr_import_4__.ssrInterpolate($props.player.jerseyNumber)}</p>`);
   _push(__vite_ssr_import_4__.ssrRenderComponent(_component_NuxtLink, {
@@ -7556,6 +7556,7 @@ player.value = {
   ...res[0].data.value.people[0],
   stats: res[1].data.value.stats[0].splits[0],
 };
+
 playerLikes.value = (
   ([__temp,__restore] = __vite_ssr_import_3__.withAsyncContext(() => __vite_ssr_import_4__.getUserLikes(route.params.player))),
   __temp = await __temp,
@@ -9051,6 +9052,7 @@ player.value = {
   ...res[0].data.value.people[0],
   stats: res[1].data.value.stats[0].splits[0],
 };
+
 playerLikes.value = (
   ([__temp,__restore] = __vite_ssr_import_3__.withAsyncContext(() => __vite_ssr_import_4__.getUserLikes(route.params.player))),
   __temp = await __temp,
@@ -10370,9 +10372,9 @@ const __modules__ = {
   "/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs": $id_8e1dca9a,
   "/node_modules/nuxt/dist/app/compat/vue-demi.mjs": $id_a8110be7,
   "/node_modules/nuxt/dist/app/compat/capi.mjs": $id_0c5717a4,
-  "/composables/useAuth.ts": $id_ba05bb26,
   "/composables/useComment.ts": $id_662ffe6f,
   "/composables/useLike.ts": $id_6dd93210,
+  "/composables/useAuth.ts": $id_ba05bb26,
   "/node_modules/@nuxt/content/dist/runtime/composables/query.mjs": $id_47535763,
   "/node_modules/@nuxt/content/dist/runtime/query/query.mjs": $id_7961d5dc,
   "/node_modules/@nuxt/content/dist/runtime/query/match/utils.mjs": $id_e943acfb,
