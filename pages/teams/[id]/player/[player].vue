@@ -20,6 +20,7 @@ player.value = {
   ...res[0].data.value.people[0],
   stats: res[1].data.value.stats[0].splits[0],
 };
+
 playerLikes.value = await getUserLikes(route.params.player);
 
 const isLiked = computed(() => {
