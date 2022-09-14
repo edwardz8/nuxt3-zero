@@ -1,4 +1,5 @@
 <script setup>
+import matchPlayerImage from '../../../../methods.js'
 import { getUserLikes, addUserLike, removeUserLike } from "~/composables/useLike";
 import { useState } from "#app";
 
@@ -69,20 +70,29 @@ async function unlikePlayer(id) {
         class="md:w-1/2 md:mx-auto mt-4 mx-4 flex flex-col bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]"
       >
         <div class="p-4 md:p-5">
-          <h3 class="text-lg font-bold text-gray-800 dark:text-white text-center">
-            {{ player.fullName }}
-          </h3>
+          <h2 class="text-2xl font-bold text-gray-800 dark:text-white text-center">
+            {{ player?.fullName }}
+          </h2>
 
-          <p class="mt-1 text-gray-800 dark:text-gray-400">
-            Height: {{ player.height }} <br />
-            Team: {{ player.currentTeam.name }} <br />
-            Season: {{ player.stats.season }} <br />
-            Assists: {{ player.stats.stat.assists }} <br />
-            Pim: {{ player.stats.stat.pim }} <br />
-            shots: {{ player.stats.stat.shots }} <br />
-            Goals: {{ player.stats.stat.goals }} <br />
-            Games: {{ player.stats.stat.games }} <br />
-            Hits: {{ player.stats.stat.hits }} <br />
+          <img
+            class="mx-auto rounded-t-xl w-32"
+            :src="matchPlayerImage(player?.fullName)"
+            alt="Player Profile"
+          />
+
+          <h5 class="text-md font-bold text-gray-800 dark:text-white text-center">
+            {{ player?.currentTeam?.name }}
+          </h5>
+
+          <p class="mt-4 text-gray-800 dark:text-gray-400">
+            Height: {{ player?.height }} <br />
+            Season: {{ player?.stats?.season }} <br />
+            Assists: {{ player?.stats?.stat.assists }} <br />
+            Pim: {{ player?.stats?.stat.pim }} <br />
+            shots: {{ player?.stats?.stat.shots }} <br />
+            Goals: {{ player?.stats?.stat.goals }} <br />
+            Games: {{ player?.stats?.stat.games }} <br />
+            Hits: {{ player?.stats?.stat.hits }} <br />
           </p>
 
           <button
