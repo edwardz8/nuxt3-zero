@@ -3898,9 +3898,10 @@ const prisma = new PrismaClient();
 const prisma$1 = prisma;
 
 async function getLikesByUser(playerId) {
+  const idArray = playerId.split(",").map(Number);
   return await prisma$1.like.findMany({
     where: {
-      playerId: +playerId
+      playerId: { in: idArray }
     },
     select: {
       id: true,
@@ -3930,8 +3931,13 @@ async function deleteLike$2(data) {
 const getLikes = defineEventHandler(async (event) => {
   const query = await useQuery(event);
   const playerId = query.playerId;
-  const like = await getLikesByUser(playerId);
-  return like;
+  const likes = await getLikesByUser(playerId);
+  const likesGroupedByUser = likes.reduce(function(r, a) {
+    r[a.playerId] = r[a.playerId] || [];
+    r[a.playerId].push(a);
+    return r;
+  }, /* @__PURE__ */ Object.create(null));
+  return likesGroupedByUser;
 });
 
 const getLikes$1 = /*#__PURE__*/Object.freeze({

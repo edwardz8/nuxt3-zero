@@ -2,9 +2,10 @@ import prisma from '../client'
 import { ILike } from '~~/types/ILike'
 
 export async function getLikesByUser(playerId) {
+    const idArray = playerId.split(',').map(Number)
     return await prisma.like.findMany({
         where: {
-            playerId: +playerId
+            playerId: { in: idArray }
         },
         select: {
             id: true,

@@ -10,6 +10,13 @@ const user = useState("user");
 
 playerComments.value = await getPlayerComments(route.params.player);
 
+const userComment = computed(() => {
+  if (!user.value) return false 
+  const index = playerComments.value.findIndex(comment => comment.userId === user.value.id)
+
+  return index > -1
+})
+
 /*
 =================================
           * METHODS *
@@ -17,6 +24,8 @@ playerComments.value = await getPlayerComments(route.params.player);
 */
 
 async function commentPlayer() {
+
+  if (!user.value) return useRouter().push('/login')
   commenting.value = true;
   try {
     const commentRes = await addComment({
@@ -81,7 +90,7 @@ async function deletePlayerComment(id, index) {
             </h4>
             <span class="text-xs leading-3">@{{ comment.user.username }}</span>
           </div>
-          <button class="p-2 ml-auto" @click="deletePlayerComment(comment.id, i)">
+          <button class="p-2 ml-auto" @click="deletePlayerComment(comment.id, i)" v-if="userComment">
             <svg
               width="24"
               height="24"

@@ -6,6 +6,7 @@ declare module 'vue' {
     'Form': typeof import("../components/Form.vue")['default'],
     'OffCanvas': typeof import("../components/OffCanvas.vue")['default'],
     'PlayerCard': typeof import("../components/PlayerCard.vue")['default'],
+    'PolarChartArea': typeof import("../components/PolarChartArea.ts")['default'],
     'PrevNext': typeof import("../components/PrevNext.vue")['default'],
     'SiteHeader': typeof import("../components/SiteHeader.vue")['default'],
     'Tags': typeof import("../components/Tags.vue")['default'],
@@ -54,6 +55,7 @@ declare module 'vue' {
     'LazyForm': typeof import("../components/Form.vue")['default'],
     'LazyOffCanvas': typeof import("../components/OffCanvas.vue")['default'],
     'LazyPlayerCard': typeof import("../components/PlayerCard.vue")['default'],
+    'LazyPolarChartArea': typeof import("../components/PolarChartArea.ts")['default'],
     'LazyPrevNext': typeof import("../components/PrevNext.vue")['default'],
     'LazySiteHeader': typeof import("../components/SiteHeader.vue")['default'],
     'LazyTags': typeof import("../components/Tags.vue")['default'],
@@ -104,6 +106,7 @@ export const Comments: typeof import("../components/Comments.vue")['default']
 export const Form: typeof import("../components/Form.vue")['default']
 export const OffCanvas: typeof import("../components/OffCanvas.vue")['default']
 export const PlayerCard: typeof import("../components/PlayerCard.vue")['default']
+export const PolarChartArea: typeof import("../components/PolarChartArea.ts")['default']
 export const PrevNext: typeof import("../components/PrevNext.vue")['default']
 export const SiteHeader: typeof import("../components/SiteHeader.vue")['default']
 export const Tags: typeof import("../components/Tags.vue")['default']
@@ -152,6 +155,7 @@ export const LazyComments: typeof import("../components/Comments.vue")['default'
 export const LazyForm: typeof import("../components/Form.vue")['default']
 export const LazyOffCanvas: typeof import("../components/OffCanvas.vue")['default']
 export const LazyPlayerCard: typeof import("../components/PlayerCard.vue")['default']
+export const LazyPolarChartArea: typeof import("../components/PolarChartArea.ts")['default']
 export const LazyPrevNext: typeof import("../components/PrevNext.vue")['default']
 export const LazySiteHeader: typeof import("../components/SiteHeader.vue")['default']
 export const LazyTags: typeof import("../components/Tags.vue")['default']

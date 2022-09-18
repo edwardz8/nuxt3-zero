@@ -1,4 +1,5 @@
 <script setup>
+import PolarAreaChart from "./PolarChartArea.ts";
 import matchPlayerImage from "../methods.js";
 
 const props = defineProps(["player"]);
@@ -8,13 +9,13 @@ const props = defineProps(["player"]);
   <div>
     <div
       id="player-sidebar"
-      class="hs-overlay hs-overlay-open:translate-x-0 hidden -translate-x-full fixed top-0 left-0 transition-all duration-300 transform h-full max-w-xs w-full w-full z-[60] bg-white border-r dark:bg-gray-800 dark:border-gray-700 hidden"
+      class="hs-overlay hs-overlay-open:translate-x-0 hidden -translate-x-full fixed top-0 left-0 transition-all duration-300 transform h-full max-w-xs w-full w-full z-[60] bg-white border-r bg-white border-gray-600 hidden"
       tabindex="-1"
     >
       <div
         class="flex justify-between items-center py-3 px-4 border-b dark:border-gray-700"
       >
-        <h3 class="font-bold text-gray-800 dark:text-white">
+        <h3 class="font-bold text-gray-800">
           {{ player ? player.fullName : "Loading..." }}
         </h3>
         <button
@@ -39,13 +40,13 @@ const props = defineProps(["player"]);
         </button>
       </div>
       <div class="p-4">
-      <img
-            class="w-full h-auto rounded-t-xl"
-            :src="matchPlayerImage(player?.fullName)"
-            alt="Player Profile"
-          />
+        <img
+          class="w-full h-auto rounded-t-xl"
+          :src="matchPlayerImage(player?.fullName)"
+          alt="Player Profile"
+        />
         <div v-if="player">
-          <p class="mt-1 text-gray-800 dark:text-gray-400">
+          <!-- <p class="mt-1 text-gray-800 dark:text-gray-400">
             Height: {{ player.height }} <br />
             Team: {{ player.currentTeam.name }} <br />
             Assists: {{ player.stats.stat.assists }} <br />
@@ -54,7 +55,8 @@ const props = defineProps(["player"]);
             Goals: {{ player.stats.stat.goals }} <br />
             Games: {{ player.stats.stat.games }} <br />
             Hits: {{ player.stats.stat.hits }} <br />
-          </p>
+          </p> -->
+          <PolarAreaChart :stats="player.stats.stat" />
         </div>
         <div v-else class="h-96 flex items-center justify-center">
           <div

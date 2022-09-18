@@ -7,9 +7,9 @@ export async function getUserLikes(playerId: string) {
     return like
 }
 
-export async function addUserLike(playerId) {
-    const user = useState<IUser>('user')
-    const like = await $fetch('/api/like/addLike', { method: 'POST', body: { userId: user.value.id, playerId: playerId } })
+export async function addUserLike({playerId, userId}) {
+    // const user = useState<IUser>('user')
+    const like = await $fetch('/api/like/addLike', { method: 'POST', body: { userId: userId, playerId: playerId } })
     return like
 }
 

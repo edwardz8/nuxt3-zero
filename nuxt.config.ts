@@ -5,7 +5,7 @@ import { defineNuxtConfig } from 'nuxt'
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   meta: { title: 'rosterprops' },
-  app: { head: { link: [ {rel: 'icon', type: "image/x-icon", href: '/favicon.ico?v2'} ] } },
+  app: { head: { link: [{ rel: 'icon', type: "image/x-icon", href: '/favicon.ico?v2' }] } },
   modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
   publicRuntimeConfig: {
     SEASON: process.env.SEASON
@@ -29,5 +29,8 @@ export default defineNuxtConfig({
   },
   tailwindcss: {
     cssPath: '~/assets/css/main.css',
+  },
+  build: {
+    transpile: ['chart.js']
   }
 })

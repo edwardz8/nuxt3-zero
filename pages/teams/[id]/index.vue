@@ -1,12 +1,47 @@
 <script setup lang="ts">
 const route = useRoute();
+const user = useState("user");
+import { useState } from "#app";
+import { getUserLikes, addUserLikes, removeUserLikes } from "~/composables/useLike";
 
 const player = ref(null);
 const config = useRuntimeConfig();
+const playerLikes = ref(null);
 
 const { data } = await useFetch(
   `https://statsapi.web.nhl.com/api/v1/teams/${route.params.id}/roster`
 );
+
+const playerIds = [...data.value.roster].map((player) => {
+  return player.person.id;
+});
+playerLikes.value = await getUserLikes(playerIds.toString());
+
+/* METHODS */
+
+async function likePlayer(id) {
+  if (!user.value) return useRouter().push("/login");
+  try {
+    const like = await addUserLike({ playerId: id, userId: user.value.id });
+    if (playerLikes.value[id]) {
+      playerLikes.value[id].push({ ...like });
+    } else {
+      playerLikes.value[id] = [{ ...like }];
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+async function unlikePlayer({ id, playerId }) {
+  try {
+    await removeUserLike(id);
+    const index = playerLikes.value[playerId].findIndex((like) => like.id === id);
+    playerLikes.value[playerId].splice(index, 1);
+  } catch (error) {
+    console.log(error);
+  }
+}
 
 async function showPlayer(id) {
   player.value = null;
@@ -41,11 +76,15 @@ async function showPlayer(id) {
       <div
         class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-3 px-4"
       >
-        <player-card 
+        <player-card
           v-for="player in data.roster"
+          :user-id="user ? user.id : undefined"
           :player="player"
-          :key="player.id"
+          :likes="playerLikes[player.person.id]"
+          :key="player.person.id"
           @show-player="showPlayer"
+          @like-player="likePlayer"
+          @unlike-player="unlikePlayer"
         />
       </div>
     </section>

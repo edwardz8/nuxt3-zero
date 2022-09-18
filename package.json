@@ -21,9 +21,11 @@
     "@supabase/supabase-js": "^1.35.6",
     "@vueuse/core": "^9.1.1",
     "bcrypt": "^5.0.1",
+    "chart.js": "^3.9.1",
     "preline": "^1.2.1",
     "stripe": "^10.7.0",
-    "uuid": "^8.3.2"
+    "uuid": "^8.3.2",
+    "vue-chartjs": "^4.1.1"
   },
   "prisma": {
     "schema": "server/database/schema.prisma"

@@ -4,7 +4,14 @@ export default defineEventHandler(async (event) => {
     const query = await useQuery(event)
     const playerId = query.playerId
 
-    const like = await getLikesByUser(playerId)
+    const likes = await getLikesByUser(playerId)
 
-    return like
+    const likesGroupedByUser = likes.reduce(function (r, a) {
+        r[a.playerId] = r[a.playerId] || []
+        r[a.playerId].push(a)
+        return r
+    }, Object.create(null))
+
+    return likesGroupedByUser
+
 })

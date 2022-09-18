@@ -22,7 +22,8 @@ player.value = {
   stats: res[1].data.value.stats[0].splits[0],
 };
 
-playerLikes.value = await getUserLikes(route.params.player);
+const likes = await getUserLikes(route.params.player);
+playerLikes.value = likes[+route.params.player] ? likes[+route.params.player] : []
 
 const isLiked = computed(() => {
   return playerLikes.value.find((like) => like.userId == user.value.id) ? true : false;
@@ -39,8 +40,9 @@ const userLike = computed(() => {
 */
 
 async function likePlayer() {
+  if (!user.value) return useRouter().push('/login')
   try {
-    const like = await addUserLike(player.value.id);
+    const like = await addUserLike({ playerId: player.value.id, userId: user.value.id });
     console.log("like", like);
     playerLikes.value.push({ ...like });
   } catch (error) {}
@@ -49,10 +51,11 @@ async function likePlayer() {
 async function unlikePlayer(id) {
   try {
     await removeUserLike(id);
-    const index = playerLikes.value.find((like) => id === id);
+    const index = playerLikes.value.find((like) => like.id === id);
     playerLikes.value.splice(index, 1);
   } catch (error) {}
 }
+
 </script>
 
 <template>
