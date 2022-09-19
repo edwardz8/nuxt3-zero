@@ -26,6 +26,7 @@ const likes = await getUserLikes(route.params.player);
 playerLikes.value = likes[+route.params.player] ? likes[+route.params.player] : []
 
 const isLiked = computed(() => {
+  if(!user.value) return false 
   return playerLikes.value.find((like) => like.userId == user.value.id) ? true : false;
 });
 
