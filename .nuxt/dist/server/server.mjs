@@ -2004,9 +2004,9 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
 // - /node_modules/nuxt/dist/app/compat/vue-demi.mjs ($id_a8110be7)
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /composables/useLike.ts ($id_6dd93210)
-// - /composables/useComment.ts ($id_662ffe6f)
 // - /composables/useAuth.ts ($id_ba05bb26)
+// - /composables/useComment.ts ($id_662ffe6f)
+// - /composables/useLike.ts ($id_6dd93210)
 // - /node_modules/@nuxt/content/dist/runtime/composables/query.mjs ($id_47535763)
 // - /node_modules/@nuxt/content/dist/runtime/composables/utils.mjs ($id_3db3e041)
 // - /node_modules/@nuxt/content/dist/runtime/composables/navigation.mjs ($id_e209d000)
@@ -2021,11 +2021,11 @@ const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt/dist
 
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/composables/useLike.ts");
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/composables/useAuth.ts");
 
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/composables/useComment.ts");
 
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/composables/useAuth.ts");
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/composables/useLike.ts");
 
 const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/@nuxt/content/dist/runtime/composables/query.mjs");
 
@@ -2128,23 +2128,23 @@ Object.defineProperty(__vite_ssr_exports__, "useCssModule", { enumerable: true, 
 Object.defineProperty(__vite_ssr_exports__, "useCssVars", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_14__.useCssVars }});
 Object.defineProperty(__vite_ssr_exports__, "useSlots", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_14__.useSlots }});
 Object.defineProperty(__vite_ssr_exports__, "useTransitionState", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_14__.useTransitionState }});
-const __vite_ssr_import_15__ = await __vite_ssr_import__("/composables/useLike.ts");
+const __vite_ssr_import_15__ = await __vite_ssr_import__("/composables/useAuth.ts");
 
-Object.defineProperty(__vite_ssr_exports__, "getUserLikes", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_15__.getUserLikes }});
-Object.defineProperty(__vite_ssr_exports__, "addUserLike", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_15__.addUserLike }});
-Object.defineProperty(__vite_ssr_exports__, "removeUserLike", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_15__.removeUserLike }});
+Object.defineProperty(__vite_ssr_exports__, "useAuthCookie", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_15__.useAuthCookie }});
+Object.defineProperty(__vite_ssr_exports__, "useUser", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_15__.useUser }});
+Object.defineProperty(__vite_ssr_exports__, "userLogout", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_15__.userLogout }});
+Object.defineProperty(__vite_ssr_exports__, "registerWithEmail", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_15__.registerWithEmail }});
+Object.defineProperty(__vite_ssr_exports__, "loginWithEmail", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_15__.loginWithEmail }});
 const __vite_ssr_import_16__ = await __vite_ssr_import__("/composables/useComment.ts");
 
 Object.defineProperty(__vite_ssr_exports__, "getPlayerComments", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_16__.getPlayerComments }});
 Object.defineProperty(__vite_ssr_exports__, "addComment", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_16__.addComment }});
 Object.defineProperty(__vite_ssr_exports__, "deleteComment", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_16__.deleteComment }});
-const __vite_ssr_import_17__ = await __vite_ssr_import__("/composables/useAuth.ts");
+const __vite_ssr_import_17__ = await __vite_ssr_import__("/composables/useLike.ts");
 
-Object.defineProperty(__vite_ssr_exports__, "useAuthCookie", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_17__.useAuthCookie }});
-Object.defineProperty(__vite_ssr_exports__, "useUser", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_17__.useUser }});
-Object.defineProperty(__vite_ssr_exports__, "userLogout", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_17__.userLogout }});
-Object.defineProperty(__vite_ssr_exports__, "registerWithEmail", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_17__.registerWithEmail }});
-Object.defineProperty(__vite_ssr_exports__, "loginWithEmail", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_17__.loginWithEmail }});
+Object.defineProperty(__vite_ssr_exports__, "getUserLikes", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_17__.getUserLikes }});
+Object.defineProperty(__vite_ssr_exports__, "addUserLike", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_17__.addUserLike }});
+Object.defineProperty(__vite_ssr_exports__, "removeUserLike", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_17__.removeUserLike }});
 const __vite_ssr_import_18__ = await __vite_ssr_import__("/node_modules/@nuxt/content/dist/runtime/composables/query.mjs");
 
 Object.defineProperty(__vite_ssr_exports__, "queryContent", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_18__.queryContent }});
@@ -2217,72 +2217,6 @@ Object.defineProperty(__vite_ssr_exports__, "del", { enumerable: true, configura
 
 
 // --------------------
-// Request: /composables/useLike.ts
-// Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
-// - /pages/teams/[id]/index.vue?macro=true ($id_4d404a17)
-// - /pages/teams/[id]/player/[player].vue?macro=true ($id_5609f4a1)
-// - /pages/teams/[id]/index.vue ($id_aeed9c79)
-// - /pages/teams/[id]/player/[player].vue ($id_b85564a3)
-// Dependencies: 
-
-// --------------------
-const $id_6dd93210 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-async function getUserLikes(playerId) {
-  const like = await $fetch("/api/like/getLikes?playerId=" + playerId, { method: "GET" });
-  return like;
-}
-Object.defineProperty(__vite_ssr_exports__, "getUserLikes", { enumerable: true, configurable: true, get(){ return getUserLikes }});
-async function addUserLike({ playerId, userId }) {
-  const like = await $fetch("/api/like/addLike", { method: "POST", body: { userId, playerId } });
-  return like;
-}
-Object.defineProperty(__vite_ssr_exports__, "addUserLike", { enumerable: true, configurable: true, get(){ return addUserLike }});
-async function removeUserLike(likeId) {
-  const res = await $fetch("/api/like/deleteLike?likeId=" + likeId, { method: "GET" });
-  return res;
-}
-Object.defineProperty(__vite_ssr_exports__, "removeUserLike", { enumerable: true, configurable: true, get(){ return removeUserLike }});
-;
-}
-
-
-// --------------------
-// Request: /composables/useComment.ts
-// Parents: 
-// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
-// - /components/Comments.vue ($id_04072223)
-// Dependencies: 
-
-// --------------------
-const $id_662ffe6f = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-async function getPlayerComments(playerId) {
-  const comment = await $fetch("/api/comment/getComments?playerId=" + playerId, { method: "GET" });
-  return comment;
-}
-Object.defineProperty(__vite_ssr_exports__, "getPlayerComments", { enumerable: true, configurable: true, get(){ return getPlayerComments }});
-async function addComment(data) {
-  const comment = await $fetch("/api/comment/addComment", {
-    method: "POST",
-    body: {
-      userId: data.userId,
-      playerId: data.playerId,
-      comment: data.comment
-    }
-  });
-  return comment;
-}
-Object.defineProperty(__vite_ssr_exports__, "addComment", { enumerable: true, configurable: true, get(){ return addComment }});
-async function deleteComment(commentId) {
-  const res = await $fetch("/api/comment/deleteComment?commentId=" + commentId, { method: "GET" });
-  return res;
-}
-Object.defineProperty(__vite_ssr_exports__, "deleteComment", { enumerable: true, configurable: true, get(){ return deleteComment }});
-;
-}
-
-
-// --------------------
 // Request: /composables/useAuth.ts
 // Parents: 
 // - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
@@ -2346,6 +2280,72 @@ async function loginWithEmail(email, password) {
   await __vite_ssr_import_1__.useRouter().push("/blog");
 }
 Object.defineProperty(__vite_ssr_exports__, "loginWithEmail", { enumerable: true, configurable: true, get(){ return loginWithEmail }});
+;
+}
+
+
+// --------------------
+// Request: /composables/useComment.ts
+// Parents: 
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
+// - /components/Comments.vue ($id_04072223)
+// Dependencies: 
+
+// --------------------
+const $id_662ffe6f = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+async function getPlayerComments(playerId) {
+  const comment = await $fetch("/api/comment/getComments?playerId=" + playerId, { method: "GET" });
+  return comment;
+}
+Object.defineProperty(__vite_ssr_exports__, "getPlayerComments", { enumerable: true, configurable: true, get(){ return getPlayerComments }});
+async function addComment(data) {
+  const comment = await $fetch("/api/comment/addComment", {
+    method: "POST",
+    body: {
+      userId: data.userId,
+      playerId: data.playerId,
+      comment: data.comment
+    }
+  });
+  return comment;
+}
+Object.defineProperty(__vite_ssr_exports__, "addComment", { enumerable: true, configurable: true, get(){ return addComment }});
+async function deleteComment(commentId) {
+  const res = await $fetch("/api/comment/deleteComment?commentId=" + commentId, { method: "GET" });
+  return res;
+}
+Object.defineProperty(__vite_ssr_exports__, "deleteComment", { enumerable: true, configurable: true, get(){ return deleteComment }});
+;
+}
+
+
+// --------------------
+// Request: /composables/useLike.ts
+// Parents: 
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
+// - /pages/teams/[id]/index.vue?macro=true ($id_4d404a17)
+// - /pages/teams/[id]/player/[player].vue?macro=true ($id_5609f4a1)
+// - /pages/teams/[id]/index.vue ($id_aeed9c79)
+// - /pages/teams/[id]/player/[player].vue ($id_b85564a3)
+// Dependencies: 
+
+// --------------------
+const $id_6dd93210 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+async function getUserLikes(playerId) {
+  const like = await $fetch("/api/like/getLikes?playerId=" + playerId, { method: "GET" });
+  return like;
+}
+Object.defineProperty(__vite_ssr_exports__, "getUserLikes", { enumerable: true, configurable: true, get(){ return getUserLikes }});
+async function addUserLike({ playerId, userId }) {
+  const like = await $fetch("/api/like/addLike", { method: "POST", body: { userId, playerId } });
+  return like;
+}
+Object.defineProperty(__vite_ssr_exports__, "addUserLike", { enumerable: true, configurable: true, get(){ return addUserLike }});
+async function removeUserLike(likeId) {
+  const res = await $fetch("/api/like/deleteLike?likeId=" + likeId, { method: "GET" });
+  return res;
+}
+Object.defineProperty(__vite_ssr_exports__, "removeUserLike", { enumerable: true, configurable: true, get(){ return removeUserLike }});
 ;
 }
 
@@ -21538,6 +21538,7 @@ Object.defineProperty(__vite_ssr_exports__, "z", { enumerable: true, configurabl
 // - /components/OffCanvas.vue ($id_96b3030c)
 // - /components/PlayerCard.vue ($id_89df6488)
 // - /pages/teams/[id]/player/[player].vue?macro=true ($id_5609f4a1)
+// - /components/TeamCard.vue ($id_5e2e1b2d)
 // - /pages/teams/[id]/player/[player].vue ($id_b85564a3)
 // Dependencies: 
 
@@ -21547,6 +21548,9 @@ function matchPlayerImage(player) {
         switch (player) {
             case "Auston Matthews":
                 return "/img/Auston_Matthews.svg";
+                break;
+            case "Artemi Panarin":
+                return "/img/Artemi_Panarin.svg";
                 break;
             case "Connor McDavid":
                 return "/img/Connor_Mcdavid.svg";
@@ -21569,11 +21573,29 @@ function matchPlayerImage(player) {
             case "Sean Monahan":
                 return "/img/Sean Monahan.svg";
                 break;
-            case "Conner McDavid":
-                return "/img/Connor_Mcdavid.svg";
+            case "Mitch Marner":
+                return "/img/Mitch_Marner.svg";
                 break;
-            case "Conner McDavid":
-                return "/img/Connor_Mcdavid.svg";
+            case "Erik Karlsson":
+                return "/img/karlsson.png";
+                break;
+            case "Nikita Kucherov":
+                return "/img/Nikita_Kucherov.svg";
+                break;
+            case "Winnipeg":
+                return "/img/Skates-Fighter-Jet.svg";
+                break;
+            case "Toronto":
+                return "/img/FlapjackBag.svg";
+                break;
+            case "New Jersey":
+                return "/img/PlumbersJersey.svg";
+                break;
+            case "Buffalo":
+                return "/img/Nippers.png";
+                break;
+            case "Steven Stamkos":
+                return "/img/Steven_Stamkos.svg";
                 break;
             case "Carey Price":
                 return "/img/Carey_Price.svg";
@@ -22113,6 +22135,7 @@ Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configur
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /methods.js ($id_f04b79ca)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
@@ -22121,38 +22144,36 @@ const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/methods.js");
+
 const _sfc_main = /* @__PURE__ */ __vite_ssr_import_1__.defineComponent({
   __name: "TeamCard",
   props: ["team"],
   setup(__props, { expose }) {
     expose();
     const props = __props;
-    const __returned__ = { props };
+    const __returned__ = { props, matchPlayerImage: __vite_ssr_import_2__.default };
     Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
     return __returned__;
   }
 });
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_NuxtLink = __vite_ssr_import_0__.default;
-  _push(`<div${__vite_ssr_import_3__.ssrRenderAttrs(__vite_ssr_import_2__.mergeProps({ class: "flex flex-col bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]" }, _attrs))}><!-- <img
-      class="w-full h-auto rounded-t-xl"
-      src="/img/img1.jpg"
-      alt="Team Description"
-    /> --><div class="p-4 md:p-5"><h3 class="text-lg font-bold text-gray-800 dark:text-white">${__vite_ssr_import_3__.ssrInterpolate($props.team.name)}</h3><p class="mt-1 text-gray-800 dark:text-gray-400">${__vite_ssr_import_3__.ssrInterpolate($props.team.locationName)} <br></p>`);
-  _push(__vite_ssr_import_3__.ssrRenderComponent(_component_NuxtLink, {
+  _push(`<div${__vite_ssr_import_4__.ssrRenderAttrs(__vite_ssr_import_3__.mergeProps({ class: "flex flex-col bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]" }, _attrs))}><img class="mx-auto rounded-t-xl w-32"${__vite_ssr_import_4__.ssrRenderAttr("src", $setup.matchPlayerImage($props.team?.locationName))} alt="Player Profile"><div class="p-4 md:p-5"><h3 class="text-lg font-bold text-gray-800 dark:text-white">${__vite_ssr_import_4__.ssrInterpolate($props.team.name)}</h3><p class="mt-1 text-gray-800 dark:text-gray-400">${__vite_ssr_import_4__.ssrInterpolate($props.team.locationName)} <br></p>`);
+  _push(__vite_ssr_import_4__.ssrRenderComponent(_component_NuxtLink, {
     class: "mt-3 py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800",
     to: `/teams/` + $props.team.id
   }, {
-    default: __vite_ssr_import_2__.withCtx((_, _push2, _parent2, _scopeId) => {
+    default: __vite_ssr_import_3__.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
         _push2(` View Players `);
       } else {
         return [
-          __vite_ssr_import_2__.createTextVNode(" View Players ")
+          __vite_ssr_import_3__.createTextVNode(" View Players ")
         ];
       }
     }),
@@ -22160,17 +22181,17 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
   }, _parent));
   _push(`</div></div>`);
 }
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_4__.useSSRContext();
+  const ssrContext = __vite_ssr_import_5__.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/TeamCard.vue");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/components/TeamCard.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_6__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/components/TeamCard.vue"]]);
 ;
 }
 
@@ -24654,9 +24675,9 @@ const __modules__ = {
   "/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs": $id_8e1dca9a,
   "/node_modules/nuxt/dist/app/compat/vue-demi.mjs": $id_a8110be7,
   "/node_modules/nuxt/dist/app/compat/capi.mjs": $id_0c5717a4,
-  "/composables/useLike.ts": $id_6dd93210,
-  "/composables/useComment.ts": $id_662ffe6f,
   "/composables/useAuth.ts": $id_ba05bb26,
+  "/composables/useComment.ts": $id_662ffe6f,
+  "/composables/useLike.ts": $id_6dd93210,
   "/node_modules/@nuxt/content/dist/runtime/composables/query.mjs": $id_47535763,
   "/node_modules/@nuxt/content/dist/runtime/query/query.mjs": $id_7961d5dc,
   "/node_modules/@nuxt/content/dist/runtime/query/match/utils.mjs": $id_e943acfb,

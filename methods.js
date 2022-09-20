@@ -3,6 +3,9 @@ export default function matchPlayerImage(player) {
             case "Auston Matthews":
                 return "/img/Auston_Matthews.svg";
                 break;
+            case "Artemi Panarin":
+                return "/img/Artemi_Panarin.svg";
+                break;
             case "Connor McDavid":
                 return "/img/Connor_Mcdavid.svg";
                 break;
@@ -24,11 +27,29 @@ export default function matchPlayerImage(player) {
             case "Sean Monahan":
                 return "/img/Sean Monahan.svg";
                 break;
-            case "Conner McDavid":
-                return "/img/Connor_Mcdavid.svg";
+            case "Mitch Marner":
+                return "/img/Mitch_Marner.svg";
                 break;
-            case "Conner McDavid":
-                return "/img/Connor_Mcdavid.svg";
+            case "Erik Karlsson":
+                return "/img/karlsson.png";
+                break;
+            case "Nikita Kucherov":
+                return "/img/Nikita_Kucherov.svg";
+                break;
+            case "Winnipeg":
+                return "/img/Skates-Fighter-Jet.svg";
+                break;
+            case "Toronto":
+                return "/img/FlapjackBag.svg";
+                break;
+            case "New Jersey":
+                return "/img/PlumbersJersey.svg";
+                break;
+            case "Buffalo":
+                return "/img/Nippers.png";
+                break;
+            case "Steven Stamkos":
+                return "/img/Steven_Stamkos.svg";
                 break;
             case "Carey Price":
                 return "/img/Carey_Price.svg";

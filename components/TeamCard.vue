@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import matchPlayerImage from '../methods.js'
+
 const props = defineProps(["team"]);
 </script>
 
@@ -6,11 +8,11 @@ const props = defineProps(["team"]);
   <div
     class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]"
   >
-    <!-- <img
-      class="w-full h-auto rounded-t-xl"
-      src="/img/img1.jpg"
-      alt="Team Description"
-    /> -->
+    <img
+            class="mx-auto rounded-t-xl w-32"
+            :src="matchPlayerImage(team?.locationName)"
+            alt="Player Profile"
+          />
     <div class="p-4 md:p-5">
       <h3 class="text-lg font-bold text-gray-800 dark:text-white">
         {{ team.name }}
