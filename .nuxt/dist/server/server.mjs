@@ -1,34 +1,34 @@
 
 // --------------------
-// Request: /home/afzaal/Direct/nuxt3-zero/node_modules/nuxt/dist/app/entry
+// Request: /Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/nuxt/dist/app/entry
 // Parents: 
 // - <entry> ($id_c757eb9e)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/ohmyfetch/dist/index.mjs ($id_780217c4)
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/paths.mjs ($id_3478a43d)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/paths.mjs ($id_18786cd8)
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/css.mjs ($id_54117aa2)
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/plugins/server.mjs ($id_349c7318)
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/root-component.mjs ($id_7284e420)
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/app-component.mjs ($id_301aa44d)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/css.mjs ($id_96d15167)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/plugins/server.mjs ($id_d89cfd50)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/root-component.mjs ($id_ff981dfb)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/app-component.mjs ($id_170882f6)
 // --------------------
-const $id_01e3787c = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_74742b3b = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/ohmyfetch/dist/index.mjs");
 
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/paths.mjs");
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/paths.mjs");
 
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
 
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/css.mjs");
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/css.mjs");
 
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/plugins/server.mjs");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/plugins/server.mjs");
 
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/root-component.mjs");
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/root-component.mjs");
 
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/app-component.mjs");
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/app-component.mjs");
 
 if (!globalThis.$fetch) {
   globalThis.$fetch = __vite_ssr_import_1__.$fetch.create({
@@ -93,7 +93,7 @@ __vite_ssr_exports__.default = (ctx) => entry(ctx);
 // --------------------
 // Request: /node_modules/vue/dist/vue.cjs.js
 // Parents: 
-// - /home/afzaal/Direct/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_01e3787c)
+// - /Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_74742b3b)
 // - /node_modules/nuxt/dist/app/nuxt.mjs ($id_e069d411)
 // - /node_modules/nuxt/dist/app/composables/component.mjs ($id_53345950)
 // - /node_modules/nuxt/dist/app/composables/asyncData.mjs ($id_d5b6a221)
@@ -103,9 +103,9 @@ __vite_ssr_exports__.default = (ctx) => entry(ctx);
 // - /node_modules/nuxt/dist/app/composables/cookie.mjs ($id_511b441d)
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
 // - /node_modules/nuxt/dist/head/runtime/composables.mjs ($id_04ea9504)
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // - /node_modules/nuxt/dist/app/compat/capi.mjs ($id_0c5717a4)
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs ($id_e0503dec)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
 // - /components/content/InfoBox.vue ($id_e10e5808)
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentDoc.mjs ($id_12ce52f3)
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.mjs ($id_8f3d0953)
@@ -185,7 +185,7 @@ __vite_ssr_exports__.default = (ctx) => entry(ctx);
 
 // --------------------
 const $id_60f0615f = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/vue/dist/vue.cjs.js")
+import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/vue/dist/vue.cjs.js")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -194,19 +194,19 @@ import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/vue/dist/vue.cjs.js")
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/home/afzaal/Direct/nuxt3-zero/node_modules/vue/dist/vue.cjs.js\".")
+    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/vue/dist/vue.cjs.js\".")
   })
 
 
 // --------------------
 // Request: /node_modules/ohmyfetch/dist/index.mjs
 // Parents: 
-// - /home/afzaal/Direct/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_01e3787c)
+// - /Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_74742b3b)
 // Dependencies: 
 
 // --------------------
 const $id_780217c4 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/ohmyfetch/dist/index.mjs")
+import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/ohmyfetch/dist/index.mjs")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -215,18 +215,18 @@ import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/ohmyfetch/dist/index.
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/home/afzaal/Direct/nuxt3-zero/node_modules/ohmyfetch/dist/index.mjs\".")
+    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/ohmyfetch/dist/index.mjs\".")
   })
 
 
 // --------------------
-// Request: /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/paths.mjs
+// Request: /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/paths.mjs
 // Parents: 
-// - /home/afzaal/Direct/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_01e3787c)
+// - /Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_74742b3b)
 // Dependencies: 
 // - /node_modules/ufo/dist/index.mjs ($id_614de060)
 // --------------------
-const $id_3478a43d = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_18786cd8 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/ufo/dist/index.mjs");
 
 const appConfig = {"head":{"charset":"utf-8","viewport":"width=device-width, initial-scale=1","meta":[],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico?v2"}],"style":[],"script":[],"title":"rosterprops"},"baseURL":"/","buildAssetsDir":"/_nuxt/","assetsPath":{},"cdnURL":""}
@@ -247,7 +247,7 @@ Object.defineProperty(__vite_ssr_exports__, "publicAssetsURL", { enumerable: tru
 // --------------------
 // Request: /node_modules/ufo/dist/index.mjs
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/paths.mjs ($id_3478a43d)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/paths.mjs ($id_18786cd8)
 // - /node_modules/nuxt/dist/app/composables/router.mjs ($id_db4d90a8)
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
 // - /node_modules/@nuxt/content/dist/runtime/composables/query.mjs ($id_47535763)
@@ -257,7 +257,7 @@ Object.defineProperty(__vite_ssr_exports__, "publicAssetsURL", { enumerable: tru
 
 // --------------------
 const $id_614de060 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/ufo/dist/index.mjs")
+import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/ufo/dist/index.mjs")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -266,14 +266,14 @@ import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/ufo/dist/index.mjs")
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/home/afzaal/Direct/nuxt3-zero/node_modules/ufo/dist/index.mjs\".")
+    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/ufo/dist/index.mjs\".")
   })
 
 
 // --------------------
 // Request: /node_modules/nuxt/dist/app/index.mjs
 // Parents: 
-// - /home/afzaal/Direct/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_01e3787c)
+// - /Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_74742b3b)
 // - /node_modules/nuxt/dist/app/composables/asyncData.mjs ($id_d5b6a221)
 // - /node_modules/nuxt/dist/app/composables/hydrate.mjs ($id_0063df1b)
 // - /node_modules/nuxt/dist/app/composables/state.mjs ($id_7d872108)
@@ -284,7 +284,7 @@ import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/ufo/dist/index.mjs")
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
 // - /node_modules/nuxt/dist/head/runtime/composables.mjs ($id_04ea9504)
 // - /node_modules/nuxt/dist/app/plugins/preload.server.mjs ($id_9871bba0)
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs ($id_e0503dec)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
 // - /composables/useAuth.ts ($id_ba05bb26)
 // - /node_modules/@nuxt/content/dist/runtime/composables/query.mjs ($id_47535763)
 // - /node_modules/@nuxt/content/dist/runtime/composables/utils.mjs ($id_3db3e041)
@@ -511,7 +511,7 @@ function defineGetter(obj, key, val) {
 
 // --------------------
 const $id_a2c811c4 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/hookable/dist/index.mjs")
+import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/hookable/dist/index.mjs")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -520,7 +520,7 @@ import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/hookable/dist/index.m
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/home/afzaal/Direct/nuxt3-zero/node_modules/hookable/dist/index.mjs\".")
+    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/hookable/dist/index.mjs\".")
   })
 
 
@@ -534,7 +534,7 @@ import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/hookable/dist/index.m
 
 // --------------------
 const $id_a569ca2d = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/unctx/dist/index.mjs")
+import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/unctx/dist/index.mjs")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -543,7 +543,7 @@ import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/unctx/dist/index.mjs"
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/home/afzaal/Direct/nuxt3-zero/node_modules/unctx/dist/index.mjs\".")
+    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/unctx/dist/index.mjs\".")
   })
 
 
@@ -675,7 +675,7 @@ Object.defineProperty(__vite_ssr_exports__, "legacyPlugin", { enumerable: true, 
 
 // --------------------
 const $id_39e12da7 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/unenv/runtime/mock/proxy.mjs")
+import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/unenv/runtime/mock/proxy.mjs")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -684,7 +684,7 @@ import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/unenv/runtime/mock/pr
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/home/afzaal/Direct/nuxt3-zero/node_modules/unenv/runtime/mock/proxy.mjs\".")
+    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/unenv/runtime/mock/proxy.mjs\".")
   })
 
 
@@ -821,7 +821,7 @@ Object.defineProperty(__vite_ssr_exports__, "defineNuxtComponent", { enumerable:
 
 // --------------------
 const $id_f9a4a698 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/vue-router/dist/vue-router.cjs.js")
+import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/vue-router/dist/vue-router.cjs.js")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -830,7 +830,7 @@ import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/vue-router/dist/vue-r
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/home/afzaal/Direct/nuxt3-zero/node_modules/vue-router/dist/vue-router.cjs.js\".")
+    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/vue-router/dist/vue-router.cjs.js\".")
   })
 
 
@@ -1156,7 +1156,7 @@ Object.defineProperty(__vite_ssr_exports__, "useLazyFetch", { enumerable: true, 
 
 // --------------------
 const $id_b1b82cf3 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/ohash/dist/index.mjs")
+import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/ohash/dist/index.mjs")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -1165,7 +1165,7 @@ import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/ohash/dist/index.mjs"
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/home/afzaal/Direct/nuxt3-zero/node_modules/ohash/dist/index.mjs\".")
+    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/ohash/dist/index.mjs\".")
   })
 
 
@@ -1258,7 +1258,7 @@ function writeServerCookie(event, name, value, opts = {}) {
 
 // --------------------
 const $id_f4975261 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/cookie-es/dist/index.mjs")
+import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/cookie-es/dist/index.mjs")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -1267,7 +1267,7 @@ import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/cookie-es/dist/index.
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/home/afzaal/Direct/nuxt3-zero/node_modules/cookie-es/dist/index.mjs\".")
+    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/cookie-es/dist/index.mjs\".")
   })
 
 
@@ -1281,7 +1281,7 @@ import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/cookie-es/dist/index.
 
 // --------------------
 const $id_57d7ded6 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/h3/dist/index.mjs")
+import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/h3/dist/index.mjs")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -1290,7 +1290,7 @@ import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/h3/dist/index.mjs")
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/home/afzaal/Direct/nuxt3-zero/node_modules/h3/dist/index.mjs\".")
+    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/h3/dist/index.mjs\".")
   })
 
 
@@ -1303,7 +1303,7 @@ import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/h3/dist/index.mjs")
 
 // --------------------
 const $id_03d15ecd = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/destr/dist/index.mjs")
+import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/destr/dist/index.mjs")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -1312,7 +1312,7 @@ import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/destr/dist/index.mjs"
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/home/afzaal/Direct/nuxt3-zero/node_modules/destr/dist/index.mjs\".")
+    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/destr/dist/index.mjs\".")
   })
 
 
@@ -1589,7 +1589,7 @@ __vite_ssr_exports__.default = defineNuxtLink({ componentName: "NuxtLink" });
 // Request: /node_modules/nuxt/dist/head/runtime/index.mjs
 // Parents: 
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs ($id_e0503dec)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
 // - /pages/blog/[...slug].vue?macro=true ($id_23ff3f9c)
 // - /pages/blog/index.vue?macro=true ($id_381d5fdd)
 // - /pages/blog/tags/[slug].vue?macro=true ($id_23cb5fd2)
@@ -1645,7 +1645,7 @@ Object.defineProperty(__vite_ssr_exports__, "useMeta", { enumerable: true, confi
 
 // --------------------
 const $id_852b06a2 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/@vue/shared/dist/shared.cjs.js")
+import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@vue/shared/dist/shared.cjs.js")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -1654,18 +1654,18 @@ import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/@vue/shared/dist/shar
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/home/afzaal/Direct/nuxt3-zero/node_modules/@vue/shared/dist/shared.cjs.js\".")
+    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@vue/shared/dist/shared.cjs.js\".")
   })
 
 
 // --------------------
-// Request: /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/css.mjs
+// Request: /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/css.mjs
 // Parents: 
-// - /home/afzaal/Direct/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_01e3787c)
+// - /Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_74742b3b)
 // Dependencies: 
 // - /assets/css/main.css ($id_f8b2993b)
 // --------------------
-const $id_54117aa2 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_96d15167 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/assets/css/main.css");
 ;
 }
@@ -1674,31 +1674,31 @@ const __vite_ssr_import_0__ = await __vite_ssr_import__("/assets/css/main.css");
 // --------------------
 // Request: /assets/css/main.css
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/css.mjs ($id_54117aa2)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/css.mjs ($id_96d15167)
 // Dependencies: 
 
 // --------------------
 const $id_f8b2993b = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "@import url(\"https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@1,800,500,100,700,400,300,200,900&f[]=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&display=swap\");\n/*! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com*/*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:\"\"}html{-webkit-text-size-adjust:100%;font-family:Satoshi,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\";line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{color:inherit;font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::-webkit-backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.prose{color:var(--tw-prose-body);max-width:65ch}.prose :where([class~=lead]):not(:where([class~=not-prose] *)){color:var(--tw-prose-lead);font-size:1.25em;line-height:1.6;margin-bottom:1.2em;margin-top:1.2em}.prose :where(a):not(:where([class~=not-prose] *)){color:var(--tw-prose-links);font-weight:500;text-decoration:underline}.prose :where(strong):not(:where([class~=not-prose] *)){color:var(--tw-prose-bold);font-weight:600}.prose :where(ol):not(:where([class~=not-prose] *)){list-style-type:decimal;padding-left:1.625em}.prose :where(ol[type=A]):not(:where([class~=not-prose] *)){list-style-type:upper-alpha}.prose :where(ol[type=a]):not(:where([class~=not-prose] *)){list-style-type:lower-alpha}.prose :where(ol[type=A s]):not(:where([class~=not-prose] *)){list-style-type:upper-alpha}.prose :where(ol[type=a s]):not(:where([class~=not-prose] *)){list-style-type:lower-alpha}.prose :where(ol[type=I]):not(:where([class~=not-prose] *)){list-style-type:upper-roman}.prose :where(ol[type=i]):not(:where([class~=not-prose] *)){list-style-type:lower-roman}.prose :where(ol[type=I s]):not(:where([class~=not-prose] *)){list-style-type:upper-roman}.prose :where(ol[type=i s]):not(:where([class~=not-prose] *)){list-style-type:lower-roman}.prose :where(ol[type=\"1\"]):not(:where([class~=not-prose] *)){list-style-type:decimal}.prose :where(ul):not(:where([class~=not-prose] *)){list-style-type:disc;padding-left:1.625em}.prose :where(ol>li):not(:where([class~=not-prose] *))::marker{color:var(--tw-prose-counters);font-weight:400}.prose :where(ul>li):not(:where([class~=not-prose] *))::marker{color:var(--tw-prose-bullets)}.prose :where(hr):not(:where([class~=not-prose] *)){border-color:var(--tw-prose-hr);border-top-width:1px;margin-bottom:3em;margin-top:3em}.prose :where(blockquote):not(:where([class~=not-prose] *)){border-left-color:var(--tw-prose-quote-borders);border-left-width:.25rem;color:var(--tw-prose-quotes);font-style:italic;font-weight:500;margin-bottom:1.6em;margin-top:1.6em;padding-left:1em;quotes:\"\\201C\"\"\\201D\"\"\\2018\"\"\\2019\"}.prose :where(blockquote p:first-of-type):not(:where([class~=not-prose] *)):before{content:open-quote}.prose :where(blockquote p:last-of-type):not(:where([class~=not-prose] *)):after{content:close-quote}.prose :where(h1):not(:where([class~=not-prose] *)){color:var(--tw-prose-headings);font-size:2.25em;font-weight:800;line-height:1.1111111;margin-bottom:.8888889em;margin-top:0}.prose :where(h1 strong):not(:where([class~=not-prose] *)){font-weight:900}.prose :where(h2):not(:where([class~=not-prose] *)){color:var(--tw-prose-headings);font-size:1.5em;font-weight:700;line-height:1.3333333;margin-bottom:1em;margin-top:2em}.prose :where(h2 strong):not(:where([class~=not-prose] *)){font-weight:800}.prose :where(h3):not(:where([class~=not-prose] *)){color:var(--tw-prose-headings);font-size:1.25em;font-weight:600;line-height:1.6;margin-bottom:.6em;margin-top:1.6em}.prose :where(h3 strong):not(:where([class~=not-prose] *)){font-weight:700}.prose :where(h4):not(:where([class~=not-prose] *)){color:var(--tw-prose-headings);font-weight:600;line-height:1.5;margin-bottom:.5em;margin-top:1.5em}.prose :where(h4 strong):not(:where([class~=not-prose] *)){font-weight:700}.prose :where(figure>*):not(:where([class~=not-prose] *)){margin-bottom:0;margin-top:0}.prose :where(figcaption):not(:where([class~=not-prose] *)){color:var(--tw-prose-captions);font-size:.875em;line-height:1.4285714;margin-top:.8571429em}.prose :where(code):not(:where([class~=not-prose] *)){color:var(--tw-prose-code);font-size:.875em;font-weight:600}.prose :where(code):not(:where([class~=not-prose] *)):before{content:\"`\"}.prose :where(code):not(:where([class~=not-prose] *)):after{content:\"`\"}.prose :where(a code):not(:where([class~=not-prose] *)){color:var(--tw-prose-links)}.prose :where(pre):not(:where([class~=not-prose] *)){background-color:var(--tw-prose-pre-bg);border-radius:.375rem;color:var(--tw-prose-pre-code);font-size:.875em;font-weight:400;line-height:1.7142857;margin-bottom:1.7142857em;margin-top:1.7142857em;overflow-x:auto;padding:.8571429em 1.1428571em}.prose :where(pre code):not(:where([class~=not-prose] *)){background-color:transparent;border-radius:0;border-width:0;color:inherit;font-family:inherit;font-size:inherit;font-weight:inherit;line-height:inherit;padding:0}.prose :where(pre code):not(:where([class~=not-prose] *)):before{content:none}.prose :where(pre code):not(:where([class~=not-prose] *)):after{content:none}.prose :where(table):not(:where([class~=not-prose] *)){font-size:.875em;line-height:1.7142857;margin-bottom:2em;margin-top:2em;table-layout:auto;text-align:left;width:100%}.prose :where(thead):not(:where([class~=not-prose] *)){border-bottom-color:var(--tw-prose-th-borders);border-bottom-width:1px}.prose :where(thead th):not(:where([class~=not-prose] *)){color:var(--tw-prose-headings);font-weight:600;padding-bottom:.5714286em;padding-left:.5714286em;padding-right:.5714286em;vertical-align:bottom}.prose :where(tbody tr):not(:where([class~=not-prose] *)){border-bottom-color:var(--tw-prose-td-borders);border-bottom-width:1px}.prose :where(tbody tr:last-child):not(:where([class~=not-prose] *)){border-bottom-width:0}.prose :where(tbody td):not(:where([class~=not-prose] *)){padding:.5714286em;vertical-align:baseline}.prose{--tw-prose-body:#374151;--tw-prose-headings:#111827;--tw-prose-lead:#4b5563;--tw-prose-links:#111827;--tw-prose-bold:#111827;--tw-prose-counters:#6b7280;--tw-prose-bullets:#d1d5db;--tw-prose-hr:#e5e7eb;--tw-prose-quotes:#111827;--tw-prose-quote-borders:#e5e7eb;--tw-prose-captions:#6b7280;--tw-prose-code:#111827;--tw-prose-pre-code:#e5e7eb;--tw-prose-pre-bg:#1f2937;--tw-prose-th-borders:#d1d5db;--tw-prose-td-borders:#e5e7eb;--tw-prose-invert-body:#d1d5db;--tw-prose-invert-headings:#fff;--tw-prose-invert-lead:#9ca3af;--tw-prose-invert-links:#fff;--tw-prose-invert-bold:#fff;--tw-prose-invert-counters:#9ca3af;--tw-prose-invert-bullets:#4b5563;--tw-prose-invert-hr:#374151;--tw-prose-invert-quotes:#f3f4f6;--tw-prose-invert-quote-borders:#374151;--tw-prose-invert-captions:#9ca3af;--tw-prose-invert-code:#fff;--tw-prose-invert-pre-code:#d1d5db;--tw-prose-invert-pre-bg:rgba(0,0,0,.5);--tw-prose-invert-th-borders:#4b5563;--tw-prose-invert-td-borders:#374151;font-size:1rem;line-height:1.75}.prose :where(p):not(:where([class~=not-prose] *)){margin-bottom:1.25em;margin-top:1.25em}.prose :where(img):not(:where([class~=not-prose] *)){margin-bottom:2em;margin-top:2em}.prose :where(video):not(:where([class~=not-prose] *)){margin-bottom:2em;margin-top:2em}.prose :where(figure):not(:where([class~=not-prose] *)){margin-bottom:2em;margin-top:2em}.prose :where(h2 code):not(:where([class~=not-prose] *)){font-size:.875em}.prose :where(h3 code):not(:where([class~=not-prose] *)){font-size:.9em}.prose :where(li):not(:where([class~=not-prose] *)){margin-bottom:.5em;margin-top:.5em}.prose :where(ol>li):not(:where([class~=not-prose] *)){padding-left:.375em}.prose :where(ul>li):not(:where([class~=not-prose] *)){padding-left:.375em}.prose>:where(ul>li p):not(:where([class~=not-prose] *)){margin-bottom:.75em;margin-top:.75em}.prose>:where(ul>li>:first-child):not(:where([class~=not-prose] *)){margin-top:1.25em}.prose>:where(ul>li>:last-child):not(:where([class~=not-prose] *)){margin-bottom:1.25em}.prose>:where(ol>li>:first-child):not(:where([class~=not-prose] *)){margin-top:1.25em}.prose>:where(ol>li>:last-child):not(:where([class~=not-prose] *)){margin-bottom:1.25em}.prose :where(ul ul,ul ol,ol ul,ol ol):not(:where([class~=not-prose] *)){margin-bottom:.75em;margin-top:.75em}.prose :where(hr+*):not(:where([class~=not-prose] *)){margin-top:0}.prose :where(h2+*):not(:where([class~=not-prose] *)){margin-top:0}.prose :where(h3+*):not(:where([class~=not-prose] *)){margin-top:0}.prose :where(h4+*):not(:where([class~=not-prose] *)){margin-top:0}.prose :where(thead th:first-child):not(:where([class~=not-prose] *)){padding-left:0}.prose :where(thead th:last-child):not(:where([class~=not-prose] *)){padding-right:0}.prose :where(tbody td:first-child):not(:where([class~=not-prose] *)){padding-left:0}.prose :where(tbody td:last-child):not(:where([class~=not-prose] *)){padding-right:0}.prose>:where(:first-child):not(:where([class~=not-prose] *)){margin-top:0}.prose>:where(:last-child):not(:where([class~=not-prose] *)){margin-bottom:0}.sr-only{clip:rect(0,0,0,0);border-width:0;height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;white-space:nowrap;width:1px}.static{position:static}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:-webkit-sticky;position:sticky}.inset-0{left:0;right:0}.inset-0,.inset-y-0{bottom:0;top:0}.top-0{top:0}.left-0{left:0}.top-2{top:.5rem}.bottom-0{bottom:0}.right-0{right:0}.z-50{z-index:50}.z-\\[60\\]{z-index:60}.col-span-full{grid-column:1/-1}.row-start-1{grid-row-start:1}.float-left{float:left}.m-0{margin:0}.mx-auto{margin-left:auto;margin-right:auto}.mx-4{margin-left:1rem;margin-right:1rem}.ml-3{margin-left:.75rem}.mb-3{margin-bottom:.75rem}.ml-auto{margin-left:auto}.mt-2{margin-top:.5rem}.mb-2{margin-bottom:.5rem}.ml-12{margin-left:3rem}.mb-4{margin-bottom:1rem}.mt-4{margin-top:1rem}.mt-8{margin-top:2rem}.ml-2{margin-left:.5rem}.mt-1{margin-top:.25rem}.mt-3{margin-top:.75rem}.mr-8{margin-right:2rem}.mr-2{margin-right:.5rem}.mt-6{margin-top:1.5rem}.mb-1{margin-bottom:.25rem}.mt-5{margin-top:1.25rem}.mb-12{margin-bottom:3rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.contents{display:contents}.hidden{display:none}.h-4{height:1rem}.h-10{height:2.5rem}.h-full{height:100%}.h-8{height:2rem}.h-3\\.5{height:.875rem}.h-3{height:.75rem}.h-auto{height:auto}.h-96{height:24rem}.h-6{height:1.5rem}.h-screen{height:100vh}.h-24{height:6rem}.h-5{height:1.25rem}.h-72{height:18rem}.max-h-\\[calc\\(100vh-6rem\\)\\]{max-height:calc(100vh - 6rem)}.max-h-\\[8rem\\]{max-height:8rem}.w-full{width:100%}.w-20{width:5rem}.w-4{width:1rem}.w-10{width:2.5rem}.w-8{width:2rem}.w-3\\.5{width:.875rem}.w-3{width:.75rem}.w-6{width:1.5rem}.w-auto{width:auto}.w-5{width:1.25rem}.w-32{width:8rem}.min-w-max{min-width:-webkit-max-content;min-width:-moz-max-content;min-width:max-content}.max-w-7xl{max-width:80rem}.max-w-xs{max-width:20rem}.max-w-6xl{max-width:72rem}.max-w-0{max-width:0}.max-w-md{max-width:28rem}.max-w-5xl{max-width:64rem}.max-w-3xl{max-width:48rem}.flex-shrink-0,.shrink-0{flex-shrink:0}.-translate-x-full{--tw-translate-x:-100%}.-translate-x-full,.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@-webkit-keyframes spin{to{transform:rotate(1turn)}}@keyframes spin{to{transform:rotate(1turn)}}.animate-spin{-webkit-animation:spin 1s linear infinite;animation:spin 1s linear infinite}.cursor-pointer{cursor:pointer}.resize{resize:both}.list-none{list-style-type:none}.appearance-none{-webkit-appearance:none;-moz-appearance:none;appearance:none}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-3{gap:.75rem}.gap-2{gap:.5rem}.gap-4{gap:1rem}.space-y-8>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-bottom:calc(2rem*var(--tw-space-y-reverse));margin-top:calc(2rem*(1 - var(--tw-space-y-reverse)))}.space-y-6>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-bottom:calc(1.5rem*var(--tw-space-y-reverse));margin-top:calc(1.5rem*(1 - var(--tw-space-y-reverse)))}.-space-y-px>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-bottom:calc(-1px*var(--tw-space-y-reverse));margin-top:calc(-1px*(1 - var(--tw-space-y-reverse)))}.whitespace-nowrap{white-space:nowrap}.rounded-none{border-radius:0}.rounded-md{border-radius:.375rem}.rounded-full{border-radius:9999px}.rounded{border-radius:.25rem}.rounded-xl{border-radius:.75rem}.rounded-lg{border-radius:.5rem}.rounded-2xl{border-radius:1rem}.rounded-t-xl{border-top-left-radius:.75rem;border-top-right-radius:.75rem}.rounded-t-md{border-top-left-radius:.375rem;border-top-right-radius:.375rem}.rounded-b-md{border-bottom-left-radius:.375rem;border-bottom-right-radius:.375rem}.border{border-width:1px}.border-2{border-width:2px}.border-\\[3px\\]{border-width:3px}.border-t{border-top-width:1px}.border-r{border-right-width:1px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-none{border-style:none}.border-gray-200{--tw-border-opacity:1;border-color:rgb(229 231 235/var(--tw-border-opacity))}.border-gray-900{--tw-border-opacity:1;border-color:rgb(17 24 39/var(--tw-border-opacity))}.border-current{border-color:currentColor}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219/var(--tw-border-opacity))}.border-transparent{border-color:transparent}.border-gray-600{--tw-border-opacity:1;border-color:rgb(75 85 99/var(--tw-border-opacity))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240/var(--tw-border-opacity))}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255/var(--tw-border-opacity))}.border-yellow-400{--tw-border-opacity:1;border-color:rgb(250 204 21/var(--tw-border-opacity))}.border-red-400{--tw-border-opacity:1;border-color:rgb(248 113 113/var(--tw-border-opacity))}.border-red-500{--tw-border-opacity:1;border-color:rgb(239 68 68/var(--tw-border-opacity))}.border-blue-500{--tw-border-opacity:1;border-color:rgb(59 130 246/var(--tw-border-opacity))}.border-t-transparent{border-top-color:transparent}.border-opacity-30{--tw-border-opacity:0.3}.bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39/var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246/var(--tw-bg-opacity))}.bg-gray-600{--tw-bg-opacity:1;background-color:rgb(75 85 99/var(--tw-bg-opacity))}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246/var(--tw-bg-opacity))}.bg-red-500{--tw-bg-opacity:1;background-color:rgb(239 68 68/var(--tw-bg-opacity))}.bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55/var(--tw-bg-opacity))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249/var(--tw-bg-opacity))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity))}.bg-transparent{background-color:transparent}.bg-yellow-200{--tw-bg-opacity:1;background-color:rgb(254 240 138/var(--tw-bg-opacity))}.bg-red-200{--tw-bg-opacity:1;background-color:rgb(254 202 202/var(--tw-bg-opacity))}.bg-red-100{--tw-bg-opacity:1;background-color:rgb(254 226 226/var(--tw-bg-opacity))}.bg-gray-700{--tw-bg-opacity:1;background-color:rgb(55 65 81/var(--tw-bg-opacity))}.bg-opacity-50{--tw-bg-opacity:0.5}.bg-opacity-40{--tw-bg-opacity:0.4}.bg-gradient-to-b{background-image:linear-gradient(to bottom,var(--tw-gradient-stops))}.from-white{--tw-gradient-from:#fff;--tw-gradient-to:hsla(0,0%,100%,0);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.to-blue-200{--tw-gradient-to:#bfdbfe}.bg-clip-padding{background-clip:padding-box}.fill-current{fill:currentColor}.p-4{padding:1rem}.p-2{padding:.5rem}.py-3{padding-bottom:.75rem;padding-top:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.py-2{padding-bottom:.5rem;padding-top:.5rem}.px-2{padding-left:.5rem;padding-right:.5rem}.py-12{padding-bottom:3rem;padding-top:3rem}.py-1{padding-bottom:.25rem;padding-top:.25rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-9{padding-bottom:2.25rem;padding-top:2.25rem}.\\!py-0\\.5{padding-bottom:.125rem!important;padding-top:.125rem!important}.\\!py-0{padding-bottom:0!important;padding-top:0!important}.pt-3{padding-top:.75rem}.pb-2{padding-bottom:.5rem}.pt-2{padding-top:.5rem}.pl-3{padding-left:.75rem}.text-left{text-align:left}.text-center{text-align:center}.text-sm{font-size:.875rem;line-height:1.25rem}.text-base{font-size:1rem;line-height:1.5rem}.text-xs{font-size:.75rem;line-height:1rem}.text-2xl{font-size:1.5rem;line-height:2rem}.text-lg{font-size:1.125rem}.text-lg,.text-xl{line-height:1.75rem}.text-xl{font-size:1.25rem}.text-6xl{font-size:3.75rem;line-height:1}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-5xl{font-size:3rem;line-height:1}.font-bold{font-weight:700}.font-semibold{font-weight:600}.font-medium{font-weight:500}.font-black{font-weight:900}.font-normal{font-weight:400}.font-extrabold{font-weight:800}.leading-3{line-height:.75rem}.leading-7{line-height:1.75rem}.leading-8{line-height:2rem}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-.025em}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55/var(--tw-text-opacity))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235/var(--tw-text-opacity))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81/var(--tw-text-opacity))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39/var(--tw-text-opacity))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99/var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity))}.text-blue-500{--tw-text-opacity:1;color:rgb(59 130 246/var(--tw-text-opacity))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139/var(--tw-text-opacity))}.text-red-700{--tw-text-opacity:1;color:rgb(185 28 28/var(--tw-text-opacity))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68/var(--tw-text-opacity))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.no-underline{-webkit-text-decoration-line:none;text-decoration-line:none}.placeholder-gray-500::-moz-placeholder{--tw-placeholder-opacity:1;color:rgb(107 114 128/var(--tw-placeholder-opacity))}.placeholder-gray-500:-ms-input-placeholder{--tw-placeholder-opacity:1;color:rgb(107 114 128/var(--tw-placeholder-opacity))}.placeholder-gray-500::placeholder{--tw-placeholder-opacity:1;color:rgb(107 114 128/var(--tw-placeholder-opacity))}.opacity-0{opacity:0}.shadow{--tw-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color),0 1px 2px -1px var(--tw-shadow-color)}.shadow,.shadow-md{box-shadow:0 0 #0000,0 0 #0000,var(--tw-shadow);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color),0 2px 4px -2px var(--tw-shadow-color)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color)}.shadow-lg,.shadow-sm{box-shadow:0 0 #0000,0 0 #0000,var(--tw-shadow);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color)}.outline-none{outline:2px solid transparent;outline-offset:2px}.blur{--tw-blur:blur(8px)}.blur,.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-lg{--tw-backdrop-blur:blur(16px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-duration:.15s;transition-property:color,background-color,border-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-text-decoration-color,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-text-decoration-color,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-all{transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,fill,stroke,-webkit-text-decoration-color;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,-webkit-text-decoration-color;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-200{transition-duration:.2s}.duration-300{transition-duration:.3s}.duration-500{transition-duration:.5s}.ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}*{scroll-margin:5rem}html{scroll-behavior:smooth}body{--tw-text-opacity:1;color:rgb(51 65 85/var(--tw-text-opacity))}a{text-decoration:underline}h1,h2,h3,h4,h5,h6{font-family:Cabinet Grotesk,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"}.icon{display:inline-flex;height:1.5rem;width:1.5rem}.icon.solid{fill:#64748b}.icon.stroke{stroke:#64748b}.cta{--tw-border-opacity:1;--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity));border-color:rgb(226 232 240/var(--tw-border-opacity));border-radius:.5rem;border-width:1px;font-weight:600;padding:.375rem .5rem;transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.cta:hover{--tw-translate-y:-0.125rem;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cta:focus{--tw-bg-opacity:1;background-color:rgb(241 245 249/var(--tw-bg-opacity))}.cta:active{--tw-translate-y:0.125rem;--tw-shadow:inset 0 2px 4px 0 rgba(0,0,0,.05);--tw-shadow-colored:inset 0 2px 4px 0 var(--tw-shadow-color);box-shadow:0 0 #0000,0 0 #0000,var(--tw-shadow);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cta.w-icon{align-items:center;display:flex;gap:.5rem;padding-right:.75rem}.img-cont img{height:100%;-o-object-fit:cover;object-fit:cover;width:100%}.article-tags{display:flex;gap:.5rem;padding-bottom:.5rem;padding-top:.5rem}.article-tags .tag{--tw-bg-opacity:1;--tw-text-opacity:1;background-color:rgb(241 245 249/var(--tw-bg-opacity));border-radius:.375rem;color:rgb(51 65 85/var(--tw-text-opacity));font-size:.875rem;line-height:1.25rem;padding:.5rem;padding-bottom:.125rem!important;padding-top:.125rem!important;transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.article-tags .tag:hover{--tw-translate-y:-0.125rem;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.page-heading{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity));padding:3rem}.page-heading>.wrapper,.page-section{margin:auto;max-width:48rem}.page-section{padding:2rem 1rem}.article-list{display:flex;flex-direction:column;gap:1.5rem}.article-item{--tw-border-opacity:1;border-color:rgb(226 232 240/var(--tw-border-opacity));border-top-width:1px;padding-top:1.5rem}.article-item:first-of-type{border-style:none}.article-item a{-webkit-text-decoration-line:none;text-decoration-line:none}.article-item>*>.wrapper{align-items:flex-start;display:flex;gap:1rem}.hover\\:scale-110:hover{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\\:border-gray-800:hover{--tw-border-opacity:1;border-color:rgb(31 41 55/var(--tw-border-opacity))}.hover\\:bg-gray-200:hover{--tw-bg-opacity:1;background-color:rgb(229 231 235/var(--tw-bg-opacity))}.hover\\:bg-blue-900:hover{--tw-bg-opacity:1;background-color:rgb(30 58 138/var(--tw-bg-opacity))}.hover\\:bg-blue-600:hover{--tw-bg-opacity:1;background-color:rgb(37 99 235/var(--tw-bg-opacity))}.hover\\:bg-gray-100:hover{--tw-bg-opacity:1;background-color:rgb(243 244 246/var(--tw-bg-opacity))}.hover\\:bg-gray-600:hover{--tw-bg-opacity:1;background-color:rgb(75 85 99/var(--tw-bg-opacity))}.hover\\:bg-gray-400:hover{--tw-bg-opacity:1;background-color:rgb(156 163 175/var(--tw-bg-opacity))}.hover\\:bg-gray-700:hover{--tw-bg-opacity:1;background-color:rgb(55 65 81/var(--tw-bg-opacity))}.hover\\:bg-gray-800:hover{--tw-bg-opacity:1;background-color:rgb(31 41 55/var(--tw-bg-opacity))}.hover\\:text-gray-700:hover{--tw-text-opacity:1;color:rgb(55 65 81/var(--tw-text-opacity))}.hover\\:text-gray-300:hover{--tw-text-opacity:1;color:rgb(209 213 219/var(--tw-text-opacity))}.hover\\:text-gray-900:hover{--tw-text-opacity:1;color:rgb(17 24 39/var(--tw-text-opacity))}.hover\\:text-gray-500:hover{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity))}.focus\\:z-10:focus{z-index:10}.focus\\:border-indigo-500:focus{--tw-border-opacity:1;border-color:rgb(99 102 241/var(--tw-border-opacity))}.focus\\:border-gray-500:focus{--tw-border-opacity:1;border-color:rgb(107 114 128/var(--tw-border-opacity))}.focus\\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),0 0 #0000;box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus\\:ring-gray-400:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(156 163 175/var(--tw-ring-opacity))}.focus\\:ring-blue-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(59 130 246/var(--tw-ring-opacity))}.focus\\:ring-gray-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(107 114 128/var(--tw-ring-opacity))}.focus\\:ring-offset-2:focus{--tw-ring-offset-width:2px}.focus\\:ring-offset-white:focus{--tw-ring-offset-color:#fff}.group:hover .group-hover\\:text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity))}.open .hs-overlay-open\\:translate-x-0,.open.hs-overlay-open\\:translate-x-0{--tw-translate-x:0px;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (prefers-color-scheme:dark){.dark\\:border-gray-700{--tw-border-opacity:1;border-color:rgb(55 65 81/var(--tw-border-opacity))}.dark\\:border-gray-900{--tw-border-opacity:1;border-color:rgb(17 24 39/var(--tw-border-opacity))}.dark\\:bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55/var(--tw-bg-opacity))}.dark\\:bg-gray-700{--tw-bg-opacity:1;background-color:rgb(55 65 81/var(--tw-bg-opacity))}.dark\\:bg-opacity-80{--tw-bg-opacity:0.8}.dark\\:text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity))}.dark\\:text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.dark\\:text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity))}.dark\\:shadow-slate-700\\/\\[\\.7\\]{--tw-shadow-color:rgba(51,65,85,.7);--tw-shadow:var(--tw-shadow-colored)}.dark\\:hover\\:border-gray-900:hover{--tw-border-opacity:1;border-color:rgb(17 24 39/var(--tw-border-opacity))}.dark\\:hover\\:bg-gray-900:hover{--tw-bg-opacity:1;background-color:rgb(17 24 39/var(--tw-bg-opacity))}.dark\\:hover\\:text-gray-400:hover{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity))}.dark\\:focus\\:ring-gray-900:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(17 24 39/var(--tw-ring-opacity))}.dark\\:focus\\:ring-gray-700:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(55 65 81/var(--tw-ring-opacity))}.dark\\:focus\\:ring-offset-gray-800:focus{--tw-ring-offset-color:#1f2937}}@media (min-width:640px){.sm\\:inline{display:inline}.sm\\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\\:text-3xl{font-size:1.875rem;line-height:2.25rem}.sm\\:text-sm{font-size:.875rem;line-height:1.25rem}}@media (min-width:768px){.md\\:col-span-2{grid-column:span 2/span 2}.md\\:col-span-6{grid-column:span 6/span 6}.md\\:col-start-1{grid-column-start:1}.md\\:row-start-1{grid-row-start:1}.md\\:mx-auto{margin-left:auto;margin-right:auto}.md\\:w-1\\/2{width:50%}.md\\:flex-1{flex:1 1 0%}.md\\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.md\\:p-5{padding:1.25rem}}@media (min-width:1024px){.lg\\:mt-0{margin-top:0}.lg\\:flex{display:flex}.lg\\:w-0{width:0}.lg\\:flex-shrink-0{flex-shrink:0}.lg\\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.lg\\:items-center{align-items:center}.lg\\:justify-between{justify-content:space-between}.lg\\:py-16{padding-bottom:4rem;padding-top:4rem}.lg\\:px-8{padding-left:2rem;padding-right:2rem}}";
+__vite_ssr_exports__.default = "@import url(\"https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@1,800,500,100,700,400,300,200,900&f[]=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&display=swap\");\n/*! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com*/*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:\"\"}html{-webkit-text-size-adjust:100%;font-family:Satoshi,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\";line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{color:inherit;font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::-webkit-backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.prose{color:var(--tw-prose-body);max-width:65ch}.prose :where([class~=lead]):not(:where([class~=not-prose] *)){color:var(--tw-prose-lead);font-size:1.25em;line-height:1.6;margin-bottom:1.2em;margin-top:1.2em}.prose :where(a):not(:where([class~=not-prose] *)){color:var(--tw-prose-links);font-weight:500;text-decoration:underline}.prose :where(strong):not(:where([class~=not-prose] *)){color:var(--tw-prose-bold);font-weight:600}.prose :where(ol):not(:where([class~=not-prose] *)){list-style-type:decimal;padding-left:1.625em}.prose :where(ol[type=A]):not(:where([class~=not-prose] *)){list-style-type:upper-alpha}.prose :where(ol[type=a]):not(:where([class~=not-prose] *)){list-style-type:lower-alpha}.prose :where(ol[type=A s]):not(:where([class~=not-prose] *)){list-style-type:upper-alpha}.prose :where(ol[type=a s]):not(:where([class~=not-prose] *)){list-style-type:lower-alpha}.prose :where(ol[type=I]):not(:where([class~=not-prose] *)){list-style-type:upper-roman}.prose :where(ol[type=i]):not(:where([class~=not-prose] *)){list-style-type:lower-roman}.prose :where(ol[type=I s]):not(:where([class~=not-prose] *)){list-style-type:upper-roman}.prose :where(ol[type=i s]):not(:where([class~=not-prose] *)){list-style-type:lower-roman}.prose :where(ol[type=\"1\"]):not(:where([class~=not-prose] *)){list-style-type:decimal}.prose :where(ul):not(:where([class~=not-prose] *)){list-style-type:disc;padding-left:1.625em}.prose :where(ol>li):not(:where([class~=not-prose] *))::marker{color:var(--tw-prose-counters);font-weight:400}.prose :where(ul>li):not(:where([class~=not-prose] *))::marker{color:var(--tw-prose-bullets)}.prose :where(hr):not(:where([class~=not-prose] *)){border-color:var(--tw-prose-hr);border-top-width:1px;margin-bottom:3em;margin-top:3em}.prose :where(blockquote):not(:where([class~=not-prose] *)){border-left-color:var(--tw-prose-quote-borders);border-left-width:.25rem;color:var(--tw-prose-quotes);font-style:italic;font-weight:500;margin-bottom:1.6em;margin-top:1.6em;padding-left:1em;quotes:\"\\201C\"\"\\201D\"\"\\2018\"\"\\2019\"}.prose :where(blockquote p:first-of-type):not(:where([class~=not-prose] *)):before{content:open-quote}.prose :where(blockquote p:last-of-type):not(:where([class~=not-prose] *)):after{content:close-quote}.prose :where(h1):not(:where([class~=not-prose] *)){color:var(--tw-prose-headings);font-size:2.25em;font-weight:800;line-height:1.1111111;margin-bottom:.8888889em;margin-top:0}.prose :where(h1 strong):not(:where([class~=not-prose] *)){font-weight:900}.prose :where(h2):not(:where([class~=not-prose] *)){color:var(--tw-prose-headings);font-size:1.5em;font-weight:700;line-height:1.3333333;margin-bottom:1em;margin-top:2em}.prose :where(h2 strong):not(:where([class~=not-prose] *)){font-weight:800}.prose :where(h3):not(:where([class~=not-prose] *)){color:var(--tw-prose-headings);font-size:1.25em;font-weight:600;line-height:1.6;margin-bottom:.6em;margin-top:1.6em}.prose :where(h3 strong):not(:where([class~=not-prose] *)){font-weight:700}.prose :where(h4):not(:where([class~=not-prose] *)){color:var(--tw-prose-headings);font-weight:600;line-height:1.5;margin-bottom:.5em;margin-top:1.5em}.prose :where(h4 strong):not(:where([class~=not-prose] *)){font-weight:700}.prose :where(figure>*):not(:where([class~=not-prose] *)){margin-bottom:0;margin-top:0}.prose :where(figcaption):not(:where([class~=not-prose] *)){color:var(--tw-prose-captions);font-size:.875em;line-height:1.4285714;margin-top:.8571429em}.prose :where(code):not(:where([class~=not-prose] *)){color:var(--tw-prose-code);font-size:.875em;font-weight:600}.prose :where(code):not(:where([class~=not-prose] *)):before{content:\"`\"}.prose :where(code):not(:where([class~=not-prose] *)):after{content:\"`\"}.prose :where(a code):not(:where([class~=not-prose] *)){color:var(--tw-prose-links)}.prose :where(pre):not(:where([class~=not-prose] *)){background-color:var(--tw-prose-pre-bg);border-radius:.375rem;color:var(--tw-prose-pre-code);font-size:.875em;font-weight:400;line-height:1.7142857;margin-bottom:1.7142857em;margin-top:1.7142857em;overflow-x:auto;padding:.8571429em 1.1428571em}.prose :where(pre code):not(:where([class~=not-prose] *)){background-color:transparent;border-radius:0;border-width:0;color:inherit;font-family:inherit;font-size:inherit;font-weight:inherit;line-height:inherit;padding:0}.prose :where(pre code):not(:where([class~=not-prose] *)):before{content:none}.prose :where(pre code):not(:where([class~=not-prose] *)):after{content:none}.prose :where(table):not(:where([class~=not-prose] *)){font-size:.875em;line-height:1.7142857;margin-bottom:2em;margin-top:2em;table-layout:auto;text-align:left;width:100%}.prose :where(thead):not(:where([class~=not-prose] *)){border-bottom-color:var(--tw-prose-th-borders);border-bottom-width:1px}.prose :where(thead th):not(:where([class~=not-prose] *)){color:var(--tw-prose-headings);font-weight:600;padding-bottom:.5714286em;padding-left:.5714286em;padding-right:.5714286em;vertical-align:bottom}.prose :where(tbody tr):not(:where([class~=not-prose] *)){border-bottom-color:var(--tw-prose-td-borders);border-bottom-width:1px}.prose :where(tbody tr:last-child):not(:where([class~=not-prose] *)){border-bottom-width:0}.prose :where(tbody td):not(:where([class~=not-prose] *)){padding:.5714286em;vertical-align:baseline}.prose{--tw-prose-body:#374151;--tw-prose-headings:#111827;--tw-prose-lead:#4b5563;--tw-prose-links:#111827;--tw-prose-bold:#111827;--tw-prose-counters:#6b7280;--tw-prose-bullets:#d1d5db;--tw-prose-hr:#e5e7eb;--tw-prose-quotes:#111827;--tw-prose-quote-borders:#e5e7eb;--tw-prose-captions:#6b7280;--tw-prose-code:#111827;--tw-prose-pre-code:#e5e7eb;--tw-prose-pre-bg:#1f2937;--tw-prose-th-borders:#d1d5db;--tw-prose-td-borders:#e5e7eb;--tw-prose-invert-body:#d1d5db;--tw-prose-invert-headings:#fff;--tw-prose-invert-lead:#9ca3af;--tw-prose-invert-links:#fff;--tw-prose-invert-bold:#fff;--tw-prose-invert-counters:#9ca3af;--tw-prose-invert-bullets:#4b5563;--tw-prose-invert-hr:#374151;--tw-prose-invert-quotes:#f3f4f6;--tw-prose-invert-quote-borders:#374151;--tw-prose-invert-captions:#9ca3af;--tw-prose-invert-code:#fff;--tw-prose-invert-pre-code:#d1d5db;--tw-prose-invert-pre-bg:rgba(0,0,0,.5);--tw-prose-invert-th-borders:#4b5563;--tw-prose-invert-td-borders:#374151;font-size:1rem;line-height:1.75}.prose :where(p):not(:where([class~=not-prose] *)){margin-bottom:1.25em;margin-top:1.25em}.prose :where(img):not(:where([class~=not-prose] *)){margin-bottom:2em;margin-top:2em}.prose :where(video):not(:where([class~=not-prose] *)){margin-bottom:2em;margin-top:2em}.prose :where(figure):not(:where([class~=not-prose] *)){margin-bottom:2em;margin-top:2em}.prose :where(h2 code):not(:where([class~=not-prose] *)){font-size:.875em}.prose :where(h3 code):not(:where([class~=not-prose] *)){font-size:.9em}.prose :where(li):not(:where([class~=not-prose] *)){margin-bottom:.5em;margin-top:.5em}.prose :where(ol>li):not(:where([class~=not-prose] *)){padding-left:.375em}.prose :where(ul>li):not(:where([class~=not-prose] *)){padding-left:.375em}.prose>:where(ul>li p):not(:where([class~=not-prose] *)){margin-bottom:.75em;margin-top:.75em}.prose>:where(ul>li>:first-child):not(:where([class~=not-prose] *)){margin-top:1.25em}.prose>:where(ul>li>:last-child):not(:where([class~=not-prose] *)){margin-bottom:1.25em}.prose>:where(ol>li>:first-child):not(:where([class~=not-prose] *)){margin-top:1.25em}.prose>:where(ol>li>:last-child):not(:where([class~=not-prose] *)){margin-bottom:1.25em}.prose :where(ul ul,ul ol,ol ul,ol ol):not(:where([class~=not-prose] *)){margin-bottom:.75em;margin-top:.75em}.prose :where(hr+*):not(:where([class~=not-prose] *)){margin-top:0}.prose :where(h2+*):not(:where([class~=not-prose] *)){margin-top:0}.prose :where(h3+*):not(:where([class~=not-prose] *)){margin-top:0}.prose :where(h4+*):not(:where([class~=not-prose] *)){margin-top:0}.prose :where(thead th:first-child):not(:where([class~=not-prose] *)){padding-left:0}.prose :where(thead th:last-child):not(:where([class~=not-prose] *)){padding-right:0}.prose :where(tbody td:first-child):not(:where([class~=not-prose] *)){padding-left:0}.prose :where(tbody td:last-child):not(:where([class~=not-prose] *)){padding-right:0}.prose>:where(:first-child):not(:where([class~=not-prose] *)){margin-top:0}.prose>:where(:last-child):not(:where([class~=not-prose] *)){margin-bottom:0}.sr-only{clip:rect(0,0,0,0);border-width:0;height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;white-space:nowrap;width:1px}.static{position:static}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:-webkit-sticky;position:sticky}.inset-0{left:0;right:0}.inset-0,.inset-y-0{bottom:0;top:0}.top-0{top:0}.left-0{left:0}.top-2{top:.5rem}.bottom-0{bottom:0}.right-0{right:0}.z-50{z-index:50}.z-\\[60\\]{z-index:60}.col-span-full{grid-column:1/-1}.row-start-1{grid-row-start:1}.float-left{float:left}.m-0{margin:0}.mx-auto{margin-left:auto;margin-right:auto}.mx-4{margin-left:1rem;margin-right:1rem}.ml-3{margin-left:.75rem}.mb-3{margin-bottom:.75rem}.ml-auto{margin-left:auto}.mt-2{margin-top:.5rem}.mb-2{margin-bottom:.5rem}.ml-12{margin-left:3rem}.mb-4{margin-bottom:1rem}.mt-4{margin-top:1rem}.mt-8{margin-top:2rem}.ml-2{margin-left:.5rem}.mt-1{margin-top:.25rem}.mt-3{margin-top:.75rem}.mr-8{margin-right:2rem}.mr-2{margin-right:.5rem}.mt-6{margin-top:1.5rem}.mb-1{margin-bottom:.25rem}.mt-5{margin-top:1.25rem}.mb-12{margin-bottom:3rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.contents{display:contents}.hidden{display:none}.h-4{height:1rem}.h-10{height:2.5rem}.h-full{height:100%}.h-8{height:2rem}.h-3\\.5{height:.875rem}.h-3{height:.75rem}.h-auto{height:auto}.h-96{height:24rem}.h-6{height:1.5rem}.h-screen{height:100vh}.h-24{height:6rem}.h-5{height:1.25rem}.h-72{height:18rem}.max-h-\\[calc\\(100vh-6rem\\)\\]{max-height:calc(100vh - 6rem)}.max-h-\\[8rem\\]{max-height:8rem}.w-full{width:100%}.w-20{width:5rem}.w-4{width:1rem}.w-10{width:2.5rem}.w-8{width:2rem}.w-3\\.5{width:.875rem}.w-3{width:.75rem}.w-6{width:1.5rem}.w-auto{width:auto}.w-5{width:1.25rem}.w-32{width:8rem}.min-w-max{min-width:-webkit-max-content;min-width:-moz-max-content;min-width:max-content}.max-w-7xl{max-width:80rem}.max-w-xs{max-width:20rem}.max-w-6xl{max-width:72rem}.max-w-0{max-width:0}.max-w-md{max-width:28rem}.max-w-5xl{max-width:64rem}.max-w-3xl{max-width:48rem}.flex-shrink-0,.shrink-0{flex-shrink:0}.-translate-x-full{--tw-translate-x:-100%}.-translate-x-full,.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@-webkit-keyframes spin{to{transform:rotate(1turn)}}@keyframes spin{to{transform:rotate(1turn)}}.animate-spin{-webkit-animation:spin 1s linear infinite;animation:spin 1s linear infinite}.cursor-pointer{cursor:pointer}.resize{resize:both}.list-none{list-style-type:none}.appearance-none{-webkit-appearance:none;-moz-appearance:none;appearance:none}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-3{gap:.75rem}.gap-2{gap:.5rem}.gap-4{gap:1rem}.space-y-8>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-bottom:calc(2rem*var(--tw-space-y-reverse));margin-top:calc(2rem*(1 - var(--tw-space-y-reverse)))}.space-y-6>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-bottom:calc(1.5rem*var(--tw-space-y-reverse));margin-top:calc(1.5rem*(1 - var(--tw-space-y-reverse)))}.-space-y-px>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-bottom:calc(-1px*var(--tw-space-y-reverse));margin-top:calc(-1px*(1 - var(--tw-space-y-reverse)))}.whitespace-nowrap{white-space:nowrap}.rounded-none{border-radius:0}.rounded-md{border-radius:.375rem}.rounded-full{border-radius:9999px}.rounded{border-radius:.25rem}.rounded-xl{border-radius:.75rem}.rounded-lg{border-radius:.5rem}.rounded-2xl{border-radius:1rem}.rounded-t-xl{border-top-left-radius:.75rem;border-top-right-radius:.75rem}.rounded-t-md{border-top-left-radius:.375rem;border-top-right-radius:.375rem}.rounded-b-md{border-bottom-left-radius:.375rem;border-bottom-right-radius:.375rem}.border{border-width:1px}.border-2{border-width:2px}.border-\\[3px\\]{border-width:3px}.border-t{border-top-width:1px}.border-r{border-right-width:1px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-none{border-style:none}.border-gray-200{--tw-border-opacity:1;border-color:rgb(229 231 235/var(--tw-border-opacity))}.border-gray-900{--tw-border-opacity:1;border-color:rgb(17 24 39/var(--tw-border-opacity))}.border-current{border-color:currentColor}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219/var(--tw-border-opacity))}.border-transparent{border-color:transparent}.border-gray-600{--tw-border-opacity:1;border-color:rgb(75 85 99/var(--tw-border-opacity))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240/var(--tw-border-opacity))}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255/var(--tw-border-opacity))}.border-yellow-400{--tw-border-opacity:1;border-color:rgb(250 204 21/var(--tw-border-opacity))}.border-red-400{--tw-border-opacity:1;border-color:rgb(248 113 113/var(--tw-border-opacity))}.border-red-500{--tw-border-opacity:1;border-color:rgb(239 68 68/var(--tw-border-opacity))}.border-blue-500{--tw-border-opacity:1;border-color:rgb(59 130 246/var(--tw-border-opacity))}.border-t-transparent{border-top-color:transparent}.border-opacity-30{--tw-border-opacity:0.3}.bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39/var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246/var(--tw-bg-opacity))}.bg-gray-600{--tw-bg-opacity:1;background-color:rgb(75 85 99/var(--tw-bg-opacity))}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246/var(--tw-bg-opacity))}.bg-red-500{--tw-bg-opacity:1;background-color:rgb(239 68 68/var(--tw-bg-opacity))}.bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55/var(--tw-bg-opacity))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249/var(--tw-bg-opacity))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity))}.bg-transparent{background-color:transparent}.bg-yellow-200{--tw-bg-opacity:1;background-color:rgb(254 240 138/var(--tw-bg-opacity))}.bg-red-200{--tw-bg-opacity:1;background-color:rgb(254 202 202/var(--tw-bg-opacity))}.bg-red-100{--tw-bg-opacity:1;background-color:rgb(254 226 226/var(--tw-bg-opacity))}.bg-gray-700{--tw-bg-opacity:1;background-color:rgb(55 65 81/var(--tw-bg-opacity))}.bg-opacity-50{--tw-bg-opacity:0.5}.bg-opacity-40{--tw-bg-opacity:0.4}.bg-gradient-to-b{background-image:linear-gradient(to bottom,var(--tw-gradient-stops))}.from-white{--tw-gradient-from:#fff;--tw-gradient-to:hsla(0,0%,100%,0);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.to-blue-200{--tw-gradient-to:#bfdbfe}.bg-clip-padding{background-clip:padding-box}.fill-current{fill:currentColor}.p-4{padding:1rem}.p-2{padding:.5rem}.py-3{padding-bottom:.75rem;padding-top:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.py-2{padding-bottom:.5rem;padding-top:.5rem}.px-2{padding-left:.5rem;padding-right:.5rem}.py-12{padding-bottom:3rem;padding-top:3rem}.py-1{padding-bottom:.25rem;padding-top:.25rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-9{padding-bottom:2.25rem;padding-top:2.25rem}.\\!py-0\\.5{padding-bottom:.125rem!important;padding-top:.125rem!important}.\\!py-0{padding-bottom:0!important;padding-top:0!important}.pt-3{padding-top:.75rem}.pb-2{padding-bottom:.5rem}.pt-2{padding-top:.5rem}.pl-3{padding-left:.75rem}.text-left{text-align:left}.text-center{text-align:center}.text-sm{font-size:.875rem;line-height:1.25rem}.text-base{font-size:1rem;line-height:1.5rem}.text-xs{font-size:.75rem;line-height:1rem}.text-2xl{font-size:1.5rem;line-height:2rem}.text-lg{font-size:1.125rem}.text-lg,.text-xl{line-height:1.75rem}.text-xl{font-size:1.25rem}.text-6xl{font-size:3.75rem;line-height:1}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-5xl{font-size:3rem;line-height:1}.font-bold{font-weight:700}.font-semibold{font-weight:600}.font-medium{font-weight:500}.font-black{font-weight:900}.font-normal{font-weight:400}.font-extrabold{font-weight:800}.leading-3{line-height:.75rem}.leading-7{line-height:1.75rem}.leading-8{line-height:2rem}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-.025em}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55/var(--tw-text-opacity))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235/var(--tw-text-opacity))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81/var(--tw-text-opacity))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39/var(--tw-text-opacity))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99/var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity))}.text-blue-300{--tw-text-opacity:1;color:rgb(147 197 253/var(--tw-text-opacity))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139/var(--tw-text-opacity))}.text-red-700{--tw-text-opacity:1;color:rgb(185 28 28/var(--tw-text-opacity))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68/var(--tw-text-opacity))}.text-blue-500{--tw-text-opacity:1;color:rgb(59 130 246/var(--tw-text-opacity))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.no-underline{-webkit-text-decoration-line:none;text-decoration-line:none}.placeholder-gray-500::-moz-placeholder{--tw-placeholder-opacity:1;color:rgb(107 114 128/var(--tw-placeholder-opacity))}.placeholder-gray-500:-ms-input-placeholder{--tw-placeholder-opacity:1;color:rgb(107 114 128/var(--tw-placeholder-opacity))}.placeholder-gray-500::placeholder{--tw-placeholder-opacity:1;color:rgb(107 114 128/var(--tw-placeholder-opacity))}.opacity-0{opacity:0}.shadow{--tw-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color),0 1px 2px -1px var(--tw-shadow-color)}.shadow,.shadow-md{box-shadow:0 0 #0000,0 0 #0000,var(--tw-shadow);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color),0 2px 4px -2px var(--tw-shadow-color)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color)}.shadow-lg,.shadow-sm{box-shadow:0 0 #0000,0 0 #0000,var(--tw-shadow);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color)}.outline-none{outline:2px solid transparent;outline-offset:2px}.blur{--tw-blur:blur(8px)}.blur,.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-lg{--tw-backdrop-blur:blur(16px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-duration:.15s;transition-property:color,background-color,border-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-text-decoration-color,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-text-decoration-color,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-all{transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,fill,stroke,-webkit-text-decoration-color;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,-webkit-text-decoration-color;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-200{transition-duration:.2s}.duration-300{transition-duration:.3s}.duration-500{transition-duration:.5s}.ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}*{scroll-margin:5rem}html{scroll-behavior:smooth}body{--tw-text-opacity:1;color:rgb(51 65 85/var(--tw-text-opacity))}a{text-decoration:underline}h1,h2,h3,h4,h5,h6{font-family:Cabinet Grotesk,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"}.icon{display:inline-flex;height:1.5rem;width:1.5rem}.icon.solid{fill:#64748b}.icon.stroke{stroke:#64748b}.cta{--tw-border-opacity:1;--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity));border-color:rgb(226 232 240/var(--tw-border-opacity));border-radius:.5rem;border-width:1px;font-weight:600;padding:.375rem .5rem;transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.cta:hover{--tw-translate-y:-0.125rem;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cta:focus{--tw-bg-opacity:1;background-color:rgb(241 245 249/var(--tw-bg-opacity))}.cta:active{--tw-translate-y:0.125rem;--tw-shadow:inset 0 2px 4px 0 rgba(0,0,0,.05);--tw-shadow-colored:inset 0 2px 4px 0 var(--tw-shadow-color);box-shadow:0 0 #0000,0 0 #0000,var(--tw-shadow);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cta.w-icon{align-items:center;display:flex;gap:.5rem;padding-right:.75rem}.img-cont img{height:100%;-o-object-fit:cover;object-fit:cover;width:100%}.article-tags{display:flex;gap:.5rem;padding-bottom:.5rem;padding-top:.5rem}.article-tags .tag{--tw-bg-opacity:1;--tw-text-opacity:1;background-color:rgb(241 245 249/var(--tw-bg-opacity));border-radius:.375rem;color:rgb(51 65 85/var(--tw-text-opacity));font-size:.875rem;line-height:1.25rem;padding:.5rem;padding-bottom:.125rem!important;padding-top:.125rem!important;transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.article-tags .tag:hover{--tw-translate-y:-0.125rem;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.page-heading{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity));padding:3rem}.page-heading>.wrapper,.page-section{margin:auto;max-width:48rem}.page-section{padding:2rem 1rem}.article-list{display:flex;flex-direction:column;gap:1.5rem}.article-item{--tw-border-opacity:1;border-color:rgb(226 232 240/var(--tw-border-opacity));border-top-width:1px;padding-top:1.5rem}.article-item:first-of-type{border-style:none}.article-item a{-webkit-text-decoration-line:none;text-decoration-line:none}.article-item>*>.wrapper{align-items:flex-start;display:flex;gap:1rem}.hover\\:scale-110:hover{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\\:border-gray-800:hover{--tw-border-opacity:1;border-color:rgb(31 41 55/var(--tw-border-opacity))}.hover\\:bg-gray-200:hover{--tw-bg-opacity:1;background-color:rgb(229 231 235/var(--tw-bg-opacity))}.hover\\:bg-blue-900:hover{--tw-bg-opacity:1;background-color:rgb(30 58 138/var(--tw-bg-opacity))}.hover\\:bg-blue-600:hover{--tw-bg-opacity:1;background-color:rgb(37 99 235/var(--tw-bg-opacity))}.hover\\:bg-gray-100:hover{--tw-bg-opacity:1;background-color:rgb(243 244 246/var(--tw-bg-opacity))}.hover\\:bg-gray-600:hover{--tw-bg-opacity:1;background-color:rgb(75 85 99/var(--tw-bg-opacity))}.hover\\:bg-gray-400:hover{--tw-bg-opacity:1;background-color:rgb(156 163 175/var(--tw-bg-opacity))}.hover\\:bg-gray-700:hover{--tw-bg-opacity:1;background-color:rgb(55 65 81/var(--tw-bg-opacity))}.hover\\:bg-gray-800:hover{--tw-bg-opacity:1;background-color:rgb(31 41 55/var(--tw-bg-opacity))}.hover\\:text-gray-700:hover{--tw-text-opacity:1;color:rgb(55 65 81/var(--tw-text-opacity))}.hover\\:text-gray-900:hover{--tw-text-opacity:1;color:rgb(17 24 39/var(--tw-text-opacity))}.hover\\:text-gray-500:hover{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity))}.hover\\:text-red-600:hover{--tw-text-opacity:1;color:rgb(220 38 38/var(--tw-text-opacity))}.hover\\:text-gray-300:hover{--tw-text-opacity:1;color:rgb(209 213 219/var(--tw-text-opacity))}.focus\\:z-10:focus{z-index:10}.focus\\:border-indigo-500:focus{--tw-border-opacity:1;border-color:rgb(99 102 241/var(--tw-border-opacity))}.focus\\:border-gray-500:focus{--tw-border-opacity:1;border-color:rgb(107 114 128/var(--tw-border-opacity))}.focus\\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),0 0 #0000;box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus\\:ring-gray-400:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(156 163 175/var(--tw-ring-opacity))}.focus\\:ring-blue-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(59 130 246/var(--tw-ring-opacity))}.focus\\:ring-gray-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(107 114 128/var(--tw-ring-opacity))}.focus\\:ring-offset-2:focus{--tw-ring-offset-width:2px}.focus\\:ring-offset-white:focus{--tw-ring-offset-color:#fff}.group:hover .group-hover\\:text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity))}.open .hs-overlay-open\\:translate-x-0,.open.hs-overlay-open\\:translate-x-0{--tw-translate-x:0px;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (prefers-color-scheme:dark){.dark\\:border-gray-700{--tw-border-opacity:1;border-color:rgb(55 65 81/var(--tw-border-opacity))}.dark\\:border-gray-900{--tw-border-opacity:1;border-color:rgb(17 24 39/var(--tw-border-opacity))}.dark\\:bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55/var(--tw-bg-opacity))}.dark\\:bg-gray-700{--tw-bg-opacity:1;background-color:rgb(55 65 81/var(--tw-bg-opacity))}.dark\\:bg-opacity-80{--tw-bg-opacity:0.8}.dark\\:text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity))}.dark\\:text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.dark\\:text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity))}.dark\\:shadow-slate-700\\/\\[\\.7\\]{--tw-shadow-color:rgba(51,65,85,.7);--tw-shadow:var(--tw-shadow-colored)}.dark\\:hover\\:border-gray-900:hover{--tw-border-opacity:1;border-color:rgb(17 24 39/var(--tw-border-opacity))}.dark\\:hover\\:bg-gray-900:hover{--tw-bg-opacity:1;background-color:rgb(17 24 39/var(--tw-bg-opacity))}.dark\\:hover\\:text-gray-400:hover{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity))}.dark\\:focus\\:ring-gray-900:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(17 24 39/var(--tw-ring-opacity))}.dark\\:focus\\:ring-gray-700:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(55 65 81/var(--tw-ring-opacity))}.dark\\:focus\\:ring-offset-gray-800:focus{--tw-ring-offset-color:#1f2937}}@media (min-width:640px){.sm\\:inline{display:inline}.sm\\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\\:text-3xl{font-size:1.875rem;line-height:2.25rem}.sm\\:text-sm{font-size:.875rem;line-height:1.25rem}}@media (min-width:768px){.md\\:col-span-2{grid-column:span 2/span 2}.md\\:col-span-6{grid-column:span 6/span 6}.md\\:col-start-1{grid-column-start:1}.md\\:row-start-1{grid-row-start:1}.md\\:mx-auto{margin-left:auto;margin-right:auto}.md\\:w-1\\/2{width:50%}.md\\:flex-1{flex:1 1 0%}.md\\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.md\\:p-5{padding:1.25rem}}@media (min-width:1024px){.lg\\:mt-0{margin-top:0}.lg\\:flex{display:flex}.lg\\:w-0{width:0}.lg\\:flex-shrink-0{flex-shrink:0}.lg\\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.lg\\:items-center{align-items:center}.lg\\:justify-between{justify-content:space-between}.lg\\:py-16{padding-bottom:4rem;padding-top:4rem}.lg\\:px-8{padding-left:2rem;padding-right:2rem}}";
 }
 
 
 // --------------------
-// Request: /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/plugins/server.mjs
+// Request: /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/plugins/server.mjs
 // Parents: 
-// - /home/afzaal/Direct/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_01e3787c)
+// - /Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_74742b3b)
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/plugins/preload.server.mjs ($id_9871bba0)
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // - /node_modules/nuxt/dist/head/runtime/lib/vueuse-head.plugin.mjs ($id_e6f12003)
 // - /node_modules/nuxt/dist/head/runtime/plugin.mjs ($id_a2650341)
 // - /node_modules/nuxt/dist/pages/runtime/router.mjs ($id_a090977b)
 // - /node_modules/@nuxt/content/dist/runtime/plugin.mjs ($id_a4132d07)
 // --------------------
-const $id_349c7318 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_d89cfd50 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/plugins/preload.server.mjs");
 
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs");
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs");
 
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt/dist/head/runtime/lib/vueuse-head.plugin.mjs");
 
@@ -1722,7 +1722,7 @@ __vite_ssr_exports__.default = [
 // --------------------
 // Request: /node_modules/nuxt/dist/app/plugins/preload.server.mjs
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/plugins/server.mjs ($id_349c7318)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/plugins/server.mjs ($id_d89cfd50)
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
 // --------------------
@@ -1743,9 +1743,9 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineNuxtPlugin((nuxtApp) 
 
 
 // --------------------
-// Request: /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs
+// Request: /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/plugins/server.mjs ($id_349c7318)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/plugins/server.mjs ($id_d89cfd50)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /components/content/InfoBox.vue ($id_e10e5808)
@@ -1781,7 +1781,7 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineNuxtPlugin((nuxtApp) 
 // - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTr.vue ($id_16f58501)
 // - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseUl.vue ($id_7728c86d)
 // --------------------
-const $id_c0881a10 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_50656c08 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 
@@ -1833,7 +1833,7 @@ __vite_ssr_exports__.default = function (nuxtApp) {
 // --------------------
 // Request: /components/content/InfoBox.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
 // - /node_modules/@nuxt/content/dist/runtime/components/Markdown.mjs ($id_f4cbbc2c)
 // - /node_modules/@heroicons/vue/solid/index.js ($id_a0bb35af)
@@ -1908,7 +1908,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-399a029c"],['__file',"/home/afzaal/Direct/nuxt3-zero/components/content/InfoBox.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-399a029c"],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/components/content/InfoBox.vue"]]);
 }
 
 
@@ -1916,12 +1916,12 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_m
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Markdown.mjs
 // Parents: 
 // - /components/content/InfoBox.vue ($id_e10e5808)
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs ($id_e0503dec)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
 // --------------------
 const $id_f4cbbc2c = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs");
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs");
 
 __vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
   name: "Markdown",
@@ -1987,7 +1987,7 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
 
 
 // --------------------
-// Request: /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs
+// Request: /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs
 // Parents: 
 // - /node_modules/@nuxt/content/dist/runtime/components/Markdown.mjs ($id_f4cbbc2c)
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentQuery.mjs ($id_3f801a38)
@@ -2004,15 +2004,15 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
 // - /node_modules/nuxt/dist/app/compat/vue-demi.mjs ($id_a8110be7)
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /composables/useLike.ts ($id_6dd93210)
 // - /composables/useAuth.ts ($id_ba05bb26)
 // - /composables/useComment.ts ($id_662ffe6f)
-// - /composables/useLike.ts ($id_6dd93210)
 // - /node_modules/@nuxt/content/dist/runtime/composables/query.mjs ($id_47535763)
 // - /node_modules/@nuxt/content/dist/runtime/composables/utils.mjs ($id_3db3e041)
 // - /node_modules/@nuxt/content/dist/runtime/composables/navigation.mjs ($id_e209d000)
 // - /node_modules/nuxt/dist/pages/runtime/composables.mjs ($id_ff6ed455)
 // --------------------
-const $id_e0503dec = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_8e1dca9a = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/head/runtime/index.mjs");
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/compat/vue-demi.mjs");
@@ -2021,11 +2021,11 @@ const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt/dist
 
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/composables/useAuth.ts");
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/composables/useLike.ts");
 
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/composables/useComment.ts");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/composables/useAuth.ts");
 
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/composables/useLike.ts");
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/composables/useComment.ts");
 
 const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/@nuxt/content/dist/runtime/composables/query.mjs");
 
@@ -2128,23 +2128,23 @@ Object.defineProperty(__vite_ssr_exports__, "useCssModule", { enumerable: true, 
 Object.defineProperty(__vite_ssr_exports__, "useCssVars", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_14__.useCssVars }});
 Object.defineProperty(__vite_ssr_exports__, "useSlots", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_14__.useSlots }});
 Object.defineProperty(__vite_ssr_exports__, "useTransitionState", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_14__.useTransitionState }});
-const __vite_ssr_import_15__ = await __vite_ssr_import__("/composables/useAuth.ts");
+const __vite_ssr_import_15__ = await __vite_ssr_import__("/composables/useLike.ts");
 
-Object.defineProperty(__vite_ssr_exports__, "useAuthCookie", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_15__.useAuthCookie }});
-Object.defineProperty(__vite_ssr_exports__, "useUser", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_15__.useUser }});
-Object.defineProperty(__vite_ssr_exports__, "userLogout", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_15__.userLogout }});
-Object.defineProperty(__vite_ssr_exports__, "registerWithEmail", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_15__.registerWithEmail }});
-Object.defineProperty(__vite_ssr_exports__, "loginWithEmail", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_15__.loginWithEmail }});
-const __vite_ssr_import_16__ = await __vite_ssr_import__("/composables/useComment.ts");
+Object.defineProperty(__vite_ssr_exports__, "getUserLikes", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_15__.getUserLikes }});
+Object.defineProperty(__vite_ssr_exports__, "addUserLike", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_15__.addUserLike }});
+Object.defineProperty(__vite_ssr_exports__, "removeUserLike", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_15__.removeUserLike }});
+const __vite_ssr_import_16__ = await __vite_ssr_import__("/composables/useAuth.ts");
 
-Object.defineProperty(__vite_ssr_exports__, "getPlayerComments", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_16__.getPlayerComments }});
-Object.defineProperty(__vite_ssr_exports__, "addComment", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_16__.addComment }});
-Object.defineProperty(__vite_ssr_exports__, "deleteComment", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_16__.deleteComment }});
-const __vite_ssr_import_17__ = await __vite_ssr_import__("/composables/useLike.ts");
+Object.defineProperty(__vite_ssr_exports__, "useAuthCookie", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_16__.useAuthCookie }});
+Object.defineProperty(__vite_ssr_exports__, "useUser", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_16__.useUser }});
+Object.defineProperty(__vite_ssr_exports__, "userLogout", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_16__.userLogout }});
+Object.defineProperty(__vite_ssr_exports__, "registerWithEmail", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_16__.registerWithEmail }});
+Object.defineProperty(__vite_ssr_exports__, "loginWithEmail", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_16__.loginWithEmail }});
+const __vite_ssr_import_17__ = await __vite_ssr_import__("/composables/useComment.ts");
 
-Object.defineProperty(__vite_ssr_exports__, "getUserLikes", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_17__.getUserLikes }});
-Object.defineProperty(__vite_ssr_exports__, "addUserLike", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_17__.addUserLike }});
-Object.defineProperty(__vite_ssr_exports__, "removeUserLike", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_17__.removeUserLike }});
+Object.defineProperty(__vite_ssr_exports__, "getPlayerComments", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_17__.getPlayerComments }});
+Object.defineProperty(__vite_ssr_exports__, "addComment", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_17__.addComment }});
+Object.defineProperty(__vite_ssr_exports__, "deleteComment", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_17__.deleteComment }});
 const __vite_ssr_import_18__ = await __vite_ssr_import__("/node_modules/@nuxt/content/dist/runtime/composables/query.mjs");
 
 Object.defineProperty(__vite_ssr_exports__, "queryContent", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_18__.queryContent }});
@@ -2164,7 +2164,7 @@ Object.defineProperty(__vite_ssr_exports__, "definePageMeta", { enumerable: true
 // --------------------
 // Request: /node_modules/nuxt/dist/app/compat/vue-demi.mjs
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs ($id_e0503dec)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/compat/capi.mjs ($id_0c5717a4)
 // --------------------
@@ -2217,9 +2217,40 @@ Object.defineProperty(__vite_ssr_exports__, "del", { enumerable: true, configura
 
 
 // --------------------
+// Request: /composables/useLike.ts
+// Parents: 
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
+// - /pages/teams/[id]/index.vue?macro=true ($id_4d404a17)
+// - /pages/teams/[id]/player/[player].vue?macro=true ($id_5609f4a1)
+// - /pages/teams/[id]/index.vue ($id_aeed9c79)
+// - /pages/teams/[id]/player/[player].vue ($id_b85564a3)
+// Dependencies: 
+
+// --------------------
+const $id_6dd93210 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+async function getUserLikes(playerId) {
+  const like = await $fetch("/api/like/getLikes?playerId=" + playerId, { method: "GET" });
+  return like;
+}
+Object.defineProperty(__vite_ssr_exports__, "getUserLikes", { enumerable: true, configurable: true, get(){ return getUserLikes }});
+async function addUserLike({ playerId, userId }) {
+  const like = await $fetch("/api/like/addLike", { method: "POST", body: { userId, playerId } });
+  return like;
+}
+Object.defineProperty(__vite_ssr_exports__, "addUserLike", { enumerable: true, configurable: true, get(){ return addUserLike }});
+async function removeUserLike(likeId) {
+  const res = await $fetch("/api/like/deleteLike?likeId=" + likeId, { method: "GET" });
+  return res;
+}
+Object.defineProperty(__vite_ssr_exports__, "removeUserLike", { enumerable: true, configurable: true, get(){ return removeUserLike }});
+;
+}
+
+
+// --------------------
 // Request: /composables/useAuth.ts
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs ($id_e0503dec)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
 // - /pages/login.vue?macro=true ($id_213baa8a)
 // - /pages/register.vue?macro=true ($id_222c4ecc)
 // - /pages/login.vue ($id_b0922173)
@@ -2287,7 +2318,7 @@ Object.defineProperty(__vite_ssr_exports__, "loginWithEmail", { enumerable: true
 // --------------------
 // Request: /composables/useComment.ts
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs ($id_e0503dec)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
 // - /components/Comments.vue ($id_04072223)
 // Dependencies: 
 
@@ -2320,40 +2351,9 @@ Object.defineProperty(__vite_ssr_exports__, "deleteComment", { enumerable: true,
 
 
 // --------------------
-// Request: /composables/useLike.ts
-// Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs ($id_e0503dec)
-// - /pages/teams/[id]/index.vue?macro=true ($id_4d404a17)
-// - /pages/teams/[id]/player/[player].vue?macro=true ($id_5609f4a1)
-// - /pages/teams/[id]/index.vue ($id_aeed9c79)
-// - /pages/teams/[id]/player/[player].vue ($id_b85564a3)
-// Dependencies: 
-
-// --------------------
-const $id_6dd93210 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-async function getUserLikes(playerId) {
-  const like = await $fetch("/api/like/getLikes?playerId=" + playerId, { method: "GET" });
-  return like;
-}
-Object.defineProperty(__vite_ssr_exports__, "getUserLikes", { enumerable: true, configurable: true, get(){ return getUserLikes }});
-async function addUserLike({ playerId, userId }) {
-  const like = await $fetch("/api/like/addLike", { method: "POST", body: { userId, playerId } });
-  return like;
-}
-Object.defineProperty(__vite_ssr_exports__, "addUserLike", { enumerable: true, configurable: true, get(){ return addUserLike }});
-async function removeUserLike(likeId) {
-  const res = await $fetch("/api/like/deleteLike?likeId=" + likeId, { method: "GET" });
-  return res;
-}
-Object.defineProperty(__vite_ssr_exports__, "removeUserLike", { enumerable: true, configurable: true, get(){ return removeUserLike }});
-;
-}
-
-
-// --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/composables/query.mjs
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs ($id_e0503dec)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
 // - /pages/blog/[...slug].vue?macro=true ($id_23ff3f9c)
 // - /components/Tags.vue ($id_3a31b237)
 // - /pages/blog/[...slug].vue ($id_b8f35669)
@@ -2595,7 +2595,7 @@ function regExpReviver(_key, value) {
 // Request: /node_modules/@nuxt/content/dist/runtime/composables/utils.mjs
 // Parents: 
 // - /node_modules/@nuxt/content/dist/runtime/composables/query.mjs ($id_47535763)
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs ($id_e0503dec)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
 // - /node_modules/@nuxt/content/dist/runtime/composables/navigation.mjs ($id_e209d000)
 // Dependencies: 
 // - /node_modules/ufo/dist/index.mjs ($id_614de060)
@@ -2703,7 +2703,7 @@ Object.defineProperty(__vite_ssr_exports__, "flatUnwrap", { enumerable: true, co
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/composables/navigation.mjs
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs ($id_e0503dec)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
 // Dependencies: 
 // - /node_modules/ohash/dist/index.mjs ($id_b1b82cf3)
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
@@ -2749,7 +2749,7 @@ Object.defineProperty(__vite_ssr_exports__, "fetchContentNavigation", { enumerab
 // --------------------
 // Request: /node_modules/nuxt/dist/pages/runtime/composables.mjs
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs ($id_e0503dec)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
 // - /pages/blog/index.vue?macro=true ($id_381d5fdd)
 // - /pages/login.vue?macro=true ($id_213baa8a)
 // - /pages/blog/index.vue ($id_83c2b1d1)
@@ -2779,7 +2779,7 @@ Object.defineProperty(__vite_ssr_exports__, "definePageMeta", { enumerable: true
 
 // --------------------
 const $id_a0bb35af = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/@heroicons/vue/solid/index.js")
+import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@heroicons/vue/solid/index.js")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -2788,7 +2788,7 @@ import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/@heroicons/vue/solid/
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/home/afzaal/Direct/nuxt3-zero/node_modules/@heroicons/vue/solid/index.js\".")
+    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@heroicons/vue/solid/index.js\".")
   })
 
 
@@ -2858,7 +2858,7 @@ import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/@heroicons/vue/solid/
 
 // --------------------
 const $id_b215fa1c = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/vue/server-renderer/index.js")
+import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/vue/server-renderer/index.js")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -2867,7 +2867,7 @@ import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/vue/server-renderer/i
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/home/afzaal/Direct/nuxt3-zero/node_modules/vue/server-renderer/index.js\".")
+    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/vue/server-renderer/index.js\".")
   })
 
 
@@ -2964,12 +2964,12 @@ __vite_ssr_exports__.default = (sfc, props) => {
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/ContentDoc.mjs
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.mjs ($id_8f3d0953)
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentQuery.mjs ($id_3f801a38)
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs ($id_e0503dec)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
 // --------------------
 const $id_12ce52f3 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
@@ -2978,7 +2978,7 @@ const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/@nuxt/con
 
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.mjs");
 
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs");
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs");
 
 __vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
   props: {
@@ -3054,7 +3054,7 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
 // Request: /node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.mjs
 // Parents: 
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentDoc.mjs ($id_12ce52f3)
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // - /pages/blog/[...slug].vue?macro=true ($id_23ff3f9c)
 // - /pages/blog/[...slug].vue ($id_b8f35669)
 // Dependencies: 
@@ -3121,7 +3121,7 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
 // Request: /node_modules/@nuxt/content/dist/runtime/components/MarkdownRenderer.mjs
 // Parents: 
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.mjs ($id_8f3d0953)
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // - /pages/blog/[...slug].vue?macro=true ($id_23ff3f9c)
 // - /pages/blog/[...slug].vue ($id_b8f35669)
 // Dependencies: 
@@ -3341,7 +3341,7 @@ function isTemplate(node) {
 
 // --------------------
 const $id_ff332d11 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/scule/dist/index.mjs")
+import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/scule/dist/index.mjs")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -3350,7 +3350,7 @@ import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/scule/dist/index.mjs"
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/home/afzaal/Direct/nuxt3-zero/node_modules/scule/dist/index.mjs\".")
+    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/scule/dist/index.mjs\".")
   })
 
 
@@ -3362,7 +3362,7 @@ import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/scule/dist/index.mjs"
 
 // --------------------
 const $id_882dd793 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/property-information/index.js")
+import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/property-information/index.js")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -3371,7 +3371,7 @@ import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/property-information/
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/home/afzaal/Direct/nuxt3-zero/node_modules/property-information/index.js\".")
+    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/property-information/index.js\".")
   })
 
 
@@ -3383,7 +3383,7 @@ import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/property-information/
 
 // --------------------
 const $id_4503b399 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/html-tags/index.js")
+import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/html-tags/index.js")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -3392,7 +3392,7 @@ import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/html-tags/index.js")
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/home/afzaal/Direct/nuxt3-zero/node_modules/html-tags/index.js\".")
+    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/html-tags/index.js\".")
   })
 
 
@@ -3401,18 +3401,18 @@ import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/html-tags/index.js")
 // Parents: 
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentDoc.mjs ($id_12ce52f3)
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentList.mjs ($id_9fab5abb)
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
 // - /node_modules/ohash/dist/index.mjs ($id_b1b82cf3)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs ($id_e0503dec)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
 // --------------------
 const $id_3f801a38 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/ohash/dist/index.mjs");
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs");
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs");
 
 __vite_ssr_exports__.default = __vite_ssr_import_1__.defineComponent({
   props: {
@@ -3575,7 +3575,7 @@ __vite_ssr_exports__.default = __vite_ssr_import_1__.defineComponent({
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/ContentList.mjs
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // - /pages/blog/index.vue?macro=true ($id_381d5fdd)
 // - /pages/blog/tags/[slug].vue?macro=true ($id_23cb5fd2)
 // - /pages/blog/index.vue ($id_83c2b1d1)
@@ -3621,18 +3621,18 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.mjs
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/ohash/dist/index.mjs ($id_b1b82cf3)
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs ($id_e0503dec)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
 // --------------------
 const $id_d2da4ccd = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/ohash/dist/index.mjs");
 
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs");
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs");
 
 __vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
   props: {
@@ -3679,7 +3679,7 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseA.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -3739,7 +3739,7 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/afzaal/Direct/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseA.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseA.vue"]]);
 ;
 }
 
@@ -3747,7 +3747,7 @@ __vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sf
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseBlockquote.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -3775,16 +3775,16 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseBlockquote.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseBlockquote.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs ($id_e0503dec)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.vue?vue&type=style&index=0&lang.css ($id_d7e7fe44)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -3792,7 +3792,7 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_m
 // --------------------
 const $id_19429b58 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs");
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs");
 
 const _sfc_main = __vite_ssr_import_0__.defineComponent({
   props: {
@@ -3835,7 +3835,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.vue"]]);
 }
 
 
@@ -3854,7 +3854,7 @@ __vite_ssr_exports__.default = "pre code .line{display:block;min-height:1rem}";
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCodeInline.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -3882,14 +3882,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCodeInline.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCodeInline.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseEm.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -3917,14 +3917,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseEm.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseEm.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH1.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -3952,14 +3952,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH1.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH1.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH2.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4016,7 +4016,7 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/afzaal/Direct/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH2.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH2.vue"]]);
 ;
 }
 
@@ -4024,7 +4024,7 @@ __vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sf
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH3.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4081,7 +4081,7 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/afzaal/Direct/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH3.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH3.vue"]]);
 ;
 }
 
@@ -4089,7 +4089,7 @@ __vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sf
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH4.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4146,7 +4146,7 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/afzaal/Direct/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH4.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH4.vue"]]);
 ;
 }
 
@@ -4154,7 +4154,7 @@ __vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sf
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH5.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4182,14 +4182,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH5.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH5.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH6.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4217,14 +4217,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH6.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH6.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseHr.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4250,14 +4250,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseHr.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseHr.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseImg.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
@@ -4315,7 +4315,7 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_4__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/afzaal/Direct/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseImg.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_4__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseImg.vue"]]);
 ;
 }
 
@@ -4323,7 +4323,7 @@ __vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_4__.default(_sf
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseLi.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4351,14 +4351,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseLi.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseLi.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseOl.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4386,14 +4386,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseOl.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseOl.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseP.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4421,14 +4421,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseP.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseP.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseStrong.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4456,14 +4456,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseStrong.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseStrong.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTable.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4491,14 +4491,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTable.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTable.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTbody.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4526,14 +4526,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTbody.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTbody.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTd.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4561,14 +4561,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTd.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTd.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTh.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4596,14 +4596,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTh.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTh.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseThead.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4631,14 +4631,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseThead.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseThead.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTr.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4666,14 +4666,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTr.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTr.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseUl.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs ($id_c0881a10)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs ($id_50656c08)
 // Dependencies: 
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -4701,14 +4701,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseUl.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseUl.vue"]]);
 }
 
 
 // --------------------
 // Request: /node_modules/nuxt/dist/head/runtime/lib/vueuse-head.plugin.mjs
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/plugins/server.mjs ($id_349c7318)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/plugins/server.mjs ($id_d89cfd50)
 // Dependencies: 
 // - /node_modules/@vueuse/head/dist/index.mjs ($id_c032264e)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -5191,7 +5191,7 @@ Object.defineProperty(__vite_ssr_exports__, "useHead", { enumerable: true, confi
 
 // --------------------
 const $id_d7afab65 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/defu/dist/defu.mjs")
+import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/defu/dist/defu.mjs")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -5200,20 +5200,20 @@ import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/defu/dist/defu.mjs")
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/home/afzaal/Direct/nuxt3-zero/node_modules/defu/dist/defu.mjs\".")
+    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/defu/dist/defu.mjs\".")
   })
 
 
 // --------------------
 // Request: /node_modules/nuxt/dist/head/runtime/plugin.mjs
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/plugins/server.mjs ($id_349c7318)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/plugins/server.mjs ($id_d89cfd50)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/nuxt/dist/head/runtime/components.mjs ($id_b2a29d6f)
 // - /node_modules/nuxt/dist/head/runtime/composables.mjs ($id_04ea9504)
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/meta.config.mjs ($id_7a5e6b8b)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/meta.config.mjs ($id_228b9c10)
 // --------------------
 const $id_a2650341 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
@@ -5224,7 +5224,7 @@ const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt/dist
 
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
 
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/meta.config.mjs");
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/meta.config.mjs");
 
 const metaMixin = {
   created() {
@@ -5472,13 +5472,13 @@ Object.defineProperty(__vite_ssr_exports__, "Body", { enumerable: true, configur
 
 
 // --------------------
-// Request: /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/meta.config.mjs
+// Request: /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/meta.config.mjs
 // Parents: 
 // - /node_modules/nuxt/dist/head/runtime/plugin.mjs ($id_a2650341)
 // Dependencies: 
 
 // --------------------
-const $id_7a5e6b8b = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_228b9c10 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 __vite_ssr_exports__.default = {"globalMeta":{"charset":"utf-8","viewport":"width=device-width, initial-scale=1","meta":[],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico?v2"}],"style":[],"script":[],"title":"rosterprops"}};
 }
 
@@ -5486,7 +5486,7 @@ __vite_ssr_exports__.default = {"globalMeta":{"charset":"utf-8","viewport":"widt
 // --------------------
 // Request: /node_modules/nuxt/dist/pages/runtime/router.mjs
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/plugins/server.mjs ($id_349c7318)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/plugins/server.mjs ($id_d89cfd50)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue-router/dist/vue-router.cjs.js ($id_f9a4a698)
@@ -5494,9 +5494,9 @@ __vite_ssr_exports__.default = {"globalMeta":{"charset":"utf-8","viewport":"widt
 // - /node_modules/ufo/dist/index.mjs ($id_614de060)
 // - /node_modules/nuxt/dist/pages/runtime/page.mjs ($id_5fc14cdc)
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/routes.mjs ($id_461bf9a5)
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/router.options.mjs ($id_99e358fb)
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/middleware.mjs ($id_1c84a8c8)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/router.options.mjs ($id_1ce20c25)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/middleware.mjs ($id_c4b3f06e)
 // --------------------
 const $id_a090977b = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
@@ -5511,11 +5511,11 @@ const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/nuxt/dist
 
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
 
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/routes.mjs");
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs");
 
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/router.options.mjs");
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/router.options.mjs");
 
-const __vite_ssr_import_8__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/middleware.mjs");
+const __vite_ssr_import_8__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/middleware.mjs");
 
 function createCurrentLocation(base, location) {
   const { pathname, search, hash } = location;
@@ -5767,7 +5767,7 @@ Object.defineProperty(__vite_ssr_exports__, "_wrapIf", { enumerable: true, confi
 
 
 // --------------------
-// Request: /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/routes.mjs
+// Request: /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs
 // Parents: 
 // - /node_modules/nuxt/dist/pages/runtime/router.mjs ($id_a090977b)
 // Dependencies: 
@@ -5790,7 +5790,7 @@ Object.defineProperty(__vite_ssr_exports__, "_wrapIf", { enumerable: true, confi
 // - /pages/teams/[id]/player/[player].vue ($id_b85564a3)
 // - /pages/teams/index.vue ($id_9644598b)
 // --------------------
-const $id_461bf9a5 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_8b52cc6c = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/pages/blog/[...slug].vue?macro=true");
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/pages/blog/index.vue?macro=true");
@@ -5813,7 +5813,7 @@ __vite_ssr_exports__.default = [
   {
     name: "blog-slug",
     path: "/blog/:slug(.*)*",
-    file: "/home/afzaal/Direct/nuxt3-zero/pages/blog/[...slug].vue",
+    file: "/Users/edwardz_8/vue-projects/nuxt3-zero/pages/blog/[...slug].vue",
     children: [],
     meta: __vite_ssr_import_0__.meta,
     alias: __vite_ssr_import_0__.meta?.alias || [],
@@ -5822,7 +5822,7 @@ __vite_ssr_exports__.default = [
   {
     name: "blog",
     path: "/blog",
-    file: "/home/afzaal/Direct/nuxt3-zero/pages/blog/index.vue",
+    file: "/Users/edwardz_8/vue-projects/nuxt3-zero/pages/blog/index.vue",
     children: [],
     meta: __vite_ssr_import_1__.meta,
     alias: __vite_ssr_import_1__.meta?.alias || [],
@@ -5831,7 +5831,7 @@ __vite_ssr_exports__.default = [
   {
     name: "blog-tags-slug",
     path: "/blog/tags/:slug",
-    file: "/home/afzaal/Direct/nuxt3-zero/pages/blog/tags/[slug].vue",
+    file: "/Users/edwardz_8/vue-projects/nuxt3-zero/pages/blog/tags/[slug].vue",
     children: [],
     meta: __vite_ssr_import_2__.meta,
     alias: __vite_ssr_import_2__.meta?.alias || [],
@@ -5840,7 +5840,7 @@ __vite_ssr_exports__.default = [
   {
     name: "index",
     path: "/",
-    file: "/home/afzaal/Direct/nuxt3-zero/pages/index.vue",
+    file: "/Users/edwardz_8/vue-projects/nuxt3-zero/pages/index.vue",
     children: [],
     meta: __vite_ssr_import_3__.meta,
     alias: __vite_ssr_import_3__.meta?.alias || [],
@@ -5849,7 +5849,7 @@ __vite_ssr_exports__.default = [
   {
     name: "login",
     path: "/login",
-    file: "/home/afzaal/Direct/nuxt3-zero/pages/login.vue",
+    file: "/Users/edwardz_8/vue-projects/nuxt3-zero/pages/login.vue",
     children: [],
     meta: __vite_ssr_import_4__.meta,
     alias: __vite_ssr_import_4__.meta?.alias || [],
@@ -5858,7 +5858,7 @@ __vite_ssr_exports__.default = [
   {
     name: "register",
     path: "/register",
-    file: "/home/afzaal/Direct/nuxt3-zero/pages/register.vue",
+    file: "/Users/edwardz_8/vue-projects/nuxt3-zero/pages/register.vue",
     children: [],
     meta: __vite_ssr_import_5__.meta,
     alias: __vite_ssr_import_5__.meta?.alias || [],
@@ -5867,7 +5867,7 @@ __vite_ssr_exports__.default = [
   {
     name: "teams-id",
     path: "/teams/:id",
-    file: "/home/afzaal/Direct/nuxt3-zero/pages/teams/[id]/index.vue",
+    file: "/Users/edwardz_8/vue-projects/nuxt3-zero/pages/teams/[id]/index.vue",
     children: [],
     meta: __vite_ssr_import_6__.meta,
     alias: __vite_ssr_import_6__.meta?.alias || [],
@@ -5876,7 +5876,7 @@ __vite_ssr_exports__.default = [
   {
     name: "teams-id-player-player",
     path: "/teams/:id/player/:player",
-    file: "/home/afzaal/Direct/nuxt3-zero/pages/teams/[id]/player/[player].vue",
+    file: "/Users/edwardz_8/vue-projects/nuxt3-zero/pages/teams/[id]/player/[player].vue",
     children: [],
     meta: __vite_ssr_import_7__.meta,
     alias: __vite_ssr_import_7__.meta?.alias || [],
@@ -5885,7 +5885,7 @@ __vite_ssr_exports__.default = [
   {
     name: "teams",
     path: "/teams",
-    file: "/home/afzaal/Direct/nuxt3-zero/pages/teams/index.vue",
+    file: "/Users/edwardz_8/vue-projects/nuxt3-zero/pages/teams/index.vue",
     children: [],
     meta: __vite_ssr_import_8__.meta,
     alias: __vite_ssr_import_8__.meta?.alias || [],
@@ -5898,7 +5898,7 @@ __vite_ssr_exports__.default = [
 // --------------------
 // Request: /pages/blog/[...slug].vue?macro=true
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/routes.mjs ($id_461bf9a5)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
 // Dependencies: 
 // - /components/Toc.vue ($id_5cbfb66a)
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.mjs ($id_8f3d0953)
@@ -6095,7 +6095,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_13__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_13__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-04f43c4b"],['__file',"/home/afzaal/Direct/nuxt3-zero/pages/blog/[...slug].vue"]])
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_13__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-04f43c4b"],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/pages/blog/[...slug].vue"]])
 const meta = undefined
 Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
 }
@@ -6178,7 +6178,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-7065a786"],['__file',"/home/afzaal/Direct/nuxt3-zero/components/Toc.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-7065a786"],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/components/Toc.vue"]]);
 }
 
 
@@ -6257,7 +6257,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/components/Form.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/components/Form.vue"]]);
 }
 
 
@@ -6370,7 +6370,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-66b24521"],['__file',"/home/afzaal/Direct/nuxt3-zero/components/PrevNext.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-66b24521"],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/components/PrevNext.vue"]]);
 }
 
 
@@ -6402,7 +6402,7 @@ __vite_ssr_exports__.default = ".article-main[data-v-04f43c4b]{margin:auto;max-w
 // --------------------
 // Request: /pages/blog/index.vue?macro=true
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/routes.mjs ($id_461bf9a5)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
 // Dependencies: 
 // - /components/Tags.vue ($id_3a31b237)
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentList.mjs ($id_9fab5abb)
@@ -6644,7 +6644,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_10__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_10__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/pages/blog/index.vue"]])
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_10__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/pages/blog/index.vue"]])
 const meta = {
   key: (route) => route.fullPath,
 }
@@ -6786,7 +6786,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_10__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_10__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-57c02174"],['__file',"/home/afzaal/Direct/nuxt3-zero/components/Tags.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_10__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-57c02174"],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/components/Tags.vue"]]);
 }
 
 
@@ -6805,7 +6805,7 @@ __vite_ssr_exports__.default = ".tag-list[data-v-57c02174]{align-items:center;bo
 // --------------------
 // Request: /pages/blog/tags/[slug].vue?macro=true
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/routes.mjs ($id_461bf9a5)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
 // Dependencies: 
 // - /components/Tags.vue ($id_3a31b237)
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentList.mjs ($id_9fab5abb)
@@ -7057,7 +7057,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_8__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_8__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/pages/blog/tags/[slug].vue"]])
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_8__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/pages/blog/tags/[slug].vue"]])
 const meta = undefined
 Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
 }
@@ -7066,7 +7066,7 @@ Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configur
 // --------------------
 // Request: /pages/index.vue?macro=true
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/routes.mjs ($id_461bf9a5)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -7151,7 +7151,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-2a183b29"],['__file',"/home/afzaal/Direct/nuxt3-zero/pages/index.vue"]])
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-2a183b29"],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/pages/index.vue"]])
 const meta = undefined
 Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
 }
@@ -7173,7 +7173,7 @@ __vite_ssr_exports__.default = ".hero-section[data-v-2a183b29]{--tw-bg-opacity:1
 // --------------------
 // Request: /pages/login.vue?macro=true
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/routes.mjs ($id_461bf9a5)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
 // Dependencies: 
 // - /node_modules/nuxt/dist/pages/runtime/composables.mjs ($id_ff6ed455)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -7238,7 +7238,7 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_7__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/afzaal/Direct/nuxt3-zero/pages/login.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_7__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/pages/login.vue"]]);
 
 const meta = {
       middleware: "guest"
@@ -7259,7 +7259,7 @@ Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configur
 
 // --------------------
 const $id_85c34493 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/@vue/reactivity/dist/reactivity.cjs.js")
+import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@vue/reactivity/dist/reactivity.cjs.js")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -7268,14 +7268,14 @@ import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/@vue/reactivity/dist/
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/home/afzaal/Direct/nuxt3-zero/node_modules/@vue/reactivity/dist/reactivity.cjs.js\".")
+    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@vue/reactivity/dist/reactivity.cjs.js\".")
   })
 
 
 // --------------------
 // Request: /pages/register.vue?macro=true
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/routes.mjs ($id_461bf9a5)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/@vue/reactivity/dist/reactivity.cjs.js ($id_85c34493)
@@ -7338,7 +7338,7 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_7__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/afzaal/Direct/nuxt3-zero/pages/register.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_7__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/pages/register.vue"]]);
 
 const meta = undefined
 Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
@@ -7348,7 +7348,7 @@ Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configur
 // --------------------
 // Request: /pages/teams/[id]/index.vue?macro=true
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/routes.mjs ($id_461bf9a5)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
 // Dependencies: 
 // - /components/OffCanvas.vue ($id_96b3030c)
 // - /components/PlayerCard.vue ($id_89df6488)
@@ -7485,7 +7485,7 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_11__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_11__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/afzaal/Direct/nuxt3-zero/pages/teams/[id]/index.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_11__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/pages/teams/[id]/index.vue"]]);
 
 const meta = undefined
 Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
@@ -7570,7 +7570,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/components/OffCanvas.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/components/OffCanvas.vue"]]);
 }
 
 
@@ -21683,7 +21683,7 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_8__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_8__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/afzaal/Direct/nuxt3-zero/components/PlayerCard.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_8__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/components/PlayerCard.vue"]]);
 ;
 }
 
@@ -21691,7 +21691,7 @@ __vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_8__.default(_sf
 // --------------------
 // Request: /pages/teams/[id]/player/[player].vue?macro=true
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/routes.mjs ($id_461bf9a5)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
 // Dependencies: 
 // - /components/Comments.vue ($id_04072223)
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
@@ -21758,7 +21758,6 @@ const likes = (
 playerLikes.value = likes[+route.params.player] ? likes[+route.params.player] : []
 
 const isLiked = __vite_ssr_import_2__.computed(() => {
-  if(!user.value) return false
   return playerLikes.value.find((like) => like.userId == user.value.id) ? true : false;
 });
 
@@ -21877,7 +21876,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_10__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_10__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/pages/teams/[id]/player/[player].vue"]])
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_10__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/pages/teams/[id]/player/[player].vue"]])
 const meta = undefined
 Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
 }
@@ -22017,14 +22016,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_8__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_8__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/components/Comments.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_8__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/components/Comments.vue"]]);
 }
 
 
 // --------------------
 // Request: /pages/teams/index.vue?macro=true
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/routes.mjs ($id_461bf9a5)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
 // Dependencies: 
 // - /components/TeamCard.vue ($id_5e2e1b2d)
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
@@ -22098,7 +22097,7 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_6__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/afzaal/Direct/nuxt3-zero/pages/teams/index.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_6__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/pages/teams/index.vue"]]);
 
 const meta = undefined
 Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
@@ -22170,7 +22169,7 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/afzaal/Direct/nuxt3-zero/components/TeamCard.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/components/TeamCard.vue"]]);
 ;
 }
 
@@ -22178,7 +22177,7 @@ __vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sf
 // --------------------
 // Request: /pages/blog/[...slug].vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/routes.mjs ($id_461bf9a5)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
 // Dependencies: 
 // - /components/Toc.vue ($id_5cbfb66a)
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.mjs ($id_8f3d0953)
@@ -22375,14 +22374,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_13__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_13__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-04f43c4b"],['__file',"/home/afzaal/Direct/nuxt3-zero/pages/blog/[...slug].vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_13__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-04f43c4b"],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/pages/blog/[...slug].vue"]]);
 }
 
 
 // --------------------
 // Request: /pages/blog/index.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/routes.mjs ($id_461bf9a5)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
 // Dependencies: 
 // - /components/Tags.vue ($id_3a31b237)
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentList.mjs ($id_9fab5abb)
@@ -22624,14 +22623,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_10__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_10__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/pages/blog/index.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_10__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/pages/blog/index.vue"]]);
 }
 
 
 // --------------------
 // Request: /pages/blog/tags/[slug].vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/routes.mjs ($id_461bf9a5)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
 // Dependencies: 
 // - /components/Tags.vue ($id_3a31b237)
 // - /node_modules/@nuxt/content/dist/runtime/components/ContentList.mjs ($id_9fab5abb)
@@ -22883,14 +22882,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_8__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_8__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/pages/blog/tags/[slug].vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_8__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/pages/blog/tags/[slug].vue"]]);
 }
 
 
 // --------------------
 // Request: /pages/index.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/routes.mjs ($id_461bf9a5)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -22975,14 +22974,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-2a183b29"],['__file',"/home/afzaal/Direct/nuxt3-zero/pages/index.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-2a183b29"],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/pages/index.vue"]]);
 }
 
 
 // --------------------
 // Request: /pages/login.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/routes.mjs ($id_461bf9a5)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
 // Dependencies: 
 // - /node_modules/nuxt/dist/pages/runtime/composables.mjs ($id_ff6ed455)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
@@ -23047,7 +23046,7 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_7__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/afzaal/Direct/nuxt3-zero/pages/login.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_7__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/pages/login.vue"]]);
 ;
 }
 
@@ -23055,7 +23054,7 @@ __vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_7__.default(_sf
 // --------------------
 // Request: /pages/register.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/routes.mjs ($id_461bf9a5)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/@vue/reactivity/dist/reactivity.cjs.js ($id_85c34493)
@@ -23118,7 +23117,7 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_7__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/afzaal/Direct/nuxt3-zero/pages/register.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_7__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/pages/register.vue"]]);
 ;
 }
 
@@ -23126,7 +23125,7 @@ __vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_7__.default(_sf
 // --------------------
 // Request: /pages/teams/[id]/index.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/routes.mjs ($id_461bf9a5)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
 // Dependencies: 
 // - /components/OffCanvas.vue ($id_96b3030c)
 // - /components/PlayerCard.vue ($id_89df6488)
@@ -23263,7 +23262,7 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_11__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_11__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/afzaal/Direct/nuxt3-zero/pages/teams/[id]/index.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_11__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/pages/teams/[id]/index.vue"]]);
 ;
 }
 
@@ -23271,7 +23270,7 @@ __vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_11__.default(_s
 // --------------------
 // Request: /pages/teams/[id]/player/[player].vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/routes.mjs ($id_461bf9a5)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
 // Dependencies: 
 // - /components/Comments.vue ($id_04072223)
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
@@ -23338,7 +23337,6 @@ const likes = (
 playerLikes.value = likes[+route.params.player] ? likes[+route.params.player] : []
 
 const isLiked = __vite_ssr_import_2__.computed(() => {
-  if(!user.value) return false
   return playerLikes.value.find((like) => like.userId == user.value.id) ? true : false;
 });
 
@@ -23457,14 +23455,14 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_10__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_10__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/pages/teams/[id]/player/[player].vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_10__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/pages/teams/[id]/player/[player].vue"]]);
 }
 
 
 // --------------------
 // Request: /pages/teams/index.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/routes.mjs ($id_461bf9a5)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs ($id_8b52cc6c)
 // Dependencies: 
 // - /components/TeamCard.vue ($id_5e2e1b2d)
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
@@ -23538,19 +23536,19 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_6__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/afzaal/Direct/nuxt3-zero/pages/teams/index.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_6__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/pages/teams/index.vue"]]);
 ;
 }
 
 
 // --------------------
-// Request: /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/router.options.mjs
+// Request: /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/router.options.mjs
 // Parents: 
 // - /node_modules/nuxt/dist/pages/runtime/router.mjs ($id_a090977b)
 // Dependencies: 
 
 // --------------------
-const $id_99e358fb = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_1ce20c25 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const configRouterOptions = {}
 __vite_ssr_exports__.default = {
 ...configRouterOptions,
@@ -23559,14 +23557,14 @@ __vite_ssr_exports__.default = {
 
 
 // --------------------
-// Request: /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/middleware.mjs
+// Request: /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/middleware.mjs
 // Parents: 
 // - /node_modules/nuxt/dist/pages/runtime/router.mjs ($id_a090977b)
 // Dependencies: 
 // - /middleware/auth.ts ($id_7b92aa86)
 // - /middleware/guest.ts ($id_c862a572)
 // --------------------
-const $id_1c84a8c8 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_c4b3f06e = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const globalMiddleware = []
 Object.defineProperty(__vite_ssr_exports__, "globalMiddleware", { enumerable: true, configurable: true, get(){ return globalMiddleware }});
 const namedMiddleware = {
@@ -23580,7 +23578,7 @@ Object.defineProperty(__vite_ssr_exports__, "namedMiddleware", { enumerable: tru
 // --------------------
 // Request: /middleware/auth.ts
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/middleware.mjs ($id_1c84a8c8)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/middleware.mjs ($id_c4b3f06e)
 // Dependencies: 
 // - /node_modules/unctx/dist/index.mjs ($id_a569ca2d)
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
@@ -23605,7 +23603,7 @@ __vite_ssr_exports__.default = __vite_ssr_import_1__.defineNuxtRouteMiddleware(a
 // --------------------
 // Request: /middleware/guest.ts
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/middleware.mjs ($id_1c84a8c8)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/middleware.mjs ($id_c4b3f06e)
 // Dependencies: 
 // - /node_modules/unctx/dist/index.mjs ($id_a569ca2d)
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
@@ -23630,13 +23628,13 @@ __vite_ssr_exports__.default = __vite_ssr_import_1__.defineNuxtRouteMiddleware(a
 // --------------------
 // Request: /node_modules/@nuxt/content/dist/runtime/plugin.mjs
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/plugins/server.mjs ($id_349c7318)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/plugins/server.mjs ($id_d89cfd50)
 // Dependencies: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs ($id_e0503dec)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
 // - /node_modules/@nuxt/content/dist/runtime/composables/web-socket.mjs ($id_575fe152)
 // --------------------
 const $id_a4132d07 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs");
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs");
 
 __vite_ssr_exports__.default = __vite_ssr_import_0__.defineNuxtPlugin(() => {
   const publicConfig = __vite_ssr_import_0__.useRuntimeConfig().public;
@@ -23654,12 +23652,12 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineNuxtPlugin(() => {
 // - /node_modules/@nuxt/content/dist/runtime/plugin.mjs ($id_a4132d07)
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs ($id_e0503dec)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
 // --------------------
 const $id_575fe152 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
 
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs");
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs");
 
 const logger = {
   log: (...args) => console.log("[Content]", ...args),
@@ -23731,13 +23729,13 @@ Object.defineProperty(__vite_ssr_exports__, "useContentWebSocket", { enumerable:
 
 
 // --------------------
-// Request: /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/root-component.mjs
+// Request: /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/root-component.mjs
 // Parents: 
-// - /home/afzaal/Direct/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_01e3787c)
+// - /Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_74742b3b)
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/components/nuxt-root.vue ($id_e9bfada3)
 // --------------------
-const $id_7284e420 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_ff981dfb = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/components/nuxt-root.vue");
 
 Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_0__.default }});;
@@ -23747,11 +23745,11 @@ Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, confi
 // --------------------
 // Request: /node_modules/nuxt/dist/app/components/nuxt-root.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/root-component.mjs ($id_7284e420)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/root-component.mjs ($id_ff981dfb)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/error-component.mjs ($id_20eb7a44)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/error-component.mjs ($id_22d03b9f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
@@ -23761,7 +23759,7 @@ const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
 
 // @ts-ignore
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/error-component.mjs");
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/error-component.mjs");
 
 
 
@@ -23825,18 +23823,18 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/node_modules/nuxt/dist/app/components/nuxt-root.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/nuxt/dist/app/components/nuxt-root.vue"]]);
 }
 
 
 // --------------------
-// Request: /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/error-component.mjs
+// Request: /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/error-component.mjs
 // Parents: 
 // - /node_modules/nuxt/dist/app/components/nuxt-root.vue ($id_e9bfada3)
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/components/nuxt-error-page.vue ($id_8cc6d73f)
 // --------------------
-const $id_20eb7a44 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_22d03b9f = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/components/nuxt-error-page.vue");
 
 Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_0__.default }});;
@@ -23846,7 +23844,7 @@ Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, confi
 // --------------------
 // Request: /node_modules/nuxt/dist/app/components/nuxt-error-page.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/error-component.mjs ($id_20eb7a44)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/error-component.mjs ($id_22d03b9f)
 // Dependencies: 
 // - /node_modules/@nuxt/ui-templates/dist/templates/error-404.vue ($id_b90d4d0f)
 // - /node_modules/@nuxt/ui-templates/dist/templates/error-500.vue ($id_14c8b574)
@@ -23931,7 +23929,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/afzaal/Direct/nuxt3-zero/node_modules/nuxt/dist/app/components/nuxt-error-page.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/nuxt/dist/app/components/nuxt-error-page.vue"]]);
 }
 
 
@@ -23941,7 +23939,7 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_m
 // - /node_modules/nuxt/dist/app/components/nuxt-error-page.vue ($id_8cc6d73f)
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs ($id_e0503dec)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/@nuxt/ui-templates/dist/templates/error-404.vue?vue&type=style&index=0&scoped=true&lang.css ($id_e68b6b38)
@@ -23950,7 +23948,7 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_m
 const $id_b90d4d0f = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/components/nuxt-link.mjs");
 
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs");
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs");
 
 
 const _sfc_main = {
@@ -24049,7 +24047,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-573335c0"],['__file',"/home/afzaal/Direct/nuxt3-zero/node_modules/@nuxt/ui-templates/dist/templates/error-404.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-573335c0"],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/ui-templates/dist/templates/error-404.vue"]]);
 }
 
 
@@ -24070,14 +24068,14 @@ __vite_ssr_exports__.default = ".bg-white[data-v-573335c0]{--tw-bg-opacity:1;bac
 // Parents: 
 // - /node_modules/nuxt/dist/app/components/nuxt-error-page.vue ($id_8cc6d73f)
 // Dependencies: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs ($id_e0503dec)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/@nuxt/ui-templates/dist/templates/error-500.vue?vue&type=style&index=0&scoped=true&lang.css ($id_a2b3b709)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
 const $id_14c8b574 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs");
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs");
 
 
 const _sfc_main = {
@@ -24154,7 +24152,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-0914425d"],['__file',"/home/afzaal/Direct/nuxt3-zero/node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-0914425d"],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"]]);
 }
 
 
@@ -24175,14 +24173,14 @@ __vite_ssr_exports__.default = ".bg-white[data-v-0914425d]{--tw-bg-opacity:1;bac
 // Parents: 
 // - /node_modules/nuxt/dist/app/components/nuxt-error-page.vue ($id_8cc6d73f)
 // Dependencies: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs ($id_e0503dec)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs ($id_8e1dca9a)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /node_modules/@nuxt/ui-templates/dist/templates/error-dev.vue?vue&type=style&index=0&scoped=true&lang.css ($id_2691164c)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
 const $id_bc2d74a1 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs");
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs");
 
 
 const _sfc_main = {
@@ -24265,7 +24263,7 @@ _sfc_main.setup = (props, ctx) => {
 }
 const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-1da4697d"],['__file',"/home/afzaal/Direct/nuxt3-zero/node_modules/@nuxt/ui-templates/dist/templates/error-dev.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-1da4697d"],['__file',"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/ui-templates/dist/templates/error-dev.vue"]]);
 }
 
 
@@ -24282,13 +24280,13 @@ __vite_ssr_exports__.default = ".bg-white[data-v-1da4697d]{--tw-bg-opacity:1;bac
 
 
 // --------------------
-// Request: /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/app-component.mjs
+// Request: /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/app-component.mjs
 // Parents: 
-// - /home/afzaal/Direct/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_01e3787c)
+// - /Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/nuxt/dist/app/entry ($id_74742b3b)
 // Dependencies: 
 // - /app.vue ($id_2b46e842)
 // --------------------
-const $id_301aa44d = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_170882f6 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/app.vue");
 
 Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_0__.default }});;
@@ -24298,7 +24296,7 @@ Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, confi
 // --------------------
 // Request: /app.vue
 // Parents: 
-// - /@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/app-component.mjs ($id_301aa44d)
+// - /@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/app-component.mjs ($id_170882f6)
 // Dependencies: 
 // - /components/SiteHeader.vue ($id_01340d67)
 // - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
@@ -24353,7 +24351,7 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_7__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/afzaal/Direct/nuxt3-zero/app.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_7__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/app.vue"]]);
 ;
 }
 
@@ -24480,7 +24478,7 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_8__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_8__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-5697464f"], ["__file", "/home/afzaal/Direct/nuxt3-zero/components/SiteHeader.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_8__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-5697464f"], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/components/SiteHeader.vue"]]);
 ;
 }
 
@@ -24573,7 +24571,7 @@ _sfc_main.setup = (props, ctx) => {
 };
 const __vite_ssr_import_8__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_8__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/afzaal/Direct/nuxt3-zero/components/User.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_8__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/edwardz_8/vue-projects/nuxt3-zero/components/User.vue"]]);
 ;
 }
 
@@ -24586,7 +24584,7 @@ __vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_8__.default(_sf
 
 // --------------------
 const $id_e8934cdc = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/@vueuse/core/index.mjs")
+import("file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@vueuse/core/index.mjs")
   .then(r => {
     if (r.default && r.default.__esModule)
       r = r.default
@@ -24595,7 +24593,7 @@ import("file:///home/afzaal/Direct/nuxt3-zero/node_modules/@vueuse/core/index.mj
   })
   .catch(e => {
     console.error(e)
-    throw new Error("[vite dev] Error loading external \"/home/afzaal/Direct/nuxt3-zero/node_modules/@vueuse/core/index.mjs\".")
+    throw new Error("[vite dev] Error loading external \"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@vueuse/core/index.mjs\".")
   })
 
 
@@ -24612,10 +24610,10 @@ __vite_ssr_exports__.default = ".site-header[data-v-5697464f]{--tw-border-opacit
 
 
 const __modules__ = {
-  "/home/afzaal/Direct/nuxt3-zero/node_modules/nuxt/dist/app/entry": $id_01e3787c,
+  "/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/nuxt/dist/app/entry": $id_74742b3b,
   "/node_modules/vue/dist/vue.cjs.js": $id_60f0615f,
   "/node_modules/ohmyfetch/dist/index.mjs": $id_780217c4,
-  "/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/paths.mjs": $id_3478a43d,
+  "/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/paths.mjs": $id_18786cd8,
   "/node_modules/ufo/dist/index.mjs": $id_614de060,
   "/node_modules/nuxt/dist/app/index.mjs": $id_36927477,
   "/node_modules/nuxt/dist/app/nuxt.mjs": $id_e069d411,
@@ -24644,19 +24642,19 @@ const __modules__ = {
   "/node_modules/nuxt/dist/head/runtime/index.mjs": $id_b7351483,
   "/node_modules/nuxt/dist/head/runtime/composables.mjs": $id_04ea9504,
   "/node_modules/@vue/shared/dist/shared.cjs.js": $id_852b06a2,
-  "/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/css.mjs": $id_54117aa2,
+  "/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/css.mjs": $id_96d15167,
   "/assets/css/main.css": $id_f8b2993b,
-  "/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/plugins/server.mjs": $id_349c7318,
+  "/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/plugins/server.mjs": $id_d89cfd50,
   "/node_modules/nuxt/dist/app/plugins/preload.server.mjs": $id_9871bba0,
-  "/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/components.plugin.mjs": $id_c0881a10,
+  "/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/components.plugin.mjs": $id_50656c08,
   "/components/content/InfoBox.vue": $id_e10e5808,
   "/node_modules/@nuxt/content/dist/runtime/components/Markdown.mjs": $id_f4cbbc2c,
-  "/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/imports.mjs": $id_e0503dec,
+  "/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/imports.mjs": $id_8e1dca9a,
   "/node_modules/nuxt/dist/app/compat/vue-demi.mjs": $id_a8110be7,
   "/node_modules/nuxt/dist/app/compat/capi.mjs": $id_0c5717a4,
+  "/composables/useLike.ts": $id_6dd93210,
   "/composables/useAuth.ts": $id_ba05bb26,
   "/composables/useComment.ts": $id_662ffe6f,
-  "/composables/useLike.ts": $id_6dd93210,
   "/node_modules/@nuxt/content/dist/runtime/composables/query.mjs": $id_47535763,
   "/node_modules/@nuxt/content/dist/runtime/query/query.mjs": $id_7961d5dc,
   "/node_modules/@nuxt/content/dist/runtime/query/match/utils.mjs": $id_e943acfb,
@@ -24708,12 +24706,12 @@ const __modules__ = {
   "/node_modules/defu/dist/defu.mjs": $id_d7afab65,
   "/node_modules/nuxt/dist/head/runtime/plugin.mjs": $id_a2650341,
   "/node_modules/nuxt/dist/head/runtime/components.mjs": $id_b2a29d6f,
-  "/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/meta.config.mjs": $id_7a5e6b8b,
+  "/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/meta.config.mjs": $id_228b9c10,
   "/node_modules/nuxt/dist/pages/runtime/router.mjs": $id_a090977b,
   "/node_modules/nuxt/dist/pages/runtime/page.mjs": $id_5fc14cdc,
   "/node_modules/nuxt/dist/pages/runtime/utils.mjs": $id_80f433aa,
   "/node_modules/nuxt/dist/app/components/utils.mjs": $id_69c52686,
-  "/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/routes.mjs": $id_461bf9a5,
+  "/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/routes.mjs": $id_8b52cc6c,
   "/pages/blog/[...slug].vue?macro=true": $id_23ff3f9c,
   "/components/Toc.vue": $id_5cbfb66a,
   "/components/Toc.vue?vue&type=style&index=0&scoped=true&lang.css": $id_c6ac83bd,
@@ -24751,15 +24749,15 @@ const __modules__ = {
   "/pages/teams/[id]/index.vue": $id_aeed9c79,
   "/pages/teams/[id]/player/[player].vue": $id_b85564a3,
   "/pages/teams/index.vue": $id_9644598b,
-  "/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/router.options.mjs": $id_99e358fb,
-  "/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/middleware.mjs": $id_1c84a8c8,
+  "/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/router.options.mjs": $id_1ce20c25,
+  "/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/middleware.mjs": $id_c4b3f06e,
   "/middleware/auth.ts": $id_7b92aa86,
   "/middleware/guest.ts": $id_c862a572,
   "/node_modules/@nuxt/content/dist/runtime/plugin.mjs": $id_a4132d07,
   "/node_modules/@nuxt/content/dist/runtime/composables/web-socket.mjs": $id_575fe152,
-  "/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/root-component.mjs": $id_7284e420,
+  "/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/root-component.mjs": $id_ff981dfb,
   "/node_modules/nuxt/dist/app/components/nuxt-root.vue": $id_e9bfada3,
-  "/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/error-component.mjs": $id_20eb7a44,
+  "/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/error-component.mjs": $id_22d03b9f,
   "/node_modules/nuxt/dist/app/components/nuxt-error-page.vue": $id_8cc6d73f,
   "/node_modules/@nuxt/ui-templates/dist/templates/error-404.vue": $id_b90d4d0f,
   "/node_modules/@nuxt/ui-templates/dist/templates/error-404.vue?vue&type=style&index=0&scoped=true&lang.css": $id_e68b6b38,
@@ -24767,7 +24765,7 @@ const __modules__ = {
   "/node_modules/@nuxt/ui-templates/dist/templates/error-500.vue?vue&type=style&index=0&scoped=true&lang.css": $id_a2b3b709,
   "/node_modules/@nuxt/ui-templates/dist/templates/error-dev.vue": $id_bc2d74a1,
   "/node_modules/@nuxt/ui-templates/dist/templates/error-dev.vue?vue&type=style&index=0&scoped=true&lang.css": $id_2691164c,
-  "/@id/virtual:nuxt:/home/afzaal/Direct/nuxt3-zero/.nuxt/app-component.mjs": $id_301aa44d,
+  "/@id/virtual:nuxt:/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/app-component.mjs": $id_170882f6,
   "/app.vue": $id_2b46e842,
   "/components/SiteHeader.vue": $id_01340d67,
   "/components/User.vue": $id_ce2e00d8,
@@ -24860,4 +24858,4 @@ async function __instantiateModule__(url, urlStack) {
 }
 
 
-export default await __ssrLoadModule__("/home/afzaal/Direct/nuxt3-zero/node_modules/nuxt/dist/app/entry")
+export default await __ssrLoadModule__("/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/nuxt/dist/app/entry")
