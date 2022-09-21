@@ -46,6 +46,10 @@ export default defineComponent({
         stats: {
             type: Array,
             default: () => []
+        },
+        labels: {
+            type: Array,
+            default: () => []
         }
     },
     setup(props) {
@@ -58,7 +62,8 @@ export default defineComponent({
                 'hits',
                 'powerPlayGoals',
                 'powerPlayPoints',
-                'points'
+                'points',
+                ...props.labels
             ],
             datasets: [
                 {
@@ -79,6 +84,7 @@ export default defineComponent({
                         props.stats?.powerPlayGoals,
                         props.stats?.powerPlayPoints,
                         props.stats?.points,
+                        props.stats
                     ]
                 },
 

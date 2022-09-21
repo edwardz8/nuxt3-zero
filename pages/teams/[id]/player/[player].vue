@@ -1,5 +1,5 @@
 <script setup>
-import matchPlayerImage from '../../../../methods.js'
+import matchPlayerImage from "../../../../methods.js";
 import { getUserLikes, addUserLike, removeUserLike } from "~/composables/useLike";
 import { useState } from "#app";
 
@@ -23,10 +23,10 @@ player.value = {
 };
 
 const likes = await getUserLikes(route.params.player);
-playerLikes.value = likes[+route.params.player] ? likes[+route.params.player] : []
+playerLikes.value = likes[+route.params.player] ? likes[+route.params.player] : [];
 
 const isLiked = computed(() => {
-  if(!user.value) return false 
+  if (!user.value) return false;
   return playerLikes.value.find((like) => like.userId == user.value.id) ? true : false;
 });
 
@@ -41,7 +41,7 @@ const userLike = computed(() => {
 */
 
 async function likePlayer() {
-  if (!user.value) return useRouter().push('/login')
+  if (!user.value) return useRouter().push("/login");
   try {
     const like = await addUserLike({ playerId: player.value.id, userId: user.value.id });
     console.log("like", like);
@@ -56,7 +56,6 @@ async function unlikePlayer(id) {
     playerLikes.value.splice(index, 1);
   } catch (error) {}
 }
-
 </script>
 
 <template>
@@ -91,12 +90,48 @@ async function unlikePlayer(id) {
           <p class="mt-4 text-gray-800 dark:text-gray-400">
             Height: {{ player?.height }} <br />
             Season: {{ player?.stats?.season }} <br />
-            Assists: {{ player?.stats?.stat.assists }} <br />
-            Pim: {{ player?.stats?.stat.pim }} <br />
-            shots: {{ player?.stats?.stat.shots }} <br />
-            Goals: {{ player?.stats?.stat.goals }} <br />
-            Games: {{ player?.stats?.stat.games }} <br />
-            Hits: {{ player?.stats?.stat.hits }} <br />
+
+            <template v-if="player?.stats?.stat.assists">
+              Assists: {{ player?.stats?.stat.assists }}
+              <br />
+            </template>
+            <template v-if="player?.stats?.stat.pim">
+              Pim: {{ player?.stats?.stat.pim }} <br />
+            </template>
+            <template v-if="player?.stats?.stat.shots">
+              shots: {{ player?.stats?.stat.shots }} <br />
+            </template>
+            <template v-if="player?.stats?.stat.shots && player?.stats?.stat.games">
+              Shots per game:
+              {{ (player?.stats?.stat.shots / player?.stats?.stat.games).toFixed(2) }}
+              <br />
+            </template>
+            <template v-if="player?.stats?.stat.goals">
+              Goals: {{ player?.stats?.stat.goals }} <br />
+            </template>
+            <template v-if="player?.stats?.stat.goals && player?.stats?.stat.games">
+              Goals per game:
+              {{ (player?.stats?.stat.goals / player?.stats?.stat.games).toFixed(2) }}
+              <br />
+            </template>
+            <template v-if="player?.stats?.stat.games">
+              Games: {{ player?.stats?.stat.games }} <br />
+            </template>
+            <template v-if="player?.stats?.stat.hits">
+              Hits: {{ player?.stats?.stat.hits }} <br />
+            </template>
+            <template v-if="player?.stats?.stat.saves">
+              Saves: {{ player?.stats?.stat.saves }} <br />
+            </template>
+            <template v-if="player?.stats?.stat.gamesStarted">
+              Games Started: {{ player?.stats?.stat.gamesStarted }} <br />
+            </template>
+            <template v-if="player?.stats?.stat.shotsAgainst">
+              Shots Against: {{ player?.stats?.stat.shotsAgainst }} <br />
+            </template>
+            <template v-if="player?.stats?.stat.goalsAgainst">
+              Goals Against: {{ player?.stats?.stat.goalsAgainst }} <br />
+            </template>
           </p>
 
           <button

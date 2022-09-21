@@ -11,7 +11,7 @@ const props = defineProps({
   userId: { type: Number, default: undefined }
 });
 
-const emit = defineEmits(["show-player", 'like-player', 'unlike-player']);
+const emit = defineEmits(['show-player', 'like-player', 'unlike-player']);
 
 const likesCount = computed(() => {
   return props.likes.length
@@ -21,6 +21,13 @@ const userLike = computed(() => {
   return props.likes.find((like) => like.userId === props.userId)
 })
 
+const isLiked = computed(() => {
+  if (!props.userId) return false
+  const index = props.likes.findIndex((like) => {
+    return like.userId === props.userId
+  })
+  return index > -1 ? true : false
+})
 
 function showSidebar(id) {
   emit("show-player", id);
