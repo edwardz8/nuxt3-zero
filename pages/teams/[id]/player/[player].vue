@@ -87,52 +87,112 @@ async function unlikePlayer(id) {
             {{ player?.currentTeam?.name }}
           </h5>
 
-          <p class="mt-4 text-gray-800 dark:text-gray-400">
-            Height: {{ player?.height }} <br />
-            Season: {{ player?.stats?.season }} <br />
+          <!-- flexed stats start -->
+          <div class="mt-4 flex justify-center space-between">
+            <!-- left flexed stats -->
+            <div class="mr-2">
+              <p class="mb-4 text-gray-800 dark:text-gray-400">
+                Height: {{ player?.height }}
+              </p>
 
-            <template v-if="player?.stats?.stat.assists">
-              Assists: {{ player?.stats?.stat.assists }}
-              <br />
-            </template>
-            <template v-if="player?.stats?.stat.pim">
-              Pim: {{ player?.stats?.stat.pim }} <br />
-            </template>
-            <template v-if="player?.stats?.stat.shots">
-              shots: {{ player?.stats?.stat.shots }} <br />
-            </template>
-            <template v-if="player?.stats?.stat.shots && player?.stats?.stat.games">
-              Shots per game:
-              {{ (player?.stats?.stat.shots / player?.stats?.stat.games).toFixed(2) }}
-              <br />
-            </template>
-            <template v-if="player?.stats?.stat.goals">
-              Goals: {{ player?.stats?.stat.goals }} <br />
-            </template>
-            <template v-if="player?.stats?.stat.goals && player?.stats?.stat.games">
-              Goals per game:
-              {{ (player?.stats?.stat.goals / player?.stats?.stat.games).toFixed(2) }}
-              <br />
-            </template>
-            <template v-if="player?.stats?.stat.games">
-              Games: {{ player?.stats?.stat.games }} <br />
-            </template>
-            <template v-if="player?.stats?.stat.hits">
-              Hits: {{ player?.stats?.stat.hits }} <br />
-            </template>
-            <template v-if="player?.stats?.stat.saves">
-              Saves: {{ player?.stats?.stat.saves }} <br />
-            </template>
-            <template v-if="player?.stats?.stat.gamesStarted">
-              Games Started: {{ player?.stats?.stat.gamesStarted }} <br />
-            </template>
-            <template v-if="player?.stats?.stat.shotsAgainst">
-              Shots Against: {{ player?.stats?.stat.shotsAgainst }} <br />
-            </template>
-            <template v-if="player?.stats?.stat.goalsAgainst">
-              Goals Against: {{ player?.stats?.stat.goalsAgainst }} <br />
-            </template>
-          </p>
+              <template v-if="player?.stats?.stat.shots && player?.stats?.stat.games">
+                <p class="mt-4 mb-4 font-bold text-white">
+                  SPG:
+                  <span
+                    class="text-gray-900 font-bold bg-cyan-400 py-1 px-2 rounded-md"
+                    >{{
+                      (player?.stats?.stat.shots / player?.stats?.stat.games).toFixed(2)
+                    }}</span
+                  >
+                </p>
+              </template>
+
+              <!-- if goalie (goals against) -->
+              <template v-if="player?.stats?.stat.goalsAgainst">
+                <p class="mt-4 mb-4 font-bold text-white">
+                  Goals Against:
+                  <span
+                    class="text-gray-900 font-bold bg-cyan-400 py-1 px-2 rounded-md"
+                    >{{ player?.stats?.stat.goalsAgainst }}</span
+                  >
+                </p>
+              </template>
+
+              <template v-if="player?.stats?.stat.saves">
+                <p class="mt-4 mb-4 font-bold text-white">
+                  Saves: {{ player?.stats?.stat.saves }}
+                </p>
+              </template>
+
+              <!-- games -->
+              <template v-if="player?.stats?.stat.games">
+                <p class="mt-4 mb-4 text-white font-bold">
+                  Games: {{ player?.stats?.stat.games }}
+                </p>
+              </template>
+
+              <!-- goals per game -->
+              <template v-if="player?.stats?.stat.goals && player?.stats?.stat.games">
+                <p class="mt-4 mb-4 font-bold text-white">
+                  GPG:
+                  <span
+                    class="text-gray-900 font-bold bg-cyan-400 py-1 px-2 rounded-md"
+                    >{{
+                      (player?.stats?.stat.goals / player?.stats?.stat.games).toFixed(2)
+                    }}</span
+                  >
+                </p>
+              </template>
+
+              <!-- assists -->
+              <template v-if="player?.stats?.stat.assists">
+                <p class="font-bold text-white">
+                  Assists: {{ player?.stats?.stat.assists }}
+                </p>
+              </template>
+            </div>
+
+            <!-- right flexed stats -->
+            <div class="ml-2">
+              <p class="mb-4 text-gray-800 dark:text-gray-400">
+                Season: {{ player?.stats?.season }}
+              </p>
+
+              <template v-if="player?.stats?.stat.shots">
+                <p class="font-bold mt-4 mb-4 text-white">
+                  <span> Shots: {{ player?.stats?.stat.shots }} </span>
+                </p>
+              </template>
+
+              <!-- if goalie stats -->
+              <template v-if="player?.stats?.stat.gamesStarted">
+                <p class="font-bold mt-4 mb-4 text-white">
+                  Games Started:
+                  <span
+                    class="text-gray-900 font-bold bg-cyan-400 py-1 px-2 rounded-md"
+                    >{{ player?.stats?.stat.gamesStarted }}</span
+                  >
+                </p>
+              </template>
+
+              <template v-if="player?.stats?.stat.shotsAgainst">
+                <p class="font-bold mt-4 mb-4 text-white">
+                  Shots Against: {{ player?.stats?.stat.shotsAgainst }}
+                </p>
+              </template>
+
+              <!-- hits -->
+              <template v-if="player?.stats?.stat.hits">
+                <p class="mt-4 mb-4 text-white font-bold">
+                  Hits: {{ player?.stats?.stat.hits }}
+                </p>
+              </template>
+
+              <template v-if="player?.stats?.stat.goals">
+                <p class="text-white font-bold">Goals: {{ player?.stats?.stat.goals }}</p>
+              </template>
+            </div>
+          </div>
 
           <button
             v-if="isLiked"

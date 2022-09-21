@@ -96,8 +96,12 @@ function unlikePlayer(id, playerId) {
       <h3 class="text-lg font-bold text-gray-800 dark:text-white">
         {{ player.person.fullName }}
       </h3>
-      <p class="mt-1 text-gray-800 dark:text-gray-400">
-        <!-- {{ player.currentTeam.name }} -->
+      <p class="mt-1 text-white text-gray-400">
+       <!--  <template v-if="player?.stats?.stat.goals && player?.stats?.stat.games">
+          Goals per game:
+          {{ (player?.stats?.stat.goals / player?.stats?.stat.games).toFixed(2) }}
+          <br />
+        </template> -->
       </p>
 
       <div class="flex inline-flex justify-center items-center gap-4">
