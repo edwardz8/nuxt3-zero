@@ -72,6 +72,7 @@ async function showPlayer(id) {
     <section>
       <h2 class="text-2xl mt-3 mb-4 text-center">Team Page</h2>
       <p class="text-md mb-4 text-center">Select Player to View Stats</p>
+      <p class="text-md mb-4 text-center">Sign in or register to like and comment on your favorite plays</p>
       <off-canvas :player="player" />
       <div
         class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-3 px-4"
