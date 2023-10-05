@@ -4,7 +4,7 @@ import { defineNuxtConfig } from 'nuxt'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  meta: { title: 'rosterprops' },
+  meta: { title: 'rotorink' },
   app: { head: { link: [{ rel: 'icon', type: "image/x-icon", href: '/favicon.ico?v2' }] } },
   modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
   publicRuntimeConfig: {

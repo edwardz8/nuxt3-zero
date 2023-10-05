@@ -41,7 +41,7 @@ import htmlTags from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modul
 import slugify from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/slugify/slugify.js';
 import { getHighlighter, BUNDLED_LANGUAGES, BUNDLED_THEMES } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/shiki-es/dist/shiki.node.mjs';
 
-const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routes":{},"envPrefix":"NUXT_"},"public":{"content":{"base":"_content","tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"highlight":{"theme":{"default":"material-palenight","dark":"github-dark"}},"wsUrl":""}},"content":{"cacheVersion":2,"cacheIntegrity":"370594990","transformers":["/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/markdown.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/yaml.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/json.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/csv.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/path-meta.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/shiki.mjs"],"base":"_content","watch":{"ws":{"port":4000,"showURL":false}},"sources":["content"],"ignores":["\\.","-"],"locales":[],"highlight":{"theme":{"default":"material-palenight","dark":"github-dark"}},"markdown":{"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"toc":{"depth":5,"searchDepth":5},"remarkPlugins":{},"rehypePlugins":{}},"yaml":{},"csv":{},"navigation":{"fields":[]}}};
+const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routes":{},"envPrefix":"NUXT_"},"SEASON":"20222023","public":{"SEASON":"20222023","content":{"base":"_content","tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"highlight":{"theme":{"default":"material-palenight","dark":"github-dark"}},"wsUrl":""}},"content":{"cacheVersion":2,"cacheIntegrity":"370594990","transformers":["/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/markdown.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/yaml.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/json.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/csv.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/path-meta.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/shiki.mjs"],"base":"_content","watch":{"ws":{"port":4000,"showURL":false}},"sources":["content"],"ignores":["\\.","-"],"locales":[],"highlight":{"theme":{"default":"material-palenight","dark":"github-dark"}},"markdown":{"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"toc":{"depth":5,"searchDepth":5},"remarkPlugins":{},"rehypePlugins":{}},"yaml":{},"csv":{},"navigation":{"fields":[]}}};
 const ENV_PREFIX = "NITRO_";
 const ENV_PREFIX_ALT = _runtimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
 const getEnv = (key) => {
@@ -3743,6 +3743,12 @@ function mergeLines(line1, line2) {
 }
 
 const _lazy_410995 = () => import('../subscribe.mjs');
+const _lazy_259112 = () => import('../getLikes.mjs');
+const _lazy_192242 = () => import('../deleteLike.mjs');
+const _lazy_206620 = () => import('../addLike.mjs');
+const _lazy_736812 = () => import('../getComments.mjs');
+const _lazy_104501 = () => import('../deleteComment.mjs');
+const _lazy_243281 = () => import('../addComment.mjs');
 const _lazy_423706 = () => import('../register.mjs');
 const _lazy_171314 = () => import('../logout.mjs');
 const _lazy_143138 = () => import('../login.mjs');
@@ -3751,6 +3757,12 @@ const _lazy_184848 = () => import('../renderer.mjs').then(function (n) { return 
 
 const handlers = [
   { route: '/api/subscribe', handler: _lazy_410995, lazy: true, middleware: false, method: undefined },
+  { route: '/api/like/getLikes', handler: _lazy_259112, lazy: true, middleware: false, method: undefined },
+  { route: '/api/like/deleteLike', handler: _lazy_192242, lazy: true, middleware: false, method: undefined },
+  { route: '/api/like/addLike', handler: _lazy_206620, lazy: true, middleware: false, method: undefined },
+  { route: '/api/comment/getComments', handler: _lazy_736812, lazy: true, middleware: false, method: undefined },
+  { route: '/api/comment/deleteComment', handler: _lazy_104501, lazy: true, middleware: false, method: undefined },
+  { route: '/api/comment/addComment', handler: _lazy_243281, lazy: true, middleware: false, method: undefined },
   { route: '/api/auth/register', handler: _lazy_423706, lazy: true, middleware: false, method: undefined },
   { route: '/api/auth/logout', handler: _lazy_171314, lazy: true, middleware: false, method: undefined },
   { route: '/api/auth/login', handler: _lazy_143138, lazy: true, middleware: false, method: undefined },

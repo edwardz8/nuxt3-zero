@@ -1,6 +1,7 @@
 import { useBody, sendError, createError } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/h3/dist/index.mjs';
 import bcrypt from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/bcrypt/bcrypt.js';
 import { v as validateUser, c as createUser, m as makeSession } from './sessionService.mjs';
+import './client.mjs';
 import 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@prisma/client/index.js';
 import 'crypto';
 

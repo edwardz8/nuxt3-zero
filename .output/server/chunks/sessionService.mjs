@@ -1,13 +1,9 @@
 import { setCookie } from 'h3';
-import pkg from '@prisma/client';
+import { p as prisma } from './client.mjs';
 import crypto from 'crypto';
 
-const { PrismaClient } = pkg;
-const prisma = new PrismaClient();
-const prisma$1 = prisma;
-
 async function getUserByEmail(email) {
-  return await prisma$1.user.findUnique({
+  return await prisma.user.findUnique({
     where: {
       email
     },
@@ -17,8 +13,20 @@ async function getUserByEmail(email) {
     }
   });
 }
+async function getUserByEmailWithPass(email) {
+  return await prisma.user.findUnique({
+    where: {
+      email
+    },
+    select: {
+      id: true,
+      username: true,
+      password: true
+    }
+  });
+}
 async function getUserByUserName(username) {
-  return await prisma$1.user.findUnique({
+  return await prisma.user.findUnique({
     where: {
       username
     },
@@ -29,7 +37,7 @@ async function getUserByUserName(username) {
   });
 }
 async function createUser(data) {
-  const user = await prisma$1.user.create({
+  const user = await prisma.user.create({
     data: {
       username: data.username,
       name: data.name,
@@ -123,7 +131,7 @@ function sanitizeUserForFrontend(user) {
 }
 
 async function createSession(data) {
-  return await prisma$1.session.create({
+  return await prisma.session.create({
     data: {
       userId: data.userId,
       authToken: data.authToken
@@ -135,7 +143,7 @@ async function getSessionByAuthToken(authToken) {
   return { authToken, user };
 }
 async function getUserByAuthToken(authToken) {
-  return prisma$1.session.findUnique({
+  return prisma.session.findUnique({
     where: {
       authToken
     }
@@ -222,5 +230,5 @@ async function getUserBySessionToken(authToken) {
   return sanitizeUserForFrontend(session.user);
 }
 
-export { getUserBySessionToken as a, createUser as c, getUserByEmail as g, makeSession as m, sanitizeUserForFrontend as s, validateUser as v };
+export { getUserBySessionToken as a, createUser as c, getUserByEmailWithPass as g, makeSession as m, sanitizeUserForFrontend as s, validateUser as v };
 //# sourceMappingURL=sessionService.mjs.map

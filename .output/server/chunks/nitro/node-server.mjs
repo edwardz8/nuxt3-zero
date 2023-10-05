@@ -46,7 +46,7 @@ import htmlTags from 'html-tags';
 import slugify from 'slugify';
 import { getHighlighter, BUNDLED_LANGUAGES, BUNDLED_THEMES } from 'shiki-es';
 
-const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routes":{},"envPrefix":"NUXT_"},"public":{"content":{"base":"_content","tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"highlight":{"theme":{"default":"material-palenight","dark":"github-dark"}},"wsUrl":""}},"content":{"cacheVersion":2,"cacheIntegrity":"370594990","transformers":["/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/markdown.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/yaml.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/json.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/csv.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/path-meta.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/shiki.mjs"],"base":"_content","watch":{"ws":{"port":4000,"showURL":false}},"sources":["content"],"ignores":["\\.","-"],"locales":[],"highlight":{"theme":{"default":"material-palenight","dark":"github-dark"}},"markdown":{"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"toc":{"depth":5,"searchDepth":5},"remarkPlugins":{},"rehypePlugins":{}},"yaml":{},"csv":{},"navigation":{"fields":[]}}};
+const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routes":{},"envPrefix":"NUXT_"},"SEASON":"20222023","public":{"SEASON":"20222023","content":{"base":"_content","tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"highlight":{"theme":{"default":"material-palenight","dark":"github-dark"}},"wsUrl":""}},"content":{"cacheVersion":2,"cacheIntegrity":"370594990","transformers":["/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/markdown.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/yaml.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/json.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/csv.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/path-meta.mjs","/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/shiki.mjs"],"base":"_content","watch":{"ws":{"port":4000,"showURL":false}},"sources":["content"],"ignores":["\\.","-"],"locales":[],"highlight":{"theme":{"default":"material-palenight","dark":"github-dark"}},"markdown":{"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"toc":{"depth":5,"searchDepth":5},"remarkPlugins":{},"rehypePlugins":{}},"yaml":{},"csv":{},"navigation":{"fields":[]}}};
 const ENV_PREFIX = "NITRO_";
 const ENV_PREFIX_ALT = _runtimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
 const getEnv = (key) => {
@@ -106,15 +106,23 @@ function timingMiddleware(_req, res, next) {
 const _assets = {
   ['nitro:bundled:cache:content:parsed:content:blog:bills-rams.md']: {
     import: () => import('../raw/bills-rams.mjs').then(r => r.default || r),
-    meta: {"type":"text/markdown; charset=utf-8","etag":"\"3bee-/9DlGTFGZIY/rOlF8ndcJN7Dw+Q\"","mtime":"2022-09-05T15:56:53.388Z"}
+    meta: {"type":"text/markdown; charset=utf-8","etag":"\"3be2-3B15PAwwKg5Nflad+Y8r9NUqBdQ\"","mtime":"2023-10-05T16:05:55.304Z"}
   },
-  ['nitro:bundled:cache:content:parsed:content:blog:second-post.md']: {
-    import: () => import('../raw/second-post.mjs').then(r => r.default || r),
-    meta: {"type":"text/markdown; charset=utf-8","etag":"\"43a-IJjogjT4DIMSp0vkgvCWOLXDeqw\"","mtime":"2022-09-05T15:56:53.388Z"}
+  ['nitro:bundled:cache:content:parsed:content:blog:nfl-props-week-1.md']: {
+    import: () => import('../raw/nfl-props-week-1.mjs').then(r => r.default || r),
+    meta: {"type":"text/markdown; charset=utf-8","etag":"\"539d-GOCn/59Ot4GSVwv8sf5hEGeb7DU\"","mtime":"2023-10-05T16:05:55.304Z"}
   },
-  ['nitro:bundled:cache:content:parsed:content:blog:third-post.md']: {
-    import: () => import('../raw/third-post.mjs').then(r => r.default || r),
-    meta: {"type":"text/markdown; charset=utf-8","etag":"\"42e-xujc6gROfQNoJ47DRAl28zUk5LY\"","mtime":"2022-09-05T15:56:53.388Z"}
+  ['nitro:bundled:cache:content:parsed:content:blog:nhl-best-ball-fantasy-draft-underdog.md']: {
+    import: () => import('../raw/nhl-best-ball-fantasy-draft-underdog.mjs').then(r => r.default || r),
+    meta: {"type":"text/markdown; charset=utf-8","etag":"\"3809-BDtoMW05yM7vo0ClrSPDzRsXqaU\"","mtime":"2023-10-05T16:05:55.304Z"}
+  },
+  ['nitro:bundled:cache:content:parsed:content:blog:nhl-shots-on-goal.md']: {
+    import: () => import('../raw/nhl-shots-on-goal.mjs').then(r => r.default || r),
+    meta: {"type":"text/markdown; charset=utf-8","etag":"\"665a-wGUPDWoWx1MBltC0chlSi3tR+M8\"","mtime":"2023-10-05T16:05:55.304Z"}
+  },
+  ['nitro:bundled:cache:content:parsed:content:blog:player-spotlight-espn-gabriel-valardi-kings.md']: {
+    import: () => import('../raw/player-spotlight-espn-gabriel-valardi-kings.mjs').then(r => r.default || r),
+    meta: {"type":"text/markdown; charset=utf-8","etag":"\"b5e-BcHTl3beobol5AEWGN7qmCssJhg\"","mtime":"2023-10-05T16:05:55.304Z"}
   }
 };
 
@@ -381,382 +389,682 @@ const errorHandler = (async function errorhandler(_error, event) {
 });
 
 const assets = {
-  "/_nuxt/ContentDoc-e038607c.mjs": {
-    "type": "application/javascript",
-    "etag": "\"746-/G6y48/hdw+6Dij9jbUjg8O/+FQ\"",
-    "mtime": "2022-09-05T15:56:47.551Z",
-    "path": "../public/_nuxt/ContentDoc-e038607c.mjs"
+  "/about.txt": {
+    "type": "text/plain; charset=utf-8",
+    "etag": "\"17a-SS0+XYKGBJ0Vam68mQ7AQuK/b8U\"",
+    "mtime": "2023-10-05T16:05:48.292Z",
+    "path": "../public/about.txt"
   },
-  "/_nuxt/ContentNavigation-c6806cf8.mjs": {
-    "type": "application/javascript",
-    "etag": "\"5af-4NJ07ZKqQ+RphxbWeG4/5jV/Xzo\"",
-    "mtime": "2022-09-05T15:56:47.550Z",
-    "path": "../public/_nuxt/ContentNavigation-c6806cf8.mjs"
+  "/android-chrome-192x192.png": {
+    "type": "image/png",
+    "etag": "\"3387-GOyUPEy7mS9iDQt42WvVuCJSXJc\"",
+    "mtime": "2023-10-05T16:05:48.291Z",
+    "path": "../public/android-chrome-192x192.png"
   },
-  "/_nuxt/InfoBox-076a0d3a.mjs": {
+  "/android-chrome-512x512.png": {
+    "type": "image/png",
+    "etag": "\"a3d0-UfJzm4wJD+8yyX84EevG8TDHxIE\"",
+    "mtime": "2023-10-05T16:05:48.291Z",
+    "path": "../public/android-chrome-512x512.png"
+  },
+  "/apple-touch-icon.png": {
+    "type": "image/png",
+    "etag": "\"2d9d-T7Gjxm5AEYU273pndJp/Kvvf2+4\"",
+    "mtime": "2023-10-05T16:05:48.290Z",
+    "path": "../public/apple-touch-icon.png"
+  },
+  "/favicon-16x16.png": {
+    "type": "image/png",
+    "etag": "\"291-/X1htVtDJjThrhgRWEMqywfzOUc\"",
+    "mtime": "2023-10-05T16:05:48.289Z",
+    "path": "../public/favicon-16x16.png"
+  },
+  "/favicon-32x32.png": {
+    "type": "image/png",
+    "etag": "\"537-/5yx/oBBwmtWf+43r8EwbuB4gD8\"",
+    "mtime": "2023-10-05T16:05:48.289Z",
+    "path": "../public/favicon-32x32.png"
+  },
+  "/favicon.ico": {
+    "type": "image/vnd.microsoft.icon",
+    "etag": "\"3c2e-1ZkZD41lXebKWkxi8dhfy7z8rNA\"",
+    "mtime": "2023-10-05T16:05:48.288Z",
+    "path": "../public/favicon.ico"
+  },
+  "/site.webmanifest": {
+    "type": "application/manifest+json",
+    "etag": "\"107-vzG6+RvdL83iSkXj8qG+M3M8b2k\"",
+    "mtime": "2023-10-05T16:05:48.162Z",
+    "path": "../public/site.webmanifest"
+  },
+  "/_nuxt/ContentDoc-a1b6bf02.mjs": {
     "type": "application/javascript",
-    "etag": "\"3ac-e7uYcKF5QDxraSB81pQbTGlSj0Q\"",
-    "mtime": "2022-09-05T15:56:47.550Z",
-    "path": "../public/_nuxt/InfoBox-076a0d3a.mjs"
+    "etag": "\"746-FuFw9EBC69+NqXm/fuBhI8Ngn9E\"",
+    "mtime": "2023-10-05T16:05:48.161Z",
+    "path": "../public/_nuxt/ContentDoc-a1b6bf02.mjs"
+  },
+  "/_nuxt/ContentNavigation-09fe7572.mjs": {
+    "type": "application/javascript",
+    "etag": "\"5af-vino1vAe37gi5Iqu/9Y8pms1a8A\"",
+    "mtime": "2023-10-05T16:05:48.160Z",
+    "path": "../public/_nuxt/ContentNavigation-09fe7572.mjs"
+  },
+  "/_nuxt/InfoBox-d7bd6afd.mjs": {
+    "type": "application/javascript",
+    "etag": "\"3d4-k2MGy9gMoAYIWxwjSO0KWCLXh40\"",
+    "mtime": "2023-10-05T16:05:48.159Z",
+    "path": "../public/_nuxt/InfoBox-d7bd6afd.mjs"
   },
   "/_nuxt/InfoBox.bd1c49b3.css": {
     "type": "text/css; charset=utf-8",
     "etag": "\"4a9-8bFIDZHFeTT0/+Qi0PZZoA9hL4k\"",
-    "mtime": "2022-09-05T15:56:47.549Z",
+    "mtime": "2023-10-05T16:05:48.159Z",
     "path": "../public/_nuxt/InfoBox.bd1c49b3.css"
   },
-  "/_nuxt/Markdown-04730801.mjs": {
+  "/_nuxt/Markdown-925573ba.mjs": {
     "type": "application/javascript",
-    "etag": "\"33c-1/ZX0XkGjr6Fq843WsHhVjCHUlA\"",
-    "mtime": "2022-09-05T15:56:47.549Z",
-    "path": "../public/_nuxt/Markdown-04730801.mjs"
+    "etag": "\"33c-wnCbkRRFbrqIEJsBqtdq4u0pZ2c\"",
+    "mtime": "2023-10-05T16:05:48.158Z",
+    "path": "../public/_nuxt/Markdown-925573ba.mjs"
   },
-  "/_nuxt/ProseA-e955d256.mjs": {
+  "/_nuxt/ProseA-642eee4a.mjs": {
     "type": "application/javascript",
-    "etag": "\"1d1-SLtPz2wINHISueaIRs3HRMLrZhY\"",
-    "mtime": "2022-09-05T15:56:47.548Z",
-    "path": "../public/_nuxt/ProseA-e955d256.mjs"
+    "etag": "\"1d1-7u5v8OmVIhatEsoBRr2g00eZT8w\"",
+    "mtime": "2023-10-05T16:05:48.157Z",
+    "path": "../public/_nuxt/ProseA-642eee4a.mjs"
   },
-  "/_nuxt/ProseBlockquote-132d11a8.mjs": {
+  "/_nuxt/ProseBlockquote-730ff918.mjs": {
     "type": "application/javascript",
-    "etag": "\"c1-YyLo1hRSlulJ5PnySunVyxqL0uc\"",
-    "mtime": "2022-09-05T15:56:47.548Z",
-    "path": "../public/_nuxt/ProseBlockquote-132d11a8.mjs"
+    "etag": "\"c1-/oczpqTzfPQ4RrbyH32gUviGjdo\"",
+    "mtime": "2023-10-05T16:05:48.157Z",
+    "path": "../public/_nuxt/ProseBlockquote-730ff918.mjs"
   },
-  "/_nuxt/ProseCode-f24c6c47.mjs": {
+  "/_nuxt/ProseCode-0967bb36.mjs": {
     "type": "application/javascript",
-    "etag": "\"13e-DK42cF+aXsRtscRaZ3WMAhGYz98\"",
-    "mtime": "2022-09-05T15:56:47.547Z",
-    "path": "../public/_nuxt/ProseCode-f24c6c47.mjs"
+    "etag": "\"13e-O/R9aP+myyuDz3ILslpLrT21LlY\"",
+    "mtime": "2023-10-05T16:05:48.156Z",
+    "path": "../public/_nuxt/ProseCode-0967bb36.mjs"
   },
   "/_nuxt/ProseCode.c12da1e5.css": {
     "type": "text/css; charset=utf-8",
     "etag": "\"2e-GbvrqT5j9gSWlpa8e36U/Kv6Zx0\"",
-    "mtime": "2022-09-05T15:56:47.546Z",
+    "mtime": "2023-10-05T16:05:48.155Z",
     "path": "../public/_nuxt/ProseCode.c12da1e5.css"
   },
-  "/_nuxt/ProseCodeInline-8a8cb9c5.mjs": {
+  "/_nuxt/ProseCodeInline-05bc3063.mjs": {
     "type": "application/javascript",
-    "etag": "\"b6-dsf40Xb52CnyR40lknkZtSnWolA\"",
-    "mtime": "2022-09-05T15:56:47.546Z",
-    "path": "../public/_nuxt/ProseCodeInline-8a8cb9c5.mjs"
+    "etag": "\"b6-o+rqTSTVYbrS0Az1PMawRhZBUM0\"",
+    "mtime": "2023-10-05T16:05:48.155Z",
+    "path": "../public/_nuxt/ProseCodeInline-05bc3063.mjs"
   },
-  "/_nuxt/ProseEm-c835fc77.mjs": {
+  "/_nuxt/ProseEm-3a2766eb.mjs": {
     "type": "application/javascript",
-    "etag": "\"b4-njUNhWc/aX5qS822zI7wHb0q/hQ\"",
-    "mtime": "2022-09-05T15:56:47.545Z",
-    "path": "../public/_nuxt/ProseEm-c835fc77.mjs"
+    "etag": "\"b4-UlD/BvogyJKUMew5wDR97/zpnUA\"",
+    "mtime": "2023-10-05T16:05:48.154Z",
+    "path": "../public/_nuxt/ProseEm-3a2766eb.mjs"
   },
-  "/_nuxt/ProseH1-98133b96.mjs": {
+  "/_nuxt/ProseH1-71ec577e.mjs": {
     "type": "application/javascript",
-    "etag": "\"b4-zdovwJoI2eh8Gp1Wawai6VxHdgY\"",
-    "mtime": "2022-09-05T15:56:47.545Z",
-    "path": "../public/_nuxt/ProseH1-98133b96.mjs"
+    "etag": "\"b4-E+epSq1VCrki9QlXZ13EU/Qr974\"",
+    "mtime": "2023-10-05T16:05:48.153Z",
+    "path": "../public/_nuxt/ProseH1-71ec577e.mjs"
   },
-  "/_nuxt/ProseH2-bf423c84.mjs": {
+  "/_nuxt/ProseH2-7a5ba004.mjs": {
     "type": "application/javascript",
-    "etag": "\"1c8-3qFILnd7mVImLjH/2EOtZolufcU\"",
-    "mtime": "2022-09-05T15:56:47.544Z",
-    "path": "../public/_nuxt/ProseH2-bf423c84.mjs"
+    "etag": "\"1c8-U2qsVMUmdpmvTXviR4I0L/Vq0D4\"",
+    "mtime": "2023-10-05T16:05:48.153Z",
+    "path": "../public/_nuxt/ProseH2-7a5ba004.mjs"
   },
-  "/_nuxt/ProseH3-2a22d334.mjs": {
+  "/_nuxt/ProseH3-29f13e0c.mjs": {
     "type": "application/javascript",
-    "etag": "\"1c8-AgopzGYXH86Ns5rgghMJrET0cOM\"",
-    "mtime": "2022-09-05T15:56:47.544Z",
-    "path": "../public/_nuxt/ProseH3-2a22d334.mjs"
+    "etag": "\"1c8-ondO9cHzbRt2Aj+SV0HnqgRRGXY\"",
+    "mtime": "2023-10-05T16:05:48.152Z",
+    "path": "../public/_nuxt/ProseH3-29f13e0c.mjs"
   },
-  "/_nuxt/ProseH4-bed0f138.mjs": {
+  "/_nuxt/ProseH4-fc9a1a89.mjs": {
     "type": "application/javascript",
-    "etag": "\"1c8-ky/z7QxlAbsG9IPm8+uhtmEZSDg\"",
-    "mtime": "2022-09-05T15:56:47.543Z",
-    "path": "../public/_nuxt/ProseH4-bed0f138.mjs"
+    "etag": "\"1c8-wb53HXbHMuJax79AhcrVN1EeAJ8\"",
+    "mtime": "2023-10-05T16:05:48.144Z",
+    "path": "../public/_nuxt/ProseH4-fc9a1a89.mjs"
   },
-  "/_nuxt/ProseH5-733778b4.mjs": {
+  "/_nuxt/ProseH5-e89fdce0.mjs": {
     "type": "application/javascript",
-    "etag": "\"b4-99yQSLjwTPhHAZBSin7xOT9mH3w\"",
-    "mtime": "2022-09-05T15:56:47.542Z",
-    "path": "../public/_nuxt/ProseH5-733778b4.mjs"
+    "etag": "\"b4-AXOXaJrSggYGl2XBI9J15E9VXDw\"",
+    "mtime": "2023-10-05T16:05:48.143Z",
+    "path": "../public/_nuxt/ProseH5-e89fdce0.mjs"
   },
-  "/_nuxt/ProseH6-f01a5901.mjs": {
+  "/_nuxt/ProseH6-135eabd1.mjs": {
     "type": "application/javascript",
-    "etag": "\"b4-8dMCj4yZnr2x+zbUxen/HRvcPKY\"",
-    "mtime": "2022-09-05T15:56:47.541Z",
-    "path": "../public/_nuxt/ProseH6-f01a5901.mjs"
+    "etag": "\"b4-HJ5WCtFXR5yD+Q1XPUsYWdI7dTY\"",
+    "mtime": "2023-10-05T16:05:48.142Z",
+    "path": "../public/_nuxt/ProseH6-135eabd1.mjs"
   },
-  "/_nuxt/ProseHr-67645940.mjs": {
+  "/_nuxt/ProseHr-5b0d9201.mjs": {
     "type": "application/javascript",
-    "etag": "\"90-+VMFQXp4+pe5ftbhef6qODFlRx4\"",
-    "mtime": "2022-09-05T15:56:47.539Z",
-    "path": "../public/_nuxt/ProseHr-67645940.mjs"
+    "etag": "\"90-b1QAwb93EHG5CVkGW3nQl/UbLV4\"",
+    "mtime": "2023-10-05T16:05:48.142Z",
+    "path": "../public/_nuxt/ProseHr-5b0d9201.mjs"
   },
-  "/_nuxt/ProseImg-5bf6cddb.mjs": {
+  "/_nuxt/ProseImg-9cc62c41.mjs": {
     "type": "application/javascript",
-    "etag": "\"223-UcWvyGs/aBaNqDGWyKBcYRmAIlA\"",
-    "mtime": "2022-09-05T15:56:47.539Z",
-    "path": "../public/_nuxt/ProseImg-5bf6cddb.mjs"
+    "etag": "\"223-g7KqEDP3mf/KHEvZ12F3Fiae8/c\"",
+    "mtime": "2023-10-05T16:05:48.141Z",
+    "path": "../public/_nuxt/ProseImg-9cc62c41.mjs"
   },
-  "/_nuxt/ProseLi-edc76925.mjs": {
+  "/_nuxt/ProseLi-b5a5db01.mjs": {
     "type": "application/javascript",
-    "etag": "\"b4-l6CnqsO2hTXNJ2uO1y8TVbo5dLg\"",
-    "mtime": "2022-09-05T15:56:47.538Z",
-    "path": "../public/_nuxt/ProseLi-edc76925.mjs"
+    "etag": "\"b4-no4biCPz3H9oC2hSfOIUKX7hp9k\"",
+    "mtime": "2023-10-05T16:05:48.141Z",
+    "path": "../public/_nuxt/ProseLi-b5a5db01.mjs"
   },
-  "/_nuxt/ProseOl-cbb96948.mjs": {
+  "/_nuxt/ProseOl-1e123f59.mjs": {
     "type": "application/javascript",
-    "etag": "\"b4-w1G7Q3PZItupRpOTuYILKbnNGuc\"",
-    "mtime": "2022-09-05T15:56:47.537Z",
-    "path": "../public/_nuxt/ProseOl-cbb96948.mjs"
+    "etag": "\"b4-F9STpMGdJImzcckvHEDMbTuDp+Y\"",
+    "mtime": "2023-10-05T16:05:48.140Z",
+    "path": "../public/_nuxt/ProseOl-1e123f59.mjs"
   },
-  "/_nuxt/ProseP-4622d269.mjs": {
+  "/_nuxt/ProseP-ebda18f4.mjs": {
     "type": "application/javascript",
-    "etag": "\"b3-Uky1NAvE1Z4sup8Str7obHJ2R2k\"",
-    "mtime": "2022-09-05T15:56:47.536Z",
-    "path": "../public/_nuxt/ProseP-4622d269.mjs"
+    "etag": "\"b3-mpNc0rpuM0ZrdB4h0sQ845gX45Q\"",
+    "mtime": "2023-10-05T16:05:48.140Z",
+    "path": "../public/_nuxt/ProseP-ebda18f4.mjs"
   },
-  "/_nuxt/ProseStrong-d8e2b6b3.mjs": {
+  "/_nuxt/ProseStrong-346f9dc4.mjs": {
     "type": "application/javascript",
-    "etag": "\"b8-4o3jyOjHyUC7rdALT7/K4wKvxgg\"",
-    "mtime": "2022-09-05T15:56:47.536Z",
-    "path": "../public/_nuxt/ProseStrong-d8e2b6b3.mjs"
+    "etag": "\"b8-WV5KEuMX/nOptZu+qDcGj8+CouE\"",
+    "mtime": "2023-10-05T16:05:48.139Z",
+    "path": "../public/_nuxt/ProseStrong-346f9dc4.mjs"
   },
-  "/_nuxt/ProseTable-ac3824a6.mjs": {
+  "/_nuxt/ProseTable-c67cbd99.mjs": {
     "type": "application/javascript",
-    "etag": "\"bc-EtYS8epxQyI+Skg5LAFQSmt8cFA\"",
-    "mtime": "2022-09-05T15:56:47.532Z",
-    "path": "../public/_nuxt/ProseTable-ac3824a6.mjs"
+    "etag": "\"bc-208wJU2Udk+mckEZRyORCoIFGx8\"",
+    "mtime": "2023-10-05T16:05:48.139Z",
+    "path": "../public/_nuxt/ProseTable-c67cbd99.mjs"
   },
-  "/_nuxt/ProseTbody-cdf0a77c.mjs": {
+  "/_nuxt/ProseTbody-6dfc3552.mjs": {
     "type": "application/javascript",
-    "etag": "\"b7-1A37y6nXHHvZtYNrZwfjWtQBwxA\"",
-    "mtime": "2022-09-05T15:56:47.531Z",
-    "path": "../public/_nuxt/ProseTbody-cdf0a77c.mjs"
+    "etag": "\"b7-iQ1dnTlW0A7DoQ5XTrzqTH42X28\"",
+    "mtime": "2023-10-05T16:05:48.138Z",
+    "path": "../public/_nuxt/ProseTbody-6dfc3552.mjs"
   },
-  "/_nuxt/ProseTd-4c5c9069.mjs": {
+  "/_nuxt/ProseTd-24032dab.mjs": {
     "type": "application/javascript",
-    "etag": "\"b4-vpmwnT2NZQwi/I4NUesC/8Ibk70\"",
-    "mtime": "2022-09-05T15:56:47.530Z",
-    "path": "../public/_nuxt/ProseTd-4c5c9069.mjs"
+    "etag": "\"b4-A5ZdHbdckTM1K8bFV1wBq0yXQjI\"",
+    "mtime": "2023-10-05T16:05:48.137Z",
+    "path": "../public/_nuxt/ProseTd-24032dab.mjs"
   },
-  "/_nuxt/ProseTh-f0de04e6.mjs": {
+  "/_nuxt/ProseTh-8f844edb.mjs": {
     "type": "application/javascript",
-    "etag": "\"b4-Nuj9DlgZ2smca4P7UaROb5IvA7I\"",
-    "mtime": "2022-09-05T15:56:47.529Z",
-    "path": "../public/_nuxt/ProseTh-f0de04e6.mjs"
+    "etag": "\"b4-wI80ZIJcdYteVlowj25w0HMLzJ8\"",
+    "mtime": "2023-10-05T16:05:48.137Z",
+    "path": "../public/_nuxt/ProseTh-8f844edb.mjs"
   },
-  "/_nuxt/ProseThead-e1e11cf2.mjs": {
+  "/_nuxt/ProseThead-ea8aa5be.mjs": {
     "type": "application/javascript",
-    "etag": "\"bc-xmyeNpu5wGmKRdWXwt10EAsDt6o\"",
-    "mtime": "2022-09-05T15:56:47.529Z",
-    "path": "../public/_nuxt/ProseThead-e1e11cf2.mjs"
+    "etag": "\"bc-HoxC3Vlhk+BCaofSeiTHs8F2pjw\"",
+    "mtime": "2023-10-05T16:05:48.136Z",
+    "path": "../public/_nuxt/ProseThead-ea8aa5be.mjs"
   },
-  "/_nuxt/ProseTr-85afc3af.mjs": {
+  "/_nuxt/ProseTr-f0268c0e.mjs": {
     "type": "application/javascript",
-    "etag": "\"b4-9YRGKoiU1wepAl643p2jIZLCg5o\"",
-    "mtime": "2022-09-05T15:56:47.528Z",
-    "path": "../public/_nuxt/ProseTr-85afc3af.mjs"
+    "etag": "\"b4-JXlq35RYgsxBYy6Ete/IjIlaB3U\"",
+    "mtime": "2023-10-05T16:05:48.136Z",
+    "path": "../public/_nuxt/ProseTr-f0268c0e.mjs"
   },
-  "/_nuxt/ProseUl-b7c2d0f1.mjs": {
+  "/_nuxt/ProseUl-8a3acec8.mjs": {
     "type": "application/javascript",
-    "etag": "\"b4-nFPWlYzaz1HRS0ETF3id93mFEzA\"",
-    "mtime": "2022-09-05T15:56:47.528Z",
-    "path": "../public/_nuxt/ProseUl-b7c2d0f1.mjs"
+    "etag": "\"b4-qSY/VO8glxNWwjcCH3ajp0MNoOA\"",
+    "mtime": "2023-10-05T16:05:48.135Z",
+    "path": "../public/_nuxt/ProseUl-8a3acec8.mjs"
   },
-  "/_nuxt/Tags-a0336765.mjs": {
+  "/_nuxt/Tags-57943aea.mjs": {
     "type": "application/javascript",
-    "etag": "\"51c-HCk9QgCJ4xoxDhDoRHGZd6KdG8g\"",
-    "mtime": "2022-09-05T15:56:47.527Z",
-    "path": "../public/_nuxt/Tags-a0336765.mjs"
+    "etag": "\"51c-kZjiee274XkutPzhuWb4pcnNxxw\"",
+    "mtime": "2023-10-05T16:05:48.134Z",
+    "path": "../public/_nuxt/Tags-57943aea.mjs"
   },
-  "/_nuxt/_...slug_-116987d4.mjs": {
+  "/_nuxt/_...slug_-616c778b.mjs": {
     "type": "application/javascript",
-    "etag": "\"150a-pPviJF3FjsXlbSt1JwUU085X6WE\"",
-    "mtime": "2022-09-05T15:56:47.527Z",
-    "path": "../public/_nuxt/_...slug_-116987d4.mjs"
+    "etag": "\"152e-CfFYQiNFAgetm51PO/sRQcfYGbc\"",
+    "mtime": "2023-10-05T16:05:48.134Z",
+    "path": "../public/_nuxt/_...slug_-616c778b.mjs"
   },
-  "/_nuxt/_slug_-dd9e0e22.mjs": {
+  "/_nuxt/_commonjsHelpers-6067da81.mjs": {
     "type": "application/javascript",
-    "etag": "\"6fb-tAYIdnaJnf/N0EALzKmmU7SliuI\"",
-    "mtime": "2022-09-05T15:56:47.526Z",
-    "path": "../public/_nuxt/_slug_-dd9e0e22.mjs"
+    "etag": "\"182-tBNP7RjpJYRYm4NRiJL8jCMhFXg\"",
+    "mtime": "2023-10-05T16:05:48.133Z",
+    "path": "../public/_nuxt/_commonjsHelpers-6067da81.mjs"
   },
-  "/_nuxt/auth-3567079e.mjs": {
+  "/_nuxt/_player_-be230a98.mjs": {
     "type": "application/javascript",
-    "etag": "\"b5-x/ZbnVe0d3byQqZymy/j1oPX3nM\"",
-    "mtime": "2022-09-05T15:56:47.525Z",
-    "path": "../public/_nuxt/auth-3567079e.mjs"
+    "etag": "\"30c4-j/foUc2BBevnshqrXAPUGTlDv+E\"",
+    "mtime": "2023-10-05T16:05:48.132Z",
+    "path": "../public/_nuxt/_player_-be230a98.mjs"
   },
-  "/_nuxt/entry-59425e8f.mjs": {
+  "/_nuxt/_slug_-f1fb87b9.mjs": {
     "type": "application/javascript",
-    "etag": "\"2f0f4-O2BUChM4Y9/p/+hVwig1HBiH0V8\"",
-    "mtime": "2022-09-05T15:56:47.525Z",
-    "path": "../public/_nuxt/entry-59425e8f.mjs"
+    "etag": "\"723-YfzA7ud14CF7pu5y3hEw88WIWBg\"",
+    "mtime": "2023-10-05T16:05:48.131Z",
+    "path": "../public/_nuxt/_slug_-f1fb87b9.mjs"
   },
-  "/_nuxt/entry.4af48fb9.css": {
+  "/_nuxt/auth-f0aa4448.mjs": {
+    "type": "application/javascript",
+    "etag": "\"b5-I+0rm1/36kASfSyeHTVuqg3Tkow\"",
+    "mtime": "2023-10-05T16:05:48.131Z",
+    "path": "../public/_nuxt/auth-f0aa4448.mjs"
+  },
+  "/_nuxt/entry-f2a1025b.mjs": {
+    "type": "application/javascript",
+    "etag": "\"5e967-wMNRZ18D0SLfozK9SmeWAZgx+cY\"",
+    "mtime": "2023-10-05T16:05:48.130Z",
+    "path": "../public/_nuxt/entry-f2a1025b.mjs"
+  },
+  "/_nuxt/entry.4be2061d.css": {
     "type": "text/css; charset=utf-8",
-    "etag": "\"cbab-l3YK4vJZDvqZ9Vv7/gv6fvI64Cc\"",
-    "mtime": "2022-09-05T15:56:47.524Z",
-    "path": "../public/_nuxt/entry.4af48fb9.css"
+    "etag": "\"e37c-EkJ6Qsok1iIUw8z/dHdBYUrEsUY\"",
+    "mtime": "2023-10-05T16:05:48.128Z",
+    "path": "../public/_nuxt/entry.4be2061d.css"
   },
-  "/_nuxt/guest-ee560180.mjs": {
+  "/_nuxt/guest-1eb3ea58.mjs": {
     "type": "application/javascript",
-    "etag": "\"ac-jeRAeJ36ULV/Yr9LIZDS+nbLO4M\"",
-    "mtime": "2022-09-05T15:56:47.523Z",
-    "path": "../public/_nuxt/guest-ee560180.mjs"
+    "etag": "\"ac-kLOHT8z5yoVom0NtgpGiD9NYuY0\"",
+    "mtime": "2023-10-05T16:05:48.127Z",
+    "path": "../public/_nuxt/guest-1eb3ea58.mjs"
   },
-  "/_nuxt/index-329ee641.mjs": {
+  "/_nuxt/index-059abe56.mjs": {
     "type": "application/javascript",
-    "etag": "\"723-t+9FoB5cJf2fi3fusnPfEGCxEmY\"",
-    "mtime": "2022-09-05T15:56:47.521Z",
-    "path": "../public/_nuxt/index-329ee641.mjs"
+    "etag": "\"742-oQcUt9tLiDrXc5gHd/OMw8gX8Z0\"",
+    "mtime": "2023-10-05T16:05:48.126Z",
+    "path": "../public/_nuxt/index-059abe56.mjs"
   },
-  "/_nuxt/index-a1a87c81.mjs": {
+  "/_nuxt/index-185fa281.mjs": {
     "type": "application/javascript",
-    "etag": "\"18f7-6PKUVck+SDf2BdgVDTC9EVfW8oM\"",
-    "mtime": "2022-09-05T15:56:47.520Z",
-    "path": "../public/_nuxt/index-a1a87c81.mjs"
+    "etag": "\"855-P3y+uQXHTUy1KZVSVy5jMBFlFcU\"",
+    "mtime": "2023-10-05T16:05:48.126Z",
+    "path": "../public/_nuxt/index-185fa281.mjs"
   },
-  "/_nuxt/index-c760cd27.mjs": {
+  "/_nuxt/index-283bc34b.mjs": {
     "type": "application/javascript",
-    "etag": "\"30b-ThODxrDFcZaILOlt8AKIO40NsOU\"",
-    "mtime": "2022-09-05T15:56:47.520Z",
-    "path": "../public/_nuxt/index-c760cd27.mjs"
+    "etag": "\"3b3-o6cHNqh2Pd2eizVrgZJ6tRmkyS0\"",
+    "mtime": "2023-10-05T16:05:48.125Z",
+    "path": "../public/_nuxt/index-283bc34b.mjs"
   },
-  "/_nuxt/login-4155509b.mjs": {
+  "/_nuxt/index-2fdf0414.mjs": {
     "type": "application/javascript",
-    "etag": "\"106d-sQvZkBc854F/QEvXRwWVJKion5k\"",
-    "mtime": "2022-09-05T15:56:47.519Z",
-    "path": "../public/_nuxt/login-4155509b.mjs"
+    "etag": "\"28bb-HOecC/xSk8Ybhg+TVb87JKUW4Pc\"",
+    "mtime": "2023-10-05T16:05:48.124Z",
+    "path": "../public/_nuxt/index-2fdf0414.mjs"
+  },
+  "/_nuxt/index-59cb9f3f.mjs": {
+    "type": "application/javascript",
+    "etag": "\"1819-P2bdEld2PA4ic0Q2QZxtDeWkknk\"",
+    "mtime": "2023-10-05T16:05:48.124Z",
+    "path": "../public/_nuxt/index-59cb9f3f.mjs"
+  },
+  "/_nuxt/login-43437345.mjs": {
+    "type": "application/javascript",
+    "etag": "\"1065-B48l8cQ7QmEKuV3k1vonGlG72lM\"",
+    "mtime": "2023-10-05T16:05:48.123Z",
+    "path": "../public/_nuxt/login-43437345.mjs"
   },
   "/_nuxt/manifest.json": {
     "type": "application/json",
-    "etag": "\"34e4-f07YZprI9IgqWmWjAZKHxNTev5o\"",
-    "mtime": "2022-09-05T15:56:47.518Z",
+    "etag": "\"3adb-lVSLeWc/sG9lZycPTvwyKqmg9Uw\"",
+    "mtime": "2023-10-05T16:05:48.122Z",
     "path": "../public/_nuxt/manifest.json"
   },
-  "/_nuxt/register-c99c6660.mjs": {
+  "/_nuxt/methods-6d63886e.mjs": {
     "type": "application/javascript",
-    "etag": "\"12e1-hBGjnilfaKhZDRnMW5zRGsNW68Q\"",
-    "mtime": "2022-09-05T15:56:47.518Z",
-    "path": "../public/_nuxt/register-c99c6660.mjs"
+    "etag": "\"463-tsZiAMckH6PQxteDewGZigUE3hs\"",
+    "mtime": "2023-10-05T16:05:48.122Z",
+    "path": "../public/_nuxt/methods-6d63886e.mjs"
   },
-  "/_nuxt/web-socket-7ea301f8.mjs": {
+  "/_nuxt/preline-cc194cf5.mjs": {
     "type": "application/javascript",
-    "etag": "\"32c-WinJH/VBPKhMjBXpMxn6NOm5wJM\"",
-    "mtime": "2022-09-05T15:56:47.517Z",
-    "path": "../public/_nuxt/web-socket-7ea301f8.mjs"
+    "etag": "\"10cb1-usGJ4G0tiHZefwqllt/NeC9VWOI\"",
+    "mtime": "2023-10-05T16:05:48.121Z",
+    "path": "../public/_nuxt/preline-cc194cf5.mjs"
+  },
+  "/_nuxt/register-c0791b98.mjs": {
+    "type": "application/javascript",
+    "etag": "\"12d9-2U2N9hXj1CQpR42p3MymetipWgE\"",
+    "mtime": "2023-10-05T16:05:48.120Z",
+    "path": "../public/_nuxt/register-c0791b98.mjs"
+  },
+  "/_nuxt/useLike-d45674e5.mjs": {
+    "type": "application/javascript",
+    "etag": "\"14c-/7qq8RQyeNav2Bj3bCtcR851sdA\"",
+    "mtime": "2023-10-05T16:05:48.119Z",
+    "path": "../public/_nuxt/useLike-d45674e5.mjs"
+  },
+  "/_nuxt/web-socket-5ca36079.mjs": {
+    "type": "application/javascript",
+    "etag": "\"32c-Hjzsuo2DDdXz6wW0nwEt1DqFtn0\"",
+    "mtime": "2023-10-05T16:05:48.119Z",
+    "path": "../public/_nuxt/web-socket-5ca36079.mjs"
+  },
+  "/img/ArtemAnisimov.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"58a7d-TvKvOvXZMO/UevkrBGXsJ1yANPo\"",
+    "mtime": "2023-10-05T16:05:48.287Z",
+    "path": "../public/img/ArtemAnisimov.svg"
+  },
+  "/img/Artemi_Panarin.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"28ef5-xKmEfvyMjWy5nwxyXUK55v05h6g\"",
+    "mtime": "2023-10-05T16:05:48.285Z",
+    "path": "../public/img/Artemi_Panarin.svg"
+  },
+  "/img/Auston_Matthews.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"52f39-qJL2ofNZXZXoOOoUm//97eMm9Hk\"",
+    "mtime": "2023-10-05T16:05:48.284Z",
+    "path": "../public/img/Auston_Matthews.svg"
+  },
+  "/img/BarnBurner.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"2f48-P0TCykmblZB5/Hyb9dUS5QP+Fs8\"",
+    "mtime": "2023-10-05T16:05:48.282Z",
+    "path": "../public/img/BarnBurner.svg"
+  },
+  "/img/BradyTkachuk.png": {
+    "type": "image/png",
+    "etag": "\"122e7-urHsbICnburebprHGOISgyPCVRE\"",
+    "mtime": "2023-10-05T16:05:48.281Z",
+    "path": "../public/img/BradyTkachuk.png"
+  },
+  "/img/Brendan_Gallagher.png": {
+    "type": "image/png",
+    "etag": "\"146b1-PJ1hiZmOrw8XECwIL8EDJ8NgDQc\"",
+    "mtime": "2023-10-05T16:05:48.281Z",
+    "path": "../public/img/Brendan_Gallagher.png"
+  },
+  "/img/Carey_Price.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"457d8-Pf5eN1KCs001QYEOUDLYmRO+Z1g\"",
+    "mtime": "2023-10-05T16:05:48.279Z",
+    "path": "../public/img/Carey_Price.svg"
+  },
+  "/img/Connor_Mcdavid.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"25689-zEM/uolOhnmM3B8XlNLkj/79Oh4\"",
+    "mtime": "2023-10-05T16:05:48.278Z",
+    "path": "../public/img/Connor_Mcdavid.svg"
+  },
+  "/img/DavidPastrnak.png": {
+    "type": "image/png",
+    "etag": "\"17c4b-YROeiTM/+iWHKJtE3b7q50fPmA8\"",
+    "mtime": "2023-10-05T16:05:48.276Z",
+    "path": "../public/img/DavidPastrnak.png"
+  },
+  "/img/DrakeBatherson.png": {
+    "type": "image/png",
+    "etag": "\"11c59-1pmzTmCa0GRxnLr+kisiI30LW04\"",
+    "mtime": "2023-10-05T16:05:48.275Z",
+    "path": "../public/img/DrakeBatherson.png"
+  },
+  "/img/FaceWashersJersey.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"927b-f6pJMGrOLhHcENbWgwHCO2xRXq4\"",
+    "mtime": "2023-10-05T16:05:48.275Z",
+    "path": "../public/img/FaceWashersJersey.svg"
+  },
+  "/img/FlapjackBag.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"18d28-+FJ/S+KmONutOcpmpnN7o+fl6Tg\"",
+    "mtime": "2023-10-05T16:05:48.274Z",
+    "path": "../public/img/FlapjackBag.svg"
+  },
+  "/img/John_Tavares.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"71863-283o2Q6MdHyuQ9GQDwyJLwYvxbc\"",
+    "mtime": "2023-10-05T16:05:48.273Z",
+    "path": "../public/img/John_Tavares.svg"
+  },
+  "/img/MaxDomi.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"3c3fe-s+KRFMqGoyA6vLwz7FWgEwJer4k\"",
+    "mtime": "2023-10-05T16:05:48.269Z",
+    "path": "../public/img/MaxDomi.svg"
+  },
+  "/img/Mitch_Marner.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"1cf5f-0AyFzjfvEeiTzEdt9gAn24kOOwM\"",
+    "mtime": "2023-10-05T16:05:48.268Z",
+    "path": "../public/img/Mitch_Marner.svg"
+  },
+  "/img/Nikita_Kucherov.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"4b6ef-VRLES3mxVCVJaL7dYbVoVzrij3w\"",
+    "mtime": "2023-10-05T16:05:48.267Z",
+    "path": "../public/img/Nikita_Kucherov.svg"
+  },
+  "/img/Nippers.png": {
+    "type": "image/png",
+    "etag": "\"134d4-U7dWAl++Y/OV+3EBrPeDvtdZkVM\"",
+    "mtime": "2023-10-05T16:05:48.265Z",
+    "path": "../public/img/Nippers.png"
+  },
+  "/img/PlumbersJersey.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"f833-IaQX+39s/2A8l5Y1XWEBVbqYoIA\"",
+    "mtime": "2023-10-05T16:05:48.264Z",
+    "path": "../public/img/PlumbersJersey.svg"
+  },
+  "/img/SeanMonahan.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"64f09-BKDyrwlfAwLzbnyVlTvJXZ0QIxA\"",
+    "mtime": "2023-10-05T16:05:48.263Z",
+    "path": "../public/img/SeanMonahan.svg"
+  },
+  "/img/Skates-Fighter-Jet.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"18290-YjZadNOJJZ1OzqoVeVUKWF7oOdo\"",
+    "mtime": "2023-10-05T16:05:48.261Z",
+    "path": "../public/img/Skates-Fighter-Jet.svg"
+  },
+  "/img/Skates-Retro-Pink-2.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"16bc8-vDl30ngpMBY5ihNvU0skCYlebgc\"",
+    "mtime": "2023-10-05T16:05:48.260Z",
+    "path": "../public/img/Skates-Retro-Pink-2.svg"
+  },
+  "/img/Steven_Stamkos.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"7b7ae-pgWzYzsKcWeXwTgkTR4CA0Kro58\"",
+    "mtime": "2023-10-05T16:05:48.258Z",
+    "path": "../public/img/Steven_Stamkos.svg"
+  },
+  "/img/UFOBag.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"14259-e4WDPWdh62bnjcfZsL3BssKD9F8\"",
+    "mtime": "2023-10-05T16:05:48.256Z",
+    "path": "../public/img/UFOBag.svg"
+  },
+  "/img/William_Nylander.png": {
+    "type": "image/png",
+    "etag": "\"1b17e-Mz7wRJp5y79h9K9kYDn9BldHQ70\"",
+    "mtime": "2023-10-05T16:05:48.254Z",
+    "path": "../public/img/William_Nylander.png"
+  },
+  "/img/William_Nylander.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"2ccfc-jmxu+fJLwL2UtjkYIxWhJp7uKiw\"",
+    "mtime": "2023-10-05T16:05:48.253Z",
+    "path": "../public/img/William_Nylander.svg"
+  },
+  "/img/crosby.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"51b14-uM+Juk36BFUSI4zsnS1yyKRFJp4\"",
+    "mtime": "2023-10-05T16:05:48.252Z",
+    "path": "../public/img/crosby.svg"
   },
   "/img/diggs.png": {
     "type": "image/png",
     "etag": "\"31234-bc0SABqPYpPUIG3xDmah6mHH1Bg\"",
-    "mtime": "2022-09-05T15:56:47.671Z",
+    "mtime": "2023-10-05T16:05:48.250Z",
     "path": "../public/img/diggs.png"
+  },
+  "/img/ekeler.png": {
+    "type": "image/png",
+    "etag": "\"89e4d-o4OiFUu4g17tgBiX+jZBGMfDUl8\"",
+    "mtime": "2023-10-05T16:05:48.249Z",
+    "path": "../public/img/ekeler.png"
   },
   "/img/footballguy2.jpg": {
     "type": "image/jpeg",
     "etag": "\"ddb40-c5bHvjtgjkcYJKurIgA56JJLML8\"",
-    "mtime": "2022-09-05T15:56:47.657Z",
+    "mtime": "2023-10-05T16:05:48.246Z",
     "path": "../public/img/footballguy2.jpg"
   },
   "/img/footballguy5.jpg": {
     "type": "image/jpeg",
     "etag": "\"e106c-qHxdgAvRm76LIAFVxvnnDxoLf0w\"",
-    "mtime": "2022-09-05T15:56:47.645Z",
+    "mtime": "2023-10-05T16:05:48.241Z",
     "path": "../public/img/footballguy5.jpg"
   },
   "/img/gabriel.jpeg": {
     "type": "image/jpeg",
     "etag": "\"e01c-gl1YtjBdcx/2KYzaP5WxB+uLFbk\"",
-    "mtime": "2022-09-05T15:56:47.642Z",
+    "mtime": "2023-10-05T16:05:48.238Z",
     "path": "../public/img/gabriel.jpeg"
+  },
+  "/img/hill.png": {
+    "type": "image/png",
+    "etag": "\"cc853-eAsmae7YcpRgz/39FmN4gcrJE7o\"",
+    "mtime": "2023-10-05T16:05:48.237Z",
+    "path": "../public/img/hill.png"
   },
   "/img/hockey-bench.JPG": {
     "type": "image/jpeg",
     "etag": "\"1a4087-uC5t90bvi/jeHNfMM8CeP14TgCA\"",
-    "mtime": "2022-09-05T15:56:47.638Z",
+    "mtime": "2023-10-05T16:05:48.234Z",
     "path": "../public/img/hockey-bench.JPG"
   },
   "/img/hockeyphone.png": {
     "type": "image/png",
     "etag": "\"35b82-H/TABzLEgxxdBb+JRXtlaP43y+k\"",
-    "mtime": "2022-09-05T15:56:47.633Z",
+    "mtime": "2023-10-05T16:05:48.229Z",
     "path": "../public/img/hockeyphone.png"
+  },
+  "/img/johnny_g.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"9eba3-TlpcaPoPfXY6x5M92iLaATZCAh4\"",
+    "mtime": "2023-10-05T16:05:48.226Z",
+    "path": "../public/img/johnny_g.svg"
   },
   "/img/josh_allen.JPG": {
     "type": "image/jpeg",
     "etag": "\"a68a0-mvRxg/D2Nw0tyxFPIZqIiiDs/fc\"",
-    "mtime": "2022-09-05T15:56:47.631Z",
+    "mtime": "2023-10-05T16:05:48.223Z",
     "path": "../public/img/josh_allen.JPG"
+  },
+  "/img/karlsson.png": {
+    "type": "image/png",
+    "etag": "\"1e7f8-Dnn7h4X7oFv1acA+X9f0yTHilMM\"",
+    "mtime": "2023-10-05T16:05:48.221Z",
+    "path": "../public/img/karlsson.png"
+  },
+  "/img/locker-room.jpeg": {
+    "type": "image/jpeg",
+    "etag": "\"2fa468-yYy5Gu3aOrREaIA0HuL4uBPCREk\"",
+    "mtime": "2023-10-05T16:05:48.217Z",
+    "path": "../public/img/locker-room.jpeg"
+  },
+  "/img/mixon.png": {
+    "type": "image/png",
+    "etag": "\"60903-y2LKld/vHmJzIwcb2EjIkCbSr/U\"",
+    "mtime": "2023-10-05T16:05:48.210Z",
+    "path": "../public/img/mixon.png"
+  },
+  "/img/ovi.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"f4984-R+K6QylF5fNuEYO2hyDbsa52Qz0\"",
+    "mtime": "2023-10-05T16:05:48.205Z",
+    "path": "../public/img/ovi.svg"
+  },
+  "/img/pk_subban.svg": {
+    "type": "image/svg+xml",
+    "etag": "\"6d06f-Nm54twp2B208vUeThNnqiiXQ/8k\"",
+    "mtime": "2023-10-05T16:05:48.202Z",
+    "path": "../public/img/pk_subban.svg"
   },
   "/img/player.jpg": {
     "type": "image/jpeg",
     "etag": "\"16b0e0-sMf3qlncJ43+eUbK3ncE+SIyQMQ\"",
-    "mtime": "2022-09-05T15:56:47.627Z",
+    "mtime": "2023-10-05T16:05:48.200Z",
     "path": "../public/img/player.jpg"
   },
   "/img/qb-close.JPG": {
     "type": "image/jpeg",
     "etag": "\"15879e-6Bky2J7q5ej1MvcmTmzN7wbbJUo\"",
-    "mtime": "2022-09-05T15:56:47.600Z",
+    "mtime": "2023-10-05T16:05:48.195Z",
     "path": "../public/img/qb-close.JPG"
   },
   "/img/qb.JPG": {
     "type": "image/jpeg",
     "etag": "\"c8cb5-sBIWbDDLZKWwZBRNcYPadVRTcqM\"",
-    "mtime": "2022-09-05T15:56:47.594Z",
+    "mtime": "2023-10-05T16:05:48.192Z",
     "path": "../public/img/qb.JPG"
   },
   "/img/qb_8.JPG": {
     "type": "image/jpeg",
     "etag": "\"bb048-YQCPYT/nFmCfWoMTtRbga7XnHnk\"",
-    "mtime": "2022-09-05T15:56:47.591Z",
+    "mtime": "2023-10-05T16:05:48.189Z",
     "path": "../public/img/qb_8.JPG"
   },
   "/img/qb_run.JPG": {
     "type": "image/jpeg",
     "etag": "\"b688b-YwkUDKfNDK7qA3QqgVy5tKG/y+w\"",
-    "mtime": "2022-09-05T15:56:47.588Z",
+    "mtime": "2023-10-05T16:05:48.186Z",
     "path": "../public/img/qb_run.JPG"
   },
   "/img/rb.JPG": {
     "type": "image/jpeg",
     "etag": "\"120e19-n6O8Dcy/QaPZTfbz5661BcNWhqo\"",
-    "mtime": "2022-09-05T15:56:47.584Z",
+    "mtime": "2023-10-05T16:05:48.183Z",
     "path": "../public/img/rb.JPG"
   },
   "/img/rosterbox.png": {
     "type": "image/png",
     "etag": "\"86173-h5b2YGzBz1gbb+bmiw0Zmhw2K6k\"",
-    "mtime": "2022-09-05T15:56:47.580Z",
+    "mtime": "2023-10-05T16:05:48.180Z",
     "path": "../public/img/rosterbox.png"
   },
   "/img/rotorink.jpeg": {
     "type": "image/jpeg",
     "etag": "\"10e5e6-TYPWXhcB3MO9ddY5i8k34EZFzG8\"",
-    "mtime": "2022-09-05T15:56:47.576Z",
+    "mtime": "2023-10-05T16:05:48.177Z",
     "path": "../public/img/rotorink.jpeg"
   },
   "/img/singletary.jpeg": {
     "type": "image/jpeg",
     "etag": "\"e62c-xPmcl57eTx05iapS+FVbFbjedkA\"",
-    "mtime": "2022-09-05T15:56:47.570Z",
+    "mtime": "2023-10-05T16:05:48.174Z",
     "path": "../public/img/singletary.jpeg"
   },
   "/img/te.JPG": {
     "type": "image/jpeg",
     "etag": "\"b1749-1WVBMpbwi2yQ3JyOOo20fRlmLko\"",
-    "mtime": "2022-09-05T15:56:47.569Z",
+    "mtime": "2023-10-05T16:05:48.173Z",
     "path": "../public/img/te.JPG"
   },
   "/img/te_jump.JPG": {
     "type": "image/jpeg",
     "etag": "\"dead4-RE1QzyNRTSv5vQFKevXvydYWY38\"",
-    "mtime": "2022-09-05T15:56:47.565Z",
+    "mtime": "2023-10-05T16:05:48.170Z",
     "path": "../public/img/te_jump.JPG"
+  },
+  "/img/underdog.jpeg": {
+    "type": "image/jpeg",
+    "etag": "\"1a2e9-SSjFSdYEyw3KcWaklm0FJxPUpTI\"",
+    "mtime": "2023-10-05T16:05:48.168Z",
+    "path": "../public/img/underdog.jpeg"
   },
   "/img/wr.JPG": {
     "type": "image/jpeg",
     "etag": "\"15a68e-G9vrpVJTb22cKcCHvwRir73cYcg\"",
-    "mtime": "2022-09-05T15:56:47.560Z",
+    "mtime": "2023-10-05T16:05:48.166Z",
     "path": "../public/img/wr.JPG"
   }
 };
@@ -4245,6 +4553,12 @@ function mergeLines(line1, line2) {
 }
 
 const _lazy_410995 = () => import('../subscribe.mjs');
+const _lazy_259112 = () => import('../getLikes.mjs');
+const _lazy_192242 = () => import('../deleteLike.mjs');
+const _lazy_206620 = () => import('../addLike.mjs');
+const _lazy_736812 = () => import('../getComments.mjs');
+const _lazy_104501 = () => import('../deleteComment.mjs');
+const _lazy_243281 = () => import('../addComment.mjs');
 const _lazy_423706 = () => import('../register.mjs');
 const _lazy_171314 = () => import('../logout.mjs');
 const _lazy_143138 = () => import('../login.mjs');
@@ -4254,6 +4568,12 @@ const _lazy_184848 = () => import('../handlers/renderer.mjs').then(function (n) 
 const handlers = [
   { route: '', handler: _152570, lazy: false, middleware: true, method: undefined },
   { route: '/api/subscribe', handler: _lazy_410995, lazy: true, middleware: false, method: undefined },
+  { route: '/api/like/getLikes', handler: _lazy_259112, lazy: true, middleware: false, method: undefined },
+  { route: '/api/like/deleteLike', handler: _lazy_192242, lazy: true, middleware: false, method: undefined },
+  { route: '/api/like/addLike', handler: _lazy_206620, lazy: true, middleware: false, method: undefined },
+  { route: '/api/comment/getComments', handler: _lazy_736812, lazy: true, middleware: false, method: undefined },
+  { route: '/api/comment/deleteComment', handler: _lazy_104501, lazy: true, middleware: false, method: undefined },
+  { route: '/api/comment/addComment', handler: _lazy_243281, lazy: true, middleware: false, method: undefined },
   { route: '/api/auth/register', handler: _lazy_423706, lazy: true, middleware: false, method: undefined },
   { route: '/api/auth/logout', handler: _lazy_171314, lazy: true, middleware: false, method: undefined },
   { route: '/api/auth/login', handler: _lazy_143138, lazy: true, middleware: false, method: undefined },

@@ -1,6 +1,7 @@
 import { useBody, sendError, createError } from 'h3';
 import bcrypt from 'bcrypt';
 import { v as validateUser, c as createUser, m as makeSession } from './sessionService.mjs';
+import './client.mjs';
 import '@prisma/client';
 import 'crypto';
 

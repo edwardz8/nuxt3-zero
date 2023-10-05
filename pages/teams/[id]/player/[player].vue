@@ -63,7 +63,7 @@ async function unlikePlayer(id) {
     <Head>
       <Script
         defer
-        data-domain="propz.vercel.app"
+        data-domain="rotorink.com"
         src="https://plausible.io/js/plausible.js"
       />
     </Head>

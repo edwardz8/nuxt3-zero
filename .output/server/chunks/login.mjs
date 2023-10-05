@@ -1,6 +1,7 @@
 import { useBody, sendError, createError } from 'h3';
-import { g as getUserByEmail, m as makeSession, s as sanitizeUserForFrontend } from './sessionService.mjs';
+import { g as getUserByEmailWithPass, m as makeSession, s as sanitizeUserForFrontend } from './sessionService.mjs';
 import bcrypt from 'bcrypt';
+import './client.mjs';
 import '@prisma/client';
 import 'crypto';
 
@@ -8,13 +9,14 @@ const login = async (event) => {
   const body = await useBody(event);
   const email = body.email;
   const password = body.password;
-  const user = await getUserByEmail(email);
+  const user = await getUserByEmailWithPass(email);
   if (user === null) {
-    sendError(event, createError({ statusCode: 401, statusMessage: "Unauthenticated" }));
+    return sendError(event, createError({ statusCode: 423, statusMessage: "Wrong Email" }));
   }
-  const isPasswordCorrect = bcrypt.compare(password, user.password);
+  const isPasswordCorrect = await bcrypt.compare(password, user.password);
+  console.log(password, user, isPasswordCorrect);
   if (!isPasswordCorrect) {
-    sendError(event, createError({ statusCode: 401, statusMessage: "Unauthenticated" }));
+    return sendError(event, createError({ statusCode: 423, statusMessage: "Wrong Password" }));
   }
   await makeSession(user, event);
   return sanitizeUserForFrontend(user);

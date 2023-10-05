@@ -1,5 +1,6 @@
 import { defineEventHandler, useCookie } from 'h3';
 import { a as getUserBySessionToken } from './sessionService.mjs';
+import './client.mjs';
 import '@prisma/client';
 import 'crypto';
 

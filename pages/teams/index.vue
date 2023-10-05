@@ -7,7 +7,7 @@ const { data } = await useFetch("https://statsapi.web.nhl.com/api/v1/teams");
     <Head>
       <Script
         defer
-        data-domain="propz.vercel.app"
+        data-domain="rotorink.com"
         src="https://plausible.io/js/plausible.js"
       />
     </Head>

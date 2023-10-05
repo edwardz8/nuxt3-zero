@@ -2,7 +2,7 @@
 const route = useRoute();
 const user = useState("user");
 import { useState } from "#app";
-import { getUserLikes, addUserLikes, removeUserLikes } from "~/composables/useLike";
+import { getUserLikes, addUserLike, removeUserLike } from "~/composables/useLike";
 
 const player = ref(null);
 const config = useRuntimeConfig();
@@ -65,7 +65,7 @@ async function showPlayer(id) {
     <Head>
       <Script
         defer
-        data-domain="propz.vercel.app"
+        data-domain="rotorink.com"
         src="https://plausible.io/js/plausible.js"
       />
     </Head>
