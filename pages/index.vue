@@ -3,7 +3,7 @@
     <Head>
       <Script
         defer
-        data-domain="rotorink"
+        data-domain="rotorink.vercel.app"
         src="https://plausible.io/js/plausible.js"
       />
     </Head>
