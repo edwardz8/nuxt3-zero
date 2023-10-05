@@ -1,12 +1,12 @@
 ---
-title: 'Props for Bills @ Rams 🏈 '
-description: 'Favorite Props for Bills @ Rams'
-img: 'img/josh_allen.JPG'
-tags: [NFL, Props, Football]
+title: 'Puck Drop Props '
+description: 'Favorite Puck Drop Props'
+img: 'img/UFOBag.svg'
+tags: [NHL, Props, Hockey]
 ---
 
 
-# Props for Bills @ Rams 🏈 
+# Puck Drop Props
 
 > Hey there! Thanks for checking out the first player props article of the 2022 NFL season. The Bills vs Rams kick the year off and we couldn't be more excited to bring you our thoughts and statistically-informed take on player props. 🦵
 

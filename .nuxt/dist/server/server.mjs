@@ -6067,10 +6067,6 @@ _sfc_main$O.setup = (props, ctx) => {
   return _sfc_setup$O ? _sfc_setup$O(props, ctx) : void 0;
 };
 const __nuxt_component_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$O, [["__scopeId", "data-v-303e9351"]]);
-async function getPlayerComments(playerId) {
-  const comment = await $fetch("/api/comment/getComments?playerId=" + playerId, { method: "GET" });
-  return comment;
-}
 const useAuthCookie = () => useCookie("auth_token");
 async function useUser() {
   const authCookie = useAuthCookie().value;
@@ -6082,6 +6078,10 @@ async function useUser() {
     user.value = data.value;
   }
   return user.value;
+}
+async function getPlayerComments(playerId) {
+  const comment = await $fetch("/api/comment/getComments?playerId=" + playerId, { method: "GET" });
+  return comment;
 }
 async function getUserLikes(playerId) {
   const like = await $fetch("/api/like/getLikes?playerId=" + playerId, { method: "GET" });
@@ -6312,7 +6312,7 @@ const meta$7 = {
   key: (route) => route.fullPath
 };
 const meta$6 = void 0;
-const index_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => "\n.hero-section[data-v-a13ac276] {\n    display: flex;\n    height: 100vh;\n    width: 100%;\n    align-items: center;\n    justify-content: center;\n    --tw-bg-opacity: 1;\n    background-color: rgb(248 250 252 / var(--tw-bg-opacity));\n    text-align: center;\n    --tw-text-opacity: 1;\n    color: rgb(51 65 85 / var(--tw-text-opacity))\n}\n")();
+const index_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => "\n.hero-section[data-v-5a21bdf2] {\n    display: flex;\n    height: 100vh;\n    width: 100%;\n    align-items: center;\n    justify-content: center;\n    --tw-bg-opacity: 1;\n    background-color: rgb(248 250 252 / var(--tw-bg-opacity));\n    text-align: center;\n    --tw-text-opacity: 1;\n    color: rgb(51 65 85 / var(--tw-text-opacity))\n}\n")();
 const meta$5 = void 0;
 const _imports_0$1 = publicAssetsURL(`img/hockeyphone.png`);
 const _sfc_main$N = /* @__PURE__ */ defineComponent({
@@ -20664,7 +20664,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
   const _component_Head = resolveComponent("Head");
   const _component_Script = resolveComponent("Script");
   const _component_NuxtLink = __nuxt_component_0$4;
-  _push(`<main${ssrRenderAttrs(_attrs)} data-v-a13ac276>`);
+  _push(`<main${ssrRenderAttrs(_attrs)} data-v-5a21bdf2>`);
   _push(ssrRenderComponent(_component_Head, null, {
     default: withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -20685,7 +20685,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
     }),
     _: 1
   }, _parent));
-  _push(`<section class="hero-section" data-v-a13ac276><header data-v-a13ac276><h1 class="font-black text-6xl" data-v-a13ac276>Welcome to rotorink</h1><span class="text-4xl" data-v-a13ac276>\u{1F3C8} \u{1F3D2} \u26BD</span><p data-v-a13ac276>browse the`);
+  _push(`<section class="hero-section" data-v-5a21bdf2><header data-v-5a21bdf2><h1 class="font-black text-6xl" data-v-5a21bdf2>Welcome to rotorink</h1><span class="text-4xl" data-v-5a21bdf2> \u{1F3D2} </span><p data-v-5a21bdf2>browse the`);
   _push(ssrRenderComponent(_component_NuxtLink, { to: "/blog" }, {
     default: withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -20698,7 +20698,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
     }),
     _: 1
   }, _parent));
-  _push(`</p><p data-v-a13ac276>and sign up or login to</p><p data-v-a13ac276>`);
+  _push(`</p><p data-v-5a21bdf2>and sign up or login to</p><p data-v-5a21bdf2>`);
   _push(ssrRenderComponent(_component_NuxtLink, { to: "/teams" }, {
     default: withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -20719,7 +20719,7 @@ _sfc_main$5.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/index.vue");
   return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
 };
-const index$2 = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-a13ac276"]]);
+const index$2 = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-5a21bdf2"]]);
 const index$3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": index$2

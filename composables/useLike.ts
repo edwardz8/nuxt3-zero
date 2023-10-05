@@ -8,7 +8,6 @@ export async function getUserLikes(playerId: string) {
 }
 
 export async function addUserLike({playerId, userId}) {
-    // const user = useState<IUser>('user')
     const like = await $fetch('/api/like/addLike', { method: 'POST', body: { userId: userId, playerId: playerId } })
     return like
 }

@@ -10,7 +10,7 @@
     <section class="hero-section">
       <header>
         <h1 class="font-black text-6xl">Welcome to rotorink</h1>
-        <span class="text-4xl">🏈 🏒 ⚽</span>
+        <span class="text-4xl"> 🏒 </span>
         <p>browse the<NuxtLink to="/blog"> daily fantasy hockey and props content</NuxtLink></p>
         <p>and sign up or login to</p>
         <p><NuxtLink to="/teams">like and comment on your favorite players for the day</NuxtLink></p>
