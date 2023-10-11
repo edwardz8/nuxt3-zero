@@ -3490,7 +3490,7 @@ function defineNuxtLink(options) {
     }
   });
 }
-const __nuxt_component_0$4 = defineNuxtLink({ componentName: "NuxtLink" });
+const __nuxt_component_2$1 = defineNuxtLink({ componentName: "NuxtLink" });
 var shared_cjs_prod = {};
 Object.defineProperty(shared_cjs_prod, "__esModule", { value: true });
 function makeMap(str, expectsLowerCase) {
@@ -4691,7 +4691,7 @@ const _export_sfc = (sfc, props) => {
   }
   return target;
 };
-const _sfc_main$R = {
+const _sfc_main$S = {
   __name: "Toc",
   __ssrInlineRender: true,
   props: ["links"],
@@ -4717,13 +4717,13 @@ const _sfc_main$R = {
     };
   }
 };
-const _sfc_setup$R = _sfc_main$R.setup;
-_sfc_main$R.setup = (props, ctx) => {
+const _sfc_setup$S = _sfc_main$S.setup;
+_sfc_main$S.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Toc.vue");
-  return _sfc_setup$R ? _sfc_setup$R(props, ctx) : void 0;
+  return _sfc_setup$S ? _sfc_setup$S(props, ctx) : void 0;
 };
-const __nuxt_component_0$3 = /* @__PURE__ */ _export_sfc(_sfc_main$R, [["__scopeId", "data-v-6f21b509"]]);
+const __nuxt_component_0$4 = /* @__PURE__ */ _export_sfc(_sfc_main$S, [["__scopeId", "data-v-6f21b509"]]);
 function isUppercase(char = "") {
   return char.toUpperCase() === char;
 }
@@ -6072,7 +6072,7 @@ const ContentRenderer = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.def
   __proto__: null,
   "default": __nuxt_component_1$1
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$Q = {
+const _sfc_main$R = {
   __name: "Form",
   __ssrInlineRender: true,
   setup(__props) {
@@ -6084,19 +6084,19 @@ const _sfc_main$Q = {
     };
   }
 };
-const _sfc_setup$Q = _sfc_main$Q.setup;
-_sfc_main$Q.setup = (props, ctx) => {
+const _sfc_setup$R = _sfc_main$R.setup;
+_sfc_main$R.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Form.vue");
-  return _sfc_setup$Q ? _sfc_setup$Q(props, ctx) : void 0;
+  return _sfc_setup$R ? _sfc_setup$R(props, ctx) : void 0;
 };
-const _sfc_main$P = {
+const _sfc_main$Q = {
   __name: "PrevNext",
   __ssrInlineRender: true,
   props: ["prev", "next"],
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
-      const _component_NuxtLink = __nuxt_component_0$4;
+      const _component_NuxtLink = __nuxt_component_2$1;
       _push(`<ul${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "prev-next-cont" }, _attrs))} data-v-4d02dcb6><li class="link-item prev" data-v-4d02dcb6>`);
       if (__props.prev) {
         _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, {
@@ -6143,13 +6143,13 @@ const _sfc_main$P = {
     };
   }
 };
-const _sfc_setup$P = _sfc_main$P.setup;
-_sfc_main$P.setup = (props, ctx) => {
+const _sfc_setup$Q = _sfc_main$Q.setup;
+_sfc_main$Q.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/PrevNext.vue");
-  return _sfc_setup$P ? _sfc_setup$P(props, ctx) : void 0;
+  return _sfc_setup$Q ? _sfc_setup$Q(props, ctx) : void 0;
 };
-const __nuxt_component_4 = /* @__PURE__ */ _export_sfc(_sfc_main$P, [["__scopeId", "data-v-4d02dcb6"]]);
+const __nuxt_component_4 = /* @__PURE__ */ _export_sfc(_sfc_main$Q, [["__scopeId", "data-v-4d02dcb6"]]);
 const ensureArray = (value) => Array.isArray(value) ? value : value ? [value] : [];
 const arrayParams = ["sort", "where", "only", "without"];
 const createQuery = (fetcher, intitialParams) => {
@@ -6298,7 +6298,7 @@ function queryContent(query, ...pathParts) {
   return createQuery(createQueryFetch(), query);
 }
 const meta$8 = void 0;
-const _sfc_main$O = {
+const _sfc_main$P = {
   __name: "Tags",
   __ssrInlineRender: true,
   async setup(__props) {
@@ -6321,7 +6321,7 @@ const _sfc_main$O = {
     const articleTags = [...new Set(flatten(data.value, "tags"))];
     console.log({ articleTags });
     return (_ctx, _push, _parent, _attrs) => {
-      const _component_NuxtLink = __nuxt_component_0$4;
+      const _component_NuxtLink = __nuxt_component_2$1;
       _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({
         class: ["tag-list", { active: expanded.value }]
       }, _attrs))} data-v-303e9351><button class="cta w-icon" data-v-303e9351>`);
@@ -6350,13 +6350,25 @@ const _sfc_main$O = {
     };
   }
 };
-const _sfc_setup$O = _sfc_main$O.setup;
-_sfc_main$O.setup = (props, ctx) => {
+const _sfc_setup$P = _sfc_main$P.setup;
+_sfc_main$P.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Tags.vue");
-  return _sfc_setup$O ? _sfc_setup$O(props, ctx) : void 0;
+  return _sfc_setup$P ? _sfc_setup$P(props, ctx) : void 0;
 };
-const __nuxt_component_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$O, [["__scopeId", "data-v-303e9351"]]);
+const __nuxt_component_0$3 = /* @__PURE__ */ _export_sfc(_sfc_main$P, [["__scopeId", "data-v-303e9351"]]);
+const useAuthCookie = () => useCookie("auth_token");
+async function useUser() {
+  const authCookie = useAuthCookie().value;
+  const user = useState("user");
+  if (authCookie && !user.value) {
+    const { data } = await useFetch(`/api/auth/getByAuthToken`, {
+      headers: useRequestHeaders(["cookie"])
+    });
+    user.value = data.value;
+  }
+  return user.value;
+}
 async function getPlayerComments(playerId) {
   const comment = await $fetch("/api/comment/getComments?playerId=" + playerId, { method: "GET" });
   return comment;
@@ -6372,18 +6384,6 @@ async function addUserLike({ playerId, userId }) {
 async function removeUserLike(likeId) {
   const res = await $fetch("/api/like/deleteLike?likeId=" + likeId, { method: "GET" });
   return res;
-}
-const useAuthCookie = () => useCookie("auth_token");
-async function useUser() {
-  const authCookie = useAuthCookie().value;
-  const user = useState("user");
-  if (authCookie && !user.value) {
-    const { data } = await useFetch(`/api/auth/getByAuthToken`, {
-      headers: useRequestHeaders(["cookie"])
-    });
-    user.value = data.value;
-  }
-  return user.value;
 }
 const fetchContentNavigation = (queryBuilder) => {
   let params = queryBuilder;
@@ -6602,8 +6602,45 @@ const meta$7 = {
   key: (route) => route.fullPath
 };
 const meta$6 = void 0;
-const meta$5 = void 0;
 const _imports_0$1 = publicAssetsURL(`img/hockeyphone.png`);
+const _sfc_main$O = {};
+function _sfc_ssrRender$k(_ctx, _push, _parent, _attrs) {
+  const _component_NuxtLink = __nuxt_component_2$1;
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "p-20 h-screen w-screen flex flex-col-reverse md:flex-row items-center justify-center" }, _attrs))}><div class="content text-3xl text-center md:text-left"><main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-4 sm:px-6 md:mt-16 lg:mt-10 lg:px-4 xl:mt-8"><div class="sm:text-center lg:text-left"><h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl"><span class="block xl:inline">rotorink</span><span class="block text-red-600 xl:inline"> stats and stories</span></h1><p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"> Welcome to the home of hockey dfs news, lineup and props content. </p><div class="mt-5 flex">`);
+  _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, { to: "/teams" }, {
+    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(`<button class="rounded-md shadow w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-500 hover:bg-blue-500"${_scopeId}> Player Stats </button>`);
+      } else {
+        return [
+          vue_cjs_prod.createVNode("button", { class: "rounded-md shadow w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-500 hover:bg-blue-500" }, " Player Stats ")
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, { to: "/blog" }, {
+    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(`<button class="ml-2 rounded-md shadow w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-900 hover:bg-gray-400"${_scopeId}> Blog </button>`);
+      } else {
+        return [
+          vue_cjs_prod.createVNode("button", { class: "ml-2 rounded-md shadow w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-900 hover:bg-gray-400" }, " Blog ")
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(`</div></div></main></div><div class="container mx-auto flex flex-col items-center"><div class="w-full"><img${serverRenderer.exports.ssrRenderAttr("src", _imports_0$1)} alt=""></div></div></div>`);
+}
+const _sfc_setup$O = _sfc_main$O.setup;
+_sfc_main$O.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Header.vue");
+  return _sfc_setup$O ? _sfc_setup$O(props, ctx) : void 0;
+};
+const __nuxt_component_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$O, [["ssrRender", _sfc_ssrRender$k]]);
+const meta$5 = void 0;
 const _sfc_main$N = /* @__PURE__ */ vue_cjs_prod.defineComponent({
   __name: "login",
   __ssrInlineRender: true,
@@ -18821,7 +18858,7 @@ const _sfc_main$K = /* @__PURE__ */ vue_cjs_prod.defineComponent({
       return index2 > -1 ? true : false;
     });
     return (_ctx, _push, _parent, _attrs) => {
-      const _component_NuxtLink = __nuxt_component_0$4;
+      const _component_NuxtLink = __nuxt_component_2$1;
       _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "flex relative flex-col bg-white border shadow-md rounded-xl dark:bg-gray-700 dark:border-gray-700 dark:shadow-slate-700/[.7]" }, _attrs))}>`);
       if (vue_cjs_prod.unref(isLiked)) {
         _push(`<button class="text-sm mt-1 py-2 px-2 inline-flex justify-center items-center gap-2 font-semibold text-blue-500 hover:text-gray-300"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 21C8.38661 17.7733 2 13.7597 2 8.3951C2 5.37384 4.42 3 7.5 3C9.24 3 10.91 3.74441 12 5C13.09 3.74441 14.76 3 16.5 3C19.58 3 22 5.37384 22 8.3951C22 13.751 15.6214 17.7907 12 21Z" fill="#2F80ED"></path></svg><span>${serverRenderer.exports.ssrInterpolate(vue_cjs_prod.unref(likesCount))} Likes</span></button>`);
@@ -19009,7 +19046,7 @@ const _sfc_main$H = /* @__PURE__ */ vue_cjs_prod.defineComponent({
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
       var _a;
-      const _component_NuxtLink = __nuxt_component_0$4;
+      const _component_NuxtLink = __nuxt_component_2$1;
       _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "flex flex-col bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]" }, _attrs))}><img class="mx-auto rounded-t-xl w-32"${serverRenderer.exports.ssrRenderAttr("src", vue_cjs_prod.unref(matchPlayerImage)((_a = __props.team) == null ? void 0 : _a.locationName))} alt="Player Profile"><div class="p-4 md:p-5"><h3 class="text-lg font-bold text-gray-800 dark:text-white">${serverRenderer.exports.ssrInterpolate(__props.team.name)}</h3><p class="mt-1 text-gray-800 dark:text-gray-400">${serverRenderer.exports.ssrInterpolate(__props.team.locationName)} <br></p>`);
       _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, {
         class: "mt-3 py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800",
@@ -19367,7 +19404,7 @@ const _sfc_main$F = {
       ]
     });
     return (_ctx, _push, _parent, _attrs) => {
-      const _component_NuxtLink = __nuxt_component_0$4;
+      const _component_NuxtLink = __nuxt_component_2$1;
       _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "font-sans antialiased bg-white dark:bg-black text-black dark:text-white grid min-h-screen place-content-center overflow-hidden" }, _attrs))} data-v-011aae6d><div class="fixed left-0 right-0 spotlight z-10" data-v-011aae6d></div><div class="max-w-520px text-center z-20" data-v-011aae6d><h1 class="text-8xl sm:text-10xl font-medium mb-8" data-v-011aae6d>${serverRenderer.exports.ssrInterpolate(__props.statusCode)}</h1><p class="text-xl px-8 sm:px-0 sm:text-4xl font-light mb-16 leading-tight" data-v-011aae6d>${serverRenderer.exports.ssrInterpolate(__props.description)}</p><div class="w-full flex items-center justify-center" data-v-011aae6d>`);
       _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, {
         to: "/",
@@ -19541,9 +19578,9 @@ const _sfc_main$z = /* @__PURE__ */ vue_cjs_prod.defineComponent({
   setup(__props) {
     const user = useState("user");
     return (_ctx, _push, _parent, _attrs) => {
-      const _component_NuxtLink = __nuxt_component_0$4;
+      const _component_NuxtLink = __nuxt_component_2$1;
       const _component_User = _sfc_main$A;
-      const _component_nuxt_link = __nuxt_component_0$4;
+      const _component_nuxt_link = __nuxt_component_2$1;
       _push(`<header${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "site-header" }, _attrs))} data-v-95d2422a><div class="wrapper" data-v-95d2422a>`);
       _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, {
         to: "/",
@@ -19904,7 +19941,7 @@ const _sfc_main$w = /* @__PURE__ */ vue_cjs_prod.defineComponent({
   },
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
-      const _component_NuxtLink = __nuxt_component_0$4;
+      const _component_NuxtLink = __nuxt_component_2$1;
       _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, vue_cjs_prod.mergeProps({ href: __props.href }, _attrs), {
         default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
@@ -20040,7 +20077,7 @@ const _sfc_main$q = /* @__PURE__ */ vue_cjs_prod.defineComponent({
   },
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
-      const _component_NuxtLink = __nuxt_component_0$4;
+      const _component_NuxtLink = __nuxt_component_2$1;
       _push(`<h2${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ id: __props.id }, _attrs))}>`);
       _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, {
         href: `#${__props.id}`
@@ -20078,7 +20115,7 @@ const _sfc_main$p = /* @__PURE__ */ vue_cjs_prod.defineComponent({
   },
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
-      const _component_NuxtLink = __nuxt_component_0$4;
+      const _component_NuxtLink = __nuxt_component_2$1;
       _push(`<h3${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ id: __props.id }, _attrs))}>`);
       _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, {
         href: `#${__props.id}`
@@ -20116,7 +20153,7 @@ const _sfc_main$o = /* @__PURE__ */ vue_cjs_prod.defineComponent({
   },
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
-      const _component_NuxtLink = __nuxt_component_0$4;
+      const _component_NuxtLink = __nuxt_component_2$1;
       _push(`<h4${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ id: __props.id }, _attrs))}>`);
       _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, {
         href: `#${__props.id}`
@@ -20454,10 +20491,10 @@ const _sfc_main$8 = {
     return (_ctx, _push, _parent, _attrs) => {
       const _component_Head = vue_cjs_prod.resolveComponent("Head");
       const _component_Script = vue_cjs_prod.resolveComponent("Script");
-      const _component_Toc = __nuxt_component_0$3;
+      const _component_Toc = __nuxt_component_0$4;
       const _component_ContentRenderer = __nuxt_component_1$1;
       const _component_MarkdownRenderer = __nuxt_component_2;
-      const _component_Form = _sfc_main$Q;
+      const _component_Form = _sfc_main$R;
       const _component_PrevNext = __nuxt_component_4;
       _push(`<main${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({
         id: "main",
@@ -20560,9 +20597,9 @@ const _sfc_main$7 = {
     return (_ctx, _push, _parent, _attrs) => {
       const _component_Head = vue_cjs_prod.resolveComponent("Head");
       const _component_Script = vue_cjs_prod.resolveComponent("Script");
-      const _component_Tags = __nuxt_component_0$2;
+      const _component_Tags = __nuxt_component_0$3;
       const _component_ContentList = __nuxt_component_1;
-      const _component_NuxtLink = __nuxt_component_0$4;
+      const _component_NuxtLink = __nuxt_component_2$1;
       _push(`<main${serverRenderer.exports.ssrRenderAttrs(_attrs)}>`);
       _push(serverRenderer.exports.ssrRenderComponent(_component_Head, null, {
         default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
@@ -20725,9 +20762,9 @@ const _sfc_main$6 = {
       meta: [{ name: "description", content: "Featured articles" }]
     });
     return (_ctx, _push, _parent, _attrs) => {
-      const _component_Tags = __nuxt_component_0$2;
+      const _component_Tags = __nuxt_component_0$3;
       const _component_ContentList = __nuxt_component_1;
-      const _component_NuxtLink = __nuxt_component_0$4;
+      const _component_NuxtLink = __nuxt_component_2$1;
       _push(`<main${serverRenderer.exports.ssrRenderAttrs(_attrs)}><header class="page-heading"><div class="wrapper"><h1 class="text-5xl font-extrabold">All articles with &quot;${serverRenderer.exports.ssrInterpolate(vue_cjs_prod.unref(slug))}&quot;</h1><p class="font-medium text-lg">List of articles</p></div></header><section class="page-section">`);
       _push(serverRenderer.exports.ssrRenderComponent(_component_Tags, null, null, _parent));
       _push(serverRenderer.exports.ssrRenderComponent(_component_ContentList, {
@@ -20895,21 +20932,21 @@ const _sfc_main$5 = {};
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
   const _component_Head = vue_cjs_prod.resolveComponent("Head");
   const _component_Script = vue_cjs_prod.resolveComponent("Script");
-  const _component_NuxtLink = __nuxt_component_0$4;
-  _push(`<main${serverRenderer.exports.ssrRenderAttrs(_attrs)} data-v-66bde040>`);
+  const _component_Header = __nuxt_component_0$2;
+  _push(`<main${serverRenderer.exports.ssrRenderAttrs(_attrs)}>`);
   _push(serverRenderer.exports.ssrRenderComponent(_component_Head, null, {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
         _push2(serverRenderer.exports.ssrRenderComponent(_component_Script, {
           defer: "",
-          "data-domain": "rotorink.vercel.app",
+          "data-domain": "rotorink.com",
           src: "https://plausible.io/js/plausible.js"
         }, null, _parent2, _scopeId));
       } else {
         return [
           vue_cjs_prod.createVNode(_component_Script, {
             defer: "",
-            "data-domain": "rotorink.vercel.app",
+            "data-domain": "rotorink.com",
             src: "https://plausible.io/js/plausible.js"
           })
         ];
@@ -20917,33 +20954,9 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
     }),
     _: 1
   }, _parent));
-  _push(`<section class="hero-section" data-v-66bde040><header data-v-66bde040><h1 class="font-black text-6xl" data-v-66bde040>Welcome to rotorink</h1><span class="text-4xl" data-v-66bde040> \u{1F3D2} </span><p data-v-66bde040>browse the`);
-  _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, { to: "/blog" }, {
-    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(` daily fantasy hockey and props content`);
-      } else {
-        return [
-          vue_cjs_prod.createTextVNode(" daily fantasy hockey and props content")
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-  _push(`</p><p data-v-66bde040>and sign up or login to</p><p data-v-66bde040>`);
-  _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, { to: "/teams" }, {
-    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(`like and comment on your favorite players for the day`);
-      } else {
-        return [
-          vue_cjs_prod.createTextVNode("like and comment on your favorite players for the day")
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-  _push(`</p></header></section></main>`);
+  _push(`<section>`);
+  _push(serverRenderer.exports.ssrRenderComponent(_component_Header, null, null, _parent));
+  _push(`</section></main>`);
 }
 const _sfc_setup$5 = _sfc_main$5.setup;
 _sfc_main$5.setup = (props, ctx) => {
@@ -20951,7 +20964,7 @@ _sfc_main$5.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/index.vue");
   return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
 };
-const index$2 = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-66bde040"]]);
+const index$2 = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender]]);
 const index$3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": index$2

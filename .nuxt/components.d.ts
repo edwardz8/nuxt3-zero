@@ -4,6 +4,7 @@ declare module 'vue' {
     'InfoBox': typeof import("../components/content/InfoBox.vue")['default'],
     'Comments': typeof import("../components/Comments.vue")['default'],
     'Form': typeof import("../components/Form.vue")['default'],
+    'Header': typeof import("../components/Header.vue")['default'],
     'OffCanvas': typeof import("../components/OffCanvas.vue")['default'],
     'PlayerCard': typeof import("../components/PlayerCard.vue")['default'],
     'PolarChartArea': typeof import("../components/PolarChartArea.ts")['default'],
@@ -53,6 +54,7 @@ declare module 'vue' {
     'LazyInfoBox': typeof import("../components/content/InfoBox.vue")['default'],
     'LazyComments': typeof import("../components/Comments.vue")['default'],
     'LazyForm': typeof import("../components/Form.vue")['default'],
+    'LazyHeader': typeof import("../components/Header.vue")['default'],
     'LazyOffCanvas': typeof import("../components/OffCanvas.vue")['default'],
     'LazyPlayerCard': typeof import("../components/PlayerCard.vue")['default'],
     'LazyPolarChartArea': typeof import("../components/PolarChartArea.ts")['default'],
@@ -104,6 +106,7 @@ declare module 'vue' {
 export const InfoBox: typeof import("../components/content/InfoBox.vue")['default']
 export const Comments: typeof import("../components/Comments.vue")['default']
 export const Form: typeof import("../components/Form.vue")['default']
+export const Header: typeof import("../components/Header.vue")['default']
 export const OffCanvas: typeof import("../components/OffCanvas.vue")['default']
 export const PlayerCard: typeof import("../components/PlayerCard.vue")['default']
 export const PolarChartArea: typeof import("../components/PolarChartArea.ts")['default']
@@ -153,6 +156,7 @@ export const NuxtLink: typeof import("../node_modules/nuxt/dist/app/components/n
 export const LazyInfoBox: typeof import("../components/content/InfoBox.vue")['default']
 export const LazyComments: typeof import("../components/Comments.vue")['default']
 export const LazyForm: typeof import("../components/Form.vue")['default']
+export const LazyHeader: typeof import("../components/Header.vue")['default']
 export const LazyOffCanvas: typeof import("../components/OffCanvas.vue")['default']
 export const LazyPlayerCard: typeof import("../components/PlayerCard.vue")['default']
 export const LazyPolarChartArea: typeof import("../components/PolarChartArea.ts")['default']
