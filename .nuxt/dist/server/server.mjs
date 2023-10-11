@@ -6071,18 +6071,6 @@ async function getPlayerComments(playerId) {
   const comment = await $fetch("/api/comment/getComments?playerId=" + playerId, { method: "GET" });
   return comment;
 }
-const useAuthCookie = () => useCookie("auth_token");
-async function useUser() {
-  const authCookie = useAuthCookie().value;
-  const user = useState("user");
-  if (authCookie && !user.value) {
-    const { data } = await useFetch(`/api/auth/getByAuthToken`, {
-      headers: useRequestHeaders(["cookie"])
-    });
-    user.value = data.value;
-  }
-  return user.value;
-}
 async function getUserLikes(playerId) {
   const like = await $fetch("/api/like/getLikes?playerId=" + playerId, { method: "GET" });
   return like;
@@ -6094,6 +6082,18 @@ async function addUserLike({ playerId, userId }) {
 async function removeUserLike(likeId) {
   const res = await $fetch("/api/like/deleteLike?likeId=" + likeId, { method: "GET" });
   return res;
+}
+const useAuthCookie = () => useCookie("auth_token");
+async function useUser() {
+  const authCookie = useAuthCookie().value;
+  const user = useState("user");
+  if (authCookie && !user.value) {
+    const { data } = await useFetch(`/api/auth/getByAuthToken`, {
+      headers: useRequestHeaders(["cookie"])
+    });
+    user.value = data.value;
+  }
+  return user.value;
 }
 const fetchContentNavigation = (queryBuilder) => {
   let params = queryBuilder;
