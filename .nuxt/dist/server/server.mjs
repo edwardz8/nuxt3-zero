@@ -6067,6 +6067,10 @@ _sfc_main$P.setup = (props, ctx) => {
   return _sfc_setup$P ? _sfc_setup$P(props, ctx) : void 0;
 };
 const __nuxt_component_0$3 = /* @__PURE__ */ _export_sfc(_sfc_main$P, [["__scopeId", "data-v-303e9351"]]);
+async function getPlayerComments(playerId) {
+  const comment = await $fetch("/api/comment/getComments?playerId=" + playerId, { method: "GET" });
+  return comment;
+}
 const useAuthCookie = () => useCookie("auth_token");
 async function useUser() {
   const authCookie = useAuthCookie().value;
@@ -6078,10 +6082,6 @@ async function useUser() {
     user.value = data.value;
   }
   return user.value;
-}
-async function getPlayerComments(playerId) {
-  const comment = await $fetch("/api/comment/getComments?playerId=" + playerId, { method: "GET" });
-  return comment;
 }
 async function getUserLikes(playerId) {
   const like = await $fetch("/api/like/getLikes?playerId=" + playerId, { method: "GET" });
@@ -6321,10 +6321,10 @@ function _sfc_ssrRender$k(_ctx, _push, _parent, _attrs) {
   _push(ssrRenderComponent(_component_NuxtLink, { to: "/teams" }, {
     default: withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
-        _push2(`<button class="rounded-md shadow w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-500 hover:bg-blue-500"${_scopeId}> Player Stats </button>`);
+        _push2(`<button class="rounded-md shadow w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-500 hover:bg-blue-500"${_scopeId}> Stats </button>`);
       } else {
         return [
-          createVNode("button", { class: "rounded-md shadow w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-500 hover:bg-blue-500" }, " Player Stats ")
+          createVNode("button", { class: "rounded-md shadow w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-500 hover:bg-blue-500" }, " Stats ")
         ];
       }
     }),

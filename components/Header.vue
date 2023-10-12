@@ -28,7 +28,7 @@
             <div class="mt-5 flex">
               <NuxtLink to="/teams">
                   <button class="rounded-md shadow w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-500 hover:bg-blue-500">
-                    Player Stats
+                    Stats
                   </button>
             </NuxtLink>
               <NuxtLink to="/blog">
