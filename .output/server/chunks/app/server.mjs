@@ -4691,7 +4691,7 @@ const _export_sfc = (sfc, props) => {
   }
   return target;
 };
-const _sfc_main$S = {
+const _sfc_main$T = {
   __name: "Toc",
   __ssrInlineRender: true,
   props: ["links"],
@@ -4717,13 +4717,13 @@ const _sfc_main$S = {
     };
   }
 };
-const _sfc_setup$S = _sfc_main$S.setup;
-_sfc_main$S.setup = (props, ctx) => {
+const _sfc_setup$T = _sfc_main$T.setup;
+_sfc_main$T.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Toc.vue");
-  return _sfc_setup$S ? _sfc_setup$S(props, ctx) : void 0;
+  return _sfc_setup$T ? _sfc_setup$T(props, ctx) : void 0;
 };
-const __nuxt_component_0$4 = /* @__PURE__ */ _export_sfc(_sfc_main$S, [["__scopeId", "data-v-6f21b509"]]);
+const __nuxt_component_0$5 = /* @__PURE__ */ _export_sfc(_sfc_main$T, [["__scopeId", "data-v-6f21b509"]]);
 function isUppercase(char = "") {
   return char.toUpperCase() === char;
 }
@@ -6072,7 +6072,7 @@ const ContentRenderer = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.def
   __proto__: null,
   "default": __nuxt_component_1$1
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$R = {
+const _sfc_main$S = {
   __name: "Form",
   __ssrInlineRender: true,
   setup(__props) {
@@ -6084,13 +6084,13 @@ const _sfc_main$R = {
     };
   }
 };
-const _sfc_setup$R = _sfc_main$R.setup;
-_sfc_main$R.setup = (props, ctx) => {
+const _sfc_setup$S = _sfc_main$S.setup;
+_sfc_main$S.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Form.vue");
-  return _sfc_setup$R ? _sfc_setup$R(props, ctx) : void 0;
+  return _sfc_setup$S ? _sfc_setup$S(props, ctx) : void 0;
 };
-const _sfc_main$Q = {
+const _sfc_main$R = {
   __name: "PrevNext",
   __ssrInlineRender: true,
   props: ["prev", "next"],
@@ -6143,13 +6143,13 @@ const _sfc_main$Q = {
     };
   }
 };
-const _sfc_setup$Q = _sfc_main$Q.setup;
-_sfc_main$Q.setup = (props, ctx) => {
+const _sfc_setup$R = _sfc_main$R.setup;
+_sfc_main$R.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/PrevNext.vue");
-  return _sfc_setup$Q ? _sfc_setup$Q(props, ctx) : void 0;
+  return _sfc_setup$R ? _sfc_setup$R(props, ctx) : void 0;
 };
-const __nuxt_component_4 = /* @__PURE__ */ _export_sfc(_sfc_main$Q, [["__scopeId", "data-v-4d02dcb6"]]);
+const __nuxt_component_4 = /* @__PURE__ */ _export_sfc(_sfc_main$R, [["__scopeId", "data-v-4d02dcb6"]]);
 const ensureArray = (value) => Array.isArray(value) ? value : value ? [value] : [];
 const arrayParams = ["sort", "where", "only", "without"];
 const createQuery = (fetcher, intitialParams) => {
@@ -6298,7 +6298,7 @@ function queryContent(query, ...pathParts) {
   return createQuery(createQueryFetch(), query);
 }
 const meta$8 = void 0;
-const _sfc_main$P = {
+const _sfc_main$Q = {
   __name: "Tags",
   __ssrInlineRender: true,
   async setup(__props) {
@@ -6350,28 +6350,16 @@ const _sfc_main$P = {
     };
   }
 };
-const _sfc_setup$P = _sfc_main$P.setup;
-_sfc_main$P.setup = (props, ctx) => {
+const _sfc_setup$Q = _sfc_main$Q.setup;
+_sfc_main$Q.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Tags.vue");
-  return _sfc_setup$P ? _sfc_setup$P(props, ctx) : void 0;
+  return _sfc_setup$Q ? _sfc_setup$Q(props, ctx) : void 0;
 };
-const __nuxt_component_0$3 = /* @__PURE__ */ _export_sfc(_sfc_main$P, [["__scopeId", "data-v-303e9351"]]);
+const __nuxt_component_0$4 = /* @__PURE__ */ _export_sfc(_sfc_main$Q, [["__scopeId", "data-v-303e9351"]]);
 async function getPlayerComments(playerId) {
   const comment = await $fetch("/api/comment/getComments?playerId=" + playerId, { method: "GET" });
   return comment;
-}
-const useAuthCookie = () => useCookie("auth_token");
-async function useUser() {
-  const authCookie = useAuthCookie().value;
-  const user = useState("user");
-  if (authCookie && !user.value) {
-    const { data } = await useFetch(`/api/auth/getByAuthToken`, {
-      headers: useRequestHeaders(["cookie"])
-    });
-    user.value = data.value;
-  }
-  return user.value;
 }
 async function getUserLikes(playerId) {
   const like = await $fetch("/api/like/getLikes?playerId=" + playerId, { method: "GET" });
@@ -6384,6 +6372,18 @@ async function addUserLike({ playerId, userId }) {
 async function removeUserLike(likeId) {
   const res = await $fetch("/api/like/deleteLike?likeId=" + likeId, { method: "GET" });
   return res;
+}
+const useAuthCookie = () => useCookie("auth_token");
+async function useUser() {
+  const authCookie = useAuthCookie().value;
+  const user = useState("user");
+  if (authCookie && !user.value) {
+    const { data } = await useFetch(`/api/auth/getByAuthToken`, {
+      headers: useRequestHeaders(["cookie"])
+    });
+    user.value = data.value;
+  }
+  return user.value;
 }
 const fetchContentNavigation = (queryBuilder) => {
   let params = queryBuilder;
@@ -6602,9 +6602,9 @@ const meta$7 = {
   key: (route) => route.fullPath
 };
 const meta$6 = void 0;
-const _imports_0$1 = publicAssetsURL(`img/hockeyphone.png`);
-const _sfc_main$O = {};
-function _sfc_ssrRender$k(_ctx, _push, _parent, _attrs) {
+const _imports_0$2 = publicAssetsURL(`img/hockeyphone.png`);
+const _sfc_main$P = {};
+function _sfc_ssrRender$l(_ctx, _push, _parent, _attrs) {
   const _component_NuxtLink = __nuxt_component_2$1;
   _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "p-20 h-screen w-screen flex flex-col-reverse md:flex-row items-center justify-center" }, _attrs))}><div class="content text-3xl text-center md:text-left"><main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-4 sm:px-6 md:mt-16 lg:mt-10 lg:px-4 xl:mt-8"><div class="sm:text-center lg:text-left"><h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl"><span class="block xl:inline">rotorink</span><span class="block text-red-600 xl:inline"> stats and stories</span></h1><p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"> Welcome to the home of hockey dfs news, lineup and props content. </p><div class="mt-5 flex">`);
   _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, { to: "/teams" }, {
@@ -6631,16 +6631,48 @@ function _sfc_ssrRender$k(_ctx, _push, _parent, _attrs) {
     }),
     _: 1
   }, _parent));
-  _push(`</div></div></main></div><div class="container mx-auto flex flex-col items-center"><div class="w-full"><img${serverRenderer.exports.ssrRenderAttr("src", _imports_0$1)} alt=""></div></div></div>`);
+  _push(`</div></div></main></div><div class="container mx-auto flex flex-col items-center"><div class="w-full"><img${serverRenderer.exports.ssrRenderAttr("src", _imports_0$2)} alt=""></div></div></div>`);
+}
+const _sfc_setup$P = _sfc_main$P.setup;
+_sfc_main$P.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Header.vue");
+  return _sfc_setup$P ? _sfc_setup$P(props, ctx) : void 0;
+};
+const __nuxt_component_0$3 = /* @__PURE__ */ _export_sfc(_sfc_main$P, [["ssrRender", _sfc_ssrRender$l]]);
+const meta$5 = void 0;
+const _imports_0$1 = publicAssetsURL(`img//UFOBag.svg`);
+const _imports_1 = publicAssetsURL(`img/Connor_Mcdavid.svg`);
+const _imports_2 = publicAssetsURL(`img/PlumbersJersey.svg`);
+const _imports_3 = publicAssetsURL(`img/Skates-Retro-Pink-2.svg`);
+const _sfc_main$O = {
+  data() {
+    return {
+      features: [
+        { name: "Daily Fantasy Lineups", description: "DFS and Season-long top plays \u{1F4F1}" },
+        { name: "Parlays", description: "Stringing together high-percentage combos for \u{1F4B0}" },
+        { name: "Player & Team Props", description: "Goalscorers and Shots on Goal props and parlays \u26F8\uFE0F" },
+        { name: "Prospects", description: "Keep up with future stars \u{1F3D2} (Coming soon)" },
+        { name: "Featured Hockey Plays", description: "Plays from the Sports top hockey contributors  \u{1F945}" },
+        { name: "Player News", description: "Trending player updates \u{1F4BB}" }
+      ]
+    };
+  }
+};
+function _sfc_ssrRender$k(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-white" }, _attrs))}><div class="max-w-2xl mx-auto py-24 px-4 grid items-center grid-cols-1 gap-y-16 gap-x-8 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8 lg:grid-cols-2"><div><h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Features</h2><p class="mt-4 text-gray-500">Prosper in your fantasy leagues and apps with articles on betting, lineup and season-long fantasy advice.</p><dl class="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8"><!--[-->`);
+  serverRenderer.exports.ssrRenderList($data.features, (feature) => {
+    _push(`<div class="border-t border-gray-200 pt-4"><dt class="font-medium text-gray-900">${serverRenderer.exports.ssrInterpolate(feature.name)}</dt><dd class="mt-2 text-sm text-gray-500">${serverRenderer.exports.ssrInterpolate(feature.description)}</dd></div>`);
+  });
+  _push(`<!--]--></dl></div><div class="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8"><img${serverRenderer.exports.ssrRenderAttr("src", _imports_0$1)} alt="hockey" class="bg-gray-100 rounded-lg"><img${serverRenderer.exports.ssrRenderAttr("src", _imports_1)} alt="hockey" class="bg-gray-100 rounded-lg"><img${serverRenderer.exports.ssrRenderAttr("src", _imports_2)} alt="hockey" class="bg-gray-100 rounded-lg"><img${serverRenderer.exports.ssrRenderAttr("src", _imports_3)} alt="hockey" class="bg-gray-100 rounded-lg"></div></div></div>`);
 }
 const _sfc_setup$O = _sfc_main$O.setup;
 _sfc_main$O.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Header.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Features.vue");
   return _sfc_setup$O ? _sfc_setup$O(props, ctx) : void 0;
 };
 const __nuxt_component_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$O, [["ssrRender", _sfc_ssrRender$k]]);
-const meta$5 = void 0;
 const _sfc_main$N = /* @__PURE__ */ vue_cjs_prod.defineComponent({
   __name: "login",
   __ssrInlineRender: true,
@@ -6650,7 +6682,8 @@ const _sfc_main$N = /* @__PURE__ */ vue_cjs_prod.defineComponent({
     const hasError = reactivity.exports.ref(null);
     const errorMessage = reactivity.exports.ref(null);
     return (_ctx, _push, _parent, _attrs) => {
-      _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "h-screen bg-gradient-to-b from-white to-blue-200" }, _attrs))}><div class="flex items-center justify-center px-4 sm:px-6 lg:px-8"><div class="max-w-md w-full space-y-8"><div><div class="h-25 w-25"></div><div class="flex"><img class="mx-auto h-24 w-auto"${serverRenderer.exports.ssrRenderAttr("src", _imports_0$1)} alt="rotorink logo"><h1 class="py-9 text-center text-3xl font-extrabold text-gray-900"> rotorink </h1></div><h2 class="mt-6 py-9 text-center text-3xl font-extrabold text-gray-900"> Sign in </h2></div>`);
+      const _component_Features = __nuxt_component_0$2;
+      _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "h-screen" }, _attrs))}><div class="flex items-center justify-center px-4 sm:px-6 lg:px-8"><div class="max-w-md w-full space-y-8"><div><div class="h-25 w-25"></div><div class="flex"><img class="mx-auto h-24 w-auto"${serverRenderer.exports.ssrRenderAttr("src", _imports_0$2)} alt="rotorink logo"></div><h2 class="mt-6 py-9 text-center text-3xl font-extrabold text-gray-900"> Sign in </h2></div>`);
       if (hasError.value) {
         _push(`<div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert"><strong class="font-bold">Oops, try again! </strong><span class="block sm:inline">${serverRenderer.exports.ssrInterpolate(errorMessage.value)}</span><span class="absolute top-0 bottom-0 right-0 px-4 py-3"><svg class="fill-current h-6 w-6 text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Close</title><path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"></path></svg></span></div>`);
       } else {
@@ -6659,7 +6692,9 @@ const _sfc_main$N = /* @__PURE__ */ vue_cjs_prod.defineComponent({
       {
         _push(`<form class="mt-8 space-y-6" action="#" method="POST"><input type="hidden" name="remember" value="true"><div class="rounded-md shadow-sm -space-y-px mb-1"><div><label for="email-address" class="sr-only">Email address</label><input${serverRenderer.exports.ssrRenderAttr("value", email.value)} id="email-address" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-gray-500 focus:border-gray-500 focus:z-10 sm:text-sm" placeholder="Email address"></div></div><div><label for="password" class="sr-only">Password</label><input${serverRenderer.exports.ssrRenderAttr("value", password.value)} id="password" name="password" type="password" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-gray-500 focus:border-gray-500 focus:z-10 sm:text-sm" placeholder="Password"></div><div class="flex items-center justify-between"><div class="flex items-center"><input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-gray-600 focus:ring-gray-500 border-gray-300 rounded"><label for="remember-me" class="ml-2 block text-sm text-gray-900"> Remember me </label></div><div class="text-sm"><a href="#" class="font-medium text-gray-600 hover:text-gray-500"> Forgot your password? </a></div></div><div><button class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"><span class="absolute left-0 inset-y-0 flex items-center pl-3"><svg class="h-5 w-5 text-gray-500 group-hover:text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg></span> Sign in </button></div></form>`);
       }
-      _push(`</div></div></div>`);
+      _push(`</div></div>`);
+      _push(serverRenderer.exports.ssrRenderComponent(_component_Features, null, null, _parent));
+      _push(`</div>`);
     };
   }
 });
@@ -6683,7 +6718,8 @@ const _sfc_main$M = /* @__PURE__ */ vue_cjs_prod.defineComponent({
     const errors = reactivity.exports.ref(/* @__PURE__ */ new Map());
     let response = reactivity.exports.ref({ hasErrors: false });
     return (_ctx, _push, _parent, _attrs) => {
-      _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "h-screen" }, _attrs))}><div class="flex items-center justify-center px-4 sm:px-6 lg:px-8"><div class="max-w-md w-full"><div class="flex"><img class="mx-auto h-24 w-auto"${serverRenderer.exports.ssrRenderAttr("src", _imports_0$1)} alt="rotorink logo"><h1 class="py-9 text-center text-3xl font-extrabold text-gray-900"> rotorink </h1></div><div><h2 class="text-center text-3xl font-extrabold mt-5 text-gray-900">Sign Up</h2></div>`);
+      const _component_Features = __nuxt_component_0$2;
+      _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "h-screen" }, _attrs))}><div class="flex items-center justify-center px-4 sm:px-6 lg:px-8"><div class="max-w-md w-full"><div class="flex"><img class="mx-auto h-24 w-auto"${serverRenderer.exports.ssrRenderAttr("src", _imports_0$2)} alt="rotorink logo"></div><div><h2 class="text-center text-3xl font-extrabold mt-5 text-gray-900">Sign Up</h2></div>`);
       if (vue_cjs_prod.unref(response).hasErrors && errors.value) {
         _push(`<div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mt-3" role="alert"><strong class="font-bold">Oops, try again! </strong><ul class="block sm:inline"><!--[-->`);
         serverRenderer.exports.ssrRenderList(errors.value, ([key, value]) => {
@@ -6693,7 +6729,9 @@ const _sfc_main$M = /* @__PURE__ */ vue_cjs_prod.defineComponent({
       } else {
         _push(`<!---->`);
       }
-      _push(`<form class="mt-8 space-y-6" action="#" method="POST"><input type="hidden" name="remember" value="true"><div class="rounded-md shadow-sm -space-y-px mb-1"><div><label for="name" class="sr-only">name</label><input${serverRenderer.exports.ssrRenderAttr("value", name.value)} id="name" name="name" required class="${serverRenderer.exports.ssrRenderClass([errors.value.has("name") ? " border-red-500" : "", "appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-gray-500 focus:border-gray-500 focus:z-10 sm:text-sm"])}" placeholder="name"></div></div><div class="rounded-md shadow-sm -space-y-px mb-1"><div><label for="email-address" class="sr-only">username</label><input type="email"${serverRenderer.exports.ssrRenderAttr("value", username.value)} id="username" name="username" required class="${serverRenderer.exports.ssrRenderClass([errors.value.has("username") ? " border-red-500" : "", "appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-gray-500 focus:border-gray-500 focus:z-10 sm:text-sm"])}" placeholder="username"></div></div><div class="rounded-md shadow-sm -space-y-px mb-1"><div><label for="email-address" class="sr-only">email</label><input${serverRenderer.exports.ssrRenderAttr("value", email.value)} id="email-address" name="email" type="email" autocomplete="email" required class="${serverRenderer.exports.ssrRenderClass([errors.value.has("email") ? " border-red-500" : "", "appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-gray-500 focus:border-gray-500 focus:z-10 sm:text-sm"])}" placeholder="email address"></div></div><div><label for="password" class="sr-only">password</label><input${serverRenderer.exports.ssrRenderAttr("value", password.value)} id="password" name="password" type="password" autocomplete="current-password" required class="${serverRenderer.exports.ssrRenderClass([errors.value.has("password") ? " border-red-500" : "", "appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-gray-500 focus:border-gray-500 focus:z-10 sm:text-sm"])}" placeholder="password"></div><div class="flex items-center justify-between"><div class="text-sm"><a href="#" class="font-medium text-gray-600 hover:text-gray-500"> Forgot your password? </a></div></div></form><button class="mt-5 group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-gray-700 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"><span class="absolute left-0 inset-y-0 flex items-center pl-3"><svg class="h-5 w-5 text-gray-500 group-hover:text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg></span> register </button></div></div></div>`);
+      _push(`<form class="mt-8 space-y-6" action="#" method="POST"><input type="hidden" name="remember" value="true"><div class="rounded-md shadow-sm -space-y-px mb-1"><div><label for="name" class="sr-only">name</label><input${serverRenderer.exports.ssrRenderAttr("value", name.value)} id="name" name="name" required class="${serverRenderer.exports.ssrRenderClass([errors.value.has("name") ? " border-red-500" : "", "appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-gray-500 focus:border-gray-500 focus:z-10 sm:text-sm"])}" placeholder="name"></div></div><div class="rounded-md shadow-sm -space-y-px mb-1"><div><label for="email-address" class="sr-only">username</label><input type="email"${serverRenderer.exports.ssrRenderAttr("value", username.value)} id="username" name="username" required class="${serverRenderer.exports.ssrRenderClass([errors.value.has("username") ? " border-red-500" : "", "appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-gray-500 focus:border-gray-500 focus:z-10 sm:text-sm"])}" placeholder="username"></div></div><div class="rounded-md shadow-sm -space-y-px mb-1"><div><label for="email-address" class="sr-only">email</label><input${serverRenderer.exports.ssrRenderAttr("value", email.value)} id="email-address" name="email" type="email" autocomplete="email" required class="${serverRenderer.exports.ssrRenderClass([errors.value.has("email") ? " border-red-500" : "", "appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-gray-500 focus:border-gray-500 focus:z-10 sm:text-sm"])}" placeholder="email address"></div></div><div><label for="password" class="sr-only">password</label><input${serverRenderer.exports.ssrRenderAttr("value", password.value)} id="password" name="password" type="password" autocomplete="current-password" required class="${serverRenderer.exports.ssrRenderClass([errors.value.has("password") ? " border-red-500" : "", "appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-gray-500 focus:border-gray-500 focus:z-10 sm:text-sm"])}" placeholder="password"></div><div class="flex items-center justify-between"><div class="text-sm"><a href="#" class="font-medium text-gray-600 hover:text-gray-500"> Forgot your password? </a></div></div></form><button class="mt-5 group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-gray-700 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"><span class="absolute left-0 inset-y-0 flex items-center pl-3"><svg class="h-5 w-5 text-gray-500 group-hover:text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg></span> register </button></div></div>`);
+      _push(serverRenderer.exports.ssrRenderComponent(_component_Features, null, null, _parent));
+      _push(`</div>`);
     };
   }
 });
@@ -20491,10 +20529,10 @@ const _sfc_main$8 = {
     return (_ctx, _push, _parent, _attrs) => {
       const _component_Head = vue_cjs_prod.resolveComponent("Head");
       const _component_Script = vue_cjs_prod.resolveComponent("Script");
-      const _component_Toc = __nuxt_component_0$4;
+      const _component_Toc = __nuxt_component_0$5;
       const _component_ContentRenderer = __nuxt_component_1$1;
       const _component_MarkdownRenderer = __nuxt_component_2;
-      const _component_Form = _sfc_main$R;
+      const _component_Form = _sfc_main$S;
       const _component_PrevNext = __nuxt_component_4;
       _push(`<main${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({
         id: "main",
@@ -20597,7 +20635,7 @@ const _sfc_main$7 = {
     return (_ctx, _push, _parent, _attrs) => {
       const _component_Head = vue_cjs_prod.resolveComponent("Head");
       const _component_Script = vue_cjs_prod.resolveComponent("Script");
-      const _component_Tags = __nuxt_component_0$3;
+      const _component_Tags = __nuxt_component_0$4;
       const _component_ContentList = __nuxt_component_1;
       const _component_NuxtLink = __nuxt_component_2$1;
       _push(`<main${serverRenderer.exports.ssrRenderAttrs(_attrs)}>`);
@@ -20762,7 +20800,7 @@ const _sfc_main$6 = {
       meta: [{ name: "description", content: "Featured articles" }]
     });
     return (_ctx, _push, _parent, _attrs) => {
-      const _component_Tags = __nuxt_component_0$3;
+      const _component_Tags = __nuxt_component_0$4;
       const _component_ContentList = __nuxt_component_1;
       const _component_NuxtLink = __nuxt_component_2$1;
       _push(`<main${serverRenderer.exports.ssrRenderAttrs(_attrs)}><header class="page-heading"><div class="wrapper"><h1 class="text-5xl font-extrabold">All articles with &quot;${serverRenderer.exports.ssrInterpolate(vue_cjs_prod.unref(slug))}&quot;</h1><p class="font-medium text-lg">List of articles</p></div></header><section class="page-section">`);
@@ -20932,7 +20970,7 @@ const _sfc_main$5 = {};
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
   const _component_Head = vue_cjs_prod.resolveComponent("Head");
   const _component_Script = vue_cjs_prod.resolveComponent("Script");
-  const _component_Header = __nuxt_component_0$2;
+  const _component_Header = __nuxt_component_0$3;
   _push(`<main${serverRenderer.exports.ssrRenderAttrs(_attrs)}>`);
   _push(serverRenderer.exports.ssrRenderComponent(_component_Head, null, {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
@@ -20978,7 +21016,8 @@ const _sfc_main$4 = /* @__PURE__ */ vue_cjs_prod.defineComponent({
     const hasError = reactivity.exports.ref(null);
     const errorMessage = reactivity.exports.ref(null);
     return (_ctx, _push, _parent, _attrs) => {
-      _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "h-screen bg-gradient-to-b from-white to-blue-200" }, _attrs))}><div class="flex items-center justify-center px-4 sm:px-6 lg:px-8"><div class="max-w-md w-full space-y-8"><div><div class="h-25 w-25"></div><div class="flex"><img class="mx-auto h-24 w-auto"${serverRenderer.exports.ssrRenderAttr("src", _imports_0$1)} alt="rotorink logo"><h1 class="py-9 text-center text-3xl font-extrabold text-gray-900"> rotorink </h1></div><h2 class="mt-6 py-9 text-center text-3xl font-extrabold text-gray-900"> Sign in </h2></div>`);
+      const _component_Features = __nuxt_component_0$2;
+      _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "h-screen" }, _attrs))}><div class="flex items-center justify-center px-4 sm:px-6 lg:px-8"><div class="max-w-md w-full space-y-8"><div><div class="h-25 w-25"></div><div class="flex"><img class="mx-auto h-24 w-auto"${serverRenderer.exports.ssrRenderAttr("src", _imports_0$2)} alt="rotorink logo"></div><h2 class="mt-6 py-9 text-center text-3xl font-extrabold text-gray-900"> Sign in </h2></div>`);
       if (hasError.value) {
         _push(`<div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert"><strong class="font-bold">Oops, try again! </strong><span class="block sm:inline">${serverRenderer.exports.ssrInterpolate(errorMessage.value)}</span><span class="absolute top-0 bottom-0 right-0 px-4 py-3"><svg class="fill-current h-6 w-6 text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Close</title><path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"></path></svg></span></div>`);
       } else {
@@ -20987,7 +21026,9 @@ const _sfc_main$4 = /* @__PURE__ */ vue_cjs_prod.defineComponent({
       {
         _push(`<form class="mt-8 space-y-6" action="#" method="POST"><input type="hidden" name="remember" value="true"><div class="rounded-md shadow-sm -space-y-px mb-1"><div><label for="email-address" class="sr-only">Email address</label><input${serverRenderer.exports.ssrRenderAttr("value", email.value)} id="email-address" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-gray-500 focus:border-gray-500 focus:z-10 sm:text-sm" placeholder="Email address"></div></div><div><label for="password" class="sr-only">Password</label><input${serverRenderer.exports.ssrRenderAttr("value", password.value)} id="password" name="password" type="password" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-gray-500 focus:border-gray-500 focus:z-10 sm:text-sm" placeholder="Password"></div><div class="flex items-center justify-between"><div class="flex items-center"><input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-gray-600 focus:ring-gray-500 border-gray-300 rounded"><label for="remember-me" class="ml-2 block text-sm text-gray-900"> Remember me </label></div><div class="text-sm"><a href="#" class="font-medium text-gray-600 hover:text-gray-500"> Forgot your password? </a></div></div><div><button class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"><span class="absolute left-0 inset-y-0 flex items-center pl-3"><svg class="h-5 w-5 text-gray-500 group-hover:text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg></span> Sign in </button></div></form>`);
       }
-      _push(`</div></div></div>`);
+      _push(`</div></div>`);
+      _push(serverRenderer.exports.ssrRenderComponent(_component_Features, null, null, _parent));
+      _push(`</div>`);
     };
   }
 });
@@ -21012,7 +21053,8 @@ const _sfc_main$3 = /* @__PURE__ */ vue_cjs_prod.defineComponent({
     const errors = reactivity.exports.ref(/* @__PURE__ */ new Map());
     let response = reactivity.exports.ref({ hasErrors: false });
     return (_ctx, _push, _parent, _attrs) => {
-      _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "h-screen" }, _attrs))}><div class="flex items-center justify-center px-4 sm:px-6 lg:px-8"><div class="max-w-md w-full"><div class="flex"><img class="mx-auto h-24 w-auto"${serverRenderer.exports.ssrRenderAttr("src", _imports_0$1)} alt="rotorink logo"><h1 class="py-9 text-center text-3xl font-extrabold text-gray-900"> rotorink </h1></div><div><h2 class="text-center text-3xl font-extrabold mt-5 text-gray-900">Sign Up</h2></div>`);
+      const _component_Features = __nuxt_component_0$2;
+      _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "h-screen" }, _attrs))}><div class="flex items-center justify-center px-4 sm:px-6 lg:px-8"><div class="max-w-md w-full"><div class="flex"><img class="mx-auto h-24 w-auto"${serverRenderer.exports.ssrRenderAttr("src", _imports_0$2)} alt="rotorink logo"></div><div><h2 class="text-center text-3xl font-extrabold mt-5 text-gray-900">Sign Up</h2></div>`);
       if (vue_cjs_prod.unref(response).hasErrors && errors.value) {
         _push(`<div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mt-3" role="alert"><strong class="font-bold">Oops, try again! </strong><ul class="block sm:inline"><!--[-->`);
         serverRenderer.exports.ssrRenderList(errors.value, ([key, value]) => {
@@ -21022,7 +21064,9 @@ const _sfc_main$3 = /* @__PURE__ */ vue_cjs_prod.defineComponent({
       } else {
         _push(`<!---->`);
       }
-      _push(`<form class="mt-8 space-y-6" action="#" method="POST"><input type="hidden" name="remember" value="true"><div class="rounded-md shadow-sm -space-y-px mb-1"><div><label for="name" class="sr-only">name</label><input${serverRenderer.exports.ssrRenderAttr("value", name.value)} id="name" name="name" required class="${serverRenderer.exports.ssrRenderClass([errors.value.has("name") ? " border-red-500" : "", "appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-gray-500 focus:border-gray-500 focus:z-10 sm:text-sm"])}" placeholder="name"></div></div><div class="rounded-md shadow-sm -space-y-px mb-1"><div><label for="email-address" class="sr-only">username</label><input type="email"${serverRenderer.exports.ssrRenderAttr("value", username.value)} id="username" name="username" required class="${serverRenderer.exports.ssrRenderClass([errors.value.has("username") ? " border-red-500" : "", "appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-gray-500 focus:border-gray-500 focus:z-10 sm:text-sm"])}" placeholder="username"></div></div><div class="rounded-md shadow-sm -space-y-px mb-1"><div><label for="email-address" class="sr-only">email</label><input${serverRenderer.exports.ssrRenderAttr("value", email.value)} id="email-address" name="email" type="email" autocomplete="email" required class="${serverRenderer.exports.ssrRenderClass([errors.value.has("email") ? " border-red-500" : "", "appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-gray-500 focus:border-gray-500 focus:z-10 sm:text-sm"])}" placeholder="email address"></div></div><div><label for="password" class="sr-only">password</label><input${serverRenderer.exports.ssrRenderAttr("value", password.value)} id="password" name="password" type="password" autocomplete="current-password" required class="${serverRenderer.exports.ssrRenderClass([errors.value.has("password") ? " border-red-500" : "", "appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-gray-500 focus:border-gray-500 focus:z-10 sm:text-sm"])}" placeholder="password"></div><div class="flex items-center justify-between"><div class="text-sm"><a href="#" class="font-medium text-gray-600 hover:text-gray-500"> Forgot your password? </a></div></div></form><button class="mt-5 group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-gray-700 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"><span class="absolute left-0 inset-y-0 flex items-center pl-3"><svg class="h-5 w-5 text-gray-500 group-hover:text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg></span> register </button></div></div></div>`);
+      _push(`<form class="mt-8 space-y-6" action="#" method="POST"><input type="hidden" name="remember" value="true"><div class="rounded-md shadow-sm -space-y-px mb-1"><div><label for="name" class="sr-only">name</label><input${serverRenderer.exports.ssrRenderAttr("value", name.value)} id="name" name="name" required class="${serverRenderer.exports.ssrRenderClass([errors.value.has("name") ? " border-red-500" : "", "appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-gray-500 focus:border-gray-500 focus:z-10 sm:text-sm"])}" placeholder="name"></div></div><div class="rounded-md shadow-sm -space-y-px mb-1"><div><label for="email-address" class="sr-only">username</label><input type="email"${serverRenderer.exports.ssrRenderAttr("value", username.value)} id="username" name="username" required class="${serverRenderer.exports.ssrRenderClass([errors.value.has("username") ? " border-red-500" : "", "appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-gray-500 focus:border-gray-500 focus:z-10 sm:text-sm"])}" placeholder="username"></div></div><div class="rounded-md shadow-sm -space-y-px mb-1"><div><label for="email-address" class="sr-only">email</label><input${serverRenderer.exports.ssrRenderAttr("value", email.value)} id="email-address" name="email" type="email" autocomplete="email" required class="${serverRenderer.exports.ssrRenderClass([errors.value.has("email") ? " border-red-500" : "", "appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-gray-500 focus:border-gray-500 focus:z-10 sm:text-sm"])}" placeholder="email address"></div></div><div><label for="password" class="sr-only">password</label><input${serverRenderer.exports.ssrRenderAttr("value", password.value)} id="password" name="password" type="password" autocomplete="current-password" required class="${serverRenderer.exports.ssrRenderClass([errors.value.has("password") ? " border-red-500" : "", "appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-gray-500 focus:border-gray-500 focus:z-10 sm:text-sm"])}" placeholder="password"></div><div class="flex items-center justify-between"><div class="text-sm"><a href="#" class="font-medium text-gray-600 hover:text-gray-500"> Forgot your password? </a></div></div></form><button class="mt-5 group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-gray-700 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"><span class="absolute left-0 inset-y-0 flex items-center pl-3"><svg class="h-5 w-5 text-gray-500 group-hover:text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg></span> register </button></div></div>`);
+      _push(serverRenderer.exports.ssrRenderComponent(_component_Features, null, null, _parent));
+      _push(`</div>`);
     };
   }
 });
