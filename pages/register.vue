@@ -30,9 +30,9 @@ async function postRegisterForm() {
             src="/img/hockeyphone.png"
             alt="rotorink logo"
           />
-          <h1 class="py-9 text-center text-3xl font-extrabold text-gray-900">
+          <!-- <h1 class="py-9 text-center text-3xl font-extrabold text-gray-900">
             rotorink
-          </h1>
+          </h1> -->
         </div>
         <div>
           <h2 class="text-center text-3xl font-extrabold mt-5 text-gray-900">Sign Up</h2>
@@ -144,5 +144,6 @@ async function postRegisterForm() {
         </button>
       </div>
     </div>
+    <Features />
   </div>
 </template>

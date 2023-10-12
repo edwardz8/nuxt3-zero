@@ -18,9 +18,7 @@ const postLoginForm = async function () {
 </script>
 
 <template>
-  <div
-    class="h-screen bg-gradient-to-b from-white to-blue-200"
-  >
+  <div class="h-screen">
     <div class="flex items-center justify-center px-4 sm:px-6 lg:px-8">
       <div class="max-w-md w-full space-y-8">
         <div>
@@ -31,11 +29,11 @@ const postLoginForm = async function () {
               src="/img/hockeyphone.png"
               alt="rotorink logo"
             />
-            <h1
+            <!-- <h1
               class="py-9 text-center text-3xl font-extrabold text-gray-900"
             >
               rotorink
-            </h1>
+            </h1> -->
           </div>
 
           <h2
@@ -155,5 +153,6 @@ const postLoginForm = async function () {
         </form>
       </div>
     </div>
+    <Features />
   </div>
 </template>

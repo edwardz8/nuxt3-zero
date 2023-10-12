@@ -3,6 +3,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     'InfoBox': typeof import("../components/content/InfoBox.vue")['default'],
     'Comments': typeof import("../components/Comments.vue")['default'],
+    'Features': typeof import("../components/Features.vue")['default'],
     'Form': typeof import("../components/Form.vue")['default'],
     'Header': typeof import("../components/Header.vue")['default'],
     'OffCanvas': typeof import("../components/OffCanvas.vue")['default'],
@@ -53,6 +54,7 @@ declare module 'vue' {
     'NuxtLink': typeof import("../node_modules/nuxt/dist/app/components/nuxt-link")['default']
     'LazyInfoBox': typeof import("../components/content/InfoBox.vue")['default'],
     'LazyComments': typeof import("../components/Comments.vue")['default'],
+    'LazyFeatures': typeof import("../components/Features.vue")['default'],
     'LazyForm': typeof import("../components/Form.vue")['default'],
     'LazyHeader': typeof import("../components/Header.vue")['default'],
     'LazyOffCanvas': typeof import("../components/OffCanvas.vue")['default'],
@@ -105,6 +107,7 @@ declare module 'vue' {
 }
 export const InfoBox: typeof import("../components/content/InfoBox.vue")['default']
 export const Comments: typeof import("../components/Comments.vue")['default']
+export const Features: typeof import("../components/Features.vue")['default']
 export const Form: typeof import("../components/Form.vue")['default']
 export const Header: typeof import("../components/Header.vue")['default']
 export const OffCanvas: typeof import("../components/OffCanvas.vue")['default']
@@ -155,6 +158,7 @@ export const ServerPlaceholder: typeof import("../node_modules/nuxt/dist/app/com
 export const NuxtLink: typeof import("../node_modules/nuxt/dist/app/components/nuxt-link")['default']
 export const LazyInfoBox: typeof import("../components/content/InfoBox.vue")['default']
 export const LazyComments: typeof import("../components/Comments.vue")['default']
+export const LazyFeatures: typeof import("../components/Features.vue")['default']
 export const LazyForm: typeof import("../components/Form.vue")['default']
 export const LazyHeader: typeof import("../components/Header.vue")['default']
 export const LazyOffCanvas: typeof import("../components/OffCanvas.vue")['default']
