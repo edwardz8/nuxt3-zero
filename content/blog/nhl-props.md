@@ -16,7 +16,7 @@ tags: [NHL, Props, Hockey]
 
 ##### First To Score: +1000
 
-The Calgary Flames take on the Detroit Red Wings to start off the small 2-game slate tonight. The over is set at 6.5
+The Calgary Flames take on the Detroit Red Wings to start off the small 2-game slate tonight. The over is set at 6.5.
 
 Detroit is on a back-to-back after traveling to Ottawa and dismantling the Senators, the Red Wings will look to continue their torrid start to the season.  
 
@@ -26,7 +26,7 @@ DeBrincat has 5 goals in 5 games -- he failed to score yesterday in his first ga
 
 ##### First To Score: +1000
 
-In his time with the Calgary Flames, Lindholm has 5 goals in 8 games against Detroit so if you're not comfortable with taking first goal scorer of the game, you can still get anytime scorer at plus money (+160) on DK. It's worth mentioning, Red Wings' netminder, James Reimer recorded a shutout in his first start of the season a few games back, but the Flames should get on the board at least once tonight and Lindholm has a nice matchup against the Detroit defense. The 28-year-old Swede has recorded 2 goals in 5 games and is averaging over 21 minutes of TOI. 
+In his time with the Calgary Flames, Lindholm has 5 goals in 8 games against Detroit so if you're not comfortable with taking first goal scorer of the game, you can still get anytime scorer at plus money (+160) on DK. It's worth mentioning, Red Wings' netminder, James Reimer recorded a shutout in his first start of the season a few games back, but the Flames should get on the board at least once tonight and Lindholm has a nice matchup against the Detroit defense. The 28-year-old Swede has recorded 2 goals in 5 games and is averaging over 21 minutes of TOI.
 
 ## Goalscorer Props
 
@@ -35,4 +35,3 @@ In his time with the Calgary Flames, Lindholm has 5 goals in 8 games against Det
 ##### Anytime Scorer: +175
 
 The veteran center has recorded 2 goals in 5 games (9 points) and is averaging nearly 19 minutes of TOI. Over the span of his career, Larkin has scored in 7 of 14 games against Calgary.
-

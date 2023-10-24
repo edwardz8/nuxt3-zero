@@ -6357,22 +6357,6 @@ _sfc_main$Q.setup = (props, ctx) => {
   return _sfc_setup$Q ? _sfc_setup$Q(props, ctx) : void 0;
 };
 const __nuxt_component_0$4 = /* @__PURE__ */ _export_sfc(_sfc_main$Q, [["__scopeId", "data-v-303e9351"]]);
-async function getUserLikes(playerId) {
-  const like = await $fetch("/api/like/getLikes?playerId=" + playerId, { method: "GET" });
-  return like;
-}
-async function addUserLike({ playerId, userId }) {
-  const like = await $fetch("/api/like/addLike", { method: "POST", body: { userId, playerId } });
-  return like;
-}
-async function removeUserLike(likeId) {
-  const res = await $fetch("/api/like/deleteLike?likeId=" + likeId, { method: "GET" });
-  return res;
-}
-async function getPlayerComments(playerId) {
-  const comment = await $fetch("/api/comment/getComments?playerId=" + playerId, { method: "GET" });
-  return comment;
-}
 const useAuthCookie = () => useCookie("auth_token");
 async function useUser() {
   const authCookie = useAuthCookie().value;
@@ -6384,6 +6368,22 @@ async function useUser() {
     user.value = data.value;
   }
   return user.value;
+}
+async function getPlayerComments(playerId) {
+  const comment = await $fetch("/api/comment/getComments?playerId=" + playerId, { method: "GET" });
+  return comment;
+}
+async function getUserLikes(playerId) {
+  const like = await $fetch("/api/like/getLikes?playerId=" + playerId, { method: "GET" });
+  return like;
+}
+async function addUserLike({ playerId, userId }) {
+  const like = await $fetch("/api/like/addLike", { method: "POST", body: { userId, playerId } });
+  return like;
+}
+async function removeUserLike(likeId) {
+  const res = await $fetch("/api/like/deleteLike?likeId=" + likeId, { method: "GET" });
+  return res;
 }
 const fetchContentNavigation = (queryBuilder) => {
   let params = queryBuilder;
