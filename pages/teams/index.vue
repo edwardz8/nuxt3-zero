@@ -1,5 +1,25 @@
-<script setup lang="ts">
-const { data } = await useFetch("https://statsapi.web.nhl.com/api/v1/teams");
+<script setup>
+import { useRuntimeConfig } from '#app';
+// import { useBalldontlie } from '~/composables/useApi';
+
+// Fetch data using useFetch
+const config = useRuntimeConfig();
+
+const { data: teams } = await useFetch('https://api.balldontlie.io/v1/teams', {
+  headers: {
+    Authorization: `Bearer ${config.public.bdlApiKey}`
+  }
+});
+
+console.log(data[0].value)
+console.log(teams.value)
+
+// Extract the "data" array from the response and update reactive state
+if (data[0].value) {
+  console.log(data[0].value)
+  teams.value = data[0].value.data;  // Access the "data" key in the returned JSON
+}
+
 </script>
 
 <template>
@@ -16,7 +36,7 @@ const { data } = await useFetch("https://statsapi.web.nhl.com/api/v1/teams");
       <div
         class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-3 px-4"
       >
-        <TeamCard v-for="team in data.teams" :team="team" :key="team.id" />
+        <TeamCard v-for="team in data.teams" :team="teams" :key="team.id" />
       </div>
     </section>
   </main>

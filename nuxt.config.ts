@@ -8,7 +8,8 @@ export default defineNuxtConfig({
   app: { head: { link: [{ rel: 'icon', type: "image/x-icon", href: '/favicon.ico?v2' }] } },
   modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
   publicRuntimeConfig: {
-    SEASON: process.env.SEASON
+    SEASON: process.env.SEASON,
+    bdlApiKey: process.env.BDL_API_KEY
   },
   content: {
     // https://content.nuxtjs.org/api/configuration

@@ -9,7 +9,8 @@ const config = useRuntimeConfig();
 const playerLikes = ref(null);
 
 const { data } = await useFetch(
-  `https://statsapi.web.nhl.com/api/v1/teams/${route.params.id}/roster`
+  `https://api-web.nhle.com/v1/roster/${route.params.id}/${config.public.SEASON}`
+  // https://api-web.nhle.com/v1/roster/buf/20232024
 );
 
 const playerIds = [...data.value.roster].map((player) => {

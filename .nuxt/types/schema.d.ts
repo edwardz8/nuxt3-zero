@@ -8,6 +8,8 @@ declare module '@nuxt/schema' {
   interface RuntimeConfig {
      SEASON: string,
 
+    bdlApiKey: string,
+
     app: {
         baseURL: string,
 
@@ -122,6 +124,8 @@ declare module '@nuxt/schema' {
   }
   interface PublicRuntimeConfig {
      SEASON: string,
+
+    bdlApiKey: string,
 
     content: {
         base: string,

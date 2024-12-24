@@ -17,6 +17,7 @@
     "prisma": "^5.4.1"
   },
   "dependencies": {
+    "@balldontlie/sdk": "^1.2.2",
     "@prisma/client": "^5.4.1",
     "@supabase/supabase-js": "^1.35.6",
     "@vueuse/core": "^9.1.1",
