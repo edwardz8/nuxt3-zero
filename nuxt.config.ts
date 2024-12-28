@@ -1,22 +1,25 @@
 // ./nuxt.config.ts
 
-import { defineNuxtConfig } from 'nuxt'
+import { defineNuxtConfig } from 'nuxt/config'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  meta: { title: 'rotorink' },
+  // meta: { title: 'rotorink' },
   app: { head: { link: [{ rel: 'icon', type: "image/x-icon", href: '/favicon.ico?v2' }] } },
+
   modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
-  publicRuntimeConfig: {
+
+  runtimeConfig: {
+    bdlApiKey: process.env.BDL_API_KEY,
     SEASON: process.env.SEASON,
-    bdlApiKey: process.env.BDL_API_KEY
   },
+
   content: {
     // https://content.nuxtjs.org/api/configuration
     highlight: {
       theme: {
         // Default theme (same as single string)
-        default: 'material-palenight',
+        default: 'material-theme-palenight',
         // Theme used if `html.dark`
         dark: 'github-dark',
       }
@@ -28,10 +31,14 @@ export default defineNuxtConfig({
       },
     }
   },
+
   tailwindcss: {
     cssPath: '~/assets/css/main.css',
   },
+
   build: {
     transpile: ['chart.js']
-  }
+  },
+
+  compatibilityDate: '2024-12-28'
 })

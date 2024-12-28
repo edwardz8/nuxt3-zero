@@ -1,116 +1,647 @@
-globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/node-fetch-native/dist/polyfill.mjs';
-import { Server } from 'http';
-import { tmpdir } from 'os';
-import { join } from 'path';
-import { mkdirSync } from 'fs';
-import { parentPort, threadId } from 'worker_threads';
-import { provider, isWindows } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/std-env/dist/index.mjs';
-import { defineEventHandler, handleCacheHeaders, createEvent, useQuery, useCookie, createError, defineLazyEventHandler, useBody, createApp, createRouter, lazyEventHandler, setCookie, sendError, eventHandler } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/h3/dist/index.mjs';
-import { createFetch as createFetch$1, Headers } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/ohmyfetch/dist/node.mjs';
-import destr from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/destr/dist/index.mjs';
-import { createRouter as createRouter$1 } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/radix3/dist/index.mjs';
-import { createCall, createFetch } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/hookable/dist/index.mjs';
-import { hash } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/ohash/dist/index.mjs';
-import { parseURL, withQuery, withLeadingSlash, withoutTrailingSlash, withBase, joinURL } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/ufo/dist/index.mjs';
+import process from 'node:process';globalThis._importMeta_={url:import.meta.url,env:process.env};import { getRequestHeader, splitCookiesString, setResponseStatus, setResponseHeader, send, getRequestHeaders, defineEventHandler, handleCacheHeaders, createEvent, fetchWithEvent, isEvent, eventHandler, getResponseStatus, setResponseHeaders, setHeaders, sendRedirect, proxyRequest, createError, getQuery as getQuery$1, getCookie, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getRouterParam, readBody, setCookie, sendError, getResponseStatusText } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/h3/dist/index.mjs';
+import { Server } from 'node:http';
+import { mkdirSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+import { parentPort, threadId } from 'node:worker_threads';
+import _RemarkEmoji from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/remark-emoji/index.js';
+import { visit } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/unist-util-visit/index.js';
+import { toString } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/hast-util-to-string/index.js';
 import { createStorage, prefixStorage } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/unstorage/dist/index.mjs';
-import _unstorage_drivers_fs from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/unstorage/dist/drivers/fs.mjs';
+import { withQuery, joinURL, withTrailingSlash, parseURL, withoutBase, getQuery, joinRelativeURL, withLeadingSlash, withoutTrailingSlash, isRelative } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/ufo/dist/index.mjs';
+import { hash } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/ohash/dist/index.mjs';
+import defu, { defuFn, defu as defu$1 } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/defu/dist/defu.mjs';
 import { extname } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/pathe/dist/index.mjs';
-import defu from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/defu/dist/defu.mjs';
-import remarkEmoji from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/remark-emoji/index.js';
-import rehypeSlug from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/rehype-slug/index.js';
-import remarkSqueezeParagraphs from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/remark-squeeze-paragraphs/index.js';
+import { snakeCase, kebabCase, pascalCase, camelCase } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/scule/dist/index.mjs';
+import { unified } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/unified/index.js';
+import { toString as toString$1 } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/mdast-util-to-string/index.js';
+import { postprocess, preprocess } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/micromark/dev/index.js';
+import { stringifyPosition } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/unist-util-stringify-position/index.js';
+import { markdownLineEnding, markdownSpace } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/micromark-util-character/dev/index.js';
+import { push, splice } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/micromark-util-chunked/dev/index.js';
+import { resolveAll } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/micromark-util-resolve-all/index.js';
+import { normalizeUri } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/micromark-util-sanitize-uri/dev/index.js';
+import remarkParse from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/remark-parse/index.js';
+import remark2rehype from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/remark-rehype/index.js';
+import remarkMDC, { parseFrontMatter } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/remark-mdc/dist/index.mjs';
+import remarkGFM from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/remark-gfm/index.js';
 import rehypeExternalLinks from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/rehype-external-links/index.js';
-import remarkGfm from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/remark-gfm/index.js';
 import rehypeSortAttributeValues from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/rehype-sort-attribute-values/index.js';
 import rehypeSortAttributes from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/rehype-sort-attributes/index.js';
 import rehypeRaw from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/rehype-raw/index.js';
-import yaml from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/js-yaml/dist/js-yaml.mjs';
-import flat from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/flat/index.js';
-import { unified } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/unified/index.js';
-import remarkParse from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/remark-parse/index.js';
-import remark2rehype from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/remark-rehype/index.js';
-import { snakeCase, kebabCase, pascalCase } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/scule/dist/index.mjs';
-import { visit } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/unist-util-visit/index.js';
-import { stringifyEntitiesLight } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/stringify-entities/index.js';
-import { parseEntities } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/parse-entities/index.js';
-import { markdownLineEnding, markdownSpace, asciiAlpha, markdownLineEndingOrSpace, asciiAlphanumeric } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/micromark-util-character/index.js';
-import { factorySpace } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/micromark-factory-space/index.js';
-import { factoryWhitespace } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/micromark-factory-whitespace/index.js';
-import { codeFenced } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/micromark-core-commonmark/index.js';
-import { all } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/mdast-util-to-hast/index.js';
 import { detab } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/detab/index.js';
-import { u } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/unist-builder/index.js';
-import { encode } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/mdurl/index.js';
-import { position } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/unist-util-position/index.js';
-import htmlTags from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/html-tags/index.js';
+import Slugger from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/github-slugger/index.js';
+import destr, { destr as destr$1 } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/destr/dist/index.mjs';
+import { createWasmOnigEngine } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/engine-oniguruma.mjs';
 import slugify from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/slugify/slugify.js';
-import { getHighlighter, BUNDLED_LANGUAGES, BUNDLED_THEMES } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki-es/dist/shiki.node.mjs';
+import bcrypt from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/bcrypt/bcrypt.js';
+import crypto from 'crypto';
+import pkg from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/@prisma/client/index.js';
+import { BalldontlieAPI } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/@balldontlie/sdk/dist/index.js';
 import * as url from 'url';
 import { createClient } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/@supabase/supabase-js/dist/main/index.js';
-import bcrypt from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/bcrypt/bcrypt.js';
-import pkg from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/@prisma/client/index.js';
-import crypto from 'crypto';
-import { createRenderer } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/vue-bundle-renderer/dist/index.mjs';
-import devalue from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/@nuxt/devalue/dist/devalue.mjs';
+import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { stringify as stringify$1, uneval } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/devalue/index.js';
 import { renderToString } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/vue/server-renderer/index.mjs';
-import htmlTemplate from '/Users/zne/vue-projects/nuxt3-zero/.nuxt/views/document.template.mjs';
+import { propsToString, renderSSRHead } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/@unhead/ssr/dist/index.mjs';
+import { createHooks } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/hookable/dist/index.mjs';
+import { createFetch as createFetch$1, Headers as Headers$1 } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/ofetch/dist/node.mjs';
+import { createCall, createFetch } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/unenv/runtime/fetch/index.mjs';
+import { klona } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/klona/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/unstorage/drivers/fs.mjs';
+import { toRouteMatcher, createRouter } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/radix3/dist/index.mjs';
+import { getContext } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/unctx/dist/index.mjs';
+import { AsyncLocalStorage } from 'node:async_hooks';
+import { consola } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/consola/dist/index.mjs';
+import { captureRawStackTrace, parseRawStackTrace } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/errx/dist/index.js';
+import { isVNode, version, unref } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/vue/index.mjs';
+import { createServerHead as createServerHead$1, CapoPlugin } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/unhead/dist/index.mjs';
+import { defineHeadPlugin } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/@unhead/shared/dist/index.mjs';
 
-const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routes":{},"envPrefix":"NUXT_"},"SEASON":"20242025","bdlApiKey":"0440b57a-b3bb-4b33-aa43-2a7336ca4689","public":{"SEASON":"20242025","bdlApiKey":"0440b57a-b3bb-4b33-aa43-2a7336ca4689","content":{"base":"_content","tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"highlight":{"theme":{"default":"material-palenight","dark":"github-dark"}},"wsUrl":"ws://localhost:4000/"}},"content":{"cacheVersion":2,"cacheIntegrity":"370594990","transformers":["/Users/zne/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/markdown.mjs","/Users/zne/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/yaml.mjs","/Users/zne/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/json.mjs","/Users/zne/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/csv.mjs","/Users/zne/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/path-meta.mjs","/Users/zne/vue-projects/nuxt3-zero/node_modules/@nuxt/content/dist/runtime/server/transformers/shiki.mjs"],"base":"_content","watch":{"ws":{"port":4000,"showURL":false}},"sources":["content"],"ignores":["\\.","-"],"locales":[],"highlight":{"theme":{"default":"material-palenight","dark":"github-dark"}},"markdown":{"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"toc":{"depth":5,"searchDepth":5},"remarkPlugins":{},"rehypePlugins":{}},"yaml":{},"csv":{},"navigation":{"fields":[]}}};
-const ENV_PREFIX = "NITRO_";
-const ENV_PREFIX_ALT = _runtimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
-const getEnv = (key) => {
-  const envKey = snakeCase(key).toUpperCase();
-  return destr(process.env[ENV_PREFIX + envKey] ?? process.env[ENV_PREFIX_ALT + envKey]);
+function hasReqHeader(event, name, includes) {
+  const value = getRequestHeader(event, name);
+  return value && typeof value === "string" && value.toLowerCase().includes(includes);
+}
+function isJsonRequest(event) {
+  if (hasReqHeader(event, "accept", "text/html")) {
+    return false;
+  }
+  return hasReqHeader(event, "accept", "application/json") || hasReqHeader(event, "user-agent", "curl/") || hasReqHeader(event, "user-agent", "httpie/") || hasReqHeader(event, "sec-fetch-mode", "cors") || event.path.startsWith("/api/") || event.path.endsWith(".json");
+}
+function normalizeError(error, isDev) {
+  const cwd = typeof process.cwd === "function" ? process.cwd() : "/";
+  const stack = (error.unhandled || error.fatal) ? [] : (error.stack || "").split("\n").splice(1).filter((line) => line.includes("at ")).map((line) => {
+    const text = line.replace(cwd + "/", "./").replace("webpack:/", "").replace("file://", "").trim();
+    return {
+      text,
+      internal: line.includes("node_modules") && !line.includes(".cache") || line.includes("internal") || line.includes("new Promise")
+    };
+  });
+  const statusCode = error.statusCode || 500;
+  const statusMessage = error.statusMessage ?? (statusCode === 404 ? "Not Found" : "");
+  const message = error.unhandled ? "internal server error" : error.message || error.toString();
+  return {
+    stack,
+    statusCode,
+    statusMessage,
+    message
+  };
+}
+function _captureError(error, type) {
+  console.error(`[nitro] [${type}]`, error);
+  useNitroApp().captureError(error, { tags: [type] });
+}
+function trapUnhandledNodeErrors() {
+  process.on(
+    "unhandledRejection",
+    (error) => _captureError(error, "unhandledRejection")
+  );
+  process.on(
+    "uncaughtException",
+    (error) => _captureError(error, "uncaughtException")
+  );
+}
+function joinHeaders(value) {
+  return Array.isArray(value) ? value.join(", ") : String(value);
+}
+function normalizeFetchResponse(response) {
+  if (!response.headers.has("set-cookie")) {
+    return response;
+  }
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers: normalizeCookieHeaders(response.headers)
+  });
+}
+function normalizeCookieHeader(header = "") {
+  return splitCookiesString(joinHeaders(header));
+}
+function normalizeCookieHeaders(headers) {
+  const outgoingHeaders = new Headers();
+  for (const [name, header] of headers) {
+    if (name === "set-cookie") {
+      for (const cookie of normalizeCookieHeader(header)) {
+        outgoingHeaders.append("set-cookie", cookie);
+      }
+    } else {
+      outgoingHeaders.set(name, joinHeaders(header));
+    }
+  }
+  return outgoingHeaders;
+}
+
+const errorHandler = (async function errorhandler(error, event) {
+  const { stack, statusCode, statusMessage, message } = normalizeError(error);
+  const errorObject = {
+    url: event.path,
+    statusCode,
+    statusMessage,
+    message,
+    stack: statusCode !== 404 ? `<pre>${stack.map((i) => `<span class="stack${i.internal ? " internal" : ""}">${i.text}</span>`).join("\n")}</pre>` : "",
+    // TODO: check and validate error.data for serialisation into query
+    data: error.data
+  };
+  if (error.unhandled || error.fatal) {
+    const tags = [
+      "[nuxt]",
+      "[request error]",
+      error.unhandled && "[unhandled]",
+      error.fatal && "[fatal]",
+      Number(errorObject.statusCode) !== 200 && `[${errorObject.statusCode}]`
+    ].filter(Boolean).join(" ");
+    console.error(tags, (error.message || error.toString() || "internal server error") + "\n" + stack.map((l) => "  " + l.text).join("  \n"));
+  }
+  if (event.handled) {
+    return;
+  }
+  setResponseStatus(event, errorObject.statusCode !== 200 && errorObject.statusCode || 500, errorObject.statusMessage);
+  if (isJsonRequest(event)) {
+    setResponseHeader(event, "Content-Type", "application/json");
+    return send(event, JSON.stringify(errorObject));
+  }
+  const reqHeaders = getRequestHeaders(event);
+  const isRenderingError = event.path.startsWith("/__nuxt_error") || !!reqHeaders["x-nuxt-error"];
+  const res = isRenderingError ? null : await useNitroApp().localFetch(
+    withQuery(joinURL(useRuntimeConfig(event).app.baseURL, "/__nuxt_error"), errorObject),
+    {
+      headers: { ...reqHeaders, "x-nuxt-error": "true" },
+      redirect: "manual"
+    }
+  ).catch(() => null);
+  if (!res) {
+    const { template } = await Promise.resolve().then(function () { return errorDev; }) ;
+    {
+      errorObject.description = errorObject.message;
+    }
+    if (event.handled) {
+      return;
+    }
+    setResponseHeader(event, "Content-Type", "text/html;charset=UTF-8");
+    return send(event, template(errorObject));
+  }
+  const html = await res.text();
+  if (event.handled) {
+    return;
+  }
+  for (const [header, value] of res.headers.entries()) {
+    setResponseHeader(event, header, value);
+  }
+  setResponseStatus(event, res.status && res.status !== 200 ? res.status : void 0, res.statusText);
+  return send(event, html);
+});
+
+const script = `
+if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
+  Object.defineProperty(window, '__NUXT_DEVTOOLS_TIME_METRIC__', {
+    value: {},
+    enumerable: false,
+    configurable: true,
+  })
+}
+window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now()
+`;
+
+const _t9Ne0FFe20 = (function(nitro) {
+  nitro.hooks.hook("render:html", (htmlContext) => {
+    htmlContext.head.push(`<script>${script}<\/script>`);
+  });
+});
+
+const rootDir = "/Users/zne/vue-projects/nuxt3-zero";
+
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico?v2"}],"style":[],"script":[],"noscript":[]};
+
+const appRootTag = "div";
+
+const appRootAttrs = {"id":"__nuxt"};
+
+const appTeleportTag = "div";
+
+const appTeleportAttrs = {"id":"teleports"};
+
+const appId = "nuxt-app";
+
+const devReducers = {
+  VNode: (data) => isVNode(data) ? { type: data.type, props: data.props } : void 0,
+  URL: (data) => data instanceof URL ? data.toString() : void 0
 };
-function isObject(input) {
+const asyncContext = getContext("nuxt-dev", { asyncContext: true, AsyncLocalStorage });
+const _cCqqM6hlaT = (nitroApp) => {
+  const handler = nitroApp.h3App.handler;
+  nitroApp.h3App.handler = (event) => {
+    return asyncContext.callAsync({ logs: [], event }, () => handler(event));
+  };
+  onConsoleLog((_log) => {
+    const ctx = asyncContext.tryUse();
+    if (!ctx) {
+      return;
+    }
+    const rawStack = captureRawStackTrace();
+    if (!rawStack || rawStack.includes("runtime/vite-node.mjs")) {
+      return;
+    }
+    const trace = [];
+    let filename = "";
+    for (const entry of parseRawStackTrace(rawStack)) {
+      if (entry.source === globalThis._importMeta_.url) {
+        continue;
+      }
+      if (EXCLUDE_TRACE_RE.test(entry.source)) {
+        continue;
+      }
+      filename ||= entry.source.replace(withTrailingSlash(rootDir), "");
+      trace.push({
+        ...entry,
+        source: entry.source.startsWith("file://") ? entry.source.replace("file://", "") : entry.source
+      });
+    }
+    const log = {
+      ..._log,
+      // Pass along filename to allow the client to display more info about where log comes from
+      filename,
+      // Clean up file names in stack trace
+      stack: trace
+    };
+    ctx.logs.push(log);
+  });
+  nitroApp.hooks.hook("afterResponse", () => {
+    const ctx = asyncContext.tryUse();
+    if (!ctx) {
+      return;
+    }
+    return nitroApp.hooks.callHook("dev:ssr-logs", { logs: ctx.logs, path: ctx.event.path });
+  });
+  nitroApp.hooks.hook("render:html", (htmlContext) => {
+    const ctx = asyncContext.tryUse();
+    if (!ctx) {
+      return;
+    }
+    try {
+      const reducers = Object.assign(/* @__PURE__ */ Object.create(null), devReducers, ctx.event.context._payloadReducers);
+      htmlContext.bodyAppend.unshift(`<script type="application/json" data-nuxt-logs="${appId}">${stringify$1(ctx.logs, reducers)}<\/script>`);
+    } catch (e) {
+      const shortError = e instanceof Error && "toString" in e ? ` Received \`${e.toString()}\`.` : "";
+      console.warn(`[nuxt] Failed to stringify dev server logs.${shortError} You can define your own reducer/reviver for rich types following the instructions in https://nuxt.com/docs/api/composables/use-nuxt-app#payload.`);
+    }
+  });
+};
+const EXCLUDE_TRACE_RE = /\/node_modules\/(?:.*\/)?(?:nuxt|nuxt-nightly|nuxt-edge|nuxt3|consola|@vue)\/|core\/runtime\/nitro/;
+function onConsoleLog(callback) {
+  consola.addReporter({
+    log(logObj) {
+      callback(logObj);
+    }
+  });
+  consola.wrapConsole();
+}
+
+const inlineAppConfig = {
+  "nuxt": {}
+};
+
+
+
+const appConfig = defuFn(inlineAppConfig);
+
+function getEnv(key, opts) {
+  const envKey = snakeCase(key).toUpperCase();
+  return destr(
+    process.env[opts.prefix + envKey] ?? process.env[opts.altPrefix + envKey]
+  );
+}
+function _isObject(input) {
   return typeof input === "object" && !Array.isArray(input);
 }
-function overrideConfig(obj, parentKey = "") {
+function applyEnv(obj, opts, parentKey = "") {
   for (const key in obj) {
     const subKey = parentKey ? `${parentKey}_${key}` : key;
-    const envValue = getEnv(subKey);
-    if (isObject(obj[key])) {
-      if (isObject(envValue)) {
+    const envValue = getEnv(subKey, opts);
+    if (_isObject(obj[key])) {
+      if (_isObject(envValue)) {
         obj[key] = { ...obj[key], ...envValue };
+        applyEnv(obj[key], opts, subKey);
+      } else if (envValue === void 0) {
+        applyEnv(obj[key], opts, subKey);
+      } else {
+        obj[key] = envValue ?? obj[key];
       }
-      overrideConfig(obj[key], subKey);
     } else {
       obj[key] = envValue ?? obj[key];
     }
+    if (opts.envExpansion && typeof obj[key] === "string") {
+      obj[key] = _expandFromEnv(obj[key]);
+    }
   }
+  return obj;
 }
-overrideConfig(_runtimeConfig);
-const config = deepFreeze(_runtimeConfig);
-const useRuntimeConfig = () => config;
-function deepFreeze(object) {
+const envExpandRx = /{{(.*?)}}/g;
+function _expandFromEnv(value) {
+  return value.replace(envExpandRx, (match, key) => {
+    return process.env[key] || match;
+  });
+}
+
+const _inlineRuntimeConfig = {
+  "app": {
+    "baseURL": "/",
+    "buildId": "dev",
+    "buildAssetsDir": "/_nuxt/",
+    "cdnURL": ""
+  },
+  "nitro": {
+    "envPrefix": "NUXT_",
+    "routeRules": {
+      "/__nuxt_error": {
+        "cache": false
+      },
+      "/_nuxt/builds/meta/**": {
+        "headers": {
+          "cache-control": "public, max-age=31536000, immutable"
+        }
+      },
+      "/_nuxt/builds/**": {
+        "headers": {
+          "cache-control": "public, max-age=1, immutable"
+        }
+      }
+    }
+  },
+  "public": {
+    "mdc": {
+      "components": {
+        "prose": true,
+        "map": {
+          "p": "prose-p",
+          "a": "prose-a",
+          "blockquote": "prose-blockquote",
+          "code-inline": "prose-code-inline",
+          "code": "ProseCodeInline",
+          "em": "prose-em",
+          "h1": "prose-h1",
+          "h2": "prose-h2",
+          "h3": "prose-h3",
+          "h4": "prose-h4",
+          "h5": "prose-h5",
+          "h6": "prose-h6",
+          "hr": "prose-hr",
+          "img": "prose-img",
+          "ul": "prose-ul",
+          "ol": "prose-ol",
+          "li": "prose-li",
+          "strong": "prose-strong",
+          "table": "prose-table",
+          "thead": "prose-thead",
+          "tbody": "prose-tbody",
+          "td": "prose-td",
+          "th": "prose-th",
+          "tr": "prose-tr"
+        }
+      },
+      "headings": {
+        "anchorLinks": {
+          "h1": false,
+          "h2": true,
+          "h3": true,
+          "h4": true,
+          "h5": false,
+          "h6": false
+        }
+      }
+    },
+    "content": {
+      "locales": [],
+      "defaultLocale": "",
+      "integrity": "",
+      "experimental": {
+        "stripQueryParameters": false,
+        "advanceQuery": false,
+        "clientDB": false
+      },
+      "respectPathCase": false,
+      "api": {
+        "baseURL": "/api/_content"
+      },
+      "navigation": {
+        "fields": []
+      },
+      "tags": {
+        "p": "prose-p",
+        "a": "prose-a",
+        "blockquote": "prose-blockquote",
+        "code-inline": "prose-code-inline",
+        "code": "ProseCodeInline",
+        "em": "prose-em",
+        "h1": "prose-h1",
+        "h2": "prose-h2",
+        "h3": "prose-h3",
+        "h4": "prose-h4",
+        "h5": "prose-h5",
+        "h6": "prose-h6",
+        "hr": "prose-hr",
+        "img": "prose-img",
+        "ul": "prose-ul",
+        "ol": "prose-ol",
+        "li": "prose-li",
+        "strong": "prose-strong",
+        "table": "prose-table",
+        "thead": "prose-thead",
+        "tbody": "prose-tbody",
+        "td": "prose-td",
+        "th": "prose-th",
+        "tr": "prose-tr"
+      },
+      "highlight": {
+        "theme": {
+          "default": "material-theme-palenight",
+          "dark": "github-dark"
+        },
+        "highlighter": "shiki",
+        "shikiEngine": "oniguruma",
+        "langs": [
+          "js",
+          "jsx",
+          "json",
+          "ts",
+          "tsx",
+          "vue",
+          "css",
+          "html",
+          "bash",
+          "md",
+          "mdc",
+          "yaml"
+        ]
+      },
+      "wsUrl": "ws://localhost:4000/",
+      "documentDriven": false,
+      "host": "",
+      "trailingSlash": false,
+      "search": "",
+      "contentHead": true,
+      "anchorLinks": {
+        "depth": 4,
+        "exclude": [
+          1
+        ]
+      }
+    }
+  },
+  "bdlApiKey": "0440b57a-b3bb-4b33-aa43-2a7336ca4689",
+  "SEASON": "20242025",
+  "content": {
+    "cacheVersion": 2,
+    "cacheIntegrity": "6NOdNy3hbm",
+    "transformers": [],
+    "base": "",
+    "api": {
+      "baseURL": "/api/_content"
+    },
+    "watch": {
+      "ws": {
+        "port": {
+          "port": 4000,
+          "portRange": [
+            4000,
+            4040
+          ]
+        },
+        "hostname": "localhost",
+        "showURL": false
+      }
+    },
+    "sources": {},
+    "ignores": [],
+    "locales": [],
+    "defaultLocale": "",
+    "highlight": {
+      "theme": {
+        "default": "material-theme-palenight",
+        "dark": "github-dark"
+      },
+      "highlighter": "shiki",
+      "shikiEngine": "oniguruma",
+      "langs": [
+        "js",
+        "jsx",
+        "json",
+        "ts",
+        "tsx",
+        "vue",
+        "css",
+        "html",
+        "bash",
+        "md",
+        "mdc",
+        "yaml"
+      ]
+    },
+    "markdown": {
+      "tags": {
+        "p": "prose-p",
+        "a": "prose-a",
+        "blockquote": "prose-blockquote",
+        "code-inline": "prose-code-inline",
+        "code": "ProseCodeInline",
+        "em": "prose-em",
+        "h1": "prose-h1",
+        "h2": "prose-h2",
+        "h3": "prose-h3",
+        "h4": "prose-h4",
+        "h5": "prose-h5",
+        "h6": "prose-h6",
+        "hr": "prose-hr",
+        "img": "prose-img",
+        "ul": "prose-ul",
+        "ol": "prose-ol",
+        "li": "prose-li",
+        "strong": "prose-strong",
+        "table": "prose-table",
+        "thead": "prose-thead",
+        "tbody": "prose-tbody",
+        "td": "prose-td",
+        "th": "prose-th",
+        "tr": "prose-tr"
+      },
+      "anchorLinks": {
+        "depth": 4,
+        "exclude": [
+          1
+        ]
+      },
+      "toc": {
+        "depth": 5,
+        "searchDepth": 5
+      },
+      "remarkPlugins": {},
+      "rehypePlugins": {}
+    },
+    "yaml": {},
+    "csv": {
+      "delimeter": ",",
+      "json": true
+    },
+    "navigation": {
+      "fields": []
+    },
+    "contentHead": true,
+    "documentDriven": false,
+    "respectPathCase": false,
+    "experimental": {
+      "clientDB": false,
+      "cacheContents": true,
+      "stripQueryParameters": false,
+      "advanceQuery": false,
+      "search": ""
+    }
+  }
+};
+const envOptions = {
+  prefix: "NITRO_",
+  altPrefix: _inlineRuntimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_",
+  envExpansion: _inlineRuntimeConfig.nitro.envExpansion ?? process.env.NITRO_ENV_EXPANSION ?? false
+};
+const _sharedRuntimeConfig = _deepFreeze(
+  applyEnv(klona(_inlineRuntimeConfig), envOptions)
+);
+function useRuntimeConfig(event) {
+  if (!event) {
+    return _sharedRuntimeConfig;
+  }
+  if (event.context.nitro.runtimeConfig) {
+    return event.context.nitro.runtimeConfig;
+  }
+  const runtimeConfig = klona(_inlineRuntimeConfig);
+  applyEnv(runtimeConfig, envOptions);
+  event.context.nitro.runtimeConfig = runtimeConfig;
+  return runtimeConfig;
+}
+_deepFreeze(klona(appConfig));
+function _deepFreeze(object) {
   const propNames = Object.getOwnPropertyNames(object);
   for (const name of propNames) {
     const value = object[name];
     if (value && typeof value === "object") {
-      deepFreeze(value);
+      _deepFreeze(value);
     }
   }
   return Object.freeze(object);
 }
-
-const globalTiming = globalThis.__timing__ || {
-  start: () => 0,
-  end: () => 0,
-  metrics: []
-};
-function timingMiddleware(_req, res, next) {
-  const start = globalTiming.start();
-  const _end = res.end;
-  res.end = (data, encoding, callback) => {
-    const metrics = [["Generate", globalTiming.end(start)], ...globalTiming.metrics];
-    const serverTiming = metrics.map((m) => `-;dur=${m[1]};desc="${encodeURIComponent(m[0])}"`).join(", ");
-    if (!res.headersSent) {
-      res.setHeader("Server-Timing", serverTiming);
+new Proxy(/* @__PURE__ */ Object.create(null), {
+  get: (_, prop) => {
+    console.warn(
+      "Please use `useRuntimeConfig()` instead of accessing config directly."
+    );
+    const runtimeConfig = useRuntimeConfig();
+    if (prop in runtimeConfig) {
+      return runtimeConfig[prop];
     }
-    _end.call(res, data, encoding, callback);
-  };
-  next();
+    return void 0;
+  }
+});
+
+function defineNitroPlugin(def) {
+  return def;
 }
 
 const serverAssets = [{"baseName":"server","dir":"/Users/zne/vue-projects/nuxt3-zero/server/assets"}];
@@ -118,65 +649,123 @@ const serverAssets = [{"baseName":"server","dir":"/Users/zne/vue-projects/nuxt3-
 const assets = createStorage();
 
 for (const asset of serverAssets) {
-  assets.mount(asset.baseName, _unstorage_drivers_fs({ base: asset.dir }));
+  assets.mount(asset.baseName, unstorage_47drivers_47fs({ base: asset.dir, ignore: (asset?.ignore || []) }));
 }
 
-const storage = createStorage({});
+const storage$1 = createStorage({});
 
-const useStorage = () => storage;
+storage$1.mount('/assets', assets);
 
-storage.mount('/assets', assets);
+storage$1.mount('content:source:content', unstorage_47drivers_47fs({"name":"content:source:content","driver":"fs","base":"/Users/zne/vue-projects/nuxt3-zero/content","ignore":["**/node_modules/**","**/.git/**"]}));
+storage$1.mount('cache:content', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/zne/vue-projects/nuxt3-zero/.nuxt/content-cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage$1.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/zne/vue-projects/nuxt3-zero","ignore":["**/node_modules/**","**/.git/**"]}));
+storage$1.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/zne/vue-projects/nuxt3-zero/server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage$1.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/zne/vue-projects/nuxt3-zero/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage$1.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/zne/vue-projects/nuxt3-zero/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage$1.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/zne/vue-projects/nuxt3-zero/.data/kv","ignore":["**/node_modules/**","**/.git/**"]}));
 
-storage.mount('content:source:content', _unstorage_drivers_fs({"name":"content","driver":"fs","prefix":"","base":"/Users/zne/vue-projects/nuxt3-zero/content","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('root', _unstorage_drivers_fs({"driver":"fs","base":"/Users/zne/vue-projects/nuxt3-zero","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', _unstorage_drivers_fs({"driver":"fs","base":"/Users/zne/vue-projects/nuxt3-zero/server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', _unstorage_drivers_fs({"driver":"fs","base":"/Users/zne/vue-projects/nuxt3-zero/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', _unstorage_drivers_fs({"driver":"fs","base":"/Users/zne/vue-projects/nuxt3-zero/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
+function useStorage(base = "") {
+  return base ? prefixStorage(storage$1, base) : storage$1;
+}
 
-const defaultCacheOptions = {
-  name: "_",
-  base: "/cache",
-  swr: true,
-  maxAge: 1
-};
-function defineCachedFunction(fn, opts) {
-  opts = { ...defaultCacheOptions, ...opts };
+function defaultCacheOptions() {
+  return {
+    name: "_",
+    base: "/cache",
+    swr: true,
+    maxAge: 1
+  };
+}
+function defineCachedFunction(fn, opts = {}) {
+  opts = { ...defaultCacheOptions(), ...opts };
   const pending = {};
-  const group = opts.group || "nitro";
+  const group = opts.group || "nitro/functions";
   const name = opts.name || fn.name || "_";
-  const integrity = hash([opts.integrity, fn, opts]);
-  async function get(key, resolver) {
+  const integrity = opts.integrity || hash([fn, opts]);
+  const validate = opts.validate || ((entry) => entry.value !== void 0);
+  async function get(key, resolver, shouldInvalidateCache, event) {
     const cacheKey = [opts.base, group, name, key + ".json"].filter(Boolean).join(":").replace(/:\/$/, ":index");
-    const entry = await useStorage().getItem(cacheKey) || {};
-    const ttl = (opts.maxAge ?? opts.maxAge ?? 0) * 1e3;
+    let entry = await useStorage().getItem(cacheKey).catch((error) => {
+      console.error(`[nitro] [cache] Cache read error.`, error);
+      useNitroApp().captureError(error, { event, tags: ["cache"] });
+    }) || {};
+    if (typeof entry !== "object") {
+      entry = {};
+      const error = new Error("Malformed data read from cache.");
+      console.error("[nitro] [cache]", error);
+      useNitroApp().captureError(error, { event, tags: ["cache"] });
+    }
+    const ttl = (opts.maxAge ?? 0) * 1e3;
     if (ttl) {
       entry.expires = Date.now() + ttl;
     }
-    const expired = entry.integrity !== integrity || ttl && Date.now() - (entry.mtime || 0) > ttl;
+    const expired = shouldInvalidateCache || entry.integrity !== integrity || ttl && Date.now() - (entry.mtime || 0) > ttl || validate(entry) === false;
     const _resolve = async () => {
-      if (!pending[key]) {
-        entry.value = void 0;
-        entry.integrity = void 0;
-        entry.mtime = void 0;
-        entry.expires = void 0;
+      const isPending = pending[key];
+      if (!isPending) {
+        if (entry.value !== void 0 && (opts.staleMaxAge || 0) >= 0 && opts.swr === false) {
+          entry.value = void 0;
+          entry.integrity = void 0;
+          entry.mtime = void 0;
+          entry.expires = void 0;
+        }
         pending[key] = Promise.resolve(resolver());
       }
-      entry.value = await pending[key];
-      entry.mtime = Date.now();
-      entry.integrity = integrity;
-      delete pending[key];
-      useStorage().setItem(cacheKey, entry).catch((error) => console.error("[nitro] [cache]", error));
+      try {
+        entry.value = await pending[key];
+      } catch (error) {
+        if (!isPending) {
+          delete pending[key];
+        }
+        throw error;
+      }
+      if (!isPending) {
+        entry.mtime = Date.now();
+        entry.integrity = integrity;
+        delete pending[key];
+        if (validate(entry) !== false) {
+          let setOpts;
+          if (opts.maxAge && !opts.swr) {
+            setOpts = { ttl: opts.maxAge };
+          }
+          const promise = useStorage().setItem(cacheKey, entry, setOpts).catch((error) => {
+            console.error(`[nitro] [cache] Cache write error.`, error);
+            useNitroApp().captureError(error, { event, tags: ["cache"] });
+          });
+          if (event?.waitUntil) {
+            event.waitUntil(promise);
+          }
+        }
+      }
     };
     const _resolvePromise = expired ? _resolve() : Promise.resolve();
-    if (opts.swr && entry.value) {
-      _resolvePromise.catch(console.error);
-      return Promise.resolve(entry);
+    if (entry.value === void 0) {
+      await _resolvePromise;
+    } else if (expired && event && event.waitUntil) {
+      event.waitUntil(_resolvePromise);
+    }
+    if (opts.swr && validate(entry) !== false) {
+      _resolvePromise.catch((error) => {
+        console.error(`[nitro] [cache] SWR handler error.`, error);
+        useNitroApp().captureError(error, { event, tags: ["cache"] });
+      });
+      return entry;
     }
     return _resolvePromise.then(() => entry);
   }
   return async (...args) => {
-    const key = (opts.getKey || getKey)(...args);
-    const entry = await get(key, () => fn(...args));
+    const shouldBypassCache = await opts.shouldBypassCache?.(...args);
+    if (shouldBypassCache) {
+      return fn(...args);
+    }
+    const key = await (opts.getKey || getKey)(...args);
+    const shouldInvalidateCache = await opts.shouldInvalidateCache?.(...args);
+    const entry = await get(
+      key,
+      () => fn(...args),
+      shouldInvalidateCache,
+      args[0] && isEvent(args[0]) ? args[0] : void 0
+    );
     let value = entry.value;
     if (opts.transform) {
       value = await opts.transform(entry, ...args) || value;
@@ -184,91 +773,212 @@ function defineCachedFunction(fn, opts) {
     return value;
   };
 }
-const cachedFunction = defineCachedFunction;
-function getKey(...args) {
-  return args.length ? hash(args, {}) : "";
+function cachedFunction(fn, opts = {}) {
+  return defineCachedFunction(fn, opts);
 }
-function defineCachedEventHandler(handler, opts = defaultCacheOptions) {
+function getKey(...args) {
+  return args.length > 0 ? hash(args, {}) : "";
+}
+function escapeKey(key) {
+  return String(key).replace(/\W/g, "");
+}
+function defineCachedEventHandler(handler, opts = defaultCacheOptions()) {
+  const variableHeaderNames = (opts.varies || []).filter(Boolean).map((h) => h.toLowerCase()).sort();
   const _opts = {
     ...opts,
-    getKey: (event) => {
-      return decodeURI(parseURL(event.req.originalUrl || event.req.url).pathname).replace(/\/$/, "/index");
+    getKey: async (event) => {
+      const customKey = await opts.getKey?.(event);
+      if (customKey) {
+        return escapeKey(customKey);
+      }
+      const _path = event.node.req.originalUrl || event.node.req.url || event.path;
+      let _pathname;
+      try {
+        _pathname = escapeKey(decodeURI(parseURL(_path).pathname)).slice(0, 16) || "index";
+      } catch {
+        _pathname = "-";
+      }
+      const _hashedPath = `${_pathname}.${hash(_path)}`;
+      const _headers = variableHeaderNames.map((header) => [header, event.node.req.headers[header]]).map(([name, value]) => `${escapeKey(name)}.${hash(value)}`);
+      return [_hashedPath, ..._headers].join(":");
+    },
+    validate: (entry) => {
+      if (!entry.value) {
+        return false;
+      }
+      if (entry.value.code >= 400) {
+        return false;
+      }
+      if (entry.value.body === void 0) {
+        return false;
+      }
+      if (entry.value.headers.etag === "undefined" || entry.value.headers["last-modified"] === "undefined") {
+        return false;
+      }
+      return true;
     },
     group: opts.group || "nitro/handlers",
-    integrity: [
-      opts.integrity,
-      handler
-    ]
+    integrity: opts.integrity || hash([handler, opts])
   };
-  const _cachedHandler = cachedFunction(async (incomingEvent) => {
-    const reqProxy = cloneWithProxy(incomingEvent.req, { headers: {} });
-    const resHeaders = {};
-    const resProxy = cloneWithProxy(incomingEvent.res, {
-      statusCode: 200,
-      getHeader(name) {
-        return resHeaders[name];
-      },
-      setHeader(name, value) {
-        resHeaders[name] = value;
-        return this;
-      },
-      getHeaderNames() {
-        return Object.keys(resHeaders);
-      },
-      hasHeader(name) {
-        return name in resHeaders;
-      },
-      removeHeader(name) {
-        delete resHeaders[name];
-      },
-      getHeaders() {
-        return resHeaders;
+  const _cachedHandler = cachedFunction(
+    async (incomingEvent) => {
+      const variableHeaders = {};
+      for (const header of variableHeaderNames) {
+        const value = incomingEvent.node.req.headers[header];
+        if (value !== void 0) {
+          variableHeaders[header] = value;
+        }
       }
-    });
-    const event = createEvent(reqProxy, resProxy);
-    event.context = incomingEvent.context;
-    const body = await handler(event);
-    const headers = event.res.getHeaders();
-    headers.Etag = `W/"${hash(body)}"`;
-    headers["Last-Modified"] = new Date().toUTCString();
-    const cacheControl = [];
-    if (opts.swr) {
-      if (opts.maxAge) {
-        cacheControl.push(`s-maxage=${opts.maxAge}`);
+      const reqProxy = cloneWithProxy(incomingEvent.node.req, {
+        headers: variableHeaders
+      });
+      const resHeaders = {};
+      let _resSendBody;
+      const resProxy = cloneWithProxy(incomingEvent.node.res, {
+        statusCode: 200,
+        writableEnded: false,
+        writableFinished: false,
+        headersSent: false,
+        closed: false,
+        getHeader(name) {
+          return resHeaders[name];
+        },
+        setHeader(name, value) {
+          resHeaders[name] = value;
+          return this;
+        },
+        getHeaderNames() {
+          return Object.keys(resHeaders);
+        },
+        hasHeader(name) {
+          return name in resHeaders;
+        },
+        removeHeader(name) {
+          delete resHeaders[name];
+        },
+        getHeaders() {
+          return resHeaders;
+        },
+        end(chunk, arg2, arg3) {
+          if (typeof chunk === "string") {
+            _resSendBody = chunk;
+          }
+          if (typeof arg2 === "function") {
+            arg2();
+          }
+          if (typeof arg3 === "function") {
+            arg3();
+          }
+          return this;
+        },
+        write(chunk, arg2, arg3) {
+          if (typeof chunk === "string") {
+            _resSendBody = chunk;
+          }
+          if (typeof arg2 === "function") {
+            arg2(void 0);
+          }
+          if (typeof arg3 === "function") {
+            arg3();
+          }
+          return true;
+        },
+        writeHead(statusCode, headers2) {
+          this.statusCode = statusCode;
+          if (headers2) {
+            if (Array.isArray(headers2) || typeof headers2 === "string") {
+              throw new TypeError("Raw headers  is not supported.");
+            }
+            for (const header in headers2) {
+              const value = headers2[header];
+              if (value !== void 0) {
+                this.setHeader(
+                  header,
+                  value
+                );
+              }
+            }
+          }
+          return this;
+        }
+      });
+      const event = createEvent(reqProxy, resProxy);
+      event.fetch = (url, fetchOptions) => fetchWithEvent(event, url, fetchOptions, {
+        fetch: useNitroApp().localFetch
+      });
+      event.$fetch = (url, fetchOptions) => fetchWithEvent(event, url, fetchOptions, {
+        fetch: globalThis.$fetch
+      });
+      event.context = incomingEvent.context;
+      event.context.cache = {
+        options: _opts
+      };
+      const body = await handler(event) || _resSendBody;
+      const headers = event.node.res.getHeaders();
+      headers.etag = String(
+        headers.Etag || headers.etag || `W/"${hash(body)}"`
+      );
+      headers["last-modified"] = String(
+        headers["Last-Modified"] || headers["last-modified"] || (/* @__PURE__ */ new Date()).toUTCString()
+      );
+      const cacheControl = [];
+      if (opts.swr) {
+        if (opts.maxAge) {
+          cacheControl.push(`s-maxage=${opts.maxAge}`);
+        }
+        if (opts.staleMaxAge) {
+          cacheControl.push(`stale-while-revalidate=${opts.staleMaxAge}`);
+        } else {
+          cacheControl.push("stale-while-revalidate");
+        }
+      } else if (opts.maxAge) {
+        cacheControl.push(`max-age=${opts.maxAge}`);
       }
-      if (opts.staleMaxAge) {
-        cacheControl.push(`stale-while-revalidate=${opts.staleMaxAge}`);
-      } else {
-        cacheControl.push("stale-while-revalidate");
+      if (cacheControl.length > 0) {
+        headers["cache-control"] = cacheControl.join(", ");
       }
-    } else if (opts.maxAge) {
-      cacheControl.push(`max-age=${opts.maxAge}`);
-    }
-    if (cacheControl.length) {
-      headers["Cache-Control"] = cacheControl.join(", ");
-    }
-    const cacheEntry = {
-      code: event.res.statusCode,
-      headers,
-      body
-    };
-    return cacheEntry;
-  }, _opts);
+      const cacheEntry = {
+        code: event.node.res.statusCode,
+        headers,
+        body
+      };
+      return cacheEntry;
+    },
+    _opts
+  );
   return defineEventHandler(async (event) => {
-    const response = await _cachedHandler(event);
-    if (event.res.headersSent || event.res.writableEnded) {
+    if (opts.headersOnly) {
+      if (handleCacheHeaders(event, { maxAge: opts.maxAge })) {
+        return;
+      }
+      return handler(event);
+    }
+    const response = await _cachedHandler(
+      event
+    );
+    if (event.node.res.headersSent || event.node.res.writableEnded) {
       return response.body;
     }
     if (handleCacheHeaders(event, {
-      modifiedTime: new Date(response.headers["Last-Modified"]),
+      modifiedTime: new Date(response.headers["last-modified"]),
       etag: response.headers.etag,
       maxAge: opts.maxAge
     })) {
       return;
     }
-    event.res.statusCode = response.code;
+    event.node.res.statusCode = response.code;
     for (const name in response.headers) {
-      event.res.setHeader(name, response.headers[name]);
+      const value = response.headers[name];
+      if (name === "set-cookie") {
+        event.node.res.appendHeader(
+          name,
+          splitCookiesString(value)
+        );
+      } else {
+        if (value !== void 0) {
+          event.node.res.setHeader(name, value);
+        }
+      }
     }
     return response.body;
   });
@@ -292,68 +1002,1386 @@ function cloneWithProxy(obj, overrides) {
 }
 const cachedEventHandler = defineCachedEventHandler;
 
-const plugins = [
+function defineRenderHandler(render) {
+  const runtimeConfig = useRuntimeConfig();
+  return eventHandler(async (event) => {
+    const nitroApp = useNitroApp();
+    const ctx = { event, render, response: void 0 };
+    await nitroApp.hooks.callHook("render:before", ctx);
+    if (!ctx.response) {
+      if (event.path === `${runtimeConfig.app.baseURL}favicon.ico`) {
+        setResponseHeader(event, "Content-Type", "image/x-icon");
+        return send(
+          event,
+          "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        );
+      }
+      ctx.response = await ctx.render(event);
+      if (!ctx.response) {
+        const _currentStatus = getResponseStatus(event);
+        setResponseStatus(event, _currentStatus === 200 ? 500 : _currentStatus);
+        return send(
+          event,
+          "No response returned from render handler: " + event.path
+        );
+      }
+    }
+    await nitroApp.hooks.callHook("render:response", ctx.response, ctx);
+    if (ctx.response.headers) {
+      setResponseHeaders(event, ctx.response.headers);
+    }
+    if (ctx.response.statusCode || ctx.response.statusMessage) {
+      setResponseStatus(
+        event,
+        ctx.response.statusCode,
+        ctx.response.statusMessage
+      );
+    }
+    return ctx.response.body;
+  });
+}
+
+const config = useRuntimeConfig();
+const _routeRulesMatcher = toRouteMatcher(
+  createRouter({ routes: config.nitro.routeRules })
+);
+function createRouteRulesHandler(ctx) {
+  return eventHandler((event) => {
+    const routeRules = getRouteRules(event);
+    if (routeRules.headers) {
+      setHeaders(event, routeRules.headers);
+    }
+    if (routeRules.redirect) {
+      let target = routeRules.redirect.to;
+      if (target.endsWith("/**")) {
+        let targetPath = event.path;
+        const strpBase = routeRules.redirect._redirectStripBase;
+        if (strpBase) {
+          targetPath = withoutBase(targetPath, strpBase);
+        }
+        target = joinURL(target.slice(0, -3), targetPath);
+      } else if (event.path.includes("?")) {
+        const query = getQuery(event.path);
+        target = withQuery(target, query);
+      }
+      return sendRedirect(event, target, routeRules.redirect.statusCode);
+    }
+    if (routeRules.proxy) {
+      let target = routeRules.proxy.to;
+      if (target.endsWith("/**")) {
+        let targetPath = event.path;
+        const strpBase = routeRules.proxy._proxyStripBase;
+        if (strpBase) {
+          targetPath = withoutBase(targetPath, strpBase);
+        }
+        target = joinURL(target.slice(0, -3), targetPath);
+      } else if (event.path.includes("?")) {
+        const query = getQuery(event.path);
+        target = withQuery(target, query);
+      }
+      return proxyRequest(event, target, {
+        fetch: ctx.localFetch,
+        ...routeRules.proxy
+      });
+    }
+  });
+}
+function getRouteRules(event) {
+  event.context._nitro = event.context._nitro || {};
+  if (!event.context._nitro.routeRules) {
+    event.context._nitro.routeRules = getRouteRulesForPath(
+      withoutBase(event.path.split("?")[0], useRuntimeConfig().app.baseURL)
+    );
+  }
+  return event.context._nitro.routeRules;
+}
+function getRouteRulesForPath(path) {
+  return defu({}, ..._routeRulesMatcher.matchAll(path).reverse());
+}
+
+getContext("nitro-app", {
+  asyncContext: false,
+  AsyncLocalStorage: void 0
+});
+
+const r=Object.create(null),i=e=>globalThis.process?.env||globalThis._importMeta_.env||globalThis.Deno?.env.toObject()||globalThis.__env__||(e?r:globalThis),s=new Proxy(r,{get(e,o){return i()[o]??r[o]},has(e,o){const E=i();return o in E||o in r},set(e,o,E){const b=i(!0);return b[o]=E,!0},deleteProperty(e,o){if(!o)return !1;const E=i(!0);return delete E[o],!0},ownKeys(){const e=i(!0);return Object.keys(e)}}),t=typeof process<"u"&&process.env&&"development"||"",B=[["APPVEYOR"],["AWS_AMPLIFY","AWS_APP_ID",{ci:!0}],["AZURE_PIPELINES","SYSTEM_TEAMFOUNDATIONCOLLECTIONURI"],["AZURE_STATIC","INPUT_AZURE_STATIC_WEB_APPS_API_TOKEN"],["APPCIRCLE","AC_APPCIRCLE"],["BAMBOO","bamboo_planKey"],["BITBUCKET","BITBUCKET_COMMIT"],["BITRISE","BITRISE_IO"],["BUDDY","BUDDY_WORKSPACE_ID"],["BUILDKITE"],["CIRCLE","CIRCLECI"],["CIRRUS","CIRRUS_CI"],["CLOUDFLARE_PAGES","CF_PAGES",{ci:!0}],["CODEBUILD","CODEBUILD_BUILD_ARN"],["CODEFRESH","CF_BUILD_ID"],["DRONE"],["DRONE","DRONE_BUILD_EVENT"],["DSARI"],["GITHUB_ACTIONS"],["GITLAB","GITLAB_CI"],["GITLAB","CI_MERGE_REQUEST_ID"],["GOCD","GO_PIPELINE_LABEL"],["LAYERCI"],["HUDSON","HUDSON_URL"],["JENKINS","JENKINS_URL"],["MAGNUM"],["NETLIFY"],["NETLIFY","NETLIFY_LOCAL",{ci:!1}],["NEVERCODE"],["RENDER"],["SAIL","SAILCI"],["SEMAPHORE"],["SCREWDRIVER"],["SHIPPABLE"],["SOLANO","TDDIUM"],["STRIDER"],["TEAMCITY","TEAMCITY_VERSION"],["TRAVIS"],["VERCEL","NOW_BUILDER"],["VERCEL","VERCEL",{ci:!1}],["VERCEL","VERCEL_ENV",{ci:!1}],["APPCENTER","APPCENTER_BUILD_ID"],["CODESANDBOX","CODESANDBOX_SSE",{ci:!1}],["STACKBLITZ"],["STORMKIT"],["CLEAVR"],["ZEABUR"],["CODESPHERE","CODESPHERE_APP_ID",{ci:!0}],["RAILWAY","RAILWAY_PROJECT_ID"],["RAILWAY","RAILWAY_SERVICE_ID"],["DENO-DEPLOY","DENO_DEPLOYMENT_ID"],["FIREBASE_APP_HOSTING","FIREBASE_APP_HOSTING",{ci:!0}]];function p(){if(globalThis.process?.env)for(const e of B){const o=e[1]||e[0];if(globalThis.process?.env[o])return {name:e[0].toLowerCase(),...e[2]}}return globalThis.process?.env?.SHELL==="/bin/jsh"&&globalThis.process?.versions?.webcontainer?{name:"stackblitz",ci:!1}:{name:"",ci:!1}}const l=p(),d=l.name;function n(e){return e?e!=="false":!1}const I=globalThis.process?.platform||"",T=n(s.CI)||l.ci!==!1,R=n(globalThis.process?.stdout&&globalThis.process?.stdout.isTTY);n(s.DEBUG);const A=t==="test"||n(s.TEST);n(s.MINIMAL)||T||A||!R;const _=/^win/i.test(I);!n(s.NO_COLOR)&&(n(s.FORCE_COLOR)||(R||_)&&s.TERM!=="dumb"||T);const C=(globalThis.process?.versions?.node||"").replace(/^v/,"")||null;Number(C?.split(".")[0])||null;const y=globalThis.process||Object.create(null),c={versions:{}};new Proxy(y,{get(e,o){if(o==="env")return s;if(o in e)return e[o];if(o in c)return c[o]}});const L=globalThis.process?.release?.name==="node",a=!!globalThis.Bun||!!globalThis.process?.versions?.bun,D=!!globalThis.Deno,O=!!globalThis.fastly,S=!!globalThis.Netlify,N=!!globalThis.EdgeRuntime,P=globalThis.navigator?.userAgent==="Cloudflare-Workers",F=[[S,"netlify"],[N,"edge-light"],[P,"workerd"],[O,"fastly"],[D,"deno"],[a,"bun"],[L,"node"]];function G(){const e=F.find(o=>o[0]);if(e)return {name:e[1]}}const u=G();u?.name||"";
+
+const scheduledTasks = false;
+
+const tasks = {
   
+};
+
+const __runningTasks__ = {};
+async function runTask(name, {
+  payload = {},
+  context = {}
+} = {}) {
+  if (__runningTasks__[name]) {
+    return __runningTasks__[name];
+  }
+  if (!(name in tasks)) {
+    throw createError({
+      message: `Task \`${name}\` is not available!`,
+      statusCode: 404
+    });
+  }
+  if (!tasks[name].resolve) {
+    throw createError({
+      message: `Task \`${name}\` is not implemented!`,
+      statusCode: 501
+    });
+  }
+  const handler = await tasks[name].resolve();
+  const taskEvent = { name, payload, context };
+  __runningTasks__[name] = handler.run(taskEvent);
+  try {
+    const res = await __runningTasks__[name];
+    return res;
+  } finally {
+    delete __runningTasks__[name];
+  }
+}
+
+function buildAssetsDir() {
+  return useRuntimeConfig().app.buildAssetsDir;
+}
+function buildAssetsURL(...path) {
+  return joinRelativeURL(publicAssetsURL(), buildAssetsDir(), ...path);
+}
+function publicAssetsURL(...path) {
+  const app = useRuntimeConfig().app;
+  const publicBase = app.cdnURL || app.baseURL;
+  return path.length ? joinRelativeURL(publicBase, ...path) : publicBase;
+}
+
+function isTag(vnode, tag) {
+  if (vnode.type === tag) {
+    return true;
+  }
+  if (typeof vnode.type === "object" && vnode.type.tag === tag) {
+    return true;
+  }
+  if (vnode.tag === tag) {
+    return true;
+  }
+  return false;
+}
+function isText(vnode) {
+  return isTag(vnode, "text") || isTag(vnode, Symbol.for("v-txt"));
+}
+function nodeChildren(node) {
+  if (Array.isArray(node.children) || typeof node.children === "string") {
+    return node.children;
+  }
+  if (typeof node.children?.default === "function") {
+    return node.children.default();
+  }
+  return [];
+}
+function nodeTextContent(node) {
+  if (!node) {
+    return "";
+  }
+  if (Array.isArray(node)) {
+    return node.map(nodeTextContent).join("");
+  }
+  if (isText(node)) {
+    return node.value || node.children || "";
+  }
+  const children = nodeChildren(node);
+  if (Array.isArray(children)) {
+    return children.map(nodeTextContent).filter(Boolean).join("");
+  }
+  return "";
+}
+
+const useProcessorPlugins = async (processor, plugins = {}) => {
+  const toUse = Object.entries(plugins).filter((p) => p[1] !== false);
+  for (const plugin of toUse) {
+    const instance = plugin[1].instance || await import(
+      /* @vite-ignore */
+      plugin[0]
+    ).then((m) => m.default || m);
+    processor.use(instance, plugin[1].options);
+  }
+};
+
+function emphasis(state, node) {
+  const result = {
+    type: "element",
+    tagName: "em",
+    properties: node.attributes || {},
+    children: state.all(node)
+  };
+  state.patch(node, result);
+  return state.applyData(node, result);
+}
+
+function parseThematicBlock(lang) {
+  if (!lang?.trim()) {
+    return {
+      language: void 0,
+      highlights: void 0,
+      filename: void 0,
+      meta: void 0
+    };
+  }
+  const languageMatches = lang.replace(/[{|[](.+)/, "").match(/^[^ \t]+(?=[ \t]|$)/);
+  const highlightTokensMatches = lang.match(/\{([^}]*)\}/);
+  const filenameMatches = lang.match(/\[((\\\]|[^\]])*)\]/);
+  const meta = lang.replace(languageMatches?.[0] ?? "", "").replace(highlightTokensMatches?.[0] ?? "", "").replace(filenameMatches?.[0] ?? "", "").trim();
+  return {
+    language: languageMatches?.[0] || void 0,
+    highlights: parseHighlightedLines(highlightTokensMatches?.[1] || void 0),
+    // https://github.com/nuxt/content/pull/2169
+    filename: filenameMatches?.[1].replace(/\\\]/g, "]") || void 0,
+    meta
+  };
+}
+function parseHighlightedLines(lines) {
+  const lineArray = String(lines || "").split(",").filter(Boolean).flatMap((line) => {
+    const [start, end] = line.trim().split("-").map((a) => Number(a.trim()));
+    return Array.from({ length: (end || start) - start + 1 }).map((_, i) => start + i);
+  });
+  return lineArray.length ? lineArray : void 0;
+}
+const TAG_NAME_REGEXP = /^<\/?([\w-]+)(\s[^>]*?)?\/?>/;
+function getTagName(value) {
+  const result = String(value).match(TAG_NAME_REGEXP);
+  return result && result[1];
+}
+
+const code = (state, node) => {
+  const lang = (node.lang || "") + " " + (node.meta || "");
+  const { language, highlights, filename, meta } = parseThematicBlock(lang);
+  const value = node.value ? detab(node.value + "\n") : "";
+  let result = {
+    type: "element",
+    tagName: "code",
+    properties: { __ignoreMap: "" },
+    children: [{ type: "text", value }]
+  };
+  if (meta) {
+    result.data = {
+      meta
+    };
+  }
+  state.patch(node, result);
+  result = state.applyData(node, result);
+  const properties = {
+    language,
+    filename,
+    highlights,
+    meta,
+    code: value
+  };
+  if (language) {
+    properties.className = ["language-" + language];
+  }
+  result = { type: "element", tagName: "pre", properties, children: [result] };
+  state.patch(node, result);
+  return result;
+};
+
+function html(state, node) {
+  const tagName = getTagName(node.value);
+  if (tagName && /[A-Z]/.test(tagName)) {
+    node.value = node.value.replace(tagName, kebabCase(tagName));
+  }
+  if (state.dangerous || state.options?.allowDangerousHtml) {
+    const result = { type: "raw", value: node.value };
+    state.patch(node, result);
+    return state.applyData(node, result);
+  }
+  return void 0;
+}
+
+function link$1(state, node) {
+  const properties = {
+    ...node.attributes || {},
+    href: normalizeUri(node.url)
+  };
+  if (node.title !== null && node.title !== void 0) {
+    properties.title = node.title;
+  }
+  const result = {
+    type: "element",
+    tagName: "a",
+    properties,
+    children: state.all(node)
+  };
+  state.patch(node, result);
+  return state.applyData(node, result);
+}
+
+function list(state, node) {
+  const properties = {};
+  const results = state.all(node);
+  let index = -1;
+  if (typeof node.start === "number" && node.start !== 1) {
+    properties.start = node.start;
+  }
+  while (++index < results.length) {
+    const child = results[index];
+    if (child.type === "element" && child.tagName === "li" && child.properties && Array.isArray(child.properties.className) && child.properties.className.includes("task-list-item")) {
+      properties.className = ["contains-task-list"];
+      break;
+    }
+  }
+  if ((node.children || []).some((child) => typeof child.checked === "boolean")) {
+    properties.className = ["contains-task-list"];
+  }
+  const result = {
+    type: "element",
+    tagName: node.ordered ? "ol" : "ul",
+    properties,
+    children: state.wrap(results, true)
+  };
+  state.patch(node, result);
+  return state.applyData(node, result);
+}
+
+const htmlTags = [
+  "a",
+  "abbr",
+  "address",
+  "area",
+  "article",
+  "aside",
+  "audio",
+  "b",
+  "base",
+  "bdi",
+  "bdo",
+  "blockquote",
+  "body",
+  "br",
+  "button",
+  "canvas",
+  "caption",
+  "cite",
+  "code",
+  "col",
+  "colgroup",
+  "data",
+  "datalist",
+  "dd",
+  "del",
+  "details",
+  "dfn",
+  "dialog",
+  "div",
+  "dl",
+  "dt",
+  "em",
+  "embed",
+  "fieldset",
+  "figcaption",
+  "figure",
+  "footer",
+  "form",
+  "h1",
+  "h2",
+  "h3",
+  "h4",
+  "h5",
+  "h6",
+  "head",
+  "header",
+  "hgroup",
+  "hr",
+  "html",
+  "i",
+  "iframe",
+  "img",
+  "input",
+  "ins",
+  "kbd",
+  "label",
+  "legend",
+  "li",
+  "link",
+  "main",
+  "map",
+  "mark",
+  "math",
+  "menu",
+  "menuitem",
+  "meta",
+  "meter",
+  "nav",
+  "noscript",
+  "object",
+  "ol",
+  "optgroup",
+  "option",
+  "output",
+  "p",
+  "param",
+  "picture",
+  "pre",
+  "progress",
+  "q",
+  "rb",
+  "rp",
+  "rt",
+  "rtc",
+  "ruby",
+  "s",
+  "samp",
+  "script",
+  "section",
+  "select",
+  "slot",
+  "small",
+  "source",
+  "span",
+  "strong",
+  "style",
+  "sub",
+  "summary",
+  "sup",
+  "svg",
+  "table",
+  "tbody",
+  "td",
+  "template",
+  "textarea",
+  "tfoot",
+  "th",
+  "thead",
+  "time",
+  "title",
+  "tr",
+  "track",
+  "u",
+  "ul",
+  "var",
+  "video",
+  "wbr"
 ];
 
-function hasReqHeader(req, header, includes) {
-  const value = req.headers[header];
-  return value && typeof value === "string" && value.toLowerCase().includes(includes);
+function paragraph(state, node) {
+  if (node.children && node.children[0] && node.children[0].type === "html") {
+    const tagName = kebabCase(getTagName(node.children[0].value) || "div");
+    if (!htmlTags.includes(tagName)) {
+      return state.all(node);
+    }
+  }
+  const result = {
+    type: "element",
+    tagName: "p",
+    properties: {},
+    children: state.all(node)
+  };
+  state.patch(node, result);
+  return state.applyData(node, result);
 }
-function isJsonRequest(event) {
-  return hasReqHeader(event.req, "accept", "application/json") || hasReqHeader(event.req, "user-agent", "curl/") || hasReqHeader(event.req, "user-agent", "httpie/") || event.req.url?.endsWith(".json") || event.req.url?.includes("/api/");
+
+function image(state, node) {
+  const properties = { ...node.attributes, src: normalizeUri(node.url) };
+  if (node.alt !== null && node.alt !== void 0) {
+    properties.alt = node.alt;
+  }
+  if (node.title !== null && node.title !== void 0) {
+    properties.title = node.title;
+  }
+  const result = { type: "element", tagName: "img", properties, children: [] };
+  state.patch(node, result);
+  return state.applyData(node, result);
 }
-function normalizeError(error) {
-  const cwd = process.cwd();
-  const stack = (error.stack || "").split("\n").splice(1).filter((line) => line.includes("at ")).map((line) => {
-    const text = line.replace(cwd + "/", "./").replace("webpack:/", "").replace("file://", "").trim();
-    return {
-      text,
-      internal: line.includes("node_modules") && !line.includes(".cache") || line.includes("internal") || line.includes("new Promise")
-    };
+
+function strong(state, node) {
+  const result = {
+    type: "element",
+    tagName: "strong",
+    properties: node.attributes || {},
+    children: state.all(node)
+  };
+  state.patch(node, result);
+  return state.applyData(node, result);
+}
+
+function inlineCode(state, node) {
+  const language = node.attributes?.language || node.attributes?.lang;
+  const text = { type: "text", value: node.value.replace(/\r?\n|\r/g, " ") };
+  state.patch(node, text);
+  const result = {
+    type: "element",
+    tagName: "code",
+    properties: node.attributes || {},
+    children: [text]
+  };
+  const classes = (result.properties.class || "").split(" ");
+  delete result.properties.class;
+  if (language) {
+    result.properties.language = language;
+    delete result.properties.lang;
+    classes.push("language-" + language);
+  }
+  result.properties.className = classes.join(" ");
+  state.patch(node, result);
+  return state.applyData(node, result);
+}
+
+function containerComponent(state, node) {
+  const result = {
+    type: "element",
+    tagName: node.name,
+    properties: {
+      ...node.attributes,
+      ...node.data?.hProperties
+    },
+    children: state.all(node)
+  };
+  state.patch(node, result);
+  result.attributes = node.attributes;
+  result.fmAttributes = node.fmAttributes;
+  return result;
+}
+
+const handlers$1 = {
+  emphasis,
+  code,
+  link: link$1,
+  paragraph,
+  html,
+  list,
+  image,
+  strong,
+  inlineCode,
+  containerComponent
+};
+
+const defaults$1 = {
+  remark: {
+    plugins: {
+      "remark-mdc": {
+        instance: remarkMDC
+      },
+      "remark-gfm": {
+        instance: remarkGFM
+      }
+    }
+  },
+  rehype: {
+    options: {
+      handlers: handlers$1,
+      allowDangerousHtml: true
+    },
+    plugins: {
+      "rehype-external-links": {
+        instance: rehypeExternalLinks
+      },
+      "rehype-sort-attribute-values": {
+        instance: rehypeSortAttributeValues
+      },
+      "rehype-sort-attributes": {
+        instance: rehypeSortAttributes
+      },
+      "rehype-raw": {
+        instance: rehypeRaw,
+        options: {
+          passThrough: ["element"]
+        }
+      }
+    }
+  },
+  highlight: false,
+  toc: {
+    searchDepth: 2,
+    depth: 2
+  }
+};
+
+function flattenNodeText(node) {
+  if (node.type === "comment") {
+    return "";
+  }
+  if (node.type === "text") {
+    return node.value || "";
+  } else {
+    return (node.children || []).reduce((text, child) => {
+      return text.concat(flattenNodeText(child));
+    }, "");
+  }
+}
+function flattenNode(node, maxDepth = 2, _depth = 0) {
+  if (!Array.isArray(node.children) || _depth === maxDepth) {
+    return [node];
+  }
+  return [
+    node,
+    ...node.children.reduce((acc, child) => acc.concat(flattenNode(child, maxDepth, _depth + 1)), [])
+  ];
+}
+
+const TOC_TAGS = ["h2", "h3", "h4", "h5", "h6"];
+const TOC_TAGS_DEPTH = TOC_TAGS.reduce((tags, tag) => {
+  tags[tag] = Number(tag.charAt(tag.length - 1));
+  return tags;
+}, {});
+const getHeaderDepth = (node) => TOC_TAGS_DEPTH[node.tag];
+const getTocTags = (depth) => {
+  if (depth < 1 || depth > 5) {
+    console.log(`\`toc.depth\` is set to ${depth}. It should be a number between 1 and 5. `);
+    depth = 1;
+  }
+  return TOC_TAGS.slice(0, depth);
+};
+function nestHeaders(headers) {
+  if (headers.length <= 1) {
+    return headers;
+  }
+  const toc = [];
+  let parent;
+  headers.forEach((header) => {
+    if (!parent || header.depth <= parent.depth) {
+      header.children = [];
+      parent = header;
+      toc.push(header);
+    } else {
+      parent.children.push(header);
+    }
   });
-  const statusCode = error.statusCode || 500;
-  const statusMessage = error.statusMessage ?? (statusCode === 404 ? "Route Not Found" : "Internal Server Error");
-  const message = error.message || error.toString();
+  toc.forEach((header) => {
+    if (header.children?.length) {
+      header.children = nestHeaders(header.children);
+    } else {
+      delete header.children;
+    }
+  });
+  return toc;
+}
+function generateFlatToc(body, options) {
+  const { searchDepth, depth, title = "" } = options;
+  const tags = getTocTags(depth);
+  const headers = flattenNode(body, searchDepth).filter((node) => tags.includes(node.tag || ""));
+  const links = headers.map((node) => ({
+    id: node.props?.id,
+    depth: getHeaderDepth(node),
+    text: flattenNodeText(node)
+  }));
   return {
-    stack,
-    statusCode,
-    statusMessage,
-    message
+    title,
+    searchDepth,
+    depth,
+    links
+  };
+}
+function generateToc(body, options) {
+  const toc = generateFlatToc(body, options);
+  toc.links = nestHeaders(toc.links);
+  return toc;
+}
+
+const unsafeLinkPrefix = [
+  "javascript:",
+  "data:text/html",
+  "vbscript:",
+  "data:text/javascript",
+  "data:text/vbscript",
+  "data:text/css",
+  "data:text/plain",
+  "data:text/xml"
+];
+const validateProp = (attribute, value) => {
+  if (attribute.startsWith("on")) {
+    return false;
+  }
+  if (attribute === "href" || attribute === "src") {
+    return !unsafeLinkPrefix.some((prefix) => value.toLowerCase().startsWith(prefix));
+  }
+  return true;
+};
+const validateProps = (type, props) => {
+  if (!props) {
+    return {};
+  }
+  props = Object.fromEntries(
+    Object.entries(props).filter(([name, value]) => {
+      const isValid = validateProp(name, value);
+      if (!isValid) {
+        console.warn(`[@nuxtjs/mdc] removing unsafe attribute: ${name}="${value}"`);
+      }
+      return isValid;
+    })
+  );
+  if (type === "pre") {
+    if (typeof props.highlights === "string") {
+      props.highlights = props.highlights.split(" ").map((i) => Number.parseInt(i));
+    }
+  }
+  return props;
+};
+
+function compileHast(options = {}) {
+  const slugs = new Slugger();
+  function compileToJSON(node, parent) {
+    if (node.type === "root") {
+      return {
+        type: "root",
+        children: node.children.map((child) => compileToJSON(child, node)).filter(Boolean)
+      };
+    }
+    if (node.type === "element") {
+      if (node.tagName === "p" && node.children.every((child) => child.type === "text" && /^\s*$/.test(child.value))) {
+        return null;
+      }
+      if (node.tagName === "li") {
+        let hasPreviousParagraph = false;
+        node.children = node.children?.flatMap((child) => {
+          if (child.type === "element" && child.tagName === "p") {
+            if (hasPreviousParagraph) {
+              child.children.unshift({
+                type: "element",
+                tagName: "br",
+                properties: {},
+                children: []
+              });
+            }
+            hasPreviousParagraph = true;
+            return child.children;
+          }
+          return child;
+        });
+      }
+      if (node.tagName?.match(/^h\d$/)) {
+        node.properties = node.properties || {};
+        node.properties.id = String(node.properties?.id || slugs.slug(toString(node))).replace(/-+/g, "-").replace(/^-|-$/g, "").replace(/^(\d)/, "_$1");
+      }
+      if (node.tagName === "component-slot") {
+        node.tagName = "template";
+      }
+      const children = (node.tagName === "template" && node.content?.children.length ? node.content.children : node.children).map((child) => compileToJSON(child, node)).filter(Boolean);
+      return {
+        type: "element",
+        tag: node.tagName,
+        props: validateProps(node.tagName, node.properties),
+        children
+      };
+    }
+    if (node.type === "text") {
+      if (!/^\n+$/.test(node.value || "") || parent?.properties?.emptyLinePlaceholder) {
+        return {
+          type: "text",
+          value: node.value
+        };
+      }
+    }
+    if (options.keepComments && node.type === "comment") {
+      return {
+        type: "comment",
+        value: node.value
+      };
+    }
+    return null;
+  }
+  this.Compiler = (tree) => {
+    const body = compileToJSON(tree);
+    let excerpt = void 0;
+    const excerptIndex = tree.children.findIndex((node) => node.type === "comment" && node.value?.trim() === "more");
+    if (excerptIndex !== -1) {
+      excerpt = compileToJSON({
+        type: "root",
+        children: tree.children.slice(0, excerptIndex)
+      });
+      if (excerpt.children.find((node) => node.type === "element" && node.tag === "pre")) {
+        const lastChild = body.children[body.children.length - 1];
+        if (lastChild.type === "element" && lastChild.tag === "style") {
+          excerpt.children.push(lastChild);
+        }
+      }
+    }
+    body.children = (body.children || []).filter((child) => child.type !== "text");
+    return {
+      body,
+      excerpt
+    };
   };
 }
 
-const errorHandler = (async function errorhandler(_error, event) {
-  const { stack, statusCode, statusMessage, message } = normalizeError(_error);
-  const errorObject = {
-    url: event.req.url,
-    statusCode,
-    statusMessage,
-    message,
-    description: statusCode !== 404 ? `<pre>${stack.map((i) => `<span class="stack${i.internal ? " internal" : ""}">${i.text}</span>`).join("\n")}</pre>` : "",
-    data: _error.data
+let moduleOptions;
+let generatedMdcConfigs;
+const createProcessor = async (inlineOptions = {}) => {
+  if (!moduleOptions) {
+    moduleOptions = await Promise.resolve().then(function () { return mdcImports; }).catch(() => ({}));
+  }
+  if (!generatedMdcConfigs) {
+    generatedMdcConfigs = await Promise.resolve().then(function () { return mdcConfigs; }).then((r) => r.getMdcConfigs()).catch(() => []);
+  }
+  const mdcConfigs$1 = [
+    ...generatedMdcConfigs || [],
+    ...inlineOptions.configs || []
+  ];
+  if (inlineOptions.highlight != null && inlineOptions.highlight != false && inlineOptions.highlight.highlighter !== void 0 && typeof inlineOptions.highlight.highlighter !== "function") {
+    console.warn("[@nuxtjs/mdc] `highlighter` passed to `parseMarkdown` is should be a function, but got " + JSON.stringify(inlineOptions.highlight.highlighter) + ", ignored.");
+    inlineOptions = {
+      ...inlineOptions,
+      highlight: {
+        ...inlineOptions.highlight
+      }
+    };
+    delete inlineOptions.highlight.highlighter;
+  }
+  const options = defu$1(inlineOptions, {
+    remark: { plugins: moduleOptions?.remarkPlugins },
+    rehype: { plugins: moduleOptions?.rehypePlugins },
+    highlight: moduleOptions?.highlight
+  }, defaults$1);
+  if (options.rehype?.plugins?.highlight) {
+    options.rehype.plugins.highlight.options = {
+      ...options.rehype.plugins.highlight.options || {},
+      ...options.highlight || {}
+    };
+  }
+  let processor = unified();
+  for (const config of mdcConfigs$1) {
+    processor = await config.unified?.pre?.(processor) || processor;
+  }
+  processor.use(remarkParse);
+  for (const config of mdcConfigs$1) {
+    processor = await config.unified?.remark?.(processor) || processor;
+  }
+  await useProcessorPlugins(processor, options.remark?.plugins);
+  processor.use(remark2rehype, options.rehype?.options);
+  for (const config of mdcConfigs$1) {
+    processor = await config.unified?.rehype?.(processor) || processor;
+  }
+  await useProcessorPlugins(processor, options.rehype?.plugins);
+  processor.use(compileHast, options);
+  for (const config of mdcConfigs$1) {
+    processor = await config.unified?.post?.(processor) || processor;
+  }
+  return processor;
+};
+const createMarkdownParser = async (inlineOptions = {}) => {
+  const processor = await createProcessor(inlineOptions);
+  return async function parse(md, { fileOptions } = {}) {
+    const { content, data: frontmatter } = await parseFrontMatter(md);
+    const processedFile = await processor.process({ ...fileOptions, value: content, data: frontmatter });
+    const result = processedFile.result;
+    const data = Object.assign(
+      contentHeading(result.body),
+      frontmatter,
+      processedFile?.data || {}
+    );
+    let toc;
+    if (data.toc !== false) {
+      const tocOption = defu$1(data.toc || {}, inlineOptions.toc, defaults$1.toc);
+      toc = generateToc(result.body, tocOption);
+    }
+    return {
+      data,
+      body: result.body,
+      excerpt: result.excerpt,
+      toc
+    };
   };
-  event.res.statusCode = errorObject.statusCode;
-  event.res.statusMessage = errorObject.statusMessage;
-  if (errorObject.statusCode !== 404) {
-    console.error("[nuxt] [request error]", errorObject.message + "\n" + stack.map((l) => "  " + l.text).join("  \n"));
+};
+const parseMarkdown = async (md, markdownParserOptions = {}, parseOptions = {}) => {
+  const parser = await createMarkdownParser(markdownParserOptions);
+  return parser(md, parseOptions);
+};
+function contentHeading(body) {
+  let title = "";
+  let description = "";
+  const children = body.children.filter((node) => node.type === "element" && node.tag !== "hr");
+  if (children.length && children[0].tag === "h1") {
+    const node = children.shift();
+    title = nodeTextContent(node);
   }
-  if (isJsonRequest(event)) {
-    event.res.setHeader("Content-Type", "application/json");
-    event.res.end(JSON.stringify(errorObject));
-    return;
+  if (children.length && children[0].tag === "p") {
+    const node = children.shift();
+    description = nodeTextContent(node);
   }
-  const url = withQuery("/__nuxt_error", errorObject);
-  const html = await $fetch(url).catch((error) => {
-    console.error("[nitro] Error while generating error response", error);
-    return errorObject.statusMessage;
+  return {
+    title,
+    description
+  };
+}
+
+const _Cua0ULOATk = defineNitroPlugin(async (nitro) => {
+  const { cleanCachedContents } = await Promise.resolve().then(function () { return storage; });
+  const storage$1 = useStorage();
+  const unwatch = await storage$1.watch(async (event, key) => {
+    if (key.startsWith("content:source")) {
+      cleanCachedContents();
+    }
   });
-  event.res.setHeader("Content-Type", "text/html;charset=UTF-8");
-  event.res.end(html);
+  nitro.hooks.hook("close", async () => {
+    if (typeof unwatch === "function") {
+      await unwatch();
+    }
+  });
+});
+
+const plugins = [
+  _t9Ne0FFe20,
+_cCqqM6hlaT,
+_Cua0ULOATk
+];
+
+const _MX0nBA = eventHandler(async (event) => {
+  const { code, lang, theme: themeString, options: optionsStr } = getQuery$1(event);
+  const theme = JSON.parse(themeString);
+  const options = optionsStr ? JSON.parse(optionsStr) : {};
+  const highlighter = await Promise.resolve().then(function () { return mdcHighlighter; }).then((m) => m.default);
+  return await highlighter(code, lang, theme, options);
+});
+
+const _TO9phX = defineEventHandler(async (event) => {
+  const { getContentQuery } = await Promise.resolve().then(function () { return query; });
+  const { serverQueryContent } = await Promise.resolve().then(function () { return storage; });
+  const query$1 = getContentQuery(event);
+  const { advanceQuery } = useRuntimeConfig().public.content.experimental;
+  if (query$1.first) {
+    let contentQuery = serverQueryContent(event, query$1);
+    if (!advanceQuery) {
+      contentQuery = contentQuery.withDirConfig();
+    }
+    const content = await contentQuery.findOne();
+    const _result = advanceQuery ? content?.result : content;
+    const missing = !_result && !content?.dirConfig?.navigation?.redirect && !content?._dir?.navigation?.redirect;
+    if (missing) {
+      throw createError({
+        statusMessage: "Document not found!",
+        statusCode: 404,
+        data: {
+          description: "Could not find document for the given query.",
+          query: query$1
+        }
+      });
+    }
+    return content;
+  }
+  if (query$1.count) {
+    return serverQueryContent(event, query$1).count();
+  }
+  return serverQueryContent(event, query$1).find();
+});
+
+const _tpnRl7 = defineEventHandler(async (event) => {
+  const { getContentIndex } = await Promise.resolve().then(function () { return contentIndex; });
+  const { cacheStorage, serverQueryContent } = await Promise.resolve().then(function () { return storage; });
+  const { content } = useRuntimeConfig();
+  const now = Date.now();
+  const contents = await serverQueryContent(event).find();
+  await getContentIndex(event);
+  const navigation = await $fetch(`${content.api.baseURL}/navigation`);
+  await cacheStorage().setItem("content-navigation.json", navigation);
+  return {
+    generatedAt: now,
+    generateTime: Date.now() - now,
+    contents: content.experimental.cacheContents ? contents : [],
+    navigation
+  };
+});
+
+const isPreview = (event) => {
+  const previewToken = getQuery$1(event).previewToken || getCookie(event, "previewToken");
+  return !!previewToken;
+};
+const getPreview = (event) => {
+  const key = getQuery$1(event).previewToken || getCookie(event, "previewToken");
+  return { key };
+};
+
+const _gWIuzX = defineEventHandler(async (event) => {
+  const { getContentQuery } = await Promise.resolve().then(function () { return query; });
+  const { cacheStorage, serverQueryContent } = await Promise.resolve().then(function () { return storage; });
+  const { createNav } = await Promise.resolve().then(function () { return navigation; });
+  const query$1 = getContentQuery(event);
+  if (!isPreview(event) && Object.keys(query$1).length === 0) {
+    const cache = await cacheStorage().getItem("content-navigation.json");
+    if (cache) {
+      return cache;
+    }
+  }
+  const contents = await serverQueryContent(event, query$1).where({
+    /**
+     * Partial contents are not included in the navigation
+     * A partial content is a content that has `_` prefix in its path
+     */
+    _partial: false,
+    /**
+     * Exclude any pages which have opted out of navigation via frontmatter.
+     */
+    navigation: {
+      $ne: false
+    }
+  }).find();
+  const _locale = (query$1?.where || []).find((w) => w._locale)?._locale;
+  const dirConfigs = await serverQueryContent(event, _locale ? { where: [{ _locale }] } : void 0).where({ _path: /\/_dir$/i, _partial: true }).find();
+  const configs = (dirConfigs?.result || dirConfigs).reduce((configs2, conf) => {
+    if (conf.title?.toLowerCase() === "dir") {
+      conf.title = void 0;
+    }
+    const key = conf._path.split("/").slice(0, -1).join("/") || "/";
+    configs2[key] = {
+      ...conf,
+      // Extract meta from body. (non MD files)
+      ...conf.body
+    };
+    return configs2;
+  }, {});
+  return createNav(contents?.result || contents, configs);
+});
+
+const _lazy_nsx5eQ = () => Promise.resolve().then(function () { return getByAuthToken$1; });
+const _lazy_3YDjhu = () => Promise.resolve().then(function () { return login$1; });
+const _lazy_qENQiN = () => Promise.resolve().then(function () { return logout$1; });
+const _lazy_4vKhH4 = () => Promise.resolve().then(function () { return register$1; });
+const _lazy_Tanoq6 = () => Promise.resolve().then(function () { return addComment$1; });
+const _lazy_k3x4T8 = () => Promise.resolve().then(function () { return deleteComment$1; });
+const _lazy_a9f9lG = () => Promise.resolve().then(function () { return getComments$1; });
+const _lazy_9pvzFb = () => Promise.resolve().then(function () { return addLike$1; });
+const _lazy_czBP2s = () => Promise.resolve().then(function () { return deleteLike$1; });
+const _lazy_a5ETyl = () => Promise.resolve().then(function () { return getLikes$1; });
+const _lazy_lOZZLU = () => Promise.resolve().then(function () { return players$1; });
+const _lazy_fpRsiM = () => Promise.resolve().then(function () { return subscribe$1; });
+const _lazy_Xa7yzA = () => Promise.resolve().then(function () { return teams$1; });
+const _lazy_nBUkym = () => Promise.resolve().then(function () { return renderer$1; });
+
+const handlers = [
+  { route: '/api/auth/getByAuthToken', handler: _lazy_nsx5eQ, lazy: true, middleware: false, method: undefined },
+  { route: '/api/auth/login', handler: _lazy_3YDjhu, lazy: true, middleware: false, method: undefined },
+  { route: '/api/auth/logout', handler: _lazy_qENQiN, lazy: true, middleware: false, method: undefined },
+  { route: '/api/auth/register', handler: _lazy_4vKhH4, lazy: true, middleware: false, method: undefined },
+  { route: '/api/comment/addComment', handler: _lazy_Tanoq6, lazy: true, middleware: false, method: undefined },
+  { route: '/api/comment/deleteComment', handler: _lazy_k3x4T8, lazy: true, middleware: false, method: undefined },
+  { route: '/api/comment/getComments', handler: _lazy_a9f9lG, lazy: true, middleware: false, method: undefined },
+  { route: '/api/like/addLike', handler: _lazy_9pvzFb, lazy: true, middleware: false, method: undefined },
+  { route: '/api/like/deleteLike', handler: _lazy_czBP2s, lazy: true, middleware: false, method: undefined },
+  { route: '/api/like/getLikes', handler: _lazy_a5ETyl, lazy: true, middleware: false, method: undefined },
+  { route: '/api/players', handler: _lazy_lOZZLU, lazy: true, middleware: false, method: undefined },
+  { route: '/api/subscribe', handler: _lazy_fpRsiM, lazy: true, middleware: false, method: undefined },
+  { route: '/api/teams', handler: _lazy_Xa7yzA, lazy: true, middleware: false, method: undefined },
+  { route: '/__nuxt_error', handler: _lazy_nBUkym, lazy: true, middleware: false, method: undefined },
+  { route: '/api/_mdc/highlight', handler: _MX0nBA, lazy: false, middleware: false, method: undefined },
+  { route: '/api/_content/query/:qid/**:params', handler: _TO9phX, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/query/:qid', handler: _TO9phX, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/query', handler: _TO9phX, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/cache.json', handler: _tpnRl7, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation/:qid/**:params', handler: _gWIuzX, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation/:qid', handler: _gWIuzX, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation', handler: _gWIuzX, lazy: false, middleware: false, method: "get" },
+  { route: '/**', handler: _lazy_nBUkym, lazy: true, middleware: false, method: undefined }
+];
+
+function createNitroApp() {
+  const config = useRuntimeConfig();
+  const hooks = createHooks();
+  const captureError = (error, context = {}) => {
+    const promise = hooks.callHookParallel("error", error, context).catch((error_) => {
+      console.error("Error while capturing another error", error_);
+    });
+    if (context.event && isEvent(context.event)) {
+      const errors = context.event.context.nitro?.errors;
+      if (errors) {
+        errors.push({ error, context });
+      }
+      if (context.event.waitUntil) {
+        context.event.waitUntil(promise);
+      }
+    }
+  };
+  const h3App = createApp({
+    debug: destr(true),
+    onError: (error, event) => {
+      captureError(error, { event, tags: ["request"] });
+      return errorHandler(error, event);
+    },
+    onRequest: async (event) => {
+      await nitroApp$1.hooks.callHook("request", event).catch((error) => {
+        captureError(error, { event, tags: ["request"] });
+      });
+    },
+    onBeforeResponse: async (event, response) => {
+      await nitroApp$1.hooks.callHook("beforeResponse", event, response).catch((error) => {
+        captureError(error, { event, tags: ["request", "response"] });
+      });
+    },
+    onAfterResponse: async (event, response) => {
+      await nitroApp$1.hooks.callHook("afterResponse", event, response).catch((error) => {
+        captureError(error, { event, tags: ["request", "response"] });
+      });
+    }
+  });
+  const router = createRouter$1({
+    preemptive: true
+  });
+  const localCall = createCall(toNodeListener(h3App));
+  const _localFetch = createFetch(localCall, globalThis.fetch);
+  const localFetch = (input, init) => _localFetch(input, init).then(
+    (response) => normalizeFetchResponse(response)
+  );
+  const $fetch = createFetch$1({
+    fetch: localFetch,
+    Headers: Headers$1,
+    defaults: { baseURL: config.app.baseURL }
+  });
+  globalThis.$fetch = $fetch;
+  h3App.use(createRouteRulesHandler({ localFetch }));
+  h3App.use(
+    eventHandler((event) => {
+      event.context.nitro = event.context.nitro || { errors: [] };
+      const envContext = event.node.req?.__unenv__;
+      if (envContext) {
+        Object.assign(event.context, envContext);
+      }
+      event.fetch = (req, init) => fetchWithEvent(event, req, init, { fetch: localFetch });
+      event.$fetch = (req, init) => fetchWithEvent(event, req, init, {
+        fetch: $fetch
+      });
+      event.waitUntil = (promise) => {
+        if (!event.context.nitro._waitUntilPromises) {
+          event.context.nitro._waitUntilPromises = [];
+        }
+        event.context.nitro._waitUntilPromises.push(promise);
+        if (envContext?.waitUntil) {
+          envContext.waitUntil(promise);
+        }
+      };
+      event.captureError = (error, context) => {
+        captureError(error, { event, ...context });
+      };
+    })
+  );
+  for (const h of handlers) {
+    let handler = h.lazy ? lazyEventHandler(h.handler) : h.handler;
+    if (h.middleware || !h.route) {
+      const middlewareBase = (config.app.baseURL + (h.route || "/")).replace(
+        /\/+/g,
+        "/"
+      );
+      h3App.use(middlewareBase, handler);
+    } else {
+      const routeRules = getRouteRulesForPath(
+        h.route.replace(/:\w+|\*\*/g, "_")
+      );
+      if (routeRules.cache) {
+        handler = cachedEventHandler(handler, {
+          group: "nitro/routes",
+          ...routeRules.cache
+        });
+      }
+      router.use(h.route, handler, h.method);
+    }
+  }
+  h3App.use(config.app.baseURL, router.handler);
+  const app = {
+    hooks,
+    h3App,
+    router,
+    localCall,
+    localFetch,
+    captureError
+  };
+  return app;
+}
+function runNitroPlugins(nitroApp2) {
+  for (const plugin of plugins) {
+    try {
+      plugin(nitroApp2);
+    } catch (error) {
+      nitroApp2.captureError(error, { tags: ["plugin"] });
+      throw error;
+    }
+  }
+}
+const nitroApp$1 = createNitroApp();
+function useNitroApp() {
+  return nitroApp$1;
+}
+runNitroPlugins(nitroApp$1);
+
+const nitroApp = useNitroApp();
+const server = new Server(toNodeListener(nitroApp.h3App));
+function getAddress() {
+  if (d === "stackblitz" || process.env.NITRO_NO_UNIX_SOCKET || process.versions.bun) {
+    return 0;
+  }
+  const socketName = `worker-${process.pid}-${threadId}.sock`;
+  if (_) {
+    return join(String.raw`\\.\pipe\nitro`, socketName);
+  }
+  const socketDir = join(tmpdir(), "nitro");
+  mkdirSync(socketDir, { recursive: true });
+  return join(socketDir, socketName);
+}
+const listenAddress = getAddress();
+server.listen(listenAddress, () => {
+  const _address = server.address();
+  parentPort?.postMessage({
+    event: "listen",
+    address: typeof _address === "string" ? { socketPath: _address } : { host: "localhost", port: _address?.port }
+  });
+});
+nitroApp.router.get(
+  "/_nitro/tasks",
+  defineEventHandler(async (event) => {
+    const _tasks = await Promise.all(
+      Object.entries(tasks).map(async ([name, task]) => {
+        const _task = await task.resolve?.();
+        return [name, { description: _task?.meta?.description }];
+      })
+    );
+    return {
+      tasks: Object.fromEntries(_tasks),
+      scheduledTasks
+    };
+  })
+);
+nitroApp.router.use(
+  "/_nitro/tasks/:name",
+  defineEventHandler(async (event) => {
+    const name = getRouterParam(event, "name");
+    const payload = {
+      ...getQuery$1(event),
+      ...await readBody(event).then((r) => r?.payload).catch(() => ({}))
+    };
+    return await runTask(name, { payload });
+  })
+);
+trapUnhandledNodeErrors();
+async function onShutdown(signal) {
+  await nitroApp.hooks.callHook("close");
+}
+parentPort?.on("message", async (msg) => {
+  if (msg && msg.event === "shutdown") {
+    await onShutdown();
+    parentPort?.postMessage({ event: "exit" });
+  }
+});
+
+const _messages = { "appName": "Nuxt", "version": "", "statusCode": 500, "statusMessage": "Server error", "description": "An error occurred in the application and the page could not be served. If you are the application owner, check your server logs for details.", "stack": "" };
+const template$1 = (messages) => {
+  messages = { ..._messages, ...messages };
+  return '<!DOCTYPE html><html lang="en"><head><title>' + messages.statusCode + " - " + messages.statusMessage + " | " + messages.appName + `</title><meta charset="utf-8"><meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0" name="viewport"><style>.spotlight{background:linear-gradient(45deg,#00dc82,#36e4da 50%,#0047e1);bottom:-40vh;filter:blur(30vh);height:60vh;opacity:.8}*,:after,:before{border-color:var(--un-default-border-color,#e5e7eb);border-style:solid;border-width:0;box-sizing:border-box}:after,:before{--un-content:""}html{line-height:1.5;-webkit-text-size-adjust:100%;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-moz-tab-size:4;tab-size:4;-webkit-tap-highlight-color:transparent}body{line-height:inherit;margin:0}h1{font-size:inherit;font-weight:inherit}pre{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-size:1em;font-variation-settings:normal}h1,p,pre{margin:0}*,:after,:before{--un-rotate:0;--un-rotate-x:0;--un-rotate-y:0;--un-rotate-z:0;--un-scale-x:1;--un-scale-y:1;--un-scale-z:1;--un-skew-x:0;--un-skew-y:0;--un-translate-x:0;--un-translate-y:0;--un-translate-z:0;--un-pan-x: ;--un-pan-y: ;--un-pinch-zoom: ;--un-scroll-snap-strictness:proximity;--un-ordinal: ;--un-slashed-zero: ;--un-numeric-figure: ;--un-numeric-spacing: ;--un-numeric-fraction: ;--un-border-spacing-x:0;--un-border-spacing-y:0;--un-ring-offset-shadow:0 0 transparent;--un-ring-shadow:0 0 transparent;--un-shadow-inset: ;--un-shadow:0 0 transparent;--un-ring-inset: ;--un-ring-offset-width:0px;--un-ring-offset-color:#fff;--un-ring-width:0px;--un-ring-color:rgba(147,197,253,.5);--un-blur: ;--un-brightness: ;--un-contrast: ;--un-drop-shadow: ;--un-grayscale: ;--un-hue-rotate: ;--un-invert: ;--un-saturate: ;--un-sepia: ;--un-backdrop-blur: ;--un-backdrop-brightness: ;--un-backdrop-contrast: ;--un-backdrop-grayscale: ;--un-backdrop-hue-rotate: ;--un-backdrop-invert: ;--un-backdrop-opacity: ;--un-backdrop-saturate: ;--un-backdrop-sepia: }.fixed{position:fixed}.left-0{left:0}.right-0{right:0}.z-10{z-index:10}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.h-auto{height:auto}.min-h-screen{min-height:100vh}.flex{display:flex}.flex-1{flex:1 1 0%}.flex-col{flex-direction:column}.overflow-y-auto{overflow-y:auto}.rounded-t-md{border-top-left-radius:.375rem;border-top-right-radius:.375rem}.bg-black\\/5{background-color:#0000000d}.bg-white{--un-bg-opacity:1;background-color:rgb(255 255 255/var(--un-bg-opacity))}.p-8{padding:2rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.pt-14{padding-top:3.5rem}.text-6xl{font-size:3.75rem;line-height:1}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-black{--un-text-opacity:1;color:rgb(0 0 0/var(--un-text-opacity))}.font-light{font-weight:300}.font-medium{font-weight:500}.leading-tight{line-height:1.25}.font-sans{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}@media (prefers-color-scheme:dark){.dark\\:bg-black{--un-bg-opacity:1;background-color:rgb(0 0 0/var(--un-bg-opacity))}.dark\\:bg-white\\/10{background-color:#ffffff1a}.dark\\:text-white{--un-text-opacity:1;color:rgb(255 255 255/var(--un-text-opacity))}}@media (min-width:640px){.sm\\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\\:text-8xl{font-size:6rem;line-height:1}}</style><script>!function(){const e=document.createElement("link").relList;if(!(e&&e.supports&&e.supports("modulepreload"))){for(const e of document.querySelectorAll('link[rel="modulepreload"]'))r(e);new MutationObserver((e=>{for(const o of e)if("childList"===o.type)for(const e of o.addedNodes)"LINK"===e.tagName&&"modulepreload"===e.rel&&r(e)})).observe(document,{childList:!0,subtree:!0})}function r(e){if(e.ep)return;e.ep=!0;const r=function(e){const r={};return e.integrity&&(r.integrity=e.integrity),e.referrerPolicy&&(r.referrerPolicy=e.referrerPolicy),"use-credentials"===e.crossOrigin?r.credentials="include":"anonymous"===e.crossOrigin?r.credentials="omit":r.credentials="same-origin",r}(e);fetch(e.href,r)}}();<\/script></head><body class="antialiased bg-white dark:bg-black dark:text-white flex flex-col font-sans min-h-screen pt-14 px-10 text-black"><div class="fixed left-0 right-0 spotlight"></div><h1 class="font-medium mb-6 sm:text-8xl text-6xl">` + messages.statusCode + '</h1><p class="font-light leading-tight mb-8 sm:text-2xl text-xl">' + messages.description + '</p><div class="bg-black/5 bg-white dark:bg-white/10 flex-1 h-auto overflow-y-auto rounded-t-md"><pre class="font-light leading-tight p-8 text-xl z-10">' + messages.stack + "</pre></div></body></html>";
+};
+
+const errorDev = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  template: template$1
+});
+
+function rehypeHighlight$1(opts) {
+  const options = opts;
+  return async (tree) => {
+    const tasks = [];
+    const styles = [];
+    visit(
+      tree,
+      (node) => ["pre", "code"].includes(node.tagName) && !!(node.properties?.language || node.properties?.highlights),
+      (node) => {
+        const _node = node;
+        const highlights = typeof _node.properties.highlights === "string" ? _node.properties.highlights.split(/[,\s]+/).map(Number) : Array.isArray(_node.properties.highlights) ? _node.properties.highlights.map(Number) : [];
+        const task = options.highlighter(
+          toString(node),
+          _node.properties.language,
+          options.theme,
+          {
+            highlights: highlights.filter(Boolean),
+            meta: _node.properties.meta
+          }
+        ).then(({ tree: tree2, className, style, inlineStyle }) => {
+          _node.properties.className = ((_node.properties.className || "") + " " + className).trim();
+          _node.properties.style = ((_node.properties.style || "") + " " + inlineStyle).trim();
+          if (_node.children[0]?.tagName === "code") {
+            _node.children[0].children = tree2;
+          } else {
+            _node.children = tree2[0].children || tree2;
+          }
+          if (style)
+            styles.push(style);
+        });
+        tasks.push(task);
+      }
+    );
+    if (tasks.length) {
+      await Promise.all(tasks);
+      tree.children.push({
+        type: "element",
+        tagName: "style",
+        children: [{ type: "text", value: cleanCSS(styles.join("")) }],
+        properties: {}
+      });
+    }
+  };
+}
+const cleanCSS = (css) => {
+  const styles = css.split("}").filter((s) => Boolean(s.trim())).map((s) => s.trim() + "}");
+  return Array.from(new Set(styles)).join("");
+};
+
+const defaults = {
+  theme: {},
+  async highlighter(code, lang, theme, options) {
+    try {
+      if (globalThis._importMeta_.browser && window.sessionStorage.getItem("mdc-shiki-highlighter") === "browser") {
+        return Promise.resolve().then(function () { return mdcHighlighter; }).then((h) => h.default(code, lang, theme, options)).catch(() => ({}));
+      }
+      return await $fetch("/api/_mdc/highlight", {
+        params: {
+          code,
+          lang,
+          theme: JSON.stringify(theme),
+          options: JSON.stringify(options)
+        }
+      });
+    } catch (e) {
+      if (globalThis._importMeta_.browser && e?.response?.status === 404) {
+        window.sessionStorage.setItem("mdc-shiki-highlighter", "browser");
+        return this.highlighter?.(code, lang, theme, options);
+      }
+    }
+    return Promise.resolve({ tree: [{ type: "text", value: code }], className: "", style: "" });
+  }
+};
+function rehypeHighlight(opts = {}) {
+  const options = { ...defaults, ...opts };
+  if (typeof options.highlighter !== "function") {
+    options.highlighter = defaults.highlighter;
+  }
+  return rehypeHighlight$1(options);
+}
+
+const remarkPlugins = {
+  'remark-emoji': { instance: _RemarkEmoji },
+};
+
+const rehypePlugins = {
+  'highlight': { instance: rehypeHighlight, options: {} },
+};
+
+const highlight = {"theme":{"default":"material-theme-palenight","dark":"github-dark"}};
+
+const mdcImports = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  highlight: highlight,
+  rehypePlugins: rehypePlugins,
+  remarkPlugins: remarkPlugins
+});
+
+let configs;
+function getMdcConfigs () {
+if (!configs) {
+  configs = Promise.all([
+  ]);
+}
+return configs
+}
+
+const mdcConfigs = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  getMdcConfigs: getMdcConfigs
 });
 
 const get = (obj, path) => path.split(".").reduce((acc, part) => acc && acc[part], obj);
 const _pick = (obj, condition) => Object.keys(obj).filter(condition).reduce((newObj, key) => Object.assign(newObj, { [key]: obj[key] }), {});
+const omit = (keys) => (obj) => keys && keys.length ? _pick(obj, (key) => !keys.includes(key)) : obj;
 const apply = (fn) => (data) => Array.isArray(data) ? data.map((item) => fn(item)) : fn(data);
 const detectProperties = (keys) => {
   const prefixes = [];
@@ -412,17 +2440,15 @@ const assertArray = (value, message = "Expected an array") => {
     throw new TypeError(message);
   }
 };
-const ensureArray = (value) => Array.isArray(value) ? value : value ? [value] : [];
+const ensureArray = (value) => {
+  return Array.isArray(value) ? value : [void 0, null].includes(value) ? [] : [value];
+};
 
 const arrayParams = ["sort", "where", "only", "without"];
-const createQuery = (fetcher, intitialParams) => {
-  const queryParams = {
-    ...intitialParams
-  };
-  for (const key of arrayParams) {
-    if (queryParams[key]) {
-      queryParams[key] = ensureArray(queryParams[key]);
-    }
+function createQuery(fetcher, opts = {}) {
+  const queryParams = {};
+  for (const key of Object.keys(opts.initialParams || {})) {
+    queryParams[key] = arrayParams.includes(key) ? ensureArray(opts.initialParams[key]) : opts.initialParams[key];
   }
   const $set = (key, fn = (v) => v) => {
     return (...values) => {
@@ -430,27 +2456,988 @@ const createQuery = (fetcher, intitialParams) => {
       return query;
     };
   };
+  const resolveResult = (result) => {
+    if (opts.legacy) {
+      if (result?.surround) {
+        return result.surround;
+      }
+      if (!result) {
+        return result;
+      }
+      if (result?.dirConfig) {
+        result.result = {
+          _path: result.dirConfig?._path,
+          ...result.result,
+          _dir: result.dirConfig
+        };
+      }
+      return result?._path || Array.isArray(result) || !Object.prototype.hasOwnProperty.call(result, "result") ? result : result?.result;
+    }
+    return result;
+  };
   const query = {
-    params: () => queryParams,
+    params: () => ({
+      ...queryParams,
+      ...queryParams.where ? { where: [...ensureArray(queryParams.where)] } : {},
+      ...queryParams.sort ? { sort: [...ensureArray(queryParams.sort)] } : {}
+    }),
     only: $set("only", ensureArray),
     without: $set("without", ensureArray),
-    where: $set("where", (q) => [...ensureArray(queryParams.where), q]),
+    where: $set("where", (q) => [...ensureArray(queryParams.where), ...ensureArray(q)]),
     sort: $set("sort", (sort) => [...ensureArray(queryParams.sort), ...ensureArray(sort)]),
     limit: $set("limit", (v) => parseInt(String(v), 10)),
     skip: $set("skip", (v) => parseInt(String(v), 10)),
-    find: () => fetcher(query),
-    findOne: () => {
-      queryParams.first = true;
-      return fetcher(query);
-    },
-    findSurround: (surroundQuery, options) => {
-      queryParams.surround = { query: surroundQuery, ...options };
-      return fetcher(query);
-    },
-    locale: (_locale) => query.where({ _locale })
+    // find
+    find: () => fetcher(query).then(resolveResult),
+    findOne: () => fetcher($set("first")(true)).then(resolveResult),
+    count: () => fetcher($set("count")(true)).then(resolveResult),
+    // locale
+    locale: (_locale) => query.where({ _locale }),
+    withSurround: $set("surround", (surroundQuery, options) => ({ query: surroundQuery, ...options })),
+    withDirConfig: () => $set("dirConfig")(true)
   };
+  if (opts.legacy) {
+    query.findSurround = (surroundQuery, options) => {
+      return query.withSurround(surroundQuery, options).find().then(resolveResult);
+    };
+    return query;
+  }
   return query;
+}
+
+const defineTransformer = (transformer) => {
+  return transformer;
 };
+
+function createTokenizer(parser, initialize, from) {
+  let point = Object.assign(
+    {
+      line: 1,
+      column: 1,
+      offset: 0
+    },
+    {
+      _index: 0,
+      _bufferIndex: -1
+    }
+  );
+  const columnStart = {};
+  const resolveAllConstructs = [];
+  let chunks = [];
+  let stack = [];
+  const effects = {
+    consume,
+    enter,
+    exit,
+    attempt: constructFactory(onsuccessfulconstruct),
+    check: constructFactory(onsuccessfulcheck),
+    interrupt: constructFactory(onsuccessfulcheck, {
+      interrupt: true
+    })
+  };
+  const context = {
+    previous: null,
+    code: null,
+    containerState: {},
+    events: [],
+    parser,
+    sliceStream,
+    sliceSerialize,
+    now,
+    defineSkip,
+    write
+  };
+  let state = initialize.tokenize.call(context, effects);
+  if (initialize.resolveAll) {
+    resolveAllConstructs.push(initialize);
+  }
+  return context;
+  function write(slice) {
+    chunks = push(chunks, slice);
+    main();
+    if (chunks[chunks.length - 1] !== null) {
+      return [];
+    }
+    addResult(initialize, 0);
+    context.events = resolveAll(resolveAllConstructs, context.events, context);
+    return context.events;
+  }
+  function sliceSerialize(token, expandTabs) {
+    return serializeChunks(sliceStream(token), expandTabs);
+  }
+  function sliceStream(token) {
+    return sliceChunks(chunks, token);
+  }
+  function now() {
+    return Object.assign({}, point);
+  }
+  function defineSkip(value) {
+    columnStart[value.line] = value.column;
+    accountForPotentialSkip();
+  }
+  function main() {
+    let chunkIndex;
+    while (point._index < chunks.length) {
+      const chunk = chunks[point._index];
+      if (typeof chunk === "string") {
+        chunkIndex = point._index;
+        if (point._bufferIndex < 0) {
+          point._bufferIndex = 0;
+        }
+        while (point._index === chunkIndex && point._bufferIndex < chunk.length) {
+          go(chunk.charCodeAt(point._bufferIndex));
+        }
+      } else {
+        go(chunk);
+      }
+    }
+  }
+  function go(code) {
+    state = state(code);
+  }
+  function consume(code) {
+    if (markdownLineEnding(code)) {
+      point.line++;
+      point.column = 1;
+      point.offset += code === -3 ? 2 : 1;
+      accountForPotentialSkip();
+    } else if (code !== -1) {
+      point.column++;
+      point.offset++;
+    }
+    if (point._bufferIndex < 0) {
+      point._index++;
+    } else {
+      point._bufferIndex++;
+      if (point._bufferIndex === chunks[point._index].length) {
+        point._bufferIndex = -1;
+        point._index++;
+      }
+    }
+    context.previous = code;
+  }
+  function enter(type, fields) {
+    const token = fields || {};
+    token.type = type;
+    token.start = now();
+    context.events.push(["enter", token, context]);
+    stack.push(token);
+    return token;
+  }
+  function exit(type) {
+    const token = stack.pop();
+    token.end = now();
+    context.events.push(["exit", token, context]);
+    return token;
+  }
+  function onsuccessfulconstruct(construct, info) {
+    addResult(construct, info.from);
+  }
+  function onsuccessfulcheck(_, info) {
+    info.restore();
+  }
+  function constructFactory(onreturn, fields) {
+    return hook;
+    function hook(constructs, returnState, bogusState) {
+      let listOfConstructs;
+      let constructIndex;
+      let currentConstruct;
+      let info;
+      return Array.isArray(constructs) ? (
+        /* c8 ignore next 1 */
+        handleListOfConstructs(constructs)
+      ) : "tokenize" in constructs ? handleListOfConstructs([constructs]) : handleMapOfConstructs(constructs);
+      function handleMapOfConstructs(map) {
+        return start;
+        function start(code) {
+          const def = code !== null && map[code];
+          const all = code !== null && map.null;
+          const list = [
+            // To do: add more extension tests.
+            /* c8 ignore next 2 */
+            ...Array.isArray(def) ? def : def ? [def] : [],
+            ...Array.isArray(all) ? all : all ? [all] : []
+          ];
+          return handleListOfConstructs(list)(code);
+        }
+      }
+      function handleListOfConstructs(list) {
+        listOfConstructs = list;
+        constructIndex = 0;
+        if (list.length === 0) {
+          return bogusState;
+        }
+        return handleConstruct(list[constructIndex]);
+      }
+      function handleConstruct(construct) {
+        return start;
+        function start(code) {
+          info = store();
+          currentConstruct = construct;
+          if (!construct.partial) {
+            context.currentConstruct = construct;
+          }
+          if (construct.name && context.parser.constructs.disable.null.includes(construct.name)) {
+            return nok();
+          }
+          return construct.tokenize.call(
+            // If we do have fields, create an object w/ `context` as its
+            // prototype.
+            // This allows a “live binding”, which is needed for `interrupt`.
+            fields ? Object.assign(Object.create(context), fields) : context,
+            effects,
+            ok,
+            nok
+          )(code);
+        }
+      }
+      function ok(code) {
+        onreturn(currentConstruct, info);
+        return returnState;
+      }
+      function nok(code) {
+        info.restore();
+        if (++constructIndex < listOfConstructs.length) {
+          return handleConstruct(listOfConstructs[constructIndex]);
+        }
+        return bogusState;
+      }
+    }
+  }
+  function addResult(construct, from2) {
+    if (construct.resolveAll && !resolveAllConstructs.includes(construct)) {
+      resolveAllConstructs.push(construct);
+    }
+    if (construct.resolve) {
+      splice(
+        context.events,
+        from2,
+        context.events.length - from2,
+        construct.resolve(context.events.slice(from2), context)
+      );
+    }
+    if (construct.resolveTo) {
+      context.events = construct.resolveTo(context.events, context);
+    }
+  }
+  function store() {
+    const startPoint = now();
+    const startPrevious = context.previous;
+    const startCurrentConstruct = context.currentConstruct;
+    const startEventsIndex = context.events.length;
+    const startStack = Array.from(stack);
+    return {
+      restore,
+      from: startEventsIndex
+    };
+    function restore() {
+      point = startPoint;
+      context.previous = startPrevious;
+      context.currentConstruct = startCurrentConstruct;
+      context.events.length = startEventsIndex;
+      stack = startStack;
+      accountForPotentialSkip();
+    }
+  }
+  function accountForPotentialSkip() {
+    if (point.line in columnStart && point.column < 2) {
+      point.column = columnStart[point.line];
+      point.offset += columnStart[point.line] - 1;
+    }
+  }
+}
+function sliceChunks(chunks, token) {
+  const startIndex = token.start._index;
+  const startBufferIndex = token.start._bufferIndex;
+  const endIndex = token.end._index;
+  const endBufferIndex = token.end._bufferIndex;
+  let view;
+  if (startIndex === endIndex) {
+    view = [chunks[startIndex].slice(startBufferIndex, endBufferIndex)];
+  } else {
+    view = chunks.slice(startIndex, endIndex);
+    if (startBufferIndex > -1) {
+      view[0] = view[0].slice(startBufferIndex);
+    }
+    if (endBufferIndex > 0) {
+      view.push(chunks[endIndex].slice(0, endBufferIndex));
+    }
+  }
+  return view;
+}
+function serializeChunks(chunks, expandTabs) {
+  let index = -1;
+  const result = [];
+  let atTab;
+  while (++index < chunks.length) {
+    const chunk = chunks[index];
+    let value;
+    if (typeof chunk === "string") {
+      value = chunk;
+    } else
+      switch (chunk) {
+        case -5: {
+          value = "\r";
+          break;
+        }
+        case -4: {
+          value = "\n";
+          break;
+        }
+        case -3: {
+          value = "\r\n";
+          break;
+        }
+        case -2: {
+          value = expandTabs ? " " : "	";
+          break;
+        }
+        case -1: {
+          if (!expandTabs && atTab) continue;
+          value = " ";
+          break;
+        }
+        default: {
+          value = String.fromCharCode(chunk);
+        }
+      }
+    atTab = chunk === -2;
+    result.push(value);
+  }
+  return result.join("");
+}
+
+function initializeDocument(effects) {
+  const self = this;
+  const delimiter = (this.parser.delimiter || ",").charCodeAt(0);
+  return enterRow;
+  function enterRow(code) {
+    return effects.attempt(
+      { tokenize: attemptLastLine },
+      (code2) => {
+        effects.consume(code2);
+        return enterRow;
+      },
+      (code2) => {
+        effects.enter("row");
+        return enterColumn(code2);
+      }
+    )(code);
+  }
+  function enterColumn(code) {
+    effects.enter("column");
+    return content(code);
+  }
+  function content(code) {
+    if (code === null) {
+      effects.exit("column");
+      effects.exit("row");
+      effects.consume(code);
+      return content;
+    }
+    if (code === 34) {
+      return quotedData(code);
+    }
+    if (code === delimiter) {
+      if (self.previous === delimiter || markdownLineEnding(self.previous) || self.previous === null) {
+        effects.enter("data");
+        effects.exit("data");
+      }
+      effects.exit("column");
+      effects.enter("columnSeparator");
+      effects.consume(code);
+      effects.exit("columnSeparator");
+      effects.enter("column");
+      return content;
+    }
+    if (markdownLineEnding(code)) {
+      effects.exit("column");
+      effects.enter("newline");
+      effects.consume(code);
+      effects.exit("newline");
+      effects.exit("row");
+      return enterRow;
+    }
+    return data(code);
+  }
+  function data(code) {
+    effects.enter("data");
+    return dataChunk(code);
+  }
+  function dataChunk(code) {
+    if (code === null || markdownLineEnding(code) || code === delimiter) {
+      effects.exit("data");
+      return content(code);
+    }
+    if (code === 92) {
+      return escapeCharacter(code);
+    }
+    effects.consume(code);
+    return dataChunk;
+  }
+  function escapeCharacter(code) {
+    effects.consume(code);
+    return function(code2) {
+      effects.consume(code2);
+      return content;
+    };
+  }
+  function quotedData(code) {
+    effects.enter("quotedData");
+    effects.enter("quotedDataChunk");
+    effects.consume(code);
+    return quotedDataChunk;
+  }
+  function quotedDataChunk(code) {
+    if (code === 92) {
+      return escapeCharacter(code);
+    }
+    if (code === 34) {
+      return effects.attempt(
+        { tokenize: attemptDoubleQuote },
+        (code2) => {
+          effects.exit("quotedDataChunk");
+          effects.enter("quotedDataChunk");
+          return quotedDataChunk(code2);
+        },
+        (code2) => {
+          effects.consume(code2);
+          effects.exit("quotedDataChunk");
+          effects.exit("quotedData");
+          return content;
+        }
+      )(code);
+    }
+    effects.consume(code);
+    return quotedDataChunk;
+  }
+}
+function attemptDoubleQuote(effects, ok, nok) {
+  return startSequence;
+  function startSequence(code) {
+    if (code !== 34) {
+      return nok(code);
+    }
+    effects.enter("quoteFence");
+    effects.consume(code);
+    return sequence;
+  }
+  function sequence(code) {
+    if (code !== 34) {
+      return nok(code);
+    }
+    effects.consume(code);
+    effects.exit("quoteFence");
+    return (code2) => ok(code2);
+  }
+}
+function attemptLastLine(effects, ok, nok) {
+  return enterLine;
+  function enterLine(code) {
+    if (!markdownSpace(code) && code !== null) {
+      return nok(code);
+    }
+    effects.enter("emptyLine");
+    return continueLine(code);
+  }
+  function continueLine(code) {
+    if (markdownSpace(code)) {
+      effects.consume(code);
+      return continueLine;
+    }
+    if (code === null) {
+      effects.exit("emptyLine");
+      return ok(code);
+    }
+    return nok(code);
+  }
+}
+const parse = (options) => {
+  return createTokenizer(
+    { ...options },
+    { tokenize: initializeDocument });
+};
+
+const own = {}.hasOwnProperty;
+const initialPoint = {
+  line: 1,
+  column: 1,
+  offset: 0
+};
+const fromCSV = function(value, encoding, options) {
+  if (typeof encoding !== "string") {
+    options = encoding;
+    encoding = void 0;
+  }
+  return compiler()(
+    postprocess(
+      parse(options).write(preprocess()(value, encoding, true))
+    )
+  );
+};
+function compiler() {
+  const config = {
+    enter: {
+      column: opener(openColumn),
+      row: opener(openRow),
+      data: onenterdata,
+      quotedData: onenterdata
+    },
+    exit: {
+      row: closer(),
+      column: closer(),
+      data: onexitdata,
+      quotedData: onexitQuotedData
+    }
+  };
+  return compile;
+  function compile(events) {
+    const tree = {
+      type: "root",
+      children: []
+    };
+    const stack = [tree];
+    const tokenStack = [];
+    const context = {
+      stack,
+      tokenStack,
+      config,
+      enter,
+      exit,
+      resume
+    };
+    let index = -1;
+    while (++index < events.length) {
+      const handler = config[events[index][0]];
+      if (own.call(handler, events[index][1].type)) {
+        handler[events[index][1].type].call(
+          Object.assign(
+            {
+              sliceSerialize: events[index][2].sliceSerialize
+            },
+            context
+          ),
+          events[index][1]
+        );
+      }
+    }
+    if (tokenStack.length > 0) {
+      const tail = tokenStack[tokenStack.length - 1];
+      const handler = tail[1] || defaultOnError;
+      handler.call(context, void 0, tail[0]);
+    }
+    tree.position = {
+      start: point(
+        events.length > 0 ? events[0][1].start : initialPoint
+      ),
+      end: point(
+        events.length > 0 ? events[events.length - 2][1].end : initialPoint
+      )
+    };
+    return tree;
+  }
+  function point(d) {
+    return {
+      line: d.line,
+      column: d.column,
+      offset: d.offset
+    };
+  }
+  function opener(create, and) {
+    return open;
+    function open(token) {
+      enter.call(this, create(token), token);
+    }
+  }
+  function enter(node, token, errorHandler) {
+    const parent = this.stack[this.stack.length - 1];
+    parent.children.push(node);
+    this.stack.push(node);
+    this.tokenStack.push([token, errorHandler]);
+    node.position = {
+      start: point(token.start)
+    };
+    return node;
+  }
+  function closer(and) {
+    return close;
+    function close(token) {
+      exit.call(this, token);
+    }
+  }
+  function exit(token, onExitError) {
+    const node = this.stack.pop();
+    const open = this.tokenStack.pop();
+    if (!open) {
+      throw new Error(
+        "Cannot close `" + token.type + "` (" + stringifyPosition({
+          start: token.start,
+          end: token.end
+        }) + "): it\u2019s not open"
+      );
+    } else if (open[0].type !== token.type) {
+      if (onExitError) {
+        onExitError.call(this, token, open[0]);
+      } else {
+        const handler = open[1] || defaultOnError;
+        handler.call(this, token, open[0]);
+      }
+    }
+    node.position.end = point(token.end);
+    return node;
+  }
+  function resume() {
+    return toString$1(this.stack.pop());
+  }
+  function onenterdata(token) {
+    const parent = this.stack[this.stack.length - 1];
+    let tail = parent.children[parent.children.length - 1];
+    if (!tail || tail.type !== "text") {
+      tail = text();
+      tail.position = {
+        start: point(token.start)
+      };
+      parent.children.push(tail);
+    }
+    this.stack.push(tail);
+  }
+  function onexitdata(token) {
+    const tail = this.stack.pop();
+    tail.value += this.sliceSerialize(token).trim().replace(/""/g, '"');
+    tail.position.end = point(token.end);
+  }
+  function onexitQuotedData(token) {
+    const tail = this.stack.pop();
+    const value = this.sliceSerialize(token);
+    tail.value += this.sliceSerialize(token).trim().substring(1, value.length - 1).replace(/""/g, '"');
+    tail.position.end = point(token.end);
+  }
+  function text() {
+    return {
+      type: "text",
+      value: ""
+    };
+  }
+  function openColumn() {
+    return {
+      type: "column",
+      children: []
+    };
+  }
+  function openRow() {
+    return {
+      type: "row",
+      children: []
+    };
+  }
+}
+function defaultOnError(left, right) {
+  if (left) {
+    throw new Error(
+      "Cannot close `" + left.type + "` (" + stringifyPosition({
+        start: left.start,
+        end: left.end
+      }) + "): a different token (`" + right.type + "`, " + stringifyPosition({
+        start: right.start,
+        end: right.end
+      }) + ") is open"
+    );
+  } else {
+    throw new Error(
+      "Cannot close document, a token (`" + right.type + "`, " + stringifyPosition({
+        start: right.start,
+        end: right.end
+      }) + ") is still open"
+    );
+  }
+}
+
+function csvParse(options) {
+  const parser = (doc) => {
+    return fromCSV(doc, options);
+  };
+  Object.assign(this, { Parser: parser });
+  const toJsonObject = (tree) => {
+    const [header, ...rows] = tree.children;
+    const columns = header.children.map((col) => col.children[0].value);
+    const data = rows.map((row) => {
+      return row.children.reduce((acc, col, i) => {
+        acc[String(columns[i])] = col.children[0]?.value;
+        return acc;
+      }, {});
+    });
+    return data;
+  };
+  const toJsonArray = (tree) => {
+    const data = tree.children.map((row) => {
+      return row.children.map((col) => col.children[0]?.value);
+    });
+    return data;
+  };
+  const compiler = (doc) => {
+    if (options.json) {
+      return toJsonObject(doc);
+    }
+    return toJsonArray(doc);
+  };
+  Object.assign(this, { Compiler: compiler });
+}
+const csv = defineTransformer({
+  name: "csv",
+  extensions: [".csv"],
+  parse: async (_id, content, options = {}) => {
+    const stream = unified().use(csvParse, {
+      delimiter: ",",
+      json: true,
+      ...options
+    });
+    const { result } = await stream.process(content);
+    return {
+      _id,
+      _type: "csv",
+      body: result
+    };
+  }
+});
+
+const SEMVER_REGEX = /^(\d+)(\.\d+)*(\.x)?$/;
+const describeId = (id) => {
+  const [_source, ...parts] = id.split(":");
+  const [, basename, _extension] = parts[parts.length - 1]?.match(/(.*)\.([^.]+)$/) || [];
+  if (basename) {
+    parts[parts.length - 1] = basename;
+  }
+  const _path = (parts || []).join("/");
+  return {
+    _source,
+    _path,
+    _extension,
+    _file: _extension ? `${_path}.${_extension}` : _path,
+    _basename: basename || ""
+  };
+};
+const pathMeta = defineTransformer({
+  name: "path-meta",
+  extensions: [".*"],
+  transform(content, options = {}) {
+    const { locales = [], defaultLocale = "en", respectPathCase = false } = options;
+    const { _source, _file, _path, _extension, _basename } = describeId(content._id);
+    const parts = _path.split("/");
+    const _locale = locales.includes(parts[0]) ? parts.shift() : defaultLocale;
+    const filePath = generatePath(parts.join("/"), { respectPathCase });
+    return {
+      _path: filePath,
+      _dir: filePath.split("/").slice(-2)[0],
+      _draft: content._draft || content.draft || isDraft(_path),
+      _partial: isPartial(_path),
+      _locale,
+      ...content,
+      // TODO: move title to Markdown parser
+      title: content.title || generateTitle(refineUrlPart(_basename)),
+      _source,
+      _file,
+      _stem: _path,
+      _extension
+    };
+  }
+});
+const isDraft = (path) => !!path.match(/\.draft(\/|\.|$)/);
+const isPartial = (path) => path.split(/[:/]/).some((part) => part.match(/^_.*/));
+const generatePath = (path, { forceLeadingSlash = true, respectPathCase = false } = {}) => {
+  path = path.split("/").map((part) => slugify(refineUrlPart(part), { lower: !respectPathCase })).join("/");
+  return forceLeadingSlash ? withLeadingSlash(withoutTrailingSlash(path)) : path;
+};
+const generateTitle = (path) => path.split(/[\s-]/g).map(pascalCase).join(" ");
+function refineUrlPart(name) {
+  name = name.split(/[/:]/).pop();
+  if (SEMVER_REGEX.test(name)) {
+    return name;
+  }
+  return name.replace(/(\d+\.)?(.*)/, "$2").replace(/^index(\.draft)?$/, "").replace(/\.draft$/, "");
+}
+
+const markdown = defineTransformer({
+  name: "markdown",
+  extensions: [".md"],
+  parse: async (_id, content, options = {}) => {
+    const config = { ...options };
+    config.rehypePlugins = await importPlugins(config.rehypePlugins);
+    config.remarkPlugins = await importPlugins(config.remarkPlugins);
+    const highlightOptions = options.highlight ? {
+      ...options.highlight,
+      // Pass only when it's an function. String values are handled by `@nuxtjs/mdc`
+      highlighter: typeof options.highlight?.highlighter === "function" ? options.highlight.highlighter : void 0
+    } : void 0;
+    const parsed = await parseMarkdown(content, {
+      ...config,
+      highlight: highlightOptions,
+      remark: {
+        plugins: config.remarkPlugins
+      },
+      rehype: {
+        options: {
+          handlers: {
+            link
+          }
+        },
+        plugins: config.rehypePlugins
+      },
+      toc: config.toc
+    });
+    return {
+      ...parsed.data,
+      excerpt: parsed.excerpt,
+      body: {
+        ...parsed.body,
+        toc: parsed.toc
+      },
+      _type: "markdown",
+      _id
+    };
+  }
+});
+async function importPlugins(plugins = {}) {
+  const resolvedPlugins = {};
+  for (const [name, plugin] of Object.entries(plugins)) {
+    if (plugin) {
+      resolvedPlugins[name] = {
+        instance: plugin.instance || await import(
+          /* @vite-ignore */
+          name
+        ).then((m) => m.default || m),
+        options: plugin
+      };
+    } else {
+      resolvedPlugins[name] = false;
+    }
+  }
+  return resolvedPlugins;
+}
+function link(state, node) {
+  const properties = {
+    ...node.attributes || {},
+    href: normalizeUri(normalizeLink(node.url))
+  };
+  if (node.title !== null && node.title !== void 0) {
+    properties.title = node.title;
+  }
+  const result = {
+    type: "element",
+    tagName: "a",
+    properties,
+    children: state.all(node)
+  };
+  state.patch(node, result);
+  return state.applyData(node, result);
+}
+function normalizeLink(link2) {
+  const match = link2.match(/#.+$/);
+  const hash = match ? match[0] : "";
+  if (link2.replace(/#.+$/, "").endsWith(".md") && (isRelative(link2) || !/^https?/.test(link2) && !link2.startsWith("/"))) {
+    return generatePath(link2.replace(".md" + hash, ""), { forceLeadingSlash: false }) + hash;
+  } else {
+    return link2;
+  }
+}
+
+const yaml = defineTransformer({
+  name: "Yaml",
+  extensions: [".yml", ".yaml"],
+  parse: (_id, content) => {
+    const { data } = parseFrontMatter(`---
+${content}
+---`);
+    let parsed = data;
+    if (Array.isArray(data)) {
+      console.warn(`YAML array is not supported in ${_id}, moving the array into the \`body\` key`);
+      parsed = { body: data };
+    }
+    return {
+      ...parsed,
+      _id,
+      _type: "yaml"
+    };
+  }
+});
+
+const json = defineTransformer({
+  name: "Json",
+  extensions: [".json", ".json5"],
+  parse: async (_id, content) => {
+    let parsed;
+    if (typeof content === "string") {
+      if (_id.endsWith("json5")) {
+        parsed = (await import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/json5/lib/index.js').then((m) => m.default || m)).parse(content);
+      } else if (_id.endsWith("json")) {
+        parsed = destr$1(content);
+      }
+    } else {
+      parsed = content;
+    }
+    if (Array.isArray(parsed)) {
+      console.warn(`JSON array is not supported in ${_id}, moving the array into the \`body\` key`);
+      parsed = {
+        body: parsed
+      };
+    }
+    return {
+      ...parsed,
+      _id,
+      _type: "json"
+    };
+  }
+});
+
+const TRANSFORMERS = [
+  csv,
+  markdown,
+  json,
+  yaml,
+  pathMeta
+];
+function getParser(ext, additionalTransformers = []) {
+  let parser = additionalTransformers.find((p) => ext.match(new RegExp(p.extensions.join("|"), "i")) && p.parse);
+  if (!parser) {
+    parser = TRANSFORMERS.find((p) => ext.match(new RegExp(p.extensions.join("|"), "i")) && p.parse);
+  }
+  return parser;
+}
+function getTransformers(ext, additionalTransformers = []) {
+  return [
+    ...additionalTransformers.filter((p) => ext.match(new RegExp(p.extensions.join("|"), "i")) && p.transform),
+    ...TRANSFORMERS.filter((p) => ext.match(new RegExp(p.extensions.join("|"), "i")) && p.transform)
+  ];
+}
+async function transformContent(id, content, options = {}) {
+  const { transformers = [] } = options;
+  const file = { _id: id, body: content };
+  const ext = extname(id);
+  const parser = getParser(ext, transformers);
+  if (!parser) {
+    console.warn(`${ext} files are not supported, "${id}" falling back to raw content`);
+    return file;
+  }
+  const parserOptions = options[camelCase(parser.name)] || {};
+  const parsed = await parser.parse(file._id, file.body, parserOptions);
+  const matchedTransformers = getTransformers(ext, transformers);
+  const result = await matchedTransformers.reduce(async (prev, cur) => {
+    const next = await prev || parsed;
+    const transformOptions = options[camelCase(cur.name)];
+    if (transformOptions === false) {
+      return next;
+    }
+    return cur.transform(next, transformOptions || {});
+  }, Promise.resolve(parsed));
+  return result;
+}
+
+function makeIgnored(ignores) {
+  const rxAll = ["/\\.", "/-", ...ignores.filter((p) => p)].map((p) => new RegExp(p));
+  return function isIgnored(key) {
+    const path = "/" + key.replace(/:/g, "/");
+    return rxAll.some((rx) => rx.test(path));
+  };
+}
 
 function createMatch(opts = {}) {
   const operators = createOperators(match, opts.operators);
@@ -472,22 +3459,48 @@ function createMatch(opts = {}) {
 function createOperators(match, operators = {}) {
   return {
     $match: (item, condition) => match(item, condition),
+    /**
+     * Match if item equals condition
+     **/
     $eq: (item, condition) => condition instanceof RegExp ? condition.test(item) : item === condition,
+    /**
+     * Match if item not equals condition
+     **/
     $ne: (item, condition) => condition instanceof RegExp ? !condition.test(item) : item !== condition,
+    /**
+     * Match is condition is false
+     **/
     $not: (item, condition) => !match(item, condition),
+    /**
+     * Match only if all of nested conditions are true
+     **/
     $and: (item, condition) => {
       assertArray(condition, "$and requires an array as condition");
       return condition.every((cond) => match(item, cond));
     },
+    /**
+     * Match if any of nested conditions is true
+     **/
     $or: (item, condition) => {
       assertArray(condition, "$or requires an array as condition");
       return condition.some((cond) => match(item, cond));
     },
-    $in: (item, condition) => ensureArray(condition).some((cond) => match(item, cond)),
+    /**
+     * Match if item is in condition array
+     **/
+    $in: (item, condition) => ensureArray(condition).some(
+      (cond) => Array.isArray(item) ? match(item, { $contains: cond }) : match(item, cond)
+    ),
+    /**
+     * Match if item contains every condition or match every rule in condition array
+     **/
     $contains: (item, condition) => {
       item = Array.isArray(item) ? item : String(item);
       return ensureArray(condition).every((i) => item.includes(i));
     },
+    /**
+     * Ignore case contains
+     **/
     $icontains: (item, condition) => {
       if (typeof condition !== "string") {
         throw new TypeError("$icontains requires a string, use $contains instead");
@@ -495,29 +3508,53 @@ function createOperators(match, operators = {}) {
       item = String(item).toLocaleLowerCase();
       return ensureArray(condition).every((i) => item.includes(i.toLocaleLowerCase()));
     },
+    /**
+     * Match if item contains at least one rule from condition array
+     */
     $containsAny: (item, condition) => {
       assertArray(condition, "$containsAny requires an array as condition");
       item = Array.isArray(item) ? item : String(item);
       return condition.some((i) => item.includes(i));
     },
+    /**
+     * Check key existence
+     */
     $exists: (item, condition) => condition ? typeof item !== "undefined" : typeof item === "undefined",
+    /**
+     * Match if type of item equals condition
+     */
     $type: (item, condition) => typeof item === String(condition),
+    /**
+     * Provides regular expression capabilities for pattern matching strings.
+     */
     $regex: (item, condition) => {
       if (!(condition instanceof RegExp)) {
         const matched = String(condition).match(/\/(.*)\/([dgimsuy]*)$/);
-        condition = matched ? new RegExp(matched[1], matched[2] || "") : new RegExp(condition);
+        condition = matched?.[1] ? new RegExp(matched[1], matched[2] || "") : new RegExp(condition);
       }
       return condition.test(String(item || ""));
     },
+    /**
+     * Check if item is less than condition
+     */
     $lt: (item, condition) => {
       return item < condition;
     },
+    /**
+     * Check if item is less than or equal to condition
+     */
     $lte: (item, condition) => {
       return item <= condition;
     },
+    /**
+     * Check if item is greater than condition
+     */
     $gt: (item, condition) => {
       return item > condition;
     },
+    /**
+     * Check if item is greater than or equal to condition
+     */
     $gte: (item, condition) => {
       return item >= condition;
     },
@@ -530,2244 +3567,172 @@ function createPipelineFetcher(getContentsList) {
   const surround = (data, { query, before, after }) => {
     const matchQuery = typeof query === "string" ? { _path: query } : query;
     const index = data.findIndex((item) => match(item, matchQuery));
-    before = before || 1;
-    after = after || 1;
+    before = before ?? 1;
+    after = after ?? 1;
     const slice = new Array(before + after).fill(null, 0);
     return index === -1 ? slice : slice.map((_, i) => data[index - before + i + Number(i >= before)] || null);
   };
-  const pipelines = [
-    (data, params) => data.filter((item) => ensureArray(params.where).every((matchQuery) => match(item, matchQuery))),
-    (data, params) => ensureArray(params.sort).forEach((options) => sortList(data, options)),
-    (data, params) => params.surround ? surround(data, params.surround) : data,
-    (data, params) => params.skip ? data.slice(params.skip) : data,
-    (data, params) => params.limit ? data.slice(0, params.limit) : data,
-    (data, params) => apply(withoutKeys(params.without))(data),
-    (data, params) => apply(withKeys(params.only))(data),
-    (data, params) => params.first ? data[0] : data
-  ];
-  return async (query) => {
-    const data = await getContentsList();
-    return pipelines.reduce(($data, pipe) => pipe($data, query.params()) || $data, data);
-  };
-}
-
-const FRONTMATTER_DELIMITER = "---";
-function stringifyFrontMatter(data, content = "") {
-  data = flat.flatten(data, {
-    safe: true
-  });
-  return [
-    FRONTMATTER_DELIMITER,
-    yaml.dump(data, { lineWidth: -1 }),
-    FRONTMATTER_DELIMITER,
-    content
-  ].join("\n");
-}
-function parseFrontMatter(content) {
-  let data = {};
-  if (content.startsWith(FRONTMATTER_DELIMITER)) {
-    const idx = content.indexOf("\n" + FRONTMATTER_DELIMITER);
-    if (idx !== -1) {
-      const frontmatter = content.slice(4, idx);
-      if (frontmatter) {
-        data = yaml.load(frontmatter);
-        content = content.slice(idx + 4);
-      }
-    }
-  }
-  return {
-    content,
-    data: flat.unflatten(data || {}, {})
-  };
-}
-
-function flattenNodeText(node) {
-  if (node.type === "text") {
-    return node.value || "";
-  } else {
-    return (node.children || []).reduce((text, child) => {
-      return text.concat(flattenNodeText(child));
-    }, "");
-  }
-}
-function flattenNode(node, maxDepth = 2, _depth = 0) {
-  if (!Array.isArray(node.children) || _depth === maxDepth) {
-    return [node];
-  }
-  return [
-    node,
-    ...node.children.reduce((acc, child) => acc.concat(flattenNode(child, maxDepth, _depth + 1)), [])
-  ];
-}
-
-const TOC_TAGS = ["h2", "h3", "h4", "h5", "h6"];
-const TOC_TAGS_DEPTH = ["h2", "h3", "h4"].reduce((tags, tag) => {
-  tags[tag] = Number(tag.charAt(tag.length - 1));
-  return tags;
-}, {});
-const getHeaderDepth = (node) => TOC_TAGS_DEPTH[node.tag];
-const getTocTags = (depth) => {
-  if (depth < 1 || depth > 5) {
-    console.log(`\`toc.depth\` is set to ${depth}. It should be a number between 1 and 5. `);
-    depth = 1;
-  }
-  return TOC_TAGS.slice(0, depth);
-};
-function nestHeaders(headers) {
-  if (headers.length <= 1) {
-    return headers;
-  }
-  const toc = [];
-  let parent;
-  headers.forEach((header) => {
-    if (!parent || header.depth <= parent.depth) {
-      header.children = [];
-      parent = header;
-      toc.push(header);
-    } else {
-      parent.children.push(header);
-    }
-  });
-  toc.forEach((header) => {
-    if (header.children?.length) {
-      header.children = nestHeaders(header.children);
-    } else {
-      delete header.children;
-    }
-  });
-  return toc;
-}
-function generateFlatToc(body, options) {
-  const { searchDepth, depth, title = "" } = options;
-  const tags = getTocTags(depth);
-  const headers = flattenNode(body, searchDepth).filter((node) => tags.includes(node.tag || ""));
-  const links = headers.map((node) => ({
-    id: node.props?.id,
-    depth: getHeaderDepth(node),
-    text: flattenNodeText(node)
-  }));
-  return {
-    title,
-    searchDepth,
-    depth,
-    links
-  };
-}
-function generateToc(body, options) {
-  const toc = generateFlatToc(body, options);
-  toc.links = nestHeaders(toc.links);
-  return toc;
-}
-
-function track(options_) {
-  const options = options_ || {};
-  const now = options.now || {};
-  let lineShift = options.lineShift || 0;
-  let line = now.line || 1;
-  let column = now.column || 1;
-  return { move, current, shift };
-  function current() {
-    return { now: { line, column }, lineShift };
-  }
-  function shift(value) {
-    lineShift += value;
-  }
-  function move(value = "") {
-    const chunks = value.split(/\r?\n|\r/g);
-    const tail = chunks[chunks.length - 1];
-    line += chunks.length - 1;
-    column = chunks.length === 1 ? column + tail.length : 1 + tail.length + lineShift;
-    return value;
-  }
-}
-function containerFlow(parent, context, safeOptions = {}) {
-  const indexStack = context.indexStack;
-  const children = parent.children || [];
-  const tracker = track(safeOptions);
-  const results = [];
-  let index = -1;
-  indexStack.push(-1);
-  while (++index < children.length) {
-    const child = children[index];
-    indexStack[indexStack.length - 1] = index;
-    results.push(tracker.move(context.handle(child, parent, context, {
-      before: "\n",
-      after: "\n",
-      ...tracker.current()
-    })));
-    if (child.type !== "list") {
-      context.bulletLastUsed = void 0;
-    }
-    if (index < children.length - 1) {
-      results.push(tracker.move(between(child, children[index + 1])));
-    }
-  }
-  indexStack.pop();
-  return results.join("");
-  function between(left, right) {
-    let index2 = context.join.length;
-    while (index2--) {
-      const result = context.join[index2](left, right, parent, context);
-      if (result === true || result === 1) {
-        break;
-      }
-      if (typeof result === "number") {
-        return "\n".repeat(1 + result);
-      }
-      if (result === false) {
-        return "\n\n<!---->\n\n";
-      }
-    }
-    return "\n\n";
-  }
-}
-function containerPhrasing(parent, context, safeOptions) {
-  const indexStack = context.indexStack;
-  const children = parent.children || [];
-  const results = [];
-  let index = -1;
-  let before = safeOptions.before;
-  indexStack.push(-1);
-  let tracker = track(safeOptions);
-  while (++index < children.length) {
-    const child = children[index];
-    let after;
-    indexStack[indexStack.length - 1] = index;
-    if (index + 1 < children.length) {
-      let handle = context.handle.handlers[children[index + 1].type];
-      if (handle && handle.peek) {
-        handle = handle.peek;
-      }
-      after = handle ? handle(children[index + 1], parent, context, {
-        before: "",
-        after: "",
-        ...tracker.current()
-      }).charAt(0) : "";
-    } else {
-      after = safeOptions.after;
-    }
-    if (results.length > 0 && (before === "\r" || before === "\n") && child.type === "html") {
-      results[results.length - 1] = results[results.length - 1].replace(/(\r?\n|\r)$/, " ");
-      before = " ";
-      tracker = track(safeOptions);
-      tracker.move(results.join(""));
-    }
-    results.push(tracker.move(context.handle(child, parent, context, {
-      ...tracker.current(),
-      before,
-      after
-    })));
-    before = results[results.length - 1].slice(-1);
-  }
-  indexStack.pop();
-  return results.join("");
-}
-function checkQuote(context) {
-  const marker = context.options.quote || '"';
-  if (marker !== '"' && marker !== "'") {
-    throw new Error("Cannot serialize title with `" + marker + "` for `options.quote`, expected `\"`, or `'`");
-  }
-  return marker;
-}
-
-const own = {}.hasOwnProperty;
-const shortcut = /^[^\t\n\r "#'.<=>`}]+$/;
-const baseFense = 2;
-const toMarkdown = {
-  unsafe: [
-    {
-      character: "\r",
-      inConstruct: ["leafComponentLabel", "containerComponentLabel"]
-    },
-    {
-      character: "\n",
-      inConstruct: ["leafComponentLabel", "containerComponentLabel"]
-    },
-    {
-      before: "[^:]",
-      character: ":",
-      after: "[A-Za-z]",
-      inConstruct: ["phrasing"]
-    },
-    { atBreak: true, character: ":", after: ":" }
-  ],
-  handlers: {
-    containerComponent: containerComponent$1,
-    textComponent,
-    componentContainerSection
-  }
-};
-function componentContainerSection(node, _, context) {
-  context.indexStack = context.stack;
-  return `#${node.name}
-
-${content(node, context)}`;
-}
-function textComponent(node, _, context) {
-  context.indexStack = context.stack;
-  const exit = context.enter(node.type);
-  let value = ":" + (node.name || "") + label$3(node, context) + attributes$3(node, context);
-  value += "\n" + content(node, context);
-  exit();
-  return value;
-}
-let nest = 0;
-function containerComponent$1(node, _, context) {
-  context.indexStack = context.stack;
-  const prefix = ":".repeat(baseFense + nest);
-  nest += 1;
-  const exit = context.enter(node.type);
-  let value = prefix + (node.name || "") + label$3(node, context) + attributes$3(node, context);
-  let subvalue;
-  if (node.fmAttributes) {
-    value += "\n" + stringifyFrontMatter(node.fmAttributes).trim();
-  }
-  if (node.type === "containerComponent") {
-    subvalue = content(node, context);
-    if (subvalue) {
-      value += "\n" + subvalue;
-    }
-    value += "\n" + prefix;
-    if (nest > 1) {
-      value = value.split("\n").map((line) => "  " + line).join("\n");
-    }
-  }
-  nest -= 1;
-  exit();
-  return value;
-}
-containerComponent$1.peek = function peekComponent() {
-  return ":";
-};
-function label$3(node, context) {
-  let label2 = node;
-  if (node.type === "containerComponent") {
-    if (!inlineComponentLabel(node)) {
-      return "";
-    }
-    label2 = node.children[0];
-  }
-  const exit = context.enter("label");
-  const subexit = context.enter(node.type + "Label");
-  const value = containerPhrasing(label2, context, { before: "[", after: "]" });
-  subexit();
-  exit();
-  return value ? "[" + value + "]" : "";
-}
-function attributes$3(node, context) {
-  const quote = checkQuote(context);
-  const subset = node.type === "textComponent" ? [quote] : [quote, "\n", "\r"];
-  const attrs = node.attributes || {};
-  const values = [];
-  let id;
-  let classesFull = "";
-  let classes = "";
-  let value;
-  let key;
-  let index;
-  for (key in attrs) {
-    if (own.call(attrs, key) && attrs[key] != null) {
-      value = String(attrs[key]);
-      if (key === "id") {
-        id = shortcut.test(value) ? "#" + value : quoted("id", value);
-      } else if (key === "class") {
-        value = value.split(/[\t\n\r ]+/g);
-        classesFull = [];
-        classes = [];
-        index = -1;
-        while (++index < value.length) {
-          (shortcut.test(value[index]) ? classes : classesFull).push(value[index]);
-        }
-        classesFull = classesFull.length ? quoted("class", classesFull.join(" ")) : "";
-        classes = classes.length ? "." + classes.join(".") : "";
-      } else if (key.startsWith(":") && value === "true") {
-        values.push(key.slice(1));
-      } else {
-        values.push(quoted(key, value));
-      }
-    }
-  }
-  if (classesFull) {
-    values.unshift(classesFull);
-  }
-  if (classes) {
-    values.unshift(classes);
-  }
-  if (id) {
-    values.unshift(id);
-  }
-  return values.length ? "{" + values.join(" ") + "}" : "";
-  function quoted(key2, value2) {
-    return key2 + "=" + quote + stringifyEntitiesLight(value2, { subset }) + quote;
-  }
-}
-function content(node, context) {
-  const content2 = inlineComponentLabel(node) ? Object.assign({}, node, { children: node.children.slice(1) }) : node;
-  return containerFlow(content2, context);
-}
-function inlineComponentLabel(node) {
-  return node.children && node.children[0] && node.children[0].data && node.children[0].data.componentLabel;
-}
-
-const canContainEols = ["textComponent"];
-const enter = {
-  componentContainer: enterContainer,
-  componentContainerSection: enterContainerSection,
-  componentContainerDataSection: enterContainerDataSection,
-  componentContainerAttributes: enterAttributes,
-  componentContainerLabel: enterContainerLabel,
-  componentLeaf: enterLeaf,
-  componentLeafAttributes: enterAttributes,
-  componentText: enterText,
-  textSpan: enterTextSpan,
-  componentTextAttributes: enterAttributes
-};
-const exit = {
-  componentContainerSectionTitle: exitContainerSectionTitle,
-  listUnordered: conditionalExit,
-  listOrdered: conditionalExit,
-  listItem: conditionalExit,
-  componentContainerSection: exitContainerSection,
-  componentContainerDataSection: exitContainerDataSection,
-  componentContainer: exitContainer,
-  componentContainerAttributeClassValue: exitAttributeClassValue,
-  componentContainerAttributeIdValue: exitAttributeIdValue,
-  componentContainerAttributeName: exitAttributeName,
-  componentContainerAttributeValue: exitAttributeValue,
-  componentContainerAttributes: exitAttributes,
-  componentContainerLabel: exitContainerLabel,
-  componentContainerName: exitName,
-  componentContainerAttributeInitializerMarker() {
-    const attributes = this.getData("componentAttributes");
-    attributes[attributes.length - 1][1] = "";
-  },
-  componentLeaf: exitToken,
-  componentLeafAttributeClassValue: exitAttributeClassValue,
-  componentLeafAttributeIdValue: exitAttributeIdValue,
-  componentLeafAttributeName: exitAttributeName,
-  componentLeafAttributeValue: exitAttributeValue,
-  componentLeafAttributes: exitAttributes,
-  componentLeafName: exitName,
-  componentText: exitToken,
-  textSpan: exitToken,
-  componentTextAttributeClassValue: exitAttributeClassValue,
-  componentTextAttributeIdValue: exitAttributeIdValue,
-  componentTextAttributeName: exitAttributeName,
-  componentTextAttributeValue: exitAttributeValue,
-  componentTextAttributes: exitAttributes,
-  componentTextName: exitName
-};
-function enterContainer(token) {
-  enterToken.call(this, "containerComponent", token);
-}
-function exitContainer(token) {
-  const container = this.stack[this.stack.length - 1];
-  if (container.children.length > 1) {
-    const dataSection = container.children.find((child) => child.rawData);
-    container.rawData = dataSection?.rawData;
-  }
-  container.children = container.children.flatMap((child) => {
-    if (child.rawData) {
-      return [];
-    }
-    if (child.name === "default" || !child.name) {
-      return child.children;
-    }
-    child.data = {
-      hName: "component-slot",
-      hProperties: {
-        ...child.attributes,
-        [`v-slot:${child.name}`]: ""
-      }
-    };
-    return child;
-  });
-  this.exit(token);
-}
-function enterContainerSection(token) {
-  enterToken.call(this, "componentContainerSection", token);
-}
-function enterContainerDataSection(token) {
-  enterToken.call(this, "componentContainerDataSection", token);
-}
-function exitContainerSection(token) {
-  this.exit(token);
-}
-function exitContainerDataSection(token) {
-  let section = this.stack[this.stack.length - 1];
-  while (section.type === "listItem" || section.type === "list") {
-    const [stackToken] = this.tokenStack[this.tokenStack.length - 1];
-    this.exit(stackToken);
-    section = this.stack[this.stack.length - 1];
-  }
-  if (section.type === "componentContainerDataSection") {
-    section.rawData = this.sliceSerialize(token);
-    this.exit(token);
-  }
-}
-function exitContainerSectionTitle(token) {
-  this.stack[this.stack.length - 1].name = this.sliceSerialize(token);
-}
-function enterLeaf(token) {
-  enterToken.call(this, "leafComponent", token);
-}
-function enterTextSpan(token) {
-  this.enter({ type: "textComponent", name: "span", attributes: {}, children: [] }, token);
-}
-function enterText(token) {
-  enterToken.call(this, "textComponent", token);
-}
-function enterToken(type, token) {
-  this.enter({ type, name: "", attributes: {}, children: [] }, token);
-}
-function exitName(token) {
-  this.stack[this.stack.length - 1].name = this.sliceSerialize(token);
-}
-function enterContainerLabel(token) {
-  this.enter({ type: "paragraph", data: { componentLabel: true }, children: [] }, token);
-}
-function exitContainerLabel(token) {
-  this.exit(token);
-}
-function enterAttributes() {
-  this.setData("componentAttributes", []);
-  this.buffer();
-}
-function exitAttributeIdValue(token) {
-  this.getData("componentAttributes").push(["id", parseEntities(this.sliceSerialize(token))]);
-}
-function exitAttributeClassValue(token) {
-  this.getData("componentAttributes").push(["class", parseEntities(this.sliceSerialize(token))]);
-}
-function exitAttributeValue(token) {
-  const attributes = this.getData("componentAttributes");
-  attributes[attributes.length - 1][1] = parseEntities(this.sliceSerialize(token));
-}
-function exitAttributeName(token) {
-  this.getData("componentAttributes").push([this.sliceSerialize(token), true]);
-}
-function exitAttributes() {
-  const attributes = this.getData("componentAttributes");
-  const cleaned = {};
-  let index = -1;
-  let attribute;
-  while (++index < attributes.length) {
-    attribute = attributes[index];
-    const name = kebabCase(attribute[0]);
-    if (name === "class" && cleaned.class) {
-      cleaned.class += " " + attribute[1];
-    } else {
-      cleaned[name] = attribute[1];
-    }
-  }
-  this.setData("componentAttributes");
-  this.resume();
-  let stackTop = this.stack[this.stack.length - 1];
-  if (stackTop.type === "paragraph") {
-    stackTop = stackTop.children[stackTop.children.length - 1];
-  }
-  stackTop.attributes = cleaned;
-}
-function exitToken(token) {
-  this.exit(token);
-}
-function conditionalExit(token) {
-  const [section] = this.tokenStack[this.tokenStack.length - 1];
-  if (section.type === token.type) {
-    this.exit(token);
-  }
-}
-const fromMarkdown = {
-  canContainEols,
-  enter,
-  exit
-};
-
-const ContainerSequenceSize = 2;
-const SectionSequenceSize = 3;
-const slotSeparatorCode = 35;
-const slotSeparatorLength = 1;
-const Codes = {
-  EOF: null,
-  space: 32,
-  quotationMark: 34,
-  hash: 35,
-  apostrophe: 39,
-  openingParentheses: 40,
-  closingParentheses: 41,
-  comma: 44,
-  dash: 45,
-  dot: 46,
-  colon: 58,
-  LessThan: 60,
-  equals: 61,
-  greaterThan: 62,
-  uppercaseX: 88,
-  openingSquareBracket: 91,
-  backSlash: 92,
-  closingSquareBracket: 93,
-  underscore: 95,
-  backTick: 96,
-  lowercaseX: 120,
-  openingCurlyBracket: 123,
-  closingCurlyBracket: 125
-};
-
-function createLabel(effects, ok, nok, type, markerType, stringType, disallowEol) {
-  let size = 0;
-  let balance = 0;
-  return start;
-  function start(code) {
-    if (code !== Codes.openingSquareBracket) {
-      throw new Error("expected `[`");
-    }
-    effects.enter(type);
-    effects.enter(markerType);
-    effects.consume(code);
-    effects.exit(markerType);
-    return afterStart;
-  }
-  function afterStart(code) {
-    if (code === Codes.closingSquareBracket) {
-      effects.enter(markerType);
-      effects.consume(code);
-      effects.exit(markerType);
-      effects.exit(type);
-      return ok;
-    }
-    effects.enter(stringType);
-    return atBreak(code);
-  }
-  function atBreak(code) {
-    if (code === Codes.EOF || size > 999) {
-      return nok(code);
-    }
-    if (code === Codes.closingSquareBracket && !balance--) {
-      return atClosingBrace(code);
-    }
-    if (markdownLineEnding(code)) {
-      if (disallowEol) {
-        return nok(code);
-      }
-      effects.enter("lineEnding");
-      effects.consume(code);
-      effects.exit("lineEnding");
-      return atBreak;
-    }
-    effects.enter("chunkText", { contentType: "text" });
-    return label(code);
-  }
-  function label(code) {
-    if (code === Codes.EOF || markdownLineEnding(code) || size > 999) {
-      effects.exit("chunkText");
-      return atBreak(code);
-    }
-    if (code === Codes.openingSquareBracket && ++balance > 3) {
-      return nok(code);
-    }
-    if (code === Codes.closingSquareBracket && !balance--) {
-      effects.exit("chunkText");
-      return atClosingBrace(code);
-    }
-    effects.consume(code);
-    return code === Codes.backSlash ? labelEscape : label;
-  }
-  function atClosingBrace(code) {
-    effects.exit(stringType);
-    effects.enter(markerType);
-    effects.consume(code);
-    effects.exit(markerType);
-    effects.exit(type);
-    return ok;
-  }
-  function labelEscape(code) {
-    if (code === Codes.openingSquareBracket || code === Codes.backSlash || code === Codes.closingSquareBracket) {
-      effects.consume(code);
-      size++;
-      return label;
-    }
-    return label(code);
-  }
-}
-
-const label$2 = { tokenize: tokenizeLabel$2, partial: true };
-const gfmCheck = { tokenize: checkGfmTaskCheckbox, partial: true };
-function tokenize$4(effects, ok, nok) {
-  const self = this;
-  return start;
-  function start(code) {
-    if (code !== Codes.openingSquareBracket) {
-      throw new Error("expected `[`");
-    }
-    if (self.previous === Codes.EOF && self._gfmTasklistFirstContentOfListItem) {
-      return effects.check(gfmCheck, nok, attemptLabel)(code);
-    }
-    return attemptLabel(code);
-  }
-  function attemptLabel(code) {
-    effects.enter("textSpan");
-    return effects.attempt(label$2, exit, nok)(code);
-  }
-  function exit(code) {
-    if (code === Codes.openingParentheses || code === Codes.openingSquareBracket) {
-      return nok(code);
-    }
-    effects.exit("textSpan");
-    return ok(code);
-  }
-}
-function tokenizeLabel$2(effects, ok, nok) {
-  return createLabel(effects, ok, nok, "componentTextLabel", "componentTextLabelMarker", "componentTextLabelString");
-}
-const tokenizeSpan = {
-  tokenize: tokenize$4
-};
-function checkGfmTaskCheckbox(effects, ok, nok) {
-  return enter;
-  function enter(code) {
-    effects.enter("formGfmTaskCheckbox");
-    effects.consume(code);
-    return check;
-  }
-  function check(code) {
-    if (markdownSpace(code)) {
-      effects.consume(code);
-      return check;
-    }
-    if (code === Codes.uppercaseX || code === Codes.lowercaseX) {
-      effects.consume(code);
-      return check;
-    }
-    if (code === Codes.closingSquareBracket) {
-      effects.exit("formGfmTaskCheckbox");
-      return ok(code);
-    }
-    return nok(code);
-  }
-}
-
-function createAttributes(effects, ok, nok, attributesType, attributesMarkerType, attributeType, attributeIdType, attributeClassType, attributeNameType, attributeInitializerType, attributeValueLiteralType, attributeValueType, attributeValueMarker, attributeValueData, disallowEol) {
-  let type;
-  let marker;
-  return start;
-  function start(code) {
-    effects.enter(attributesType);
-    effects.enter(attributesMarkerType);
-    effects.consume(code);
-    effects.exit(attributesMarkerType);
-    return between;
-  }
-  function between(code) {
-    if (code === Codes.hash) {
-      type = attributeIdType;
-      return shortcutStart(code);
-    }
-    if (code === Codes.dot) {
-      type = attributeClassType;
-      return shortcutStart(code);
-    }
-    if (code === Codes.colon || code === Codes.underscore || asciiAlpha(code)) {
-      effects.enter(attributeType);
-      effects.enter(attributeNameType);
-      effects.consume(code);
-      return code === Codes.colon ? bindAttributeName : name;
-    }
-    if (disallowEol && markdownSpace(code)) {
-      return factorySpace(effects, between, "whitespace")(code);
-    }
-    if (!disallowEol && markdownLineEndingOrSpace(code)) {
-      return factoryWhitespace(effects, between)(code);
-    }
-    return end(code);
-  }
-  function shortcutStart(code) {
-    effects.enter(attributeType);
-    effects.enter(type);
-    effects.enter(type + "Marker");
-    effects.consume(code);
-    effects.exit(type + "Marker");
-    return shortcutStartAfter;
-  }
-  function shortcutStartAfter(code) {
-    if (code === Codes.EOF || code === Codes.quotationMark || code === Codes.hash || code === Codes.apostrophe || code === Codes.dot || code === Codes.LessThan || code === Codes.equals || code === Codes.greaterThan || code === Codes.backTick || code === Codes.closingCurlyBracket || markdownLineEndingOrSpace(code)) {
-      return nok(code);
-    }
-    effects.enter(type + "Value");
-    effects.consume(code);
-    return shortcut;
-  }
-  function shortcut(code) {
-    if (code === Codes.EOF || code === Codes.quotationMark || code === Codes.apostrophe || code === Codes.LessThan || code === Codes.equals || code === Codes.greaterThan || code === Codes.backTick) {
-      return nok(code);
-    }
-    if (code === Codes.hash || code === Codes.dot || code === Codes.closingCurlyBracket || markdownLineEndingOrSpace(code)) {
-      effects.exit(type + "Value");
-      effects.exit(type);
-      effects.exit(attributeType);
-      return between(code);
-    }
-    effects.consume(code);
-    return shortcut;
-  }
-  function bindAttributeName(code) {
-    if (code === Codes.dash || asciiAlphanumeric(code)) {
-      effects.consume(code);
-      return bindAttributeName;
-    }
-    effects.exit(attributeNameType);
-    if (disallowEol && markdownSpace(code)) {
-      return factorySpace(effects, bindAttributeNameAfter, "whitespace")(code);
-    }
-    if (!disallowEol && markdownLineEndingOrSpace(code)) {
-      return factoryWhitespace(effects, bindAttributeNameAfter)(code);
-    }
-    return bindAttributeNameAfter(code);
-  }
-  function bindAttributeNameAfter(code) {
-    if (code === Codes.equals) {
-      effects.enter(attributeInitializerType);
-      effects.consume(code);
-      effects.exit(attributeInitializerType);
-      return valueBefore;
-    }
-    effects.exit(attributeType);
-    return nok(code);
-  }
-  function name(code) {
-    if (code === Codes.dash || code === Codes.dot || code === Codes.colon || code === Codes.underscore || asciiAlphanumeric(code)) {
-      effects.consume(code);
-      return name;
-    }
-    effects.exit(attributeNameType);
-    if (disallowEol && markdownSpace(code)) {
-      return factorySpace(effects, nameAfter, "whitespace")(code);
-    }
-    if (!disallowEol && markdownLineEndingOrSpace(code)) {
-      return factoryWhitespace(effects, nameAfter)(code);
-    }
-    return nameAfter(code);
-  }
-  function nameAfter(code) {
-    if (code === Codes.equals) {
-      effects.enter(attributeInitializerType);
-      effects.consume(code);
-      effects.exit(attributeInitializerType);
-      return valueBefore;
-    }
-    effects.exit(attributeType);
-    return between(code);
-  }
-  function valueBefore(code) {
-    if (code === Codes.EOF || code === Codes.LessThan || code === Codes.equals || code === Codes.greaterThan || code === Codes.backTick || code === Codes.closingCurlyBracket || disallowEol && markdownLineEnding(code)) {
-      return nok(code);
-    }
-    if (code === Codes.quotationMark || code === Codes.apostrophe) {
-      effects.enter(attributeValueLiteralType);
-      effects.enter(attributeValueMarker);
-      effects.consume(code);
-      effects.exit(attributeValueMarker);
-      marker = code;
-      return valueQuotedStart;
-    }
-    if (disallowEol && markdownSpace(code)) {
-      return factorySpace(effects, valueBefore, "whitespace")(code);
-    }
-    if (!disallowEol && markdownLineEndingOrSpace(code)) {
-      return factoryWhitespace(effects, valueBefore)(code);
-    }
-    effects.enter(attributeValueType);
-    effects.enter(attributeValueData);
-    effects.consume(code);
-    marker = void 0;
-    return valueUnquoted;
-  }
-  function valueUnquoted(code) {
-    if (code === Codes.EOF || code === Codes.quotationMark || code === Codes.apostrophe || code === Codes.LessThan || code === Codes.equals || code === Codes.greaterThan || code === Codes.backTick) {
-      return nok(code);
-    }
-    if (code === Codes.closingCurlyBracket || markdownLineEndingOrSpace(code)) {
-      effects.exit(attributeValueData);
-      effects.exit(attributeValueType);
-      effects.exit(attributeType);
-      return between(code);
-    }
-    effects.consume(code);
-    return valueUnquoted;
-  }
-  function valueQuotedStart(code) {
-    if (code === marker) {
-      effects.enter(attributeValueMarker);
-      effects.consume(code);
-      effects.exit(attributeValueMarker);
-      effects.exit(attributeValueLiteralType);
-      effects.exit(attributeType);
-      return valueQuotedAfter;
-    }
-    effects.enter(attributeValueType);
-    return valueQuotedBetween(code);
-  }
-  function valueQuotedBetween(code) {
-    if (code === marker) {
-      effects.exit(attributeValueType);
-      return valueQuotedStart(code);
-    }
-    if (code === Codes.EOF) {
-      return nok(code);
-    }
-    if (markdownLineEnding(code)) {
-      return disallowEol ? nok(code) : factoryWhitespace(effects, valueQuotedBetween)(code);
-    }
-    effects.enter(attributeValueData);
-    effects.consume(code);
-    return valueQuoted;
-  }
-  function valueQuoted(code) {
-    if (code === marker || code === Codes.EOF || markdownLineEnding(code)) {
-      effects.exit(attributeValueData);
-      return valueQuotedBetween(code);
-    }
-    effects.consume(code);
-    return valueQuoted;
-  }
-  function valueQuotedAfter(code) {
-    return code === Codes.closingCurlyBracket || markdownLineEndingOrSpace(code) ? between(code) : end(code);
-  }
-  function end(code) {
-    if (code === Codes.closingCurlyBracket) {
-      effects.enter(attributesMarkerType);
-      effects.consume(code);
-      effects.exit(attributesMarkerType);
-      effects.exit(attributesType);
-      return ok;
-    }
-    return nok(code);
-  }
-}
-
-const attributes$2 = { tokenize: tokenizeAttributes$2, partial: true };
-const validEvents = [
-  "textSpan",
-  "attentionSequence",
-  "codeText",
-  "link",
-  "image"
-];
-function tokenize$3(effects, ok, nok) {
-  const self = this;
-  return start;
-  function start(code) {
-    if (code !== Codes.openingCurlyBracket) {
-      throw new Error("expected `{`");
-    }
-    const event = self.events[self.events.length - 1];
-    if (markdownLineEnding(self.previous) || !event || !validEvents.includes(event[1].type)) {
-      return nok;
-    }
-    return effects.attempt(attributes$2, ok, nok)(code);
-  }
-}
-function tokenizeAttributes$2(effects, ok, nok) {
-  return createAttributes(effects, ok, nok, "componentTextAttributes", "componentTextAttributesMarker", "componentTextAttribute", "componentTextAttributeId", "componentTextAttributeClass", "componentTextAttributeName", "componentTextAttributeInitializerMarker", "componentTextAttributeValueLiteral", "componentTextAttributeValue", "componentTextAttributeValueMarker", "componentTextAttributeValueData");
-}
-const tokenizeAttribute = {
-  tokenize: tokenize$3
-};
-
-function createName(effects, ok, nok, nameType) {
-  const self = this;
-  return start;
-  function start(code) {
-    if (asciiAlpha(code)) {
-      effects.enter(nameType);
-      effects.consume(code);
-      return name;
-    }
-    return nok(code);
-  }
-  function name(code) {
-    if (code === Codes.dash || code === Codes.underscore || asciiAlphanumeric(code)) {
-      effects.consume(code);
-      return name;
-    }
-    effects.exit(nameType);
-    return self.previous === Codes.underscore ? nok(code) : ok(code);
-  }
-}
-
-const label$1 = { tokenize: tokenizeLabel$1, partial: true };
-const attributes$1 = { tokenize: tokenizeAttributes$1, partial: true };
-function previous(code) {
-  return code !== Codes.colon || this.events[this.events.length - 1][1].type === "characterEscape";
-}
-function tokenize$2(effects, ok, nok) {
-  const self = this;
-  return start;
-  function start(code) {
-    if (code !== Codes.colon) {
-      throw new Error("expected `:`");
-    }
-    if (self.previous !== null && !markdownLineEndingOrSpace(self.previous) && ![Codes.openingSquareBracket].includes(self.previous)) {
-      return nok(code);
-    }
-    if (!previous.call(self, self.previous)) {
-      throw new Error("expected correct previous");
-    }
-    effects.enter("componentText");
-    effects.enter("componentTextMarker");
-    effects.consume(code);
-    effects.exit("componentTextMarker");
-    return createName.call(self, effects, afterName, nok, "componentTextName");
-  }
-  function afterName(code) {
-    if (code === Codes.colon) {
-      return nok(code);
-    }
-    if (code === Codes.openingSquareBracket) {
-      return effects.attempt(label$1, afterLabel, afterLabel)(code);
-    }
-    if (code === Codes.openingCurlyBracket) {
-      return effects.attempt(attributes$1, afterAttributes, afterAttributes)(code);
-    }
-    return exit(code);
-  }
-  function afterAttributes(code) {
-    if (code === Codes.openingSquareBracket) {
-      return effects.attempt(label$1, afterLabel, afterLabel)(code);
-    }
-    return exit(code);
-  }
-  function afterLabel(code) {
-    if (code === Codes.openingCurlyBracket) {
-      return effects.attempt(attributes$1, exit, exit)(code);
-    }
-    return exit(code);
-  }
-  function exit(code) {
-    effects.exit("componentText");
-    return ok(code);
-  }
-}
-function tokenizeLabel$1(effects, ok, nok) {
-  return createLabel(effects, ok, nok, "componentTextLabel", "componentTextLabelMarker", "componentTextLabelString");
-}
-function tokenizeAttributes$1(effects, ok, nok) {
-  return createAttributes(effects, ok, nok, "componentTextAttributes", "componentTextAttributesMarker", "componentTextAttribute", "componentTextAttributeId", "componentTextAttributeClass", "componentTextAttributeName", "componentTextAttributeInitializerMarker", "componentTextAttributeValueLiteral", "componentTextAttributeValue", "componentTextAttributeValueMarker", "componentTextAttributeValueData");
-}
-const tokenizeInline = {
-  tokenize: tokenize$2,
-  previous
-};
-
-function sizeChunks(chunks) {
-  let index = -1;
-  let size = 0;
-  while (++index < chunks.length) {
-    size += typeof chunks[index] === "string" ? chunks[index].length : 1;
-  }
-  return size;
-}
-function prefixSize(events, type) {
-  const tail = events[events.length - 1];
-  if (!tail || tail[1].type !== type) {
-    return 0;
-  }
-  return sizeChunks(tail[2].sliceStream(tail[1]));
-}
-function linePrefixSize(events) {
-  let size = 0;
-  let index = events.length - 1;
-  let tail = events[index];
-  while (index >= 0 && tail && tail[1].type === "linePrefix" && tail[0] === "exit") {
-    size += sizeChunks(tail[2].sliceStream(tail[1]));
-    index -= 1;
-    tail = events[index];
-  }
-  return size;
-}
-const useTokenState = (tokenName) => {
-  const token = {
-    isOpen: false,
-    enter: (effects) => {
-      const initialState = token.isOpen;
-      token.exit(effects);
-      effects.enter(tokenName);
-      token.isOpen = true;
-      return () => {
-        token.isOpen = initialState;
-      };
-    },
-    enterOnce: (effects) => {
-      const initialState = token.isOpen;
-      if (!token.isOpen) {
-        effects.enter(tokenName);
-        token.isOpen = true;
-      }
-      return () => {
-        token.isOpen = initialState;
-      };
-    },
-    exit: (effects) => {
-      const initialState = token.isOpen;
-      if (token.isOpen) {
-        effects.exit(tokenName);
-        token.isOpen = false;
-      }
-      return () => {
-        token.isOpen = initialState;
-      };
-    }
-  };
-  return token;
-};
-
-function tokenizeFrontMatter(effects, ok, _nok, next, initialPrefix) {
-  let previous;
-  return effects.attempt({
-    tokenize: tokenizeDataSection,
-    partial: true
-  }, dataSectionOpen, next);
-  function tokenizeDataSection(effects2, ok2, nok) {
-    const self = this;
-    let size = 0;
-    let sectionIndentSize = 0;
-    return closingPrefixAfter;
-    function dataLineFirstSpaces(code) {
-      if (markdownSpace(code)) {
-        effects2.consume(code);
-        sectionIndentSize += 1;
-        return dataLineFirstSpaces;
-      }
-      effects2.exit("space");
-      return closingPrefixAfter(code);
-    }
-    function closingPrefixAfter(code) {
-      if (markdownSpace(code)) {
-        effects2.enter("space");
-        return dataLineFirstSpaces(code);
-      }
-      if (sectionIndentSize === 0) {
-        sectionIndentSize = linePrefixSize(self.events);
-      }
-      effects2.enter("componentContainerSectionSequence");
-      return closingSectionSequence(code);
-    }
-    function closingSectionSequence(code) {
-      if (code === Codes.dash || markdownSpace(code)) {
-        effects2.consume(code);
-        size++;
-        return closingSectionSequence;
-      }
-      if (size < SectionSequenceSize) {
-        return nok(code);
-      }
-      if (sectionIndentSize !== initialPrefix) {
-        return nok(code);
-      }
-      if (!markdownLineEnding(code)) {
-        return nok(code);
-      }
-      effects2.exit("componentContainerSectionSequence");
-      return factorySpace(effects2, ok2, "whitespace")(code);
-    }
-  }
-  function dataSectionOpen(code) {
-    effects.enter("componentContainerDataSection");
-    return effects.attempt({
-      tokenize: tokenizeDataSection,
-      partial: true
-    }, dataSectionClose, dataChunkStart)(code);
-  }
-  function dataChunkStart(code) {
-    if (code === null) {
-      effects.exit("componentContainerDataSection");
-      effects.exit("componentContainer");
-      return ok(code);
-    }
-    const token = effects.enter("chunkDocument", {
-      contentType: "document",
-      previous
-    });
-    if (previous) {
-      previous.next = token;
-    }
-    previous = token;
-    return dataContentContinue(code);
-  }
-  function dataContentContinue(code) {
-    if (code === null) {
-      effects.exit("chunkDocument");
-      effects.exit("componentContainerDataSection");
-      effects.exit("componentContainer");
-      return ok(code);
-    }
-    if (markdownLineEnding(code)) {
-      effects.consume(code);
-      effects.exit("chunkDocument");
-      return effects.attempt({
-        tokenize: tokenizeDataSection,
-        partial: true
-      }, dataSectionClose, dataChunkStart);
-    }
-    effects.consume(code);
-    return dataContentContinue;
-  }
-  function dataSectionClose(code) {
-    effects.exit("componentContainerDataSection");
-    return factorySpace(effects, next, "whitespace")(code);
-  }
-}
-
-const label = { tokenize: tokenizeLabel, partial: true };
-const attributes = { tokenize: tokenizeAttributes, partial: true };
-function tokenize$1(effects, ok, nok) {
-  const self = this;
-  const initialPrefix = linePrefixSize(this.events);
-  let sizeOpen = 0;
-  let previous;
-  const childContainersSequenceSize = [];
-  let containerFirstLine = true;
-  const section = useTokenState("componentContainerSection");
-  return start;
-  function start(code) {
-    if (code !== Codes.colon) {
-      throw new Error("expected `:`");
-    }
-    effects.enter("componentContainer");
-    effects.enter("componentContainerFence");
-    effects.enter("componentContainerSequence");
-    return sequenceOpen(code);
-  }
-  function tokenizeSectionClosing(effects2, ok2, nok2) {
-    let size = 0;
-    let sectionIndentSize = 0;
-    let revertSectionState;
-    return closingPrefixAfter;
-    function closingPrefixAfter(code) {
-      sectionIndentSize = linePrefixSize(self.events);
-      revertSectionState = section.exit(effects2);
-      effects2.enter("componentContainerSectionSequence");
-      return closingSectionSequence(code);
-    }
-    function closingSectionSequence(code) {
-      if (code === slotSeparatorCode) {
-        effects2.consume(code);
-        size++;
-        return closingSectionSequence;
-      }
-      if (size !== slotSeparatorLength) {
-        revertSectionState();
-        return nok2(code);
-      }
-      if (sectionIndentSize !== initialPrefix) {
-        revertSectionState();
-        return nok2(code);
-      }
-      if (!asciiAlpha(code)) {
-        revertSectionState();
-        return nok2(code);
-      }
-      effects2.exit("componentContainerSectionSequence");
-      return factorySpace(effects2, ok2, "whitespace")(code);
-    }
-  }
-  function sectionOpen(code) {
-    section.enter(effects);
-    if (markdownLineEnding(code)) {
-      return factorySpace(effects, lineStart, "whitespace")(code);
-    }
-    effects.enter("componentContainerSectionTitle");
-    return sectionTitle(code);
-  }
-  function sectionTitle(code) {
-    if (markdownLineEnding(code)) {
-      effects.exit("componentContainerSectionTitle");
-      return factorySpace(effects, lineStart, "linePrefix", 4)(code);
-    }
-    effects.consume(code);
-    return sectionTitle;
-  }
-  function sequenceOpen(code) {
-    if (code === Codes.colon) {
-      effects.consume(code);
-      sizeOpen++;
-      return sequenceOpen;
-    }
-    if (sizeOpen < ContainerSequenceSize) {
-      return nok(code);
-    }
-    effects.exit("componentContainerSequence");
-    return createName.call(self, effects, afterName, nok, "componentContainerName")(code);
-  }
-  function afterName(code) {
-    return code === Codes.openingSquareBracket ? effects.attempt(label, afterLabel, afterLabel)(code) : afterLabel(code);
-  }
-  function afterLabel(code) {
-    return code === Codes.openingCurlyBracket ? effects.attempt(attributes, afterAttributes, afterAttributes)(code) : afterAttributes(code);
-  }
-  function afterAttributes(code) {
-    return factorySpace(effects, openAfter, "whitespace")(code);
-  }
-  function openAfter(code) {
-    effects.exit("componentContainerFence");
-    if (code === null) {
-      effects.exit("componentContainer");
-      return ok(code);
-    }
-    if (markdownLineEnding(code)) {
-      effects.enter("lineEnding");
-      effects.consume(code);
-      effects.exit("lineEnding");
-      return self.interrupt ? ok : contentStart;
-    }
-    return nok(code);
-  }
-  function contentStart(code) {
-    if (code === null) {
-      effects.exit("componentContainer");
-      return ok(code);
-    }
-    if (containerFirstLine && (code === Codes.dash || markdownSpace(code))) {
-      containerFirstLine = false;
-      return tokenizeFrontMatter(effects, ok, nok, contentStart, initialPrefix)(code);
-    }
-    effects.enter("componentContainerContent");
-    return lineStart(code);
-  }
-  function lineStartAfterPrefix(code) {
-    if (code === null) {
-      return after(code);
-    }
-    if (!childContainersSequenceSize.length && (code === slotSeparatorCode || code === Codes.space)) {
-      return effects.attempt({ tokenize: tokenizeSectionClosing, partial: true }, sectionOpen, chunkStart)(code);
-    }
-    if (code === Codes.colon) {
-      return effects.attempt({ tokenize: tokenizeClosingFence, partial: true }, after, chunkStart)(code);
-    }
-    return chunkStart(code);
-  }
-  function lineStart(code) {
-    if (code === null) {
-      return after(code);
-    }
-    return initialPrefix ? factorySpace(effects, lineStartAfterPrefix, "linePrefix", initialPrefix + 1)(code) : lineStartAfterPrefix(code);
-  }
-  function chunkStart(code) {
-    if (code === null) {
-      return after(code);
-    }
-    section.enterOnce(effects);
-    const token = effects.enter("chunkDocument", {
-      contentType: "document",
-      previous
-    });
-    if (previous) {
-      previous.next = token;
-    }
-    previous = token;
-    return contentContinue(code);
-  }
-  function contentContinue(code) {
-    if (code === null) {
-      effects.exit("chunkDocument");
-      return after(code);
-    }
-    if (markdownLineEnding(code)) {
-      effects.consume(code);
-      effects.exit("chunkDocument");
-      return lineStart;
-    }
-    effects.consume(code);
-    return contentContinue;
-  }
-  function after(code) {
-    section.exit(effects);
-    effects.exit("componentContainerContent");
-    effects.exit("componentContainer");
-    return ok(code);
-  }
-  function tokenizeClosingFence(effects2, ok2, nok2) {
-    let size = 0;
-    return factorySpace(effects2, closingPrefixAfter, "linePrefix", 4);
-    function closingPrefixAfter(code) {
-      effects2.enter("componentContainerFence");
-      effects2.enter("componentContainerSequence");
-      return closingSequence(code);
-    }
-    function closingSequence(code) {
-      if (code === Codes.colon) {
-        effects2.consume(code);
-        size++;
-        return closingSequence;
-      }
-      if (childContainersSequenceSize.length) {
-        if (size === childContainersSequenceSize[childContainersSequenceSize.length - 1]) {
-          childContainersSequenceSize.pop();
-        }
-        return nok2(code);
-      }
-      if (size !== sizeOpen) {
-        return nok2(code);
-      }
-      effects2.exit("componentContainerSequence");
-      return factorySpace(effects2, closingSequenceEnd, "whitespace")(code);
-    }
-    function closingSequenceEnd(code) {
-      if (code === null || markdownLineEnding(code)) {
-        effects2.exit("componentContainerFence");
-        return ok2(code);
-      }
-      childContainersSequenceSize.push(size);
-      return nok2(code);
-    }
-  }
-}
-function tokenizeLabel(effects, ok, nok) {
-  return createLabel(effects, ok, nok, "componentContainerLabel", "componentContainerLabelMarker", "componentContainerLabelString", true);
-}
-function tokenizeAttributes(effects, ok, nok) {
-  return createAttributes(effects, ok, nok, "componentContainerAttributes", "componentContainerAttributesMarker", "componentContainerAttribute", "componentContainerAttributeId", "componentContainerAttributeClass", "componentContainerAttributeName", "componentContainerAttributeInitializerMarker", "componentContainerAttributeValueLiteral", "componentContainerAttributeValue", "componentContainerAttributeValueMarker", "componentContainerAttributeValueData", true);
-}
-const tokenizeContainer = {
-  tokenize: tokenize$1,
-  concrete: true
-};
-
-function tokenize(effects, ok, nok) {
-  const self = this;
-  return factorySpace(effects, lineStart, "linePrefix");
-  function lineStart(code) {
-    if (prefixSize(self.events, "linePrefix") < 4) {
-      return nok(code);
-    }
-    switch (code) {
-      case Codes.backTick:
-        return codeFenced.tokenize.call(self, effects, ok, nok)(code);
-      case Codes.colon:
-        return tokenizeContainer.tokenize.call(self, effects, ok, nok)(code);
-      default:
-        return nok(code);
-    }
-  }
-}
-const tokenizeContainerIndented = {
-  tokenize
-};
-
-function micromarkComponentsExtension() {
-  return {
-    text: {
-      [Codes.colon]: tokenizeInline,
-      [Codes.openingSquareBracket]: [tokenizeSpan],
-      [Codes.openingCurlyBracket]: tokenizeAttribute
-    },
-    flow: {
-      [Codes.colon]: [tokenizeContainer]
-    },
-    flowInitial: {
-      "-2": tokenizeContainerIndented,
-      "-1": tokenizeContainerIndented,
-      [Codes.space]: tokenizeContainerIndented
-    }
-  };
-}
-
-const toFrontMatter = (yamlString) => `---
-${yamlString}
----`;
-const remarkMDC = (function({ components = [] } = {}) {
-  const data = this.data();
-  add("micromarkExtensions", micromarkComponentsExtension());
-  add("fromMarkdownExtensions", fromMarkdown);
-  add("toMarkdownExtensions", toMarkdown);
-  function add(field, value) {
-    if (!data[field]) {
-      data[field] = [];
-    }
-    data[field].push(value);
-  }
-  if (components.length) {
-    return async (tree, { data: data2 }) => {
-      const jobs = [];
-      visit(tree, ["textComponent", "leafComponent", "containerComponent"], (node) => {
-        bindNode(node);
-        const { instance: handler, options } = components.find((c) => c.name === node.name) || {};
-        if (handler) {
-          jobs.push(handler(options)(node, data2));
-        }
-      });
-      await Promise.all(jobs);
-      return tree;
-    };
-  }
-  return (tree) => {
-    visit(tree, ["textComponent", "leafComponent", "containerComponent"], (node) => {
-      bindNode(node);
-    });
-  };
-});
-function bindNode(node) {
-  const nodeData = node.data || (node.data = {});
-  node.fmAttributes = getNodeData(node);
-  nodeData.hName = kebabCase(node.name);
-  nodeData.hProperties = bindData({
-    ...node.attributes,
-    ...node.fmAttributes
-  });
-}
-function getNodeData(node) {
-  if (!node.rawData) {
-    return {};
-  }
-  const yaml = node.rawData.replace(/\s-+$/, "");
-  const { data } = parseFrontMatter(toFrontMatter(yaml));
-  return data;
-}
-function bindData(data) {
-  const entries = Object.entries(data).map(([key, value]) => {
-    if (key.startsWith(":")) {
-      return [key, value];
-    }
-    if (typeof value === "string") {
-      return [key, value];
-    }
-    return [`:${key}`, JSON.stringify(value)];
-  });
-  return Object.fromEntries(entries);
-}
-
-function emphasis(h, node) {
-  return h(node, "em", node.attributes, all(h, node));
-}
-
-function parseThematicBlock(lang) {
-  if (!lang) {
-    return {
-      language: void 0,
-      highlights: void 0,
-      fileName: void 0
-    };
-  }
-  const language = lang.replace(/[{|[](.+)/, "").match(/^[^ \t]+(?=[ \t]|$)/);
-  const highlightTokens = lang.match(/{([^}]+)}/);
-  const filenameTokens = lang.match(/\[(.+)\]/);
-  return {
-    language: language ? language[0] : void 0,
-    highlights: parseHighlightedLines(highlightTokens && highlightTokens[1]),
-    filename: Array.isArray(filenameTokens) ? filenameTokens[1] : void 0
-  };
-}
-function parseHighlightedLines(lines) {
-  const lineArray = String(lines || "").split(",").filter(Boolean).flatMap((line) => {
-    const [start, end] = line.trim().split("-").map((a) => Number(a.trim()));
-    return Array.from({ length: (end || start) - start + 1 }).map((_, i) => start + i);
-  });
-  return lineArray.length ? lineArray : void 0;
-}
-const TAG_NAME_REGEXP = /^<\/?([A-Za-z0-9-_]+) ?[^>]*>/;
-function getTagName(value) {
-  const result = String(value).match(TAG_NAME_REGEXP);
-  return result && result[1];
-}
-function wrap(nodes, loose = false) {
-  const result = [];
-  let index = -1;
-  if (loose) {
-    result.push(u("text", "\n"));
-  }
-  while (++index < nodes.length) {
-    if (index) {
-      result.push(u("text", "\n"));
-    }
-    result.push(nodes[index]);
-  }
-  if (loose && nodes.length > 0) {
-    result.push(u("text", "\n"));
-  }
-  return result;
-}
-
-const code = (h, node) => {
-  const lang = (node.lang || "") + " " + (node.meta || "");
-  const { language, highlights, filename } = parseThematicBlock(lang);
-  const code = node.value ? detab(node.value + "\n") : "";
-  return h(node.position, "code", {
-    language,
-    filename,
-    highlights,
-    code
-  }, [h(node, "pre", {}, [h(node, "code", { __ignoreMap: "" }, [u("text", code)])])]);
-};
-
-function html(h, node) {
-  const tagName = getTagName(node.value);
-  if (tagName && /[A-Z]/.test(tagName)) {
-    node.value = node.value.replace(tagName, kebabCase(tagName));
-  }
-  if (tagName === "code") {
-    node.value = node.value.replace(tagName, "code-inline");
-  }
-  return h.dangerous ? h.augment(node, u("raw", node.value)) : null;
-}
-
-function heading(h, node) {
-  return h(node, "h" + node.depth, all(h, node));
-}
-
-function link(h, node) {
-  const props = {
-    ...node.attributes || {},
-    href: encode(node.url)
-  };
-  if (node.title !== null && node.title !== void 0) {
-    props.title = node.title;
-  }
-  return h(node, "a", props, all(h, node));
-}
-
-function list(h, node) {
-  const props = {};
-  const name = `${node.ordered ? "ol" : "ul"}`;
-  if (typeof node.start === "number" && node.start !== 1) {
-    props.start = node.start;
-  }
-  return h(node, name, props, wrap(all(h, node), true));
-}
-
-function listItem(h, node, parent) {
-  const result = all(h, node);
-  const loose = parent ? listLoose(parent) : listItemLoose(node);
-  const props = {};
-  let wrapped = [];
-  let index;
-  let child;
-  if (typeof node.checked === "boolean") {
-    result.unshift(h({}, "input", {
-      type: "checkbox",
-      checked: node.checked,
-      disabled: true
-    }));
-    props.className = ["task-list-item"];
-  }
-  const length = result.length;
-  index = -1;
-  while (++index < length) {
-    child = result[index];
-    if (child.tagName === "p" && !loose) {
-      wrapped = wrapped.concat(child.children || []);
-    } else {
-      wrapped.push(child);
-    }
-  }
-  return h(node, "li", props, wrapped);
-}
-function listLoose(node) {
-  let loose = node.spread;
-  const children = node.children;
-  const length = children.length;
-  let index = -1;
-  while (!loose && ++index < length) {
-    loose = listItemLoose(children[index]);
-  }
-  return loose;
-}
-function listItemLoose(node) {
-  const spread = node.spread;
-  const children = node.children || [];
-  return spread === void 0 || spread === null ? children.length > 1 : spread;
-}
-
-function table(h, node) {
-  const rows = node.children;
-  const align = node.align || [];
-  const result = rows.map((row, index) => {
-    const childres = row.children;
-    const name = index === 0 ? "th" : "td";
-    let pos = node.align ? align.length : childres.length;
-    const out = [];
-    while (pos--) {
-      const cell = childres[pos];
-      out[pos] = h(cell, name, { align: align[pos] }, cell ? all(h, cell) : []);
-    }
-    return h(row, "tr", wrap(out, true));
-  });
-  const body = result[1] && h({
-    start: position(result[1]).start,
-    end: position(result[result.length - 1]).end
-  }, "tbody", wrap(result.slice(1), true));
-  return h(node, "table", wrap([h(result[0].position, "thead", wrap([result[0]], true))].concat(body || []), true));
-}
-
-function paragraph(h, node) {
-  if (node.children && node.children[0] && node.children[0].type === "html") {
-    const tagName = kebabCase(getTagName(node.children[0].value) || "div");
-    if (!htmlTags.includes(tagName)) {
-      return all(h, node);
-    }
-  }
-  return h(node, "p", all(h, node));
-}
-
-function image(h, node) {
-  const props = {
-    ...node.attributes,
-    src: encode(node.url),
-    alt: node.alt
-  };
-  if (node.title !== null && node.title !== void 0) {
-    props.title = node.title;
-  }
-  return h(node, "img", props);
-}
-
-function blockquote(h, node) {
-  return h(node, "blockquote", wrap(all(h, node), true));
-}
-
-function strong(h, node) {
-  return h(node, "strong", node.attributes, all(h, node));
-}
-
-function inlineCode(h, node) {
-  return h(node, "code-inline", node.attributes, [
-    u("text", node.value.replace(/\r?\n|\r/g, " "))
-  ]);
-}
-
-function thematicBreak(h, node) {
-  return h(node, "hr");
-}
-
-function containerComponent(h, node) {
-  const hast = h(node, node.tagName, node.attributes, all(h, node));
-  hast.attributes = node.attributes;
-  hast.fmAttributes = node.fmAttributes;
-  return hast;
-}
-
-const handlers$1 = {
-  emphasis,
-  code,
-  paragraph,
-  html,
-  link,
-  list,
-  listItem,
-  heading,
-  table,
-  image,
-  blockquote,
-  strong,
-  inlineCode,
-  thematicBreak,
-  containerComponent
-};
-
-function compiler(_options) {
-  function parseAsJSON(node) {
-    if (Array.isArray(node)) {
-      return node.map(parseAsJSON).filter(Boolean);
-    }
-    if (node.type === "element") {
-      if (node.tagName === "li") {
-        let hasPreviousParagraph = false;
-        node.children = node.children.flatMap((child) => {
-          if (child.tagName === "p") {
-            if (hasPreviousParagraph) {
-              child.children.unshift({
-                type: "element",
-                tagName: "br",
-                properties: {}
-              });
-            }
-            hasPreviousParagraph = true;
-            return child.children;
-          }
-          return child;
-        });
-      }
-      if (node.tagName === "component-slot") {
-        node.tagName = "template";
-      }
+  const matchingPipelines = [
+    // Conditions
+    (state, params) => {
+      const filtered = state.result.filter((item) => ensureArray(params.where).every((matchQuery) => match(item, matchQuery)));
       return {
-        type: "element",
-        tag: node.tagName,
-        props: node.properties,
-        children: parseAsJSON(node.children || [])
+        ...state,
+        result: filtered,
+        total: filtered.length
       };
-    }
-    if (node.type === "text") {
-      if (node.value === "\n") {
-        return null;
-      }
-      return {
-        type: "text",
-        value: node.value
-      };
-    }
-    if (node.type === "comment") {
-      return null;
-    }
-    node.children = parseAsJSON(node.children || []);
-    return node;
-  }
-  this.Compiler = function(root) {
-    return {
-      type: "root",
-      children: parseAsJSON(root.children || [])
-    };
-  };
-}
-
-function isTag(vnode, tag) {
-  if (vnode.type === tag) {
-    return true;
-  }
-  if (typeof vnode.type === "object" && vnode.type.tag === tag) {
-    return true;
-  }
-  if (vnode.tag === tag) {
-    return true;
-  }
-  return false;
-}
-function isText(vnode) {
-  return isTag(vnode, "text") || typeof vnode.children === "string";
-}
-function nodeChildren(node) {
-  if (Array.isArray(node.children) || typeof node.children === "string") {
-    return node.children;
-  }
-  if (typeof node.children.default === "function") {
-    return node.children.default();
-  }
-  return [];
-}
-function nodeTextContent(node) {
-  if (!node) {
-    return "";
-  }
-  if (Array.isArray(node)) {
-    return node.map(nodeTextContent).join("");
-  }
-  if (isText(node)) {
-    return node.children || node.value;
-  }
-  const children = nodeChildren(node);
-  if (Array.isArray(children)) {
-    return children.map(nodeTextContent).join("");
-  }
-  return "";
-}
-
-const usePlugins = (plugins, stream) => {
-  for (const plugin of Object.values(plugins)) {
-    if (plugin) {
-      const { instance, ...options } = plugin;
-      stream.use(instance, options);
-    }
-  }
-};
-function generateBody(content, options) {
-  const rehypeOptions = {
-    handlers: handlers$1,
-    allowDangerousHtml: true
-  };
-  return new Promise((resolve, reject) => {
-    const stream = unified().use(remarkParse);
-    if (options.mdc) {
-      stream.use(remarkMDC);
-    }
-    usePlugins(options.remarkPlugins, stream);
-    stream.use(remark2rehype, rehypeOptions);
-    usePlugins(options.rehypePlugins, stream);
-    stream.use(compiler, options);
-    stream.process({
-      value: content,
-      data: options.data
-    }, (error, file) => {
-      if (error) {
-        return reject(error);
-      }
-      Object.assign(options.data, file?.data || {});
-      resolve(file?.result);
-    });
-  });
-}
-function contentHeading(body) {
-  let title = "";
-  let description = "";
-  const children = body.children.filter((node) => node.type !== "text");
-  if (children.length && children[0].tag === "h1") {
-    const node = children.shift();
-    title = nodeTextContent(node);
-  }
-  if (children.length && children[0].tag === "p") {
-    const node = children.shift();
-    description = nodeTextContent(node);
-  }
-  return {
-    title,
-    description
-  };
-}
-
-const useDefaultOptions = () => ({
-  mdc: true,
-  toc: {
-    depth: 2,
-    searchDepth: 2
-  },
-  tags: {},
-  remarkPlugins: {
-    "remark-emoji": {
-      instance: remarkEmoji
     },
-    "remark-squeeze-paragraphs": {
-      instance: remarkSqueezeParagraphs
-    },
-    "remark-gfm": {
-      instance: remarkGfm
-    }
-  },
-  rehypePlugins: {
-    "rehype-slug": {
-      instance: rehypeSlug
-    },
-    "rehype-external-links": {
-      instance: rehypeExternalLinks
-    },
-    "rehype-sort-attribute-values": {
-      instance: rehypeSortAttributeValues
-    },
-    "rehype-sort-attributes": {
-      instance: rehypeSortAttributes
-    },
-    "rehype-raw": {
-      instance: rehypeRaw,
-      passThrough: ["element"]
-    }
-  }
-});
-async function parse(file, userOptions = {}) {
-  const options = defu(userOptions, useDefaultOptions());
-  const { content, data } = await parseFrontMatter(file);
-  const body = await generateBody(content, { ...options, data });
-  let toc;
-  if (data.toc !== false) {
-    const tocOption = defu(data.toc || {}, options.toc);
-    toc = generateToc(body, tocOption);
-  }
-  const excerptString = useExcerpt(content);
-  const excerpt = excerptString ? await generateBody(excerptString, { ...options, data }) : void 0;
-  const heading = contentHeading(body);
-  return {
-    body: {
-      ...body,
-      toc
-    },
-    meta: {
-      _empty: content.trim().length === 0,
-      title: heading.title,
-      description: heading.description,
-      excerpt,
-      ...data
-    }
-  };
-}
-function useExcerpt(content, delimiter = /<!--\s*?more\s*?-->/i) {
-  if (!delimiter) {
-    return "";
-  }
-  let idx = -1;
-  const match = delimiter.exec(content);
-  if (match) {
-    idx = match.index;
-  }
-  if (idx !== -1) {
-    return content.slice(0, idx);
-  }
-  return content;
-}
-
-const _47Users_47zne_47vue_45projects_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47markdown_46mjs = {
-  name: "markdown",
-  extensions: [".md"],
-  parse: async (_id, content) => {
-    const config = { ...useRuntimeConfig().content?.markdown || {} };
-    config.rehypePlugins = await importPlugins(config.rehypePlugins);
-    config.remarkPlugins = await importPlugins(config.remarkPlugins);
-    const parsed = await parse(content, config);
-    return {
-      ...parsed.meta,
-      body: parsed.body,
-      _type: "markdown",
-      _id
-    };
-  }
-};
-async function importPlugins(plugins = {}) {
-  const resolvedPlugins = {};
-  for (const [name, plugin] of Object.entries(plugins)) {
-    if (plugin) {
-      resolvedPlugins[name] = {
-        instance: await import(name).then((m) => m.default || m),
-        ...plugin
-      };
-    } else {
-      resolvedPlugins[name] = false;
-    }
-  }
-  return resolvedPlugins;
-}
-
-const _47Users_47zne_47vue_45projects_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47yaml_46mjs = {
-  name: "Yaml",
-  extensions: [".yml", ".yaml"],
-  parse: async (_id, content) => {
-    const { data } = await parseFrontMatter(`---
-${content}
----`);
-    let parsed = data;
-    if (Array.isArray(data)) {
-      console.warn(`YAML array is not supported in ${_id}, moving the array into the \`body\` key`);
-      parsed = { body: data };
-    }
-    return {
-      ...parsed,
-      _id,
-      _type: "yaml"
-    };
-  }
-};
-
-const _47Users_47zne_47vue_45projects_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47json_46mjs = {
-  name: "Json",
-  extensions: [".json", ".json5"],
-  parse: async (_id, content) => {
-    let parsed = content;
-    if (typeof content === "string") {
-      if (_id.endsWith("json5")) {
-        parsed = (await import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/json5/lib/index.js').then((m) => m.default || m)).parse(content);
-      } else if (_id.endsWith("json")) {
-        parsed = destr(content);
+    // Sort data
+    (state, params) => ensureArray(params.sort).forEach((options) => sortList(state.result, options)),
+    function fetchSurround(state, params, db) {
+      if (params.surround) {
+        let _surround = surround(state.result?.length === 1 ? db : state.result, params.surround);
+        _surround = apply(withoutKeys(params.without))(_surround);
+        _surround = apply(withKeys(params.only))(_surround);
+        state.surround = _surround;
       }
+      return state;
     }
-    if (Array.isArray(parsed)) {
-      console.warn(`JSON array is not supported in ${_id}, moving the array into the \`body\` key`);
-      parsed = {
-        body: parsed
-      };
-    }
-    return {
-      ...parsed,
-      _id,
-      _type: "json"
-    };
-  }
-};
-
-const _47Users_47zne_47vue_45projects_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47csv_46mjs = {
-  name: "csv",
-  extensions: [".csv"],
-  parse: async (_id, content) => {
-    const config = { ...useRuntimeConfig().content?.csv || {} };
-    const csvToJson = await import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/csvtojson/v2/index.js').then((m) => m.default || m);
-    const parsed = await csvToJson({ output: "json", ...config }).fromString(content);
-    return {
-      _id,
-      _type: "csv",
-      body: parsed
-    };
-  }
-};
-
-const SEMVER_REGEX = /^(\d+)(\.\d+)*(\.x)?$/;
-const describeId = (_id) => {
-  const [_source, ...parts] = _id.split(":");
-  const [, filename, _extension] = parts[parts.length - 1].match(/(.*)\.([^.]+)$/);
-  parts[parts.length - 1] = filename;
-  const _path = parts.join("/");
-  return {
-    _source,
-    _path,
-    _extension,
-    _file: _extension ? `${_path}.${_extension}` : _path
-  };
-};
-const _47Users_47zne_47vue_45projects_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47path_45meta_46mjs = {
-  name: "path-meta",
-  extensions: [".*"],
-  transform(content) {
-    const { locales, defaultLocale } = useRuntimeConfig().content || {};
-    const { _source, _file, _path, _extension } = describeId(content._id);
-    const parts = _path.split("/");
-    const _locale = locales.includes(parts[0]) ? parts.shift() : defaultLocale;
-    const filePath = parts.join("/");
-    return {
-      _path: generatePath(filePath),
-      _draft: isDraft(filePath),
-      _partial: isPartial(filePath),
-      _locale,
-      ...content,
-      title: content.title || generateTitle(refineUrlPart(parts[parts.length - 1])),
-      _source,
-      _file,
-      _extension
-    };
-  }
-};
-const isDraft = (path) => !!path.match(/\.draft(\/|\.|$)/);
-const isPartial = (path) => path.split(/[:/]/).some((part) => part.match(/^_.*/));
-const generatePath = (path) => withLeadingSlash(withoutTrailingSlash(path.split("/").map((part) => slugify(refineUrlPart(part), { lower: true })).join("/")));
-const generateTitle = (path) => path.split(/[\s-]/g).map(pascalCase).join(" ");
-function refineUrlPart(name) {
-  name = name.split(/[/:]/).pop();
-  if (SEMVER_REGEX.test(name)) {
-    return name;
-  }
-  return name.replace(/(\d+\.)?(.*)/, "$2").replace(/^index/, "").replace(/\.draft/, "");
-}
-
-const highlightConfig = useRuntimeConfig().content.highlight;
-const withContentBase = (url) => {
-  return withBase(url, `/api/${useRuntimeConfig().public.content.base}`);
-};
-const _47Users_47zne_47vue_45projects_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47shiki_46mjs = {
-  name: "markdown",
-  extensions: [".md"],
-  transform: async (content) => {
-    const tokenColors = {};
-    const codeBlocks = [];
-    const inlineCodes = [];
-    visit(content.body, (node) => node.tag === "code" && node?.props.code || node.tag === "code-inline" && (node.props?.lang || node.props?.language), (node) => {
-      if (node.tag === "code") {
-        codeBlocks.push(node);
-      } else if (node.tag === "code-inline") {
-        inlineCodes.push(node);
-      }
-    });
-    await Promise.all(codeBlocks.map(highlightBlock));
-    await Promise.all(inlineCodes.map(highlightInline));
-    if (Object.values(tokenColors).length) {
-      const colors = [];
-      for (const colorClass of Object.values(tokenColors)) {
-        Object.entries(colorClass.colors).forEach(([variant, color]) => {
-          if (variant === "default") {
-            colors.unshift(`.${colorClass.className}{color:${color}}`);
-          } else {
-            colors.push(`.${variant} .${colorClass.className}{color:${color}}`);
-          }
-        });
-      }
-      content.body.children.push({
-        type: "element",
-        tag: "style",
-        children: [{ type: "text", value: colors.join("") }]
-      });
-    }
-    return content;
-    async function highlightInline(node) {
-      const code = node.children[0].value;
-      const lines = await $fetch(withContentBase("highlight"), {
-        method: "POST",
-        body: {
-          code,
-          lang: node.props.lang || node.props.language,
-          theme: highlightConfig.theme
-        }
-      });
-      node.children = lines[0].map(tokenSpan);
-      node.props = node.props || {};
-      node.props.class = "colored";
-      return node;
-    }
-    async function highlightBlock(node) {
-      const { code, language: lang, highlights = [] } = node.props;
-      const lines = await $fetch(withContentBase("highlight"), {
-        method: "POST",
-        body: {
-          code,
-          lang,
-          theme: highlightConfig.theme
-        }
-      });
-      const innerCodeNode = node.children[0].children[0];
-      innerCodeNode.children = lines.map((line, lineIndex) => ({
-        type: "element",
-        tag: "span",
-        props: { class: ["line", highlights.includes(lineIndex + 1) ? "highlight" : ""].join(" ").trim() },
-        children: line.map(tokenSpan)
-      }));
-      return node;
-    }
-    function getColorProps(token) {
-      if (!token.color) {
-        return {};
-      }
-      if (typeof token.color === "string") {
-        return { style: { color: token.color } };
-      }
-      const key = Object.values(token.color).join("");
-      if (!tokenColors[key]) {
-        tokenColors[key] = {
-          colors: token.color,
-          className: "ct-" + Math.random().toString(16).substring(2, 8)
+  ];
+  const transformingPiples = [
+    // Skip first items
+    (state, params) => {
+      if (params.skip) {
+        return {
+          ...state,
+          result: state.result.slice(params.skip),
+          skip: params.skip
         };
       }
-      return { class: tokenColors[key].className };
-    }
-    function tokenSpan(token) {
+    },
+    // Pick first items
+    (state, params) => {
+      if (params.limit) {
+        return {
+          ...state,
+          result: state.result.slice(0, params.limit),
+          limit: params.limit
+        };
+      }
+    },
+    function fetchDirConfig(state, params, db) {
+      if (params.dirConfig) {
+        const path = state.result[0]?._path || params.where?.find((w) => w._path)?._path;
+        if (typeof path === "string") {
+          const dirConfig = db.find((item) => item._path === joinURL(path, "_dir"));
+          if (dirConfig) {
+            state.dirConfig = { _path: dirConfig._path, ...withoutKeys(["_"])(dirConfig) };
+          }
+        }
+      }
+      return state;
+    },
+    // Remove unwanted fields
+    (state, params) => ({
+      ...state,
+      result: apply(withoutKeys(params.without))(state.result)
+    }),
+    // Select only wanted fields
+    (state, params) => ({
+      ...state,
+      result: apply(withKeys(params.only))(state.result)
+    })
+  ];
+  return async (query) => {
+    const db = await getContentsList();
+    const params = query.params();
+    const result1 = {
+      result: db,
+      limit: 0,
+      skip: 0,
+      total: db.length
+    };
+    const matchedData = matchingPipelines.reduce(($data, pipe) => pipe($data, params, db) || $data, result1);
+    if (params.count) {
       return {
-        type: "element",
-        tag: "span",
-        props: getColorProps(token),
-        children: [{ type: "text", value: token.content }]
+        result: matchedData.result.length
       };
     }
-  }
-};
-
-const transformers = [_47Users_47zne_47vue_45projects_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47markdown_46mjs, _47Users_47zne_47vue_45projects_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47yaml_46mjs, _47Users_47zne_47vue_45projects_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47json_46mjs, _47Users_47zne_47vue_45projects_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47csv_46mjs, _47Users_47zne_47vue_45projects_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47path_45meta_46mjs, _47Users_47zne_47vue_45projects_47nuxt3_45zero_47node_modules_47_64nuxt_47content_47dist_47runtime_47server_47transformers_47shiki_46mjs];
-const getParser = (ext) => transformers.find(p => ext.match(new RegExp(p.extensions.join("|"),  "i")) && p.parse);
-const getTransformers = (ext) => transformers.filter(p => ext.match(new RegExp(p.extensions.join("|"),  "i")) && p.transform);
-
-async function parseContent(id, content) {
-  const nitroApp = useNitroApp();
-  const file = { _id: id, body: content };
-  await nitroApp.hooks.callHook("content:file:beforeParse", file);
-  const ext = extname(id);
-  const plugin = getParser(ext);
-  if (!plugin) {
-    console.warn(`${ext} files are not supported, "${id}" falling back to raw content`);
-    return file;
-  }
-  const parsed = await plugin.parse(file._id, file.body);
-  const transformers = getTransformers(ext);
-  const result = await transformers.reduce(async (prev, cur) => {
-    const next = await prev || parsed;
-    return cur.transform(next);
-  }, Promise.resolve(parsed));
-  await nitroApp.hooks.callHook("content:file:afterParse", result);
-  return result;
+    const result = transformingPiples.reduce(($data, pipe) => pipe($data, params, db) || $data, matchedData);
+    if (params.first) {
+      return {
+        ...omit(["skip", "limit", "total"])(result),
+        result: result.result[0]
+      };
+    }
+    return result;
+  };
 }
 
-const isPreview = (event) => {
-  const previewToken = useQuery(event).previewToken || useCookie(event, "previewToken");
-  return !!previewToken;
-};
-const getPreview = (event) => {
-  const key = useQuery(event).previewToken || useCookie(event, "previewToken");
-  return { key };
-};
+async function getContentIndex(event) {
+  const defaultLocale = useRuntimeConfig().content.defaultLocale;
+  let contentIndex = await cacheStorage().getItem("content-index.json");
+  if (!contentIndex) {
+    const data = await getContentsList(event);
+    contentIndex = data.reduce((acc, item) => {
+      acc[item._path] = acc[item._path] || [];
+      if (item._locale === defaultLocale) {
+        acc[item._path].unshift(item._id);
+      } else {
+        acc[item._path].push(item._id);
+      }
+      return acc;
+    }, {});
+    await cacheStorage().setItem("content-index.json", contentIndex);
+  }
+  return contentIndex;
+}
+async function getIndexedContentsList(event, query) {
+  const params = query.params();
+  const path = params?.where?.find((wh) => wh._path)?._path;
+  if (!isPreview(event) && !params.surround && !params.dirConfig && (typeof path === "string" || path instanceof RegExp)) {
+    const index = await getContentIndex(event);
+    const keys = Object.keys(index).filter((key) => path.test ? path.test(key) : key === String(path)).flatMap((key) => index[key]);
+    const keyChunks = [...chunksFromArray(keys, 10)];
+    const contents = [];
+    for await (const chunk of keyChunks) {
+      const result = await Promise.all(chunk.map((key) => getContent(event, key)));
+      contents.push(...result);
+    }
+    return contents;
+  }
+  return getContentsList(event);
+}
 
-const sourceStorage = prefixStorage(useStorage(), "content:source");
-prefixStorage(useStorage(), "cache:content");
-const cacheParsedStorage = prefixStorage(useStorage(), "cache:content:parsed");
-const contentConfig = useRuntimeConfig().content;
-const contentIgnores = contentConfig.ignores.map((p) => typeof p === "string" ? new RegExp(`^${p}|:${p}`) : p);
+const contentIndex = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  getContentIndex: getContentIndex,
+  getIndexedContentsList: getIndexedContentsList
+});
+
+const transformers = [];
+
+let _sourceStorage;
+let _cacheStorage;
+let _cacheParsedStorage;
+const sourceStorage = () => {
+  if (!_sourceStorage) {
+    _sourceStorage = prefixStorage(useStorage(), "content:source");
+  }
+  return _sourceStorage;
+};
+const cacheStorage = () => {
+  if (!_cacheStorage) {
+    _cacheStorage = prefixStorage(useStorage(), "cache:content");
+  }
+  return _cacheStorage;
+};
+const cacheParsedStorage = () => {
+  if (!_cacheParsedStorage) {
+    _cacheParsedStorage = prefixStorage(useStorage(), "cache:content:parsed");
+  }
+  return _cacheParsedStorage;
+};
+const contentConfig = () => useRuntimeConfig().content;
 const invalidKeyCharacters = `'"?#/`.split("");
 const contentIgnorePredicate = (key) => {
-  if (key.startsWith("preview:") || contentIgnores.some((prefix) => prefix.test(key))) {
+  const isIgnored = makeIgnored(contentConfig().ignores);
+  if (key.startsWith("preview:") || isIgnored(key)) {
     return false;
   }
   if (invalidKeyCharacters.some((ik) => key.includes(ik))) {
@@ -2778,85 +3743,410 @@ const contentIgnorePredicate = (key) => {
 };
 const getContentsIds = async (event, prefix) => {
   let keys = [];
+  const source = sourceStorage();
   if (keys.length === 0) {
-    keys = await sourceStorage.getKeys(prefix);
+    keys = await source.getKeys(prefix);
   }
   if (isPreview(event)) {
     const { key } = getPreview(event);
     const previewPrefix = `preview:${key}:${prefix || ""}`;
-    const previewKeys = await sourceStorage.getKeys(previewPrefix);
+    const previewKeys = await source.getKeys(previewPrefix);
     if (previewKeys.length) {
       const keysSet = new Set(keys);
-      await Promise.all(previewKeys.map(async (key2) => {
-        const meta = await sourceStorage.getMeta(key2);
-        if (meta?.__deleted) {
-          keysSet.delete(key2.substring(previewPrefix.length));
-        } else {
-          keysSet.add(key2.substring(previewPrefix.length));
-        }
-      }));
+      await Promise.all(
+        previewKeys.map(async (key2) => {
+          const meta = await source.getMeta(key2);
+          if (meta?.__deleted) {
+            keysSet.delete(key2.substring(previewPrefix.length));
+          } else {
+            keysSet.add(key2.substring(previewPrefix.length));
+          }
+        })
+      );
       keys = Array.from(keysSet);
     }
   }
   return keys.filter(contentIgnorePredicate);
 };
-const getContentsList = async (event, prefix) => {
-  const keys = await getContentsIds(event, prefix);
-  const contents = await Promise.all(keys.map((key) => getContent(event, key)));
-  return contents;
+function* chunksFromArray(arr, n) {
+  for (let i = 0; i < arr.length; i += n) {
+    yield arr.slice(i, i + n);
+  }
+}
+let cachedContents = [];
+const cleanCachedContents = () => {
+  cachedContents = [];
 };
+const getContentsList = /* @__PURE__ */ (() => {
+  let pendingContentsListPromise = null;
+  const _getContentsList = async (event, prefix) => {
+    const keys = await getContentsIds(event, prefix);
+    const keyChunks = [...chunksFromArray(keys, 10)];
+    const contents = [];
+    for (const chunk of keyChunks) {
+      const result = await Promise.all(chunk.map((key) => getContent(event, key)));
+      contents.push(...result);
+    }
+    return contents.filter((c) => c && c._path);
+  };
+  return (event, prefix) => {
+    if (event.context.__contentList) {
+      return event.context.__contentList;
+    }
+    if (cachedContents.length) {
+      return cachedContents;
+    }
+    if (!pendingContentsListPromise) {
+      pendingContentsListPromise = _getContentsList(event, prefix);
+      pendingContentsListPromise.then((result) => {
+        {
+          cachedContents = result;
+        }
+        event.context.__contentList = result;
+        pendingContentsListPromise = null;
+      });
+    }
+    return pendingContentsListPromise;
+  };
+})();
+const pendingPromises = {};
 const getContent = async (event, id) => {
   const contentId = id;
   if (!contentIgnorePredicate(id)) {
     return { _id: contentId, body: null };
   }
+  const source = sourceStorage();
+  const cache = cacheParsedStorage();
   if (isPreview(event)) {
     const { key } = getPreview(event);
     const previewId = `preview:${key}:${id}`;
-    const draft = await sourceStorage.getItem(previewId);
+    const draft = await source.getItem(previewId);
     if (draft) {
       id = previewId;
     }
   }
-  const cached = await cacheParsedStorage.getItem(id);
-  const meta = await sourceStorage.getMeta(id);
+  const cached = await cache.getItem(id);
+  const config = contentConfig();
+  const meta = await source.getMeta(id);
+  const mtime = meta.mtime;
+  const size = meta.size || 0;
   const hash$1 = hash({
-    meta,
-    version: contentConfig.cacheVersion,
-    integrity: contentConfig.cacheIntegrity
+    // Last modified time
+    mtime,
+    // File size
+    size,
+    // Add Content version to the hash, to revalidate the cache on content update
+    version: config.cacheVersion,
+    integrity: config.cacheIntegrity
   });
   if (cached?.hash === hash$1) {
     return cached.parsed;
   }
-  const body = await sourceStorage.getItem(id);
-  if (body === null) {
-    return { _id: contentId, body: null };
+  if (!pendingPromises[id + hash$1]) {
+    pendingPromises[id + hash$1] = new Promise(async (resolve) => {
+      const body = await source.getItem(id);
+      if (body === null) {
+        return resolve({ _id: contentId, body: null });
+      }
+      const parsed = await parseContent(contentId, body);
+      await cache.setItem(id, { parsed, hash: hash$1 }).catch(() => {
+      });
+      resolve(parsed);
+      delete pendingPromises[id + hash$1];
+    });
   }
-  const parsed = await parseContent(contentId, body);
-  await cacheParsedStorage.setItem(id, { parsed, hash: hash$1 }).catch(() => {
-  });
-  return parsed;
+  return pendingPromises[id + hash$1];
 };
-const createServerQueryFetch = (event, path) => (query) => {
-  if (path) {
-    if (query.params().first) {
-      query.where({ _path: withoutTrailingSlash(path) });
-    } else {
-      query.where({ _path: new RegExp(`^${path.replace(/[-[\]{}()*+.,^$\s/]/g, "\\$&")}`) });
+const parseContent = async (id, content, opts = {}) => {
+  const nitroApp = useNitroApp();
+  const config = contentConfig();
+  const options = defu(
+    opts,
+    {
+      markdown: {
+        ...config.markdown,
+        highlight: config.highlight
+      },
+      csv: config.csv,
+      yaml: config.yaml,
+      transformers: transformers,
+      pathMeta: {
+        defaultLocale: config.defaultLocale,
+        locales: config.locales,
+        respectPathCase: config.respectPathCase
+      }
     }
-  }
-  if (!query.params().sort?.length) {
-    query.sort({ _file: 1, $numeric: true });
-  }
-  return createPipelineFetcher(() => getContentsList(event))(query);
+  );
+  const file = { _id: id, body: typeof content === "string" ? content.replace(/\r\n|\r/g, "\n") : content };
+  await nitroApp.hooks.callHook("content:file:beforeParse", file);
+  const result = await transformContent(id, file.body, options);
+  await nitroApp.hooks.callHook("content:file:afterParse", result);
+  return result;
 };
-function serverQueryContent(event, path, ...pathParts) {
-  if (typeof path === "string") {
-    path = withLeadingSlash(joinURL(path, ...pathParts));
-    return createQuery(createServerQueryFetch(event, path));
+const createServerQueryFetch = (event) => (query) => {
+  return createPipelineFetcher(() => getIndexedContentsList(event, query))(query);
+};
+function serverQueryContent(event, query, ...pathParts) {
+  const { advanceQuery } = useRuntimeConfig().public.content.experimental;
+  const config = contentConfig();
+  const queryBuilder = advanceQuery ? createQuery(createServerQueryFetch(event), { initialParams: typeof query !== "string" ? query || {} : {}, legacy: false }) : createQuery(createServerQueryFetch(event), { initialParams: typeof query !== "string" ? query || {} : {}, legacy: true });
+  let path;
+  if (typeof query === "string") {
+    path = withLeadingSlash(joinURL(query, ...pathParts));
   }
-  return createQuery(createServerQueryFetch(event), path || {});
+  const originalParamsFn = queryBuilder.params;
+  queryBuilder.params = () => {
+    const params = originalParamsFn();
+    if (path) {
+      params.where = params.where || [];
+      if (params.first && (params.where || []).length === 0) {
+        params.where.push({ _path: withoutTrailingSlash(path) });
+      } else {
+        params.where.push({ _path: new RegExp(`^${path.replace(/[-[\]{}()*+.,^$\s/]/g, "\\$&")}`) });
+      }
+    }
+    if (!params.sort?.length) {
+      params.sort = [{ _stem: 1, $numeric: true }];
+    }
+    if (config.locales.length) {
+      const queryLocale = params.where?.find((w) => w._locale)?._locale;
+      if (!queryLocale) {
+        params.where = params.where || [];
+        params.where.push({ _locale: config.defaultLocale });
+      }
+    }
+    return params;
+  };
+  return queryBuilder;
 }
+
+const storage = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  cacheParsedStorage: cacheParsedStorage,
+  cacheStorage: cacheStorage,
+  chunksFromArray: chunksFromArray,
+  cleanCachedContents: cleanCachedContents,
+  createServerQueryFetch: createServerQueryFetch,
+  getContent: getContent,
+  getContentsIds: getContentsIds,
+  getContentsList: getContentsList,
+  parseContent: parseContent,
+  serverQueryContent: serverQueryContent,
+  sourceStorage: sourceStorage
+});
+
+function createShikiHighlighter({
+  langs = [],
+  themes = [],
+  bundledLangs = {},
+  bundledThemes = {},
+  getMdcConfigs,
+  options: shikiOptions,
+  engine
+} = {}) {
+  let shiki;
+  let configs;
+  async function _getShiki() {
+    const { createHighlighterCore, addClassToHast, isSpecialLang, isSpecialTheme } = await import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/core.mjs');
+    const { transformerNotationDiff, transformerNotationErrorLevel, transformerNotationFocus, transformerNotationHighlight } = await import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/@shikijs/transformers/dist/index.mjs');
+    const shiki2 = await createHighlighterCore({
+      langs,
+      themes,
+      engine
+    });
+    for await (const config of await getConfigs()) {
+      await config.shiki?.setup?.(shiki2);
+    }
+    return {
+      shiki: shiki2,
+      addClassToHast,
+      isSpecialLang,
+      isSpecialTheme,
+      transformers: [
+        transformerNotationDiff(),
+        transformerNotationErrorLevel(),
+        transformerNotationFocus(),
+        transformerNotationHighlight()
+      ]
+    };
+  }
+  async function getShiki() {
+    if (!shiki) {
+      shiki = _getShiki();
+    }
+    return shiki;
+  }
+  async function getConfigs() {
+    if (!configs) {
+      configs = Promise.resolve(getMdcConfigs?.() || []);
+    }
+    return configs;
+  }
+  const highlighter = async (code, lang, theme, options = {}) => {
+    const {
+      shiki: shiki2,
+      addClassToHast,
+      isSpecialLang,
+      isSpecialTheme,
+      transformers: baseTransformers
+    } = await getShiki();
+    const codeToHastOptions = {
+      defaultColor: false,
+      meta: {
+        __raw: options.meta
+      }
+    };
+    if (lang === "ts-type" || lang === "typescript-type") {
+      lang = "typescript";
+      codeToHastOptions.grammarContextCode = "let a:";
+    } else if (lang === "vue-html" || lang === "vue-template") {
+      lang = "vue";
+      codeToHastOptions.grammarContextCode = "<template>";
+    }
+    const themesObject = { ...typeof theme === "string" ? { default: theme } : theme || {} };
+    const loadedThemes = shiki2.getLoadedThemes();
+    const loadedLanguages = shiki2.getLoadedLanguages();
+    if (typeof lang === "string" && !loadedLanguages.includes(lang) && !isSpecialLang(lang)) {
+      if (bundledLangs[lang]) {
+        await shiki2.loadLanguage(bundledLangs[lang]);
+      } else {
+        {
+          console.warn(`[@nuxtjs/mdc] Language "${lang}" is not loaded to the Shiki highlighter, fallback to plain text. Add the language to "mdc.highlight.langs" to fix this.`);
+        }
+        lang = "text";
+      }
+    }
+    for (const [color, theme2] of Object.entries(themesObject)) {
+      if (typeof theme2 === "string" && !loadedThemes.includes(theme2) && !isSpecialTheme(theme2)) {
+        if (bundledThemes[theme2]) {
+          await shiki2.loadTheme(bundledThemes[theme2]);
+        } else {
+          {
+            console.warn(`[@nuxtjs/mdc] Theme "${theme2}" is not loaded to the Shiki highlighter. Add the theme to "mdc.highlight.themes" to fix this.`);
+          }
+          themesObject[color] = "none";
+        }
+      }
+    }
+    const transformers = [
+      ...baseTransformers
+    ];
+    for (const config of await getConfigs()) {
+      const newTransformers = typeof config.shiki?.transformers === "function" ? await config.shiki?.transformers(code, lang, theme, options) : config.shiki?.transformers || [];
+      transformers.push(...newTransformers);
+    }
+    const root = shiki2.codeToHast(code.trimEnd(), {
+      lang,
+      ...codeToHastOptions,
+      themes: themesObject,
+      transformers: [
+        ...transformers,
+        {
+          name: "mdc:highlight",
+          line(node, line) {
+            if (options.highlights?.includes(line))
+              addClassToHast(node, "highlight");
+            node.properties.line = line;
+          }
+        },
+        {
+          name: "mdc:newline",
+          line(node) {
+            if (code?.includes("\n")) {
+              if (node.children.length === 0 || node.children.length === 1 && node.children[0].type === "element" && node.children[0].children.length === 1 && node.children[0].children[0].type === "text" && node.children[0].children[0].value === "") {
+                node.children = [{
+                  type: "element",
+                  tagName: "span",
+                  properties: {
+                    emptyLinePlaceholder: true
+                  },
+                  children: [{ type: "text", value: "\n" }]
+                }];
+                return;
+              }
+              const last = node.children.at(-1);
+              if (last?.type === "element" && last.tagName === "span") {
+                const text = last.children.at(-1);
+                if (text?.type === "text")
+                  text.value += "\n";
+              }
+            }
+          }
+        }
+      ]
+    });
+    const preEl = root.children[0];
+    const codeEl = preEl.children[0];
+    const wrapperStyle = shikiOptions?.wrapperStyle;
+    preEl.properties.style = wrapperStyle ? typeof wrapperStyle === "string" ? wrapperStyle : preEl.properties.style : "";
+    const styles = [];
+    Object.keys(themesObject).forEach((color) => {
+      const colorScheme = color !== "default" ? `.${color}` : "";
+      styles.push(
+        wrapperStyle ? `${colorScheme} .shiki,` : "",
+        `html .${color} .shiki span {`,
+        `color: var(--shiki-${color});`,
+        `background: var(--shiki-${color}-bg);`,
+        `font-style: var(--shiki-${color}-font-style);`,
+        `font-weight: var(--shiki-${color}-font-weight);`,
+        `text-decoration: var(--shiki-${color}-text-decoration);`,
+        "}"
+      );
+      styles.push(
+        `html${colorScheme} .shiki span {`,
+        `color: var(--shiki-${color});`,
+        `background: var(--shiki-${color}-bg);`,
+        `font-style: var(--shiki-${color}-font-style);`,
+        `font-weight: var(--shiki-${color}-font-weight);`,
+        `text-decoration: var(--shiki-${color}-text-decoration);`,
+        "}"
+      );
+    });
+    return {
+      tree: codeEl.children,
+      className: Array.isArray(preEl.properties.class) ? preEl.properties.class.join(" ") : preEl.properties.class,
+      inlineStyle: preEl.properties.style,
+      style: styles.join("")
+    };
+  };
+  return highlighter;
+}
+
+const bundledLangs = {
+"javascript": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/javascript.mjs'),
+"js": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/javascript.mjs'),
+"jsx": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/jsx.mjs'),
+"json": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/json.mjs'),
+"typescript": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/typescript.mjs'),
+"ts": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/typescript.mjs'),
+"tsx": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/tsx.mjs'),
+"vue": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/vue.mjs'),
+"css": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/css.mjs'),
+"html": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/html.mjs'),
+"shellscript": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/shellscript.mjs'),
+"bash": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/shellscript.mjs'),
+"sh": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/shellscript.mjs'),
+"shell": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/shellscript.mjs'),
+"zsh": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/shellscript.mjs'),
+"markdown": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/markdown.mjs'),
+"md": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/markdown.mjs'),
+"mdc": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/mdc.mjs'),
+"yaml": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/yaml.mjs'),
+"yml": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/yaml.mjs'),
+};
+const bundledThemes = {
+"material-theme-palenight": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/themes/material-theme-palenight.mjs').then(r => r.default),
+"github-dark": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/themes/github-dark.mjs').then(r => r.default),
+};
+const options = {"theme":{"default":"material-theme-palenight","dark":"github-dark"}};
+const engine = createWasmOnigEngine(() => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/wasm.mjs'));
+const highlighter = createShikiHighlighter({ bundledLangs, bundledThemes, options, getMdcConfigs, engine });
+
+const mdcHighlighter = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  createShikiHighlighter: createShikiHighlighter,
+  default: highlighter
+});
 
 function jsonParse(value) {
   return JSON.parse(value, regExpReviver);
@@ -2864,32 +4154,45 @@ function jsonParse(value) {
 function regExpReviver(_key, value) {
   const withOperator = typeof value === "string" && value.match(/^--([A-Z]+) (.+)$/) || [];
   if (withOperator[1] === "REGEX") {
-    const regex = withOperator[2].match(/\/(.*)\/([dgimsuy]*)$/);
-    return regex ? new RegExp(regex[1], regex[2] || "") : value;
+    const regex = withOperator[2]?.match(/\/(.*)\/([dgimsuy]*)$/);
+    return regex?.[1] ? new RegExp(regex[1], regex[2] || "") : value;
   }
   return value;
 }
 
-const parseQueryParams = (body) => {
+const parseJSONQueryParams = (body) => {
   try {
     return jsonParse(body);
-  } catch (e) {
+  } catch {
     throw createError({ statusCode: 400, message: "Invalid _params query" });
   }
 };
+const decodeQueryParams = (encoded) => {
+  encoded = encoded.replace(/\//g, "");
+  encoded = encoded.replace(/-/g, "+").replace(/_/g, "/");
+  encoded = encoded.padEnd(encoded.length + (4 - encoded.length % 4) % 4, "=");
+  return parseJSONQueryParams(typeof Buffer !== "undefined" ? Buffer.from(encoded, "base64").toString() : atob(encoded));
+};
 const memory = {};
 const getContentQuery = (event) => {
-  const { qid } = event.context.params;
-  const query = useQuery(event) || {};
+  const { params } = event.context.params || {};
+  if (params) {
+    return decodeQueryParams(params.replace(/.json$/, ""));
+  }
+  const qid = event.context.params?.qid?.replace(/.json$/, "");
+  const query = getQuery$1(event) || {};
   if (qid && query._params) {
-    memory[qid] = parseQueryParams(query._params);
+    memory[qid] = parseJSONQueryParams(decodeURIComponent(query._params));
+    if (memory[qid]?.where && !Array.isArray(memory[qid]?.where)) {
+      memory[qid].where = [memory[qid].where];
+    }
     return memory[qid];
   }
-  if (memory[qid]) {
+  if (qid && memory[qid]) {
     return memory[qid];
   }
   if (query._params) {
-    return parseQueryParams(query._params);
+    return parseJSONQueryParams(decodeURIComponent(query._params));
   }
   if (typeof query.only === "string" && query.only.includes(",")) {
     query.only = query.only.split(",").map((s) => s.trim());
@@ -2897,17 +4200,17 @@ const getContentQuery = (event) => {
   if (typeof query.without === "string" && query.without.includes(",")) {
     query.without = query.without.split(",").map((s) => s.trim());
   }
-  query.where = query.where || {};
+  const where = query.where || {};
   for (const key of ["draft", "partial", "empty"]) {
     if (query[key] && ["true", "false"].includes(query[key])) {
-      query.where[key] = query[key] === "true";
+      where[key] = query[key] === "true";
       delete query[key];
     }
   }
   if (query.sort) {
-    query.sort = query.sort.split(",").map((s) => {
+    query.sort = String(query.sort).split(",").map((s) => {
       const [key, order] = s.split(":");
-      return [key, +order];
+      return [key, Number.parseInt(order || "0", 10)];
     });
   }
   const reservedKeys = ["partial", "draft", "only", "without", "where", "sort", "limit", "skip"];
@@ -2915,43 +4218,36 @@ const getContentQuery = (event) => {
     if (reservedKeys.includes(key)) {
       continue;
     }
+    query.where = query.where || {};
     query.where[key] = query[key];
+  }
+  if (Object.keys(where).length > 0) {
+    query.where = [where];
+  } else {
+    delete query.where;
   }
   return query;
 };
 
-const _252482 = defineEventHandler(async (event) => {
-  const query = getContentQuery(event);
-  const contents = await serverQueryContent(event, query).find();
-  if (query.first && Array.isArray(contents) && contents.length === 0) {
-    throw createError({
-      statusMessage: "Document not found!",
-      statusCode: 404,
-      data: {
-        description: "Could not find document for the given query.",
-        query
-      }
-    });
-  }
-  return contents;
-});
-
-const _136223 = defineEventHandler(async (event) => {
-  const now = Date.now();
-  await serverQueryContent(event).find();
-  return {
-    generatedAt: now,
-    generateTime: Date.now() - now
-  };
+const query = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  decodeQueryParams: decodeQueryParams,
+  getContentQuery: getContentQuery
 });
 
 function createNav(contents, configs) {
-  const { navigation } = useRuntimeConfig().content;
-  const pickNavigationFields = pick(["title", ...navigation.fields]);
+  const { navigation } = useRuntimeConfig().public.content;
+  if (navigation === false) {
+    return [];
+  }
+  const pickNavigationFields = (content) => ({
+    ...pick(["title", ...navigation.fields])(content),
+    ...isObject(content?.navigation) ? content.navigation : {}
+  });
   const nav = contents.sort((a, b) => a._path.localeCompare(b._path)).reduce((nav2, content) => {
     const parts = content._path.substring(1).split("/");
     const idParts = content._id.split(":").slice(1);
-    const isIndex = !!idParts[idParts.length - 1].match(/([1-9][0-9]*\.)?index.md/g);
+    const isIndex = !!idParts[idParts.length - 1]?.match(/([1-9][0-9]*\.)?index.md/g);
     const getNavItem = (content2) => ({
       title: content2.title,
       _path: content2._path,
@@ -2970,7 +4266,12 @@ function createNav(contents, configs) {
         const indexItem = getNavItem(content);
         navItem.children.push(indexItem);
       }
-      Object.assign(navItem, pickNavigationFields(dirConfig));
+      if (dirConfig) {
+        Object.assign(
+          navItem,
+          pickNavigationFields(dirConfig)
+        );
+      }
     }
     if (parts.length === 1) {
       nav2.push(navItem);
@@ -2989,7 +4290,7 @@ function createNav(contents, configs) {
           _path: currentPathPart,
           _file: content._file,
           children: [],
-          ...pickNavigationFields(conf)
+          ...conf && pickNavigationFields(conf)
         };
         nodes.push(parent);
       }
@@ -3002,9 +4303,12 @@ function createNav(contents, configs) {
 }
 const collator = new Intl.Collator(void 0, { numeric: true, sensitivity: "base" });
 function sortAndClear(nav) {
+  nav.forEach((item) => {
+    item._file = item._file.split(".").slice(0, -1).join(".");
+  });
   const sorted = nav.sort((a, b) => collator.compare(a._file, b._file));
   for (const item of sorted) {
-    if (item.children.length) {
+    if (item.children?.length) {
       sortAndClear(item.children);
     } else {
       delete item.children;
@@ -3016,1049 +4320,26 @@ function sortAndClear(nav) {
 function pick(keys) {
   return (obj) => {
     obj = obj || {};
-    if (keys && keys.length) {
+    if (keys.length) {
       return keys.filter((key) => typeof obj[key] !== "undefined").reduce((newObj, key) => Object.assign(newObj, { [key]: obj[key] }), {});
     }
     return obj;
   };
 }
-
-const _580273 = defineEventHandler(async (event) => {
-  const query = getContentQuery(event);
-  const contents = await serverQueryContent(event, query).where({
-    _partial: false,
-    navigation: {
-      $ne: false
-    }
-  }).find();
-  const dirConfigs = await serverQueryContent(event).where({ _path: /\/_dir$/i, _partial: true }).find();
-  const configs = dirConfigs.reduce((configs2, conf) => {
-    if (conf.title.toLowerCase() === "dir") {
-      conf.title = void 0;
-    }
-    const key = conf._path.split("/").slice(0, -1).join("/") || "/";
-    configs2[key] = {
-      ...conf,
-      ...conf.body
-    };
-    return configs2;
-  }, {});
-  return createNav(contents, configs);
-});
-
-var information_for_contributors = [
-	"This file has been converted from https://github.com/docusgen/vscode-extension/blob/main/syntaxes/mdc.tmLanguage.json",
-	"If you want to provide a fix or improvement, please create a pull request against the original repository.",
-	"Once accepted there, we are happy to receive an update request."
-];
-var version = "https://github.com/docusgen/vscode-extension/blob/1303abd16342880a42a4d143a660da049c79ea6c/syntaxes/mdc.tmLanguage.json";
-var name = "markdown";
-var injectionSelector = "L:text.html.markdown";
-var scopeName = "text.markdown.mdc";
-var patterns = [
-	{
-		include: "text.html.markdown#frontMatter"
-	},
-	{
-		include: "#component_block"
-	},
-	{
-		include: "#block"
-	}
-];
-var repository = {
-	block: {
-		comment: "Same as `text.html.markdown#block`, but without `raw_block`",
-		patterns: [
-			{
-				include: "#component_block"
-			},
-			{
-				include: "text.html.markdown#separator"
-			},
-			{
-				include: "#heading"
-			},
-			{
-				include: "#blockquote"
-			},
-			{
-				include: "#lists"
-			},
-			{
-				include: "#paragraph"
-			},
-			{
-				include: "text.html.markdown#fenced_code_block"
-			},
-			{
-				include: "text.html.markdown#link-def"
-			},
-			{
-				include: "text.html.markdown#html"
-			}
-		]
-	},
-	inline: {
-		patterns: [
-			{
-				include: "#component_inline"
-			},
-			{
-				include: "#span"
-			},
-			{
-				include: "#markdown_attributes"
-			}
-		]
-	},
-	markdown_attributes: {
-		match: "(?x)([^ ])(               # attributes\n    ({)\n      ([^{]*)\n    (})\n  )",
-		name: "markup.component.attribute",
-		captures: {
-			"4": {
-				patterns: [
-					{
-						include: "#attribute"
-					}
-				]
-			}
-		}
-	},
-	span: {
-		match: "(?x)\n  (\\[)           # Open\n    ([^]]*)\n  (\\])\n  (               # attributes\n    ({)\n      ([^{]*)\n    (})\n  )?",
-		name: "markup.component.span",
-		captures: {
-			"2": {
-				name: "string.other.link.description.title.markdown"
-			},
-			"4": {
-				patterns: [
-					{
-						include: "#attributes"
-					}
-				]
-			}
-		}
-	},
-	attributes: {
-		match: "(?x)(               # attributes\n    ({)\n      ([^{]*)\n    (})\n  )",
-		name: "markup.attributes",
-		captures: {
-			"3": {
-				patterns: [
-					{
-						include: "#attribute"
-					}
-				]
-			}
-		}
-	},
-	component_inline: {
-		match: "(?x)\n  (^|\\G|\\s+)\n  (:)           # component colon\n  (?i:             # component name\n    (\\w[\\w\\d-]*)\n  )\n  (\n      ({[^}]*})        # attributes\n      (\\[[^\\]]*\\]?) # slot\n      # reverse order\n    | (\\[[^\\]]*\\])  # slot\n      ({[^}]*})?       # attributes\n  )?",
-		name: "markup.component.inline",
-		captures: {
-			"2": {
-				name: "punctuation.definition.tag.start.component"
-			},
-			"3": {
-				name: "entity.name.tag.component"
-			},
-			"5": {
-				patterns: [
-					{
-						include: "#attributes"
-					}
-				]
-			},
-			"6": {
-				patterns: [
-					{
-						include: "#span"
-					}
-				]
-			},
-			"7": {
-				patterns: [
-					{
-						include: "#span"
-					}
-				]
-			},
-			"8": {
-				patterns: [
-					{
-						include: "#attributes"
-					}
-				]
-			}
-		}
-	},
-	component_block: {
-		begin: "(?x)\n  (^|\\G)(\\s*)\n  (:{2,})     # component colons\n  (?i:\n    (\\w[\\w\\d-]+)   # component name\n    (                 # folowing spaces or attributes\n        \\s*\n      | {([^{]*)}\n    )\n    $\n  )",
-		name: "markup.component.block",
-		end: "(^|\\G)(\\2)(\\3)\\s*$",
-		beginCaptures: {
-			"4": {
-				name: "entity.name.tag.component"
-			},
-			"5": {
-				patterns: [
-					{
-						include: "#attribute"
-					}
-				]
-			}
-		},
-		patterns: [
-			{
-				include: "#content"
-			}
-		]
-	},
-	content: {
-		begin: "(^|\\G)(\\s*)(.*)",
-		"while": "(^|\\G)(?!\\s*([:]{2,})\\s*$)",
-		contentName: "meta.embedded.block.component",
-		patterns: [
-			{
-				begin: "(^|\\G)(\\s*)(-{3})(\\s*)$",
-				end: "(^|\\G)(\\s*(-{3})(\\s*)$)",
-				patterns: [
-					{
-						include: "source.yaml"
-					}
-				]
-			},
-			{
-				match: "^(\\s*)(#[\\w\\-\\_]*)\\s*(<!--(.*)-->)?$",
-				captures: {
-					"2": {
-						name: "entity.other.attribute-name.html"
-					},
-					"3": {
-						name: "comment.block.html"
-					}
-				}
-			},
-			{
-				comment: "Block Repository created to disable 4-space raw block inside components",
-				include: "#block"
-			}
-		]
-	},
-	attribute: {
-		patterns: [
-			{
-				match: "(?x)\n  (\n    ([^=><\\s]*)  # attribute name\n    (             # attribute value\n        =[\"]([^\"]*)([\"])|[']([^']*)(['])\n      | =[^\\s'\"]*\n    )?\n    \\s*\n  )",
-				captures: {
-					"2": {
-						name: "entity.other.attribute-name.html"
-					},
-					"3": {
-						patterns: [
-							{
-								include: "#attribute-interior"
-							}
-						]
-					}
-				}
-			}
-		]
-	},
-	"attribute-interior": {
-		comment: "https://github.com/microsoft/vscode/blob/08d59c432609ae9306eb3889815977e93bb548de/extensions/html/syntaxes/html.tmLanguage.json#L376",
-		patterns: [
-			{
-				begin: "=",
-				beginCaptures: {
-					"0": {
-						name: "punctuation.separator.key-value.html"
-					}
-				},
-				end: "(?<=[^\\s=])(?!\\s*=)|(?=/?>)",
-				patterns: [
-					{
-						match: "([^\\s\"'=<>`/]|/(?!>))+",
-						name: "string.unquoted.html"
-					},
-					{
-						begin: "\"",
-						beginCaptures: {
-							"0": {
-								name: "punctuation.definition.string.begin.html"
-							}
-						},
-						end: "\"",
-						endCaptures: {
-							"0": {
-								name: "punctuation.definition.string.end.html"
-							}
-						},
-						name: "string.quoted.double.html",
-						patterns: [
-							{
-								include: "#entities"
-							}
-						]
-					},
-					{
-						begin: "'",
-						beginCaptures: {
-							"0": {
-								name: "punctuation.definition.string.begin.html"
-							}
-						},
-						end: "'",
-						endCaptures: {
-							"0": {
-								name: "punctuation.definition.string.end.html"
-							}
-						},
-						name: "string.quoted.single.html",
-						patterns: [
-							{
-								include: "#entities"
-							}
-						]
-					},
-					{
-						match: "=",
-						name: "invalid.illegal.unexpected-equals-sign.html"
-					}
-				]
-			}
-		]
-	},
-	entities: {
-		comment: "https://github.com/microsoft/vscode/blob/08d59c432609ae9306eb3889815977e93bb548de/extensions/html/syntaxes/html.tmLanguage.json#L532",
-		patterns: [
-			{
-				captures: {
-					"1": {
-						name: "punctuation.definition.entity.html"
-					},
-					"912": {
-						name: "punctuation.definition.entity.html"
-					}
-				},
-				comment: "Yes this is a bit ridiculous, there are quite a lot of these",
-				match: "(?x)\n\t\t\t\t\t\t(&)\t(?=[a-zA-Z])\n\t\t\t\t\t\t(\n\t\t\t\t\t\t\t(a(s(ymp(eq)?|cr|t)|n(d(slope|d|v|and)?|g(s(t|ph)|zarr|e|le|rt(vb(d)?)?|msd(a(h|c|d|e|f|a|g|b))?)?)|c(y|irc|d|ute|E)?|tilde|o(pf|gon)|uml|p(id|os|prox(eq)?|e|E|acir)?|elig|f(r)?|w(conint|int)|l(pha|e(ph|fsym))|acute|ring|grave|m(p|a(cr|lg))|breve)|A(s(sign|cr)|nd|MP|c(y|irc)|tilde|o(pf|gon)|uml|pplyFunction|fr|Elig|lpha|acute|ring|grave|macr|breve))\n\t\t\t\t\t\t  | (B(scr|cy|opf|umpeq|e(cause|ta|rnoullis)|fr|a(ckslash|r(v|wed))|reve)|b(s(cr|im(e)?|ol(hsub|b)?|emi)|n(ot|e(quiv)?)|c(y|ong)|ig(s(tar|qcup)|c(irc|up|ap)|triangle(down|up)|o(times|dot|plus)|uplus|vee|wedge)|o(t(tom)?|pf|wtie|x(h(d|u|D|U)?|times|H(d|u|D|U)?|d(R|l|r|L)|u(R|l|r|L)|plus|D(R|l|r|L)|v(R|h|H|l|r|L)?|U(R|l|r|L)|V(R|h|H|l|r|L)?|minus|box))|Not|dquo|u(ll(et)?|mp(e(q)?|E)?)|prime|e(caus(e)?|t(h|ween|a)|psi|rnou|mptyv)|karow|fr|l(ock|k(1(2|4)|34)|a(nk|ck(square|triangle(down|left|right)?|lozenge)))|a(ck(sim(eq)?|cong|prime|epsilon)|r(vee|wed(ge)?))|r(eve|vbar)|brk(tbrk)?))\n\t\t\t\t\t\t  | (c(s(cr|u(p(e)?|b(e)?))|h(cy|i|eck(mark)?)|ylcty|c(irc|ups(sm)?|edil|a(ps|ron))|tdot|ir(scir|c(eq|le(d(R|circ|S|dash|ast)|arrow(left|right)))?|e|fnint|E|mid)?|o(n(int|g(dot)?)|p(y(sr)?|f|rod)|lon(e(q)?)?|m(p(fn|le(xes|ment))?|ma(t)?))|dot|u(darr(l|r)|p(s|c(up|ap)|or|dot|brcap)?|e(sc|pr)|vee|wed|larr(p)?|r(vearrow(left|right)|ly(eq(succ|prec)|vee|wedge)|arr(m)?|ren))|e(nt(erdot)?|dil|mptyv)|fr|w(conint|int)|lubs(uit)?|a(cute|p(s|c(up|ap)|dot|and|brcup)?|r(on|et))|r(oss|arr))|C(scr|hi|c(irc|onint|edil|aron)|ircle(Minus|Times|Dot|Plus)|Hcy|o(n(tourIntegral|int|gruent)|unterClockwiseContourIntegral|p(f|roduct)|lon(e)?)|dot|up(Cap)?|OPY|e(nterDot|dilla)|fr|lo(seCurly(DoubleQuote|Quote)|ckwiseContourIntegral)|a(yleys|cute|p(italDifferentialD)?)|ross))\n\t\t\t\t\t\t  | (d(s(c(y|r)|trok|ol)|har(l|r)|c(y|aron)|t(dot|ri(f)?)|i(sin|e|v(ide(ontimes)?|onx)?|am(s|ond(suit)?)?|gamma)|Har|z(cy|igrarr)|o(t(square|plus|eq(dot)?|minus)?|ublebarwedge|pf|wn(harpoon(left|right)|downarrows|arrow)|llar)|d(otseq|a(rr|gger))?|u(har|arr)|jcy|e(lta|g|mptyv)|f(isht|r)|wangle|lc(orn|rop)|a(sh(v)?|leth|rr|gger)|r(c(orn|rop)|bkarow)|b(karow|lac)|Arr)|D(s(cr|trok)|c(y|aron)|Scy|i(fferentialD|a(critical(Grave|Tilde|Do(t|ubleAcute)|Acute)|mond))|o(t(Dot|Equal)?|uble(Right(Tee|Arrow)|ContourIntegral|Do(t|wnArrow)|Up(DownArrow|Arrow)|VerticalBar|L(ong(RightArrow|Left(RightArrow|Arrow))|eft(RightArrow|Tee|Arrow)))|pf|wn(Right(TeeVector|Vector(Bar)?)|Breve|Tee(Arrow)?|arrow|Left(RightVector|TeeVector|Vector(Bar)?)|Arrow(Bar|UpArrow)?))|Zcy|el(ta)?|D(otrahd)?|Jcy|fr|a(shv|rr|gger)))\n\t\t\t\t\t\t  | (e(s(cr|im|dot)|n(sp|g)|c(y|ir(c)?|olon|aron)|t(h|a)|o(pf|gon)|dot|u(ro|ml)|p(si(v|lon)?|lus|ar(sl)?)|e|D(ot|Dot)|q(s(im|lant(less|gtr))|c(irc|olon)|u(iv(DD)?|est|als)|vparsl)|f(Dot|r)|l(s(dot)?|inters|l)?|a(ster|cute)|r(Dot|arr)|g(s(dot)?|rave)?|x(cl|ist|p(onentiale|ectation))|m(sp(1(3|4))?|pty(set|v)?|acr))|E(s(cr|im)|c(y|irc|aron)|ta|o(pf|gon)|NG|dot|uml|TH|psilon|qu(ilibrium|al(Tilde)?)|fr|lement|acute|grave|x(ists|ponentialE)|m(pty(SmallSquare|VerySmallSquare)|acr)))\n\t\t\t\t\t\t  | (f(scr|nof|cy|ilig|o(pf|r(k(v)?|all))|jlig|partint|emale|f(ilig|l(ig|lig)|r)|l(tns|lig|at)|allingdotseq|r(own|a(sl|c(1(2|8|3|4|5|6)|78|2(3|5)|3(8|4|5)|45|5(8|6)))))|F(scr|cy|illed(SmallSquare|VerySmallSquare)|o(uriertrf|pf|rAll)|fr))\n\t\t\t\t\t\t  | (G(scr|c(y|irc|edil)|t|opf|dot|T|Jcy|fr|amma(d)?|reater(Greater|SlantEqual|Tilde|Equal(Less)?|FullEqual|Less)|g|breve)|g(s(cr|im(e|l)?)|n(sim|e(q(q)?)?|E|ap(prox)?)|c(y|irc)|t(c(c|ir)|dot|quest|lPar|r(sim|dot|eq(qless|less)|less|a(pprox|rr)))?|imel|opf|dot|jcy|e(s(cc|dot(o(l)?)?|l(es)?)?|q(slant|q)?|l)?|v(nE|ertneqq)|fr|E(l)?|l(j|E|a)?|a(cute|p|mma(d)?)|rave|g(g)?|breve))\n\t\t\t\t\t\t  | (h(s(cr|trok|lash)|y(phen|bull)|circ|o(ok(leftarrow|rightarrow)|pf|arr|rbar|mtht)|e(llip|arts(uit)?|rcon)|ks(earow|warow)|fr|a(irsp|lf|r(dcy|r(cir|w)?)|milt)|bar|Arr)|H(s(cr|trok)|circ|ilbertSpace|o(pf|rizontalLine)|ump(DownHump|Equal)|fr|a(cek|t)|ARDcy))\n\t\t\t\t\t\t  | (i(s(cr|in(s(v)?|dot|v|E)?)|n(care|t(cal|prod|e(rcal|gers)|larhk)?|odot|fin(tie)?)?|c(y|irc)?|t(ilde)?|i(nfin|i(nt|int)|ota)?|o(cy|ta|pf|gon)|u(kcy|ml)|jlig|prod|e(cy|xcl)|quest|f(f|r)|acute|grave|m(of|ped|a(cr|th|g(part|e|line))))|I(scr|n(t(e(rsection|gral))?|visible(Comma|Times))|c(y|irc)|tilde|o(ta|pf|gon)|dot|u(kcy|ml)|Ocy|Jlig|fr|Ecy|acute|grave|m(plies|a(cr|ginaryI))?))\n\t\t\t\t\t\t  | (j(s(cr|ercy)|c(y|irc)|opf|ukcy|fr|math)|J(s(cr|ercy)|c(y|irc)|opf|ukcy|fr))\n\t\t\t\t\t\t  | (k(scr|hcy|c(y|edil)|opf|jcy|fr|appa(v)?|green)|K(scr|c(y|edil)|Hcy|opf|Jcy|fr|appa))\n\t\t\t\t\t\t  | (l(s(h|cr|trok|im(e|g)?|q(uo(r)?|b)|aquo)|h(ar(d|u(l)?)|blk)|n(sim|e(q(q)?)?|E|ap(prox)?)|c(y|ub|e(il|dil)|aron)|Barr|t(hree|c(c|ir)|imes|dot|quest|larr|r(i(e|f)?|Par))?|Har|o(ng(left(arrow|rightarrow)|rightarrow|mapsto)|times|z(enge|f)?|oparrow(left|right)|p(f|lus|ar)|w(ast|bar)|a(ng|rr)|brk)|d(sh|ca|quo(r)?|r(dhar|ushar))|ur(dshar|uhar)|jcy|par(lt)?|e(s(s(sim|dot|eq(qgtr|gtr)|approx|gtr)|cc|dot(o(r)?)?|g(es)?)?|q(slant|q)?|ft(harpoon(down|up)|threetimes|leftarrows|arrow(tail)?|right(squigarrow|harpoons|arrow(s)?))|g)?|v(nE|ertneqq)|f(isht|loor|r)|E(g)?|l(hard|corner|tri|arr)?|a(ng(d|le)?|cute|t(e(s)?|ail)?|p|emptyv|quo|rr(sim|hk|tl|pl|fs|lp|b(fs)?)?|gran|mbda)|r(har(d)?|corner|tri|arr|m)|g(E)?|m(idot|oust(ache)?)|b(arr|r(k(sl(d|u)|e)|ac(e|k))|brk)|A(tail|arr|rr))|L(s(h|cr|trok)|c(y|edil|aron)|t|o(ng(RightArrow|left(arrow|rightarrow)|rightarrow|Left(RightArrow|Arrow))|pf|wer(RightArrow|LeftArrow))|T|e(ss(Greater|SlantEqual|Tilde|EqualGreater|FullEqual|Less)|ft(Right(Vector|Arrow)|Ceiling|T(ee(Vector|Arrow)?|riangle(Bar|Equal)?)|Do(ubleBracket|wn(TeeVector|Vector(Bar)?))|Up(TeeVector|DownVector|Vector(Bar)?)|Vector(Bar)?|arrow|rightarrow|Floor|A(ngleBracket|rrow(RightArrow|Bar)?)))|Jcy|fr|l(eftarrow)?|a(ng|cute|placetrf|rr|mbda)|midot))\n\t\t\t\t\t\t  | (M(scr|cy|inusPlus|opf|u|e(diumSpace|llintrf)|fr|ap)|m(s(cr|tpos)|ho|nplus|c(y|omma)|i(nus(d(u)?|b)?|cro|d(cir|dot|ast)?)|o(dels|pf)|dash|u(ltimap|map)?|p|easuredangle|DDot|fr|l(cp|dr)|a(cr|p(sto(down|up|left)?)?|l(t(ese)?|e)|rker)))\n\t\t\t\t\t\t  | (n(s(hort(parallel|mid)|c(cue|e|r)?|im(e(q)?)?|u(cc(eq)?|p(set(eq(q)?)?|e|E)?|b(set(eq(q)?)?|e|E)?)|par|qsu(pe|be)|mid)|Rightarrow|h(par|arr|Arr)|G(t(v)?|g)|c(y|ong(dot)?|up|edil|a(p|ron))|t(ilde|lg|riangle(left(eq)?|right(eq)?)|gl)|i(s(d)?|v)?|o(t(ni(v(c|a|b))?|in(dot|v(c|a|b)|E)?)?|pf)|dash|u(m(sp|ero)?)?|jcy|p(olint|ar(sl|t|allel)?|r(cue|e(c(eq)?)?)?)|e(s(im|ear)|dot|quiv|ar(hk|r(ow)?)|xist(s)?|Arr)?|v(sim|infin|Harr|dash|Dash|l(t(rie)?|e|Arr)|ap|r(trie|Arr)|g(t|e))|fr|w(near|ar(hk|r(ow)?)|Arr)|V(dash|Dash)|l(sim|t(ri(e)?)?|dr|e(s(s)?|q(slant|q)?|ft(arrow|rightarrow))?|E|arr|Arr)|a(ng|cute|tur(al(s)?)?|p(id|os|prox|E)?|bla)|r(tri(e)?|ightarrow|arr(c|w)?|Arr)|g(sim|t(r)?|e(s|q(slant|q)?)?|E)|mid|L(t(v)?|eft(arrow|rightarrow)|l)|b(sp|ump(e)?))|N(scr|c(y|edil|aron)|tilde|o(nBreakingSpace|Break|t(R(ightTriangle(Bar|Equal)?|everseElement)|Greater(Greater|SlantEqual|Tilde|Equal|FullEqual|Less)?|S(u(cceeds(SlantEqual|Tilde|Equal)?|perset(Equal)?|bset(Equal)?)|quareSu(perset(Equal)?|bset(Equal)?))|Hump(DownHump|Equal)|Nested(GreaterGreater|LessLess)|C(ongruent|upCap)|Tilde(Tilde|Equal|FullEqual)?|DoubleVerticalBar|Precedes(SlantEqual|Equal)?|E(qual(Tilde)?|lement|xists)|VerticalBar|Le(ss(Greater|SlantEqual|Tilde|Equal|Less)?|ftTriangle(Bar|Equal)?))?|pf)|u|e(sted(GreaterGreater|LessLess)|wLine|gative(MediumSpace|Thi(nSpace|ckSpace)|VeryThinSpace))|Jcy|fr|acute))\n\t\t\t\t\t\t  | (o(s(cr|ol|lash)|h(m|bar)|c(y|ir(c)?)|ti(lde|mes(as)?)|S|int|opf|d(sold|iv|ot|ash|blac)|uml|p(erp|lus|ar)|elig|vbar|f(cir|r)|l(c(ir|ross)|t|ine|arr)|a(st|cute)|r(slope|igof|or|d(er(of)?|f|m)?|v|arr)?|g(t|on|rave)|m(i(nus|cron|d)|ega|acr))|O(s(cr|lash)|c(y|irc)|ti(lde|mes)|opf|dblac|uml|penCurly(DoubleQuote|Quote)|ver(B(ar|rac(e|ket))|Parenthesis)|fr|Elig|acute|r|grave|m(icron|ega|acr)))\n\t\t\t\t\t\t  | (p(s(cr|i)|h(i(v)?|one|mmat)|cy|i(tchfork|v)?|o(intint|und|pf)|uncsp|er(cnt|tenk|iod|p|mil)|fr|l(us(sim|cir|two|d(o|u)|e|acir|mn|b)?|an(ck(h)?|kv))|ar(s(im|l)|t|a(llel)?)?|r(sim|n(sim|E|ap)|cue|ime(s)?|o(d|p(to)?|f(surf|line|alar))|urel|e(c(sim|n(sim|eqq|approx)|curlyeq|eq|approx)?)?|E|ap)?|m)|P(s(cr|i)|hi|cy|i|o(incareplane|pf)|fr|lusMinus|artialD|r(ime|o(duct|portion(al)?)|ecedes(SlantEqual|Tilde|Equal)?)?))\n\t\t\t\t\t\t  | (q(scr|int|opf|u(ot|est(eq)?|at(int|ernions))|prime|fr)|Q(scr|opf|UOT|fr))\n\t\t\t\t\t\t  | (R(s(h|cr)|ho|c(y|edil|aron)|Barr|ight(Ceiling|T(ee(Vector|Arrow)?|riangle(Bar|Equal)?)|Do(ubleBracket|wn(TeeVector|Vector(Bar)?))|Up(TeeVector|DownVector|Vector(Bar)?)|Vector(Bar)?|arrow|Floor|A(ngleBracket|rrow(Bar|LeftArrow)?))|o(undImplies|pf)|uleDelayed|e(verse(UpEquilibrium|E(quilibrium|lement)))?|fr|EG|a(ng|cute|rr(tl)?)|rightarrow)|r(s(h|cr|q(uo(r)?|b)|aquo)|h(o(v)?|ar(d|u(l)?))|nmid|c(y|ub|e(il|dil)|aron)|Barr|t(hree|imes|ri(e|f|ltri)?)|i(singdotseq|ng|ght(squigarrow|harpoon(down|up)|threetimes|left(harpoons|arrows)|arrow(tail)?|rightarrows))|Har|o(times|p(f|lus|ar)|a(ng|rr)|brk)|d(sh|ca|quo(r)?|ldhar)|uluhar|p(polint|ar(gt)?)|e(ct|al(s|ine|part)?|g)|f(isht|loor|r)|l(har|arr|m)|a(ng(d|e|le)?|c(ute|e)|t(io(nals)?|ail)|dic|emptyv|quo|rr(sim|hk|c|tl|pl|fs|w|lp|ap|b(fs)?)?)|rarr|x|moust(ache)?|b(arr|r(k(sl(d|u)|e)|ac(e|k))|brk)|A(tail|arr|rr)))\n\t\t\t\t\t\t  | (s(s(cr|tarf|etmn|mile)|h(y|c(hcy|y)|ort(parallel|mid)|arp)|c(sim|y|n(sim|E|ap)|cue|irc|polint|e(dil)?|E|a(p|ron))?|t(ar(f)?|r(ns|aight(phi|epsilon)))|i(gma(v|f)?|m(ne|dot|plus|e(q)?|l(E)?|rarr|g(E)?)?)|zlig|o(pf|ftcy|l(b(ar)?)?)|dot(e|b)?|u(ng|cc(sim|n(sim|eqq|approx)|curlyeq|eq|approx)?|p(s(im|u(p|b)|et(neq(q)?|eq(q)?)?)|hs(ol|ub)|1|n(e|E)|2|d(sub|ot)|3|plus|e(dot)?|E|larr|mult)?|m|b(s(im|u(p|b)|et(neq(q)?|eq(q)?)?)|n(e|E)|dot|plus|e(dot)?|E|rarr|mult)?)|pa(des(uit)?|r)|e(swar|ct|tm(n|inus)|ar(hk|r(ow)?)|xt|mi|Arr)|q(su(p(set(eq)?|e)?|b(set(eq)?|e)?)|c(up(s)?|ap(s)?)|u(f|ar(e|f))?)|fr(own)?|w(nwar|ar(hk|r(ow)?)|Arr)|larr|acute|rarr|m(t(e(s)?)?|i(d|le)|eparsl|a(shp|llsetminus))|bquo)|S(scr|hort(RightArrow|DownArrow|UpArrow|LeftArrow)|c(y|irc|edil|aron)?|tar|igma|H(cy|CHcy)|opf|u(c(hThat|ceeds(SlantEqual|Tilde|Equal)?)|p(set|erset(Equal)?)?|m|b(set(Equal)?)?)|OFTcy|q(uare(Su(perset(Equal)?|bset(Equal)?)|Intersection|Union)?|rt)|fr|acute|mallCircle))\n\t\t\t\t\t\t  | (t(s(hcy|c(y|r)|trok)|h(i(nsp|ck(sim|approx))|orn|e(ta(sym|v)?|re(4|fore))|k(sim|ap))|c(y|edil|aron)|i(nt|lde|mes(d|b(ar)?)?)|o(sa|p(cir|f(ork)?|bot)?|ea)|dot|prime|elrec|fr|w(ixt|ohead(leftarrow|rightarrow))|a(u|rget)|r(i(sb|time|dot|plus|e|angle(down|q|left(eq)?|right(eq)?)?|minus)|pezium|ade)|brk)|T(s(cr|trok)|RADE|h(i(nSpace|ckSpace)|e(ta|refore))|c(y|edil|aron)|S(cy|Hcy)|ilde(Tilde|Equal|FullEqual)?|HORN|opf|fr|a(u|b)|ripleDot))\n\t\t\t\t\t\t  | (u(scr|h(ar(l|r)|blk)|c(y|irc)|t(ilde|dot|ri(f)?)|Har|o(pf|gon)|d(har|arr|blac)|u(arr|ml)|p(si(h|lon)?|harpoon(left|right)|downarrow|uparrows|lus|arrow)|f(isht|r)|wangle|l(c(orn(er)?|rop)|tri)|a(cute|rr)|r(c(orn(er)?|rop)|tri|ing)|grave|m(l|acr)|br(cy|eve)|Arr)|U(scr|n(ion(Plus)?|der(B(ar|rac(e|ket))|Parenthesis))|c(y|irc)|tilde|o(pf|gon)|dblac|uml|p(si(lon)?|downarrow|Tee(Arrow)?|per(RightArrow|LeftArrow)|DownArrow|Equilibrium|arrow|Arrow(Bar|DownArrow)?)|fr|a(cute|rr(ocir)?)|ring|grave|macr|br(cy|eve)))\n\t\t\t\t\t\t  | (v(s(cr|u(pn(e|E)|bn(e|E)))|nsu(p|b)|cy|Bar(v)?|zigzag|opf|dash|prop|e(e(eq|bar)?|llip|r(t|bar))|Dash|fr|ltri|a(ngrt|r(s(igma|u(psetneq(q)?|bsetneq(q)?))|nothing|t(heta|riangle(left|right))|p(hi|i|ropto)|epsilon|kappa|r(ho)?))|rtri|Arr)|V(scr|cy|opf|dash(l)?|e(e|r(yThinSpace|t(ical(Bar|Separator|Tilde|Line))?|bar))|Dash|vdash|fr|bar))\n\t\t\t\t\t\t  | (w(scr|circ|opf|p|e(ierp|d(ge(q)?|bar))|fr|r(eath)?)|W(scr|circ|opf|edge|fr))\n\t\t\t\t\t\t  | (X(scr|i|opf|fr)|x(s(cr|qcup)|h(arr|Arr)|nis|c(irc|up|ap)|i|o(time|dot|p(f|lus))|dtri|u(tri|plus)|vee|fr|wedge|l(arr|Arr)|r(arr|Arr)|map))\n\t\t\t\t\t\t  | (y(scr|c(y|irc)|icy|opf|u(cy|ml)|en|fr|ac(y|ute))|Y(scr|c(y|irc)|opf|uml|Icy|Ucy|fr|acute|Acy))\n\t\t\t\t\t\t  | (z(scr|hcy|c(y|aron)|igrarr|opf|dot|e(ta|etrf)|fr|w(nj|j)|acute)|Z(scr|c(y|aron)|Hcy|opf|dot|e(ta|roWidthSpace)|fr|acute))\n\t\t\t\t\t\t)\n\t\t\t\t\t\t(;)\n\t\t\t\t\t",
-				name: "constant.character.entity.named.$2.html"
-			},
-			{
-				captures: {
-					"1": {
-						name: "punctuation.definition.entity.html"
-					},
-					"3": {
-						name: "punctuation.definition.entity.html"
-					}
-				},
-				match: "(&)#[0-9]+(;)",
-				name: "constant.character.entity.numeric.decimal.html"
-			},
-			{
-				captures: {
-					"1": {
-						name: "punctuation.definition.entity.html"
-					},
-					"3": {
-						name: "punctuation.definition.entity.html"
-					}
-				},
-				match: "(&)#[xX][0-9a-fA-F]+(;)",
-				name: "constant.character.entity.numeric.hexadecimal.html"
-			},
-			{
-				match: "&(?=[a-zA-Z0-9]+;)",
-				name: "invalid.illegal.ambiguous-ampersand.html"
-			}
-		]
-	},
-	heading: {
-		match: "(?:^|\\G)[ ]*(#{1,6}\\s+(.*?)(\\s+#{1,6})?\\s*)$",
-		captures: {
-			"1": {
-				patterns: [
-					{
-						match: "(#{6})\\s+(.*?)(?:\\s+(#+))?\\s*$",
-						name: "heading.6.markdown",
-						captures: {
-							"1": {
-								name: "punctuation.definition.heading.markdown"
-							},
-							"2": {
-								name: "entity.name.section.markdown",
-								patterns: [
-									{
-										include: "text.html.markdown#inline"
-									},
-									{
-										include: "text.html.derivative"
-									}
-								]
-							},
-							"3": {
-								name: "punctuation.definition.heading.markdown"
-							}
-						}
-					},
-					{
-						match: "(#{5})\\s+(.*?)(?:\\s+(#+))?\\s*$",
-						name: "heading.5.markdown",
-						captures: {
-							"1": {
-								name: "punctuation.definition.heading.markdown"
-							},
-							"2": {
-								name: "entity.name.section.markdown",
-								patterns: [
-									{
-										include: "text.html.markdown#inline"
-									},
-									{
-										include: "text.html.derivative"
-									}
-								]
-							},
-							"3": {
-								name: "punctuation.definition.heading.markdown"
-							}
-						}
-					},
-					{
-						match: "(#{4})\\s+(.*?)(?:\\s+(#+))?\\s*$",
-						name: "heading.4.markdown",
-						captures: {
-							"1": {
-								name: "punctuation.definition.heading.markdown"
-							},
-							"2": {
-								name: "entity.name.section.markdown",
-								patterns: [
-									{
-										include: "text.html.markdown#inline"
-									},
-									{
-										include: "text.html.derivative"
-									}
-								]
-							},
-							"3": {
-								name: "punctuation.definition.heading.markdown"
-							}
-						}
-					},
-					{
-						match: "(#{3})\\s+(.*?)(?:\\s+(#+))?\\s*$",
-						name: "heading.3.markdown",
-						captures: {
-							"1": {
-								name: "punctuation.definition.heading.markdown"
-							},
-							"2": {
-								name: "entity.name.section.markdown",
-								patterns: [
-									{
-										include: "text.html.markdown#inline"
-									},
-									{
-										include: "text.html.derivative"
-									}
-								]
-							},
-							"3": {
-								name: "punctuation.definition.heading.markdown"
-							}
-						}
-					},
-					{
-						match: "(#{2})\\s+(.*?)(?:\\s+(#+))?\\s*$",
-						name: "heading.2.markdown",
-						captures: {
-							"1": {
-								name: "punctuation.definition.heading.markdown"
-							},
-							"2": {
-								name: "entity.name.section.markdown",
-								patterns: [
-									{
-										include: "text.html.markdown#inline"
-									},
-									{
-										include: "text.html.derivative"
-									}
-								]
-							},
-							"3": {
-								name: "punctuation.definition.heading.markdown"
-							}
-						}
-					},
-					{
-						match: "(#{1})\\s+(.*?)(?:\\s+(#+))?\\s*$",
-						name: "heading.1.markdown",
-						captures: {
-							"1": {
-								name: "punctuation.definition.heading.markdown"
-							},
-							"2": {
-								name: "entity.name.section.markdown",
-								patterns: [
-									{
-										include: "text.html.markdown#inline"
-									},
-									{
-										include: "text.html.derivative"
-									}
-								]
-							},
-							"3": {
-								name: "punctuation.definition.heading.markdown"
-							}
-						}
-					}
-				]
-			}
-		},
-		name: "markup.heading.markdown",
-		patterns: [
-			{
-				include: "text.html.markdown#inline"
-			}
-		]
-	},
-	"heading-setext": {
-		patterns: [
-			{
-				match: "^(={3,})(?=[ \\t]*$\\n?)",
-				name: "markup.heading.setext.1.markdown"
-			},
-			{
-				match: "^(-{3,})(?=[ \\t]*$\\n?)",
-				name: "markup.heading.setext.2.markdown"
-			}
-		]
-	},
-	lists: {
-		patterns: [
-			{
-				begin: "(^|\\G)([ ]*)([*+-])([ \\t])",
-				beginCaptures: {
-					"3": {
-						name: "punctuation.definition.list.begin.markdown"
-					}
-				},
-				comment: "Currently does not support un-indented second lines.",
-				name: "markup.list.unnumbered.markdown",
-				patterns: [
-					{
-						include: "#block"
-					},
-					{
-						include: "text.html.markdown#list_paragraph"
-					}
-				],
-				"while": "((^|\\G)([ ]*|\\t))|(^[ \\t]*$)"
-			},
-			{
-				begin: "(^|\\G)([ ]*)([0-9]+\\.)([ \\t])",
-				beginCaptures: {
-					"3": {
-						name: "punctuation.definition.list.begin.markdown"
-					}
-				},
-				name: "markup.list.numbered.markdown",
-				patterns: [
-					{
-						include: "#block"
-					},
-					{
-						include: "text.html.markdown#list_paragraph"
-					}
-				],
-				"while": "((^|\\G)([ ]*|\\t))|(^[ \\t]*$)"
-			}
-		]
-	},
-	paragraph: {
-		begin: "(^|\\G)[ ]*(?=\\S)",
-		name: "meta.paragraph.markdown",
-		patterns: [
-			{
-				include: "#inline"
-			},
-			{
-				include: "text.html.markdown#inline"
-			},
-			{
-				include: "text.html.derivative"
-			},
-			{
-				include: "#heading-setext"
-			}
-		],
-		"while": "(^|\\G)((?=\\s*[-=]{3,}\\s*$)|[ ]{4,}(?=\\S))"
-	},
-	blockquote: {
-		begin: "(^|\\G)[ ]*(>) ?",
-		captures: {
-			"2": {
-				name: "punctuation.definition.quote.begin.markdown"
-			}
-		},
-		name: "markup.quote.markdown",
-		patterns: [
-			{
-				include: "#block"
-			}
-		],
-		"while": "(^|\\G)\\s*(>) ?"
-	}
-};
-const mdcTMLanguage = {
-	information_for_contributors: information_for_contributors,
-	version: version,
-	name: name,
-	injectionSelector: injectionSelector,
-	scopeName: scopeName,
-	patterns: patterns,
-	repository: repository
-};
-
-const resolveLang = (lang) => BUNDLED_LANGUAGES.find((l) => l.id === lang || l.aliases?.includes(lang))?.id;
-const resolveTheme = (theme) => {
-  if (!theme) {
-    return;
-  }
-  if (typeof theme === "string") {
-    theme = {
-      default: theme
-    };
-  }
-  return Object.entries(theme).reduce((acc, [key, value]) => {
-    acc[key] = BUNDLED_THEMES.find((t) => t === value);
-    return acc;
-  }, {});
-};
-const resolveBody = (body) => {
-  if (typeof body.code !== "string") {
-    throw createError({ statusMessage: "Bad Request", statusCode: 400, message: "Missing code key." });
-  }
-  return {
-    code: body.code.replace(/\n+$/, ""),
-    lang: resolveLang(body.lang),
-    theme: resolveTheme(body.theme)
-  };
-};
-const _257648 = defineLazyEventHandler(async () => {
-  const { theme, preload } = useRuntimeConfig().content.highlight;
-  const highlighter = await getHighlighter({
-    theme: theme?.default || theme || "dark-plus",
-    langs: [
-      ...preload || ["json", "js", "ts", "css"],
-      "shell",
-      "html",
-      "md",
-      "yaml",
-      {
-        id: "md",
-        scopeName: "text.markdown.mdc",
-        path: "mdc.tmLanguage.json",
-        aliases: ["markdown"],
-        grammar: mdcTMLanguage
-      }
-    ]
-  });
-  return async (event) => {
-    const params = await useBody(event);
-    const { code, lang, theme: theme2 = { default: highlighter.getTheme() } } = resolveBody(params);
-    if (!lang) {
-      return [[{ content: code }]];
-    }
-    if (!highlighter.getLoadedLanguages().includes(lang)) {
-      await highlighter.loadLanguage(lang);
-    }
-    await Promise.all(Object.values(theme2).map(async (theme3) => {
-      if (!highlighter.getLoadedThemes().includes(theme3)) {
-        await highlighter.loadTheme(theme3);
-      }
-    }));
-    const coloredTokens = Object.entries(theme2).map(([key, theme3]) => {
-      const tokens = highlighter.codeToThemedTokens(code, lang, theme3);
-      return {
-        key,
-        theme: theme3,
-        tokens
-      };
-    });
-    const highlightedCode = [];
-    for (const line in coloredTokens[0].tokens) {
-      highlightedCode[line] = coloredTokens.reduce((acc, color) => {
-        return mergeLines({
-          key: coloredTokens[0].key,
-          tokens: acc
-        }, {
-          key: color.key,
-          tokens: color.tokens[line]
-        });
-      }, coloredTokens[0].tokens[line]);
-    }
-    return highlightedCode;
-  };
-});
-function mergeLines(line1, line2) {
-  const mergedTokens = [];
-  const getColors = (h, i) => typeof h.tokens[i].color === "string" ? { [h.key]: h.tokens[i].color } : h.tokens[i].color;
-  const [big, small] = line1.tokens.length > line2.tokens.length ? [line1, line2] : [line2, line1];
-  let targetToken = 0;
-  let targetTokenCharIndex = 0;
-  big.tokens.forEach((t, i) => {
-    if (targetTokenCharIndex === 0) {
-      if (t.content === small.tokens[i]?.content) {
-        mergedTokens.push({
-          content: t.content,
-          color: {
-            ...getColors(big, i),
-            ...getColors(small, i)
-          }
-        });
-        targetToken = i + 1;
-        return;
-      }
-      if (t.content === small.tokens[targetToken]?.content) {
-        mergedTokens.push({
-          content: t.content,
-          color: {
-            ...getColors(big, i),
-            ...getColors(small, targetToken)
-          }
-        });
-        targetToken += 1;
-        return;
-      }
-    }
-    if (small.tokens[targetToken]?.content?.substring(targetTokenCharIndex, targetTokenCharIndex + t.content.length) === t.content) {
-      targetTokenCharIndex += t.content.length;
-      mergedTokens.push({
-        content: t.content,
-        color: {
-          ...getColors(big, i),
-          ...getColors(small, targetToken)
-        }
-      });
-    }
-    if (small.tokens[targetToken]?.content.length <= targetTokenCharIndex) {
-      targetToken += 1;
-      targetTokenCharIndex = 0;
-    }
-  });
-  return mergedTokens;
+function isObject(obj) {
+  return Object.prototype.toString.call(obj) === "[object Object]";
 }
 
-const _lazy_647276 = () => Promise.resolve().then(function () { return subscribe$1; });
-const _lazy_746416 = () => Promise.resolve().then(function () { return getLikes$1; });
-const _lazy_124745 = () => Promise.resolve().then(function () { return deleteLike$1; });
-const _lazy_209809 = () => Promise.resolve().then(function () { return addLike$1; });
-const _lazy_179128 = () => Promise.resolve().then(function () { return getComments$1; });
-const _lazy_413515 = () => Promise.resolve().then(function () { return deleteComment$1; });
-const _lazy_314319 = () => Promise.resolve().then(function () { return addComment$1; });
-const _lazy_781219 = () => Promise.resolve().then(function () { return register$1; });
-const _lazy_200430 = () => Promise.resolve().then(function () { return logout$1; });
-const _lazy_383404 = () => Promise.resolve().then(function () { return login$1; });
-const _lazy_266595 = () => Promise.resolve().then(function () { return getByAuthToken$1; });
-const _lazy_157369 = () => Promise.resolve().then(function () { return renderer$1; });
-
-const handlers = [
-  { route: '/api/subscribe', handler: _lazy_647276, lazy: true, middleware: false, method: undefined },
-  { route: '/api/like/getLikes', handler: _lazy_746416, lazy: true, middleware: false, method: undefined },
-  { route: '/api/like/deleteLike', handler: _lazy_124745, lazy: true, middleware: false, method: undefined },
-  { route: '/api/like/addLike', handler: _lazy_209809, lazy: true, middleware: false, method: undefined },
-  { route: '/api/comment/getComments', handler: _lazy_179128, lazy: true, middleware: false, method: undefined },
-  { route: '/api/comment/deleteComment', handler: _lazy_413515, lazy: true, middleware: false, method: undefined },
-  { route: '/api/comment/addComment', handler: _lazy_314319, lazy: true, middleware: false, method: undefined },
-  { route: '/api/auth/register', handler: _lazy_781219, lazy: true, middleware: false, method: undefined },
-  { route: '/api/auth/logout', handler: _lazy_200430, lazy: true, middleware: false, method: undefined },
-  { route: '/api/auth/login', handler: _lazy_383404, lazy: true, middleware: false, method: undefined },
-  { route: '/api/auth/getByAuthToken', handler: _lazy_266595, lazy: true, middleware: false, method: undefined },
-  { route: '/__nuxt_error', handler: _lazy_157369, lazy: true, middleware: false, method: undefined },
-  { route: '/api/_content/query/:qid', handler: _252482, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/query', handler: _252482, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/cache', handler: _136223, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation/:qid', handler: _580273, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation', handler: _580273, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/highlight', handler: _257648, lazy: false, middleware: false, method: "post" },
-  { route: '/**', handler: _lazy_157369, lazy: true, middleware: false, method: undefined }
-];
-
-function createNitroApp() {
-  const config = useRuntimeConfig();
-  const hooks = createHooks();
-  const h3App = createApp({
-    debug: destr(true),
-    onError: errorHandler
-  });
-  h3App.use(config.app.baseURL, timingMiddleware);
-  const router = createRouter();
-  const routerOptions = createRouter$1({ routes: config.nitro.routes });
-  for (const h of handlers) {
-    let handler = h.lazy ? lazyEventHandler(h.handler) : h.handler;
-    const referenceRoute = h.route.replace(/:\w+|\*\*/g, "_");
-    const routeOptions = routerOptions.lookup(referenceRoute) || {};
-    if (routeOptions.swr) {
-      handler = cachedEventHandler(handler, {
-        group: "nitro/routes"
-      });
-    }
-    if (h.middleware || !h.route) {
-      const middlewareBase = (config.app.baseURL + (h.route || "/")).replace(/\/+/g, "/");
-      h3App.use(middlewareBase, handler);
-    } else {
-      router.use(h.route, handler, h.method);
-    }
-  }
-  h3App.use(config.app.baseURL, router);
-  const localCall = createCall(h3App.nodeHandler);
-  const localFetch = createFetch(localCall, globalThis.fetch);
-  const $fetch = createFetch$1({ fetch: localFetch, Headers, defaults: { baseURL: config.app.baseURL } });
-  globalThis.$fetch = $fetch;
-  const app = {
-    hooks,
-    h3App,
-    localCall,
-    localFetch
-  };
-  for (const plugin of plugins) {
-    plugin(app);
-  }
-  return app;
-}
-const nitroApp = createNitroApp();
-const useNitroApp = () => nitroApp;
-
-const server = new Server(nitroApp.h3App.nodeHandler);
-function getAddress() {
-  if (provider === "stackblitz" || process.env.NITRO_NO_UNIX_SOCKET) {
-    return "0";
-  }
-  const socketName = `worker-${process.pid}-${threadId}.sock`;
-  if (isWindows) {
-    return join("\\\\.\\pipe\\nitro", socketName);
-  } else {
-    const socketDir = join(tmpdir(), "nitro");
-    mkdirSync(socketDir, { recursive: true });
-    return join(socketDir, socketName);
-  }
-}
-const listenAddress = getAddress();
-server.listen(listenAddress, () => {
-  const _address = server.address();
-  parentPort.postMessage({
-    event: "listen",
-    address: typeof _address === "string" ? { socketPath: _address } : { host: "localhost", port: _address.port }
-  });
-});
-{
-  process.on("unhandledRejection", (err) => console.error("[nitro] [dev] [unhandledRejection]", err));
-  process.on("uncaughtException", (err) => console.error("[nitro] [dev] [uncaughtException]", err));
-}
-
-const subscribe = async (req, res) => {
-  const queryObject = url.parse(req.url, true).query;
-  const { SUPABASE_URL, SUPABASE_KEY } = process.env;
-  try {
-    const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
-    let response;
-    const { email } = queryObject;
-    if (email) {
-      const { data, error } = await supabase.from("Subscriber").upsert({
-        email
-      });
-      response = data;
-    }
-    res.writeHead(200, { "Content-Type": "application/json" });
-    res.write(JSON.stringify(response));
-    res.end();
-  } catch (error) {
-    console.log(error);
-    res.writeHead(500, { "Content-Type": "application/json" });
-    res.write(JSON.stringify(error));
-    res.end();
-  }
-};
-
-const subscribe$1 = /*#__PURE__*/Object.freeze({
+const navigation = /*#__PURE__*/Object.freeze({
   __proto__: null,
-  'default': subscribe
+  createNav: createNav
 });
 
 const { PrismaClient } = pkg;
 const prisma = new PrismaClient();
-const prisma$1 = prisma;
-
-async function getLikesByUser(playerId) {
-  const idArray = playerId.split(",").map(Number);
-  return await prisma$1.like.findMany({
-    where: {
-      playerId: { in: idArray }
-    },
-    select: {
-      id: true,
-      playerId: true,
-      userId: true
-    }
-  });
-}
-async function addLike$2(data) {
-  const like = await prisma$1.like.create({
-    data: {
-      userId: data.userId,
-      playerId: data.playerId
-    }
-  });
-  return like;
-}
-async function deleteLike$2(data) {
-  await prisma$1.like.delete({
-    where: {
-      id: +data.id
-    }
-  });
-  return "Unliked successfully!";
-}
-
-const getLikes = defineEventHandler(async (event) => {
-  const query = await useQuery(event);
-  const playerId = query.playerId;
-  const likes = await getLikesByUser(playerId);
-  const likesGroupedByUser = likes.reduce(function(r, a) {
-    r[a.playerId] = r[a.playerId] || [];
-    r[a.playerId].push(a);
-    return r;
-  }, /* @__PURE__ */ Object.create(null));
-  return likesGroupedByUser;
-});
-
-const getLikes$1 = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  'default': getLikes
-});
-
-const deleteLike = defineEventHandler(async (event) => {
-  const query = await useQuery(event);
-  const likeId = query.likeId;
-  const res = await deleteLike$2({ id: likeId });
-  return res;
-});
-
-const deleteLike$1 = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  'default': deleteLike
-});
-
-const addLike = async (event) => {
-  const body = await useBody(event);
-  console.log(body);
-  const likeData = {
-    userId: body.userId,
-    playerId: body.playerId
-  };
-  const like = await addLike$2(likeData);
-  return like;
-};
-
-const addLike$1 = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  'default': addLike
-});
-
-async function getCommentsByPlayer(playerId) {
-  return await prisma$1.comment.findMany({
-    orderBy: [
-      {
-        createdAt: "desc"
-      }
-    ],
-    where: {
-      playerId: +playerId
-    },
-    select: {
-      id: true,
-      playerId: true,
-      user: {
-        select: {
-          name: true,
-          username: true
-        }
-      },
-      comment: true,
-      userId: true,
-      createdAt: true
-    }
-  });
-}
-async function addComment$2(data) {
-  const comment = await prisma$1.comment.create({
-    data: {
-      userId: data.userId,
-      playerId: data.playerId,
-      comment: data.comment
-    }
-  });
-  return comment;
-}
-async function deleteComment$2(data) {
-  await prisma$1.comment.delete({
-    where: {
-      id: +data.id
-    }
-  });
-  return "Comment Delete successfully!";
-}
-
-const getComments = defineEventHandler(async (event) => {
-  const query = await useQuery(event);
-  const playerId = query.playerId;
-  const comment = await getCommentsByPlayer(playerId);
-  return comment;
-});
-
-const getComments$1 = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  'default': getComments
-});
-
-const deleteComment = defineEventHandler(async (event) => {
-  const query = await useQuery(event);
-  const commentId = query.commentId;
-  const res = await deleteComment$2({ id: commentId });
-  return res;
-});
-
-const deleteComment$1 = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  'default': deleteComment
-});
-
-const addComment = async (event) => {
-  const body = await useBody(event);
-  const commentData = {
-    userId: body.userId,
-    playerId: body.playerId,
-    comment: body.comment
-  };
-  const comment = await addComment$2(commentData);
-  return comment;
-};
-
-const addComment$1 = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  'default': addComment
-});
 
 async function getUserByEmail(email) {
-  return await prisma$1.user.findUnique({
+  return await prisma.user.findUnique({
     where: {
       email
     },
@@ -4069,7 +4350,7 @@ async function getUserByEmail(email) {
   });
 }
 async function getUserByEmailWithPass(email) {
-  return await prisma$1.user.findUnique({
+  return await prisma.user.findUnique({
     where: {
       email
     },
@@ -4081,7 +4362,7 @@ async function getUserByEmailWithPass(email) {
   });
 }
 async function getUserByUserName(username) {
-  return await prisma$1.user.findUnique({
+  return await prisma.user.findUnique({
     where: {
       username
     },
@@ -4092,7 +4373,7 @@ async function getUserByUserName(username) {
   });
 }
 async function createUser(data) {
-  const user = await prisma$1.user.create({
+  const user = await prisma.user.create({
     data: {
       username: data.username,
       name: data.name,
@@ -4186,7 +4467,7 @@ function sanitizeUserForFrontend(user) {
 }
 
 async function createSession(data) {
-  return await prisma$1.session.create({
+  return await prisma.session.create({
     data: {
       userId: data.userId,
       authToken: data.authToken
@@ -4198,7 +4479,7 @@ async function getSessionByAuthToken(authToken) {
   return { authToken, user };
 }
 async function getUserByAuthToken(authToken) {
-  return prisma$1.session.findUnique({
+  return prisma.session.findUnique({
     where: {
       authToken
     }
@@ -4257,16 +4538,6 @@ function v4(options, buf, offset) {
   rnds[6] = rnds[6] & 0x0f | 0x40;
   rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
 
-  if (buf) {
-    offset = offset || 0;
-
-    for (let i = 0; i < 16; ++i) {
-      buf[offset + i] = rnds[i];
-    }
-
-    return buf;
-  }
-
   return stringify(rnds);
 }
 
@@ -4284,6 +4555,48 @@ async function getUserBySessionToken(authToken) {
   const session = await getSessionByAuthToken(authToken);
   return sanitizeUserForFrontend(session.user);
 }
+
+const getByAuthToken = defineEventHandler(async (event) => {
+  const authToken = getCookie(event, "auth_token");
+  const user = await getUserBySessionToken(authToken);
+  return user;
+});
+
+const getByAuthToken$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  default: getByAuthToken
+});
+
+const login = async (event) => {
+  const body = await useBody(event);
+  const email = body.email;
+  const password = body.password;
+  const user = await getUserByEmailWithPass(email);
+  if (user === null) {
+    return sendError(event, createError({ statusCode: 423, statusMessage: "Wrong Email" }));
+  }
+  const isPasswordCorrect = await bcrypt.compare(password, user.password);
+  console.log(password, user, isPasswordCorrect);
+  if (!isPasswordCorrect) {
+    return sendError(event, createError({ statusCode: 423, statusMessage: "Wrong Password" }));
+  }
+  await makeSession(user, event);
+  return sanitizeUserForFrontend(user);
+};
+
+const login$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  default: login
+});
+
+const logout = async (event) => {
+  setCookie(event, "auth_token", null);
+};
+
+const logout$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  default: logout
+});
 
 const register = async (event) => {
   const body = await useBody(event);
@@ -4307,158 +4620,553 @@ const register = async (event) => {
 
 const register$1 = /*#__PURE__*/Object.freeze({
   __proto__: null,
-  'default': register
+  default: register
 });
 
-const logout = async (event) => {
-  setCookie(event, "auth_token", null);
-};
+async function getCommentsByPlayer(playerId) {
+  return await prisma.comment.findMany({
+    orderBy: [
+      {
+        createdAt: "desc"
+      }
+    ],
+    where: {
+      playerId: +playerId
+    },
+    select: {
+      id: true,
+      playerId: true,
+      user: {
+        select: {
+          name: true,
+          username: true
+        }
+      },
+      comment: true,
+      userId: true,
+      createdAt: true
+    }
+  });
+}
+async function addComment$2(data) {
+  const comment = await prisma.comment.create({
+    data: {
+      userId: data.userId,
+      playerId: data.playerId,
+      comment: data.comment
+    }
+  });
+  return comment;
+}
+async function deleteComment$2(data) {
+  await prisma.comment.delete({
+    where: {
+      id: +data.id
+    }
+  });
+  return "Comment Delete successfully!";
+}
 
-const logout$1 = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  'default': logout
-});
-
-const login = async (event) => {
+const addComment = async (event) => {
   const body = await useBody(event);
-  const email = body.email;
-  const password = body.password;
-  const user = await getUserByEmailWithPass(email);
-  if (user === null) {
-    return sendError(event, createError({ statusCode: 423, statusMessage: "Wrong Email" }));
-  }
-  const isPasswordCorrect = await bcrypt.compare(password, user.password);
-  console.log(password, user, isPasswordCorrect);
-  if (!isPasswordCorrect) {
-    return sendError(event, createError({ statusCode: 423, statusMessage: "Wrong Password" }));
-  }
-  await makeSession(user, event);
-  return sanitizeUserForFrontend(user);
+  const commentData = {
+    userId: body.userId,
+    playerId: body.playerId,
+    comment: body.comment
+  };
+  const comment = await addComment$2(commentData);
+  return comment;
 };
 
-const login$1 = /*#__PURE__*/Object.freeze({
+const addComment$1 = /*#__PURE__*/Object.freeze({
   __proto__: null,
-  'default': login
+  default: addComment
 });
 
-const getByAuthToken = defineEventHandler(async (event) => {
-  const authToken = useCookie(event.req, "auth_token");
-  const user = await getUserBySessionToken(authToken);
-  return user;
+const deleteComment = defineEventHandler(async (event) => {
+  const query = await useQuery(event);
+  const commentId = query.commentId;
+  const res = await deleteComment$2({ id: commentId });
+  return res;
 });
 
-const getByAuthToken$1 = /*#__PURE__*/Object.freeze({
+const deleteComment$1 = /*#__PURE__*/Object.freeze({
   __proto__: null,
-  'default': getByAuthToken
+  default: deleteComment
 });
 
-function buildAssetsURL(...path) {
-  return joinURL(publicAssetsURL(), useRuntimeConfig().app.buildAssetsDir, ...path);
+const getComments = defineEventHandler(async (event) => {
+  const query = await useQuery(event);
+  const playerId = query.playerId;
+  const comment = await getCommentsByPlayer(playerId);
+  return comment;
+});
+
+const getComments$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  default: getComments
+});
+
+async function getLikesByUser(playerId) {
+  const idArray = playerId.split(",").map(Number);
+  return await prisma.like.findMany({
+    where: {
+      playerId: { in: idArray }
+    },
+    select: {
+      id: true,
+      playerId: true,
+      userId: true
+    }
+  });
 }
-function publicAssetsURL(...path) {
-  const publicBase = useRuntimeConfig().app.cdnURL || useRuntimeConfig().app.baseURL;
-  return path.length ? joinURL(publicBase, ...path) : publicBase;
+async function addLike$2(data) {
+  const like = await prisma.like.create({
+    data: {
+      userId: data.userId,
+      playerId: data.playerId
+    }
+  });
+  return like;
+}
+async function deleteLike$2(data) {
+  await prisma.like.delete({
+    where: {
+      id: +data.id
+    }
+  });
+  return "Unliked successfully!";
 }
 
-const getClientManifest = () => import('/Users/zne/vue-projects/nuxt3-zero/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r);
-const getServerEntry = () => import('/Users/zne/vue-projects/nuxt3-zero/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const addLike = async (event) => {
+  const body = await useBody(event);
+  console.log(body);
+  const likeData = {
+    userId: body.userId,
+    playerId: body.playerId
+  };
+  const like = await addLike$2(likeData);
+  return like;
+};
+
+const addLike$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  default: addLike
+});
+
+const deleteLike = defineEventHandler(async (event) => {
+  const query = await useQuery(event);
+  const likeId = query.likeId;
+  const res = await deleteLike$2({ id: likeId });
+  return res;
+});
+
+const deleteLike$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  default: deleteLike
+});
+
+const getLikes = defineEventHandler(async (event) => {
+  const query = await useQuery(event);
+  const playerId = query.playerId;
+  const likes = await getLikesByUser(playerId);
+  const likesGroupedByUser = likes.reduce(function(r, a) {
+    r[a.playerId] = r[a.playerId] || [];
+    r[a.playerId].push(a);
+    return r;
+  }, /* @__PURE__ */ Object.create(null));
+  return likesGroupedByUser;
+});
+
+const getLikes$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  default: getLikes
+});
+
+const players = defineEventHandler(async (event) => {
+  const api = new BalldontlieAPI({ apiKey: process.env.BDL_API_KEY });
+  try {
+    const players = await api.mlb.getPlayers();
+    return players;
+  } catch (error) {
+    console.error("Failed to fetch players:", error);
+    return { error: "Failed to fetch players." };
+  }
+});
+
+const players$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  default: players
+});
+
+const subscribe = async (req, res) => {
+  const queryObject = url.parse(req.url, true).query;
+  const { SUPABASE_URL, SUPABASE_KEY } = process.env;
+  try {
+    const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
+    let response;
+    const { email } = queryObject;
+    if (email) {
+      const { data, error } = await supabase.from("Subscriber").upsert({
+        email
+      });
+      response = data;
+    }
+    res.writeHead(200, { "Content-Type": "application/json" });
+    res.write(JSON.stringify(response));
+    res.end();
+  } catch (error) {
+    console.log(error);
+    res.writeHead(500, { "Content-Type": "application/json" });
+    res.write(JSON.stringify(error));
+    res.end();
+  }
+};
+
+const subscribe$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  default: subscribe
+});
+
+const teams = defineEventHandler(async (event) => {
+  const api = new BalldontlieAPI({ apiKey: process.env.BDL_API_KEY });
+  try {
+    const teams = await api.mlb.getTeams();
+    return teams;
+  } catch (error) {
+    console.error("Failed to fetch teams:", error);
+    return { error: "Failed to fetch teams." };
+  }
+});
+
+const teams$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  default: teams
+});
+
+const Vue3 = version[0] === "3";
+
+function resolveUnref(r) {
+  return typeof r === "function" ? r() : unref(r);
+}
+function resolveUnrefHeadInput(ref) {
+  if (ref instanceof Promise || ref instanceof Date || ref instanceof RegExp)
+    return ref;
+  const root = resolveUnref(ref);
+  if (!ref || !root)
+    return root;
+  if (Array.isArray(root))
+    return root.map((r) => resolveUnrefHeadInput(r));
+  if (typeof root === "object") {
+    const resolved = {};
+    for (const k in root) {
+      if (!Object.prototype.hasOwnProperty.call(root, k)) {
+        continue;
+      }
+      if (k === "titleTemplate" || k[0] === "o" && k[1] === "n") {
+        resolved[k] = unref(root[k]);
+        continue;
+      }
+      resolved[k] = resolveUnrefHeadInput(root[k]);
+    }
+    return resolved;
+  }
+  return root;
+}
+
+const VueReactivityPlugin = defineHeadPlugin({
+  hooks: {
+    "entries:resolve": (ctx) => {
+      for (const entry of ctx.entries)
+        entry.resolvedInput = resolveUnrefHeadInput(entry.input);
+    }
+  }
+});
+
+const headSymbol = "usehead";
+function vueInstall(head) {
+  const plugin = {
+    install(app) {
+      if (Vue3) {
+        app.config.globalProperties.$unhead = head;
+        app.config.globalProperties.$head = head;
+        app.provide(headSymbol, head);
+      }
+    }
+  };
+  return plugin.install;
+}
+function createServerHead(options = {}) {
+  const head = createServerHead$1(options);
+  head.use(VueReactivityPlugin);
+  head.install = vueInstall(head);
+  return head;
+}
+
+const unheadPlugins = true ? [CapoPlugin({ track: true })] : [];
+
+const renderSSRHeadOptions = {"omitLineBreaks":false};
+
+globalThis.__buildAssetsURL = buildAssetsURL;
+globalThis.__publicAssetsURL = publicAssetsURL;
+const getClientManifest = () => import('file:///Users/zne/vue-projects/nuxt3-zero/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getServerEntry = () => import('file:///Users/zne/vue-projects/nuxt3-zero/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getSSRStyles = lazyCachedFunction(() => Promise.resolve().then(function () { return styles$1; }).then((r) => r.default || r));
 const getSSRRenderer = lazyCachedFunction(async () => {
-  const clientManifest = await getClientManifest();
-  if (!clientManifest) {
+  const manifest = await getClientManifest();
+  if (!manifest) {
     throw new Error("client.manifest is not available");
   }
   const createSSRApp = await getServerEntry();
   if (!createSSRApp) {
     throw new Error("Server bundle is not available");
   }
-  const renderToString$1 = async (input, context) => {
-    const html = await renderToString(input, context);
-    return `<div id="__nuxt">${html}</div>`;
-  };
-  return createRenderer(createSSRApp, {
-    clientManifest,
+  const options = {
+    manifest,
     renderToString: renderToString$1,
-    publicPath: buildAssetsURL()
-  });
+    buildAssetsURL
+  };
+  const renderer = createRenderer(createSSRApp, options);
+  async function renderToString$1(input, context) {
+    const html = await renderToString(input, context);
+    if (process.env.NUXT_VITE_NODE_OPTIONS) {
+      renderer.rendererContext.updateManifest(await getClientManifest());
+    }
+    return APP_ROOT_OPEN_TAG + html + APP_ROOT_CLOSE_TAG;
+  }
+  return renderer;
 });
 const getSPARenderer = lazyCachedFunction(async () => {
-  const clientManifest = await getClientManifest();
-  const renderToString = (ssrContext) => {
-    const config = useRuntimeConfig();
-    ssrContext.payload = {
-      serverRendered: false,
-      config: {
-        public: config.public,
-        app: config.app
-      }
-    };
-    let entryFiles = Object.values(clientManifest).filter((fileValue) => fileValue.isEntry);
-    if ("all" in clientManifest && "initial" in clientManifest) {
-      entryFiles = clientManifest.initial.map((file) => ({ file }));
+  const manifest = await getClientManifest();
+  const spaTemplate = await Promise.resolve().then(function () { return _virtual__spaTemplate; }).then((r) => r.template).catch(() => "").then((r) => {
+    {
+      return APP_ROOT_OPEN_TAG + r + APP_ROOT_CLOSE_TAG;
     }
-    return Promise.resolve({
-      html: '<div id="__nuxt"></div>',
-      renderResourceHints: () => "",
-      renderStyles: () => entryFiles.flatMap(({ css }) => css).filter((css) => css != null).map((file) => `<link rel="stylesheet" href="${buildAssetsURL(file)}">`).join(""),
-      renderScripts: () => entryFiles.map(({ file }) => {
-        const isMJS = !file.endsWith(".js");
-        return `<script ${isMJS ? 'type="module"' : ""} src="${buildAssetsURL(file)}"><\/script>`;
-      }).join("")
-    });
+  });
+  const options = {
+    manifest,
+    renderToString: () => spaTemplate,
+    buildAssetsURL
   };
-  return { renderToString };
+  const renderer = createRenderer(() => () => {
+  }, options);
+  const result = await renderer.renderToString({});
+  const renderToString = (ssrContext) => {
+    const config = useRuntimeConfig(ssrContext.event);
+    ssrContext.modules = ssrContext.modules || /* @__PURE__ */ new Set();
+    ssrContext.payload.serverRendered = false;
+    ssrContext.config = {
+      public: config.public,
+      app: config.app
+    };
+    return Promise.resolve(result);
+  };
+  return {
+    rendererContext: renderer.rendererContext,
+    renderToString
+  };
 });
-const renderer = eventHandler(async (event) => {
-  const ssrError = event.req.url?.startsWith("/__nuxt_error") ? useQuery(event) : null;
-  const url = ssrError?.url || event.req.url;
+const ISLAND_SUFFIX_RE = /\.json(\?.*)?$/;
+async function getIslandContext(event) {
+  let url = event.path || "";
+  const componentParts = url.substring("/__nuxt_island".length + 1).replace(ISLAND_SUFFIX_RE, "").split("_");
+  const hashId = componentParts.length > 1 ? componentParts.pop() : void 0;
+  const componentName = componentParts.join("_");
+  const context = event.method === "GET" ? getQuery$1(event) : await readBody(event);
+  const ctx = {
+    url: "/",
+    ...context,
+    id: hashId,
+    name: componentName,
+    props: destr(context.props) || {},
+    slots: {},
+    components: {}
+  };
+  return ctx;
+}
+const HAS_APP_TELEPORTS = !!(appTeleportAttrs.id);
+const APP_TELEPORT_OPEN_TAG = HAS_APP_TELEPORTS ? `<${appTeleportTag}${propsToString(appTeleportAttrs)}>` : "";
+const APP_TELEPORT_CLOSE_TAG = HAS_APP_TELEPORTS ? `</${appTeleportTag}>` : "";
+const APP_ROOT_OPEN_TAG = `<${appRootTag}${propsToString(appRootAttrs)}>`;
+const APP_ROOT_CLOSE_TAG = `</${appRootTag}>`;
+const PAYLOAD_URL_RE = /\/_payload.json(\?.*)?$/ ;
+const ROOT_NODE_REGEX = new RegExp(`^<${appRootTag}[^>]*>([\\s\\S]*)<\\/${appRootTag}>$`);
+const renderer = defineRenderHandler(async (event) => {
+  const nitroApp = useNitroApp();
+  const ssrError = event.path.startsWith("/__nuxt_error") ? getQuery$1(event) : null;
+  if (ssrError && ssrError.statusCode) {
+    ssrError.statusCode = Number.parseInt(ssrError.statusCode);
+  }
+  if (ssrError && !("__unenv__" in event.node.req)) {
+    throw createError({
+      statusCode: 404,
+      statusMessage: "Page Not Found: /__nuxt_error"
+    });
+  }
+  const isRenderingIsland = event.path.startsWith("/__nuxt_island");
+  const islandContext = isRenderingIsland ? await getIslandContext(event) : void 0;
+  let url = ssrError?.url || islandContext?.url || event.path;
+  const isRenderingPayload = PAYLOAD_URL_RE.test(url) && !isRenderingIsland;
+  if (isRenderingPayload) {
+    url = url.substring(0, url.lastIndexOf("/")) || "/";
+    event._path = url;
+    event.node.req.url = url;
+  }
+  const routeOptions = getRouteRules(event);
+  const head = createServerHead({
+    plugins: unheadPlugins
+  });
+  const headEntryOptions = { mode: "server" };
+  if (!isRenderingIsland) {
+    head.push(appHead, headEntryOptions);
+  }
   const ssrContext = {
     url,
     event,
-    req: event.req,
-    res: event.res,
-    runtimeConfig: useRuntimeConfig(),
-    noSSR: !!event.req.headers["x-nuxt-no-ssr"],
-    error: ssrError,
+    runtimeConfig: useRuntimeConfig(event),
+    noSSR: event.context.nuxt?.noSSR || routeOptions.ssr === false && !isRenderingIsland || (false),
+    head,
+    error: !!ssrError,
     nuxt: void 0,
-    payload: void 0
+    /* NuxtApp */
+    payload: ssrError ? { error: ssrError } : {},
+    _payloadReducers: /* @__PURE__ */ Object.create(null),
+    modules: /* @__PURE__ */ new Set(),
+    islandContext
   };
   const renderer = ssrContext.noSSR ? await getSPARenderer() : await getSSRRenderer();
-  const rendered = await renderer.renderToString(ssrContext).catch((e) => {
-    if (!ssrError) {
-      throw e;
+  const _rendered = await renderer.renderToString(ssrContext).catch(async (error) => {
+    if (ssrContext._renderResponse && error.message === "skipping render") {
+      return {};
     }
+    const _err = !ssrError && ssrContext.payload?.error || error;
+    await ssrContext.nuxt?.hooks.callHook("app:error", _err);
+    throw _err;
   });
-  if (!rendered) {
-    return;
+  await ssrContext.nuxt?.hooks.callHook("app:rendered", { ssrContext, renderResult: _rendered });
+  if (ssrContext._renderResponse) {
+    return ssrContext._renderResponse;
   }
-  if (event.res.writableEnded) {
-    return;
+  if (ssrContext.payload?.error && !ssrError) {
+    throw ssrContext.payload.error;
   }
-  if (ssrContext.error && !ssrError) {
-    throw ssrContext.error;
+  if (isRenderingPayload) {
+    const response2 = renderPayloadResponse(ssrContext);
+    return response2;
   }
-  if (ssrContext.nuxt?.hooks) {
-    await ssrContext.nuxt.hooks.callHook("app:rendered");
+  const inlinedStyles = isRenderingIsland ? await renderInlineStyles(ssrContext.modules ?? []) : [];
+  const NO_SCRIPTS = routeOptions.experimentalNoScripts;
+  const { styles, scripts } = getRequestDependencies(ssrContext, renderer.rendererContext);
+  if (ssrContext._preloadManifest) {
+    head.push({
+      link: [
+        { rel: "preload", as: "fetch", fetchpriority: "low", crossorigin: "anonymous", href: buildAssetsURL(`builds/meta/${ssrContext.runtimeConfig.app.buildId}.json`) }
+      ]
+    }, { ...headEntryOptions, tagPriority: "low" });
   }
-  const html = await renderHTML(ssrContext.payload, rendered, ssrContext);
-  event.res.setHeader("Content-Type", "text/html;charset=UTF-8");
-  return html;
+  if (inlinedStyles.length) {
+    head.push({ style: inlinedStyles });
+  }
+  {
+    const link = [];
+    for (const resource of Object.values(styles)) {
+      if ("inline" in getQuery(resource.file)) {
+        continue;
+      }
+      if (!isRenderingIsland || resource.file.includes("scoped") && !resource.file.includes("pages/")) {
+        link.push({ rel: "stylesheet", href: renderer.rendererContext.buildAssetsURL(resource.file), crossorigin: "" });
+      }
+    }
+    if (link.length) {
+      head.push({ link }, headEntryOptions);
+    }
+  }
+  if (!NO_SCRIPTS && !isRenderingIsland) {
+    head.push({
+      link: getPreloadLinks(ssrContext, renderer.rendererContext)
+    }, headEntryOptions);
+    head.push({
+      link: getPrefetchLinks(ssrContext, renderer.rendererContext)
+    }, headEntryOptions);
+    head.push({
+      script: renderPayloadJsonScript({ ssrContext, data: ssrContext.payload }) 
+    }, {
+      ...headEntryOptions,
+      // this should come before another end of body scripts
+      tagPosition: "bodyClose",
+      tagPriority: "high"
+    });
+  }
+  if (!routeOptions.experimentalNoScripts && !isRenderingIsland) {
+    head.push({
+      script: Object.values(scripts).map((resource) => ({
+        type: resource.module ? "module" : null,
+        src: renderer.rendererContext.buildAssetsURL(resource.file),
+        defer: resource.module ? null : true,
+        // if we are rendering script tag payloads that import an async payload
+        // we need to ensure this resolves before executing the Nuxt entry
+        tagPosition: "head",
+        crossorigin: ""
+      }))
+    }, headEntryOptions);
+  }
+  const { headTags, bodyTags, bodyTagsOpen, htmlAttrs, bodyAttrs } = await renderSSRHead(head, renderSSRHeadOptions);
+  const htmlContext = {
+    island: isRenderingIsland,
+    htmlAttrs: htmlAttrs ? [htmlAttrs] : [],
+    head: normalizeChunks([headTags]),
+    bodyAttrs: bodyAttrs ? [bodyAttrs] : [],
+    bodyPrepend: normalizeChunks([bodyTagsOpen, ssrContext.teleports?.body]),
+    body: [
+      replaceIslandTeleports(ssrContext, _rendered.html) ,
+      APP_TELEPORT_OPEN_TAG + (HAS_APP_TELEPORTS ? joinTags([ssrContext.teleports?.[`#${appTeleportAttrs.id}`]]) : "") + APP_TELEPORT_CLOSE_TAG
+    ],
+    bodyAppend: [bodyTags]
+  };
+  await nitroApp.hooks.callHook("render:html", htmlContext, { event });
+  if (isRenderingIsland && islandContext) {
+    const islandHead = {};
+    for (const entry of head.headEntries()) {
+      for (const [key, value] of Object.entries(resolveUnrefHeadInput(entry.input))) {
+        const currentValue = islandHead[key];
+        if (Array.isArray(currentValue)) {
+          currentValue.push(...value);
+        }
+        islandHead[key] = value;
+      }
+    }
+    islandHead.link = islandHead.link || [];
+    islandHead.style = islandHead.style || [];
+    const islandResponse = {
+      id: islandContext.id,
+      head: islandHead,
+      html: getServerComponentHTML(htmlContext.body),
+      components: getClientIslandResponse(ssrContext),
+      slots: getSlotIslandResponse(ssrContext)
+    };
+    await nitroApp.hooks.callHook("render:island", islandResponse, { event, islandContext });
+    const response2 = {
+      body: JSON.stringify(islandResponse, null, 2),
+      statusCode: getResponseStatus(event),
+      statusMessage: getResponseStatusText(event),
+      headers: {
+        "content-type": "application/json;charset=utf-8",
+        "x-powered-by": "Nuxt"
+      }
+    };
+    return response2;
+  }
+  const response = {
+    body: renderHTMLDocument(htmlContext),
+    statusCode: getResponseStatus(event),
+    statusMessage: getResponseStatusText(event),
+    headers: {
+      "content-type": "text/html;charset=utf-8",
+      "x-powered-by": "Nuxt"
+    }
+  };
+  return response;
 });
-async function renderHTML(payload, rendered, ssrContext) {
-  const state = `<script>window.__NUXT__=${devalue(payload)}<\/script>`;
-  rendered.meta = rendered.meta || {};
-  if (ssrContext.renderMeta) {
-    Object.assign(rendered.meta, await ssrContext.renderMeta());
-  }
-  return htmlTemplate({
-    HTML_ATTRS: rendered.meta.htmlAttrs || "",
-    HEAD_ATTRS: rendered.meta.headAttrs || "",
-    HEAD: (rendered.meta.headTags || "") + rendered.renderResourceHints() + rendered.renderStyles() + (ssrContext.styles || ""),
-    BODY_ATTRS: rendered.meta.bodyAttrs || "",
-    BODY_PREPEND: ssrContext.teleports?.body || "",
-    APP: (rendered.meta.bodyScriptsPrepend || "") + rendered.html + state + rendered.renderScripts() + (rendered.meta.bodyScripts || "")
-  });
-}
 function lazyCachedFunction(fn) {
   let res = null;
   return () => {
@@ -4471,9 +5179,170 @@ function lazyCachedFunction(fn) {
     return res;
   };
 }
+function normalizeChunks(chunks) {
+  return chunks.filter(Boolean).map((i) => i.trim());
+}
+function joinTags(tags) {
+  return tags.join("");
+}
+function joinAttrs(chunks) {
+  if (chunks.length === 0) {
+    return "";
+  }
+  return " " + chunks.join(" ");
+}
+function renderHTMLDocument(html) {
+  return `<!DOCTYPE html><html${joinAttrs(html.htmlAttrs)}><head>${joinTags(html.head)}</head><body${joinAttrs(html.bodyAttrs)}>${joinTags(html.bodyPrepend)}${joinTags(html.body)}${joinTags(html.bodyAppend)}</body></html>`;
+}
+async function renderInlineStyles(usedModules) {
+  const styleMap = await getSSRStyles();
+  const inlinedStyles = /* @__PURE__ */ new Set();
+  for (const mod of usedModules) {
+    if (mod in styleMap && styleMap[mod]) {
+      for (const style of await styleMap[mod]()) {
+        inlinedStyles.add(style);
+      }
+    }
+  }
+  return Array.from(inlinedStyles).map((style) => ({ innerHTML: style }));
+}
+function renderPayloadResponse(ssrContext) {
+  return {
+    body: stringify$1(splitPayload(ssrContext).payload, ssrContext._payloadReducers) ,
+    statusCode: getResponseStatus(ssrContext.event),
+    statusMessage: getResponseStatusText(ssrContext.event),
+    headers: {
+      "content-type": "application/json;charset=utf-8" ,
+      "x-powered-by": "Nuxt"
+    }
+  };
+}
+function renderPayloadJsonScript(opts) {
+  const contents = opts.data ? stringify$1(opts.data, opts.ssrContext._payloadReducers) : "";
+  const payload = {
+    "type": "application/json",
+    "innerHTML": contents,
+    "data-nuxt-data": appId,
+    "data-ssr": !(opts.ssrContext.noSSR)
+  };
+  {
+    payload.id = "__NUXT_DATA__";
+  }
+  if (opts.src) {
+    payload["data-src"] = opts.src;
+  }
+  const config = uneval(opts.ssrContext.config);
+  return [
+    payload,
+    {
+      innerHTML: `window.__NUXT__={};window.__NUXT__.config=${config}`
+    }
+  ];
+}
+function splitPayload(ssrContext) {
+  const { data, prerenderedAt, ...initial } = ssrContext.payload;
+  return {
+    initial: { ...initial, prerenderedAt },
+    payload: { data, prerenderedAt }
+  };
+}
+function getServerComponentHTML(body) {
+  const match = body[0].match(ROOT_NODE_REGEX);
+  return match?.[1] || body[0];
+}
+const SSR_SLOT_TELEPORT_MARKER = /^uid=([^;]*);slot=(.*)$/;
+const SSR_CLIENT_TELEPORT_MARKER = /^uid=([^;]*);client=(.*)$/;
+const SSR_CLIENT_SLOT_MARKER = /^island-slot=[^;]*;(.*)$/;
+function getSlotIslandResponse(ssrContext) {
+  if (!ssrContext.islandContext || !Object.keys(ssrContext.islandContext.slots).length) {
+    return void 0;
+  }
+  const response = {};
+  for (const [name, slot] of Object.entries(ssrContext.islandContext.slots)) {
+    response[name] = {
+      ...slot,
+      fallback: ssrContext.teleports?.[`island-fallback=${name}`]
+    };
+  }
+  return response;
+}
+function getClientIslandResponse(ssrContext) {
+  if (!ssrContext.islandContext || !Object.keys(ssrContext.islandContext.components).length) {
+    return void 0;
+  }
+  const response = {};
+  for (const [clientUid, component] of Object.entries(ssrContext.islandContext.components)) {
+    const html = ssrContext.teleports?.[clientUid]?.replaceAll("<!--teleport start anchor-->", "") || "";
+    response[clientUid] = {
+      ...component,
+      html,
+      slots: getComponentSlotTeleport(ssrContext.teleports ?? {})
+    };
+  }
+  return response;
+}
+function getComponentSlotTeleport(teleports) {
+  const entries = Object.entries(teleports);
+  const slots = {};
+  for (const [key, value] of entries) {
+    const match = key.match(SSR_CLIENT_SLOT_MARKER);
+    if (match) {
+      const [, slot] = match;
+      if (!slot) {
+        continue;
+      }
+      slots[slot] = value;
+    }
+  }
+  return slots;
+}
+function replaceIslandTeleports(ssrContext, html) {
+  const { teleports, islandContext } = ssrContext;
+  if (islandContext || !teleports) {
+    return html;
+  }
+  for (const key in teleports) {
+    const matchClientComp = key.match(SSR_CLIENT_TELEPORT_MARKER);
+    if (matchClientComp) {
+      const [, uid, clientId] = matchClientComp;
+      if (!uid || !clientId) {
+        continue;
+      }
+      html = html.replace(new RegExp(` data-island-uid="${uid}" data-island-component="${clientId}"[^>]*>`), (full) => {
+        return full + teleports[key];
+      });
+      continue;
+    }
+    const matchSlot = key.match(SSR_SLOT_TELEPORT_MARKER);
+    if (matchSlot) {
+      const [, uid, slot] = matchSlot;
+      if (!uid || !slot) {
+        continue;
+      }
+      html = html.replace(new RegExp(` data-island-uid="${uid}" data-island-slot="${slot}"[^>]*>`), (full) => {
+        return full + teleports[key];
+      });
+    }
+  }
+  return html;
+}
 
 const renderer$1 = /*#__PURE__*/Object.freeze({
   __proto__: null,
-  'default': renderer
+  default: renderer
+});
+
+const styles = {};
+
+const styles$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  default: styles
+});
+
+const template = "";
+
+const _virtual__spaTemplate = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  template: template
 });
 //# sourceMappingURL=index.mjs.map

@@ -1,19 +1,25 @@
-import { BalldontlieAPI } from '@balldontlie/sdk';
-import { useRuntimeConfig } from '#app';
-
 export const useBalldontlie = () => {
   const fetchTeams = async () => {
-    const config = useRuntimeConfig();
-    const api = new BalldontlieAPI({ apiKey: config.public.bdlApiKey });
-
     try {
-      const teams = await api.mlb.getTeams();
-      return teams;
+      const response = await $fetch('/api/teams');
+      console.log(response);
+      return response;
     } catch (error) {
       console.error('Failed to fetch teams:', error);
       throw error;
     }
   };
 
-  return { fetchTeams };
+  const fetchPlayers = async () => {
+    try {
+      const response = await $fetch('/api/players');
+      console.log(response);
+      return response;
+    } catch (error) {
+      console.error('Failed to fetch players:', error);
+      throw error;
+    }
+  };
+
+  return { fetchTeams, fetchPlayers };
 };

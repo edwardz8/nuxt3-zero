@@ -1,37 +1,18 @@
 {
-  "publicPath": "/_nuxt/",
-  "all": [
-    "@vite/client",
-    "entry.mjs",
-    "assets/css/main.css",
-    "components/content/InfoBox.vue?vue&type=style&index=0&scoped=true&lang.css",
-    "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.vue?vue&type=style&index=0&lang.css",
-    "components/Toc.vue?vue&type=style&index=0&scoped=true&lang.css",
-    "components/PrevNext.vue?vue&type=style&index=0&scoped=true&lang.css",
-    "pages/blog/[...slug].vue?vue&type=style&index=0&scoped=true&lang.css",
-    "components/Tags.vue?vue&type=style&index=0&scoped=true&lang.css",
-    "components/Header.vue?vue&type=style&index=0&lang.css",
-    "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue?vue&type=style&index=0&scoped=true&lang.css",
-    "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue?vue&type=style&index=0&scoped=true&lang.css",
-    "node_modules/@nuxt/ui-templates/dist/templates/error-dev.vue?vue&type=style&index=0&scoped=true&lang.css",
-    "components/SiteHeader.vue?vue&type=style&index=0&scoped=true&lang.css"
-  ],
-  "initial": [
-    "@vite/client",
-    "entry.mjs",
-    "assets/css/main.css",
-    "components/content/InfoBox.vue?vue&type=style&index=0&scoped=true&lang.css",
-    "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.vue?vue&type=style&index=0&lang.css",
-    "components/Toc.vue?vue&type=style&index=0&scoped=true&lang.css",
-    "components/PrevNext.vue?vue&type=style&index=0&scoped=true&lang.css",
-    "pages/blog/[...slug].vue?vue&type=style&index=0&scoped=true&lang.css",
-    "components/Tags.vue?vue&type=style&index=0&scoped=true&lang.css",
-    "components/Header.vue?vue&type=style&index=0&lang.css",
-    "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue?vue&type=style&index=0&scoped=true&lang.css",
-    "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue?vue&type=style&index=0&scoped=true&lang.css",
-    "node_modules/@nuxt/ui-templates/dist/templates/error-dev.vue?vue&type=style&index=0&scoped=true&lang.css",
-    "components/SiteHeader.vue?vue&type=style&index=0&scoped=true&lang.css"
-  ],
-  "async": [],
-  "modules": {}
+  "@vite/client": {
+    "prefetch": true,
+    "isEntry": true,
+    "file": "@vite/client",
+    "css": [],
+    "module": true,
+    "resourceType": "script"
+  },
+  "/Users/zne/vue-projects/nuxt3-zero/node_modules/nuxt/dist/app/entry.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "isEntry": true,
+    "file": "/Users/zne/vue-projects/nuxt3-zero/node_modules/nuxt/dist/app/entry.js"
+  }
 }

@@ -1,42 +1,32 @@
 <script setup>
-import { useRuntimeConfig } from '#app';
-// import { useBalldontlie } from '~/composables/useApi';
+import { useBalldontlie } from '~/composables/useApi';
 
-// Fetch data using useFetch
-const config = useRuntimeConfig();
+const { fetchTeams } = useBalldontlie();
+const teams = ref([]);
+const loading = ref(true);
+const error = ref(null);
 
-const { data: teams } = await useFetch('https://api.balldontlie.io/v1/teams', {
-  headers: {
-    Authorization: `Bearer ${config.public.bdlApiKey}`
+onMounted(async () => {
+  try {
+    const response = await fetchTeams();
+    teams.value = response.data;
+  } catch (err) {
+    console.error('Failed to fetch teams:', err);
+    error.value = 'Failed to fetch teams.';
+  } finally {
+    loading.value = false;
   }
 });
-
-console.log(data[0].value)
-console.log(teams.value)
-
-// Extract the "data" array from the response and update reactive state
-if (data[0].value) {
-  console.log(data[0].value)
-  teams.value = data[0].value.data;  // Access the "data" key in the returned JSON
-}
-
 </script>
 
 <template>
   <main>
-    <Head>
-      <Script
-        defer
-        data-domain="rotorink.com"
-        src="https://plausible.io/js/plausible.js"
-      />
-    </Head>
-    <section>
+    <section class="container mx-auto">
       <h2 class="text-2xl mt-3 mb-4 text-center">All Teams</h2>
-      <div
-        class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-3 px-4"
-      >
-        <TeamCard v-for="team in data.teams" :team="teams" :key="team.id" />
+      <div v-if="loading" class="text-center">Loading...</div>
+      <div v-else-if="error" class="text-center text-red-500">{{ error }}</div>
+      <div v-else class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <TeamCard v-for="team in teams" :team="team" :key="team.id" />
       </div>
     </section>
   </main>

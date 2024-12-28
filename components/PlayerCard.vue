@@ -29,15 +29,15 @@ const isLiked = computed(() => {
   return index > -1 ? true : false
 })
 
-function showSidebar(id) {
+function showSidebar(id: any) {
   emit("show-player", id);
 }
 
-function likePlayer(id) {
+function likePlayer(id: any) {
   emit('like-player', id)
 }
 
-function unlikePlayer(id, playerId) {
+function unlikePlayer(id: any, playerId: any) {
   emit('unlike-player', { id, playerId })
 }
 </script>

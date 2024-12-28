@@ -10,7 +10,7 @@ const user = useState("user");
     <div class="wrapper">
       <NuxtLink to="/" class="no-underline">
         <figure class="site-logo">
-          <h1>rotorink</h1>
+          <h1>mlbdfs</h1>
         </figure>
       </NuxtLink>
 
