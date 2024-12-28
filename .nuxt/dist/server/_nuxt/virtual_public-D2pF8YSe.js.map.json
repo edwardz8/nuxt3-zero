@@ -1,0 +1,1 @@
+{"file":"virtual_public-D2pF8YSe.js","mappings":";AAAuD,MAAe,aAAA,gBAAgB,yBAAyB;","names":[],"sources":["../../../../virtual:public?%2Fimg%2Fbaseball-phone.png"],"sourcesContent":["import { publicAssetsURL } from '#internal/nuxt/paths';export default publicAssetsURL(\"/img/baseball-phone.png\")"],"version":3}

@@ -1,0 +1,1 @@
+async function a(e){return await $fetch("/api/like/getLikes?playerId="+e,{method:"GET"})}async function s({playerId:e,userId:i}){return await $fetch("/api/like/addLike",{method:"POST",body:{userId:i,playerId:e}})}async function n(e){return await $fetch("/api/like/deleteLike?likeId="+e,{method:"GET"})}export{s as a,a as g,n as r};
