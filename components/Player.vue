@@ -31,6 +31,7 @@ defineProps({
       >
         View Stats
       </NuxtLink> -->
+      
     </div>
   </div>
 </template>
