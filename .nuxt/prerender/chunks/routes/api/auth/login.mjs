@@ -2,7 +2,7 @@ import { sendError, createError } from 'file:///Users/zne/vue-projects/nuxt3-zer
 import { a as getUserByEmailWithPass, m as makeSession, s as sanitizeUserForFrontend } from '../../../_/sessionService.mjs';
 import bcrypt from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/bcrypt/bcrypt.js';
 import '../../../_/client.mjs';
-import 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/@prisma/client/index.js';
+import 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/@prisma/client/default.js';
 import 'crypto';
 
 const login = async (event) => {

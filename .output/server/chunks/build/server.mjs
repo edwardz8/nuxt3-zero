@@ -593,18 +593,18 @@ const _routes = [
   {
     name: "blog-slug",
     path: "/blog/:slug(.*)*",
-    component: () => import('./_...slug_-CAlaE7fk.mjs')
+    component: () => import('./_...slug_-CwcyjzHi.mjs')
   },
   {
     name: "blog",
     path: "/blog",
     meta: __nuxt_page_meta$1,
-    component: () => import('./index-HF6rjI9v.mjs')
+    component: () => import('./index-D6Xn6Xlc.mjs')
   },
   {
     name: "blog-tags-slug",
     path: "/blog/tags/:slug()",
-    component: () => import('./_slug_-CCClBT_z.mjs')
+    component: () => import('./_slug_-CR9bqkOt.mjs')
   },
   {
     name: "index",
@@ -978,7 +978,7 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazyInfoBox = defineAsyncComponent(() => import('./InfoBox-Bnv4wqkx.mjs').then((r) => r["default"] || r.default || r));
+const LazyInfoBox = defineAsyncComponent(() => import('./InfoBox-S-feZFGS.mjs').then((r) => r["default"] || r.default || r));
 const LazyContentDoc = defineAsyncComponent(() => import('./ContentDoc-B8CBAMLW.mjs').then((r) => r["default"] || r.default || r));
 const LazyContentList = defineAsyncComponent(() => import('./ContentList-GtLky4U_.mjs').then((r) => r["default"] || r.default || r));
 const LazyContentNavigation = defineAsyncComponent(() => import('./ContentNavigation-qQPnuXuN.mjs').then((r) => r["default"] || r.default || r));

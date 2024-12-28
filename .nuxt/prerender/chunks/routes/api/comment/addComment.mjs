@@ -1,6 +1,6 @@
 import { a as addComment$1 } from '../../../_/commentRepository.mjs';
 import '../../../_/client.mjs';
-import 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/@prisma/client/index.js';
+import 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/@prisma/client/default.js';
 
 const addComment = async (event) => {
   const body = await useBody(event);
