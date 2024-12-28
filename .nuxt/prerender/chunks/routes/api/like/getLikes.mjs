@@ -1,7 +1,7 @@
 import { defineEventHandler } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/h3/dist/index.mjs';
 import { g as getLikesByUser } from '../../../_/likeRepository.mjs';
 import '../../../_/client.mjs';
-import 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/@prisma/client/default.js';
+import 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/@prisma/client/index.js';
 
 const getLikes = defineEventHandler(async (event) => {
   const query = await useQuery(event);

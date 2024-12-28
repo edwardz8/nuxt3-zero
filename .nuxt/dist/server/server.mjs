@@ -587,18 +587,18 @@ const _routes = [
   {
     name: "blog-slug",
     path: "/blog/:slug(.*)*",
-    component: () => import("./_nuxt/_...slug_-CwcyjzHi.js")
+    component: () => import("./_nuxt/_...slug_-CAlaE7fk.js")
   },
   {
     name: "blog",
     path: "/blog",
     meta: __nuxt_page_meta$1,
-    component: () => import("./_nuxt/index-D6Xn6Xlc.js")
+    component: () => import("./_nuxt/index-HF6rjI9v.js")
   },
   {
     name: "blog-tags-slug",
     path: "/blog/tags/:slug()",
-    component: () => import("./_nuxt/_slug_-CR9bqkOt.js")
+    component: () => import("./_nuxt/_slug_-CCClBT_z.js")
   },
   {
     name: "index",
@@ -634,7 +634,7 @@ const _routes = [
   {
     name: "teams",
     path: "/teams",
-    component: () => import("./_nuxt/index-B2XTBgsK.js")
+    component: () => import("./_nuxt/index-v7GnNj38.js")
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -972,7 +972,7 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazyInfoBox = defineAsyncComponent(() => import("./_nuxt/InfoBox-S-feZFGS.js").then((r) => r["default"] || r.default || r));
+const LazyInfoBox = defineAsyncComponent(() => import("./_nuxt/InfoBox-Bnv4wqkx.js").then((r) => r["default"] || r.default || r));
 const LazyContentDoc = defineAsyncComponent(() => import("./_nuxt/ContentDoc-B8CBAMLW.js").then((r) => r["default"] || r.default || r));
 const LazyContentList = defineAsyncComponent(() => import("./_nuxt/ContentList-GtLky4U_.js").then((r) => r["default"] || r.default || r));
 const LazyContentNavigation = defineAsyncComponent(() => import("./_nuxt/ContentNavigation-qQPnuXuN.js").then((r) => r["default"] || r.default || r));

@@ -1,6 +1,6 @@
 import { a as addLike$1 } from '../../../_/likeRepository.mjs';
 import '../../../_/client.mjs';
-import 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/@prisma/client/default.js';
+import 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/@prisma/client/index.js';
 
 const addLike = async (event) => {
   const body = await useBody(event);
