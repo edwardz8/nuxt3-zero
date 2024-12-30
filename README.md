@@ -1,4 +1,9 @@
-# Nuxt 3 and Content v2
+# Nuxt 3 MLB API and Content v2
+
+MLB Fantasy Baseball application integrating external APIs. Currently refactoring from NHL API to balldontlie MLB API.
+
+### ! node version = v20.18.1
+
 
 Look at the [Content documentation](https://content-v2.nuxtjs.org/) to learn more.
 
