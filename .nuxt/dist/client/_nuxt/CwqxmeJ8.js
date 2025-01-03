@@ -1,1 +1,0 @@
-const o=()=>({fetchTeams:async()=>{try{const e=await $fetch("/api/teams");return console.log(e),e}catch(e){throw console.error("Failed to fetch teams:",e),e}},fetchPlayers:async()=>{try{const e=await $fetch("/api/players");return console.log(e),e}catch(e){throw console.error("Failed to fetch players:",e),e}}});export{o as u};

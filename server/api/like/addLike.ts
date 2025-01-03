@@ -1,9 +1,8 @@
-import { CompatibilityEvent } from 'h3'
+import {CompatibilityEvent, readBody} from 'h3'
 import { addLike } from '~/server/database/repositories/likeRepository';
 
 export default async (event: CompatibilityEvent) => {
-    const body = await useBody(event)
-    console.log(body)
+    const body = await readBody(event)
 
     const likeData = {
         userId: body.userId,

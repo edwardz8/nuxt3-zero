@@ -3,7 +3,18 @@ import PolarAreaChart from "./PolarChartArea.ts";
 import matchPlayerImage from "../methods.js";
 
 const props = defineProps(["player"]);
+const nuxtApp = useNuxtApp()
+
+
+const currentSeasonStats = computed(() => {
+  return props.player?.seasonTotals.find((season) => {
+    return season.season === +nuxtApp.$config.public.SEASON
+  });
+})
 </script>
+
+
+
 
 <template>
   <div>
@@ -16,7 +27,7 @@ const props = defineProps(["player"]);
         class="flex justify-between items-center py-3 px-4 border-b dark:border-gray-700"
       >
         <h3 class="font-bold text-gray-800">
-          {{ player ? player.fullName : "Loading..." }}
+          {{ player ? player.firstName.default + ' ' + player.lastName.default : "Loading..." }}
         </h3>
         <button
           type="button"
@@ -39,24 +50,24 @@ const props = defineProps(["player"]);
           </svg>
         </button>
       </div>
-      <div class="p-4">
+      <div class="p-4" v-if="player">
         <img
           class="w-full h-auto rounded-t-xl"
-          :src="matchPlayerImage(player?.fullName)"
+          :src="player.headshot || matchPlayerImage(player.firstName.default + ' ' + player.lastName.default)"
           alt="Player Profile"
         />
-        <div v-if="player">
-          <!-- <p class="mt-1 text-gray-800 dark:text-gray-400">
-            Height: {{ player.height }} <br />
-            Team: {{ player.currentTeam.name }} <br />
-            Assists: {{ player.stats.stat.assists }} <br />
-            PIM: {{ player.stats.stat.pim }} <br />
-            shots: {{ player.stats.stat.shots }} <br />
-            Goals: {{ player.stats.stat.goals }} <br />
-            Games: {{ player.stats.stat.games }} <br />
-            Hits: {{ player.stats.stat.hits }} <br />
-          </p> -->
-          <PolarAreaChart :stats="player.stats.stat" />
+        <div v-if="player && currentSeasonStats">
+       <p class="mt-1 text-gray-800 dark:text-gray-400">
+            Height: {{ player.heightInCentimeters }} <br />
+            Team: {{ player.fullTeamName.default }} <br />
+            Assists: {{ currentSeasonStats.assists }} <br />
+            PIM: {{ currentSeasonStats.pim }} <br />
+            shots: {{ currentSeasonStats.shots }} <br />
+            Goals: {{ currentSeasonStats.goals }} <br />
+            Games: {{ currentSeasonStats.games }} <br />
+            Hits: {{ currentSeasonStats.hits }} <br />
+          </p>
+          <PolarAreaChart v-if="currentSeasonStats" :stats="currentSeasonStats" />
         </div>
         <div v-else class="h-96 flex items-center justify-center">
           <div

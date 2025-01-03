@@ -11,7 +11,9 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     bdlApiKey: process.env.BDL_API_KEY,
-    SEASON: process.env.SEASON,
+    public: {
+      SEASON: process.env.SEASON,
+    }
   },
 
   content: {

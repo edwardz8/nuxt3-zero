@@ -3,7 +3,6 @@
 
 # Nuxt.js build outputs
 .nuxt/
-dist/
 
 # Local env files
 .env
