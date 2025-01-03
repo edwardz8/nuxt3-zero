@@ -1,6 +1,6 @@
-import { ref, watchEffect, watch, getCurrentInstance } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/vue/index.mjs';
+import { ref, watchEffect, watch, getCurrentInstance } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/vue/index.mjs';
 import { j as injectHead, r as resolveUnrefHeadInput } from './server.mjs';
-import { composableNames } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/@unhead/shared/dist/index.mjs';
+import { composableNames } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@unhead/shared/dist/index.mjs';
 
 function useHead(input, options = {}) {
   const head = options.head || injectHead();

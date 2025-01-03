@@ -1,4 +1,4 @@
-import { setCookie } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/h3/dist/index.mjs';
+import { setCookie } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/h3/dist/index.mjs';
 import { p as prisma } from './client.mjs';
 import crypto from 'crypto';
 

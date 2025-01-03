@@ -5,7 +5,7 @@ import { userLogout } from "~/composables/useAuth";
 import { useState } from "#app";
 import { onClickOutside } from "@vueuse/core";
 
-const avatar = (given: string | undefined) => given ?? "/img/footballguy2.jpg";
+const avatar = (given: string | undefined) => given ?? "/img/William_Nylander.png";
 
 const user = useState<IUser>("user");
 

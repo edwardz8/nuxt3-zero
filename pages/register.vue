@@ -27,7 +27,7 @@ async function postRegisterForm() {
         <div class="flex">
           <img
             class="mx-auto h-24 w-auto"
-            src="/img/baseball-phone.png"
+            src="/img/hockeyphone.png"
             alt="rotorink logo"
           />
           <!-- <h1 class="py-9 text-center text-3xl font-extrabold text-gray-900">

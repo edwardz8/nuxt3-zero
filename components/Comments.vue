@@ -83,12 +83,12 @@ async function deletePlayerComment(id, index) {
         :key="comment.id"
       >
         <div class="flex gap-3 items-center">
-          <img src="/img/footballguy2.jpg" class="rounded-full w-10 h-10" alt="avatar" />
+          <img src="/img/William_Nylander.png" class="rounded-full w-10 h-10" alt="avatar" />
           <div>
-            <h4 class="text-base m-0 leading-3">
+            <h4 class="text-base m-0 leading-3 text-white">
               {{ comment.user.name }}
             </h4>
-            <span class="text-xs leading-3">@{{ comment.user.username }}</span>
+            <span class="text-xs leading-3 text-white">@{{ comment.user.username }}</span>
           </div>
           <button class="p-2 ml-auto" @click="deletePlayerComment(comment.id, i)" v-if="userComment">
             <svg

@@ -1,4 +1,4 @@
-import { defineEventHandler } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/h3/dist/index.mjs';
+import { defineEventHandler } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/h3/dist/index.mjs';
 
 const teams = defineEventHandler(async (event) => {
   try {

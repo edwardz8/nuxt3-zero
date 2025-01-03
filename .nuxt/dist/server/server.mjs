@@ -624,12 +624,12 @@ const _routes = [
   {
     name: "teams-id",
     path: "/teams/:id()",
-    component: () => import("./_nuxt/index-BX-vcGJJ.js")
+    component: () => import("./_nuxt/index-Cbs4etpd.js")
   },
   {
     name: "teams-id-player-player",
     path: "/teams/:id()/player/:player()",
-    component: () => import("./_nuxt/_player_-DPq355jg.js")
+    component: () => import("./_nuxt/_player_-CsoIPSeq.js")
   },
   {
     name: "teams",
@@ -1769,7 +1769,7 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
   __name: "User",
   __ssrInlineRender: true,
   setup(__props) {
-    const avatar = (given) => given ?? "/img/footballguy2.jpg";
+    const avatar = (given) => given ?? "/img/William_Nylander.png";
     const user = useState("user");
     const hideActions = ref$1(true);
     const userActions = ref$1(null);

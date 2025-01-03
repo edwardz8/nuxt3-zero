@@ -1,5 +1,5 @@
 import * as url from 'url';
-import { createClient } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/@supabase/supabase-js/dist/main/index.js';
+import { createClient } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@supabase/supabase-js/dist/main/index.js';
 
 const subscribe = async (req, res) => {
   const queryObject = url.parse(req.url, true).query;

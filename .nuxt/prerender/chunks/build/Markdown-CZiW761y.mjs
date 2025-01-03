@@ -1,5 +1,5 @@
 import _sfc_main$1 from './ContentSlot-BcmQm8hp.mjs';
-import { defineComponent, getCurrentInstance, useSlots, computed, useSSRContext } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/vue/index.mjs';
+import { defineComponent, getCurrentInstance, useSlots, computed, useSSRContext } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/vue/index.mjs';
 import './node-BZyc0_pG.mjs';
 
 const _sfc_main = defineComponent({

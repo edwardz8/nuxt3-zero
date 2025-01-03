@@ -1,7 +1,7 @@
 import { _ as _export_sfc, c as useAsyncData, a as __nuxt_component_0$1 } from './server.mjs';
-import { useSSRContext, ref, withAsyncContext, mergeProps, unref, withCtx, createTextVNode, toDisplayString } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/vue/index.mjs';
-import { ssrRenderAttrs, ssrRenderComponent, ssrRenderClass, ssrRenderList, ssrInterpolate } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/vue/server-renderer/index.mjs';
-import { TagIcon } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/@heroicons/vue/solid/index.js';
+import { useSSRContext, ref, withAsyncContext, mergeProps, unref, withCtx, createTextVNode, toDisplayString } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/vue/index.mjs';
+import { ssrRenderAttrs, ssrRenderComponent, ssrRenderClass, ssrRenderList, ssrInterpolate } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/vue/server-renderer/index.mjs';
+import { TagIcon } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@heroicons/vue/solid/index.js';
 import { q as queryContent } from './query-BPLYG_3c.mjs';
 
 const _sfc_main = {

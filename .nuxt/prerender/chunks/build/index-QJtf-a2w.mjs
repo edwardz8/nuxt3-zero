@@ -1,5 +1,5 @@
-import { useSSRContext, ref, unref, defineComponent, mergeProps } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/vue/index.mjs';
-import { ssrRenderAttrs, ssrInterpolate, ssrRenderList, ssrRenderComponent, ssrRenderAttr } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/vue/server-renderer/index.mjs';
+import { useSSRContext, ref, unref, defineComponent, mergeProps } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/vue/index.mjs';
+import { ssrRenderAttrs, ssrInterpolate, ssrRenderList, ssrRenderComponent, ssrRenderAttr } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/vue/server-renderer/index.mjs';
 import { m as matchPlayerImage } from './methods-Dr2_CXld.mjs';
 
 const _sfc_main$1 = /* @__PURE__ */ defineComponent({

@@ -1,5 +1,5 @@
-import { useSSRContext, mergeProps } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/vue/index.mjs';
-import { ssrRenderAttrs, ssrRenderList, ssrInterpolate, ssrRenderAttr } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/vue/server-renderer/index.mjs';
+import { useSSRContext, mergeProps } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/vue/index.mjs';
+import { ssrRenderAttrs, ssrRenderList, ssrInterpolate, ssrRenderAttr } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/vue/server-renderer/index.mjs';
 import { p as publicAssetsURL } from '../nitro/nitro.mjs';
 import { _ as _export_sfc } from './server.mjs';
 

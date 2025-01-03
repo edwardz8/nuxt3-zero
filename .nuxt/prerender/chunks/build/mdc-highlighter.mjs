@@ -1,5 +1,5 @@
 import { getMdcConfigs } from './mdc-configs.mjs';
-import { createWasmOnigEngine } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/engine-oniguruma.mjs';
+import { createWasmOnigEngine } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/shiki/dist/engine-oniguruma.mjs';
 
 function createShikiHighlighter({
   langs = [],
@@ -13,8 +13,8 @@ function createShikiHighlighter({
   let shiki;
   let configs;
   async function _getShiki() {
-    const { createHighlighterCore, addClassToHast, isSpecialLang, isSpecialTheme } = await import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/core.mjs');
-    const { transformerNotationDiff, transformerNotationErrorLevel, transformerNotationFocus, transformerNotationHighlight } = await import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/@shikijs/transformers/dist/index.mjs');
+    const { createHighlighterCore, addClassToHast, isSpecialLang, isSpecialTheme } = await import('file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/shiki/dist/core.mjs');
+    const { transformerNotationDiff, transformerNotationErrorLevel, transformerNotationFocus, transformerNotationHighlight } = await import('file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/@shikijs/transformers/dist/index.mjs');
     const shiki2 = await createHighlighterCore({
       langs,
       themes,
@@ -173,33 +173,33 @@ function createShikiHighlighter({
 }
 
 const bundledLangs = {
-"javascript": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/javascript.mjs'),
-"js": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/javascript.mjs'),
-"jsx": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/jsx.mjs'),
-"json": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/json.mjs'),
-"typescript": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/typescript.mjs'),
-"ts": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/typescript.mjs'),
-"tsx": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/tsx.mjs'),
-"vue": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/vue.mjs'),
-"css": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/css.mjs'),
-"html": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/html.mjs'),
-"shellscript": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/shellscript.mjs'),
-"bash": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/shellscript.mjs'),
-"sh": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/shellscript.mjs'),
-"shell": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/shellscript.mjs'),
-"zsh": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/shellscript.mjs'),
-"markdown": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/markdown.mjs'),
-"md": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/markdown.mjs'),
-"mdc": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/mdc.mjs'),
-"yaml": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/yaml.mjs'),
-"yml": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/yaml.mjs'),
+"javascript": () => import('file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/javascript.mjs'),
+"js": () => import('file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/javascript.mjs'),
+"jsx": () => import('file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/jsx.mjs'),
+"json": () => import('file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/json.mjs'),
+"typescript": () => import('file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/typescript.mjs'),
+"ts": () => import('file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/typescript.mjs'),
+"tsx": () => import('file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/tsx.mjs'),
+"vue": () => import('file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/vue.mjs'),
+"css": () => import('file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/css.mjs'),
+"html": () => import('file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/html.mjs'),
+"shellscript": () => import('file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/shellscript.mjs'),
+"bash": () => import('file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/shellscript.mjs'),
+"sh": () => import('file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/shellscript.mjs'),
+"shell": () => import('file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/shellscript.mjs'),
+"zsh": () => import('file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/shellscript.mjs'),
+"markdown": () => import('file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/markdown.mjs'),
+"md": () => import('file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/markdown.mjs'),
+"mdc": () => import('file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/mdc.mjs'),
+"yaml": () => import('file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/yaml.mjs'),
+"yml": () => import('file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/shiki/dist/langs/yaml.mjs'),
 };
 const bundledThemes = {
-"material-theme-palenight": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/themes/material-theme-palenight.mjs').then(r => r.default),
-"github-dark": () => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/themes/github-dark.mjs').then(r => r.default),
+"material-theme-palenight": () => import('file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/shiki/dist/themes/material-theme-palenight.mjs').then(r => r.default),
+"github-dark": () => import('file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/shiki/dist/themes/github-dark.mjs').then(r => r.default),
 };
 const options = {"theme":{"default":"material-theme-palenight","dark":"github-dark"}};
-const engine = createWasmOnigEngine(() => import('file:///Users/zne/vue-projects/nuxt3-zero/node_modules/shiki/dist/wasm.mjs'));
+const engine = createWasmOnigEngine(() => import('file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/shiki/dist/wasm.mjs'));
 const highlighter = createShikiHighlighter({ bundledLangs, bundledThemes, options, getMdcConfigs, engine });
 
 export { createShikiHighlighter, highlighter as default };

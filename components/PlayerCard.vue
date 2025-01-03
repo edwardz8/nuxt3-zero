@@ -48,7 +48,7 @@ function unlikePlayer(id: any, playerId: any) {
   >
     <button
       v-if="isLiked"
-      @click="unlikePlayer(userLike.id, player.person.id)"
+      @click="unlikePlayer(userLike.id, player.id)"
       class="text-sm mt-1 py-2 px-2 inline-flex justify-center items-center gap-2 font-semibold text-blue-500 hover:text-gray-300"
     >
       <svg
@@ -105,7 +105,7 @@ function unlikePlayer(id: any, playerId: any) {
       </p>
 
       <div class="flex inline-flex justify-center items-center gap-4">
-        <NuxtLink
+      <NuxtLink
           class="mt-3 py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800"
           :to="`/teams/${useRoute().params.id}/player/` + player.id"
         >

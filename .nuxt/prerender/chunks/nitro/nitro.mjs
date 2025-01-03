@@ -1,35 +1,35 @@
-import process from 'node:process';globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { getRequestHeader, splitCookiesString, setResponseStatus, setResponseHeader, send, getRequestHeaders, eventHandler, appendResponseHeader, removeResponseHeader, createError, getResponseHeader, getQuery, defineEventHandler, handleCacheHeaders, createEvent, fetchWithEvent, isEvent, getResponseStatus, setResponseHeaders, setHeaders, sendRedirect, proxyRequest, getCookie, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/h3/dist/index.mjs';
-import { withQuery, joinURL, decodePath, withLeadingSlash, withoutTrailingSlash, parseURL, withoutBase, getQuery as getQuery$1, joinRelativeURL } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/ufo/dist/index.mjs';
-import { unified } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/unified/index.js';
-import remarkParse from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/remark-parse/index.js';
-import remark2rehype from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/remark-rehype/index.js';
-import remarkMDC, { parseFrontMatter } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/remark-mdc/dist/index.mjs';
-import defu, { defuFn, defu as defu$1 } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/defu/dist/defu.mjs';
-import remarkGFM from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/remark-gfm/index.js';
-import rehypeExternalLinks from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/rehype-external-links/index.js';
-import rehypeSortAttributeValues from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/rehype-sort-attribute-values/index.js';
-import rehypeSortAttributes from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/rehype-sort-attributes/index.js';
-import rehypeRaw from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/rehype-raw/index.js';
-import { detab } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/detab/index.js';
-import { snakeCase, kebabCase } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/scule/dist/index.mjs';
-import { normalizeUri } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/micromark-util-sanitize-uri/index.js';
-import { toString } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/hast-util-to-string/index.js';
-import Slugger from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/github-slugger/index.js';
-import destr from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/destr/dist/index.mjs';
-import { createHooks } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/hookable/dist/index.mjs';
-import { createFetch as createFetch$1, Headers as Headers$1 } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/ofetch/dist/node.mjs';
-import { createCall, createFetch } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/unenv/runtime/fetch/index.mjs';
-import { klona } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/klona/dist/index.mjs';
-import { createStorage, defineDriver, prefixStorage } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/unstorage/drivers/fs.mjs';
-import fsDriver from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/unstorage/drivers/fs-lite.mjs';
-import lruCache from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/unstorage/drivers/lru-cache.mjs';
-import { toRouteMatcher, createRouter } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/radix3/dist/index.mjs';
-import { getContext } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/unctx/dist/index.mjs';
+import process from 'node:process';globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import { getRequestHeader, splitCookiesString, setResponseStatus, setResponseHeader, send, getRequestHeaders, eventHandler, appendResponseHeader, removeResponseHeader, createError, getResponseHeader, getQuery, defineEventHandler, handleCacheHeaders, createEvent, fetchWithEvent, isEvent, getResponseStatus, setResponseHeaders, setHeaders, sendRedirect, proxyRequest, getCookie, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/h3/dist/index.mjs';
+import { withQuery, joinURL, decodePath, withLeadingSlash, withoutTrailingSlash, parseURL, withoutBase, getQuery as getQuery$1, joinRelativeURL } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/ufo/dist/index.mjs';
+import { unified } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/unified/index.js';
+import remarkParse from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/remark-parse/index.js';
+import remark2rehype from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/remark-rehype/index.js';
+import remarkMDC, { parseFrontMatter } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/remark-mdc/dist/index.mjs';
+import defu, { defuFn, defu as defu$1 } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/defu/dist/defu.mjs';
+import remarkGFM from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/remark-gfm/index.js';
+import rehypeExternalLinks from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/rehype-external-links/index.js';
+import rehypeSortAttributeValues from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/rehype-sort-attribute-values/index.js';
+import rehypeSortAttributes from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/rehype-sort-attributes/index.js';
+import rehypeRaw from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/rehype-raw/index.js';
+import { detab } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/detab/index.js';
+import { snakeCase, kebabCase } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/scule/dist/index.mjs';
+import { normalizeUri } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/micromark-util-sanitize-uri/index.js';
+import { toString } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/hast-util-to-string/index.js';
+import Slugger from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/github-slugger/index.js';
+import destr from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/destr/dist/index.mjs';
+import { createHooks } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/hookable/dist/index.mjs';
+import { createFetch as createFetch$1, Headers as Headers$1 } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/ofetch/dist/node.mjs';
+import { createCall, createFetch } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/unenv/runtime/fetch/index.mjs';
+import { klona } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/klona/dist/index.mjs';
+import { createStorage, defineDriver, prefixStorage } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/unstorage/drivers/fs.mjs';
+import fsDriver from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/unstorage/drivers/fs-lite.mjs';
+import lruCache from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/unstorage/drivers/lru-cache.mjs';
+import { toRouteMatcher, createRouter } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/radix3/dist/index.mjs';
+import { getContext } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/unctx/dist/index.mjs';
 import { promises } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { dirname, resolve } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/pathe/dist/index.mjs';
-import { hash } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/ohash/dist/index.mjs';
+import { dirname, resolve } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/pathe/dist/index.mjs';
+import { hash } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/ohash/dist/index.mjs';
 
 function hasReqHeader(event, name, includes) {
   const value = getRequestHeader(event, name);
@@ -190,7 +190,7 @@ function getAsset (id) {
 
 const METHODS = /* @__PURE__ */ new Set(["HEAD", "GET"]);
 const EncodingMap = { gzip: ".gz", br: ".br" };
-const _LNckhY = eventHandler((event) => {
+const _BsRliH = eventHandler((event) => {
   if (event.method && !METHODS.has(event.method)) {
     return;
   }
@@ -257,7 +257,7 @@ const _LNckhY = eventHandler((event) => {
   return readAsset(id);
 });
 
-const _MX0nBA = eventHandler(async (event) => {
+const _Ylwtz6 = eventHandler(async (event) => {
   const { code, lang, theme: themeString, options: optionsStr } = getQuery(event);
   const theme = JSON.parse(themeString);
   const options = optionsStr ? JSON.parse(optionsStr) : {};
@@ -314,7 +314,7 @@ function _expandFromEnv(value) {
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/",
-    "buildId": "005cd6ce-5472-4b49-9d08-012411c92b00",
+    "buildId": "64b0f977-31a0-4524-99d9-e2331987da86",
     "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },
@@ -387,7 +387,7 @@ const _inlineRuntimeConfig = {
     "content": {
       "locales": [],
       "defaultLocale": "",
-      "integrity": 1735926816675,
+      "integrity": 1735934184253,
       "experimental": {
         "stripQueryParameters": false,
         "advanceQuery": false,
@@ -462,7 +462,7 @@ const _inlineRuntimeConfig = {
       }
     }
   },
-  "bdlApiKey": "0440b57a-b3bb-4b33-aa43-2a7336ca4689",
+  "bdlApiKey": "",
   "content": {
     "cacheVersion": 2,
     "cacheIntegrity": "6NOdNy3hbm",
@@ -614,7 +614,7 @@ new Proxy(/* @__PURE__ */ Object.create(null), {
   }
 });
 
-const serverAssets = [{"baseName":"server","dir":"/Users/zne/vue-projects/nuxt3-zero/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"/Users/edwardz_8/vue-projects/nuxt3-zero/server/assets"}];
 
 const assets = createStorage();
 
@@ -633,7 +633,7 @@ const normalizeFsKey = item => item.replaceAll(':', '_');
 /**
  * @param {{ base: string }} opts
  */
-const _47Users_47zne_47vue_45projects_47nuxt3_45zero_47node_modules_47nuxt_47dist_47core_47runtime_47nitro_47cache_45driver_46js = defineDriver((opts) => {
+const _47Users_47edwardz_8_47vue_45projects_47nuxt3_45zero_47node_modules_47nuxt_47dist_47core_47runtime_47nitro_47cache_45driver_46js = defineDriver((opts) => {
   const fs = fsDriver({ base: opts.base });
   const lru = lruCache({ max: 1000 });
 
@@ -658,14 +658,14 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets);
 
-storage.mount('internal:nuxt:prerender', _47Users_47zne_47vue_45projects_47nuxt3_45zero_47node_modules_47nuxt_47dist_47core_47runtime_47nitro_47cache_45driver_46js({"driver":"/Users/zne/vue-projects/nuxt3-zero/node_modules/nuxt/dist/core/runtime/nitro/cache-driver.js","base":"/Users/zne/vue-projects/nuxt3-zero/.nuxt/cache/nitro/prerender"}));
-storage.mount('data', fsDriver({"driver":"fsLite","base":"/Users/zne/vue-projects/nuxt3-zero/.data/kv"}));
-storage.mount('content:source:content', unstorage_47drivers_47fs({"name":"content:source:content","driver":"fs","base":"/Users/zne/vue-projects/nuxt3-zero/content","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache:content', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/zne/vue-projects/nuxt3-zero/.nuxt/content-cache","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/zne/vue-projects/nuxt3-zero","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/zne/vue-projects/nuxt3-zero/server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/zne/vue-projects/nuxt3-zero/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/zne/vue-projects/nuxt3-zero/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('internal:nuxt:prerender', _47Users_47edwardz_8_47vue_45projects_47nuxt3_45zero_47node_modules_47nuxt_47dist_47core_47runtime_47nitro_47cache_45driver_46js({"driver":"/Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/nuxt/dist/core/runtime/nitro/cache-driver.js","base":"/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/cache/nitro/prerender"}));
+storage.mount('data', fsDriver({"driver":"fsLite","base":"/Users/edwardz_8/vue-projects/nuxt3-zero/.data/kv"}));
+storage.mount('content:source:content', unstorage_47drivers_47fs({"name":"content:source:content","driver":"fs","base":"/Users/edwardz_8/vue-projects/nuxt3-zero/content","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache:content', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/content-cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/edwardz_8/vue-projects/nuxt3-zero","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/edwardz_8/vue-projects/nuxt3-zero/server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/edwardz_8/vue-projects/nuxt3-zero/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -1874,7 +1874,7 @@ function contentHeading(body) {
   };
 }
 
-const _TO9phX = defineEventHandler(async (event) => {
+const _2bZ95b = defineEventHandler(async (event) => {
   const { getContentQuery } = await import('../_/query.mjs');
   const { serverQueryContent } = await import('../_/storage.mjs').then(function (n) { return n.s; });
   const query = getContentQuery(event);
@@ -1905,7 +1905,7 @@ const _TO9phX = defineEventHandler(async (event) => {
   return serverQueryContent(event, query).find();
 });
 
-const _tpnRl7 = defineEventHandler(async (event) => {
+const _VUZNrQ = defineEventHandler(async (event) => {
   const { getContentIndex } = await import('../_/storage.mjs').then(function (n) { return n.c; });
   const { cacheStorage, serverQueryContent } = await import('../_/storage.mjs').then(function (n) { return n.s; });
   const { content } = useRuntimeConfig();
@@ -1931,7 +1931,7 @@ const getPreview = (event) => {
   return { key };
 };
 
-const _gWIuzX = defineEventHandler(async (event) => {
+const _HgcFjn = defineEventHandler(async (event) => {
   const { getContentQuery } = await import('../_/query.mjs');
   const { cacheStorage, serverQueryContent } = await import('../_/storage.mjs').then(function (n) { return n.s; });
   const { createNav } = await import('../_/navigation.mjs');
@@ -1972,45 +1972,47 @@ const _gWIuzX = defineEventHandler(async (event) => {
   return createNav(contents?.result || contents, configs);
 });
 
-const _lazy_nsx5eQ = () => import('../routes/api/auth/getByAuthToken.mjs');
-const _lazy_3YDjhu = () => import('../routes/api/auth/login.mjs');
-const _lazy_qENQiN = () => import('../routes/api/auth/logout.mjs');
-const _lazy_4vKhH4 = () => import('../routes/api/auth/register.mjs');
-const _lazy_Tanoq6 = () => import('../routes/api/comment/addComment.mjs');
-const _lazy_k3x4T8 = () => import('../routes/api/comment/deleteComment.mjs');
-const _lazy_a9f9lG = () => import('../routes/api/comment/getComments.mjs');
-const _lazy_9pvzFb = () => import('../routes/api/like/addLike.mjs');
-const _lazy_czBP2s = () => import('../routes/api/like/deleteLike.mjs');
-const _lazy_a5ETyl = () => import('../routes/api/like/getLikes.mjs');
-const _lazy_fpRsiM = () => import('../routes/api/subscribe.mjs');
-const _lazy_Xa7yzA = () => import('../routes/api/teams.mjs');
-const _lazy_KkgSAb = () => import('../routes/api/teams/_id/players.mjs');
-const _lazy_nBUkym = () => import('../_/renderer.mjs');
+const _lazy_22eNNe = () => import('../routes/api/auth/getByAuthToken.mjs');
+const _lazy_IZWodM = () => import('../routes/api/auth/login.mjs');
+const _lazy_BBbXQk = () => import('../routes/api/auth/logout.mjs');
+const _lazy_6NKUfu = () => import('../routes/api/auth/register.mjs');
+const _lazy_Cbp18I = () => import('../routes/api/comment/addComment.mjs');
+const _lazy_JIRZTV = () => import('../routes/api/comment/deleteComment.mjs');
+const _lazy_91LysV = () => import('../routes/api/comment/getComments.mjs');
+const _lazy_0V42hF = () => import('../routes/api/like/addLike.mjs');
+const _lazy_M6rNvR = () => import('../routes/api/like/deleteLike.mjs');
+const _lazy_akijm3 = () => import('../routes/api/like/getLikes.mjs');
+const _lazy_kB6yps = () => import('../routes/api/players/_id_.mjs');
+const _lazy_BQ6ORK = () => import('../routes/api/subscribe.mjs');
+const _lazy_8mxRki = () => import('../routes/api/teams.mjs');
+const _lazy_waahu1 = () => import('../routes/api/teams/_id/players.mjs');
+const _lazy_QaP1VD = () => import('../_/renderer.mjs');
 
 const handlers = [
-  { route: '', handler: _LNckhY, lazy: false, middleware: true, method: undefined },
-  { route: '/api/auth/getByAuthToken', handler: _lazy_nsx5eQ, lazy: true, middleware: false, method: undefined },
-  { route: '/api/auth/login', handler: _lazy_3YDjhu, lazy: true, middleware: false, method: undefined },
-  { route: '/api/auth/logout', handler: _lazy_qENQiN, lazy: true, middleware: false, method: undefined },
-  { route: '/api/auth/register', handler: _lazy_4vKhH4, lazy: true, middleware: false, method: undefined },
-  { route: '/api/comment/addComment', handler: _lazy_Tanoq6, lazy: true, middleware: false, method: undefined },
-  { route: '/api/comment/deleteComment', handler: _lazy_k3x4T8, lazy: true, middleware: false, method: undefined },
-  { route: '/api/comment/getComments', handler: _lazy_a9f9lG, lazy: true, middleware: false, method: undefined },
-  { route: '/api/like/addLike', handler: _lazy_9pvzFb, lazy: true, middleware: false, method: undefined },
-  { route: '/api/like/deleteLike', handler: _lazy_czBP2s, lazy: true, middleware: false, method: undefined },
-  { route: '/api/like/getLikes', handler: _lazy_a5ETyl, lazy: true, middleware: false, method: undefined },
-  { route: '/api/subscribe', handler: _lazy_fpRsiM, lazy: true, middleware: false, method: undefined },
-  { route: '/api/teams', handler: _lazy_Xa7yzA, lazy: true, middleware: false, method: undefined },
-  { route: '/api/teams/:id/players', handler: _lazy_KkgSAb, lazy: true, middleware: false, method: undefined },
-  { route: '/api/_mdc/highlight', handler: _MX0nBA, lazy: false, middleware: false, method: undefined },
-  { route: '/api/_content/query/:qid/**:params', handler: _TO9phX, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/query/:qid', handler: _TO9phX, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/query', handler: _TO9phX, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/cache.1735926816675.json', handler: _tpnRl7, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation/:qid/**:params', handler: _gWIuzX, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation/:qid', handler: _gWIuzX, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation', handler: _gWIuzX, lazy: false, middleware: false, method: "get" },
-  { route: '/**', handler: _lazy_nBUkym, lazy: true, middleware: false, method: undefined }
+  { route: '', handler: _BsRliH, lazy: false, middleware: true, method: undefined },
+  { route: '/api/auth/getByAuthToken', handler: _lazy_22eNNe, lazy: true, middleware: false, method: undefined },
+  { route: '/api/auth/login', handler: _lazy_IZWodM, lazy: true, middleware: false, method: undefined },
+  { route: '/api/auth/logout', handler: _lazy_BBbXQk, lazy: true, middleware: false, method: undefined },
+  { route: '/api/auth/register', handler: _lazy_6NKUfu, lazy: true, middleware: false, method: undefined },
+  { route: '/api/comment/addComment', handler: _lazy_Cbp18I, lazy: true, middleware: false, method: undefined },
+  { route: '/api/comment/deleteComment', handler: _lazy_JIRZTV, lazy: true, middleware: false, method: undefined },
+  { route: '/api/comment/getComments', handler: _lazy_91LysV, lazy: true, middleware: false, method: undefined },
+  { route: '/api/like/addLike', handler: _lazy_0V42hF, lazy: true, middleware: false, method: undefined },
+  { route: '/api/like/deleteLike', handler: _lazy_M6rNvR, lazy: true, middleware: false, method: undefined },
+  { route: '/api/like/getLikes', handler: _lazy_akijm3, lazy: true, middleware: false, method: undefined },
+  { route: '/api/players/:id', handler: _lazy_kB6yps, lazy: true, middleware: false, method: undefined },
+  { route: '/api/subscribe', handler: _lazy_BQ6ORK, lazy: true, middleware: false, method: undefined },
+  { route: '/api/teams', handler: _lazy_8mxRki, lazy: true, middleware: false, method: undefined },
+  { route: '/api/teams/:id/players', handler: _lazy_waahu1, lazy: true, middleware: false, method: undefined },
+  { route: '/api/_mdc/highlight', handler: _Ylwtz6, lazy: false, middleware: false, method: undefined },
+  { route: '/api/_content/query/:qid/**:params', handler: _2bZ95b, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/query/:qid', handler: _2bZ95b, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/query', handler: _2bZ95b, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/cache.1735934184253.json', handler: _VUZNrQ, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation/:qid/**:params', handler: _HgcFjn, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation/:qid', handler: _HgcFjn, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation', handler: _HgcFjn, lazy: false, middleware: false, method: "get" },
+  { route: '/**', handler: _lazy_QaP1VD, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {

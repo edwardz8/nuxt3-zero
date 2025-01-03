@@ -33,6 +33,9 @@ declare module "nitropack/types" {
     '/api/like/getLikes': {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/like/getLikes').default>>>>
     }
+    '/api/players/:id': {
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/players/[id]').default>>>>
+    }
     '/api/subscribe': {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/subscribe').default>>>>
     }
@@ -57,7 +60,7 @@ declare module "nitropack/types" {
     '/api/_content/query': {
       'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxt/content/dist/runtime/server/api/query').default>>>>
     }
-    '/api/_content/cache.1735926816675.json': {
+    '/api/_content/cache.1735934184253.json': {
       'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxt/content/dist/runtime/server/api/cache').default>>>>
     }
     '/api/_content/navigation/:qid/**:params': {

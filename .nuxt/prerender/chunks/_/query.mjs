@@ -1,4 +1,4 @@
-import { getQuery, createError } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/h3/dist/index.mjs';
+import { getQuery, createError } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/h3/dist/index.mjs';
 
 function jsonParse(value) {
   return JSON.parse(value, regExpReviver);

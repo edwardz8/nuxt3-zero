@@ -1,4 +1,4 @@
-import { defineComponent } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/vue/index.mjs';
+import { defineComponent } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/vue/index.mjs';
 import { u as useHead } from './index-BkN0T-RA.mjs';
 
 const removeUndefinedProps = (props) => {

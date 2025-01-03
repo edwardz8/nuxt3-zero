@@ -1,6 +1,6 @@
-import { pascalCase } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/scule/dist/index.mjs';
-import slugify from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/slugify/slugify.js';
-import { withLeadingSlash, withoutTrailingSlash } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/ufo/dist/index.mjs';
+import { pascalCase } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/scule/dist/index.mjs';
+import slugify from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/slugify/slugify.js';
+import { withLeadingSlash, withoutTrailingSlash } from 'file:///Users/edwardz_8/vue-projects/nuxt3-zero/node_modules/ufo/dist/index.mjs';
 
 const defineTransformer = (transformer) => {
   return transformer;
