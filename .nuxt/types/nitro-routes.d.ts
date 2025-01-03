@@ -33,14 +33,14 @@ declare module "nitropack/types" {
     '/api/like/getLikes': {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/like/getLikes').default>>>>
     }
-    '/api/players': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/players').default>>>>
-    }
     '/api/subscribe': {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/subscribe').default>>>>
     }
     '/api/teams': {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/teams').default>>>>
+    }
+    '/api/teams/:id/players': {
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/teams/[id]/players').default>>>>
     }
     '/__nuxt_error': {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt/dist/core/runtime/nitro/renderer').default>>>>
@@ -57,7 +57,7 @@ declare module "nitropack/types" {
     '/api/_content/query': {
       'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxt/content/dist/runtime/server/api/query').default>>>>
     }
-    '/api/_content/cache.json': {
+    '/api/_content/cache.1735926816675.json': {
       'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxt/content/dist/runtime/server/api/cache').default>>>>
     }
     '/api/_content/navigation/:qid/**:params': {

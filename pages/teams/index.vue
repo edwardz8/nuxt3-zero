@@ -1,7 +1,7 @@
 <script setup>
-import { useBalldontlie } from '~/composables/useApi';
+import { useHockeyApi } from '~/composables/useApi';
 
-const { fetchTeams } = useBalldontlie();
+const { fetchTeams } = useHockeyApi();
 const teams = ref([]);
 const loading = ref(true);
 const error = ref(null);

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import matchPlayerImage from "../methods.js";
-import { ILike } from '~~/types/ILike'
+import { ILike } from '~~/types/ILike';
 
 const props = defineProps({
   player: Object,
@@ -68,7 +68,7 @@ function unlikePlayer(id: any, playerId: any) {
     <button
       v-else
       type="button"
-      @click="likePlayer(player.person.id)"
+      @click="likePlayer(player.id)"
       class="text-sm mt-1 py-2 px-2 inline-flex justify-center items-center gap-2 font-semibold text-gray-400 hover:text-gray-300"
     >
       <svg
@@ -89,12 +89,12 @@ function unlikePlayer(id: any, playerId: any) {
     </button>
     <img
       class="w-full h-auto rounded-t-xl"
-      :src="matchPlayerImage(player.person.fullName)"
+      :src="player.headshot || matchPlayerImage(player.firstName.default + ' ' + player.lastName.default)"
       alt="Player Profile"
     />
     <div class="p-4 md:p-5">
       <h3 class="text-lg font-bold text-gray-800 dark:text-white">
-        {{ player.person.fullName }}
+        {{ player.firstName.default }} {{ player.lastName.default }}
       </h3>
       <p class="mt-1 text-white text-gray-400">
        <!--  <template v-if="player?.stats?.stat.goals && player?.stats?.stat.games">
@@ -107,7 +107,7 @@ function unlikePlayer(id: any, playerId: any) {
       <div class="flex inline-flex justify-center items-center gap-4">
         <NuxtLink
           class="mt-3 py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800"
-          :to="`/teams/${useRoute().params.id}/player/` + player.person.id"
+          :to="`/teams/${useRoute().params.id}/player/` + player.id"
         >
           View Player
         </NuxtLink>
@@ -115,7 +115,7 @@ function unlikePlayer(id: any, playerId: any) {
         <button
           class="top-2 rounded-md mt-4 py-2 px-2 cursor-pointer flex bg-red-500 hover:text-gray-900 text-white hover:bg-gray-100 focus:outline-none"
           data-hs-overlay="#player-sidebar"
-          @click="showSidebar(player.person.id)"
+          @click="showSidebar(player.id)"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

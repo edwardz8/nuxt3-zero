@@ -1,9 +1,10 @@
+import { readBody } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/h3/dist/index.mjs';
 import { a as addLike$1 } from '../../../_/likeRepository.mjs';
 import '../../../_/client.mjs';
-import 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/@prisma/client/index.js';
+import 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/@prisma/client/default.js';
 
 const addLike = async (event) => {
-  const body = await useBody(event);
+  const body = await readBody(event);
   console.log(body);
   const likeData = {
     userId: body.userId,

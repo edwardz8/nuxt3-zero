@@ -54,19 +54,13 @@ export default function matchPlayerImage(player) {
             case "Carey Price":
                 return "/img/Carey_Price.svg";
                 break;
-            case "DET":
-                return "/img/baseball-player.png";
+            case "David Pastrnak":
+                return "/img/DavidPastrnak.png";
                 break;
-            case "LAA":
-                return "/img/BaseballGlove.png";
-                break;
-            case "LAD":
-                return "/img/BaseballGlove.png";
-                break;
-            case "HOU":
-                return "/img/baseball-player.png";
+            case "Brady Tkachuk":
+                return "/img/BradyTkachuk.png";
                 break;
             default:
-                return "/img/BaseballGuy.svg";
+                return "/img/Skates-Retro-Pink-2.svg";
         }
     }

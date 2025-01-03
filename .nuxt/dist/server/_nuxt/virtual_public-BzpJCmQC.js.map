@@ -1,0 +1,1 @@
+{"version":3,"file":"virtual_public-BzpJCmQC.js","sources":["../../../../virtual:public?%2Fimg%2Fhockeyphone.png"],"sourcesContent":["import { publicAssetsURL } from '#internal/nuxt/paths';export default publicAssetsURL(\"/img/hockeyphone.png\")"],"names":[],"mappings":";AAAuD,MAAe,aAAA,gBAAgB,sBAAsB;"}

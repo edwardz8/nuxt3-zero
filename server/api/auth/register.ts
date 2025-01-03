@@ -1,4 +1,4 @@
-import { CompatibilityEvent, sendError } from 'h3'
+import { CompatibilityEvent, readBody, sendError } from 'h3'
 import bcrypt from 'bcrypt'
 import { IUser } from '~/types/IUser';
 import { validateUser } from '~/server/services/userService';
@@ -7,7 +7,7 @@ import { makeSession } from '~~/server/services/sessionService';
 import { RegistrationRequest } from '~~/types/IRegistration';
 
 export default async (event: CompatibilityEvent) => {
-    const body = await useBody(event)
+    const body = await readBody(event)
     const data = body.data as RegistrationRequest
 
     const validation = await validateUser(data)

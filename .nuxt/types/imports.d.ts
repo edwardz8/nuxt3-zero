@@ -109,7 +109,6 @@ declare global {
   const useAsyncData: typeof import('../../node_modules/nuxt/dist/app/composables/asyncData')['useAsyncData']
   const useAttrs: typeof import('../../node_modules/vue')['useAttrs']
   const useAuthCookie: typeof import('../../composables/useAuth')['useAuthCookie']
-  const useBalldontlie: typeof import('../../composables/useApi')['useBalldontlie']
   const useContent: typeof import('../../node_modules/@nuxt/content/dist/runtime/composables/utils')['useContentDisabled']
   const useContentHead: typeof import('../../node_modules/@nuxt/content/dist/runtime/composables/head')['useContentHead']
   const useContentHelpers: typeof import('../../node_modules/@nuxt/content/dist/runtime/composables/helpers')['useContentHelpers']
@@ -122,6 +121,7 @@ declare global {
   const useFetch: typeof import('../../node_modules/nuxt/dist/app/composables/fetch')['useFetch']
   const useHead: typeof import('../../node_modules/@unhead/vue')['useHead']
   const useHeadSafe: typeof import('../../node_modules/@unhead/vue')['useHeadSafe']
+  const useHockeyApi: typeof import('../../composables/useApi')['useHockeyApi']
   const useHydration: typeof import('../../node_modules/nuxt/dist/app/composables/hydrate')['useHydration']
   const useId: typeof import('../../node_modules/vue')['useId']
   const useLazyAsyncData: typeof import('../../node_modules/nuxt/dist/app/composables/asyncData')['useLazyAsyncData']
@@ -131,7 +131,6 @@ declare global {
   const useModel: typeof import('../../node_modules/vue')['useModel']
   const useNuxtApp: typeof import('../../node_modules/nuxt/dist/app/nuxt')['useNuxtApp']
   const useNuxtData: typeof import('../../node_modules/nuxt/dist/app/composables/asyncData')['useNuxtData']
-  const useNuxtDevTools: typeof import('../../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools')['useNuxtDevTools']
   const usePreviewMode: typeof import('../../node_modules/nuxt/dist/app/composables/preview')['usePreviewMode']
   const useRequestEvent: typeof import('../../node_modules/nuxt/dist/app/composables/ssr')['useRequestEvent']
   const useRequestFetch: typeof import('../../node_modules/nuxt/dist/app/composables/ssr')['useRequestFetch']
@@ -310,7 +309,6 @@ declare module 'vue' {
     readonly useAsyncData: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/asyncData')['useAsyncData']>
     readonly useAttrs: UnwrapRef<typeof import('../../node_modules/vue')['useAttrs']>
     readonly useAuthCookie: UnwrapRef<typeof import('../../composables/useAuth')['useAuthCookie']>
-    readonly useBalldontlie: UnwrapRef<typeof import('../../composables/useApi')['useBalldontlie']>
     readonly useContent: UnwrapRef<typeof import('../../node_modules/@nuxt/content/dist/runtime/composables/utils')['useContentDisabled']>
     readonly useContentHead: UnwrapRef<typeof import('../../node_modules/@nuxt/content/dist/runtime/composables/head')['useContentHead']>
     readonly useContentHelpers: UnwrapRef<typeof import('../../node_modules/@nuxt/content/dist/runtime/composables/helpers')['useContentHelpers']>
@@ -323,6 +321,7 @@ declare module 'vue' {
     readonly useFetch: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/fetch')['useFetch']>
     readonly useHead: UnwrapRef<typeof import('../../node_modules/@unhead/vue')['useHead']>
     readonly useHeadSafe: UnwrapRef<typeof import('../../node_modules/@unhead/vue')['useHeadSafe']>
+    readonly useHockeyApi: UnwrapRef<typeof import('../../composables/useApi')['useHockeyApi']>
     readonly useHydration: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/hydrate')['useHydration']>
     readonly useId: UnwrapRef<typeof import('../../node_modules/vue')['useId']>
     readonly useLazyAsyncData: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/asyncData')['useLazyAsyncData']>
@@ -332,7 +331,6 @@ declare module 'vue' {
     readonly useModel: UnwrapRef<typeof import('../../node_modules/vue')['useModel']>
     readonly useNuxtApp: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/nuxt')['useNuxtApp']>
     readonly useNuxtData: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/asyncData')['useNuxtData']>
-    readonly useNuxtDevTools: UnwrapRef<typeof import('../../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools')['useNuxtDevTools']>
     readonly usePreviewMode: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/preview')['usePreviewMode']>
     readonly useRequestEvent: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/ssr')['useRequestEvent']>
     readonly useRequestFetch: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/ssr')['useRequestFetch']>

@@ -115,8 +115,6 @@ declare module 'nuxt/schema' {
 
    bdlApiKey: string,
 
-   SEASON: string,
-
    nitro: {
       envPrefix: string,
    },
@@ -270,6 +268,8 @@ declare module 'nuxt/schema' {
    },
   }
   interface PublicRuntimeConfig {
+   SEASON: string,
+
    mdc: {
       components: {
          prose: boolean,
@@ -347,7 +347,7 @@ declare module 'nuxt/schema' {
 
       defaultLocale: any,
 
-      integrity: any,
+      integrity: number,
 
       experimental: {
          stripQueryParameters: boolean,

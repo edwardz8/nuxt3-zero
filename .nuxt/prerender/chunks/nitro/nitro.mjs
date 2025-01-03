@@ -314,7 +314,7 @@ function _expandFromEnv(value) {
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/",
-    "buildId": "0465ff3b-7695-447c-afdb-633dc55bd859",
+    "buildId": "005cd6ce-5472-4b49-9d08-012411c92b00",
     "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },
@@ -342,6 +342,7 @@ const _inlineRuntimeConfig = {
     }
   },
   "public": {
+    "SEASON": "20242025",
     "mdc": {
       "components": {
         "prose": true,
@@ -386,7 +387,7 @@ const _inlineRuntimeConfig = {
     "content": {
       "locales": [],
       "defaultLocale": "",
-      "integrity": 1735430825531,
+      "integrity": 1735926816675,
       "experimental": {
         "stripQueryParameters": false,
         "advanceQuery": false,
@@ -462,7 +463,6 @@ const _inlineRuntimeConfig = {
     }
   },
   "bdlApiKey": "0440b57a-b3bb-4b33-aa43-2a7336ca4689",
-  "SEASON": "20242025",
   "content": {
     "cacheVersion": 2,
     "cacheIntegrity": "6NOdNy3hbm",
@@ -1982,9 +1982,9 @@ const _lazy_a9f9lG = () => import('../routes/api/comment/getComments.mjs');
 const _lazy_9pvzFb = () => import('../routes/api/like/addLike.mjs');
 const _lazy_czBP2s = () => import('../routes/api/like/deleteLike.mjs');
 const _lazy_a5ETyl = () => import('../routes/api/like/getLikes.mjs');
-const _lazy_lOZZLU = () => import('../routes/api/players.mjs');
 const _lazy_fpRsiM = () => import('../routes/api/subscribe.mjs');
 const _lazy_Xa7yzA = () => import('../routes/api/teams.mjs');
+const _lazy_KkgSAb = () => import('../routes/api/teams/_id/players.mjs');
 const _lazy_nBUkym = () => import('../_/renderer.mjs');
 
 const handlers = [
@@ -1999,14 +1999,14 @@ const handlers = [
   { route: '/api/like/addLike', handler: _lazy_9pvzFb, lazy: true, middleware: false, method: undefined },
   { route: '/api/like/deleteLike', handler: _lazy_czBP2s, lazy: true, middleware: false, method: undefined },
   { route: '/api/like/getLikes', handler: _lazy_a5ETyl, lazy: true, middleware: false, method: undefined },
-  { route: '/api/players', handler: _lazy_lOZZLU, lazy: true, middleware: false, method: undefined },
   { route: '/api/subscribe', handler: _lazy_fpRsiM, lazy: true, middleware: false, method: undefined },
   { route: '/api/teams', handler: _lazy_Xa7yzA, lazy: true, middleware: false, method: undefined },
+  { route: '/api/teams/:id/players', handler: _lazy_KkgSAb, lazy: true, middleware: false, method: undefined },
   { route: '/api/_mdc/highlight', handler: _MX0nBA, lazy: false, middleware: false, method: undefined },
   { route: '/api/_content/query/:qid/**:params', handler: _TO9phX, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/query/:qid', handler: _TO9phX, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/query', handler: _TO9phX, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/cache.1735430825531.json', handler: _tpnRl7, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/cache.1735926816675.json', handler: _tpnRl7, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation/:qid/**:params', handler: _gWIuzX, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation/:qid', handler: _gWIuzX, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation', handler: _gWIuzX, lazy: false, middleware: false, method: "get" },

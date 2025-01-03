@@ -52,7 +52,7 @@ async function deletePlayerComment(id, index) {
     class="p-4 bg-white border-t rounded-none rounded-md dark:bg-gray-800 dark:border-gray-700"
     role="alert"
   >
-    <h3 class="ml-3 font-bold mb-3">Comments</h3>
+    <h3 class="ml-3 font-bold mb-3 text-white">Comments</h3>
     <form class="w-full d-flex flex-col" @submit.prevent="commentPlayer">
       <input
         v-model="comment"

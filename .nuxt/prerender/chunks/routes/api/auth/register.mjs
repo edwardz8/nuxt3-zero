@@ -1,12 +1,12 @@
-import { sendError, createError } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/h3/dist/index.mjs';
+import { readBody, sendError, createError } from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/h3/dist/index.mjs';
 import bcrypt from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/bcrypt/bcrypt.js';
 import { v as validateUser, c as createUser, m as makeSession } from '../../../_/sessionService.mjs';
 import '../../../_/client.mjs';
-import 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/@prisma/client/index.js';
+import 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/@prisma/client/default.js';
 import 'crypto';
 
 const register = async (event) => {
-  const body = await useBody(event);
+  const body = await readBody(event);
   const data = body.data;
   const validation = await validateUser(data);
   if (validation.hasErrors === true) {

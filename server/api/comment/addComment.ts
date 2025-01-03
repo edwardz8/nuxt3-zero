@@ -1,8 +1,8 @@
-import { CompatibilityEvent } from 'h3'
+import { CompatibilityEvent, readBody } from 'h3'
 import { addComment } from '~/server/database/repositories/commentRepository';
 
 export default async (event: CompatibilityEvent) => {
-    const body = await useBody(event)
+    const body = await readBody(event)
 
     const commentData = {
         userId: body.userId,

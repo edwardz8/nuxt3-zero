@@ -1,4 +1,4 @@
-export const useBalldontlie = () => {
+export const useHockeyApi = () => {
   const fetchTeams = async () => {
     try {
       const response = await $fetch('/api/teams');
@@ -10,16 +10,34 @@ export const useBalldontlie = () => {
     }
   };
 
-  const fetchPlayers = async () => {
+  const fetchTeam = async (id: string) => {
     try {
-      const response = await $fetch('/api/players');
-      console.log(response);
-      return response;
+        return await $fetch(`/api/teams/${id}`);
     } catch (error) {
-      console.error('Failed to fetch players:', error);
-      throw error;
+        console.error('Failed to fetch teams:', error);
+        throw error;
     }
   };
 
-  return { fetchTeams, fetchPlayers };
+  const fetchPlayers = async (id: string) => {
+    try {
+        const response = await $fetch(`/api/teams/${id}/players`);
+        return response;
+    } catch (error) {
+        console.error('Failed to fetch players:', error);
+        throw error;
+    }
+};
+
+  const fetchPlayer = async (id: string) => {
+    try {
+        const response = await $fetch(`/api/players/${id}`);
+        return response;
+    } catch (error) {
+        console.error('Failed to fetch players:', error);
+        throw error;
+    }
+};
+
+  return { fetchTeams, fetchTeam, fetchPlayers, fetchPlayer };
 };

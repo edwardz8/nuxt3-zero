@@ -4,6 +4,7 @@ Fantasy application integrating external APIs. Currently refactoring from NHL AP
 
 ### ! node version = v20.18.1
 
+### new nhl api - https://gitlab.com/dword4/nhlapi/-/blob/master/new-api.md#new-api-documentation 
 
 Look at the [Content documentation](https://content-v2.nuxtjs.org/) to learn more.
 
@@ -15,6 +16,10 @@ $ npm i @prisma/client 
 $ npx prisma init 
 $ npx prisma db push 
 
+$ npx prisma migrate dev --name init
+$ npx prisma migrate deploy
+
+$ npx prisma studio
 
 ## Setup
 

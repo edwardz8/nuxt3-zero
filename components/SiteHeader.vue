@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import BackButton from "~/components/elements/BackButton.vue";
 import { useState } from "#app";
 
 const user = useState("user");
@@ -10,15 +9,9 @@ const user = useState("user");
     <div class="wrapper">
       <NuxtLink to="/" class="no-underline">
         <figure class="site-logo">
-          <h1>mlbdfs</h1>
+          <h1>rotorink</h1>
         </figure>
       </NuxtLink>
-
-      <!--  <NuxtLink to="/blog" class="no-underline">
-        <figure class="link">
-          <p class="transition duration-500 hover:scale-110 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:bg-blue-900 bg-gray-600">Featured Articles</p>
-        </figure>
-      </NuxtLink> -->
 
       <nav class="site-nav">
         <ul class="links">

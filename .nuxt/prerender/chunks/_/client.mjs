@@ -1,4 +1,4 @@
-import pkg from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/@prisma/client/index.js';
+import pkg from 'file:///Users/zne/vue-projects/nuxt3-zero/node_modules/@prisma/client/default.js';
 
 const { PrismaClient } = pkg;
 const prisma = new PrismaClient();
