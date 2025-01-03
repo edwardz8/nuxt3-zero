@@ -642,7 +642,7 @@ const _routes = [
   {
     name: "register",
     path: "/register",
-    component: () => import('./register-CBqutwHg.mjs')
+    component: () => import('./register-CMYux5XI.mjs')
   },
   {
     name: "teams-id",
@@ -657,7 +657,7 @@ const _routes = [
   {
     name: "teams",
     path: "/teams",
-    component: () => import('./index-C7RMRHAV.mjs')
+    component: () => import('./index-BjU9OJTd.mjs')
   }
 ];
 const _wrapIf = (component, props, slots) => {

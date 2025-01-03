@@ -619,7 +619,7 @@ const _routes = [
   {
     name: "register",
     path: "/register",
-    component: () => import("./_nuxt/register-CBqutwHg.js")
+    component: () => import("./_nuxt/register-CMYux5XI.js")
   },
   {
     name: "teams-id",
@@ -634,7 +634,7 @@ const _routes = [
   {
     name: "teams",
     path: "/teams",
-    component: () => import("./_nuxt/index-C7RMRHAV.js")
+    component: () => import("./_nuxt/index-BjU9OJTd.js")
   }
 ];
 const _wrapIf = (component, props, slots) => {
